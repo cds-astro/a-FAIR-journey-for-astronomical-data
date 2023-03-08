@@ -11,13 +11,13 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'Lesson Title'
+title: 'A FAIR journey for astronomical data'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries'
+keywords: 'data, astronomy, FAIR, EOSC'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
@@ -74,5 +74,3 @@ profiles:
 #
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
-
-
