@@ -11,13 +11,13 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'A FAIR journey for astronomical data'
+title: 'Your data's journey through the Virtual Observatory and EOSC.'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~
 
 # Comma-separated list of keywords for the lesson
-keywords: 'data, astronomy, FAIR, EOSC'
+keywords: 'data, astronomy, CDS, FAIR, VO, EOSC'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
