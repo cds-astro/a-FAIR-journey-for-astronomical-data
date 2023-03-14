@@ -1,5 +1,5 @@
 ---
-title: "Explore EOSC?"
+title: "Explore EOSC"
 teaching: 10
 exercises: 2
 ---

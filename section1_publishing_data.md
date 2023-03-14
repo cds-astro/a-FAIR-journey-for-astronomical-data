@@ -1,5 +1,5 @@
 ---
-title: "Publishing your data following the FAIR principles?"
+title: "Publishing your data following the FAIR principles"
 teaching: 10
 exercises: 2
 ---
