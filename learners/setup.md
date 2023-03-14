@@ -5,6 +5,16 @@ title: Setup
 Setup instructions live in this document. Please specify the tools and the data
 sets the Learner needs to have installed.
 
+:::::::::::::::::::::::::::::::::::::: callout
+
+### UNDER CONSTRUCTION
+
+This website and its associated documentation are still being constructed—please be patient.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 ## Data Sets
 
 Download the [data zip file](data/data.zip) and unzip it to your Desktop
