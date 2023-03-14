@@ -4,7 +4,7 @@ teaching: 10
 exercises: 2
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - Journey of your data in the VO
 
@@ -16,16 +16,14 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-
 ## Overview
 
 2 - Journey of your data in the VO
-- ‘How your published data gets into EOSC’. 
 
+- ‘How does your published data get into EOSC’.
 
 ## Journey of your data
 
 Harvest map from Vizier to EOSC Explore (inferred, not official)
 
-![Harvest map from Vizier to EOSC Explore](https://github.com/cds-astro/a-FAIR-journey-for-astronomical-data/blob/main/episodes/images/harvest_map_from_discussion_with_Gilles.svg){alt="Diagram showing data harvesting from Vizier to EOSC"}
-
+![Harvest map from Vizier to EOSC Explore](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/harvest_map_from_discussion_with_Gilles.png){alt="Diagram showing data harvesting from Vizier to EOSC"}
