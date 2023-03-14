@@ -27,5 +27,5 @@ exercises: 2
 
 Harvest map from Vizier to EOSC Explore (inferred, not official)
 
-![Harvest map from Vizier to EOSC Explore](images/harvest_map_from_discussion_with_Gilles.svg){alt="Diagram showing data harvesting from Vizier to EOSC"}
+![Harvest map from Vizier to EOSC Explore](https://github.com/cds-astro/a-FAIR-journey-for-astronomical-data/blob/main/episodes/images/harvest_map_from_discussion_with_Gilles.svg){alt="Diagram showing data harvesting from Vizier to EOSC"}
 
