@@ -59,6 +59,9 @@ contact: 'team@carpentries.org'
 
 # Order of episodes in your lesson
 episodes: 
+- section1_publishing_data.md
+- section2_journey_data.md
+- section3_eosc_intro.md
 - introduction.md
 
 # Information for Learners
