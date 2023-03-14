@@ -9,5 +9,5 @@
 "episodes/section3_eosc_intro.md" "0fd053940f737fa5eb5482cd577e00a3" "site/built/section3_eosc_intro.md" "2023-03-14"
 "episodes/introduction.md" "3fa7777db6ce8f3a39e4018a065f87cf" "site/built/introduction.md" "2023-03-14"
 "instructors/instructor-notes.md" "60b93493cf1da06dfd63255d73854461" "site/built/instructor-notes.md" "2022-04-22"
-"learners/setup.md" "61da44e393a02ba35f15223a876ea016" "site/built/setup.md" "2023-03-14"
+"learners/setup.md" "be3a2d10401ab8890ccad73356380bf3" "site/built/setup.md" "2023-03-14"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-04-22"
