@@ -24,6 +24,4 @@ exercises: 2
 
 ## Journey of your data
 
-Harvest map from Vizier to EOSC Explore (inferred, not official)
-
-![Harvest map from Vizier to EOSC Explore](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/harvest_map_from_discussion_with_Gilles.png){alt="Diagram showing data harvesting from Vizier to EOSC"}
+![Harvest map from Vizier to EOSC Explore (inferred, not official)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/harvest_map_from_discussion_with_Gilles.svg){alt="Diagram showing data harvesting from Vizier to EOSC"}

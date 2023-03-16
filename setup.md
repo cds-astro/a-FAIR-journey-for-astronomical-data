@@ -16,6 +16,8 @@ This website and its associated documentation are still being constructed — pl
 
 The new initiatives for Open Science involve many actors: the journals, archives, the data sharing frameworks, and also the community of authors who publish their data. In this training we highlight the role of the authors, to show how efforts for describing astronomical data in standard ways has an important impact on realising the goals of Open Science.  
 
+We will also focus on the integration and the availability of your data into EOSC.
+
 
 ## Audience
 
@@ -24,7 +26,7 @@ Astronomers who want to publish their data (table, images, spectra, …), and ma
 This training is also directed at researchers interested in ensuring long-lasting access to their data. 
 
 
-## Objectives
+## Learning outcomes
 
 By the end of this training, you will:
 
@@ -40,5 +42,9 @@ By the end of this training, you will:
 
 ## Type of course
 
-This is an online course (self-learning). If you have got any questions, feel free to contact directly the VizieR team at: cats(at)cdsarc.u-strasbg.fr
+This is an online course (self-learning).
+No prior knowledge is required.
+
+
+If you have got any questions, feel free to contact directly the VizieR team at: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) .
 
