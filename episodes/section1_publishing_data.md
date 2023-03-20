@@ -6,7 +6,10 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How and where to publish your data (tables, images), following the FAIR principles?"
+- How and where to publish your data?
+- What kind of data can be published (tables, images) ?
+- Do and don't when publishing data?
+- What are the FAIR principles?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -18,7 +21,73 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Overview 			-->
+<!--  ----------------------------------------- -->
 ## Overview
+
+This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website). 
+
+
+### Why distribute your data through VizieR? (from Vizier)
+
+
+
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Type of data 			-->
+<!--  ----------------------------------------- -->
+## Which type of data can you send to VizieR ? (from Vizier)
+
+### 1. Tables
+ 
+### 2. Associated data : images, time series, spectra
+
+
+
+
+<!--  ----------------------------------------- -->
+<!-- 		FAIR	 			-->
+<!--  ----------------------------------------- -->
+## FAIR principles
+
+The set of guidelines for making research (meta)data findable, accessible, interoperable and reusable that ultimately ensures standardised machine actionability.
+
+
+![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/FAIR_data_principles.jpg){alt="Findable Accessible Interoperable Reusable principes"}
+
+*Credit: SangyaPundir, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons*
+
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Publishing 			-->
+<!--  ----------------------------------------- -->
+## Publishing your data
+
+### How to send the above data? (from Vizier)
+
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Documentation 			-->
+<!--  ----------------------------------------- -->
+## More documentation (from Vizier)
+
+- [VizieR catalogue upload generalities][vizier-publi-notes-help]
+- [The submitting VizieR page documentation][vizier-submit-data-help]
+
+
+
+
+
+<!--  ----------------------------------------- -->
+<!--  ----------------------------------------- -->
+<!--  ----------------------------------------- -->
+## *Ideas for the website* 
 
 1.1 - Publishing your data
 
@@ -33,9 +102,10 @@ exercises: 2
 - Add cheatsheets FAIR principles / publishing data
 
 
-## FAIR principles
 
-
-## Publishing your data
-
-
+<!--  ----------------------------------------- -->
+<!-- 		Link references			-->
+<!--  ----------------------------------------- -->
+[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
+[vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
+[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
