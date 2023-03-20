@@ -3,15 +3,6 @@ title: Setup
 ---
 
 
-:::::::::::::::::::::::::::::::::::::: callout
-
-### UNDER CONSTRUCTION
-
-This website and its associated documentation are still being constructed — please be patient.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
 ## Overview
 
 The new initiatives for Open Science involve many actors: the journals, archives, the data sharing frameworks, and also the community of authors who publish their data. In this training we highlight the role of the authors, to show how efforts for describing astronomical data in standard ways has an important impact on realising the goals of Open Science.  

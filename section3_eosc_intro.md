@@ -6,25 +6,53 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- Why publishing in EOSC / VO?
 - How do you find your data in EOSC?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
--Be familiar with the EOSC capabilities, in particular the Explore portal.
+- Be familiar with the EOSC capabilities, in particular the Explore portal.
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+
+<!--  ----------------------------------------- -->
+<!--            Overview                        -->
+<!--  ----------------------------------------- -->
 ## Overview
 
-3 - How do you find your data in EOSC?
 
-- Why publishing in EOSC / VO? ⇒ Or maybe put it in intro?
 
-- Discover EOSC capabilities 
+<!--  ----------------------------------------- -->
+<!--            Explore Portal                  -->
+<!--  ----------------------------------------- -->
+## Explore Portal
 
-- Test Explore with [Gaia DR3](https://explore.eosc-portal.eu/search/find?f0=q&fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-ycsawu7&type=datasets&active=result&page=1)
 
-Other: [Gaia DR2](https://explore.eosc-portal.eu/search/find?qf=true&fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-qa4lep3&f0=q&active=result&page=1)
+
+<!--  ----------------------------------------- -->
+<!--            Case study 	                -->
+<!--  ----------------------------------------- -->
+## Case Study
+
+- [Gaia DR3][explore-gaiadr3]
+- [Gaia DR2][explore-gaiadr2]
+
+
+
+<!--  ----------------------------------------- -->
+<!--  ----------------------------------------- -->
+<!--  ----------------------------------------- -->
+## *Ideas for the website* 
+
+
+
+
+<!--  ----------------------------------------- -->
+<!--            Link references                 -->
+<!--  ----------------------------------------- -->
+[explore-gaiadr2]: https://explore.eosc-portal.eu/search/find?qf=true&fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-qa4lep3&f0=q&active=result&page=1
+[explore-gaiadr3]: https://explore.eosc-portal.eu/search/find?f0=q&fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-ycsawu7&type=datasets&active=result&page=1
