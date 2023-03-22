@@ -59,7 +59,9 @@ contact: 'team@carpentries.org'
 
 # Order of episodes in your lesson
 episodes: 
-- section1_publishing_data.md
+- section1_intro.md
+- section_fair_astro.md
+- section_publi_data.md
 - section2_journey_data.md
 - section3_eosc_intro.md
 - introduction.md
