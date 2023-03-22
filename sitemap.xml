@@ -49,6 +49,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/profiles.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/section1_intro.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/section1_publishing_data.html</loc>
   </url>
   <url>
@@ -56,6 +59,12 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/section3_eosc_intro.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/section_fair_astro.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/section_publi_data.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor-notes.html</loc>
@@ -70,6 +79,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/profiles.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/section1_intro.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/section1_publishing_data.html</loc>
   </url>
   <url>
@@ -77,5 +89,11 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/section3_eosc_intro.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/section_fair_astro.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/section_publi_data.html</loc>
   </url>
 </urlset>
