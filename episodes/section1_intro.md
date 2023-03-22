@@ -1,5 +1,5 @@
 ---
-title: "Publishing your data following the FAIR principles"
+title: "Introduction to publishing your data following the FAIR principles"
 teaching: 10
 exercises: 2
 ---
@@ -45,30 +45,6 @@ This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-d
 ### 1. Tables
  
 ### 2. Associated data : images, time series, spectra
-
-
-
-
-<!--  ----------------------------------------- -->
-<!-- 		FAIR	 			-->
-<!--  ----------------------------------------- -->
-## FAIR principles
-
-The set of guidelines for making research (meta)data findable, accessible, interoperable and reusable that ultimately ensures standardised machine actionability.
-
-
-![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/FAIR_data_principles.jpg){alt="Findable Accessible Interoperable Reusable principes"}
-
-*Credit: SangyaPundir, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons*
-
-
-
-<!--  ----------------------------------------- -->
-<!-- 		Publishing 			-->
-<!--  ----------------------------------------- -->
-## Publishing your data
-
-### How to send the above data? (from Vizier)
 
 
 

@@ -1,10 +1,34 @@
-# The Carpentries Workbench Template Markdown Lesson
+# The journey of your data through the Virtual Observatory and the European Open Science Cloud
 
-This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
-To get started using this template, make sure you're logged into Github and visit https://github.com/carpentries/workbench-template-md/generate
-and follow the instructions.
+## General information
 
-If you have any questions, contact [@zkamvar](https://github.com/zkamvar)
+The new initiatives for Open Science involve many actors: the journals, archives, the data sharing frameworks, and also the community of authors who publish their data. In this training we highlight the role of the authors, to show how efforts for describing astronomical data in standard ways has an important impact on achieving the goals of Open Science.
 
-[workbench]: https://carpentries.github.io/sandpaper-docs/
+We will also focus on the integration and the availability of your data into EOSC.
+
+Add logo CDS and EOSC ???
+
+
+
+## Target audience
+
+Researchers in astronomy who want to make their published data (table, images, spectra, …) FAIR and openly accessible to the community.
+This training is also directed at researchers interested in ensuring long-lasting access to their data.
+
+
+## Authors
+
+- Anaïs Gonneau
+- Manon Marchand
+
+
+## Citation
+
+
+
+## Funding
+
+
+
+
