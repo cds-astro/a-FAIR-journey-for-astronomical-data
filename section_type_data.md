@@ -1,5 +1,5 @@
 ---
-title: "Introduction to publishing your data following the FAIR principles"
+title: "Type of data"
 teaching: 10
 exercises: 2
 ---
@@ -28,11 +28,17 @@ exercises: 2
 <!--  ----------------------------------------- -->
 ## Overview
 
-This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website). 
 
+<!--  ----------------------------------------- -->
+<!-- 		Type of data 			-->
+<!--  ----------------------------------------- -->
+## Which type of data can you send to VizieR ? (from Vizier)
 
-### Why distribute your data through VizieR? (from Vizier)
+### 1. Tables
+ 
+### 2. Associated data : images, time series, spectra
 
+### 3. MOC / Hips
 
 
 <!--  ----------------------------------------- -->
@@ -40,29 +46,9 @@ This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-d
 <!--  ----------------------------------------- -->
 ## More documentation (from Vizier)
 
+- [Preparing and Submitting Tabular Data][vizier-publi-data-home]
 - [VizieR catalogue upload generalities][vizier-publi-notes-help]
 - [The submitting VizieR page documentation][vizier-submit-data-help]
-
-
-
-
-
-<!--  ----------------------------------------- -->
-<!--  ----------------------------------------- -->
-<!--  ----------------------------------------- -->
-## *Ideas for the website* 
-
-1.1 - Publishing your data
-
-1.2 - Do and don’t // FAIR principles 
-
-- Findable, Accessible, Interoperable, Reusable
-
-- Best practices for preparation of data and its metadata. 
-
-1.3 - Something about the different types of data ? (tables, images, spectra, Hips, MOCs, simulation outputs, models… and how they fit in this path)
-
-- Add cheatsheets FAIR principles / publishing data
 
 
 
