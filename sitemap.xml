@@ -67,6 +67,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/section_publi_data.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/section_type_data.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor-notes.html</loc>
   </url>
   <url>
@@ -95,5 +98,8 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/section_publi_data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/section_type_data.html</loc>
   </url>
 </urlset>
