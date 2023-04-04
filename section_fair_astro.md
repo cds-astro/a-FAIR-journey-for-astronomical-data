@@ -51,6 +51,16 @@ The set of guidelines for making research (meta)data findable, accessible, inter
 
 
 
+<!--  ----------------------------------------- -->
+<!-- 		Best Practices (Chen+22)	-->
+<!--  ----------------------------------------- -->
+## Best Practices for Data Publication in the Astronomical Literature
+
+***Link: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268***
+
+The article is dedicated for authors, and is a basis of good practices expected in journals and data-centers.
+
+
 
 <!--  ----------------------------------------- -->
 <!-- 		Ideas	 			-->
