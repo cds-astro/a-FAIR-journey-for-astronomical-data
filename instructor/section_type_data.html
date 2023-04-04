@@ -144,7 +144,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="section1_intro.html">1. Introduction to publishing your data following the FAIR principles</a>
+        <a href="section1_intro.html">1. Why distribute your data through VizieR?</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -172,9 +172,10 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#overview">Overview</a></li>
-<li><a href="#which-type-of-data-can-you-send-to-vizier-from-vizier">Which type of data can you send to VizieR ? (from Vizier)</a></li>
-<li><a href="#more-documentation-from-vizier">More documentation (from Vizier)</a></li>
+        <ul><li><a href="#which-type-of-data-can-you-send-to-vizier">Which type of data can you send to VizieR ?</a></li>
+<li><a href="#tables-1">Tables</a></li>
+<li><a href="#associated-data-images-time-series-spectra-1">Associated data: images, time series, spectra</a></li>
+<li><a href="#other-types">Other types</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -268,7 +269,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Type of data</h1>
-        <p> Last updated on 2023-03-24 | 
+        <p> Last updated on 2023-04-04 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_type_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -311,11 +312,9 @@ standards.</li>
 </div>
 </div>
 <!--  ----------------------------------------- -->
-<!-- 		Overview 			-->
+<!-- 		Type of data 			-->
 <!--  ----------------------------------------- -->
-<section id="overview"><h2 class="section-heading">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
-</h2>
-<hr class="half-width"><!--  ----------------------------------------- --><!-- 		Type of data 			--><!--  ----------------------------------------- --></section><section id="which-type-of-data-can-you-send-to-vizier-from-vizier"><h2 class="section-heading">Which type of data can you send to VizieR ? (from Vizier)<a class="anchor" aria-label="anchor" href="#which-type-of-data-can-you-send-to-vizier-from-vizier"></a>
+<section id="which-type-of-data-can-you-send-to-vizier"><h2 class="section-heading">Which type of data can you send to VizieR ?<a class="anchor" aria-label="anchor" href="#which-type-of-data-can-you-send-to-vizier"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
 <h3 id="tables">1. Tables<a class="anchor" aria-label="anchor" href="#tables"></a></h3>
@@ -324,20 +323,126 @@ standards.</li>
 <h3 id="associated-data-images-time-series-spectra">2. Associated data : images, time series, spectra<a class="anchor" aria-label="anchor" href="#associated-data-images-time-series-spectra"></a></h3>
 </div>
 <div class="section level3">
-<h3 id="moc-hips">3. MOC / Hips<a class="anchor" aria-label="anchor" href="#moc-hips"></a></h3>
+<h3 id="other-types-moc-hips">3. Other types: MOC / Hips<a class="anchor" aria-label="anchor" href="#other-types-moc-hips"></a></h3>
 <!--  ----------------------------------------- -->
-<!-- 		Documentation 			-->
+<!-- 		Tables	 			-->
+<!--  ----------------------------------------- -->
+<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 -->
+</div>
+</section><section id="tables-1"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables-1"></a>
+</h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h3>
+<p>The following formats are welcome:</p>
+<ul><li>machine-readable tables (FORTRAN format, see the basic
+conventions)</li>
+<li>csv files</li>
+<li>tsv files</li>
+<li>aligned ASCII files</li>
+<li>FITS files</li>
+</ul></div>
+<div class="section level3">
+<h3 id="web-application">Web application<a class="anchor" aria-label="anchor" href="#web-application"></a></h3>
+<p>The <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">new submit
+web application</a> allows different formats for tables and helps you to
+ingest your data.</p>
+</div>
+<div class="section level3">
+<h3 id="checklist-when-creating-a-table">Checklist when creating a table<a class="anchor" aria-label="anchor" href="#checklist-when-creating-a-table"></a></h3>
+<ul><li>An explanation is given for all the columns (at least a clear label;
+at best, few words of explanation)</li>
+<li>Units are given for all the columns (when relevant)</li>
+<li>For tables with sources, give coordinates as accurate as possible:
+<ul><li>A bonus would be to have their uncertainty</li>
+<li>Another bonus would be to have their wavelength</li>
+</ul></li>
+<li>As recommended by the IAU, a non-altered name is given for the
+sources (in addition to the coordinates)</li>
+<li>It is really much better to stick to the same object name from a
+table to another</li>
+<li>One column is homogeneous, i.e. does not mix different measurements
+having different units or errors with limit values or flags.</li>
+<li>If the measurements come from other papers, the references to those
+papers should be explicitly given using the bibcode.</li>
+</ul><p>Following this checklist will help improving the efficiency of the
+ingestion in VizieR and also the visibility and reusability of your data
+:).</p>
+<!--  ----------------------------------------- -->
+<!-- 		Associated date			-->
+<!--  ----------------------------------------- -->
+<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section3 -->
+</div>
+</section><section id="associated-data-images-time-series-spectra-1"><h2 class="section-heading">Associated data: images, time series, spectra<a class="anchor" aria-label="anchor" href="#associated-data-images-time-series-spectra-1"></a>
+</h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="format-1">Format<a class="anchor" aria-label="anchor" href="#format-1"></a></h3>
+<p>Reusable file formats for associated:</p>
+<table class="table"><thead><tr class="header"><th>Product type</th>
+<th align="center">Accepted format</th>
+</tr></thead><tbody><tr class="odd"><td>time series</td>
+<td align="center">ASCII, FITS</td>
+</tr><tr class="even"><td>images</td>
+<td align="center">FITS</td>
+</tr><tr class="odd"><td>cube</td>
+<td align="center">FITS</td>
+</tr><tr class="even"><td>spectra, sed</td>
+<td align="center">FITS, VOTable, ASCII</td>
+</tr></tbody></table><p><strong>Note: Only FITS files will be indexed and accessible through
+the <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">VizieR associated
+data service</a> and through the Virtual Observatory</strong></p>
+</div>
+<div class="section level3">
+<h3 id="general-rules-for-fits">General rules for FITS<a class="anchor" aria-label="anchor" href="#general-rules-for-fits"></a></h3>
+<p>In order to index FITS formats as accurately as possible, several
+basic meta-data are needed, usually readily provided by the telescope
+software and data processing pipelines such as IRAF and MIDAS, as FITS
+header keywords.</p>
+<p>As a good practice, any FITS header should provide:</p>
+<ul><li>WCS projections for positions and spectral data</li>
+<li>
+<a href="https://fits.gsfc.nasa.gov/" class="external-link">standard FITS keywords</a>
+described in the NASA FITS description.</li>
+</ul><p>For the sake of clarity and simplicity, we ask the authors, whenever
+possible, to stick to the “1 item = 1 file” rule, i.e. 1 star spectrum
+per file, for instance. In this simplest context, fits files should
+ideally also have only 1 hdu. An automatic, supervised detection of the
+meta-data is available in the new VizieR submit page. It resolves the
+most popular projections, data reduction software (IRAF, MIDAS) headers
+and recognizes FITS keywords given in the NASA FITS description.</p>
+</div>
+<div class="section level3">
+<h3 id="small-checklist-for-providing-correct-headers">Small checklist for providing correct headers<a class="anchor" aria-label="anchor" href="#small-checklist-for-providing-correct-headers"></a></h3>
+<ul><li>
+<strong>Positions</strong>
+<ul><li>target name</li>
+<li>coordinates: full WCS is recommended including the projection, the
+center … (FITS cards: CRVAL, CDELT, CDi_j, CTYPE, CUNIT, CRPIX..)</li>
+</ul></li>
+<li>
+<strong>Wavelength(s)</strong> of observations
+<ul><li>full WCS recommended including units (ex: IRAF WAT cards)</li>
+</ul></li>
+<li>Observation <strong>date</strong>
+</li>
+<li>
+<strong>Telescope</strong>: instrument and Facility</li>
+</ul><p>If your associated data are correctly described, then they will be
+provided through the [VizieR associated data web
+page][vizier-assoc-page] and through the Virtual Observatory (<a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a>, <a href="http://star-www.dur.ac.uk/~pdraper/splat/splat.html" class="external-link">Splat</a>, <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>).</p>
+</div>
+<div class="section level3">
+<h3 id="fits-validator">FITS validator<a class="anchor" aria-label="anchor" href="#fits-validator"></a></h3>
+<p>Test your FITS spectra/images with the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" class="external-link">FITS
+validator</a> which evaluates the compatibility between your FITS and
+the asked meta-data. This meta-data checking can be completed in the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
+submission service</a>.</p>
+<!--  ----------------------------------------- -->
+<!-- 		Other types			-->
 <!--  ----------------------------------------- -->
 </div>
-</section><section id="more-documentation-from-vizier"><h2 class="section-heading">More documentation (from Vizier)<a class="anchor" aria-label="anchor" href="#more-documentation-from-vizier"></a>
+</section><section id="other-types"><h2 class="section-heading">Other types<a class="anchor" aria-label="anchor" href="#other-types"></a>
 </h2>
-<hr class="half-width"><ul><li><a href="https://vizier.cds.unistra.fr/vizier/submit.htx" class="external-link">Preparing
-and Submitting Tabular Data</a></li>
-<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html" class="external-link">VizieR
-catalogue upload generalities</a></li>
-<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">The
-submitting VizieR page documentation</a></li>
-</ul><!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- 
+<hr class="half-width"><!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></div> <!-- / div.lesson-content -->
@@ -392,8 +497,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/section_type_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section_type_data.html",
-  "dateCreated": "2023-03-24",
-  "dateModified": "2023-03-24",
+  "dateCreated": "2023-04-04",
+  "dateModified": "2023-04-04",
   "datePublished": "2023-04-04"
 }
 
