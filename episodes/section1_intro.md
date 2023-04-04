@@ -1,5 +1,5 @@
 ---
-title: "Introduction to publishing your data following the FAIR principles"
+title: "Why distribute your data through VizieR?"
 teaching: 10
 exercises: 2
 ---
@@ -31,7 +31,36 @@ exercises: 2
 This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website). 
 
 
-### Why distribute your data through VizieR? (from Vizier)
+<!-- The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
+In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context. -->
+
+
+
+
+
+
+
+<!--  ----------------------------------------- -->
+<!--            Keypoints                       -->
+<!--  ----------------------------------------- -->
+<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
+## Summary 
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+- **Data preservation**: The CDS has been awarded the [Core Trust Seal][cts].
+- **Discovery**: Take advantage of the VizieR services allowing for the discovery, and a good data visibility
+	- [VizieR][vizier-data-search] data are available through the [Virtual Observatory (VO)][ivoa-link]
+		- Load tables using [TOPCAT][topcat] or [Aladin][aladin-home]
+		- Access to spectra/images or time series:
+			- Load spectra using [CASSIS][cassis] or [Splat][splat]
+			- Load images in [Aladin][aladin-home]
+	- Query tables using ADQL/SQL with [TAPVizieR][tap-vizier]
+	- The [VizieR Photometry viewer][vizier-sed] is another output using tables for which filters are assigned to create SEDs.
+- **Simbad**: VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
+- **CDS Cross-match**: merge tables according to positions.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -40,6 +69,7 @@ This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-d
 <!--  ----------------------------------------- -->
 ## More documentation (from Vizier)
 
+- [Preparing and Submitting Tabular Data][vizier-publi-data-home]
 - [VizieR catalogue upload generalities][vizier-publi-notes-help]
 - [The submitting VizieR page documentation][vizier-submit-data-help]
 
@@ -69,6 +99,17 @@ This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-d
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->
+[cassis]: http://cassis.irap.omp.eu/?page=cassis
+[cts]: https://www.coretrustseal.org/
+[ivoa-link]: https://www.ivoa.net/
+[splat]: http://star-www.dur.ac.uk/~pdraper/splat/splat.html
+[topcat]:  http://www.starlink.ac.uk/topcat/
+<!-- -->
+[aladin-home]: http://aladin.cds.unistra.fr/aladin.gml
+[simbad-home]: http://simbad.cds.unistra.fr/simbad/
+[tap-vizier]: http://tapvizier.cds.unistra.fr/adql/
+[vizier-data-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
+[vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
 [vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html

@@ -15,7 +15,6 @@ We will also focus on the integration and the availability of your data into EOS
 <!-- Astronomers who want to publish their data (table, images, spectra, …), and make them available to the community, following the FAIR principles. -->
 
 Researchers in astronomy who want to make their published data (table, images, spectra, …) FAIR and openly accessible to the community. 
-long-lasting access to their data. 
 
 This training is also directed at researchers interested in ensuring long-lasting access to their data. 
 
@@ -37,8 +36,17 @@ By the end of this training, you will:
 ## Type of course
 
 This is an online course (self-learning).
+
 No prior knowledge is required.
 
+
+## Version
+
+Training version: xx
+
+Publication date: xx
+ 
+Last modified: xx
 
 
 ## License

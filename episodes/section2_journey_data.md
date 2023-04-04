@@ -20,18 +20,13 @@ exercises: 2
 
 
 <!--  ----------------------------------------- -->
-<!--            Overview                        -->
+<!--            Data at CDS                     -->
 <!--  ----------------------------------------- -->
-## Overview
+## What happens to your data at the CDS? 
 
+Once the data submitted on the CDS servers, some checking procedures are executed to verify the compatibility between the data files and their description. This can lead to interactions with the authors, but we are trying to minimize the level of interaction. Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating data centers (e.g. at CfA/Harvard (USA), CADC (Canada), or NOAJ/ADAC, Japan). 
 
-
-<!--  ----------------------------------------- -->
-<!--            Data journey                    -->
-<!--  ----------------------------------------- -->
-## What happens to your data? (from Vizier)
-
-Check: step 5, from https://vizier.cds.unistra.fr/vizier/submit.htx
+The data are also added to the [VizieR service][vizier-service], with mirrors at [CfA/Harvard (USA)][vizier-at-cfa], [NOAJ/ADAC (Japan)][vizier-at-noaj].
 
 
 
@@ -45,16 +40,13 @@ Check: step 5, from https://vizier.cds.unistra.fr/vizier/submit.htx
 
 
 
-<!--  ----------------------------------------- -->
-<!--  ----------------------------------------- -->
-<!--  ----------------------------------------- -->
-## *Ideas for the website* 
-
-
-
 
 <!--  ----------------------------------------- -->
 <!--            Link references                 -->
 <!--  ----------------------------------------- -->
 [vizier-homepage]: https://vizier.cds.unistra.fr/index.gml
+[ftp-cats]: https://cdsarc.cds.unistra.fr/viz-bin/ftp-index
+[vizier-service]: https://vizier.cds.unistra.fr/viz-bin/VizieR
+[vizier-at-cfa]: http://vizier.nao.ac.jp/
+[vizier-at-noaj]: https://vizier.cfa.harvard.edu/
 
