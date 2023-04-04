@@ -21,34 +21,70 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+***Other source: https://cdsarc.cds.unistra.fr/vizier.submit/help.html***
+
+***Other ressource: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5***
+
+***Other: https://vizier.cds.unistra.fr/vizier/submit.htx***
 
 
 <!--  ----------------------------------------- -->
-<!-- 		Overview 			-->
+<!-- 		Preparing Data Files		-->
 <!--  ----------------------------------------- -->
-## Overview
-
+<!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx -->
+## How to prepare the Data files?
 
 
 <!--  ----------------------------------------- -->
-<!-- 		Publishing 			-->
+<!-- 	Fill the Readme description file 	-->
 <!--  ----------------------------------------- -->
-## Publishing your data
-
-### How to send the above data? (from Vizier)
-
+<!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx -->
+## How to fill the ReadMe description file?
 
 
 
 
 <!--  ----------------------------------------- -->
-<!-- 		Documentation 			-->
+<!-- 		Submitting 			-->
 <!--  ----------------------------------------- -->
-## More documentation (from Vizier)
+<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section4 -->
+## Where to deposit the data? (from publication-notes.html)
 
-- [Preparing and Submitting Tabular Data][vizier-publi-data-home] 
-- [VizieR catalogue upload generalities][vizier-publi-notes-help]
-- [The submitting VizieR page documentation][vizier-submit-data-help]
+
+### Recommended way: new submission page (vizier.submit/)
+
+Since january 2018, the new submission interface is inline; it includes FITS ingestion procedure to improve the discoverability of images and spectra.
+
+Link: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login]
+
+Documentation: [doc][vizier-submit-data-help]
+
+
+### Old submission page (viz-bin/Submit)
+
+Link: [http://cdsarc.u-strasbg.fr/viz-bin/Submit][vizier-submit-old]
+
+
+### FTP depost or email
+
+- FTP deposit or e-mail : see the Publication support page (http://cds.u-strasbg.fr/vizier/submit.htx#ToC4)
+
+
+### Special case: large volumetry
+
+The submission web application is an HTTP service and depends of authors network. The process is dedicated for tables size less than 100Mb but accepts tables until ~200Mb. For larger files, please contact the VizieR staff ([cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)).
+
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Step-by-step submission		-->
+<!--  ----------------------------------------- -->
+<!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
+## Step-by-step submission
+
+
+
+
 
 
 
@@ -61,4 +97,6 @@ exercises: 2
 <!--  ----------------------------------------- -->
 [vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
+[vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
+[vizier-submit-old]: http://cdsarc.u-strasbg.fr/viz-bin/Submit
