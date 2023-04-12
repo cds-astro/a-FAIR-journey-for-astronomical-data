@@ -51,10 +51,21 @@ Last modified: xx
 
 ## License
 
+This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website).
+
+
 All materials are developed online openly under CC-BY 4.0 License using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
 
 
 ## Contact
 
 If you have got any questions, feel free to contact directly the VizieR team at: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) .
+
+
+
+<!--  ----------------------------------------- -->
+<!--            Link references                 -->
+<!--  ----------------------------------------- -->
+[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
+
 

@@ -8,6 +8,7 @@ exercises: 2
 
 - What happens to your data?
 - How does your published data get into EOSC?
+- What is a DOI?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
