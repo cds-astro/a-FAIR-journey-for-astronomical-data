@@ -43,6 +43,57 @@ exercises: 2
 
 
 
+<!--  ----------------------------------------- -->
+<!-- 		Submission routes and journals	-->
+<!--  ----------------------------------------- -->
+## How to submit your data?
+
+
+::::::::::::::::::::::::::::::::::::::: discussion
+
+### Details
+
+The submission routes for your data vary depending where you submitted your paper.
+
+ 
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::: solution
+
+### A&A
+
+Bla bla bla
+
+:::::::::::::::::::::::::
+
+:::::::::::::::: solution
+
+### AAS (ApJ, AJ, ...)
+
+Bla bla bla
+
+:::::::::::::::::::::::::
+
+
+:::::::::::::::: solution
+
+### Other journals
+
+eg. MNRAS, Nature ?
+
+
+:::::::::::::::::::::::::
+
+
+:::::::::::::::: solution
+
+### Big surveys 
+
+Gaia, Panstarrs ...
+
+:::::::::::::::::::::::::
+
 
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
