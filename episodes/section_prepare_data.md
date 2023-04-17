@@ -21,13 +21,6 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-***Other source: https://cdsarc.cds.unistra.fr/vizier.submit/help.html***
-
-***Other ressource: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5***
-
-***Other: https://vizier.cds.unistra.fr/vizier/submit.htx***
-
-
 <!--  ----------------------------------------- -->
 <!-- 		Preparing Data Files		-->
 <!--  ----------------------------------------- -->
@@ -119,7 +112,7 @@ For large sets of references, it is suggested to gather them into a dedicated *r
 <!--  ----------------------------------------- -->
 <!-- 		Submission routes and journals	-->
 <!--  ----------------------------------------- -->
-## How to submit your data?
+## Submission routes and journals
 
 
 ::::::::::::::::::::::::::::::::::::::: discussion
@@ -134,26 +127,87 @@ The submission routes for your data vary depending where you submitted your pape
 
 :::::::::::::::: solution
 
-### A&A
+### Astronomy & Astrophysics Journal (A&A)
 
-Bla bla bla
+By contract with the Journal, the CDS archives the primary data that are published in A&A and puts them at the disposal of the global community.
+
+Once their papers accepted, the **authors submit their MRT files directly** to the CDS.
+
+
+List of journals included:
+
+- Astronomy & Astrophysics: A&A
+- Astronomy & Astrophysics Supplement Series: A&AS
+
+
+*References* (from the A&A webpage):
+
+- [A&A homepage][aa-home]
+- [Publishing tables data to the CDS][aa-publi-data-cds] 
+- [Astronomical objects: linking to databases][aa-astro-objects-link]
 
 :::::::::::::::::::::::::
+
+
 
 :::::::::::::::: solution
 
-### AAS (ApJ, AJ, ...)
+### American Astronomical Society Journals (AAS)
 
-Bla bla bla
+The authors should try to prepare their lenghty tables as machine readable table (MRT) format. 
+Then, **VizieR harvests AAS Journal MRTs** and makes these data discoverable and searchable via Virtual Observatory protocols, which is another benefit to using this data format.
+
+
+List of journals included:
+
+- Astrophysical Journal Letters: AJL
+- Astronomical Journal: AJ 
+- Astrophysical Journal: ApJ
+- Astrophysical Journal Supplement Series: ApJS
+- Planeterary Science: Planet. Sci.
+- Research notes of the AAS: Res. Notes
+
+
+*Reference* (from the AAS webpage):
+
+- [AAS homepage][aas-home]
+- [Data Guide][aas-data-guide]
 
 :::::::::::::::::::::::::
+
+
+
+:::::::::::::::: solution
+
+#### Monthly Notices of the Royal Astronomical Society (MNRAS)
+
+Authors are encouraged to **upload machine-readable versions of their tables on the VizieR database**.
+Authors should consult the CDS website for instructions on preparing and submitting tabular data, which include a [template][vizier-readme-example-aa] that can be adapted for MNRAS tables. A hyperlink can be included to CDS from the electronic text of the MNRAS article.
+
+
+*References* (from the MNRAS webpage):
+
+- [MNRAS homepage][mnras-home]
+- [Catalogues and online material][mnras-publi-data-cds] 
+
+:::::::::::::::::::::::::
+
 
 
 :::::::::::::::: solution
 
 ### Other journals
 
-eg. MNRAS, Nature ?
+
+- Acta Astronomica: AcA
+- Astronomische Nachrichten: AN
+- Astronomicheskii Zhurnal (Russian): AZh
+- Baltic Astronomy: BaltA
+- Publications of the Astronomical Society of Japan: PASJ
+- Publications of the Astronomical Society of the Pacific: PASP
+- Pis'ma v Astronomicheskii Zhurnal (Astronomy Letters): PAZh
+
+
 
 
 :::::::::::::::::::::::::
@@ -163,14 +217,35 @@ eg. MNRAS, Nature ?
 
 ### Big surveys 
 
+- Astrometric Data: eg. Gaia
+- Photometric Data:
+- Spectroscopic Data:
+- Cross-Identifications:
+- High-Energy data:
+- Combined data:
+- Miscellaneous:
+- Non-stellar Objects:
+- Radio and Far-IR data: 
+  
 Gaia, Panstarrs ...
 
 :::::::::::::::::::::::::
 
 
+
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->
+[aa-home]: https://www.aanda.org/
+[aa-publi-data-cds]: https://www.aanda.org/for-authors/latex-issues/tables
+[aa-astro-objects-link]: https://www.aanda.org/for-authors/latex-issues/astronomical-objects-linking-to-databases
+<!-- -->
+[aas-home]: https://journals.aas.org/
+[aas-data-guide]: https://journals.aas.org/data-guide/
+<!-- -->
+[mnras-home]: https://academic.oup.com/mnras
+[mnras-publi-data-cds]: https://academic.oup.com/mnras/pages/General_Instructions#2.7%20Catalogues%20and%20online-only%20material
+<!-- -->
 [vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
 [vizier-cat-32-units]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx
 [vizier-cat-33-labels]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx
@@ -183,6 +258,7 @@ Gaia, Panstarrs ...
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
 [vizier-readme-std]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx
 [vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
+[vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 [vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
 [vizier-submit-old]: http://cdsarc.u-strasbg.fr/viz-bin/Submit

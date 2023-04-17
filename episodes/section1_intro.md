@@ -48,6 +48,16 @@ A full description of the standard conventions used for the documentation of the
 
 
 
+<!--  ----------------------------------------- -->
+<!--            VizieR stats                    -->
+<!--  ----------------------------------------- -->
+<!-- Source: -->
+## Some statistics
+
+Number of catalogues ingested: https://vizier.cds.unistra.fr/index.gml (top of the page)
+
+Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
+
 
 <!--  ----------------------------------------- -->
 <!--            Keypoints                       -->
@@ -82,26 +92,6 @@ A full description of the standard conventions used for the documentation of the
 - [Upload File to VizieR: generalities][vizier-publi-notes-help]
 - [The submitting VizieR page documentation][vizier-submit-data-help]
 
-
-
-
-
-<!--  ----------------------------------------- -->
-<!--  ----------------------------------------- -->
-<!--  ----------------------------------------- -->
-## *Ideas for the website* 
-
-1.1 - Publishing your data
-
-1.2 - Do and don’t // FAIR principles 
-
-- Findable, Accessible, Interoperable, Reusable
-
-- Best practices for preparation of data and its metadata. 
-
-1.3 - Something about the different types of data ? (tables, images, spectra, Hips, MOCs, simulation outputs, models… and how they fit in this path)
-
-- Add cheatsheets FAIR principles / publishing data
 
 
 
