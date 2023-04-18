@@ -121,7 +121,16 @@ For large sets of references, it is suggested to gather them into a dedicated *r
 
 The submission routes for your data vary depending where you submitted your paper.
 
+
+<!--[Journals origin in VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"}
+-->
+![Journals origin in VizieR, data from 2021 (**FIGURE TO BE UPDATED**)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"} 
  
+
+Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
+
+
+
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -199,6 +208,8 @@ Authors should consult the CDS website for instructions on preparing and submitt
 ### Other journals
 
 
+Examples of other journals included in VizieR:
+
 - Acta Astronomica: AcA
 - Astronomische Nachrichten: AN
 - Astronomicheskii Zhurnal (Russian): AZh
@@ -208,8 +219,6 @@ Authors should consult the CDS website for instructions on preparing and submitt
 - Pis'ma v Astronomicheskii Zhurnal (Astronomy Letters): PAZh
 
 
-
-
 :::::::::::::::::::::::::
 
 
@@ -217,17 +226,29 @@ Authors should consult the CDS website for instructions on preparing and submitt
 
 ### Big surveys 
 
-- Astrometric Data: eg. Gaia
-- Photometric Data:
-- Spectroscopic Data:
-- Cross-Identifications:
-- High-Energy data:
-- Combined data:
-- Miscellaneous:
-- Non-stellar Objects:
-- Radio and Far-IR data: 
+Bigger catalogues are usually **directly retrieved by VizieR**.
+
+Type of big catalogues included:
+
+- Astrometric Data: eg. [Gaia DR1 (Gaia Collaboration, 2016)][viz-astro-data]
+- Photometric Data: eg. [AllWISE Data Release (Cutri+ 2013)][viz-phot-data]
+- Spectroscopic Data: eg. [Henry Draper Catalogue and Extension (Cannon+ 1918-1924; ADC 1989)][viz-spectro-data]
+- Cross-Identifications: eg. [HD identifications for Tycho-2 stars (Fabricius+, 2002)][viz-cross-data] 
+- High-Energy data: eg. [ROSAT All-Sky Bright Source Catalogue (1RXS) (Voges+ 1999)][viz-high-data]
+- Combined data: eg. [The SDSS Photometric Catalog, Release 9 (Adelman-McCarthy+, 2012)][viz-comb-data]
+- Miscellaneous: eg. [All-sky spectrally matched Tycho2 stars (Pickles+, 2010)][viz-misc-data]
+- Non-stellar Objects: eg. [The 2MASS Extended sources (IPAC/UMass, 2003-2006)][viz-non-sto-data]
+- Radio and Far-IR data: eg. [1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+ 1998)][viz-radio-data]
   
-Gaia, Panstarrs ...
+
+<!--
+
+SELECT TOP 5 name, popu FROM METAcat
+WHERE name LIKE 'V/%'
+ORDER BY popu DESC;
+
+==> http://tapvizier.cds.unistra.fr/adql/
+-->
 
 :::::::::::::::::::::::::
 
@@ -262,3 +283,13 @@ Gaia, Panstarrs ...
 [vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
 [vizier-submit-old]: http://cdsarc.u-strasbg.fr/viz-bin/Submit
+<!-- -->
+[viz-astro-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=I/337
+[viz-phot-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=II/328
+[viz-spectro-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=III/135A
+[viz-cross-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IV/25
+[viz-high-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IX/10A
+[viz-comb-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=V/139
+[viz-misc-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VI/135
+[viz-non-sto-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VII/233 
+[viz-radio-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VIII/65 

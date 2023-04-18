@@ -119,16 +119,21 @@ For the sake of clarity and simplicity, we ask the authors, whenever possible, t
 If your associated data are correctly described, then they will be provided through the [VizieR associated data web page][vizier-assoc-page] and through the Virtual Observatory ([CASSIS][cassis], [Splat][splat], [Aladin][aladin-home]).
 
 
-### FITS validator
-
-Test your FITS spectra/images with the [FITS validator][vizier-fits-validator] which evaluates the compatibility between your FITS and the asked meta-data. This meta-data checking can be completed in the [VizieR submission service][vizier-submit-login].
-
-
 
 <!--  ----------------------------------------- -->
 <!-- 		Other types			-->
 <!--  ----------------------------------------- -->
 ## Other types
+
+
+<!--  ----------------------------------------- -->
+<!-- 		FITS validator			-->
+<!--  ----------------------------------------- -->
+## FITS validator
+
+Test your FITS spectra/images with the [FITS validator][vizier-fits-validator] which evaluates the compatibility between your FITS and the asked meta-data. This meta-data checking can be completed in the [VizieR submission service][vizier-submit-login].
+
+
 
 
 

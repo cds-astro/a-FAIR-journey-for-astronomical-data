@@ -41,8 +41,8 @@ See also the Best Practices for Data Publication in the Astronomical Literature 
 
 In order to facilitate the usability of the data, and to allow their processing by the data centers, we require that:
 
-- the data are ***described*** accurately enough to allow an unambiguous interpretation of the data, as well as a comprehension of the context in which the data were acquired and/or processed; a single ascii file, named ***ReadMe***, is designed for this role.
-- the data are in a format which allows their usage by tools currently in usage in our discipline — normally ***flat ascii files***; other formats can be accepted, but are converted into flat files.
+- the data are *described* accurately enough to allow an unambiguous interpretation of the data, as well as a comprehension of the context in which the data were acquired and/or processed; a single ascii file, named *ReadMe*, is designed for this role.
+- the data are in a format which allows their usage by tools currently in usage in our discipline — normally *flat ascii files*; other formats can be accepted, but are converted into flat files.
 
 A full description of the standard conventions used for the documentation of the catalogues is available at URL http://cds.unistra.fr/doc/catstd.htx. The present document just tries to answer to some frequently asked question about how to prepare the data for their inclusion in the Data Center documents. 
 
@@ -57,6 +57,7 @@ A full description of the standard conventions used for the documentation of the
 Number of catalogues ingested: https://vizier.cds.unistra.fr/index.gml (top of the page)
 
 Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
+
 
 
 <!--  ----------------------------------------- -->
@@ -77,7 +78,7 @@ Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse
 	- Query tables using ADQL/SQL with [TAPVizieR][tap-vizier]
 	- The [VizieR Photometry viewer][vizier-sed] is another output using tables for which filters are assigned to create SEDs.
 - **Simbad**: VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
-- **CDS Cross-match**: merge tables according to positions.
+- **[CDS Cross-match][xmatch-home]**: merge tables according to positions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -106,6 +107,7 @@ Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse
 <!-- -->
 [aladin-home]: http://aladin.cds.unistra.fr/aladin.gml
 [simbad-home]: http://simbad.cds.unistra.fr/simbad/
+[xmatch-home]: http://cdsxmatch.u-strasbg.fr/
 [tap-vizier]: http://tapvizier.cds.unistra.fr/adql/
 [vizier-data-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
 [vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
