@@ -213,7 +213,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="section_publi_data.html">4. Publishing astronomical data</a>
+        <a href="section_prepare_data.html">4. Preparing your data</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -225,7 +225,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="section2_journey_data.html">5. Journey of your data in the VO</a>
+        <a href="section_publi_data.html">5. Publishing astronomical data</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -237,7 +237,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="section3_eosc_intro.html">6. Explore EOSC</a>
+        <a href="section2_journey_data.html">6. Journey of your data in the VO</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -249,7 +249,19 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="introduction.html">7. Using Markdown</a>
+        <a href="section3_eosc_intro.html">7. Explore EOSC</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="introduction.html">8. Using Markdown</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -313,7 +325,7 @@
         
 <section id="aio-section1_intro"><p>Content from <a href="section1_intro.html">Why distribute your data through VizieR?</a></p>
 <hr>
-<p> Last updated on 2023-04-04 | 
+<p> Last updated on 2023-04-18 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section1_intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -354,15 +366,50 @@ standards.</li>
 <section id="overview"><h2 class="section-heading">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
 <hr class="half-width">
-<p>This course is based on <a href="https://vizier.cds.unistra.fr/vizier/submit.htx" class="external-link"><em>Preparing and
-Submitting Tabular Data</em></a> (VizieR website).</p>
-<!-- The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
-In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context. -->
+<p>The CDS and other astronomical data centers are storing and
+distributing the astronomical data to promote their usage primarily by
+professional astronomers.</p>
+<p>In order to ensure the scientific quality of the data, we therefore
+require that the data are related to a publication in a refereed
+journal, either as tables or catalogues actually published, or as a
+paper describing the data and their context.</p>
+<p>For a quick view of the guidelines and recommandations for publishing
+your data at CDS, please have a look at the <a href="https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf" class="external-link">“Make
+your data visible” brochure</a>.</p>
+<p>See also the Best Practices for Data Publication in the Astronomical
+Literature (T.Chen, 2022). The article is dedicated for authors, and is
+a basis of good practices expected in journals and data-centers.</p>
+<p>In order to facilitate the usability of the data, and to allow their
+processing by the data centers, we require that:</p>
+<ul>
+<li>the data are <em>described</em> accurately enough to allow an
+unambiguous interpretation of the data, as well as a comprehension of
+the context in which the data were acquired and/or processed; a single
+ascii file, named <em>ReadMe</em>, is designed for this role.</li>
+<li>the data are in a format which allows their usage by tools currently
+in usage in our discipline — normally <em>flat ascii files</em>; other
+formats can be accepted, but are converted into flat files.</li>
+</ul>
+<p>A full description of the standard conventions used for the
+documentation of the catalogues is available at URL <a href="http://cds.unistra.fr/doc/catstd.htx" class="external-link uri">http://cds.unistra.fr/doc/catstd.htx</a>. The present
+document just tries to answer to some frequently asked question about
+how to prepare the data for their inclusion in the Data Center
+documents.</p>
+<!--  ----------------------------------------- -->
+<!--            VizieR stats                    -->
+<!--  ----------------------------------------- -->
+<!-- Source: -->
+</section><section id="some-statistics"><h2 class="section-heading">Some statistics<a class="anchor" aria-label="anchor" href="#some-statistics"></a>
+</h2>
+<hr class="half-width">
+<p>Number of catalogues ingested: <a href="https://vizier.cds.unistra.fr/index.gml" class="external-link uri">https://vizier.cds.unistra.fr/index.gml</a> (top of the
+page)</p>
+<p>Catalogue per journal: <a href="https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation" class="external-link uri">https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation</a></p>
 <!--  ----------------------------------------- -->
 <!--            Keypoints                       -->
 <!--  ----------------------------------------- -->
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
-</section><section id="summary"><h2 class="section-heading">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
+</section><section id="benefits-of-using-vizier"><h2 class="section-heading">Benefits of using VizieR<a class="anchor" aria-label="anchor" href="#benefits-of-using-vizier"></a>
 </h2>
 <hr class="half-width">
 <div id="keypoints1" class="callout keypoints">
@@ -408,8 +455,8 @@ are assigned to create SEDs.</li>
 <strong>Simbad</strong>: VizieR tables with astronomical objects can
 be processed in <a href="http://simbad.cds.unistra.fr/simbad/" class="external-link">SIMBAD</a>.</li>
 <li>
-<strong>CDS Cross-match</strong>: merge tables according to
-positions.</li>
+<strong><a href="http://cdsxmatch.u-strasbg.fr/" class="external-link">CDS
+Cross-match</a></strong>: merge tables according to positions.</li>
 </ul>
 </div>
 </div>
@@ -423,33 +470,17 @@ positions.</li>
 <ul>
 <li><a href="https://vizier.cds.unistra.fr/vizier/submit.htx" class="external-link">Preparing
 and Submitting Tabular Data</a></li>
-<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html" class="external-link">VizieR
-catalogue upload generalities</a></li>
+<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html" class="external-link">Upload
+File to VizieR: generalities</a></li>
 <li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">The
 submitting VizieR page documentation</a></li>
-</ul>
-<!--  ----------------------------------------- --><!--  ----------------------------------------- --><!--  ----------------------------------------- --></section><section id="ideas-for-the-website"><h2 class="section-heading">
-<em>Ideas for the website</em><a class="anchor" aria-label="anchor" href="#ideas-for-the-website"></a>
-</h2>
-<hr class="half-width">
-<p>1.1 - Publishing your data</p>
-<p>1.2 - Do and don’t // FAIR principles</p>
-<ul>
-<li><p>Findable, Accessible, Interoperable, Reusable</p></li>
-<li><p>Best practices for preparation of data and its metadata.</p></li>
-</ul>
-<p>1.3 - Something about the different types of data ? (tables, images,
-spectra, Hips, MOCs, simulation outputs, models… and how they fit in
-this path)</p>
-<ul>
-<li>Add cheatsheets FAIR principles / publishing data</li>
 </ul>
 <!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-04-04 | 
+<p> Last updated on 2023-04-18 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_fair_astro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -494,7 +525,17 @@ standards.</li>
 accessible, interoperable and reusable that ultimately ensures
 standardised machine actionability.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/FAIR_data_principles.jpg" alt="Findable Accessible Interoperable Reusable principes" class="figure mx-auto d-block"><em>Credit: SangyaPundir, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0" class="external-link uri">https://creativecommons.org/licenses/by-sa/4.0</a>, via
-Wikimedia Commons</em></figure><!--  ----------------------------------------- --><!-- 		Keypoints 			--><!--  ----------------------------------------- --></section><section id="essential-points"><h2 class="section-heading">Essential points<a class="anchor" aria-label="anchor" href="#essential-points"></a>
+Wikimedia Commons</em></figure><!--  ----------------------------------------- --><!-- 		Best Practices (Chen+22)	--><!--  ----------------------------------------- --></section><section id="best-practices-for-data-publication-in-the-astronomical-literature"><h2 class="section-heading">Best Practices for Data Publication in the Astronomical
+Literature<a class="anchor" aria-label="anchor" href="#best-practices-for-data-publication-in-the-astronomical-literature"></a>
+</h2>
+<hr class="half-width">
+<p><strong><em>Link: <a href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268" class="external-link uri">https://iopscience.iop.org/article/10.3847/1538-4365/ac6268</a></em></strong></p>
+<p>The article is dedicated for authors, and is a basis of good
+practices expected in journals and data-centers.</p>
+<!--  ----------------------------------------- -->
+<!-- 		Keypoints 			-->
+<!--  ----------------------------------------- -->
+</section><section id="raise-the-odds-to-be-included-in-vizier"><h2 class="section-heading">Raise the odds to be included in VizieR!<a class="anchor" aria-label="anchor" href="#raise-the-odds-to-be-included-in-vizier"></a>
 </h2>
 <hr class="half-width">
 <div id="keypoints1" class="callout keypoints">
@@ -520,16 +561,6 @@ identified with the <strong>same name between tables</strong>.</li>
 </div>
 </div>
 </div>
-<!--  ----------------------------------------- -->
-<!-- 		Best Practices (Chen+22)	-->
-<!--  ----------------------------------------- -->
-</section><section id="best-practices-for-data-publication-in-the-astronomical-literature"><h2 class="section-heading">Best Practices for Data Publication in the Astronomical
-Literature<a class="anchor" aria-label="anchor" href="#best-practices-for-data-publication-in-the-astronomical-literature"></a>
-</h2>
-<hr class="half-width">
-<p><strong><em>Link: <a href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268" class="external-link uri">https://iopscience.iop.org/article/10.3847/1538-4365/ac6268</a></em></strong></p>
-<p>The article is dedicated for authors, and is a basis of good
-practices expected in journals and data-centers.</p>
 <!--  ----------------------------------------- -->
 <!-- 		Ideas	 			-->
 <!--  ----------------------------------------- -->
@@ -572,7 +603,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></section><section id="aio-section_type_data"><p>Content from <a href="section_type_data.html">Type of data</a></p>
 <hr>
-<p> Last updated on 2023-04-04 | 
+<p> Last updated on 2023-04-18 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_type_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -765,14 +796,6 @@ center … (FITS cards: CRVAL, CDELT, CDi_j, CTYPE, CUNIT, CRPIX..)</li>
 <p>If your associated data are correctly described, then they will be
 provided through the [VizieR associated data web
 page][vizier-assoc-page] and through the Virtual Observatory (<a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a>, <a href="http://star-www.dur.ac.uk/~pdraper/splat/splat.html" class="external-link">Splat</a>, <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>).</p>
-</div>
-<div class="section level3">
-<h3 id="fits-validator">FITS validator<a class="anchor" aria-label="anchor" href="#fits-validator"></a>
-</h3>
-<p>Test your FITS spectra/images with the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" class="external-link">FITS
-validator</a> which evaluates the compatibility between your FITS and
-the asked meta-data. This meta-data checking can be completed in the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
-submission service</a>.</p>
 <!--  ----------------------------------------- -->
 <!-- 		Other types			-->
 <!--  ----------------------------------------- -->
@@ -780,12 +803,430 @@ submission service</a>.</p>
 </section><section id="other-types"><h2 class="section-heading">Other types<a class="anchor" aria-label="anchor" href="#other-types"></a>
 </h2>
 <hr class="half-width">
-<!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- 
+<!--  ----------------------------------------- --><!-- 		FITS validator			--><!--  ----------------------------------------- --></section><section id="fits-validator"><h2 class="section-heading">FITS validator<a class="anchor" aria-label="anchor" href="#fits-validator"></a>
+</h2>
+<hr class="half-width">
+<p>Test your FITS spectra/images with the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" class="external-link">FITS
+validator</a> which evaluates the compatibility between your FITS and
+the asked meta-data. This meta-data checking can be completed in the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
+submission service</a>.</p>
+<!--  ----------------------------------------- -->
+<!-- 		Link references			-->
+<!--  ----------------------------------------- -->
+<!-- -->
+<!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- --></section></section><section id="aio-section_publi_data"><p>Content from <a href="section_publi_data.html">Publishing astronomical data</a></p>
+ -->
+</section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-04-04 | 
+<p> Last updated on 2023-04-18 | 
+        
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How and where to publish your data?</li>
+<li>What kind of data can be published (tables, images) ?</li>
+<li>Do and don’t when publishing data?</li>
+<li>What are the FAIR principles?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Be aware of the Findable, Accessible, Interoperable and Reusable
+(FAIR) principles, when preparing your data and its metadata.</li>
+<li>Be aware of how to publish your data in the existing and new Open
+Science systems, keeping in mind the Virtual Observatory (VO)
+standards.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="how-to-prepare-the-data-files"><h2 class="section-heading">How to prepare the Data files?<a class="anchor" aria-label="anchor" href="#how-to-prepare-the-data-files"></a>
+</h2>
+<hr class="half-width">
+<p>It is assumed that each component of the data set is stored in a
+<em>file</em>; each file can represent a <em>table</em>, a
+<em>spectrum</em> (1-D data), or an <em>image</em> (2-D data). As a
+general rule, plain ascii data files (also called <em>flat files</em>) —
+are preferred, simply because such files can always be processed. More
+explicitely, the following formats can be used:</p>
+<ul>
+<li>for tables and catalogues: <strong>ascii</strong> (simple flat
+files), with details about their structures (description of columns)
+detailed in the ReadMe file. Some other data formats can be accepted,
+but are converted into flat files: latex, FITS, or TSV / CSV. TSV
+(tab-separated values) and CSV (character-separated values), are a
+presentation where a dedicated character (the tab in TSV, or a
+punctuation in CSV, typically the semi-colon) is used as a column
+separator; this is one of the formats available for the output of
+spreadsheets.</li>
+</ul>
+<p><strong>What cannot be used</strong>: postscript or word/excel
+processing internal documents.</p>
+<ul>
+<li>for spectra (1-D data): either FITS file(s), or 2-column ascii
+tables.</li>
+</ul>
+<p><strong>What cannot be used</strong>: postscript, word/excel
+documents, GIF or JPEG images.</p>
+<ul>
+<li>for images (2-D data): FITS is the preferred format; for images of
+the sky, the inclusion of the FITS-WCS (World Coordinate System)
+parameters describing the conversion between celestial coordinates and
+pixel position is strongly encouraged.</li>
+</ul>
+<p><strong>What cannot be used</strong>: postscript, word/excel
+documents.</p>
+<p>Therefore: <strong>never postscript files</strong>, postscript is a
+language designed for printers, not for storing scientific data !</p>
+<p>A short word about <strong>file naming conventions</strong>:
+according to ISO 9660 standard, file names are restricted to <strong>8 +
+3</strong> characters: 8 characters in the set [a-z0-9 _ -], followed by
+a dot and an extension made of 3 characters with the following
+conventions: <strong>.dat</strong> for data files, <strong>.fit</strong>
+for FITS files, <strong>.tex</strong> for TeX/LaTeX files, and
+<strong>.txt</strong> for text files (ascii files containing only
+printable text).</p>
+<p>Full details about the files and directories structures can be found
+in the <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx" class="external-link">Adopted
+Standards for Catalogues document</a>.</p>
+<p>The CDS provides <strong>tools and services</strong> for authors
+submission :</p>
+<ul>
+<li>build ReadMe and tables: <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link">anafile
+package</a>
+</li>
+<li>FITS spectra/images validation service: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" class="external-link">FITS
+validator</a>
+</li>
+</ul>
+<!--  ----------------------------------------- --><!-- 	Fill the Readme description file 	--><!--  ----------------------------------------- --><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 --></section><section id="how-to-fill-the-readme-description-file"><h2 class="section-heading">How to fill the ReadMe description file?<a class="anchor" aria-label="anchor" href="#how-to-fill-the-readme-description-file"></a>
+</h2>
+<hr class="half-width">
+<p>This file is aimed at describing all data files stored in a
+catalogued data set, and at providing the necessary explanations and
+references to the stored material.</p>
+<p>All catalogues available at CDS and in associated astronomical data
+centers have such an associated file, and numerous examples can be found
+on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP
+directories</a> at CDS.</p>
+<p>A full description of the conventions used in this <em>ReadMe</em>
+file can be found in the <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx" class="external-link">Standards
+for Astronomical Catalogues</a>, and a template is readily accessible
+for all journals. A typical illustration could be e.g. <a href="https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe" class="external-link">J/A+A/382/389/ReadMe</a>.
+Short explanations about how to fill the <em>ReadMe</em> file:</p>
+<ul>
+<li><p>the <strong>volume</strong> and <strong>page</strong> numbers:
+for papers accepted for publication in A&amp;A, but not yet published,
+these will be added directly at CDS as soon as we get these from the
+publisher. For papers accepted for publication in other journals, it is
+recommended to mail them (to <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>)
+when you get these details from the publisher.</p></li>
+<li>
+<p>the <strong>Keywords</strong>: part lists the following
+keywords:</p>
+<ul>
+<li>
+<em>ADC_Keywords</em> introduces the list of data-related keywords,
+out of a controlled set</li>
+<li>
+<em>Keywords</em>: introduces the list of keywords as in the printed
+publication</li>
+</ul>
+</li>
+</ul>
+<p>Unlike the <em>Keywords</em>: set which is generally related to the
+scientific goal of a paper, the <em>ADC_Keywords</em> are stricly
+related to the tabular material collected in the paper.</p>
+<ul>
+<li><p>the <strong>Description</strong>: section is expected to describe
+the <em>context of the data</em>, like the instrumentation used or the
+observing conditions — it therefore differs from the <em>Abstract</em>
+which tends to describe the <em>scientific results</em> that the author
+derived from the data.</p></li>
+<li><p>the <strong>File Summary</strong>: section describes the files
+making up the set: for each file are specified its <em>filename</em>,
+the <em>length of the longest line</em> (lrecl), the <em>number of
+records</em> (number of lines), and a <em>caption</em> (short title of
+the file). Lengthy notes can be added if necessary.</p></li>
+<li>
+<p>the <strong>Byte-by-byte Description of file</strong>: section
+describes the structure of each of the data files (files with the
+<em>.dat</em> extension). This description is made in a tabular form,
+each row describing one field (column) of the data file. The description
+contains the following columns:</p>
+<ul>
+<li>the <em>starting</em> column of the data field</li>
+<li>the <em>format</em> of the field as a <em>fortran-like</em> format:
+<ul>
+<li>
+<strong>A</strong><em>n</em> for a character column made of
+<em>n</em> characters;</li>
+<li>
+<strong>I</strong><em>n</em> for a column containing an integer
+number of <em>n</em> digits;</li>
+<li>
+<strong>F</strong><em>n.d</em> for a column containing a number of
+width <em>n</em> digits and up to <em>d</em> digits in the fractional
+part;</li>
+<li>
+<strong>E</strong><em>n.d</em> for a number using the exponential
+notation;</li>
+<li>
+<strong>D</strong><em>n.d</em>
+</li>
+</ul>
+</li>
+<li>the <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx" class="external-link">units</a>
+used in the field; the usage of <strong>SI</strong> units are strongly
+encouraged, avoid the CGS units (for instance, use
+<strong>mW/m2</strong> instead of <strong>ergs/s/cm2</strong>).</li>
+<li>the <em>label</em> (heading) of the field, made of a single word
+(<em>no embedded blank</em>); a few <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx" class="external-link">basic
+conventions</a> are used for usual parameters (e.g. positions) and
+related quantities (e.g. mean errors).</li>
+<li>the <em>explanations</em> can start with the following special
+characters related to some important data characteristics:
+<ul>
+<li>
+<strong>*</strong> (the asterisk) indicating a <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx" class="external-link">lengthy
+note</a>
+</li>
+<li>
+<strong>[…]</strong> (square brackets) indicating <em>data
+ranges</em>
+</li>
+<li>
+<strong>?</strong> (question mark) indicating a possibility of <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx" class="external-link">blank
+or NULL</a> (unspecified) values</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>the <strong>References</strong>: section contains the necessary
+references; the usage of the bibcode(<strong>WARNING: link not
+found</strong>) is strongly encouraged.</p></li>
+</ul>
+<p>For large sets of references, it is suggested to gather them into a
+dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
+<!--  ----------------------------------------- -->
+<!-- 		Submission routes and journals	-->
+<!--  ----------------------------------------- -->
+</section><section id="submission-routes-and-journals"><h2 class="section-heading">Submission routes and journals<a class="anchor" aria-label="anchor" href="#submission-routes-and-journals"></a>
+</h2>
+<hr class="half-width">
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="details" class="callout-inner">
+<h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#discussion1"></a>
+</h3>
+<div class="callout-content">
+<p>The submission routes for your data vary depending where you
+submitted your paper.</p>
+<!--[Journals origin in VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"}
+-->
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/journals_origin_on_vizier_from_2021.png" alt="Pie chart: Journals origin in VizieR, data from 2021" class="figure mx-auto d-block"><figcaption>Journals origin in VizieR, data from 2021
+(<strong>FIGURE TO BE UPDATED</strong>)</figcaption></figure><p>Catalogue per journal: <a href="https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation" class="external-link uri">https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation</a></p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Astronomy &amp; Astrophysics Journal (A&amp;A)
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>By contract with the Journal, the CDS archives the primary data that
+are published in A&amp;A and puts them at the disposal of the global
+community.</p>
+<p>Once their papers accepted, the <strong>authors submit their MRT
+files directly</strong> to the CDS.</p>
+<p>List of journals included:</p>
+<ul>
+<li>Astronomy &amp; Astrophysics: A&amp;A</li>
+<li>Astronomy &amp; Astrophysics Supplement Series: A&amp;AS</li>
+</ul>
+<p><em>References</em> (from the A&amp;A webpage):</p>
+<ul>
+<li><a href="https://www.aanda.org/" class="external-link">A&amp;A homepage</a></li>
+<li><a href="https://www.aanda.org/for-authors/latex-issues/tables" class="external-link">Publishing
+tables data to the CDS</a></li>
+<li><a href="https://www.aanda.org/for-authors/latex-issues/astronomical-objects-linking-to-databases" class="external-link">Astronomical
+objects: linking to databases</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  American Astronomical Society Journals (AAS)
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>The authors should try to prepare their lenghty tables as machine
+readable table (MRT) format. Then, <strong>VizieR harvests AAS Journal
+MRTs</strong> and makes these data discoverable and searchable via
+Virtual Observatory protocols, which is another benefit to using this
+data format.</p>
+<p>List of journals included:</p>
+<ul>
+<li>Astrophysical Journal Letters: AJL</li>
+<li>Astronomical Journal: AJ</li>
+<li>Astrophysical Journal: ApJ</li>
+<li>Astrophysical Journal Supplement Series: ApJS</li>
+<li>Planeterary Science: Planet. Sci.</li>
+<li>Research notes of the AAS: Res. Notes</li>
+</ul>
+<p><em>Reference</em> (from the AAS webpage):</p>
+<ul>
+<li><a href="https://journals.aas.org/" class="external-link">AAS homepage</a></li>
+<li><a href="https://journals.aas.org/data-guide/" class="external-link">Data Guide</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Monthly Notices of the Royal Astronomical Society (MNRAS)
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>Authors are encouraged to <strong>upload machine-readable versions of
+their tables on the VizieR database</strong>. Authors should consult the
+CDS website for instructions on preparing and submitting tabular data,
+which include a <a href="http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt" class="external-link">template</a>
+that can be adapted for MNRAS tables. A hyperlink can be included to CDS
+from the electronic text of the MNRAS article.</p>
+<p><em>References</em> (from the MNRAS webpage):</p>
+<ul>
+<li><a href="https://academic.oup.com/mnras" class="external-link">MNRAS homepage</a></li>
+<li><a href="https://academic.oup.com/mnras/pages/General_Instructions#2.7%20Catalogues%20and%20online-only%20material" class="external-link">Catalogues
+and online material</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  Other journals
+  </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<p>Examples of other journals included in VizieR:</p>
+<ul>
+<li>Acta Astronomica: AcA</li>
+<li>Astronomische Nachrichten: AN</li>
+<li>Astronomicheskii Zhurnal (Russian): AZh</li>
+<li>Baltic Astronomy: BaltA</li>
+<li>Publications of the Astronomical Society of Japan: PASJ</li>
+<li>Publications of the Astronomical Society of the Pacific: PASP</li>
+<li>Pis’ma v Astronomicheskii Zhurnal (Astronomy Letters): PAZh</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">
+  Big surveys
+  </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div class="accordion-body">
+<p>Bigger catalogues are usually <strong>directly retrieved by
+VizieR</strong>.</p>
+<p>Type of big catalogues included:</p>
+<ul>
+<li>Astrometric Data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=I/337" class="external-link">Gaia
+DR1 (Gaia Collaboration, 2016)</a>
+</li>
+<li>Photometric Data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=II/328" class="external-link">AllWISE
+Data Release (Cutri+ 2013)</a>
+</li>
+<li>Spectroscopic Data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=III/135A" class="external-link">Henry
+Draper Catalogue and Extension (Cannon+ 1918-1924; ADC 1989)</a>
+</li>
+<li>Cross-Identifications: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IV/25" class="external-link">HD
+identifications for Tycho-2 stars (Fabricius+, 2002)</a>
+</li>
+<li>High-Energy data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IX/10A" class="external-link">ROSAT
+All-Sky Bright Source Catalogue (1RXS) (Voges+ 1999)</a>
+</li>
+<li>Combined data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=V/139" class="external-link">The
+SDSS Photometric Catalog, Release 9 (Adelman-McCarthy+, 2012)</a>
+</li>
+<li>Miscellaneous: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VI/135" class="external-link">All-sky
+spectrally matched Tycho2 stars (Pickles+, 2010)</a>
+</li>
+<li>Non-stellar Objects: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VII/233" class="external-link">The
+2MASS Extended sources (IPAC/UMass, 2003-2006)</a>
+</li>
+<li>Radio and Far-IR data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VIII/65" class="external-link">1.4GHz
+NRAO VLA Sky Survey (NVSS) (Condon+ 1998)</a>
+</li>
+</ul>
+<!--
+
+SELECT TOP 5 name, popu FROM METAcat
+WHERE name LIKE 'V/%'
+ORDER BY popu DESC;
+
+==> http://tapvizier.cds.unistra.fr/adql/
+-->
+</div>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+<!-- 		Link references			-->
+<!--  ----------------------------------------- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ -->
+</section></section><section id="aio-section_publi_data"><p>Content from <a href="section_publi_data.html">Publishing astronomical data</a></p>
+<hr>
+<p> Last updated on 2023-04-18 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_publi_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -826,49 +1267,77 @@ standards.</li>
 <p><strong><em>Other source: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link uri">https://cdsarc.cds.unistra.fr/vizier.submit/help.html</a></em></strong></p>
 <p><strong><em>Other ressource: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5" class="external-link uri">https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5</a></em></strong></p>
 <p><strong><em>Other: <a href="https://vizier.cds.unistra.fr/vizier/submit.htx" class="external-link uri">https://vizier.cds.unistra.fr/vizier/submit.htx</a></em></strong></p>
-<section id="how-to-prepare-the-data-files"><h2 class="section-heading">How to prepare the Data files?<a class="anchor" aria-label="anchor" href="#how-to-prepare-the-data-files"></a>
-</h2>
-<hr class="half-width">
-<!--  ----------------------------------------- --><!-- 	Fill the Readme description file 	--><!--  ----------------------------------------- --><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx --></section><section id="how-to-fill-the-readme-description-file"><h2 class="section-heading">How to fill the ReadMe description file?<a class="anchor" aria-label="anchor" href="#how-to-fill-the-readme-description-file"></a>
-</h2>
-<hr class="half-width">
-<!--  ----------------------------------------- --><!-- 		Submitting 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section4 --></section><section id="where-to-deposit-the-data-from-publication-notes.html"><h2 class="section-heading">Where to deposit the data? (from publication-notes.html)<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data-from-publication-notes.html"></a>
+<section id="where-to-deposit-the-data"><h2 class="section-heading">Where to deposit the data?<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
-<h3 id="recommended-way-new-submission-page-vizier-submit">Recommended way: new submission page (vizier.submit/)<a class="anchor" aria-label="anchor" href="#recommended-way-new-submission-page-vizier-submit"></a>
+<h3 id="submission-form-recommended-way">Submission form (recommended way)<a class="anchor" aria-label="anchor" href="#submission-form-recommended-way"></a>
 </h3>
-<p>Since january 2018, the new submission interface is inline; it
+<p>Since January 2018, the new submission interface is inline.</p>
+<p>Some basic checks on the ReadMe and data files are performed. It also
 includes FITS ingestion procedure to improve the discoverability of
 images and spectra.</p>
+<p><strong><em>Sentence needed???</em></strong> The checking procedure
+is also available as the anafile package which can be installed with the
+standard configure and make Linux procedures (man page).</p>
+<p>Step-by-step procedure summarizes below.</p>
 <p>Link: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a></p>
 <p>Documentation: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">doc</a></p>
 </div>
 <div class="section level3">
-<h3 id="old-submission-page-viz-binsubmit">Old submission page (viz-bin/Submit)<a class="anchor" aria-label="anchor" href="#old-submission-page-viz-binsubmit"></a>
+<h3 id="ftp-deposit">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit"></a>
 </h3>
-<p>Link: <a href="http://cdsarc.u-strasbg.fr/viz-bin/Submit" class="external-link">http://cdsarc.u-strasbg.fr/viz-bin/Submit</a></p>
+<p>FTP deposit: see the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</p>
+<p>Since October 2021, FTP uploads now requires a login
+authentification. A web application is available for authors to obtain a
+temporary login/password: <a href="https://cds.unistra.fr/ftp/token/" class="external-link">https://cds.unistra.fr/ftp/token/</a>
+(include the FTP instruction).</p>
 </div>
 <div class="section level3">
-<h3 id="ftp-depost-or-email">FTP depost or email<a class="anchor" aria-label="anchor" href="#ftp-depost-or-email"></a>
+<h3 id="other-possibilities">Other possibilities<a class="anchor" aria-label="anchor" href="#other-possibilities"></a>
 </h3>
-<ul>
-<li>FTP deposit or e-mail : see the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</li>
-</ul>
-</div>
-<div class="section level3">
-<h3 id="special-case-large-volumetry">Special case: large volumetry<a class="anchor" aria-label="anchor" href="#special-case-large-volumetry"></a>
-</h3>
+<div class="section level4">
+<h4 id="special-case-large-volumetry">Special case: large volumetry<a class="anchor" aria-label="anchor" href="#special-case-large-volumetry"></a>
+</h4>
 <p>The submission web application is an HTTP service and depends of
 authors network. The process is dedicated for tables size less than
-100Mb but accepts tables until ~200Mb. For larger files, please contact
-the VizieR staff (<a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>).</p>
+100Mb but accepts tables until ~200Mb.</p>
+<p>For larger files, please contact the VizieR staff (<a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>).</p>
+</div>
+<div class="section level4">
+<h4 id="email">Email<a class="anchor" aria-label="anchor" href="#email"></a>
+</h4>
+<p>E-mail your files to the e-mail address <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>
+if these are not too bulky (&lt; a few Megabytes).</p>
+</div>
+<div class="section level4">
+<h4 id="others">Others<a class="anchor" aria-label="anchor" href="#others"></a>
+</h4>
+<p>Contact us for other possibilities like download from your site, DVD
+posting, etc… at:</p>
+<p>Centre de Données astronomiques</p>
+<p>11, rue de l’Université</p>
+<p>67000 STRASBOURG, France</p>
+<p><a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a></p>
 <!--  ----------------------------------------- -->
-<!-- 		Step-by-step submission		-->
+<!-- 		Step-by-step: submission form	-->
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 </div>
-</section><section id="step-by-step-submission"><h2 class="section-heading">Step-by-step submission<a class="anchor" aria-label="anchor" href="#step-by-step-submission"></a>
+</div>
+</section><section id="step-by-step-submission-form"><h2 class="section-heading">Step-by-step: Submission form<a class="anchor" aria-label="anchor" href="#step-by-step-submission-form"></a>
+</h2>
+<hr class="half-width">
+<!--  ----------------------------------------- --><!-- 		Step-by-step: FTP		--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --></section><section id="step-by-step-python-ftp"><h2 class="section-heading">Step-by-step: Python + FTP<a class="anchor" aria-label="anchor" href="#step-by-step-python-ftp"></a>
+</h2>
+<hr class="half-width"></section><section id="python-cdspyreadme-library"><h2 class="section-heading">Python cdspyreadme library<a class="anchor" aria-label="anchor" href="#python-cdspyreadme-library"></a>
+</h2>
+<hr class="half-width">
+<p>Aim: Build ReadMe and MRT builder for authors</p>
+<p>Link to Python package: <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link">cdspydreadme</a></p>
+<iframe src="https://cds-astro.github.io/jupyterlite/lab/index.html" style="border: 1px solid #464646; width: 98%; height:400px" allowfullscreen allow="autoplay" data-external="1">
+</iframe>
+</section><section id="ftp-deposit-1"><h2 class="section-heading">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit-1"></a>
 </h2>
 <hr class="half-width">
 <!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- 
@@ -876,7 +1345,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></section><section id="aio-section2_journey_data"><p>Content from <a href="section2_journey_data.html">Journey of your data in the VO</a></p>
 <hr>
-<p> Last updated on 2023-04-04 | 
+<p> Last updated on 2023-04-18 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section2_journey_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -892,6 +1361,7 @@ any links that you are not going to use.
 <ul>
 <li>What happens to your data?</li>
 <li>How does your published data get into EOSC?</li>
+<li>What is a DOI?</li>
 </ul>
 </div>
 </div>
@@ -1265,7 +1735,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2023-04-04",
+  "dateCreated": "2023-04-18",
   "dateModified": "2023-04-18",
   "datePublished": "2023-04-18"
 }

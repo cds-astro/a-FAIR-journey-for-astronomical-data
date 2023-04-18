@@ -70,6 +70,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/section_fair_astro.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/section_prepare_data.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/section_publi_data.html</loc>
   </url>
   <url>
@@ -101,6 +104,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/section_fair_astro.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/section_prepare_data.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/section_publi_data.html</loc>

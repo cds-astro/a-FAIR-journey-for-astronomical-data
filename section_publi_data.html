@@ -85,11 +85,11 @@
   The journey of your data through the Virtual Observatory and the European Open Science Cloud
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 43%" class="percentage">
-    43%
+<aside class="col-md-12 lesson-progress"><div style="width: 50%" class="percentage">
+    50%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 43%" aria-valuenow="43" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 50%" aria-valuenow="50" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -168,6 +168,15 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="section_prepare_data.html">4. Preparing your data</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
@@ -181,21 +190,13 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#how-to-prepare-the-data-files">How to prepare the Data files?</a></li>
-<li><a href="#how-to-fill-the-readme-description-file">How to fill the ReadMe description file?</a></li>
-<li><a href="#where-to-deposit-the-data-from-publication-notes.html">Where to deposit the data? (from publication-notes.html)</a></li>
-<li><a href="#step-by-step-submission">Step-by-step submission</a></li>
+        <ul><li><a href="#where-to-deposit-the-data">Where to deposit the data?</a></li>
+<li><a href="#step-by-step-submission-form">Step-by-step: Submission form</a></li>
+<li><a href="#step-by-step-python-ftp">Step-by-step: Python + FTP</a></li>
+<li><a href="#python-cdspyreadme-library">Python cdspyreadme library</a></li>
+<li><a href="#ftp-deposit-1">FTP deposit</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush6">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading6">
-        <a href="section2_journey_data.html">5. Journey of your data in the VO</a>
-    </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -203,7 +204,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="section3_eosc_intro.html">6. Explore EOSC</a>
+        <a href="section2_journey_data.html">6. Journey of your data in the VO</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -212,7 +213,16 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="introduction.html">7. Using Markdown</a>
+        <a href="section3_eosc_intro.html">7. Explore EOSC</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="introduction.html">8. Using Markdown</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -259,17 +269,17 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="section_type_data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="section_prepare_data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="section2_journey_data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="section_type_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Type of data</a>
+        <a class="chapter-link" href="section_prepare_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Preparing your data</a>
         <a class="chapter-link float-end" href="section2_journey_data.html" rel="next">Next: Journey of your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Publishing astronomical data</h1>
-        <p> Last updated on 2023-04-04 | 
+        <p> Last updated on 2023-04-18 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_publi_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -313,55 +323,84 @@ standards.</li>
 <p><strong><em>Other ressource: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5" class="external-link uri">https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5</a></em></strong></p>
 <p><strong><em>Other: <a href="https://vizier.cds.unistra.fr/vizier/submit.htx" class="external-link uri">https://vizier.cds.unistra.fr/vizier/submit.htx</a></em></strong></p>
 <!--  ----------------------------------------- -->
-<!-- 		Preparing Data Files		-->
+<!-- 		Submitting 			-->
 <!--  ----------------------------------------- -->
-<!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx -->
-<section id="how-to-prepare-the-data-files"><h2 class="section-heading">How to prepare the Data files?<a class="anchor" aria-label="anchor" href="#how-to-prepare-the-data-files"></a>
-</h2>
-<hr class="half-width"><!--  ----------------------------------------- --><!-- 	Fill the Readme description file 	--><!--  ----------------------------------------- --><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx --></section><section id="how-to-fill-the-readme-description-file"><h2 class="section-heading">How to fill the ReadMe description file?<a class="anchor" aria-label="anchor" href="#how-to-fill-the-readme-description-file"></a>
-</h2>
-<hr class="half-width"><!--  ----------------------------------------- --><!-- 		Submitting 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section4 --></section><section id="where-to-deposit-the-data-from-publication-notes.html"><h2 class="section-heading">Where to deposit the data? (from publication-notes.html)<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data-from-publication-notes.html"></a>
+<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section4 -->
+<!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx // Section 4 -->
+<section id="where-to-deposit-the-data"><h2 class="section-heading">Where to deposit the data?<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
-<h3 id="recommended-way-new-submission-page-vizier-submit">Recommended way: new submission page (vizier.submit/)<a class="anchor" aria-label="anchor" href="#recommended-way-new-submission-page-vizier-submit"></a></h3>
-<p>Since january 2018, the new submission interface is inline; it
+<h3 id="submission-form-recommended-way">Submission form (recommended way)<a class="anchor" aria-label="anchor" href="#submission-form-recommended-way"></a></h3>
+<p>Since January 2018, the new submission interface is inline.</p>
+<p>Some basic checks on the ReadMe and data files are performed. It also
 includes FITS ingestion procedure to improve the discoverability of
 images and spectra.</p>
+<p><strong><em>Sentence needed???</em></strong> The checking procedure
+is also available as the anafile package which can be installed with the
+standard configure and make Linux procedures (man page).</p>
+<p>Step-by-step procedure summarizes below.</p>
 <p>Link: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a></p>
 <p>Documentation: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">doc</a></p>
 </div>
 <div class="section level3">
-<h3 id="old-submission-page-viz-binsubmit">Old submission page (viz-bin/Submit)<a class="anchor" aria-label="anchor" href="#old-submission-page-viz-binsubmit"></a></h3>
-<p>Link: <a href="http://cdsarc.u-strasbg.fr/viz-bin/Submit" class="external-link">http://cdsarc.u-strasbg.fr/viz-bin/Submit</a></p>
+<h3 id="ftp-deposit">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit"></a></h3>
+<p>FTP deposit: see the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</p>
+<p>Since October 2021, FTP uploads now requires a login
+authentification. A web application is available for authors to obtain a
+temporary login/password: <a href="https://cds.unistra.fr/ftp/token/" class="external-link">https://cds.unistra.fr/ftp/token/</a>
+(include the FTP instruction).</p>
 </div>
 <div class="section level3">
-<h3 id="ftp-depost-or-email">FTP depost or email<a class="anchor" aria-label="anchor" href="#ftp-depost-or-email"></a></h3>
-<ul><li>FTP deposit or e-mail : see the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</li>
-</ul></div>
-<div class="section level3">
-<h3 id="special-case-large-volumetry">Special case: large volumetry<a class="anchor" aria-label="anchor" href="#special-case-large-volumetry"></a></h3>
+<h3 id="other-possibilities">Other possibilities<a class="anchor" aria-label="anchor" href="#other-possibilities"></a></h3>
+<div class="section level4">
+<h4 id="special-case-large-volumetry">Special case: large volumetry<a class="anchor" aria-label="anchor" href="#special-case-large-volumetry"></a></h4>
 <p>The submission web application is an HTTP service and depends of
 authors network. The process is dedicated for tables size less than
-100Mb but accepts tables until ~200Mb. For larger files, please contact
-the VizieR staff (<a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>).</p>
+100Mb but accepts tables until ~200Mb.</p>
+<p>For larger files, please contact the VizieR staff (<a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>).</p>
+</div>
+<div class="section level4">
+<h4 id="email">Email<a class="anchor" aria-label="anchor" href="#email"></a></h4>
+<p>E-mail your files to the e-mail address <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>
+if these are not too bulky (&lt; a few Megabytes).</p>
+</div>
+<div class="section level4">
+<h4 id="others">Others<a class="anchor" aria-label="anchor" href="#others"></a></h4>
+<p>Contact us for other possibilities like download from your site, DVD
+posting, etc… at:</p>
+<p>Centre de Données astronomiques</p>
+<p>11, rue de l’Université</p>
+<p>67000 STRASBOURG, France</p>
+<p><a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a></p>
 <!--  ----------------------------------------- -->
-<!-- 		Step-by-step submission		-->
+<!-- 		Step-by-step: submission form	-->
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 </div>
-</section><section id="step-by-step-submission"><h2 class="section-heading">Step-by-step submission<a class="anchor" aria-label="anchor" href="#step-by-step-submission"></a>
+</div>
+</section><section id="step-by-step-submission-form"><h2 class="section-heading">Step-by-step: Submission form<a class="anchor" aria-label="anchor" href="#step-by-step-submission-form"></a>
+</h2>
+<hr class="half-width"><!--  ----------------------------------------- --><!-- 		Step-by-step: FTP		--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --></section><section id="step-by-step-python-ftp"><h2 class="section-heading">Step-by-step: Python + FTP<a class="anchor" aria-label="anchor" href="#step-by-step-python-ftp"></a>
+</h2>
+<hr class="half-width"></section><section id="python-cdspyreadme-library"><h2 class="section-heading">Python cdspyreadme library<a class="anchor" aria-label="anchor" href="#python-cdspyreadme-library"></a>
+</h2>
+<hr class="half-width"><p>Aim: Build ReadMe and MRT builder for authors</p>
+<p>Link to Python package: <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link">cdspydreadme</a></p>
+<iframe src="https://cds-astro.github.io/jupyterlite/lab/index.html" style="border: 1px solid #464646; width: 98%; height:400px" allowfullscreen allow="autoplay" data-external="1">
+</iframe>
+</section><section id="ftp-deposit-1"><h2 class="section-heading">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit-1"></a>
 </h2>
 <hr class="half-width"><!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="section_type_data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="section_prepare_data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="section2_journey_data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="section_type_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Type of data</a>
+        <a class="chapter-link" href="section_prepare_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Preparing your data</a>
         <a class="chapter-link float-end" href="section2_journey_data.html" rel="next">Next: Journey of your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
     </nav></div> <!-- / div.primary-content.col-xs-12 -->
@@ -406,8 +445,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/section_publi_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_publi_data.html",
-  "dateCreated": "2023-04-04",
-  "dateModified": "2023-04-04",
+  "dateCreated": "2023-04-18",
+  "dateModified": "2023-04-18",
   "datePublished": "2023-04-18"
 }
 

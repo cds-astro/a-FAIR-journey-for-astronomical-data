@@ -85,11 +85,11 @@
   The journey of your data through the Virtual Observatory and the European Open Science Cloud
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 29%" class="percentage">
-    29%
+<aside class="col-md-12 lesson-progress"><div style="width: 25%" class="percentage">
+    25%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 29%" aria-valuenow="29" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 25%" aria-valuenow="25" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -176,6 +176,7 @@
 <li><a href="#tables-1">Tables</a></li>
 <li><a href="#associated-data-images-time-series-spectra-1">Associated data: images, time series, spectra</a></li>
 <li><a href="#other-types">Other types</a></li>
+<li><a href="#fits-validator">FITS validator</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -185,7 +186,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="section_publi_data.html">4. Publishing astronomical data</a>
+        <a href="section_prepare_data.html">4. Preparing your data</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -194,7 +195,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="section2_journey_data.html">5. Journey of your data in the VO</a>
+        <a href="section_publi_data.html">5. Publishing astronomical data</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -203,7 +204,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="section3_eosc_intro.html">6. Explore EOSC</a>
+        <a href="section2_journey_data.html">6. Journey of your data in the VO</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -212,7 +213,16 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="introduction.html">7. Using Markdown</a>
+        <a href="section3_eosc_intro.html">7. Explore EOSC</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="introduction.html">8. Using Markdown</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -260,16 +270,16 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="section_fair_astro.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="section_publi_data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_prepare_data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="section_fair_astro.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: FAIR principles for</a>
-        <a class="chapter-link float-end" href="section_publi_data.html" rel="next">Next: Publishing... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_prepare_data.html" rel="next">Next: Preparing your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Type of data</h1>
-        <p> Last updated on 2023-04-04 | 
+        <p> Last updated on 2023-04-18 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_type_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -427,31 +437,35 @@ center … (FITS cards: CRVAL, CDELT, CDi_j, CTYPE, CUNIT, CRPIX..)</li>
 </ul><p>If your associated data are correctly described, then they will be
 provided through the [VizieR associated data web
 page][vizier-assoc-page] and through the Virtual Observatory (<a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a>, <a href="http://star-www.dur.ac.uk/~pdraper/splat/splat.html" class="external-link">Splat</a>, <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>).</p>
-</div>
-<div class="section level3">
-<h3 id="fits-validator">FITS validator<a class="anchor" aria-label="anchor" href="#fits-validator"></a></h3>
-<p>Test your FITS spectra/images with the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" class="external-link">FITS
-validator</a> which evaluates the compatibility between your FITS and
-the asked meta-data. This meta-data checking can be completed in the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
-submission service</a>.</p>
 <!--  ----------------------------------------- -->
 <!-- 		Other types			-->
 <!--  ----------------------------------------- -->
 </div>
 </section><section id="other-types"><h2 class="section-heading">Other types<a class="anchor" aria-label="anchor" href="#other-types"></a>
 </h2>
-<hr class="half-width"><!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- 
+<hr class="half-width"><!--  ----------------------------------------- --><!-- 		FITS validator			--><!--  ----------------------------------------- --></section><section id="fits-validator"><h2 class="section-heading">FITS validator<a class="anchor" aria-label="anchor" href="#fits-validator"></a>
+</h2>
+<hr class="half-width"><p>Test your FITS spectra/images with the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" class="external-link">FITS
+validator</a> which evaluates the compatibility between your FITS and
+the asked meta-data. This meta-data checking can be completed in the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
+submission service</a>.</p>
+<!--  ----------------------------------------- -->
+<!-- 		Link references			-->
+<!--  ----------------------------------------- -->
+<!-- -->
+<!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- --></section></div> <!-- / div.lesson-content -->
+ -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="section_fair_astro.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="section_publi_data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_prepare_data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="section_fair_astro.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: FAIR principles for</a>
-        <a class="chapter-link float-end" href="section_publi_data.html" rel="next">Next: Publishing... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_prepare_data.html" rel="next">Next: Preparing your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
     </nav></div> <!-- / div.primary-content.col-xs-12 -->
 <!-- END:   inst/pkgdown/templates/content-instructor.html-->
@@ -495,8 +509,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/section_type_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_type_data.html",
-  "dateCreated": "2023-04-04",
-  "dateModified": "2023-04-04",
+  "dateCreated": "2023-04-18",
+  "dateModified": "2023-04-18",
   "datePublished": "2023-04-18"
 }
 
