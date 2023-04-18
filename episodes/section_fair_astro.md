@@ -35,19 +35,6 @@ The set of guidelines for making research (meta)data findable, accessible, inter
 
 
 
-<!--  ----------------------------------------- -->
-<!-- 		Keypoints 			-->
-<!--  ----------------------------------------- -->
-## Essential points
-
-::::::::::::::::::::::::::::::::::::: keypoints
-
-- For tables containing known astronomical objects, an existing **non-altered** name must be given along with the coordinates.
-- All columns must be explained with **their corresponding unit**.
-- Your columns should be homogeneous, and you should avoid mixing measurements with different meanings: errors mixed with limts, or values with different units (that should be in different columns).
-- When there is more than one table, the objects in common must be identified with the **same name between tables**.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -59,6 +46,22 @@ The set of guidelines for making research (meta)data findable, accessible, inter
 ***Link: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268***
 
 The article is dedicated for authors, and is a basis of good practices expected in journals and data-centers.
+
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Keypoints 			-->
+<!--  ----------------------------------------- -->
+## Raise the odds to be included in VizieR!
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+- For tables containing known astronomical objects, an existing **non-altered** name must be given along with the coordinates.
+- All columns must be explained with **their corresponding unit**.
+- Your columns should be homogeneous, and you should avoid mixing measurements with different meanings: errors mixed with limts, or values with different units (that should be in different columns).
+- When there is more than one table, the objects in common must be identified with the **same name between tables**.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
