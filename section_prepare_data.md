@@ -122,10 +122,7 @@ For large sets of references, it is suggested to gather them into a dedicated *r
 The submission routes for your data vary depending where you submitted your paper.
 
 
-[Journals origin in VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"}
-<!--
-![Journals origin in VizieR, data from 2021 (**FIGURE TO BE UPDATED**)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"} 
--->
+![Journals origin in VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"}
  
 
 Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
