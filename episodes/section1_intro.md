@@ -84,6 +84,33 @@ Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse
 
 
 
+
+Other points (from Gilles):
+
+- Step in search engine:
+	- registry VO
+	- Eudat
+	- EOSC
+	- ADS
+- Step in the VO: interoperability with other tools:
+	- CASSIS
+	- Topcat
+	- astroquery
+- Added metadata:
+	- UCD (VO)
+	- Keywords (UAT)
+	- Protocol (ADQL)
+	- DOI (Citation)
+	- Bibcode
+	- MOC
+- Visualization enabled:
+	- Plots
+	- Links
+
+
+
+
+
 <!--  ----------------------------------------- -->
 <!-- 		Documentation 			-->
 <!--  ----------------------------------------- -->
