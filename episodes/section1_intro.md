@@ -49,14 +49,51 @@ A full description of the standard conventions used for the documentation of the
 
 
 <!--  ----------------------------------------- -->
-<!--            VizieR stats                    -->
+<!--            VizieR description              -->
 <!--  ----------------------------------------- -->
-<!-- Source: -->
-## Some statistics
+<!-- Source: https://vizier.cds.unistra.fr/index.gml -->
+## What is VizieR?
 
-Number of catalogues ingested: https://vizier.cds.unistra.fr/index.gml (top of the page)
+VizieR provides the most complete library of published astronomical catalogues --tables and associated data-- with verified and enriched data, accessible via multiple interfaces. Query tools allow the user to select relevant data tables and to extract and format records matching given criteria. Currently, over 23 000 catalogues are available. 
 
-Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
+
+VizieR was initially started as a joint effort of CDS (Centre de Données astronomiques de Strasbourg) and ESA-ESRIN (Information Systems Division), and is now fully managed by CDS. VizieR has been available since 1996, and was described in a paper published in A&AS 143, 23 (2000).
+
+Note that VizieR does not contain all available online catalogues; some catalogues are not suitable and some less frequently used catalogues have not yet been incorporated into the VizieR database. These last ones can be accessed by [FTP from the Astronomer's Bazaar][vizier-catalogue-collection].
+
+
+
+Some stats: 
+
+- Number of catalogues ingested: https://vizier.cds.unistra.fr/index.gml (top of the page)
+- Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
+
+
+
+![Large collection of astronomical catalogues from VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_collection_from_2021.png){alt="Figure: Catalogues / authors overview from VizieR, data from 2021"}
+
+
+<!--  ----------------------------------------- -->
+<!--            VizieR description              -->
+<!--  ----------------------------------------- -->
+<!-- Source: Presentation Gilles AAS 2021 -->
+## What is a VizieR catalogue?
+
+Looking at the catalogue level:
+
+- A set of documented tables
+- An indexation by keywords, authors, date ...
+- A globale indexation by position
+- Citation capability (bibcode or DOI)
+
+Optionally:
+
+- Photometry assignment to populate the VizieR SED service
+- FITS Spectra, images and plots
+- Hierachichal progressive view (HiPS)
+
+
+![VizieR and VO tools, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_from_2021.png){alt="Figure: VizieR and VO tools, data from 2021"}
 
 
 
@@ -137,6 +174,7 @@ Other points (from Gilles):
 [xmatch-home]: http://cdsxmatch.u-strasbg.fr/
 [tap-vizier]: http://tapvizier.cds.unistra.fr/adql/
 [vizier-data-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
+[vizier-catalogue-collection]: https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on
 [vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
 [vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
