@@ -121,6 +121,10 @@ For large sets of references, it is suggested to gather them into a dedicated *r
 
 The submission routes for your data vary depending where you submitted your paper.
 
+2 types of VizieR workflows:
+- Initiated by authors
+- Initiated by the CDS
+
 
 ![Journals origin in VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"}
  
