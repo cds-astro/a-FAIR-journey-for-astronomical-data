@@ -25,6 +25,7 @@ By the end of this training, you will:
 
 :::::::::::::::::::::::::::::::::::::: checklist
 
+- Understand the benefits of using VizieR. **(Course 1)**
 - Be aware of the Findable, Accessible, Interoperable and Reusable (FAIR) principles, when preparing your data and its metadata. **(Course 2)**
 - Be aware of how to publish your data in the existing and new Open Science systems, keeping in mind the Virtual Observatory (VO) standards. **(Course 3)**
 - Understand the integration of astronomy data services in the VO and EOSC. **(Course 4)**
