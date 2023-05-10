@@ -325,9 +325,207 @@
         
 <section id="aio-section1_intro"><p>Content from <a href="section1_intro.html">Why distribute your data through VizieR?</a></p>
 <hr>
-<p> Last updated on 2023-04-18 | 
+<p> Last updated on 2023-05-10 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section1_intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is VizieR?</li>
+<li>What is a VizieR catalogue?</li>
+<li>How is VizieR interoperable?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Be aware of the benefits of publishing your data in VizieR</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="what-is-vizier"><h2 class="section-heading">What is VizieR?<a class="anchor" aria-label="anchor" href="#what-is-vizier"></a>
+</h2>
+<hr class="half-width">
+<p><a href="https://vizier.cds.unistra.fr/index.gml" class="external-link">VizieR</a> provides
+the most complete library of published astronomical catalogues - tables
+and associated data - with verified and enriched data, accessible via
+multiple interfaces. Query tools allow the user to select relevant data
+tables and to extract and format records matching given criteria.
+Currently, over 23 000 catalogues are available.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_homepage_may2023.png" alt="Screenshot: VizieR homepage, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR homepage</figcaption></figure><p>VizieR was initially started as a joint effort of <a href="https://cds.unistra.fr/" class="external-link">CDS (Centre de Données astronomiques de
+Strasbourg)</a> and ESA-ESRIN (Information Systems Division), and is now
+fully managed by CDS. VizieR has been available since 1996, and was
+described in a <a href="https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract" class="external-link">paper
+published in 2000</a>.</p>
+<p>Note that VizieR does not contain all available online catalogues:
+some catalogues are not suitable and some less frequently used
+catalogues have not yet been incorporated into the VizieR database. The
+full list of catalogues is available from there: <a href="https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on" class="external-link">Catalogue
+collection page</a>.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 --></section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
+</h2>
+<hr class="half-width">
+<p>Looking at the catalogue level:</p>
+<ul>
+<li>A set of documented tables (including a ReadMe file)</li>
+<li>An indexation by keywords, authors, date …</li>
+<li>A global indexation by position</li>
+<li>Citation capability (bibcode or DOI)</li>
+</ul>
+<p>Optionally contains:</p>
+<ul>
+<li>Photometry assignment to populate the VizieR SED service</li>
+<li>FITS Spectra, images and plots</li>
+<li>HiPS files (Hierarchical Progressive Surveys)</li>
+</ul>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_example_may2023.png" alt="Screenshot: Example catalogue VizieR, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR: Example catalogue ingested</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR and VO tools             --><!--  ----------------------------------------- --></section><section id="vizier-and-virtual-observatory-vo-tools"><h2 class="section-heading">VizieR and Virtual Observatory (VO) tools<a class="anchor" aria-label="anchor" href="#vizier-and-virtual-observatory-vo-tools"></a>
+</h2>
+<hr class="half-width">
+<p>Once a catalogue is ingested in VizieR, one can access a range of
+tools:</p>
+<ul>
+<li>Query the <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR" class="external-link">VizieR
+table(s)</a>
+</li>
+<li>Access to the <a href="https://cdsarc.cds.unistra.fr/ftp/" class="external-link">FTP</a>
+(archived VizieR tables as described by the ReadMe)</li>
+<li>Query VizieR table(s) using <a href="http://tapvizier.cds.unistra.fr/adql/" class="external-link">TAP/SQL</a>
+</li>
+<li>Perform a fast <a href="http://cdsxmatch.u-strasbg.fr/" class="external-link">cross-match
+identification</a> between VizieR tables or Simbad</li>
+<li>Load your tables in <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>
+</li>
+<li>Plot <a href="http://vizier.cds.unistra.fr/vizier/sed/" class="external-link">photometry
+(SED)</a> including all VizieR</li>
+<li>Query VizieR <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">associated data</a>
+(images, spectra, timeseries)<br>
+</li>
+<li>Load your data as a VO Table using <a href="http://www.starlink.ac.uk/topcat/" class="external-link">TOPCAT</a>
+</li>
+<li>Query all VizieR catalogues using <a href="https://github.com/cds-astro/cds.cdsclient/" class="external-link">CDS Python
+package</a>
+</li>
+</ul>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo.png" alt="Figure: VizieR and other VO tools overview" class="figure mx-auto d-block"><figcaption>VizieR catalogues accessible through many VO
+tools</figcaption></figure><!--  ----------------------------------------- --><!--    Why distribute your data through Vizier --><!--  ----------------------------------------- --><!-- Source: Written notes from Gilles --></section><section id="why-distribute-your-data-through-vizier"><h2 class="section-heading">Why distribute your data through VizieR?<a class="anchor" aria-label="anchor" href="#why-distribute-your-data-through-vizier"></a>
+</h2>
+<hr class="half-width">
+<p>In addition to the interoperability with the VO tools mentioned
+above, distributing your data through VizieR means <strong>adding
+values</strong> to them.</p>
+<ul>
+<li>Step in search engine:
+<ul>
+<li>VO Registries: CDS Registry, <a href="http://rofr.ivoa.net/" class="external-link">IVOA
+Registry of Registries (RofR)</a>
+</li>
+<li><a href="https://www.eudat.eu/" class="external-link">Eudat</a></li>
+<li><a href="https://ui.adsabs.harvard.edu/classic-form" class="external-link">Astrophysics
+Data System (ADS)</a></li>
+<li><a href="https://eosc-portal.eu/" class="external-link">European Open Science Cloud (EOSC)
+Future</a></li>
+</ul>
+</li>
+<li>Step in the VO: interoperability with other tools, eg.:
+<ul>
+<li><a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a></li>
+<li><a href="http://star-www.dur.ac.uk/~pdraper/splat/splat.html" class="external-link">Splat</a></li>
+<li>astroquery</li>
+</ul>
+</li>
+<li>Added metadata:
+<ul>
+<li>UCD (VO)</li>
+<li>Keywords (UAT)</li>
+<li>Protocol (ADQL)</li>
+<li>DOI (Citation)</li>
+<li>Bibcode</li>
+<li>MOC</li>
+</ul>
+</li>
+</ul>
+<!--  ----------------------------------------- --><!--            Keypoints                       --><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 --></section><section id="benefits-of-using-vizier-summary"><h2 class="section-heading">Benefits of using VizieR: summary<a class="anchor" aria-label="anchor" href="#benefits-of-using-vizier-summary"></a>
+</h2>
+<hr class="half-width">
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<p>Distribute your data in a trusted repository in accordance with Open
+Data principles</p>
+<ul>
+<li>
+<strong>Data preservation</strong>: The CDS has been awarded the <a href="https://www.coretrustseal.org/" class="external-link">Core Trust Seal</a>.</li>
+<li>
+<strong>Discovery</strong>: Take advantage of the VizieR services
+allowing for the discovery, and a good data visibility
+<ul>
+<li>Dedicated <strong>indexation</strong>
+</li>
+<li>Quality and a good data <strong>description</strong>
+</li>
+<li>Generate <strong>persistent identifier</strong> (bibcode, DOI) for
+citation</li>
+<li>Data are available through the <a href="https://www.ivoa.net/" class="external-link">Virtual Observatory (VO)</a>
+<!-- - **Large publication**: data published in the Virtual Observatory -->
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+<!--            Next Chapters                   -->
+<!--  ----------------------------------------- -->
+</section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
+</h2>
+<hr class="half-width">
+<p>In the next chapters, you will learn what type of data can be
+published <strong>(Course 3)</strong>, how to publish them
+<strong>(Courses 4 and 5)</strong>, and finally how to search your data
+using the EOSC tools <strong>(Courses 6 and 7)</strong>.</p>
+<!--  ----------------------------------------- -->
+<!--            Other images                       -->
+<!--  ----------------------------------------- -->
+<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
+</section><section id="remaining-questions"><h2 class="section-heading">Remaining questions ???<a class="anchor" aria-label="anchor" href="#remaining-questions"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li><p>Do we need to mention Simbad? Or add it in Figure with VO tools?
+<!-- 
+- **Simbad**: VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
+--></p></li>
+<li><figure>Do we need to include that image? <img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_collection_from_2021.png" alt="Figure: Catalogues / authors overview from VizieR, data from 2021" class="figure mx-auto d-block"></figure></li>
+</ul>
+<!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- --><!-- --><!-- Not used --><!-- --><!-- 
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use. 
+ --></section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
+<hr>
+<p> Last updated on 2023-05-10 | 
+        
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_fair_astro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -396,129 +594,9 @@ document just tries to answer to some frequently asked question about
 how to prepare the data for their inclusion in the Data Center
 documents.</p>
 <!--  ----------------------------------------- -->
-<!--            VizieR stats                    -->
+<!-- 		Introduction 			-->
 <!--  ----------------------------------------- -->
-<!-- Source: -->
-</section><section id="some-statistics"><h2 class="section-heading">Some statistics<a class="anchor" aria-label="anchor" href="#some-statistics"></a>
-</h2>
-<hr class="half-width">
-<p>Number of catalogues ingested: <a href="https://vizier.cds.unistra.fr/index.gml" class="external-link uri">https://vizier.cds.unistra.fr/index.gml</a> (top of the
-page)</p>
-<p>Catalogue per journal: <a href="https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation" class="external-link uri">https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation</a></p>
-<!--  ----------------------------------------- -->
-<!--            Keypoints                       -->
-<!--  ----------------------------------------- -->
-<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
-</section><section id="benefits-of-using-vizier"><h2 class="section-heading">Benefits of using VizieR<a class="anchor" aria-label="anchor" href="#benefits-of-using-vizier"></a>
-</h2>
-<hr class="half-width">
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
-<div class="callout-content">
-<ul>
-<li>
-<strong>Data preservation</strong>: The CDS has been awarded the <a href="https://www.coretrustseal.org/" class="external-link">Core Trust Seal</a>.</li>
-<li>
-<strong>Discovery</strong>: Take advantage of the VizieR services
-allowing for the discovery, and a good data visibility
-<ul>
-<li>
-<a href="https://vizier.cds.unistra.fr/viz-bin/VizieR" class="external-link">VizieR</a>
-data are available through the <a href="https://www.ivoa.net/" class="external-link">Virtual
-Observatory (VO)</a>
-<ul>
-<li>Load tables using <a href="http://www.starlink.ac.uk/topcat/" class="external-link">TOPCAT</a> or <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>
-</li>
-<li>Access to spectra/images or time series:
-<ul>
-<li>Load spectra using <a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a> or <a href="http://star-www.dur.ac.uk/~pdraper/splat/splat.html" class="external-link">Splat</a>
-</li>
-<li>Load images in <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Query tables using ADQL/SQL with <a href="http://tapvizier.cds.unistra.fr/adql/" class="external-link">TAPVizieR</a>
-</li>
-<li>The <a href="http://vizier.cds.unistra.fr/vizier/sed/" class="external-link">VizieR
-Photometry viewer</a> is another output using tables for which filters
-are assigned to create SEDs.</li>
-</ul>
-</li>
-<li>
-<strong>Simbad</strong>: VizieR tables with astronomical objects can
-be processed in <a href="http://simbad.cds.unistra.fr/simbad/" class="external-link">SIMBAD</a>.</li>
-<li>
-<strong><a href="http://cdsxmatch.u-strasbg.fr/" class="external-link">CDS
-Cross-match</a></strong>: merge tables according to positions.</li>
-</ul>
-</div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-<!-- 		Documentation 			-->
-<!--  ----------------------------------------- -->
-</section><section id="more-documentation-from-vizier"><h2 class="section-heading">More documentation (from Vizier)<a class="anchor" aria-label="anchor" href="#more-documentation-from-vizier"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li><a href="https://vizier.cds.unistra.fr/vizier/submit.htx" class="external-link">Preparing
-and Submitting Tabular Data</a></li>
-<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html" class="external-link">Upload
-File to VizieR: generalities</a></li>
-<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">The
-submitting VizieR page documentation</a></li>
-</ul>
-<!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- 
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use. 
- --></section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
-<hr>
-<p> Last updated on 2023-04-18 | 
-        
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_fair_astro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>How and where to publish your data?</li>
-<li>What kind of data can be published (tables, images) ?</li>
-<li>Do and don’t when publishing data?</li>
-<li>What are the FAIR principles?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>Be aware of the Findable, Accessible, Interoperable and Reusable
-(FAIR) principles, when preparing your data and its metadata.</li>
-<li>Be aware of how to publish your data in the existing and new Open
-Science systems, keeping in mind the Virtual Observatory (VO)
-standards.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</section><section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
 <p>The set of guidelines for making research (meta)data findable,
@@ -820,7 +898,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-04-18 | 
+<p> Last updated on 2023-05-10 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1042,6 +1120,8 @@ dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
 <div class="callout-content">
 <p>The submission routes for your data vary depending where you
 submitted your paper.</p>
+<p>2 types of VizieR workflows: - Initiated by authors - Initiated by
+the CDS</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png" alt="Pie chart: Journals origin in VizieR, data from 2021" class="figure mx-auto d-block"><figcaption>Journals origin in VizieR, data from 2021 (<strong>TO
 BE UPDATED</strong>)</figcaption></figure><p>Catalogue per journal: <a href="https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation" class="external-link uri">https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation</a></p>
 </div>
@@ -1054,7 +1134,7 @@ BE UPDATED</strong>)</figcaption></figure><p>Catalogue per journal: <a href="htt
   Astronomy &amp; Astrophysics Journal (A&amp;A)
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>By contract with the Journal, the CDS archives the primary data that
 are published in A&amp;A and puts them at the disposal of the global
@@ -1085,7 +1165,7 @@ objects: linking to databases</a></li>
   American Astronomical Society Journals (AAS)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>The authors should try to prepare their lenghty tables as machine
 readable table (MRT) format. Then, <strong>VizieR harvests AAS Journal
@@ -1117,7 +1197,7 @@ data format.</p>
   Monthly Notices of the Royal Astronomical Society (MNRAS)
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Authors are encouraged to <strong>upload machine-readable versions of
 their tables on the VizieR database</strong>. Authors should consult the
@@ -1142,7 +1222,7 @@ and online material</a></li>
   Other journals
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Examples of other journals included in VizieR:</p>
 <ul>
@@ -1165,7 +1245,7 @@ and online material</a></li>
   Big surveys
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>Bigger catalogues are usually <strong>directly retrieved by
 VizieR</strong>.</p>
@@ -1403,7 +1483,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></section><section id="aio-section3_eosc_intro"><p>Content from <a href="section3_eosc_intro.html">Explore EOSC</a></p>
 <hr>
-<p> Last updated on 2023-03-20 | 
+<p> Last updated on 2023-05-10 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section3_eosc_intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1439,6 +1519,10 @@ portal.</li>
 <section id="overview"><h2 class="section-heading">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
 <hr class="half-width">
+<ul>
+<li>Added value with EOSC</li>
+<li>Integration done?</li>
+</ul>
 <!--  ----------------------------------------- --><!--            Explore Portal                  --><!--  ----------------------------------------- --></section><section id="explore-portal"><h2 class="section-heading">Explore Portal<a class="anchor" aria-label="anchor" href="#explore-portal"></a>
 </h2>
 <hr class="half-width">
@@ -1446,10 +1530,11 @@ portal.</li>
 </h2>
 <hr class="half-width">
 <ul>
-<li><a href="https://explore.eosc-portal.eu/search/find?f0=q&amp;fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-ycsawu7&amp;type=datasets&amp;active=result&amp;page=1" class="external-link">Gaia
-DR3</a></li>
-<li><a href="https://explore.eosc-portal.eu/search/find?qf=true&amp;fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-qa4lep3&amp;f0=q&amp;active=result&amp;page=1" class="external-link">Gaia
-DR2</a></li>
+<li><p><a href="https://explore.eosc-portal.eu/search/find?f0=q&amp;fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-ycsawu7&amp;type=datasets&amp;active=result&amp;page=1" class="external-link">Gaia
+DR3</a></p></li>
+<li><p><a href="https://explore.eosc-portal.eu/search/find?qf=true&amp;fv0=https:%2F%2Fdoi.org%2F10.5270%2Fesa-qa4lep3&amp;f0=q&amp;active=result&amp;page=1" class="external-link">Gaia
+DR2</a></p></li>
+<li><p>One example for each main journal</p></li>
 </ul>
 <!--  ----------------------------------------- --><!--  ----------------------------------------- --><!--  ----------------------------------------- --></section><section id="ideas-for-the-website"><h2 class="section-heading">
 <em>Ideas for the website</em><a class="anchor" aria-label="anchor" href="#ideas-for-the-website"></a>
@@ -1541,7 +1626,7 @@ reinforce the objectives.</li>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1572,7 +1657,7 @@ challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge2"></a>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -1646,7 +1731,7 @@ e.g. online setup) in the solutions blocks.</p>
   Windows
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Use PuTTY</p>
 </div>
@@ -1660,7 +1745,7 @@ e.g. online setup) in the solutions blocks.</p>
   MacOS
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Use Terminal.app</p>
 </div>
@@ -1674,7 +1759,7 @@ e.g. online setup) in the solutions blocks.</p>
   Linux
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>Use Terminal</p>
 </div>
@@ -1733,9 +1818,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2023-04-18",
-  "dateModified": "2023-05-09",
-  "datePublished": "2023-05-09"
+  "dateCreated": "2023-05-10",
+  "dateModified": "2023-05-10",
+  "datePublished": "2023-05-10"
 }
 
   </script><script>

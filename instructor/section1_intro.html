@@ -154,10 +154,13 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#overview">Overview</a></li>
-<li><a href="#some-statistics">Some statistics</a></li>
-<li><a href="#benefits-of-using-vizier">Benefits of using VizieR</a></li>
-<li><a href="#more-documentation-from-vizier">More documentation (from Vizier)</a></li>
+        <ul><li><a href="#what-is-vizier">What is VizieR?</a></li>
+<li><a href="#what-is-a-vizier-catalogue">What is a VizieR catalogue?</a></li>
+<li><a href="#vizier-and-virtual-observatory-vo-tools">VizieR and Virtual Observatory (VO) tools</a></li>
+<li><a href="#why-distribute-your-data-through-vizier">Why distribute your data through VizieR?</a></li>
+<li><a href="#benefits-of-using-vizier-summary">Benefits of using VizieR: summary</a></li>
+<li><a href="#next-chapters">Next chapters</a></li>
+<li><a href="#remaining-questions">Remaining questions ???</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -278,7 +281,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Why distribute your data through VizieR?</h1>
-        <p> Last updated on 2023-04-18 | 
+        <p> Last updated on 2023-05-10 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section1_intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -299,10 +302,9 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How and where to publish your data?</li>
-<li>What kind of data can be published (tables, images) ?</li>
-<li>Do and don’t when publishing data?</li>
-<li>What are the FAIR principles?</li>
+<ul><li>What is VizieR?</li>
+<li>What is a VizieR catalogue?</li>
+<li>How is VizieR interoperable?</li>
 </ul></div>
 </div>
 </div>
@@ -310,63 +312,99 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Be aware of the Findable, Accessible, Interoperable and Reusable
-(FAIR) principles, when preparing your data and its metadata.</li>
-<li>Be aware of how to publish your data in the existing and new Open
-Science systems, keeping in mind the Virtual Observatory (VO)
-standards.</li>
+<ul><li>Be aware of the benefits of publishing your data in VizieR</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
-<!-- 		Overview 			-->
+<!--            VizieR description              -->
 <!--  ----------------------------------------- -->
-<!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx -->
-<section id="overview"><h2 class="section-heading">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+<!-- Source: https://vizier.cds.unistra.fr/index.gml -->
+<section id="what-is-vizier"><h2 class="section-heading">What is VizieR?<a class="anchor" aria-label="anchor" href="#what-is-vizier"></a>
 </h2>
-<hr class="half-width"><p>The CDS and other astronomical data centers are storing and
-distributing the astronomical data to promote their usage primarily by
-professional astronomers.</p>
-<p>In order to ensure the scientific quality of the data, we therefore
-require that the data are related to a publication in a refereed
-journal, either as tables or catalogues actually published, or as a
-paper describing the data and their context.</p>
-<p>For a quick view of the guidelines and recommandations for publishing
-your data at CDS, please have a look at the <a href="https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf" class="external-link">“Make
-your data visible” brochure</a>.</p>
-<p>See also the Best Practices for Data Publication in the Astronomical
-Literature (T.Chen, 2022). The article is dedicated for authors, and is
-a basis of good practices expected in journals and data-centers.</p>
-<p>In order to facilitate the usability of the data, and to allow their
-processing by the data centers, we require that:</p>
-<ul><li>the data are <em>described</em> accurately enough to allow an
-unambiguous interpretation of the data, as well as a comprehension of
-the context in which the data were acquired and/or processed; a single
-ascii file, named <em>ReadMe</em>, is designed for this role.</li>
-<li>the data are in a format which allows their usage by tools currently
-in usage in our discipline — normally <em>flat ascii files</em>; other
-formats can be accepted, but are converted into flat files.</li>
-</ul><p>A full description of the standard conventions used for the
-documentation of the catalogues is available at URL <a href="http://cds.unistra.fr/doc/catstd.htx" class="external-link uri">http://cds.unistra.fr/doc/catstd.htx</a>. The present
-document just tries to answer to some frequently asked question about
-how to prepare the data for their inclusion in the Data Center
-documents.</p>
-<!--  ----------------------------------------- -->
-<!--            VizieR stats                    -->
-<!--  ----------------------------------------- -->
-<!-- Source: -->
-</section><section id="some-statistics"><h2 class="section-heading">Some statistics<a class="anchor" aria-label="anchor" href="#some-statistics"></a>
+<hr class="half-width"><p><a href="https://vizier.cds.unistra.fr/index.gml" class="external-link">VizieR</a> provides
+the most complete library of published astronomical catalogues - tables
+and associated data - with verified and enriched data, accessible via
+multiple interfaces. Query tools allow the user to select relevant data
+tables and to extract and format records matching given criteria.
+Currently, over 23 000 catalogues are available.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_homepage_may2023.png" alt="Screenshot: VizieR homepage, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR homepage</figcaption></figure><p>VizieR was initially started as a joint effort of <a href="https://cds.unistra.fr/" class="external-link">CDS (Centre de Données astronomiques de
+Strasbourg)</a> and ESA-ESRIN (Information Systems Division), and is now
+fully managed by CDS. VizieR has been available since 1996, and was
+described in a <a href="https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract" class="external-link">paper
+published in 2000</a>.</p>
+<p>Note that VizieR does not contain all available online catalogues:
+some catalogues are not suitable and some less frequently used
+catalogues have not yet been incorporated into the VizieR database. The
+full list of catalogues is available from there: <a href="https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on" class="external-link">Catalogue
+collection page</a>.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 --></section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
 </h2>
-<hr class="half-width"><p>Number of catalogues ingested: <a href="https://vizier.cds.unistra.fr/index.gml" class="external-link uri">https://vizier.cds.unistra.fr/index.gml</a> (top of the
-page)</p>
-<p>Catalogue per journal: <a href="https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation" class="external-link uri">https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation</a></p>
-<!--  ----------------------------------------- -->
-<!--            Keypoints                       -->
-<!--  ----------------------------------------- -->
-<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
-</section><section id="benefits-of-using-vizier"><h2 class="section-heading">Benefits of using VizieR<a class="anchor" aria-label="anchor" href="#benefits-of-using-vizier"></a>
+<hr class="half-width"><p>Looking at the catalogue level:</p>
+<ul><li>A set of documented tables (including a ReadMe file)</li>
+<li>An indexation by keywords, authors, date …</li>
+<li>A global indexation by position</li>
+<li>Citation capability (bibcode or DOI)</li>
+</ul><p>Optionally contains:</p>
+<ul><li>Photometry assignment to populate the VizieR SED service</li>
+<li>FITS Spectra, images and plots</li>
+<li>HiPS files (Hierarchical Progressive Surveys)</li>
+</ul><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_example_may2023.png" alt="Screenshot: Example catalogue VizieR, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR: Example catalogue ingested</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR and VO tools             --><!--  ----------------------------------------- --></section><section id="vizier-and-virtual-observatory-vo-tools"><h2 class="section-heading">VizieR and Virtual Observatory (VO) tools<a class="anchor" aria-label="anchor" href="#vizier-and-virtual-observatory-vo-tools"></a>
+</h2>
+<hr class="half-width"><p>Once a catalogue is ingested in VizieR, one can access a range of
+tools:</p>
+<ul><li>Query the <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR" class="external-link">VizieR
+table(s)</a>
+</li>
+<li>Access to the <a href="https://cdsarc.cds.unistra.fr/ftp/" class="external-link">FTP</a>
+(archived VizieR tables as described by the ReadMe)</li>
+<li>Query VizieR table(s) using <a href="http://tapvizier.cds.unistra.fr/adql/" class="external-link">TAP/SQL</a>
+</li>
+<li>Perform a fast <a href="http://cdsxmatch.u-strasbg.fr/" class="external-link">cross-match
+identification</a> between VizieR tables or Simbad</li>
+<li>Load your tables in <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>
+</li>
+<li>Plot <a href="http://vizier.cds.unistra.fr/vizier/sed/" class="external-link">photometry
+(SED)</a> including all VizieR</li>
+<li>Query VizieR <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">associated data</a>
+(images, spectra, timeseries)<br></li>
+<li>Load your data as a VO Table using <a href="http://www.starlink.ac.uk/topcat/" class="external-link">TOPCAT</a>
+</li>
+<li>Query all VizieR catalogues using <a href="https://github.com/cds-astro/cds.cdsclient/" class="external-link">CDS Python
+package</a>
+</li>
+</ul><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo.png" alt="Figure: VizieR and other VO tools overview" class="figure mx-auto d-block"><figcaption>VizieR catalogues accessible through many VO
+tools</figcaption></figure><!--  ----------------------------------------- --><!--    Why distribute your data through Vizier --><!--  ----------------------------------------- --><!-- Source: Written notes from Gilles --></section><section id="why-distribute-your-data-through-vizier"><h2 class="section-heading">Why distribute your data through VizieR?<a class="anchor" aria-label="anchor" href="#why-distribute-your-data-through-vizier"></a>
+</h2>
+<hr class="half-width"><p>In addition to the interoperability with the VO tools mentioned
+above, distributing your data through VizieR means <strong>adding
+values</strong> to them.</p>
+<ul><li>Step in search engine:
+<ul><li>VO Registries: CDS Registry, <a href="http://rofr.ivoa.net/" class="external-link">IVOA
+Registry of Registries (RofR)</a>
+</li>
+<li><a href="https://www.eudat.eu/" class="external-link">Eudat</a></li>
+<li><a href="https://ui.adsabs.harvard.edu/classic-form" class="external-link">Astrophysics
+Data System (ADS)</a></li>
+<li><a href="https://eosc-portal.eu/" class="external-link">European Open Science Cloud (EOSC)
+Future</a></li>
+</ul></li>
+<li>Step in the VO: interoperability with other tools, eg.:
+<ul><li><a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a></li>
+<li><a href="http://star-www.dur.ac.uk/~pdraper/splat/splat.html" class="external-link">Splat</a></li>
+<li>astroquery</li>
+</ul></li>
+<li>Added metadata:
+<ul><li>UCD (VO)</li>
+<li>Keywords (UAT)</li>
+<li>Protocol (ADQL)</li>
+<li>DOI (Citation)</li>
+<li>Bibcode</li>
+<li>MOC</li>
+</ul></li>
+</ul><!--  ----------------------------------------- --><!--            Keypoints                       --><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 --></section><section id="benefits-of-using-vizier-summary"><h2 class="section-heading">Benefits of using VizieR: summary<a class="anchor" aria-label="anchor" href="#benefits-of-using-vizier-summary"></a>
 </h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -376,51 +414,47 @@ page)</p>
 <h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
+<p>Distribute your data in a trusted repository in accordance with Open
+Data principles</p>
 <ul><li>
 <strong>Data preservation</strong>: The CDS has been awarded the <a href="https://www.coretrustseal.org/" class="external-link">Core Trust Seal</a>.</li>
 <li>
 <strong>Discovery</strong>: Take advantage of the VizieR services
 allowing for the discovery, and a good data visibility
-<ul><li>
-<a href="https://vizier.cds.unistra.fr/viz-bin/VizieR" class="external-link">VizieR</a>
-data are available through the <a href="https://www.ivoa.net/" class="external-link">Virtual
-Observatory (VO)</a>
-<ul><li>Load tables using <a href="http://www.starlink.ac.uk/topcat/" class="external-link">TOPCAT</a> or <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>
+<ul><li>Dedicated <strong>indexation</strong>
 </li>
-<li>Access to spectra/images or time series:
-<ul><li>Load spectra using <a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a> or <a href="http://star-www.dur.ac.uk/~pdraper/splat/splat.html" class="external-link">Splat</a>
+<li>Quality and a good data <strong>description</strong>
 </li>
-<li>Load images in <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>
+<li>Generate <strong>persistent identifier</strong> (bibcode, DOI) for
+citation</li>
+<li>Data are available through the <a href="https://www.ivoa.net/" class="external-link">Virtual Observatory (VO)</a>
+<!-- - **Large publication**: data published in the Virtual Observatory -->
 </li>
 </ul></li>
-</ul></li>
-<li>Query tables using ADQL/SQL with <a href="http://tapvizier.cds.unistra.fr/adql/" class="external-link">TAPVizieR</a>
-</li>
-<li>The <a href="http://vizier.cds.unistra.fr/vizier/sed/" class="external-link">VizieR
-Photometry viewer</a> is another output using tables for which filters
-are assigned to create SEDs.</li>
-</ul></li>
-<li>
-<strong>Simbad</strong>: VizieR tables with astronomical objects can
-be processed in <a href="http://simbad.cds.unistra.fr/simbad/" class="external-link">SIMBAD</a>.</li>
-<li>
-<strong><a href="http://cdsxmatch.u-strasbg.fr/" class="external-link">CDS
-Cross-match</a></strong>: merge tables according to positions.</li>
 </ul></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
-<!-- 		Documentation 			-->
+<!--            Next Chapters                   -->
 <!--  ----------------------------------------- -->
-</section><section id="more-documentation-from-vizier"><h2 class="section-heading">More documentation (from Vizier)<a class="anchor" aria-label="anchor" href="#more-documentation-from-vizier"></a>
+</section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
-<hr class="half-width"><ul><li><a href="https://vizier.cds.unistra.fr/vizier/submit.htx" class="external-link">Preparing
-and Submitting Tabular Data</a></li>
-<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html" class="external-link">Upload
-File to VizieR: generalities</a></li>
-<li><a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">The
-submitting VizieR page documentation</a></li>
-</ul><!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- 
+<hr class="half-width"><p>In the next chapters, you will learn what type of data can be
+published <strong>(Course 3)</strong>, how to publish them
+<strong>(Courses 4 and 5)</strong>, and finally how to search your data
+using the EOSC tools <strong>(Courses 6 and 7)</strong>.</p>
+<!--  ----------------------------------------- -->
+<!--            Other images                       -->
+<!--  ----------------------------------------- -->
+<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
+</section><section id="remaining-questions"><h2 class="section-heading">Remaining questions ???<a class="anchor" aria-label="anchor" href="#remaining-questions"></a>
+</h2>
+<hr class="half-width"><ul><li><p>Do we need to mention Simbad? Or add it in Figure with VO tools?
+<!-- 
+- **Simbad**: VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
+--></p></li>
+<li><figure>Do we need to include that image? <img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_collection_from_2021.png" alt="Figure: Catalogues / authors overview from VizieR, data from 2021" class="figure mx-auto d-block"></figure></li>
+</ul><!--  ----------------------------------------- --><!-- 		Link references			--><!--  ----------------------------------------- --><!-- --><!-- --><!-- --><!-- Not used --><!-- --><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></div> <!-- / div.lesson-content -->
@@ -475,9 +509,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/section1_intro.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section1_intro.html",
-  "dateCreated": "2023-04-18",
-  "dateModified": "2023-04-18",
-  "datePublished": "2023-05-09"
+  "dateCreated": "2023-05-10",
+  "dateModified": "2023-05-10",
+  "datePublished": "2023-05-10"
 }
 
   </script><script>
