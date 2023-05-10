@@ -24,6 +24,8 @@ exercises: 2
 <!--  ----------------------------------------- -->
 ## Overview
 
+- Added value with EOSC
+- Integration done?
 
 
 <!--  ----------------------------------------- -->
@@ -41,6 +43,7 @@ exercises: 2
 - [Gaia DR3][explore-gaiadr3]
 - [Gaia DR2][explore-gaiadr2]
 
+- One example for each main journal
 
 
 <!--  ----------------------------------------- -->
