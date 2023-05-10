@@ -30,6 +30,9 @@ Once the data submitted on the CDS servers, some checking procedures are execute
 The data are also added to the [VizieR service][vizier-service], with mirrors at [CfA/Harvard (USA)][vizier-at-cfa], [NOAJ/ADAC (Japan)][vizier-at-noaj].
 
 
+Idée: Schéma de la soumission d’une table à l’ajout dans VizieR
+
+
 
 
 <!--  ----------------------------------------- -->
