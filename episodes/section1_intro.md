@@ -95,7 +95,7 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 	- [Eudat][eudat]
 	- [Astrophysics Data System (ADS)][ads]
 	- [European Open Science Cloud (EOSC) Future][eosc-portal]
-- Step in the VO: interoperability with other tools, eg.:
+- Step in the VO: interoperability with other tools, eg.
 	- [CASSIS][cassis]
 	- [Splat][splat]
 	- astroquery
