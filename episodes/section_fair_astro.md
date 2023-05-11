@@ -92,6 +92,16 @@ The article is dedicated for authors, and is a basis of good practices expected 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+Catalogues require an article reference from a refereed journal
+
+Make sure that your data are reusable:
+
+- Give **non-alterned names** and **coordinates** for astronomical objects
+- Give the **units** and stick to **one same unit per column** in a table
+- Keep the **same identifiers between tables** for the same astronomical object!
+
+
+Important point: Tables of astronomical objects without coordinates cannot be added into the SIMBAD database.
 
 <!--  ----------------------------------------- -->
 <!-- 		Ideas	 			-->
