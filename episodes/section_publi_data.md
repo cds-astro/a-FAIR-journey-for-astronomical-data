@@ -100,7 +100,7 @@ Centre de Données astronomiques
 <!-- 		Step-by-step: submission form	-->
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
-## Step-by-step: Submission form
+## Step-by-step (option 1): Submission form
 
 
 
@@ -109,10 +109,10 @@ Centre de Données astronomiques
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 
-## Step-by-step: Python + FTP
+## Step-by-step (option 2): Python + FTP
 
 
-## Python cdspyreadme library
+### Python cdspyreadme library
 
 Aim: Build ReadMe and MRT builder for authors
 
@@ -122,7 +122,7 @@ Link to Python package: [cdspydreadme][vizier-cdspyreadme]
 
 
 
-## FTP deposit
+### FTP deposit
 
 
 
