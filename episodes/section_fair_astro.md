@@ -21,6 +21,7 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+![Data journey from a publication to VizieR: step Data](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths_data.png){alt="Summary Data journey from a publication to VizieR, step Data"}
 
 
 <!--  ----------------------------------------- -->
@@ -102,6 +103,19 @@ Make sure that your data are reusable:
 
 
 Important point: Tables of astronomical objects without coordinates cannot be added into the SIMBAD database.
+
+
+
+
+<!--  ----------------------------------------- -->
+<!--            Next Chapters                   -->
+<!--  ----------------------------------------- -->
+## Next chapters
+
+In the next chapters, you will learn what type of data 
+
+
+
 
 <!--  ----------------------------------------- -->
 <!-- 		Ideas	 			-->

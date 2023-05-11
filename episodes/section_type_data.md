@@ -127,15 +127,14 @@ If your associated data are correctly described, then they will be provided thro
 ## Other types
 
 
+## Summary
+
 <!--  ----------------------------------------- -->
-<!-- 		FITS validator			-->
+<!--            Next Chapters                   -->
 <!--  ----------------------------------------- -->
-## FITS validator
+## Next chapters
 
-Test your FITS spectra/images with the [FITS validator][vizier-fits-validator] which evaluates the compatibility between your FITS and the asked meta-data. This meta-data checking can be completed in the [VizieR submission service][vizier-submit-login].
-
-
-
+In the next chapters, you will learn what type of data 
 
 
 

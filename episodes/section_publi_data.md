@@ -128,6 +128,19 @@ Link to Python package: [cdspydreadme][vizier-cdspyreadme]
 
 
 
+## Summary
+
+
+
+<!--  ----------------------------------------- -->
+<!--            Next Chapters                   -->
+<!--  ----------------------------------------- -->
+## Next chapters
+
+In the next chapters, you will learn what type of data 
+
+
+
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->

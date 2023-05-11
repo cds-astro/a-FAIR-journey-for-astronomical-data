@@ -61,6 +61,16 @@ The CDS provides **tools and services** for authors submission :
 
 
 
+<!--  ----------------------------------------- -->
+<!--            FITS validator                  -->
+<!--  ----------------------------------------- -->
+## FITS validator
+
+Test your FITS spectra/images with the [FITS validator][vizier-fits-validator] which evaluates the compatibility between your FITS and the asked meta-data. This meta-data checking can be completed in the [VizieR submission service][vizier-submit-login].
+
+
+
+
 
 <!--  ----------------------------------------- -->
 <!-- 	Fill the Readme description file 	-->
@@ -110,6 +120,17 @@ Unlike the *Keywords*:  set which is generally related to the scientific goal of
 
 For large sets of references, it is suggested to gather them into a dedicated *reference file* named **refs.dat**.
 
+
+
+## Summary
+
+
+<!--  ----------------------------------------- -->
+<!--            Next Chapters                   -->
+<!--  ----------------------------------------- -->
+## Next chapters
+
+In the next chapters, you will learn what type of data 
 
 
 <!--  ----------------------------------------- -->

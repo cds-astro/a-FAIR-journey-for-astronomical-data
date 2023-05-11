@@ -43,6 +43,14 @@ Once the data are public, they are accessible as plain files in [FTP directories
 ![Harvest map from Vizier to EOSC Explore (inferred, not official)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/harvest_map_from_discussion_with_Gilles.svg){alt="Diagram showing data harvesting from Vizier to EOSC"}
 
 
+## Summary
+
+<!--  ----------------------------------------- -->
+<!--            Next Chapters                   -->
+<!--  ----------------------------------------- -->
+## Next chapters
+
+In the next chapters, you will learn what type of data 
 
 
 <!--  ----------------------------------------- -->

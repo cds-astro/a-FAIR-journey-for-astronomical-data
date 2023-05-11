@@ -53,6 +53,17 @@ exercises: 2
 
 
 
+## Summary
+
+
+<!--  ----------------------------------------- -->
+<!--            Next Chapters                   -->
+<!--  ----------------------------------------- -->
+## Next chapters
+
+In the next chapters, you will learn what type of data 
+
+
 
 <!--  ----------------------------------------- -->
 <!--            Link references                 -->
