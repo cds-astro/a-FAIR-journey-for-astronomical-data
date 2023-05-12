@@ -137,9 +137,9 @@ Distribute your data in a trusted repository in accordance with Open Data princi
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what type of data can be published **(Course 3)**, how to publish them **(Courses 4 and 5)**, and finally how to search your data using the EOSC tools **(Courses 6 and 7)**. 
+In the next chapters, you will learn what type of data can be published **(Course 2)**, how to prepare and publish them **(Courses 3 to 6)**, and finally how to search your data using the EOSC tools **(Courses 7 and 8)**. 
 
-![Full data journey from a publication to VizieR](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths.png){alt="Summary Data journey from a publication to VizieR, full path"}
+![Full data journey from a publication to VizieR](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths.png){alt="Summary Data journey from a publication to VizieR, full path"}
 
 <!--  ----------------------------------------- -->
 <!--            Other images                       -->

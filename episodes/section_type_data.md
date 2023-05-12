@@ -17,18 +17,23 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-![Data journey from a publication to VizieR: step Prepare (part 1)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths_prepare_part1.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 1"}
+![Data journey from a publication to VizieR: step Prepare (part 1)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part1.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 1"}
+
 
 <!--  ----------------------------------------- -->
 <!-- 		Type of data 			-->
 <!--  ----------------------------------------- -->
 ## Overview
 
-### 1. Tables
- 
-### 2. Associated data : images, time series, spectra
+The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
 
-### 3. Other types: MOC / Hips
+In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context.
+
+The following data types are accepted:
+
+- Tables
+- Associated data : images, spectra, sed (**still true???** -- AG), time series, cube
+- Other types: MOC / Hips (**REALLY???** -- AG)
 
 
 
@@ -38,6 +43,7 @@ exercises: 2
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 -->
 ## Tables
 
+![Example VizieR table](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Example of VizieR table ingested"}
 
 ### Format
 
@@ -76,16 +82,18 @@ Following this checklist will help improving the efficiency of the ingestion in 
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section3 -->
 ## Associated data: images, time series, spectra
 
+![Example VizieR associated data (spectra)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Example of VizieR spectra ingested"}
+
 ### Format
 
 Reusable file formats for associated:
 
 | Product type  | Accepted format      |
 | -------------	| :------------------: | 
-| time series  	| ASCII, FITS          |
 |images		| FITS		       |
-|cube		| FITS		       |
 |spectra, sed	| FITS, VOTable, ASCII |
+|time series  	| ASCII, FITS          |
+|cube		| FITS		       |
 
 
 **Note: Only FITS files will be indexed and accessible through the [VizieR associated data service][vizier-assoc-data] and through the Virtual Observatory**
@@ -123,14 +131,33 @@ If your associated data are correctly described, then they will be provided thro
 ## Other types
 
 
+<!--  ----------------------------------------- -->
+<!--            Summary	                        -->
+<!--  ----------------------------------------- -->
 ## Summary
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+Data types accepted:
+
+- Tables (including at least a ReadMe file)
+- Associated data : images, spectra, sed (**still true???** -- AG), time series, cube
+	
+Preferred formats:
+
+- Tables should be preferably written as machine-readable tables (MRT)
+- For the associated data, the FITS format is the preferred solution
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 <!--  ----------------------------------------- -->
 <!--            Next Chapters                   -->
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what type of data 
+In the next chapters, you will learn how to make your data FAIR **(Course 3)**, before submitting them **(Course 6)**, and finally how to search your data using the EOSC tools **(Courses 7 and 8)**. 
 
 
 

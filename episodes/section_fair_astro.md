@@ -17,7 +17,7 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-![Data journey from a publication to VizieR: step Prepare (part 2)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths_prepare_part2.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 2"}
+![Data journey from a publication to VizieR: step Prepare (part 2)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part2.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 2"}
 
 
 
@@ -27,9 +27,9 @@ exercises: 2
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx -->
 ## Overview
 
-The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
+<!--The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
 
-In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context.
+In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context. -->
 
 
 For a quick view of the guidelines and recommandations for publishing your data at CDS, please have a look at the ["Make your data visible" brochure][vizier-make-your-data-visible].
