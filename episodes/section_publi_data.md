@@ -100,7 +100,7 @@ Centre de Données astronomiques
 <!-- 		Step-by-step: submission form	-->
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
-## Step-by-step (option 1): Submission form
+## Submission form (option 1): step-by-step
 
 
 
@@ -109,7 +109,7 @@ Centre de Données astronomiques
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 
-## Step-by-step (option 2): Python + FTP
+## Python + FTP (option 2): step-by-step
 
 
 ### Python cdspyreadme library

@@ -22,7 +22,7 @@ exercises: 2
 
 
 
-![Data journey from a publication to VizieR: step Prepare](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths_prepare.png){alt="Summary Data journey from a publication to VizieR, step Prepare"}
+![Data journey from a publication to VizieR: step Prepare (part 3)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths_prepare_part3.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 3"}
 
 
 <!--  ----------------------------------------- -->

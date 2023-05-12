@@ -1,32 +1,28 @@
 ---
-title: "Type of data"
+title: "Which type of data can you send to VizieR?"
 teaching: 10
 exercises: 2
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How and where to publish your data?
 - What kind of data can be published (tables, images) ?
-- Do and don't when publishing data?
-- What are the FAIR principles?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of the Findable, Accessible, Interoperable and Reusable (FAIR) principles, when preparing your data and its metadata.
-- Be aware of how to publish your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
+- Be aware of  ...
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-![Data journey from a publication to VizieR: step Data](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths_data.png){alt="Summary Data journey from a publication to VizieR, step Data"}
 
+![Data journey from a publication to VizieR: step Prepare (part 1)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_paths_prepare_part1.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 1"}
 
 <!--  ----------------------------------------- -->
 <!-- 		Type of data 			-->
 <!--  ----------------------------------------- -->
-## Which type of data can you send to VizieR ?
+## Overview
 
 ### 1. Tables
  
