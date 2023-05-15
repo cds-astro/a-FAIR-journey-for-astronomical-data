@@ -29,6 +29,9 @@ exercises: 2
 
 
 
+![Data journey from a publication to VizieR: step Publish](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_publish.png){alt="Summary Data journey from a publication to VizieR, step Publish"}
+
+
 <!--  ----------------------------------------- -->
 <!-- 		Submitting 			-->
 <!--  ----------------------------------------- -->
@@ -97,7 +100,7 @@ Centre de Données astronomiques
 <!-- 		Step-by-step: submission form	-->
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
-## Step-by-step: Submission form
+## Submission form (option 1): step-by-step
 
 
 
@@ -106,10 +109,10 @@ Centre de Données astronomiques
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 
-## Step-by-step: Python + FTP
+## Python + FTP (option 2): step-by-step
 
 
-## Python cdspyreadme library
+### Python cdspyreadme library
 
 Aim: Build ReadMe and MRT builder for authors
 
@@ -119,9 +122,22 @@ Link to Python package: [cdspydreadme][vizier-cdspyreadme]
 
 
 
-## FTP deposit
+### FTP deposit
 
 
+
+
+
+## Summary
+
+
+
+<!--  ----------------------------------------- -->
+<!--            Next Chapters                   -->
+<!--  ----------------------------------------- -->
+## Next chapters
+
+In the next chapters, you will learn what type of data 
 
 
 
