@@ -19,6 +19,8 @@ exercises: 2
 
 ![Data journey from a publication to VizieR: step Prepare (part 1)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part1.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 1"}
 
+**NOTE - AG!!!** Lots of repetitions with 'Preparing your data'. To merge?
+
 
 <!--  ----------------------------------------- -->
 <!-- 		Type of data 			-->
@@ -45,22 +47,31 @@ The following data types are accepted:
 
 ![Example VizieR table](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Example of VizieR table ingested"}
 
-### Format
+
+<!--  ----------------------------------------- -->
+### Accepted format
 
 The following formats are welcome: 
 
-- machine-readable tables (FORTRAN format, see the basic conventions)
-- csv files
-- tsv files
-- aligned ASCII files
+- Machine-Readable Tables (MRT / FORTRAN format)
+- TSV, CSV: TSV or CSV files containing a first line with column description is accepted
+- ASCII aligned files
 - FITS files
+- VOTable
 
-
-### Web application
+Note: zip and gzip compression are allowed. Archives should not contain directories.
 
 The [new submit web application][vizier-submit-login] allows different formats for tables and helps you to ingest your data.
 
 
+<!--  ----------------------------------------- -->
+### What cannot be used
+
+Postscript or word/excel files.
+
+
+
+<!--  ----------------------------------------- -->
 ### Checklist when creating a table
 
 - An explanation is given for all the columns (at least a clear label; at best, few words of explanation)
@@ -98,7 +109,19 @@ Reusable file formats for associated:
 
 **Note: Only FITS files will be indexed and accessible through the [VizieR associated data service][vizier-assoc-data] and through the Virtual Observatory**
 
+**Question -- From AG**: Are the data all converted to FITS?
 
+
+<!--  ----------------------------------------- -->
+### What cannot be used
+
+Postscript or word/excel documents.
+
+GIF or JPEG images.
+
+
+
+<!--  ----------------------------------------- -->
 ### General rules for FITS
 
 In order to index FITS formats as accurately as possible, several basic meta-data are needed, usually readily provided by the telescope software and data processing pipelines such as IRAF and MIDAS, as FITS header keywords.
@@ -108,9 +131,13 @@ As a good practice, any FITS header should provide:
 - WCS projections for positions and spectral data
 - [standard FITS keywords][fits-nasa] described in the NASA FITS description.
 
-For the sake of clarity and simplicity, we ask the authors, whenever possible, to stick to the "1 item = 1 file" rule, i.e. 1 star spectrum per file, for instance. In this simplest context, fits files should ideally also have only 1 hdu. An automatic, supervised detection of the meta-data is available in the new VizieR submit page. It resolves the most popular projections, data reduction software (IRAF, MIDAS) headers and recognizes FITS keywords given in the NASA FITS description.
+For the sake of clarity and simplicity, we ask the authors, whenever possible, to stick to the "1 item = 1 file" rule, i.e. 1 star spectrum per file, for instance. In this simplest context, fits files should ideally also have only 1 HDU. 
+
+An automatic, supervised detection of the meta-data is available in the new VizieR submit page. It resolves the most popular projections, data reduction software (IRAF, MIDAS) headers and recognizes FITS keywords given in the NASA FITS description.
 
 
+
+<!--  ----------------------------------------- -->
 ### Small checklist for providing correct headers
 
  - **Positions**
@@ -121,20 +148,23 @@ For the sake of clarity and simplicity, we ask the authors, whenever possible, t
 - Observation **date**
 - **Telescope**: instrument and Facility
 
-If your associated data are correctly described, then they will be provided through the [VizieR associated data web page][vizier-assoc-page] and through the Virtual Observatory ([CASSIS][cassis], [Splat][splat], [Aladin][aladin-home]).
+If your associated data are correctly described, then they will be provided through the [VizieR associated data web page][vizier-assoc-data] and through the Virtual Observatory ([CASSIS][cassis], [Splat][splat], [Aladin][aladin-home]).
 
 
 
 <!--  ----------------------------------------- -->
 <!-- 		Other types			-->
 <!--  ----------------------------------------- -->
-## Other types
+## Other types??
+
+- MOC
+- Hips
 
 
 <!--  ----------------------------------------- -->
 <!--            Summary	                        -->
 <!--  ----------------------------------------- -->
-## Summary
+## Type of data accepted by VizieR: summary
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
