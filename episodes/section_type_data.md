@@ -95,7 +95,7 @@ Following this checklist will help improving the efficiency of the ingestion in 
 
 ![Example VizieR associated data (spectra)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Example of VizieR spectra ingested"}
 
-### Format
+### Accepted format
 
 Reusable file formats for associated:
 
