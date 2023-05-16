@@ -51,17 +51,25 @@ exercises: 2
 <!--  ----------------------------------------- -->
 
 
+<!--  ----------------------------------------- -->
+<!--            Summary                         -->
+<!--  ----------------------------------------- -->
 
 ## Summary
 
+<!--
+::::::::::::::::::::::::::::::::::::: keypoints
+::::::::::::::::::::::::::::::::::::::::::::::::
+-->
+
+
 
 <!--  ----------------------------------------- -->
-<!--            Next Chapters                   -->
+<!--            End	                        -->
 <!--  ----------------------------------------- -->
-## Next chapters
+## End!
 
-In the next chapters, you will learn what type of data 
-
+This concludes this training on how to make your published astronomical data (table, images, spectra, …) FAIR and openly accessible to the community, and discoverable in Virtual Observatory tools such as EOSC.
 
 
 <!--  ----------------------------------------- -->
