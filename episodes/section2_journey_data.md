@@ -43,7 +43,19 @@ Once the data are public, they are accessible as plain files in [FTP directories
 ![Harvest map from Vizier to EOSC Explore (inferred, not official)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/harvest_map_from_discussion_with_Gilles.svg){alt="Diagram showing data harvesting from Vizier to EOSC"}
 
 
+
+
+<!--  ----------------------------------------- -->
+<!--            Summary                         -->
+<!--  ----------------------------------------- -->
+
 ## Summary
+
+<!--
+::::::::::::::::::::::::::::::::::::: keypoints
+::::::::::::::::::::::::::::::::::::::::::::::::
+-->
+
 
 <!--  ----------------------------------------- -->
 <!--            Next Chapters                   -->
@@ -56,9 +68,7 @@ In the next chapters, you will learn what type of data
 <!--  ----------------------------------------- -->
 <!--            Link references                 -->
 <!--  ----------------------------------------- -->
-[vizier-homepage]: https://vizier.cds.unistra.fr/index.gml
 [ftp-cats]: https://cdsarc.cds.unistra.fr/viz-bin/ftp-index
-[vizier-service]: https://vizier.cds.unistra.fr/viz-bin/VizieR
 [vizier-mirors]: https://vizier.cfa.harvard.edu/vizier/mirrors.gml
 [vizier-at-cfa]: http://vizier.nao.ac.jp/
 [vizier-at-noaj]: https://vizier.cfa.harvard.edu/

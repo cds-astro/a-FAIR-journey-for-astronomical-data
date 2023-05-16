@@ -6,13 +6,13 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- Which submission route to follow?
+- What to do with my data knowing my journal?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of  x x x
+- Be aware of the different submission routes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -35,20 +35,7 @@ The submission routes for your data vary depending where you submitted your pape
 ![Journals origin in VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"}
  
 
-Catalogue per journal: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
-
-
-### Priorities and selection management for authors publication
-
-To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed.
-
-- Journals origin : AAS (AJ, ApJ, ApJS), A&A, MNRAS
-- Authors asking for VizieR publication
-- Scientific criteria such as the origin of the measurements
-(e.g. observations have a higher priority than models)
-- Effort required to make the data reusable (e.g. MRT) is taken into account in the selection of AAS journals
-(ApJ, ApJS and AJ).
-- Special case : A&A editors request authors to submit their data in CDS.
+[Catalogue per journal][vizier-cat-per-journal]
 
 
 
@@ -102,15 +89,13 @@ List of journals included:
 
 
 
-
-
 <!--  ----------------------------------------- -->
 <!-- 		MNRAS				-->
 <!--  ----------------------------------------- -->
 ## Monthly Notices of the Royal Astronomical Society (MNRAS)
 
 Authors are encouraged to **upload machine-readable versions of their tables on the VizieR database**.
-Authors should consult the CDS website for instructions on preparing and submitting tabular data, which include a [template][vizier-readme-example-aa] that can be adapted for MNRAS tables. A hyperlink can be included to CDS from the electronic text of the MNRAS article.
+Authors should consult the CDS website for instructions on preparing and submitting tabular data, which include a [template][mnras-vizier-readme-example-aa] that can be adapted for MNRAS tables. A hyperlink can be included to CDS from the electronic text of the MNRAS article.
 
 
 *References* (from the MNRAS webpage):
@@ -170,7 +155,30 @@ ORDER BY popu DESC;
 -->
 
 
-## Summary
+<!--  ----------------------------------------- -->
+<!--            Summary                         -->
+<!--  ----------------------------------------- -->
+<!-- Source: AAS presentation Gilles 2021 -->
+## Submission per journal: summary
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+2 types of VizieR workflows:
+
+- Initiated by authors
+- Initiated by the CDS
+
+To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed. (**TRUE -- AG??**)
+
+- Journals origin : AAS (AJ, ApJ, ApJS), A&A, MNRAS
+- Authors asking for VizieR publication
+- Scientific criteria such as the origin of the measurements
+(e.g. observations have a higher priority than models)
+- Effort required to make the data reusable (e.g. MRT) is taken into account in the selection of AAS journals
+(ApJ, ApJS and AJ).
+- Special case : A&A editors request authors to submit their data in CDS.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 <!--  ----------------------------------------- -->
@@ -178,7 +186,7 @@ ORDER BY popu DESC;
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what type of data 
+In the next chapters, you will learn how to publish your data step-by-step, and then you will follow the journey of your data in the Virtual Observatory and up to EOSC. 
 
 
 
@@ -192,25 +200,11 @@ In the next chapters, you will learn what type of data
 [aas-home]: https://journals.aas.org/
 [aas-data-guide]: https://journals.aas.org/data-guide/
 <!-- -->
+[mnras-vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 [mnras-home]: https://academic.oup.com/mnras
 [mnras-publi-data-cds]: https://academic.oup.com/mnras/pages/General_Instructions#2.7%20Catalogues%20and%20online-only%20material
 <!-- -->
-[vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
-[vizier-cat-32-units]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx
-[vizier-cat-33-labels]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx
-[vizier-cat-34-optional]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx
-[vizier-cat-35-lengthy]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx
-[vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
-[vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
-[vizier-ftp-cats]: http://cdsarc.cds.unistra.fr/ftp/cats/
-[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
-[vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
-[vizier-readme-std]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx
-[vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
-[vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
-[vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
-[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
-[vizier-submit-old]: http://cdsarc.u-strasbg.fr/viz-bin/Submit
+[vizier-cat-per-journal]: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
 <!-- -->
 [viz-astro-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=I/337
 [viz-phot-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=II/328
