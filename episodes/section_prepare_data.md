@@ -26,9 +26,16 @@ exercises: 2
 <!--  ----------------------------------------- -->
 ## Overview
 
-The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
+In order to facilitate the usability of the data, and to allow their processing by the data centers, we at CDS require that:
 
-In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context.
+- the data are *described* accurately enough to allow an unambiguous interpretation of the data, as well as a comprehension of the context in which the data were acquired and/or processed; a single ascii file, named *ReadMe*, is designed for this role.
+- the data are in a format which allows their usage by tools currently in usage in our discipline - normally *flat ascii files*; other formats can be accepted, but are converted into flat files.
+
+
+The present course just tries to answer to some frequently asked question about how to prepare the data for their inclusion in the Data Center documents.
+
+A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
+
 
 The following data types are accepted:
 
@@ -262,6 +269,14 @@ Preferred formats:
 
 
 
+<!--  ----------------------------------------- -->
+<!-- 		Documentation 			-->
+<!--  ----------------------------------------- -->
+## More information 
+
+- [Standard for Documentation of Astronomical Catalogues (from VizieR website)][vizier-standard-convention]
+
+
 
 <!--  ----------------------------------------- -->
 <!--            Next Chapters                   -->
@@ -280,4 +295,5 @@ In the next chapters, you will learn how to submit your data, and finally how to
 [vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
 [vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
 [vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
+[vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
 

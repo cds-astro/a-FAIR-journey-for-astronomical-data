@@ -29,15 +29,17 @@ exercises: 2
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx -->
 ## Overview
 
-<!--The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
+The CDS and other astronomical data centers are storing and distributing the astronomical data to promote their usage primarily by professional astronomers.
 
 In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context. 
 
+Before detailing how to prepare the data for their inclusion into VizieR, we will review in this course the best practices for data publication in the astronomical field.
+
+<!--
 For a quick view of the guidelines and recommandations for publishing your data at CDS, please have a look at the ["Make your data visible" brochure][vizier-make-your-data-visible].
 
 See also the Best Practices for Data Publication in the Astronomical Literature (T.Chen, 2022). The article is dedicated for authors, and is a basis of good practices expected in journals and data-centers.
 
--->
 In order to facilitate the usability of the data, and to allow their processing by the data centers, we at CDS require that:
 
 - the data are *described* accurately enough to allow an unambiguous interpretation of the data, as well as a comprehension of the context in which the data were acquired and/or processed; a single ascii file, named *ReadMe*, is designed for this role.
@@ -48,6 +50,7 @@ The present course just tries to answer to some frequently asked question about 
 
 A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
+-->
 
 
 <!--  ----------------------------------------- -->
@@ -55,8 +58,10 @@ A full description of the standard conventions used for the documentation of the
 <!--  ----------------------------------------- -->
 ## What are the FAIR principles?
 
-Many courses can be found online explaining the FAIR principles in more details.
-In this section, we will summarize what are the FAIR principles and what does it mean for astronomical data. 
+Officialy formalized by Wilkinson et al. in 2016 ([10.1038/sdata.2016.18][wilkinson_2016]), the FAIR Guiding Principles have emerged over the last few years. The underlying idea is to provide a set of guidelines for making research (meta)data **f**indable, **a**ccessible, **i**nteroperable and **r**eusable that ultimately ensures standardised machine actionability. 
+
+Many great courses can be found online explaining those principles in more details.
+In this section, we will summarize them and focus more on what it means for astronomical data. 
  
 ![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/fair_principles.png){alt="Findable Accessible Interoperable Reusable principes"}
 *Credit: Open Science Training Handbook, CC0 1.0 Universal, https://doi.org/10.5281/zenodo.1212496*
@@ -67,7 +72,7 @@ In this section, we will summarize what are the FAIR principles and what does it
 
 ### Details
 
-The set of guidelines for making research (meta)data findable, accessible, interoperable and reusable that ultimately ensures standardised machine actionability.
+bla bla bla
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -75,7 +80,7 @@ The set of guidelines for making research (meta)data findable, accessible, inter
 
 ### Findable
 
-Find the data available
+**F**ind the data available
 
 :::::::::::::::::::::::::
 
@@ -84,33 +89,8 @@ Find the data available
 
 ### Accessible
 
-Access the data
+**A**ccessible and not open!
 
-:::::::::::::::::::::::::
-
-
-:::::::::::::::: solution
-
-### Interopable
-
-Interoperable use of the data with other data
-
-:::::::::::::::::::::::::
-
-
-:::::::::::::::: solution
-
-### Reusable
-
-Re-use the data
-
-:::::::::::::::::::::::::
-
-
-
-
-
-### FAIR vs OPEN
 
 Extract from: https://carpentries-incubator.github.io/managing-computational-projects/09-rdm.html
 
@@ -120,6 +100,30 @@ You can find a more detailed overview of the FAIR principles by GO FAIR of what 
 
 
 https://carpentries-incubator.github.io/fair-data-management-agriculture/fair-data.html
+
+
+
+
+
+:::::::::::::::::::::::::
+
+
+:::::::::::::::: solution
+
+### Interopable
+
+**I**nteroperable use of the data with other data
+
+:::::::::::::::::::::::::
+
+
+:::::::::::::::: solution
+
+### Reusable
+
+**R**e-use the data
+
+:::::::::::::::::::::::::
 
 
 
@@ -186,21 +190,6 @@ In the next chapters, you will learn how to prepare your data before submitting 
 
 
 <!--  ----------------------------------------- -->
-<!-- 		Documentation 			-->
-<!--  ----------------------------------------- -->
-## More information 
-
-- [Standard for Documentation of Astronomical Catalogues (from VizieR website)][vizier-standard-convention]
-
-**NEEDED??**
-
-
-- [Preparing and Submitting Tabular Data][vizier-publi-data-home]
-- [VizieR catalogue upload generalities][vizier-publi-notes-help]
-- [The submitting VizieR page documentation][vizier-submit-data-help]
-
-
-<!--  ----------------------------------------- -->
 <!-- 		Other images			-->
 <!--  ----------------------------------------- -->
 ## Extra images ???
@@ -213,7 +202,8 @@ In the next chapters, you will learn how to prepare your data before submitting 
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->
-[vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
+[wilkinson_2016]: https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18
+<!-- -->
 [vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
