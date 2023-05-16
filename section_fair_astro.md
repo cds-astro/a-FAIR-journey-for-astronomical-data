@@ -6,6 +6,8 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- How and where to publish your data?
+- What kind of data can be published (tables, images) ?
 - Do and don't when publishing data?
 - What are the FAIR principles?
 
@@ -17,7 +19,7 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-![Data journey from a publication to VizieR: step Prepare (part 2)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part2.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 2"}
+![Data journey from a publication to VizieR: step Prepare (part 1)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part1.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 1"}
 
 
 
@@ -177,7 +179,7 @@ Important point: Tables of astronomical objects without coordinates cannot be ad
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn how and where to submit your data to VizieR **(Course 6)**, and finally how to search your data using the EOSC tools **(Courses 7 and 8)**.
+In the next chapters, you will learn how to prepare your data before submitting them to VizieR, and ultimately how to search your data using the EOSC tools.
 
 
 
@@ -211,8 +213,11 @@ In the next chapters, you will learn how and where to submit your data to VizieR
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->
-[vizier-make-your-data-visible]: https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf
+[vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
 [vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
-[vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
+<!-- -->
+<!-- Not used -->
+<!-- -->
+[vizier-make-your-data-visible]: https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf

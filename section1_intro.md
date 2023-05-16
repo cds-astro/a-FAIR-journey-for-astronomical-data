@@ -113,7 +113,7 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 <!--            Keypoints                       -->
 <!--  ----------------------------------------- -->
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
-## Benefits of using VizieR: summary 
+## Benefits of using VizieR: summary
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
@@ -137,7 +137,7 @@ Distribute your data in a trusted repository in accordance with Open Data princi
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what type of data can be published **(Course 2)**, how to prepare and publish them **(Courses 3 to 6)**, and finally how to search your data using the EOSC tools **(Courses 7 and 8)**. 
+In the next chapters, you will learn what type of data can be published, how to prepare and publish them, and finally how to search your data using the EOSC tools. 
 
 ![Full data journey from a publication to VizieR](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths.png){alt="Summary Data journey from a publication to VizieR, full path"}
 
@@ -161,18 +161,17 @@ In the next chapters, you will learn what type of data can be published **(Cours
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->
 [topcat]:  http://www.starlink.ac.uk/topcat/
-[cts]: https://www.coretrustseal.org/
 [ivoa-registry]: http://rofr.ivoa.net/
 [eudat]: https://www.eudat.eu/
 [ads]: https://ui.adsabs.harvard.edu/classic-form
 [eosc-portal]: https://eosc-portal.eu/
 [cassis]: http://cassis.irap.omp.eu/?page=cassis
 [splat]: http://star-www.dur.ac.uk/~pdraper/splat/splat.html
+[cts]: https://www.coretrustseal.org/
 [ivoa-link]: https://www.ivoa.net/
 <!-- -->
 [cds-home]: https://cds.unistra.fr/
 [aladin-home]: http://aladin.cds.unistra.fr/aladin.gml
-[simbad-home]: http://simbad.cds.unistra.fr/simbad/
 [xmatch-home]: http://cdsxmatch.u-strasbg.fr/
 <!-- -->
 [vizier-home]: https://vizier.cds.unistra.fr/index.gml
@@ -187,7 +186,10 @@ In the next chapters, you will learn what type of data can be published **(Cours
 <!-- -->
 <!-- Not used -->
 <!-- -->
+[simbad-home]: http://simbad.cds.unistra.fr/simbad/
+
 [vizier-make-your-data-visible]: https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf
 [vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
+
