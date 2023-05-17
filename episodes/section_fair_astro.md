@@ -58,10 +58,10 @@ A full description of the standard conventions used for the documentation of the
 <!--  ----------------------------------------- -->
 ## What are the FAIR principles?
 
-Officialy formalized by Wilkinson et al. in 2016 ([10.1038/sdata.2016.18][wilkinson_2016]), the FAIR Guiding Principles have emerged over the last few years. The underlying idea is to provide a set of guidelines for making research (meta)data **f**indable, **a**ccessible, **i**nteroperable and **r**eusable that ultimately ensures standardised machine actionability. 
+Formalized by Wilkinson et al. in 2016 ([10.1038/sdata.2016.18][wilkinson_2016]), the FAIR Guiding Principles have emerged over the last few years. The underlying idea is to provide a set of guidelines (neither a standard not a specification) for making research data in a broad sense (not only data, but also algorithms, tools, and workﬂows that led to that data) **F**indable, **A**ccessible, **I**nteroperable and **R**eusable, ultimately ensuring standardised machine actionability. 
 
 Many great courses can be found online explaining those principles in more details.
-In this section, we will summarize them and focus more on what it means for astronomical data. 
+In this course, we will summarize them and focus more on what it means for astronomical data. 
  
 ![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/fair_principles.png){alt="Findable Accessible Interoperable Reusable principes"}
 *Credit: Open Science Training Handbook, CC0 1.0 Universal, https://doi.org/10.5281/zenodo.1212496*
@@ -72,36 +72,24 @@ In this section, we will summarize them and focus more on what it means for astr
 
 ### Details
 
-bla bla bla
+The FAIR Guiding Principles for scientiﬁc data management and stewardship as outlined by M. Wilkinson et al. (2016). 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::: solution
 
-### Findable
+### To be Findable
 
-**F**ind the data available
+The first step before reusing the data is to be able to find them. 
+The metadata and data should be easy to find for both humans and computers. 
 
-:::::::::::::::::::::::::
+F1. (Meta)data are assigned a globally unique and persistent identiﬁer
 
+F2. Data are described with rich metadata (deﬁned by R1 below)
 
-:::::::::::::::: solution
+F3. Metadata clearly and explicitly include the identiﬁer of the data it describes
 
-### Accessible
-
-**A**ccessible and not open!
-
-
-Extract from: https://carpentries-incubator.github.io/managing-computational-projects/09-rdm.html
-
-Making data ‘FAIR’ is not the same as making it ‘open’. Accessible means that there is a procedure in place to access the data. Data should be as open as possible, and as closed as necessary. It is also important to say that the FAIR principles are aspirational: they do not strictly define how to achieve a state of FAIRness, but rather describe a continuum of features, attributes, and behaviours that will move a digital resource closer to that goal. Even though the FAIR principles have been defined to allow machines to find and use digital objects automatically, they improve the reusability of data by humans as well. The capacity of computational systems to find, access, interoperate, and reuse data, with minimal human intervention, is essential in today’s data-driven era.
-
-You can find a more detailed overview of the FAIR principles by GO FAIR of what the FAIR principles recommend.
-
-
-https://carpentries-incubator.github.io/fair-data-management-agriculture/fair-data.html
-
-
+F4. (Meta)data are registered or indexed in a searchable resource
 
 
 
@@ -110,18 +98,59 @@ https://carpentries-incubator.github.io/fair-data-management-agriculture/fair-da
 
 :::::::::::::::: solution
 
-### Interopable
+### To be Accessible
+
+Once the data can be found, the user needs to know how to access them. That could include authentification and authorisation.
+The accessibility of the data does not mean that they are open!
+
+
+A1. (Meta)data are retrievable by their identiﬁer using a standardized communications protocol
+
+A1.1 The protocol is open, free, and universally implementable
+
+A1.2 The protocol allows for an authentication and authorization procedure, where necessary
+
+A2. Metadata are accessible, even when the data are no longer available
+
+
+
+
+:::::::::::::::::::::::::
+
+
+:::::::::::::::: solution
+
+### To be Interopable
 
 **I**nteroperable use of the data with other data
+// The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
+
+
+I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+
+I2. (Meta)data use vocabularies that follow FAIR principles
+
+I3. (Meta)data include qualiﬁed references to other (meta)data
+
 
 :::::::::::::::::::::::::
 
 
 :::::::::::::::: solution
 
-### Reusable
+### To be Reusable
 
 **R**e-use the data
+
+// The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
+
+R1. Meta(data) are richly described with a plurality of accurate and relevant attributes
+
+R1.1. (Meta)data are released with a clear and accessible data usage license
+
+R1.2. (Meta)data are associated with detailed provenance
+
+R1.3. (Meta)data meet domain-relevant community standards
 
 :::::::::::::::::::::::::
 
@@ -138,6 +167,8 @@ https://carpentries-incubator.github.io/fair-data-management-agriculture/fair-da
 ***Link: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268***
 
 The article is dedicated for authors, and is a basis of good practices expected in journals and data-centers.
+
+How can tou make your data FAIR?
 
 
 
@@ -187,18 +218,6 @@ In the next chapters, you will learn how to prepare your data before submitting 
 
 
 
-
-
-<!--  ----------------------------------------- -->
-<!-- 		Other images			-->
-<!--  ----------------------------------------- -->
-## Extra images ???
-
-![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/FAIR_data_principles.jpg){alt="Findable Accessible Interoperable Reusable principes"}
-*Credit: SangyaPundir, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons*
-
-
-
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->
@@ -211,3 +230,14 @@ In the next chapters, you will learn how to prepare your data before submitting 
 <!-- Not used -->
 <!-- -->
 [vizier-make-your-data-visible]: https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Glossary			-->
+<!--  ----------------------------------------- -->
+<!-- 
+DOI—Digital Object Identiﬁer; a code used to permanently and stably identify (usually digital) objects. DOIs provide a standard mechanism for retrieval of
+metadata about the object, and generally a means to access the data object itself.
+FAIR—Findable, Accessible, Interoperable, Reusable
+-->
+

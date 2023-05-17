@@ -191,9 +191,7 @@ Full details about the files and directories structures can be found in the [Ado
 
 <!--  ----------------------------------------- -->
 
-### Quiz
-
-***List of good / bad examples  => Quiz: yes and no answer***
+Quiz: ***List of good / bad examples  => Quiz: yes and no answer***
 
 **Idea:Test those names on the VizieR website**
 
@@ -206,7 +204,7 @@ Show some good and bad examples of filenames
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
-## Are these filenames correct or not?
+## Quiz: Are these filenames correct or not?
 
 
 ```
