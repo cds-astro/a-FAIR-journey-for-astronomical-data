@@ -124,16 +124,31 @@ def plot_pie_chart(today: str, number_of_catalogs: int, count_per_journal, cut):
     journal_names.update({"other": f"journals with less than {cut} catalogs"})
 
     # join the dataframe and the dictionnary
-    count_per_journal["journal name"] = count_per_journal["index"].map(journal_names)
+    count_per_journal["sub journal name"] = count_per_journal["index"].map(journal_names)
 
-    fig = px.pie(
+    # create column for journal families 
+    principal_journal = {
+        "Astronomy and Astrophysics": "Astronomy & Astrophysics Journal",
+        "Astronomy and Astrophysics Supplement Series": "Astronomy & Astrophysics Journal",
+        "The Astronomical Journal": "American Astronomical Society Journals",
+        "The Astrophysical Journal": "American Astronomical Society Journals",
+        "The Astrophysical Journal Supplement Series": "American Astronomical Society Journals",
+    }
+    count_per_journal["journal name"] = count_per_journal["sub journal name"].replace(principal_journal)
+    count_per_journal.loc[count_per_journal["sub journal name"] == count_per_journal["journal name"], ["sub journal name"]] = np.nan
+    
+    # and now plot time!
+    fig = px.sunburst(
         count_per_journal,
         values="number of catalogs",
-        names="journal name",
+        path=["journal name", "sub journal name"],
         title=f"Provenance of the {number_of_catalogs} catalogs in VizieR ({today})",
         color_discrete_sequence=px.colors.qualitative.Pastel,
+        hover_name="journal name",
     )
-    fig.update_traces(textinfo="percent", textposition="inside", texttemplate="")
+    fig.update_traces(hovertemplate='<b>%{label}</b><br>Number of catalogs: %{value}')  # parent, or label, or id, or value
+    fig.update_traces(textinfo="label+percent entry")
+    fig.update_layout(margin = dict(t=50, l=0, r=0, b=0))
     fig.write_html("vizier_figure.html")
 
 
