@@ -149,7 +149,7 @@ def plot_pie_chart(today: str, number_of_catalogs: int, count_per_journal, cut):
     fig.update_traces(hovertemplate='<b>%{label}</b><br>Number of catalogs: %{value}')  # parent, or label, or id, or value
     fig.update_traces(textinfo="label+percent entry")
     fig.update_layout(margin = dict(t=50, l=0, r=0, b=0))
-    fig.write_html("vizier_figure.html")
+    fig.write_html("../../../site/vizier_figure.html")
 
 
 def main(ads_api_key):

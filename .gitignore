@@ -2,7 +2,7 @@
 episodes/*html
 site/*
 !site/README.md
-
+!site/vizier_figure.html
 # History files
 .Rhistory
 .Rapp.history
