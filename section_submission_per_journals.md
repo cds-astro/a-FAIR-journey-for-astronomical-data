@@ -31,7 +31,7 @@ The submission routes for your data vary depending where you submitted your pape
 - Initiated by authors
 - Initiated by the CDS
 
-<iframe src="https://cds-astro.github.io/vizier_figure.html" style="border: none; width: 98%; height:500px" allowfullscreen="" allow="autoplay" data-external="1"></iframe>
+<iframe src="https://manonmarchand.github.io/vizier-stats/index.html" style="border: none; width: 98%; height:500px" allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 [Catalogue per journal][vizier-cat-per-journal]
 
