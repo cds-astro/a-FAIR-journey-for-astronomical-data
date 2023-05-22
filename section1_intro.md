@@ -77,6 +77,7 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - Query VizieR [associated data][vizier-assocdata] (images, spectra, timeseries)   
 - Load your data as a VO Table using [TOPCAT][topcat]
 - Query all VizieR catalogues using [CDS Python package][vizier-api]
+- VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 
 
 ![VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo.png){alt="Figure: VizieR and other VO tools overview"}
@@ -113,7 +114,7 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 <!--            Keypoints                       -->
 <!--  ----------------------------------------- -->
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
-## Benefits of using VizieR: summary
+## Summary: Benefits of using VizieR
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
@@ -140,21 +141,6 @@ Distribute your data in a trusted repository in accordance with Open Data princi
 In the next chapters, you will learn what type of data can be published, how to prepare and publish them, and finally how to search your data using the EOSC tools. 
 
 ![Full data journey from a publication to VizieR](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths.png){alt="Summary Data journey from a publication to VizieR, full path"}
-
-<!--  ----------------------------------------- -->
-<!--            Other images                       -->
-<!--  ----------------------------------------- -->
-<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
-## Remaining questions ???
-
-- Do we need to mention Simbad? Or add it in Figure with VO tools?
-<!-- 
-- **Simbad**: VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
--->
-
-- Do we need to include that image?
-![Large collection of astronomical catalogues from VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_collection_from_2021.png){alt="Figure: Catalogues / authors overview from VizieR, data from 2021"}
-
 
 
 <!--  ----------------------------------------- -->
