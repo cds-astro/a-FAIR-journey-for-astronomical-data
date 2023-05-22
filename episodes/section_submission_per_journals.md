@@ -31,9 +31,7 @@ The submission routes for your data vary depending where you submitted your pape
 - Initiated by authors
 - Initiated by the CDS
 
-
-![Journals origin in VizieR, data from 2021 (**TO BE UPDATED**)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/journals_origin_on_vizier_from_2021.png){alt="Pie chart: Journals origin in VizieR, data from 2021"}
- 
+<iframe src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_stats/vizier_figure.html" style="border: none; width: 98%; height:500px" allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 [Catalogue per journal][vizier-cat-per-journal]
 
