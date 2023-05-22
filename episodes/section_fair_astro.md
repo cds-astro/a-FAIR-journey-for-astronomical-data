@@ -300,15 +300,10 @@ MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
 ## IAU conventions
 [b] Use “BR J0529-3526” instead of “BR0529-3526”.
 [c] Use “B3 2327+391”, not “B32327+391”.
-==> Simbad link: http://simbad.cds.unistra.fr/simbad/sim-id?Ident=B3%202327%2B391
- 
-
-[d] Use “3C 295 cluster” instead of “3C 295” 
-when referring to the cluster.
+[d] Use “3C 295 cluster” instead of “3C 295” when referring to the cluster.
 [e] The tau Ceti system now has four planets: e, f, g, and h. 
-Since tau Ceti b, c, and d were refuted,
-the letter designations b, c, and d were not reused 
-for the newer planets to avoid confusion.
+Since tau Ceti b, c, and d were refuted, the letter designations b, c, 
+and d were not reused for the newer planets to avoid confusion.
 
 ## New objects
 [f] Confirm any new acronym to the IAU Dictionary of Nomenclature of 
