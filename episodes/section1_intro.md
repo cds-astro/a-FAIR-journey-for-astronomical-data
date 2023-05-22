@@ -113,7 +113,7 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 <!--            Keypoints                       -->
 <!--  ----------------------------------------- -->
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section1 -->
-## Benefits of using VizieR: summary
+## Summary: Benefits of using VizieR
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 

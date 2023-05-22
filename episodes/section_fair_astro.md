@@ -618,7 +618,7 @@ gator.
 <!--  ----------------------------------------- -->
 <!-- 		Keypoints 			-->
 <!--  ----------------------------------------- -->
-## Small tips for FAIR data: summary
+## Summary: Small tips for FAIR data
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 

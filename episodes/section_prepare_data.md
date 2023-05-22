@@ -249,7 +249,7 @@ This meta-data checking is also completed during the [VizieR submission service]
 <!--  ----------------------------------------- -->
 <!--            Summary	                        -->
 <!--  ----------------------------------------- -->
-## Type of data accepted by VizieR: summary
+## Summary: Type of data accepted by VizieR
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints
