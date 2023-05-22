@@ -157,7 +157,7 @@ ORDER BY popu DESC;
 <!--            Summary                         -->
 <!--  ----------------------------------------- -->
 <!-- Source: AAS presentation Gilles 2021 -->
-## Submission per journal: summary
+## Summary: Submission per journal
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
