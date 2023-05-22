@@ -178,7 +178,8 @@
 <li><a href="#other-types">Other types??</a></li>
 <li><a href="#file-naming-conventions">File naming conventions</a></li>
 <li><a href="#vizier-fits-validator">VizieR FITS validator</a></li>
-<li><a href="#type-of-data-accepted-by-vizier-summary">Type of data accepted by VizieR: summary</a></li>
+<li><a href="#summary-type-of-data-accepted-by-vizier">Summary: Type of data accepted by VizieR</a></li>
+<li><a href="#more-information">More information</a></li>
 <li><a href="#next-chapters">Next chapters</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -282,7 +283,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Preparing your data</h1>
-        <p> Last updated on 2023-05-16 | 
+        <p> Last updated on 2023-05-22 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -318,13 +319,20 @@
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part2.png" alt="Summary Data journey from a publication to VizieR, step Prepare, part 2" class="figure mx-auto d-block"><figcaption>Data journey from a publication to VizieR: step
 Prepare (part 2)</figcaption></figure><!--  ----------------------------------------- --><!-- 		Type of data 			--><!--  ----------------------------------------- --><section id="overview"><h2 class="section-heading">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<hr class="half-width"><p>The CDS and other astronomical data centers are storing and
-distributing the astronomical data to promote their usage primarily by
-professional astronomers.</p>
-<p>In order to ensure the scientific quality of the data, we therefore
-require that the data are related to a publication in a refereed
-journal, either as tables or catalogues actually published, or as a
-paper describing the data and their context.</p>
+<hr class="half-width"><p>In order to facilitate the usability of the data, and to allow their
+processing by the data centers, we at CDS require that:</p>
+<ul><li>the data are <em>described</em> accurately enough to allow an
+unambiguous interpretation of the data, as well as a comprehension of
+the context in which the data were acquired and/or processed; a single
+ascii file, named <em>ReadMe</em>, is designed for this role.</li>
+<li>the data are in a format which allows their usage by tools currently
+in usage in our discipline - normally <em>flat ascii files</em>; other
+formats can be accepted, but are converted into flat files.</li>
+</ul><p>The present course just tries to answer to some frequently asked
+question about how to prepare the data for their inclusion in the Data
+Center documents.</p>
+<p>A full description of the standard conventions used for the
+documentation of the catalogues is available from <a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">there</a>.</p>
 <p>The following data types are accepted:</p>
 <ul><li>Tables</li>
 <li>Associated data : images, spectra, sed (<strong>still
@@ -469,23 +477,21 @@ only printable text).</li>
 in the <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx" class="external-link">Adopted
 Standards for Catalogues document</a>.</p>
 <!--  ----------------------------------------- -->
-<div class="section level3">
-<h3 id="quiz">Quiz<a class="anchor" aria-label="anchor" href="#quiz"></a></h3>
-<p><strong><em>List of good / bad examples =&gt; Quiz: yes and no
+<p>Quiz: <strong><em>List of good / bad examples =&gt; Quiz: yes and no
 answer</em></strong></p>
 <p><strong>Idea:Test those names on the VizieR website</strong></p>
 
-<div id="challenge1" class="callout challenge">
+<div id="quiz-are-these-filenames-correct-or-not" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="are-these-filenames-correct-or-not" class="callout-inner">
-<h3 class="callout-title">Are these filenames correct or not?<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<div id="quiz-are-these-filenames-correct-or-not" class="callout-inner">
+<h3 class="callout-title">Quiz: Are these filenames correct or not?<a class="anchor" aria-label="anchor" href="#quiz-are-these-filenames-correct-or-not"></a>
 </h3>
 <div class="callout-content">
 <pre><code>[Q1] 'my_awesome_file.fit'
 [Q2] '998bla.dat'
-[Q2] 'myfile.jpg'
+[Q3] 'myfile.jpg'
 [Q4] 'table.dat'
 [Q5] 'table&amp;data.dat'</code></pre>
 </div>
@@ -495,10 +501,10 @@ answer</em></strong></p>
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">
-  Output
+  Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre><code>[1] "No: too long"
 [2] "No: ??"
@@ -512,7 +518,6 @@ answer</em></strong></p>
 <!--  ----------------------------------------- -->
 <!--            VizieR FITS validator           -->
 <!--  ----------------------------------------- -->
-</div>
 </section><section id="vizier-fits-validator"><h2 class="section-heading">VizieR FITS validator<a class="anchor" aria-label="anchor" href="#vizier-fits-validator"></a>
 </h2>
 <hr class="half-width"><p>You can test your FITS spectra/images with the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" class="external-link">VizieR
@@ -520,7 +525,7 @@ FITS validator tool</a> which evaluates the compatibility between your
 FITS and the asked meta-data.</p>
 <p>This meta-data checking is also completed during the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
 submission service</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_fits_validator_may2023.png" alt="Screenshot: VizieR FITS validator tool, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR FITS validator tool page</figcaption></figure><!--  ----------------------------------------- --><!--            Summary	                        --><!--  ----------------------------------------- --></section><section id="type-of-data-accepted-by-vizier-summary"><h2 class="section-heading">Type of data accepted by VizieR: summary<a class="anchor" aria-label="anchor" href="#type-of-data-accepted-by-vizier-summary"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_fits_validator_may2023.png" alt="Screenshot: VizieR FITS validator tool, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR FITS validator tool page</figcaption></figure><!--  ----------------------------------------- --><!--            Summary	                        --><!--  ----------------------------------------- --></section><section id="summary-type-of-data-accepted-by-vizier"><h2 class="section-heading">Summary: Type of data accepted by VizieR<a class="anchor" aria-label="anchor" href="#summary-type-of-data-accepted-by-vizier"></a>
 </h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -543,9 +548,13 @@ solution</li>
 </div>
 </div>
 <!--  ----------------------------------------- -->
-<!--            Next Chapters                   -->
+<!-- 		Documentation 			-->
 <!--  ----------------------------------------- -->
-</section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
+</section><section id="more-information"><h2 class="section-heading">More information<a class="anchor" aria-label="anchor" href="#more-information"></a>
+</h2>
+<hr class="half-width"><ul><li><a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">Standard for
+Documentation of Astronomical Catalogues (from VizieR website)</a></li>
+</ul><!--  ----------------------------------------- --><!--            Next Chapters                   --><!--  ----------------------------------------- --></section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
 <hr class="half-width"><p>In the next chapters, you will learn how to submit your data, and
 finally how to search your data using the EOSC tools.</p>
@@ -587,7 +596,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -609,9 +618,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/section_prepare_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_prepare_data.html",
-  "dateCreated": "2023-05-16",
-  "dateModified": "2023-05-16",
-  "datePublished": "2023-05-16"
+  "dateCreated": "2023-05-22",
+  "dateModified": "2023-05-22",
+  "datePublished": "2023-05-22"
 }
 
   </script><script>
