@@ -185,13 +185,16 @@ match the precision of the measurements.
 #### Examples
 ```output
 [a] “... used by the Dark Energy Survey (DES)...”
-[b] The period of a periodic phenomenon should be given as “P = 1.23456±0.00012 days” instead of “P = 1.23456(12) days”. 
-[c] Present a measurement as 0.123±0.002, not 0.12345±0.002 or 0.123±0.00234.
+[b] The period of a periodic phenomenon should be given as 
+“P = 1.23456±0.00012 days” instead of “P = 1.23456(12) days”. 
+[c] Present a measurement as 0.123±0.002, not 0.12345±0.002 
+or 0.123±0.00234.
 [d] Present source color “(B-V) = 0.45 mag” instead of “(B-V) = 0.45”
-[e] State your preferred solution in the text and indicated in bold in your Table: example from [Grieves et al. (2021)][Grieves_2021]
+[e] State your preferred solution in the text and indicated in bold
+in your Table: example from Grieves et al. (2021).
 ```
 
-![Extract from Table 4 from Grieves et al. (2021)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/grieves_2012_table4_short.png){alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold to indicate their preferred solution when providing multiple options for stellar parameters"}
+![Extract from Table 4 from [Grieves et al. (2021)][Grieves_2021]](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/grieves_2012_table4_short.png){alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold to indicate their preferred solution when providing multiple options for stellar parameters"}
 
  
 <!--  ----------------------------------------- -->
@@ -210,31 +213,129 @@ match the precision of the measurements.
 (j) Cross-match the same objects in different tables within the same article. (§2.1.4)
 
 
+
+<!--  ----------------- -->
+#### Quiz
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+Table 1 (from Chen et al. 2022): Examples of improper astronomical designations in literature
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Quiz: Why are these astronomical designations improper?
+
+
+```
+[Q1] SDSS J1441+0948
+[Q2] SN 05J 
+[Q3] HESS J232+202
+[Q4] BR 0529-3526
+[Q5] 0008+006
+[Q6] DEM45
+[Q7] SDSS 587729386611212320
+[Q8] Gaia DR 2 2.7904e18
+[Q9] mu cep
+```
+
+Hint: Look for these objects in [Simbad][simbad-home].
+
+:::::::::::::::::::::::: hint
+
+## Why it is improper
+
+```
+[1] Insufficient precision in RA and DEC can cause confusion
+ with nearby sources. 
+[2] Incomplete name can be interpreted into different objects.
+[3] Leading zero in RA is missing and can cause misinterpretation 
+of the RA at 23 hours instead of 02 hour. 
+[4] Missing letter J to specify J2000 equatorial coordinates.
+[5] Name prefix is needed to distinguish between different objects.
+[6] H II regions in LMC or SMC should be indicated with 
+“L” or “S” to avoid ambiguity.
+[7] Database objectID numbers are used without specifying release number. 
+The same running number may refer to a different source in a different release.
+[8] ID is written in scientific notation, making it impossible 
+to retrieve the actual object.
+[9] Ambiguous name can be interpreted into different objects.
+```
+:::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::: solution
+
+## Recommended usage
+
+```
+[1] SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
+or SDSS J144157.26+094853.7
+[2] SN 1905J, or SN 2005J 
+[3] HESS J0232+202
+[4] BR J0529-3526
+[5] ZC 0008+006 (Redshift z = 2.3), or
+IVS B0008+006 (Redshift z = 1.5)
+[6] DEM L 045, or DEM S 045
+[7] SDSS DR6 587729386611212320
+[8] Gaia DR2 2790494815860044544
+[9] *mu. Cep (21h43m30.46s, +58d46m48.2s, ICRS J2000), or
+MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
+```
+
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+**Warning (TO CHECK LATER !!!!):** 
+
+- SN 1905J not found in Simbad. To change ????
+- ZC 0008+006 not found in Simbad. To change???
+- SDSS DR6 587729386611212320: not in Simbad. Incorrect id?
+
+
+<!--  ----------------- -->
 #### Examples
 ```output
 
 ## IAU conventions
-[a] **Include table 1 as an exercice?**
 [b] Use “BR J0529-3526” instead of “BR0529-3526”.
-[c] Use B3 2327+391, not B32327+391.
-[d] Use “3C 295 cluster” instead of “3C 295” when referring to the cluster.
-[e] The tau Ceti system now has four planets: e, f, g, and h. Since tau Ceti b, c, and d were refuted,
-the letter designations b, c, and d were not reused for the newer planets to avoid confusion.
+[c] Use “B3 2327+391”, not “B32327+391”.
+==> Simbad link: http://simbad.cds.unistra.fr/simbad/sim-id?Ident=B3%202327%2B391
+ 
+
+[d] Use “3C 295 cluster” instead of “3C 295” 
+when referring to the cluster.
+[e] The tau Ceti system now has four planets: e, f, g, and h. 
+Since tau Ceti b, c, and d were refuted,
+the letter designations b, c, and d were not reused 
+for the newer planets to avoid confusion.
 
 ## New objects
-[f] Confirm any new acronym to the [IAU Dictionary of Nomenclature of Celestial Objects][iau-dico-nomenclature]
-[g] J092712.64+294344.0 indicates a positional accuracy of 0.15 arcsec while J092712.644+294344.02 indicates an accuracy of 0.015 arcsec.
+[f] Confirm any new acronym to the IAU Dictionary of Nomenclature of 
+Celestial Objects: http://vizier.u-strasbg.fr/cgi-bin/Dic
+[g] J092712.64+294344.0 indicates a positional accuracy of 0.15 arcsec 
+while J092712.644+294344.02 indicates an accuracy of 0.015 arcsec.
 
 ## Known objects
-[h] Creating a fanciful name for an object with an existing designation is especially discourage.
-[i] Validate all the identifiers for known objects in their publications through [Sesame][sesame-cds] a service hosted by CDS that queries NED, SIMBAD, and VizieR to help resolve object names.
-
+[h] Creating a fanciful name for an object with an existing designation
+ is especially discourage.
+[i] Validate all the identifiers for known objects in their publications 
+through Sesame: https://cds.unistra.fr/cgi-bin/Sesame.
+A service hosted by CDS that queries NED, SIMBAD, and VizieR to help 
+resolve object names.
 
 ## Cross-identifications
-[i] Always verify with established databases that all of the names given to an object are valid cross-identifications for the object and that the listed positions are for the same object.
-[j] Table 4 of Kundu et al. (2007) provided for the same objects both their X-ray identification number as given in Table 2 and optical identification number as in Table 3 of the article, and therefore linked the position and photometry data for the objects discussed in all three tables.
-
+[i] Always verify with established databases that all of the names
+given to an object are valid cross-identifications for the object and 
+that the listed positions are for the same object.
+[j] Provide a running identification number for your objects to be able 
+to link your data in the different tables of your paper. 
 ```
+
+<!-- j:
+as done by Kundu et al. (2007) for example.
+Table 4 provided for the same objects both their X-ray identification number as given in Table 2 and optical identification number as in Table 3 of the article, and therefore linked the position and photometry data for the objects discussed in all three tables.-->
+
 
 
 <!--  ----------------------------------------- -->
@@ -246,15 +347,23 @@ the letter designations b, c, and d were not reused for the newer planets to avo
 (c) Indicate the equinox and epoch of observation when necessary.
 (d) State the wavelength range from which astrometry is obtained.
 
+
 #### Examples
 ```output
-[a] i
+[a] Complete celestial coordinates are preferred, e.g.,
+12h34m56.78s, +12d34m56.7s (Equatorial J2000).
+[b] Current IAU celestial reference system is ICRS: 
+the International Celestial Reference System.
+[c] Standard equinox and epoch currently in use are J2000.0, 
+but it is not always the case. For example, the reference epoch 
+for the Gaia Data Release 3 is J2016.0, while it is J2015.5 for 
+Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
 ```
 
-----------
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Photometry (§2.3)
 
 (a) State the facility, telescope and instrument used.
@@ -263,16 +372,26 @@ the letter designations b, c, and d were not reused for the newer planets to avo
 (d) Clarify the magnitude system.
 (e) Specify spectral transitions completely.
 
+
 #### Examples
 ```output
-[a] i
+[a] Facility ground-based or space-based, instrument configuration 
+information, specific camera on the instrument, specific CCD chips ...
+[b] Point spread function fitting, aperture photometry, 
+isophotal measurements, etc
+[c] Indicate “Johnson B” or “Cousins B” instead of just “B”; 
+use “2MASS Ks” instead of just “K”. 
+[d] Magnitude on the AB, Vega, ST, or some other magnitude system.
+[e] Carbon monoxide (CO) has several detectable transitions as do ^13^CO 
+and C^17^O. The most commonly observed transition is (J=1-0) and each is 
+between 110 and 115 GHz. To clearly define a spectral transition, 
+one should use, e.g., “CO (J=1-0) ν=115 GHz”. 
 ```
 
 
-----------
-
 
 <!--  ----------------------------------------- -->
+----------
 ### Time (§2.4)
 
 (a) Provide the time of observation and exposure time.
@@ -280,15 +399,26 @@ the letter designations b, c, and d were not reused for the newer planets to avo
 (c) Include phase timing measures along with reported periods when relevant.
 (d) State when observations from multiple missions are executed simultaneously.
 
+
 #### Examples
 ```output
-[a] i
+[a] Explicitly described in terms of both the frame of reference
+(e.g., JD, BJD, HJD), and the time system used (e.g., UTC, TDB, TAI). 
+For example, use “BJD-TDB” to indicate Barycentric Julian Date 
+in the Barycentric Dynamical Time standard (preferred).
+[b] When reporting Julian Dates, the full unmodified date 
+(e.g., 2456789.123) is preferred over any offset variation 
+(e.g., 6789.123), to avoid confusion.
+[c] For a transiting exoplanet orbit where the period is known, 
+include a time of transit.
+[d] If possible, include a graphical representation of the times that 
+the missions obtained the data to help visualize where the simultaneity occurs.
 ```
 
-----------
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Redshift/velocity (§2.5)
 
 (a) Describe the method of redshift measurements (spectroscopic, photometric, etc.) and give references to the
@@ -299,31 +429,44 @@ model/method.
 radio or optical convention).
 (e) Indicate the quality of the measurement when possible.
 
+
 #### Examples
 ```output
-[a] i
+[a] Describe particular method (spectroscopic, photometric, Friends-of-Friends, etc.)
+and base assumptions used in the models (template fitting, machine learning, etc).
+[b] Include a clear indication of the reference frame, e.g., heliocentric,
+barycentric, Galactocentric, or LSR (Local Standard of Rest).
+[c] A redshift measured from HI 21 cm emission line may have a significantly 
+different systematic velocity than a redshift measured from stellar absorption lines 
+in the same galaxy.
+[d] The radio velocity increment depends upon the rest frequency,
+whereas the optical velocity increment depends on the observing frequency.
 ```
 
 
-----------
-
-
 <!--  ----------------------------------------- -->
+----------
 ### Classifications (§2.6)
 
 (a) Utilize established classifications as available.
 (b) Define new classifications clearly.
 
+
 #### Examples
 ```output
-[a] i
+[a] For basic morphological types, use the well-established schemes 
+(e.g., Sandage 2005: 10.1146/annurev.astro.43.112904.104839). 
+Authors are encouraged to refer to NED’s extensive suite of searchable 
+galaxy classifications and attributes
+ (https://ned.ipac.caltech.edu/uri/NED::Classifications/) or SIMBAD’s Object 
+Classification (http://simbad.unistra.fr/guide/otypes.htx), which have been 
+standardized to enable unified queries across journal articles and catalogs.
 ```
-
-----------
 
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Orbital parameters (§2.7)
 
 (a) Avoid using “longitude of periapsis” in place of “argument of periapsis”.
@@ -331,16 +474,22 @@ radio or optical convention).
 star).
 (c) Include time of periapsis as appropriate.
 
+
 #### Examples
 ```output
-[a] i
+[a] Only use “longitude of periapsis” when referring to the sum of 
+the argument of periapsis and the longitude of the ascending node.
+[b] The argument of periapsis for a planet or a secondary star’s orbit 
+differs from that of the host or primary star’s reflex motion by 180 degrees.
+[c] When reporting timing for a non-transiting eccentric orbit for 
+which argument of periapsis is measured, report time of periapsis in preference to 
+(or in addition to) time of inferior conjunction. Both are preferred if possible. 
 ```
 
 
-----------
-
 
 <!--  ----------------------------------------- -->
+----------
 ### Tables (§3.1)
 
 (a) Provide a clear title and unambiguous labels for columns.
@@ -354,11 +503,11 @@ star).
 [a] i
 ```
 
-----------
 
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Figures (§3.2)
 
 (a) Provide clear caption, legend and axis labels for each figure.
@@ -370,11 +519,11 @@ star).
 [a] i
 ```
 
-----------
 
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Data archiving and access (§4)
 
 (a) Append small data sets as part of the publication.
@@ -389,11 +538,11 @@ format requirements from the archives.
 [a] i
 ```
 
-----------
 
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Literature citations (§5.1)
 
 (a) Cite the original references.
@@ -409,11 +558,11 @@ gator.
 [a] i
 ```
 
-----------
 
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Facility credits (§5.2)
 
 (a) Indicate the facilities involved, such as telescopes, instruments, and databases.
@@ -426,10 +575,10 @@ gator.
 ```
 
 
-----------
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Software credits (§5.3)
 
 (a) List the software and version used in the production of the article.
@@ -439,10 +588,10 @@ gator.
 [a] i
 ```
 
-----------
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Digital object identifiers - DOI (§5.4)
 
 (a) Use DOIs to cite data sets, software and services if available.
@@ -452,10 +601,10 @@ gator.
 [a] i
 ```
 
-----------
 
 
 <!--  ----------------------------------------- -->
+----------
 ### Data content keywords (§6)
 
 (a) Tag articles with relevant data content keywords from the UAT ([Unified Astronomy Thesaurus][uat]).
@@ -518,6 +667,7 @@ In the next chapters, you will learn how to prepare your data before submitting 
 [wilkinson_2016]: https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18
 [Chen_2022]: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268
 [Grieves_2021]: http://doi.org/10.1051/0004-6361/202039586
+[Kundu_2007]: http://doi.org/10.1086/518021
 [uat]: https://astrothesaurus.org/
 [iau-dico-nomenclature]: http://vizier.u-strasbg.fr/cgi-bin/Dic
 <!-- -->
@@ -525,6 +675,7 @@ In the next chapters, you will learn how to prepare your data before submitting 
 [vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
 [vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
 [sesame-cds]: https://cds.unistra.fr/cgi-bin/Sesame
+[simbad-home]: http://simbad.cds.unistra.fr/simbad/
 <!-- -->
 <!-- Not used -->
 <!-- -->

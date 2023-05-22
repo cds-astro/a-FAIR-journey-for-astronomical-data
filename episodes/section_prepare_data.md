@@ -195,6 +195,7 @@ Quiz: ***List of good / bad examples  => Quiz: yes and no answer***
 
 **Idea:Test those names on the VizieR website**
 
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
 Show some good and bad examples of filenames 
@@ -210,14 +211,14 @@ Show some good and bad examples of filenames
 ```
 [Q1] 'my_awesome_file.fit'
 [Q2] '998bla.dat'
-[Q2] 'myfile.jpg'
+[Q3] 'myfile.jpg'
 [Q4] 'table.dat'
 [Q5] 'table&data.dat'
 ```
 
 :::::::::::::::::::::::: solution
 
-## Output
+## Show me the solution
 
 ```
 [1] "No: too long"
