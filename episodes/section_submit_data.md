@@ -7,7 +7,7 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How and where to submit your data?
-- What kind of data can be submitteded (tables, images) ?
+- What kind of data can be submitted (tables, images) ?
 - Do and don't when submitting data?
 - What are the FAIR principles?
 
