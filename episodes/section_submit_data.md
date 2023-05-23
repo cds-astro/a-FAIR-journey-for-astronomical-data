@@ -1,14 +1,14 @@
 ---
-title: "Publishing astronomical data"
+title: "Submitting astronomical data"
 teaching: 10
 exercises: 2
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How and where to publish your data?
-- What kind of data can be published (tables, images) ?
-- Do and don't when publishing data?
+- How and where to submit your data?
+- What kind of data can be submitteded (tables, images) ?
+- Do and don't when submitting data?
 - What are the FAIR principles?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -16,7 +16,7 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Be aware of the Findable, Accessible, Interoperable and Reusable (FAIR) principles, when preparing your data and its metadata.
-- Be aware of how to publish your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
+- Be aware of how to submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -29,7 +29,7 @@ exercises: 2
 
 
 
-![Data journey from a publication to VizieR: step Publish](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_publish.png){alt="Summary Data journey from a publication to VizieR, step Publish"}
+![Data journey from a publication to VizieR: step Submit](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_publish.png){alt="Summary Data journey from a publication to VizieR, step Submit"}
 
 
 <!--  ----------------------------------------- -->
