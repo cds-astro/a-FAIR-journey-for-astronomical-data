@@ -7,7 +7,7 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What kind of data can be published (tables, images) ?
+- What kind of data can be submitted (tables, images) ?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

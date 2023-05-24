@@ -492,12 +492,80 @@ which argument of periapsis is measured, report time of periapsis in preference 
 (c) Keep each column homogeneous.
 (d) Use the same explicitly defined non-numeric representations for missing (null) values throughout.
 (e) Prepare ReadMe files for machine-readable tables.
+(f) Give the complete names of the objects (§2.1) in each table, and keep the same names in all
+the tables and text throughout the article when possible.
+
 
 #### Examples
 ```output
-[a] i
+[a] Indicate the units for each column when applicable.
+[b] Make a clear distinction between z the redshift and z the filter.
+[c] A singl column should not present measurements with different units, 
+mix errors with limits or comments, or append flags to values.
+[d] Use null values that are supported and documented by widely-used 
+toolkits, e.g., “NaN” (Not a Number) for floating-point data in Astropy. 
+Use the same representation for missing data and have a separate field 
+that explains the reasons for a missing value. 
+Do not use different representations to indicate the different reasons, 
+e.g., blank for “not observed”, and “NaN” for “no detection”.
+[e] Authors should include a human-readable description of the data,
+with at least the column descriptions, units, and references (on the 
+origin of the measurements or instruments for observations when relevant) 
+in a ReadMe file. More help on the ReadMe is given in the next course.
 ```
 
+<!--  ----------------- -->
+#### Quiz
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+Table 2 (from Chen et al. 2022): Avoid LaTeX markups in tables to enhance
+reusability
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Quiz: How to make this table FAIR?
+
+| Object  		| Redshift 	|
+| -------------		| :------: 	| 
+| Source 1 		| 0.1^1^ 	|
+| Source 2 		| 0.2^2^ 	|
+| Source 3 		| 0.3^1^ 	|
+| Source 4 		| 0.4^1^ 	|
+| Source 5 		| 0.5^2^ 	|
+
+Redshift quality flag: 
+^1^ = secure, ^2^ = uncertain
+
+:::::::::::::::::::::::: hint
+
+## Why it is improper
+
+The quality of the measurement is indicated using a superscript.
+Providing this information using an extra column will make the 
+table more machine readable, and therefore the data more reusable.
+
+:::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::: solution
+
+## Recommended usage
+
+| Object  		| Redshift 	| Quality 	|
+| -------------		| :------: 	| :------:	|
+| Source 1 		| 0.1	 	| 1		|
+| Source 2 		| 0.2 		| 2		|
+| Source 3 		| 0.3 		| 1		|
+| Source 4 		| 0.4 		| 1		|
+| Source 5 		| 0.5 		| 2		|
+
+Redshift quality flag: 
+1 = secure, 2 = uncertain
+
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -509,10 +577,23 @@ which argument of periapsis is measured, report time of periapsis in preference 
 (b) Design the graphics to be accessible.
 (c) Make “data behind the plots” publicly available.
 
+
 #### Examples
 ```output
-[a] i
+[a] Describe in detail what is presented in the figure, what different 
+colors, symbols, and lines represent. Units of the axis labels should 
+be included when applicable. In practice, figures should be able to stand 
+alone without requiring much reading of the main text.
+[b] Color-blind users would benefit from symbols that vary in shape 
+in addition to colors. See the AAS journals’ graphics guide for more 
+advice on this: https://journals.aas.org/graphics-guide/#preparing_files .
+[c] Make the original data files used to generate the figures publicly 
+available, as this will greatly enhance the ability to reproduce, 
+validate, or build upon published results.
 ```
+
+![Example of a clearly labeled, accessible plot: revised version from Figure 28 from [Cook et al. (2019)][Cook_2019]](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/figure1_chen2022_plot_accessible.png){alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot: revised version from Figure 28 from Cook et al. (2019)"}
+
 
 
 
@@ -527,12 +608,30 @@ format requirements from the archives.
 (c) Provide a complete list of metadata.
 (d) Include a Data Availability Statement if required by the journal.
 (e) Do not publish data sets at URLs lacking long-term support.
+(f) Use unique and informative names for the files instead of
+duplicating file names and using location in a directory
+structure as file metadata necessary to uniquely identify a file.
+
 
 #### Examples
 ```output
-[a] i
+[a] Preserve data as supplementary materials with your final journal 
+article, or post the data files with your arXiv preprint.
+[b] If the data are either too large or too complex to be hosted by the
+journal, authors are encouraged to place their data in a trusted 
+repository that issues Digital Object Identifiers (DOIs).
+[c] Visualize the position and orientation of the apertures on imagery, 
+key metadata including aperture dimensions, center coordinates, 
+and position angle are required.
+[d] MNRAS: https://academic.oup.com/journals/pages/authors/preparing_your_manuscript/research-data-policy#data2
+[e] We strongly discourage the publication of URLs to personal web servers 
+hosting data sets for which the author or institution has no means to maintain 
+for many years after the publication of the associated journal article.
+[f] if photometry data are available at different bands (e.g., V and R) 
+for the same object (e.g., NGC 1275), use names such as NGC1275 V.dat
+and NGC1275 R.dat to identify the files. Do not set up separate directories 
+for V and R band, and give the same file name NGC1275.dat under both directories.
 ```
-
 
 
 
@@ -550,7 +649,20 @@ gator.
 
 #### Examples
 ```output
-[a] i
+[a]  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012) 
+via NED”, where “Smith et al. 2012” is listed correctly in your bibliography.
+[b] The 2MASS web page requests that you cite the canonical paper by 
+Skrutskie et al. (2006), instead of the Explanatory Supplement. 
+[c] If 2MASS data is used via TOPCAT accessing the VizieR table, then 
+in addition to any preferred citations of the data itself, cite the 
+software and compilation used, e.g.,“2MASS (Skrutskie et al. 2006) as
+downloaded with TOPCAT (Version 4.8-3, Taylor 2005) via VizieR (II/246, 
+Cutri et al. 2003)”. It is also recommended to include the names of 
+principal investigators who acquired the original data sets.
+[c] Make sure all appropriate references to papers, software and data 
+products are included in a paper’s bibliography section, not just in footnotes.
+[d] Use phrases such as “This work” to clearly identify original 
+data in your article.
 ```
 
 
@@ -564,11 +676,57 @@ gator.
 (b) Use standard keywords when possible.
 (c) Include facility’s own statement if available.
 
+
 #### Examples
 ```output
 [a] i
 ```
 
+<!--  ----------------- -->
+#### Quiz
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+Table 3 (from Chen et al. 2022): 
+Examples of ambiguous facility/telescope/instrument names in literature
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Quiz: Can you guess the names of these facilities?
+
+```
+[Q1] ARO
+[Q2] DDO
+[Q3] EMIR
+[Q4] OSIRIS
+
+```
+
+:::::::::::::::::::::::: solution
+
+## Solution
+
+| Names as published 	| Possible interpretation		|
+| -------------		| --------------------	 		| 
+| ARO			| Astronomical Research Observatory 	|
+|			| Arizona Radio Observatory		|
+| 			| Abbey Ridge Observatory		|
+|			| Algonquin Radio Observatory		|
+| DDO			| David Dunlap Observatory:0.15m	|
+|			| David Dunlap Observatory:0.5m		|
+|			| David Dunlap Observatory:0.6m		|
+|			| David Dunlap Observatory:1.88m	|
+| EMIR			| Eight MIxer Receiver (on the IRAM 30m radio telescope) |
+|			| Espectrógrafo Multiobjeto Infra-Rojo (on the Gran Telescopio Canarias) |
+| OSIRIS		| OH-Suppressing Infra-Red Imaging Spectrograph (on the Keck I telescope) |
+|			| Ohio State Infrared Imager/Spectrograph (on the SOAR telescope) |
+|			| Optical System for Imaging and low-Intermediate-Resolution Integrated Spectroscopy  (on the Gran Telescopio Canarias) 	|
+
+
+:::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -638,14 +796,6 @@ Important point: Tables of astronomical objects without coordinates cannot be ad
 
 
 
-<!--  ----------------------------------------- -->
-<!-- 		Case study 			-->
-<!--  ----------------------------------------- -->
-## Case study
-
-- Fix "bad examples"??
-
-
 
 <!--  ----------------------------------------- -->
 <!--            Next Chapters                   -->
@@ -661,6 +811,7 @@ In the next chapters, you will learn how to prepare your data before submitting 
 <!--  ----------------------------------------- -->
 [wilkinson_2016]: https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18
 [Chen_2022]: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268
+[Cook_2019]: http://doi.org/10.1093/mnras/stz331
 [Grieves_2021]: http://doi.org/10.1051/0004-6361/202039586
 [Kundu_2007]: http://doi.org/10.1086/518021
 [uat]: https://astrothesaurus.org/
