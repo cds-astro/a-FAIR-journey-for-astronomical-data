@@ -509,7 +509,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --></section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-05-22 | 
+<p> Last updated on 2023-05-24 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_fair_astro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1116,6 +1116,9 @@ flags.</li>
 <li>Use the same explicitly defined non-numeric representations for
 missing (null) values throughout.</li>
 <li>Prepare ReadMe files for machine-readable tables.</li>
+<li>Give the complete names of the objects (§2.1) in each table, and
+keep the same names in all the tables and text throughout the article
+when possible.</li>
 </ol>
 <div class="section level4">
 <h4 id="examples-8">Examples<a class="anchor" aria-label="anchor" href="#examples-8"></a>
@@ -1123,7 +1126,136 @@ missing (null) values throughout.</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a] Indicate the units for each column when applicable.
+[b] Make a clear distinction between z the redshift and z the filter.
+[c] A singl column should not present measurements with different units, 
+mix errors with limits or comments, or append flags to values.
+[d] Use null values that are supported and documented by widely-used 
+toolkits, e.g., “NaN” (Not a Number) for floating-point data in Astropy. 
+Use the same representation for missing data and have a separate field 
+that explains the reasons for a missing value. 
+Do not use different representations to indicate the different reasons, 
+e.g., blank for “not observed”, and “NaN” for “no detection”.
+[e] Authors should include a human-readable description of the data,
+with at least the column descriptions, units, and references (on the 
+origin of the measurements or instruments for observations when relevant) 
+in a ReadMe file. More help on the ReadMe is given in the next course.</code></pre>
+</div>
+<!--  ----------------- -->
+</div>
+<div class="section level4">
+<h4 id="quiz-1">Quiz<a class="anchor" aria-label="anchor" href="#quiz-1"></a>
+</h4>
+
+<div id="quiz-how-to-make-this-table-fair" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="quiz-how-to-make-this-table-fair" class="callout-inner">
+<h3 class="callout-title">Quiz: How to make this table FAIR?<a class="anchor" aria-label="anchor" href="#quiz-how-to-make-this-table-fair"></a>
+</h3>
+<div class="callout-content">
+<table class="table">
+<thead><tr class="header">
+<th>Object</th>
+<th align="center">Redshift</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Source 1</td>
+<td align="center">0.1<sup>1</sup>
+</td>
+</tr>
+<tr class="even">
+<td>Source 2</td>
+<td align="center">0.2<sup>2</sup>
+</td>
+</tr>
+<tr class="odd">
+<td>Source 3</td>
+<td align="center">0.3<sup>1</sup>
+</td>
+</tr>
+<tr class="even">
+<td>Source 4</td>
+<td align="center">0.4<sup>1</sup>
+</td>
+</tr>
+<tr class="odd">
+<td>Source 5</td>
+<td align="center">0.5<sup>2</sup>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Redshift quality flag: <sup>1</sup> = secure, <sup>2</sup> =
+uncertain</p>
+</div>
+</div>
+</div>
+<div id="accordionHint2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
+  <h4 class="accordion-header" id="headingHint2">
+  Why it is improper
+  </h4>
+</button>
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
+<div class="accordion-body">
+<p>The quality of the measurement is indicated using a superscript.
+Providing this information using an extra column will make the table
+more machine readable, and therefore the data more reusable.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6">
+  Recommended usage
+  </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
+<table class="table">
+<thead><tr class="header">
+<th>Object</th>
+<th align="center">Redshift</th>
+<th align="center">Quality</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Source 1</td>
+<td align="center">0.1</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td>Source 2</td>
+<td align="center">0.2</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td>Source 3</td>
+<td align="center">0.3</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td>Source 4</td>
+<td align="center">0.4</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td>Source 5</td>
+<td align="center">0.5</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+<p>Redshift quality flag: 1 = secure, 2 = uncertain</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1145,8 +1277,19 @@ missing (null) values throughout.</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a] Describe in detail what is presented in the figure, what different 
+colors, symbols, and lines represent. Units of the axis labels should 
+be included when applicable. In practice, figures should be able to stand 
+alone without requiring much reading of the main text.
+[b] Color-blind users would benefit from symbols that vary in shape 
+in addition to colors. See the AAS journals’ graphics guide for more 
+advice on this: https://journals.aas.org/graphics-guide/#preparing_files .
+[c] Make the original data files used to generate the figures publicly 
+available, as this will greatly enhance the ability to reproduce, 
+validate, or build upon published results.</code></pre>
 </div>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/figure1_chen2022_plot_accessible.png" alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot: revised version from Figure 28 from Cook et al. (2019)" class="figure mx-auto d-block"><figcaption>Example of a clearly labeled, accessible plot:
+revised version from Figure 28 from <a href="http://doi.org/10.1093/mnras/stz331" class="external-link">Cook et al. (2019)</a></figcaption></figure>
 </div>
 </div>
 </section><section id="section-10"><h2 class="section-heading">
@@ -1165,6 +1308,9 @@ from the archives.</li>
 <li>Include a Data Availability Statement if required by the
 journal.</li>
 <li>Do not publish data sets at URLs lacking long-term support.</li>
+<li>Use unique and informative names for the files instead of
+duplicating file names and using location in a directory structure as
+file metadata necessary to uniquely identify a file.</li>
 </ol>
 <div class="section level4">
 <h4 id="examples-10">Examples<a class="anchor" aria-label="anchor" href="#examples-10"></a>
@@ -1172,7 +1318,22 @@ journal.</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a] Preserve data as supplementary materials with your final journal 
+article, or post the data files with your arXiv preprint.
+[b] If the data are either too large or too complex to be hosted by the
+journal, authors are encouraged to place their data in a trusted 
+repository that issues Digital Object Identifiers (DOIs).
+[c] Visualize the position and orientation of the apertures on imagery, 
+key metadata including aperture dimensions, center coordinates, 
+and position angle are required.
+[d] MNRAS: https://academic.oup.com/journals/pages/authors/preparing_your_manuscript/research-data-policy#data2
+[e] We strongly discourage the publication of URLs to personal web servers 
+hosting data sets for which the author or institution has no means to maintain 
+for many years after the publication of the associated journal article.
+[f] if photometry data are available at different bands (e.g., V and R) 
+for the same object (e.g., NGC 1275), use names such as NGC1275 V.dat
+and NGC1275 R.dat to identify the files. Do not set up separate directories 
+for V and R band, and give the same file name NGC1275.dat under both directories.</code></pre>
 </div>
 </div>
 </div>
@@ -1198,7 +1359,20 @@ work.</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a]  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012) 
+via NED”, where “Smith et al. 2012” is listed correctly in your bibliography.
+[b] The 2MASS web page requests that you cite the canonical paper by 
+Skrutskie et al. (2006), instead of the Explanatory Supplement. 
+[c] If 2MASS data is used via TOPCAT accessing the VizieR table, then 
+in addition to any preferred citations of the data itself, cite the 
+software and compilation used, e.g.,“2MASS (Skrutskie et al. 2006) as
+downloaded with TOPCAT (Version 4.8-3, Taylor 2005) via VizieR (II/246, 
+Cutri et al. 2003)”. It is also recommended to include the names of 
+principal investigators who acquired the original data sets.
+[c] Make sure all appropriate references to papers, software and data 
+products are included in a paper’s bibliography section, not just in footnotes.
+[d] Use phrases such as “This work” to clearly identify original 
+data in your article.</code></pre>
 </div>
 </div>
 </div>
@@ -1222,6 +1396,109 @@ and databases.</li>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>[a] i</code></pre>
+</div>
+<!--  ----------------- -->
+</div>
+<div class="section level4">
+<h4 id="quiz-2">Quiz<a class="anchor" aria-label="anchor" href="#quiz-2"></a>
+</h4>
+
+<div id="quiz-can-you-guess-the-names-of-these-facilities" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="quiz-can-you-guess-the-names-of-these-facilities" class="callout-inner">
+<h3 class="callout-title">Quiz: Can you guess the names of these
+facilities?<a class="anchor" aria-label="anchor" href="#quiz-can-you-guess-the-names-of-these-facilities"></a>
+</h3>
+<div class="callout-content">
+<pre><code>[Q1] ARO
+[Q2] DDO
+[Q3] EMIR
+[Q4] OSIRIS
+</code></pre>
+</div>
+</div>
+</div>
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7">
+  Show me the solution
+  </h4>
+</button>
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div class="accordion-body">
+<table class="table">
+<colgroup>
+<col width="39%">
+<col width="60%">
+</colgroup>
+<thead><tr class="header">
+<th>Names as published</th>
+<th>Possible interpretation</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>ARO</td>
+<td>Astronomical Research Observatory</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Arizona Radio Observatory</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Abbey Ridge Observatory</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Algonquin Radio Observatory</td>
+</tr>
+<tr class="odd">
+<td>DDO</td>
+<td>David Dunlap Observatory:0.15m</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>David Dunlap Observatory:0.5m</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>David Dunlap Observatory:0.6m</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>David Dunlap Observatory:1.88m</td>
+</tr>
+<tr class="odd">
+<td>EMIR</td>
+<td>Eight MIxer Receiver (on the IRAM 30m radio telescope)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Espectrógrafo Multiobjeto Infra-Rojo (on the Gran Telescopio
+Canarias)</td>
+</tr>
+<tr class="odd">
+<td>OSIRIS</td>
+<td>OH-Suppressing Infra-Red Imaging Spectrograph (on the Keck I
+telescope)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Ohio State Infrared Imager/Spectrograph (on the SOAR telescope)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Optical System for Imaging and low-Intermediate-Resolution
+Integrated Spectroscopy (on the Gran Telescopio Canarias)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1329,15 +1606,9 @@ same astronomical object!</li>
 <p>Important point: Tables of astronomical objects without coordinates
 cannot be added into the SIMBAD database.</p>
 <!--  ----------------------------------------- -->
-<!-- 		Case study 			-->
+<!--            Next Chapters                   -->
 <!--  ----------------------------------------- -->
-</section><section id="case-study"><h2 class="section-heading">Case study<a class="anchor" aria-label="anchor" href="#case-study"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li>Fix “bad examples”??</li>
-</ul>
-<!--  ----------------------------------------- --><!--            Next Chapters                   --><!--  ----------------------------------------- --></section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
+</section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
 <hr class="half-width">
 <p>In the next chapters, you will learn how to prepare your data before
@@ -1364,7 +1635,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-05-22 | 
+<p> Last updated on 2023-05-24 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1378,7 +1649,7 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What kind of data can be published (tables, images) ?</li>
+<li>What kind of data can be submitted (tables, images) ?</li>
 </ul>
 </div>
 </div>
@@ -1632,7 +1903,7 @@ answer</em></strong></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre><code>[1] "No: too long"
 [2] "No: ??"
@@ -1924,7 +2195,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-05-23 | 
+<p> Last updated on 2023-05-24 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1939,7 +2210,7 @@ any links that you are not going to use.
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>How and where to submit your data?</li>
-<li>What kind of data can be submitteded (tables, images) ?</li>
+<li>What kind of data can be submitted (tables, images) ?</li>
 <li>Do and don’t when submitting data?</li>
 <li>What are the FAIR principles?</li>
 </ul>
@@ -2371,7 +2642,7 @@ reinforce the objectives.</li>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2402,7 +2673,7 @@ challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -2476,7 +2747,7 @@ e.g. online setup) in the solutions blocks.</p>
   Windows
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Use PuTTY</p>
 </div>
@@ -2490,7 +2761,7 @@ e.g. online setup) in the solutions blocks.</p>
   MacOS
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Use Terminal.app</p>
 </div>
@@ -2504,7 +2775,7 @@ e.g. online setup) in the solutions blocks.</p>
   Linux
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>Use Terminal</p>
 </div>
@@ -2563,9 +2834,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2023-05-23",
-  "dateModified": "2023-05-23",
-  "datePublished": "2023-05-23"
+  "dateCreated": "2023-05-24",
+  "dateModified": "2023-05-24",
+  "datePublished": "2023-05-24"
 }
 
   </script><script>
