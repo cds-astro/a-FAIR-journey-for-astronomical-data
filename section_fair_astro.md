@@ -592,7 +592,7 @@ available, as this will greatly enhance the ability to reproduce,
 validate, or build upon published results.
 ```
 
-![Example of a clearly labeled, accessible plot: revised version from Figure 28 from [Cook et al. (2019)][Cook_2019]](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/figure1_chen2022_plot_accessible.png){alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot: revised version from Figure 28 from Cook et al. (2019)"}
+![Example of a clearly labeled, accessible plot: revised version from Figure 28 from [Cook et al. (2019)][Cook_2019]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/figure1_chen2022_plot_accessible.png){alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot: revised version from Figure 28 from Cook et al. (2019)"}
 
 
 
@@ -679,7 +679,13 @@ data in your article.
 
 #### Examples
 ```output
-[a] i
+[a] Always describe the facilities or services used, 
+and make sure the name is unique.
+[b] See AAS keyword tags with AASTeX \facility and \facilities: 
+https://journals.aas.org/authors/aastex/facility.html
+[c] This research has made use of the VizieR catalogue access tool, CDS, 
+Strasbourg, France (DOI: 10.26093/cds/vizier). The original description 
+of the VizieR service was published in 2000, A&AS 143, 23.
 ```
 
 <!--  ----------------- -->
@@ -701,7 +707,6 @@ Examples of ambiguous facility/telescope/instrument names in literature
 [Q2] DDO
 [Q3] EMIR
 [Q4] OSIRIS
-
 ```
 
 :::::::::::::::::::::::: solution
@@ -736,9 +741,13 @@ Examples of ambiguous facility/telescope/instrument names in literature
 
 (a) List the software and version used in the production of the article.
 
+
 #### Examples
 ```output
-[a] i
+[a] Use the preferred citation if available, e.g., the paper describing 
+the software. If not, include the name of the author(s),
+title of the program/source code, the code version 
+and a URL link to the code publisher.
 ```
 
 
@@ -749,9 +758,13 @@ Examples of ambiguous facility/telescope/instrument names in literature
 
 (a) Use DOIs to cite data sets, software and services if available.
 
+
 #### Examples
 ```output
-[a] i
+[a] The DOI links should be included in the bibliography to ensure 
+proper citation: eg., 
+Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&AS,
+143, 9, doi: 10.1051/aas:2000332
 ```
 
 
@@ -764,35 +777,26 @@ Examples of ambiguous facility/telescope/instrument names in literature
 
 #### Examples
 ```output
-[a] i
+[a] Tag your articles with UAT keywords that best describe the types 
+of data contained in the article.
 ```
 
 
 <!--  ----------------------------------------- -->
 <!-- 		Keypoints 			-->
 <!--  ----------------------------------------- -->
-## Summary: Small tips for FAIR data
+## Summary: Small tips for FAIR tables
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- For tables containing known astronomical objects, an existing **non-altered** name must be given along with the coordinates.
+- For tables containing known astronomical objects, an existing **non-altered name** must be given along with the **coordinates**.
+	- Important point: Tables of astronomical objects without coordinates cannot be added into the SIMBAD database.
 - All columns must be explained with **their corresponding unit**.
-- Your columns should be homogeneous, and you should avoid mixing measurements with different meanings: errors mixed with limts, or values with different units (that should be in different columns).
+- Your columns should be homogeneous, and you should avoid mixing measurements with different meanings: errors mixed with limits, or values with different units (that should be in different columns).
+**One same unit per column** in a table
 - When there is more than one table, the objects in common must be identified with the **same name between tables**.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-Catalogues require an article reference from a refereed journal
-
-Make sure that your data are reusable:
-
-- Give **non-alterned names** and **coordinates** for astronomical objects
-- Give the **units** and stick to **one same unit per column** in a table
-- Keep the **same identifiers between tables** for the same astronomical object!
-
-
-Important point: Tables of astronomical objects without coordinates cannot be added into the SIMBAD database.
 
 
 
