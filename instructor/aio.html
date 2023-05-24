@@ -1320,7 +1320,7 @@ advice on this: https://journals.aas.org/graphics-guide/#preparing_files .
 available, as this will greatly enhance the ability to reproduce, 
 validate, or build upon published results.</code></pre>
 </div>
-<figure><img src="../file:/home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/figure1_chen2022_plot_accessible.png" alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot: revised version from Figure 28 from Cook et al. (2019)" class="figure mx-auto d-block"><figcaption>Example of a clearly labeled, accessible plot:
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/figure1_chen2022_plot_accessible.png" alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot: revised version from Figure 28 from Cook et al. (2019)" class="figure mx-auto d-block"><figcaption>Example of a clearly labeled, accessible plot:
 revised version from Figure 28 from <a href="http://doi.org/10.1093/mnras/stz331" class="external-link">Cook et al. (2019)</a></figcaption></figure>
 </div>
 </div>
@@ -1427,7 +1427,13 @@ and databases.</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a] Always describe the facilities or services used, 
+and make sure the name is unique.
+[b] See AAS keyword tags with AASTeX \facility and \facilities: 
+https://journals.aas.org/authors/aastex/facility.html
+[c] This research has made use of the VizieR catalogue access tool, CDS, 
+Strasbourg, France (DOI: 10.26093/cds/vizier). The original description 
+of the VizieR service was published in 2000, A&amp;AS 143, 23.</code></pre>
 </div>
 <!--  ----------------- -->
 </div>
@@ -1462,8 +1468,7 @@ facilities?<a class="anchor" aria-label="anchor" href="#quiz-can-you-guess-the-n
 <pre><code>[Q1] ARO
 [Q2] DDO
 [Q3] EMIR
-[Q4] OSIRIS
-</code></pre>
+[Q4] OSIRIS</code></pre>
 </div>
 </div>
 </div>
@@ -1566,7 +1571,10 @@ article.</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a] Use the preferred citation if available, e.g., the paper describing 
+the software. If not, include the name of the author(s),
+title of the program/source code, the code version 
+and a URL link to the code publisher.</code></pre>
 </div>
 </div>
 </div>
@@ -1586,7 +1594,10 @@ article.</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a] The DOI links should be included in the bibliography to ensure 
+proper citation: eg., 
+Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&amp;AS,
+143, 9, doi: 10.1051/aas:2000332</code></pre>
 </div>
 </div>
 </div>
@@ -1607,14 +1618,15 @@ Thesaurus</a>).</li>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[a] i</code></pre>
+<pre class="output" tabindex="0"><code>[a] Tag your articles with UAT keywords that best describe the types 
+of data contained in the article.</code></pre>
 </div>
 <!--  ----------------------------------------- -->
 <!-- 		Keypoints 			-->
 <!--  ----------------------------------------- -->
 </div>
 </div>
-</section><section id="summary-small-tips-for-fair-data"><h2 class="section-heading">Summary: Small tips for FAIR data<a class="anchor" aria-label="anchor" href="#summary-small-tips-for-fair-data"></a>
+</section><section id="summary-small-tips-for-fair-tables"><h2 class="section-heading">Summary: Small tips for FAIR tables<a class="anchor" aria-label="anchor" href="#summary-small-tips-for-fair-tables"></a>
 </h2>
 <hr class="half-width">
 <div id="keypoints1" class="callout keypoints">
@@ -1627,31 +1639,25 @@ Thesaurus</a>).</li>
 <div class="callout-content">
 <ul>
 <li>For tables containing known astronomical objects, an existing
-<strong>non-altered</strong> name must be given along with the
-coordinates.</li>
+<strong>non-altered name</strong> must be given along with the
+<strong>coordinates</strong>.
+<ul>
+<li>Important point: Tables of astronomical objects without coordinates
+cannot be added into the SIMBAD database.</li>
+</ul>
+</li>
 <li>All columns must be explained with <strong>their corresponding
 unit</strong>.</li>
 <li>Your columns should be homogeneous, and you should avoid mixing
-measurements with different meanings: errors mixed with limts, or values
-with different units (that should be in different columns).</li>
+measurements with different meanings: errors mixed with limits, or
+values with different units (that should be in different columns).
+<strong>One same unit per column</strong> in a table</li>
 <li>When there is more than one table, the objects in common must be
 identified with the <strong>same name between tables</strong>.</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Catalogues require an article reference from a refereed journal</p>
-<p>Make sure that your data are reusable:</p>
-<ul>
-<li>Give <strong>non-alterned names</strong> and
-<strong>coordinates</strong> for astronomical objects</li>
-<li>Give the <strong>units</strong> and stick to <strong>one same unit
-per column</strong> in a table</li>
-<li>Keep the <strong>same identifiers between tables</strong> for the
-same astronomical object!</li>
-</ul>
-<p>Important point: Tables of astronomical objects without coordinates
-cannot be added into the SIMBAD database.</p>
 <!--  ----------------------------------------- -->
 <!--            Next Chapters                   -->
 <!--  ----------------------------------------- -->
@@ -1935,7 +1941,7 @@ answer</em></strong></p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Show some good and bad examples of filenames</p>
 </div>
@@ -1965,7 +1971,7 @@ answer</em></strong></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre><code>[1] "No: too long"
 [2] "No: ??"
@@ -2692,7 +2698,7 @@ reinforce the objectives.</li>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Inline instructor notes can help inform instructors of timing
 challenges associated with the lessons. They appear in the “Instructor
@@ -2726,7 +2732,7 @@ View”</p>
   Output
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2757,7 +2763,7 @@ challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -2831,7 +2837,7 @@ e.g. online setup) in the solutions blocks.</p>
   Windows
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Use PuTTY</p>
 </div>
@@ -2845,7 +2851,7 @@ e.g. online setup) in the solutions blocks.</p>
   MacOS
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Use Terminal.app</p>
 </div>
@@ -2859,7 +2865,7 @@ e.g. online setup) in the solutions blocks.</p>
   Linux
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Use Terminal</p>
 </div>
