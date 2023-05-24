@@ -9,9 +9,6 @@ We will also focus on the integration and the availability of your data into EOS
 
 Add logo CDS and EOSC ???
 
-Test car on est super trop cool!
-
-
 ## Target audience
 
 Researchers in astronomy who want to make their published data (table, images, spectra, …) FAIR and openly accessible to the community.
