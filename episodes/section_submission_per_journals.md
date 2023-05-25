@@ -44,7 +44,7 @@ The submission routes for your data vary depending where you submitted your pape
 
 The CDS selects tables which will be ingested in VizieR.
 <!-- tables coming from AAS are not systematically ingested in VizieR. -->
-Machine readable tables (MRT) tables are prioritised, but other tables or FITS spectra/images can also be added.
+Machine readable tables (MRT) are prioritised, but other tables or FITS spectra/images can also be added.
 
 List of journals included:
 
