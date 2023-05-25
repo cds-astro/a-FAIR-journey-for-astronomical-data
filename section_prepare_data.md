@@ -13,7 +13,8 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of  ...
+- Be aware of the type of data accepted in VizieR
+- Keep some FAIR principles in mind when preparing the data
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -191,14 +192,12 @@ Full details about the files and directories structures can be found in the [Ado
 
 <!--  ----------------------------------------- -->
 
-Quiz: ***List of good / bad examples  => Quiz: yes and no answer***
-
 **Idea:Test those names on the VizieR website**
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-Show some good and bad examples of filenames 
+Show some good and bad examples of filenames. 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -210,7 +209,7 @@ Show some good and bad examples of filenames
 
 ```
 [Q1] 'my_awesome_file.fit'
-[Q2] '998bla.dat'
+[Q2] 'TABLE998.dat'
 [Q3] 'myfile.jpg'
 [Q4] 'table.dat'
 [Q5] 'table&data.dat'
@@ -222,7 +221,7 @@ Show some good and bad examples of filenames
 
 ```
 [1] "No: too long"
-[2] "No: ??"
+[2] "No: Uppercase detected"
 [3] "No: Good length, but extension not supported"
 [4] "Yes: correct"
 [5] "No: & character not supported"

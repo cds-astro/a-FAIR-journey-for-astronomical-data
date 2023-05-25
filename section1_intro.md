@@ -14,7 +14,7 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of the benefits of publishing your data in VizieR
+- Be aware of the benefits of submitting your data to VizieR
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
