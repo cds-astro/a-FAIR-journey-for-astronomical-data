@@ -13,7 +13,8 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of  ...
+- Be aware of the type of data accepted in VizieR
+- Keep some FAIR principles in mind when preparing the data
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
