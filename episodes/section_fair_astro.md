@@ -541,7 +541,7 @@ Redshift quality flag:
 
 :::::::::::::::::::::::: hint
 
-## Why it is improper
+## Why it is improper?
 
 The quality of the measurement is indicated using a superscript.
 Providing this information using an extra column will make the 
