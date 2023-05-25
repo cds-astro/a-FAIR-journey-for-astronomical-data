@@ -219,7 +219,8 @@ in your Table: example from Grieves et al. (2021).
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-Table 1 (from Chen et al. 2022): Examples of improper astronomical designations in literature
+Table 1 (from Chen et al. 2022): Show some examples of improper astronomical designations in literature,
+and explain how to correct them.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -244,7 +245,7 @@ Hint: Look for these objects in [Simbad][simbad-home].
 
 :::::::::::::::::::::::: hint
 
-## Why it is improper
+## Why it is improper?
 
 ```
 [1] Insufficient precision in RA and DEC can cause confusion
@@ -519,8 +520,8 @@ in a ReadMe file. More help on the ReadMe is given in the next course.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-Table 2 (from Chen et al. 2022): Avoid LaTeX markups in tables to enhance
-reusability
+Table 2 (from Chen et al. 2022): Show that using LaTeX markups or footnotes 
+in tables affect their reusability.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -693,8 +694,8 @@ of the VizieR service was published in 2000, A&AS 143, 23.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-Table 3 (from Chen et al. 2022): 
-Examples of ambiguous facility/telescope/instrument names in literature
+Table 3 (from Chen et al. 2022): Give some examples of ambiguous facility/
+telescope/instrument names from the literature.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
