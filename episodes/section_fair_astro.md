@@ -194,7 +194,7 @@ or 0.123±0.00234.
 in your Table: example from Grieves et al. (2021).
 ```
 
-![Extract from Table 4 from [Grieves et al. (2021)][Grieves_2021]](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/grieves_2012_table4_short.png){alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold to indicate their preferred solution when providing multiple options for stellar parameters"}
+![Extract from Table 4 from [Grieves et al. (2021)][Grieves_2021]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/grieves_2012_table4_short.png){alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold to indicate their preferred solution when providing multiple options for stellar parameters"}
 
  
 <!--  ----------------------------------------- -->
