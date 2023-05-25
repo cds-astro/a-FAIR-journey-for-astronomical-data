@@ -37,6 +37,8 @@ exercises: 2
 ## Where to deposit the data?
 
 
+
+
 ### Submission form (recommended way)
 
 Since January 2018, the new submission interface is inline.
@@ -184,10 +186,11 @@ Link to Python package: [cdspydreadme][vizier-cdspyreadme]
 
 ## Summary
 
-<!--
 ::::::::::::::::::::::::::::::::::::: keypoints
+
+A delay is needed for VizieR ingestion for description and validation!
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
--->
 
 
 <!--  ----------------------------------------- -->

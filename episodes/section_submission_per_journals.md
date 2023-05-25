@@ -38,37 +38,13 @@ The submission routes for your data vary depending where you submitted your pape
 
 
 <!--  ----------------------------------------- -->
-<!-- 		A&A				-->
-<!--  ----------------------------------------- -->
-## Astronomy & Astrophysics Journal (A&A)
-
-By contract with the Journal, the CDS archives the primary data that are published in A&A and puts them at the disposal of the global community.
-
-Once their papers accepted, the **authors submit their MRT files directly** to the CDS.
-
-
-List of journals included:
-
-- Astronomy & Astrophysics: A&A
-- Astronomy & Astrophysics Supplement Series: A&AS
-
-
-*References* (from the A&A webpage):
-
-- [A&A homepage][aa-home]
-- [Publishing tables data to the CDS][aa-publi-data-cds] 
-- [Astronomical objects: linking to databases][aa-astro-objects-link]
-
-
-
-<!--  ----------------------------------------- -->
 <!-- 		AAS				-->
 <!--  ----------------------------------------- -->
 ## American Astronomical Society Journals (AAS)
 
-The authors should try to prepare their lenghty tables as machine readable table (MRT) format. 
-Then, **VizieR harvests AAS Journal MRTs** and makes these data discoverable and searchable via Virtual Observatory protocols, which is another benefit to using this data format.
-
+The CDS selects tables which will be ingested in VizieR.
+<!-- tables coming from AAS are not systematically ingested in VizieR. -->
+Machine readable tables (MRT) tables are prioritised, but other tables or FITS spectra/images can also be added.
 
 List of journals included:
 
@@ -80,6 +56,14 @@ List of journals included:
 - Research notes of the AAS: Res. Notes
 
 
+------------------
+
+*Recommendations* (from the AAS webpage):
+
+The authors should try to prepare their lenghty tables as machine readable table (MRT) format. 
+Then, **VizieR harvests AAS Journal MRTs** and makes these data discoverable and searchable via Virtual Observatory protocols, which is another benefit to using this data format.
+
+
 *Reference* (from the AAS webpage):
 
 - [AAS homepage][aas-home]
@@ -87,10 +71,50 @@ List of journals included:
 
 
 
+
+<!--  ----------------------------------------- -->
+<!-- 		A&A				-->
+<!--  ----------------------------------------- -->
+## Astronomy & Astrophysics Journal (A&A)
+
+The editor decides the data to ingest in VizieR. 
+The authors have to submit their data in CDS.
+
+
+List of journals included:
+
+- Astronomy & Astrophysics: A&A
+- Astronomy & Astrophysics Supplement Series: A&AS
+
+
+------------------
+
+*Recommendations* (from the A&A webpage):
+
+By contract with the Journal, the CDS archives the primary data that are published in A&A and puts them at the disposal of the global community.
+
+Once their papers accepted, the **authors submit their MRT files directly** to the CDS.
+
+
+*References* (from the A&A webpage):
+
+- [A&A homepage][aa-home]
+- [Publishing tables data to the CDS][aa-publi-data-cds] 
+- [Astronomical objects: linking to databases][aa-astro-objects-link]
+
+
+
+
 <!--  ----------------------------------------- -->
 <!-- 		MNRAS				-->
 <!--  ----------------------------------------- -->
 ## Monthly Notices of the Royal Astronomical Society (MNRAS)
+
+CDS selection or authors submission for CDS acceptation.
+
+------------------
+
+*Recommendations* (from the MNRAS webpage):
 
 Authors are encouraged to **upload machine-readable versions of their tables on the VizieR database**.
 Authors should consult the CDS website for instructions on preparing and submitting tabular data, which include a [template][mnras-vizier-readme-example-aa] that can be adapted for MNRAS tables. A hyperlink can be included to CDS from the electronic text of the MNRAS article.
@@ -107,6 +131,8 @@ Authors should consult the CDS website for instructions on preparing and submitt
 <!-- 		Other journals			-->
 <!--  ----------------------------------------- -->
 ## Other journals
+
+Any other journals needs the author to submit the data.
 
 
 Examples of other journals included in VizieR:
@@ -168,7 +194,7 @@ ORDER BY popu DESC;
 
 To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed. (**TRUE -- AG??**)
 
-- Main journals origin : A%A, AAS (AJ, ApJ, ApJS), MNRAS
+- Main journals origin : AAS (AJ, ApJ, ApJS), A&A, MNRAS
 - Authors asking for VizieR publication
 - Scientific criteria such as the origin of the measurements
 (e.g. observations have a higher priority than models)
