@@ -7,15 +7,12 @@ exercises: 2
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How and where to submit your data?
-- What kind of data can be submitted (tables, images) ?
 - Do and don't when submitting data?
-- What are the FAIR principles?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of the Findable, Accessible, Interoperable and Reusable (FAIR) principles, when preparing your data and its metadata.
 - Be aware of how to submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

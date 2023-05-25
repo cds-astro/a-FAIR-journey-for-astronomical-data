@@ -168,13 +168,12 @@ ORDER BY popu DESC;
 
 To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed. (**TRUE -- AG??**)
 
-- Journals origin : AAS (AJ, ApJ, ApJS), A&A, MNRAS
+- Main journals origin : A%A, AAS (AJ, ApJ, ApJS), MNRAS
 - Authors asking for VizieR publication
 - Scientific criteria such as the origin of the measurements
 (e.g. observations have a higher priority than models)
 - Effort required to make the data reusable (e.g. MRT) is taken into account in the selection of AAS journals
-(ApJ, ApJS and AJ).
-- Special case : A&A editors request authors to submit their data in CDS.
+- Special case : A&A editors request authors to submit their data in CDS
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
