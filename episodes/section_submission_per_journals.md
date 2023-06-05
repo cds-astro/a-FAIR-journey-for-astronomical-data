@@ -48,7 +48,7 @@ Machine readable tables (MRT) are prioritised, but other tables or FITS spectra/
 
 List of journals included:
 
-- Astrophysical Journal Letters: AJL
+- Astrophysical Journal Letters: ApJL
 - Astronomical Journal: AJ 
 - Astrophysical Journal: ApJ
 - Astrophysical Journal Supplement Series: ApJS
