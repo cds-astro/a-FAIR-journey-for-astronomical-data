@@ -280,7 +280,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Submitting astronomical data</h1>
-        <p> Last updated on 2023-05-25 | 
+        <p> Last updated on 2023-06-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -324,36 +324,21 @@ standards.</li>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_publish.png" alt="Summary Data journey from a publication to VizieR, step Submit" class="figure mx-auto d-block"><figcaption>Data journey from a publication to VizieR: step
 Submit</figcaption></figure><!--  ----------------------------------------- --><!-- 		Submitting 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section4 --><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx // Section 4 --><section id="where-to-deposit-the-data"><h2 class="section-heading">Where to deposit the data?<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data"></a>
 </h2>
-<hr class="half-width"><div class="section level3">
-<h3 id="submission-form-recommended-way">Submission form (recommended way)<a class="anchor" aria-label="anchor" href="#submission-form-recommended-way"></a></h3>
-<p>Since January 2018, the new submission interface is inline.</p>
-<p>Some basic checks on the ReadMe and data files are performed. It also
-includes FITS ingestion procedure to improve the discoverability of
-images and spectra.</p>
-<p><strong><em>Sentence needed???</em></strong> The checking procedure
-is also available as the anafile package which can be installed with the
-standard configure and make Linux procedures (man page).</p>
-<p>Step-by-step procedure summarizes below.</p>
-<p>Link: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a></p>
-<p>Documentation: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">doc</a></p>
-</div>
-<div class="section level3">
-<h3 id="ftp-deposit">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit"></a></h3>
-<p>FTP deposit: see the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</p>
-<p>Since October 2021, FTP uploads now requires a login
-authentification. A web application is available for authors to obtain a
-temporary login/password: <a href="https://cds.unistra.fr/ftp/token/" class="external-link">https://cds.unistra.fr/ftp/token/</a>
-(include the FTP instruction).</p>
-</div>
-<div class="section level3">
-<h3 id="other-possibilities">Other possibilities<a class="anchor" aria-label="anchor" href="#other-possibilities"></a></h3>
-<div class="section level4">
-<h4 id="special-case-large-volumetry">Special case: large volumetry<a class="anchor" aria-label="anchor" href="#special-case-large-volumetry"></a></h4>
-<p>The submission web application is an HTTP service and depends of
+<hr class="half-width"><p>Two routes are possible to submit your data to VizieR:</p>
+<ul><li>Option 1: Use the submission online interface
+<ul><li>Some basic checks on the ReadMe and data files are performed.</li>
+<li>It also includes FITS ingestion procedure to improve the
+discoverability of images and spectra.</li>
+</ul></li>
+<li>Option 2: Use the Python cdspyreadme library to create the ReadMe
+file and then upload all the tables and other data by FTP</li>
+</ul><!-- #### Special case: large volumetry --><p>The submission web application is an HTTP service and depends of
 authors network. The process is dedicated for tables size less than
 100Mb but accepts tables until ~200Mb.</p>
-<p>For larger files, please contact the VizieR staff (<a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>).</p>
-</div>
+<p>For larger files, please contact the VizieR staff: <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
+<div class="section level3">
+<h3 id="other-possibilities-to-keep">Other possibilities: to keep?<a class="anchor" aria-label="anchor" href="#other-possibilities-to-keep"></a></h3>
+<p><strong>Do we keep the following information ???</strong></p>
 <div class="section level4">
 <h4 id="email">Email<a class="anchor" aria-label="anchor" href="#email"></a></h4>
 <p>E-mail your files to the e-mail address <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>
@@ -448,7 +433,13 @@ dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 </section><section id="submission-form-option-1-step-by-step"><h2 class="section-heading">Submission form (option 1): step-by-step<a class="anchor" aria-label="anchor" href="#submission-form-option-1-step-by-step"></a>
 </h2>
-<hr class="half-width"><!--  ----------------------------------------- --><!-- 		Step-by-step: FTP		--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --></section><section id="python-ftp-option-2-step-by-step"><h2 class="section-heading">Python + FTP (option 2): step-by-step<a class="anchor" aria-label="anchor" href="#python-ftp-option-2-step-by-step"></a>
+<hr class="half-width"><p>Link: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a></p>
+<p>Documentation: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">doc</a></p>
+<!--  ----------------------------------------- -->
+<!-- 		Step-by-step: FTP		-->
+<!--  ----------------------------------------- -->
+<!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
+</section><section id="python-ftp-option-2-step-by-step"><h2 class="section-heading">Python + FTP (option 2): step-by-step<a class="anchor" aria-label="anchor" href="#python-ftp-option-2-step-by-step"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
 <h3 id="python-cdspyreadme-library">Python cdspyreadme library<a class="anchor" aria-label="anchor" href="#python-cdspyreadme-library"></a></h3>
@@ -458,7 +449,12 @@ dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
 </iframe>
 </div>
 <div class="section level3">
-<h3 id="ftp-deposit-1">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit-1"></a></h3>
+<h3 id="ftp-deposit">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit"></a></h3>
+<p>FTP deposit: see the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</p>
+<p>Since October 2021, FTP uploads now requires a login
+authentification. A web application is available for authors to obtain a
+temporary login/password: <a href="https://cds.unistra.fr/ftp/token/" class="external-link">https://cds.unistra.fr/ftp/token/</a>
+(include the FTP instruction).</p>
 <!--  ----------------------------------------- -->
 <!--            Summary                         -->
 <!--  ----------------------------------------- -->
@@ -483,7 +479,8 @@ validation!</p>
 <!--  ----------------------------------------- -->
 </section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
-<hr class="half-width"><p>In the next chapters, you will learn what type of data</p>
+<hr class="half-width"><p>In the next chapters, you will learn what happen to your data after
+submitting them to VizieR.</p>
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--  ----------------------------------------- -->
@@ -524,7 +521,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.2" class="external-link">sandpaper (0.12.2)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.3" class="external-link">sandpaper (0.12.3)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.17" class="external-link">varnish (0.2.17)</a>.</p>
 			</div>
@@ -546,9 +543,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/section_submit_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section_submit_data.html",
-  "dateCreated": "2023-05-25",
-  "dateModified": "2023-05-25",
-  "datePublished": "2023-05-30"
+  "dateCreated": "2023-06-05",
+  "dateModified": "2023-06-05",
+  "datePublished": "2023-06-05"
 }
 
   </script><script>
