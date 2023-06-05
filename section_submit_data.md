@@ -36,43 +36,25 @@ exercises: 2
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx // Section 4 -->
 ## Where to deposit the data?
 
+Two routes are possible to submit your data to VizieR:
+
+- Option 1: Use the submission online interface
+	- Some basic checks on the ReadMe and data files are performed. 
+	- It also includes FITS ingestion procedure to improve the discoverability of images and spectra.
+- Option 2: Use the Python cdspyreadme library to create the ReadMe file and then upload all the tables and other data by FTP
 
 
-
-### Submission form (recommended way)
-
-Since January 2018, the new submission interface is inline.
-
-Some basic checks on the ReadMe and data files are performed. 
-It also includes FITS ingestion procedure to improve the discoverability of images and spectra.
-
-***Sentence needed???*** The checking procedure is also available as the anafile package which can be installed with the standard configure and make Linux procedures (man page).
-
-Step-by-step procedure summarizes below.
-
-Link: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login]
-
-Documentation: [doc][vizier-submit-data-help]
-
-
-### FTP deposit
-
-FTP deposit: see the Publication support page (http://cds.u-strasbg.fr/vizier/submit.htx#ToC4)
-
-Since October 2021, FTP uploads now requires a login authentification.
-A web application is available for authors to obtain a temporary login/password:
-[https://cds.unistra.fr/ftp/token/][vizier-ftp-login]
-(include the FTP instruction).
-
-
-
-### Other possibilities
-
-#### Special case: large volumetry
-
+<!-- #### Special case: large volumetry -->
 The submission web application is an HTTP service and depends of authors network. The process is dedicated for tables size less than 100Mb but accepts tables until ~200Mb. 
 
-For larger files, please contact the VizieR staff ([cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)).
+For larger files, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+
+
+
+
+### Other possibilities: to keep?
+
+**Do we keep the following information ???**
 
 
 #### Email
@@ -155,6 +137,10 @@ For large sets of references, it is suggested to gather them into a dedicated *r
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 ## Submission form (option 1): step-by-step
 
+Link: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login]
+
+Documentation: [doc][vizier-submit-data-help]
+
 
 
 <!--  ----------------------------------------- -->
@@ -177,7 +163,12 @@ Link to Python package: [cdspydreadme][vizier-cdspyreadme]
 
 ### FTP deposit
 
+FTP deposit: see the Publication support page (http://cds.u-strasbg.fr/vizier/submit.htx#ToC4)
 
+Since October 2021, FTP uploads now requires a login authentification.
+A web application is available for authors to obtain a temporary login/password:
+[https://cds.unistra.fr/ftp/token/][vizier-ftp-login]
+(include the FTP instruction).
 
 
 <!--  ----------------------------------------- -->
@@ -198,7 +189,8 @@ A delay is needed for VizieR ingestion for description and validation!
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what type of data 
+In the next chapters, you will learn what happen to your data after submitting them to VizieR.
+ 
 
 
 
