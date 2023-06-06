@@ -18,8 +18,6 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-![Data journey from a publication to VizieR: step Prepare (part 1)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part1.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 1"}
-
 
 
 <!--  ----------------------------------------- -->
@@ -35,6 +33,9 @@ In order to ensure the scientific quality of the data, we therefore require that
 Furthermore, the data should be *described* accurately enough to allow an unambiguous interpretation of the data, and faciliate their usability. 
 
 In this course, we will review in this course the best practices for data publication in the astronomical field.
+
+
+![Journey from a publication to EOSC: step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step data published in a refereed paper"}
 
 
 <!--

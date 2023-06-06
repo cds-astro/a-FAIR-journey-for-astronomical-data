@@ -19,8 +19,6 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-![Data journey from a publication to VizieR: step Prepare (part 2)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_prepare_part2.png){alt="Summary Data journey from a publication to VizieR, step Prepare, part 2"}
-
 
 <!--  ----------------------------------------- -->
 <!-- 		Type of data 			-->
@@ -45,6 +43,7 @@ The following data types are accepted:
 - Other types: MOC / Hips (**REALLY???** -- AG)
 
 
+![Journey from a publication to EOSC: step preparation of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step preparation of the data"}
 
 
 <!--  ----------------------------------------- -->
