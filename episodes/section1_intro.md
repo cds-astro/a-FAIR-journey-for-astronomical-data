@@ -140,7 +140,7 @@ Distribute your data in a trusted repository in accordance with Open Data princi
 
 In the next chapters, you will learn what type of data can be published, how to prepare and publish them, and finally how to search your data using the EOSC tools. 
 
-![Full data journey from a publication to VizieR](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths.png){alt="Summary Data journey from a publication to VizieR, full path"}
+
 
 
 <!--  ----------------------------------------- -->
