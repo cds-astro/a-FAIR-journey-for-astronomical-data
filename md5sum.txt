@@ -12,5 +12,6 @@
 "episodes/section2_journey_data.md" "a5ad1ed7479e00957e9435d05e488a98" "site/built/section2_journey_data.md" "2023-06-06"
 "episodes/section3_eosc_intro.md" "7775b094ca61d6ef20b6f182bf832443" "site/built/section3_eosc_intro.md" "2023-06-06"
 "instructors/instructor-notes.md" "60b93493cf1da06dfd63255d73854461" "site/built/instructor-notes.md" "2022-04-22"
+"learners/reference.md" "7add8585bafd0883d79736852aa184ef" "site/built/reference.md" "2023-06-06"
 "learners/setup.md" "bf84bb1b634767c243cebf5bfce5742d" "site/built/setup.md" "2023-06-06"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-04-22"
