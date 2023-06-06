@@ -25,10 +25,6 @@ exercises: 2
 ***Other: https://vizier.cds.unistra.fr/vizier/submit.htx***
 
 
-
-![Data journey from a publication to VizieR: step Submit](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_publish.png){alt="Summary Data journey from a publication to VizieR, step Submit"}
-
-
 <!--  ----------------------------------------- -->
 <!-- 		Submitting 			-->
 <!--  ----------------------------------------- -->
@@ -48,7 +44,6 @@ Two routes are possible to submit your data to VizieR:
 The submission web application is an HTTP service and depends of authors network. The process is dedicated for tables size less than 100Mb but accepts tables until ~200Mb. 
 
 For larger files, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
-
 
 
 
@@ -74,6 +69,8 @@ Centre de Données astronomiques
 
 [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)
 
+
+![Journey from a publication to EOSC: step submission](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step submission of the data"}
 
 
 

@@ -17,8 +17,6 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-![Data journey from a publication to VizieR: step Publish](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_paths_publish.png){alt="Summary Data journey from a publication to VizieR, step Publish"}
-
 <!--  ----------------------------------------- -->
 <!-- 	Intro 					-->
 <!--  ----------------------------------------- -->
@@ -209,7 +207,7 @@ To face an increasing volume and according to the CDS mission, VizieR selects th
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn how to publish your data step-by-step, and then you will follow the journey of your data in the Virtual Observatory and up to EOSC. 
+In the next chapters, you will learn how to submit your data to VizieR step-by-step, and then you will follow the journey of your data in the Virtual Observatory and up to EOSC. 
 
 
 
