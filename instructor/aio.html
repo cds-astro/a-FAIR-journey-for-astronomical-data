@@ -356,7 +356,45 @@ and associated data - with verified and enriched data, accessible via
 multiple interfaces. Query tools allow the user to select relevant data
 tables and to extract and format records matching given criteria.
 Currently, over 23 000 catalogues are available.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_homepage_may2023.png" alt="Screenshot: VizieR homepage, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR homepage</figcaption></figure><p>VizieR was initially started as a joint effort of <a href="https://cds.unistra.fr/" class="external-link">CDS (Centre de Données astronomiques de
+<hr>
+<div class="section level3">
+<h3 id="test-1-image">Test 1: image<a class="anchor" aria-label="anchor" href="#test-1-image"></a>
+</h3>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_homepage_may2023.png" alt="Screenshot: VizieR homepage, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR homepage</figcaption></figure>
+</div>
+<div class="section level3">
+<h3 id="test-2-iframe-and-using-transform">Test 2: iframe, and using transform<a class="anchor" aria-label="anchor" href="#test-2-iframe-and-using-transform"></a>
+</h3>
+<!-- VizieR homepage  / with transform-->
+<iframe src="https://vizier.cds.unistra.fr/index.gml" title="VizieR homepage webpage" width="98%" height="500px" style="border: none; width: 130%; height: 1250px; overflow: hidden; 
+-webkit-transform: scale(0.75);
+-webkit-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+-o-transform: scale(0.75);
+-moz-transform-origin: 0 0;
+-moz-transform: scale(0.75);
+" allowfullscreen allow="autoplay" data-external="1">
+</iframe>
+<!--
+transform: introduces white space !!!!!
+-->
+<p>J’ai essayé de faire en sorte que l’iframe rende bien sur la page,
+mais je pourrais réduire un peu la taille, car justement si on voit les
+scrollbars, on pourra se dire que c’est une iframe et les gens seront
+enclin à utiliser direct la page?</p>
+</div>
+<div class="section level3">
+<h3 id="test-3-iframe-normal">Test 3: iframe “normal”<a class="anchor" aria-label="anchor" href="#test-3-iframe-normal"></a>
+</h3>
+<!-- VizieR homepage  / normal-->
+<iframe src="https://vizier.cds.unistra.fr/index.gml" title="VizieR homepage webpage" width="98%" height="1250px" style="border: none; overflow: hidden;" allowfullscreen allow="autoplay" data-external="1">
+</iframe>
+<hr>
+</div>
+<div class="section level3">
+<h3 id="rest-of-the-text--">Rest of the text ….<a class="anchor" aria-label="anchor" href="#rest-of-the-text--"></a>
+</h3>
+<p>VizieR was initially started as a joint effort of <a href="https://cds.unistra.fr/" class="external-link">CDS (Centre de Données astronomiques de
 Strasbourg)</a> and ESA-ESRIN (Information Systems Division), and is now
 fully managed by CDS. VizieR has been available since 1996, and was
 described in a <a href="https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract" class="external-link">paper
@@ -366,7 +404,9 @@ some catalogues are not suitable and some less frequently used
 catalogues have not yet been incorporated into the VizieR database. The
 full list of catalogues is available from there: <a href="https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on" class="external-link">Catalogue
 collection page</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 --></section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 -->
+</div>
+</section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
 </h2>
 <hr class="half-width">
 <p>Looking at the catalogue level:</p>
@@ -625,7 +665,7 @@ stewardship as outlined by M. Wilkinson et al. (2016).</p>
   To be Findable
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The first step before reusing the data is to be able to find them.
 The metadata and data should be easy to find for both humans and
@@ -647,7 +687,7 @@ it describes</p>
   To be Accessible
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Once the data can be found, the user needs to know how to access
 them. That could include authentification and authorisation. The
@@ -674,7 +714,7 @@ available</p>
   To be Interopable
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Those data can then be combined with different datasets, and
 interoperate with other applications or workflows for analysis, storage,
@@ -694,7 +734,7 @@ applicable language for knowledge representation.</p>
   To be Reusable
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The ultimate goal of FAIR is to optimise the reuse of data. To
 achieve this, metadata and data should be well-described, including a
@@ -804,7 +844,7 @@ article. (§2.1.4)</li>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Table 1 (from Chen et al. 2022): Show some examples of improper
 astronomical designations in literature, and explain how to correct
@@ -842,7 +882,7 @@ improper?<a class="anchor" aria-label="anchor" href="#quiz-why-are-these-astrono
   Why it is improper?
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <pre><code>[1] Insufficient precision in RA and DEC can cause confusion
  with nearby sources. 
@@ -869,7 +909,7 @@ to retrieve the actual object.
   Recommended usage
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <pre><code>[1] SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
 or SDSS J144157.26+094853.7
@@ -1182,7 +1222,7 @@ in a ReadMe file. More help on the ReadMe is given in the next course.</code></p
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Table 2 (from Chen et al. 2022): Show that using LaTeX markups or
 footnotes in tables affect their reusability.</p>
@@ -1243,7 +1283,7 @@ uncertain</p>
   Why it is improper?
   </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
 <div class="accordion-body">
 <p>The quality of the measurement is indicated using a superscript.
 Providing this information using an extra column will make the table
@@ -1259,7 +1299,7 @@ more machine readable, and therefore the data more reusable.</p>
   Recommended usage
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <table class="table">
 <thead><tr class="header">
@@ -1459,7 +1499,7 @@ of the VizieR service was published in 2000, A&amp;AS 143, 23.</code></pre>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <p>Table 3 (from Chen et al. 2022): Give some examples of ambiguous
 facility/ telescope/instrument names from the literature.</p>
@@ -1490,7 +1530,7 @@ facilities?<a class="anchor" aria-label="anchor" href="#quiz-can-you-guess-the-n
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
