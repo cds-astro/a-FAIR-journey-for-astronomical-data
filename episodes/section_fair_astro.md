@@ -822,13 +822,3 @@ In the next chapters, you will learn how to prepare your data before submitting 
 [Grieves_2021]: http://doi.org/10.1051/0004-6361/202039586
 [Kundu_2007]: http://doi.org/10.1086/518021
 
-
-<!--  ----------------------------------------- -->
-<!-- 		Glossary			-->
-<!--  ----------------------------------------- -->
-<!-- 
-DOI—Digital Object Identiﬁer; a code used to permanently and stably identify (usually digital) objects. DOIs provide a standard mechanism for retrieval of
-metadata about the object, and generally a means to access the data object itself.
-FAIR—Findable, Accessible, Interoperable, Reusable
--->
-
