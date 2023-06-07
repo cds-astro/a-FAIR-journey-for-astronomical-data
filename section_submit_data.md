@@ -193,30 +193,6 @@ In the next chapters, you will learn what happen to your data after submitting t
 
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
+<!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-[vizier-ftp-cats]: http://cdsarc.cds.unistra.fr/ftp/cats/
-[vizier-readme-std]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx
-[vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
-[vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
-<!-- -->
-<!-- Not used -->
-<!-- -->
-[vizier-ftp-login]: https://cds.unistra.fr/ftp/token/
-[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
-[vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
-[vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
-[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
-[vizier-submit-old]: http://cdsarc.u-strasbg.fr/viz-bin/Submit
-[vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
-[vizier-cat-32-units]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx
-[vizier-cat-33-labels]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx
-[vizier-cat-34-optional]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx
-[vizier-cat-35-lengthy]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx
-[vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
-[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
-[vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
-[vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
-[vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
-[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
-[vizier-submit-old]: http://cdsarc.u-strasbg.fr/viz-bin/Submit
 

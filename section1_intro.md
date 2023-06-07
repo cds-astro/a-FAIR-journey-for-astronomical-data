@@ -145,37 +145,5 @@ In the next chapters, you will learn what type of data can be published, how to 
 
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
+<!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-[topcat]:  http://www.starlink.ac.uk/topcat/
-[ivoa-registry]: http://rofr.ivoa.net/
-[eudat]: https://www.eudat.eu/
-[ads]: https://ui.adsabs.harvard.edu/classic-form
-[eosc-portal]: https://eosc-portal.eu/
-[cassis]: http://cassis.irap.omp.eu/?page=cassis
-[splat]: http://star-www.dur.ac.uk/~pdraper/splat/splat.html
-[cts]: https://www.coretrustseal.org/
-[ivoa-link]: https://www.ivoa.net/
-<!-- -->
-[cds-home]: https://cds.unistra.fr/
-[aladin-home]: http://aladin.cds.unistra.fr/aladin.gml
-[xmatch-home]: http://cdsxmatch.u-strasbg.fr/
-<!-- -->
-[vizier-home]: https://vizier.cds.unistra.fr/index.gml
-[vizier-first-publi]: https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract
-[vizier-catalogue-collection]: https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on
-[vizier-table-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
-[vizier-ftp]: https://cdsarc.cds.unistra.fr/ftp/
-[vizier-tap]: http://tapvizier.cds.unistra.fr/adql/
-[vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
-[vizier-assocdata]: https://cdsarc.cds.unistra.fr/assocdata/
-[vizier-api]: https://github.com/cds-astro/cds.cdsclient/
-<!-- -->
-<!-- Not used -->
-<!-- -->
-[simbad-home]: http://simbad.cds.unistra.fr/simbad/
-
-[vizier-make-your-data-visible]: https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf
-[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
-[vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
-[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
-

@@ -286,11 +286,6 @@ In the next chapters, you will learn how to submit your data, and finally how to
 
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
+<!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-[fits-nasa]: https://fits.gsfc.nasa.gov/
-<!-- -->
-[vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
-[vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
-[vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
-[vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
 
