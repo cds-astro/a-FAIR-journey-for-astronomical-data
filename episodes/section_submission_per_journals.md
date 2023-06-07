@@ -213,26 +213,5 @@ In the next chapters, you will learn how to submit your data to VizieR step-by-s
 
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
+<!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-[aa-home]: https://www.aanda.org/
-[aa-publi-data-cds]: https://www.aanda.org/for-authors/latex-issues/tables
-[aa-astro-objects-link]: https://www.aanda.org/for-authors/latex-issues/astronomical-objects-linking-to-databases
-<!-- -->
-[aas-home]: https://journals.aas.org/
-[aas-data-guide]: https://journals.aas.org/data-guide/
-<!-- -->
-[mnras-vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
-[mnras-home]: https://academic.oup.com/mnras
-[mnras-publi-data-cds]: https://academic.oup.com/mnras/pages/General_Instructions#2.7%20Catalogues%20and%20online-only%20material
-<!-- -->
-[vizier-cat-per-journal]: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
-<!-- -->
-[viz-astro-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=I/337
-[viz-phot-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=II/328
-[viz-spectro-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=III/135A
-[viz-cross-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IV/25
-[viz-high-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IX/10A
-[viz-comb-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=V/139
-[viz-misc-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VI/135
-[viz-non-sto-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VII/233 
-[viz-radio-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VIII/65 

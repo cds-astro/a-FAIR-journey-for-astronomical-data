@@ -66,8 +66,5 @@ In the next chapters, you will learn what type of data
 
 <!--  ----------------------------------------- -->
 <!--            Link references                 -->
+<!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-[ftp-cats]: https://cdsarc.cds.unistra.fr/viz-bin/ftp-index
-[vizier-mirors]: https://vizier.cfa.harvard.edu/vizier/mirrors.gml
-[vizier-at-cfa]: http://vizier.nao.ac.jp/
-[vizier-at-noaj]: https://vizier.cfa.harvard.edu/
