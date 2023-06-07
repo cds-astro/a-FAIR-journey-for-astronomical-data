@@ -75,64 +75,168 @@ Centre de Données astronomiques
 
 
 <!--  ----------------------------------------- -->
-<!--    Fill the Readme description file        -->
+<!--   Readme files                             -->
 <!--  ----------------------------------------- -->
+## Readme Files
+
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 -->
-## How to fill the ReadMe description file?
+### The why and what of the Readme file
 
-This file is aimed at describing all data files stored in a catalogued data set, and at providing the necessary explanations and references to the stored material.
+To be reusable, any data needs extra information. In astronomy, the convention is to give this information in a separate file called *Readme*. 
+Every catalogue in the Virtual Observatory registry has its own *Readme*.
+Numerous examples can be found on the [FTP directories][vizier-ftp-cats] at CDS.
 
-All catalogues available at CDS and in associated astronomical data centers have such an associated file, and numerous examples can be found on the [FTP directories][vizier-ftp-cats] at CDS.
+::: callout
+In this section, we give a lot of details. It can be overwhelming, but next section covers the tools that exist to help generating a correct Readme file
+:::
 
-A full description of the conventions used in this *ReadMe* file can be found in the [Standards for Astronomical Catalogues][vizier-readme-std], and a template is readily accessible for all journals. A typical illustration could be e.g. [J/A+A/382/389/ReadMe][vizier-readme-example]. Short explanations about how to fill the *ReadMe* file:
+The [Standards for Astronomical Catalogues][vizier-readme-std], is a complete description of the standard for Readme files. 
+A typical illustration could be e.g. [J/A+A/382/389/ReadMe][vizier-readme-example]. 
 
-- the **volume** and **page** numbers: for papers accepted for publication in A&A, but not yet published, these will be added directly at CDS as soon as we get these from the publisher. For papers accepted for publication in other journals, it is recommended to mail them (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details from the publisher.
+Here is a blank template: 
+
+```
+$catalogue                                                      ($author, $date)
+================================================================================
+$title
+    $authors
+    $bibcode
+================================================================================
+Keywords: $keywords
+
+Objects:
+    -----------------------------------------
+       RA   (2000)   DE    Designation(s)
+    -----------------------------------------
+
+Abstract:
+  $abstract
+
+Description:
+  $description
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl   Records    Explanations
+--------------------------------------------------------------------------------
+$tablesIndex
+
+--------------------------------------------------------------------------------
+$bytebybyte
+
+See also:
+$seealso
+
+Acknowledgements:
+
+References:
+================================================================================
+     (prepared by author)
+```
 
 
-- the **Keywords**: part lists the following keywords:
-        - *ADC\_Keywords* introduces the list of data-related keywords, out of a controlled set
-        - *Keywords*:   introduces the list of keywords as in the printed publication
+In this template, you can find:
 
-Unlike the *Keywords*:  set which is generally related to the scientific goal of a paper, the *ADC\_Keywords* are stricly related to the tabular material collected in the paper.
+- *First line*: catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
 
+::: callout
+In case 
+- for papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
+- for papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
+:::
 
-- the **Description**: section is expected to describe the *context of the data*, like the instrumentation used or the observing conditions — it therefore differs from the *Abstract* which tends to describe the *scientific results* that the author derived from the data.
+- the **Keywords** lists the following keywords:
+    + *ADC\_Keywords* introduces the list of data-related keywords, out of a controlled set $# TODO: find this set$
+    + *Keywords*:   introduces the list of keywords as in the publication
 
+::::::::::::::::: callout
+Unlike the *Keywords* that are generally related to the scientific content of a paper, the *ADC\_Keywords* are stricly related to the tabular material collected in the catalogue.
+:::::::::::::::::
 
-- the **File Summary**: section describes the files making up the set: for each file are specified its *filename*, the *length of the longest line* (lrecl), the *number of records* (number of lines), and a *caption* (short title of the file). Lengthy notes can be added if necessary.
-
-
-- the **Byte-by-byte Description of file**: section describes the structure of each of the data files (files with the *.dat* extension). This description is made in a tabular form, each row describing one field (column) of the data file. The description contains the following columns:
-        - the *starting* column of the data field
-        - the *format* of the field as a *fortran-like* format:
-                - **A***n*      for a character column made of *n* characters;
-                - **I***n*      for a column containing an integer number of *n* digits;
-                - **F***n.d*    for a column containing a number of width *n* digits and up to *d* digits in the fractional part;
-                - **E***n.d*    for a number using the exponential notation;
-                - **D***n.d*
-        - the [units][vizier-cat-32-units] used in the field; the usage of **SI** units are strongly encouraged, avoid the CGS units (for instance, use **mW/m2** instead of **ergs/s/cm2**).
-        - the *label* (heading) of the field, made of a single word (*no embedded blank*); a few [basic conventions][vizier-cat-33-labels] are used for usual parameters (e.g. positions) and related quantities (e.g. mean errors).
-        - the *explanations* can start with the following special characters related to some important data characteristics:
-                - **\***        (the asterisk)  indicating a [lengthy note][vizier-cat-35-lengthy]
-                - **[...]**     (square brackets)       indicating *data ranges*
-                - **?** (question mark) indicating a possibility of [blank or NULL][vizier-cat-34-optional] (unspecified) values
+- the **Description** is expected to give the *context of the data*, such as instrumentation or observing conditions. 
+It therefore differs from the *Abstract* which describes the *scientific results* that the author(s) derived from the data.
 
 
-- the **References**: section contains the necessary references; the usage of the bibcode(**WARNING: link not found**) is strongly encouraged.
-
-For large sets of references, it is suggested to gather them into a dedicated *reference file* named **refs.dat**.
+- the **File Summary** describes the files composing the set. Each file should be described by its *filename*, the *length of the longest line* (lrecl), the *number of records* (number of lines), and a *caption* (short title of the file). Lengthy notes can be added if necessary.
 
 
+- the **Byte-by-byte Description**. There is one per file. This description is in a tabular form, each row describing one field (column) of the data file.
+Here is an example:
+
+```
+Byte-by-byte Description of file: table2.dat
+-----------------------------------------------------------------------------
+   Bytes Format  Units         Label     Explanations
+-----------------------------------------------------------------------------
+   1-  4  I4     ---           Abell     Abell (ACO) cluster number
+   6-  7  I2     ---           Galaxy    Galaxy identification number
+   9- 10  I2     h             RAh       Right Ascension J2000 (hours)
+  12- 13  I2     min           RAm       Right Ascension J2000 (minutes)
+  15- 19  F5.2   s             RAs       Right Ascension J2000 (seconds)
+      21  A1     ---           DE-       Declination J2000 (sign)
+  22- 23  I2     deg           DEd       Declination J2000 (degrees)
+  25- 26  I2     arcmin        DEm       Declination J2000 (minutes)
+  28- 31  F4.1   arcsec        DEs       Declination J2000 (seconds)
+  33- 37  F5.2   mag           Rcmag     Asymptotic Kron-Cousins R_c_ band
+                                          magnitude corrected for Galactic
+                                          extinction (1)
+  39- 43  F5.2   arcsec        reff      Seeing corrected effective radius (2)
+  45- 49  F5.2   mag/arcsec2   mue       Seeing corrected surface
+                                          brightness at reff (1), (2)
+  51- 55  F5.2   mag/arcsec2   <mue>     Seeing corrected mean surface
+                                          brightness within reff (1), (2)
+      57  I1     ---           ExclFlag  [1,3]? Exclusion flag (3)
+--------------------------------------------------------------------------------
+Note (1): Correction for foreground Galactic extinction according to Schlegel
+     et al. (1998ApJ...500..525S) corresponds to the centre of cluster
+Note (2): Correction for seeing effect following Saglia et al.
+     (1993MNRAS.264..961S)
+Note (3): 33 galaxies excluded from the distance determination:
+     1 = fainter than M_R_~-21.5mag
+     2 = disk dominated
+     3 = peculiar or interacting
+--------------------------------------------------------------------------------
+```
+
+This part contains a lot of information
+
+- the *starting* column of the data field
+- the *format* of the field as a *fortran-like* format
+    + **A***n*      for a character column made of *n* characters;
+    + **I***n*      for a column containing an integer number of *n* digits;
+    + **F***n.d*    for a column containing a float number of width *n* digits and up to *d* digits in the fractional part;
+    + **E***n.d*    for a number using the exponential notation;
+- the [units][vizier-cat-32-units] used in the field. **SI** units are strongly encouraged, avoid the CGS units (for instance, use **mW/m2** instead of **ergs/s/cm2**).
+- the *label* (heading) of the field, made of a single word (*no embedded blank*); a few [basic conventions][vizier-cat-33-labels] are used for usual parameters (e.g. positions) and related quantities (e.g. mean errors).
+- the *explanations* can start with the following special characters related to some important data characteristics:
+    + **\***        (the asterisk)  indicating a [lengthy note][vizier-cat-35-lengthy]
+    + **[...]**     (square brackets)       indicating *data ranges*
+    + **?** (question mark) indicating a possibility of [blank or NULL][vizier-cat-34-optional] (unspecified) values
 
 
+- the **References**: section contains the citations. Bibcodes are strongly encouraged.
+For large sets of references, you can also gather them into a dedicated *reference file* named **refs.dat**.
+
+### How to fill the ReadMe file?
+
+There are two ways to fill your own Readme file: 
+
+- with the [cdspydreadme][pyreadme] python module that generates pre-filled readme files for data stored in `FITS`, `csv`, `astropy.Tables`, or `MRT` formats,
+- manually, by looking at examples and adapting to your own table
+
+$ # TODO: does the submission form offer an other way to generate a readme file? $
+
+The whole Readme can then be tested with the command line tool [anafile][anafile]. 
+But in any case, do your best and the CDS team will make sure that your data is easily understandable and can be re-used and cited by everyone. 
 
 
+## Submission
 
 <!--  ----------------------------------------- -->
 <!-- 		Step-by-step: submission form	-->
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
-## Submission form (option 1): step-by-step
+### Submission form (option 1): step-by-step
 
 Link: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login]
 
@@ -145,24 +249,13 @@ Documentation: [doc][vizier-submit-data-help]
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 
-## Python + FTP (option 2): step-by-step
+### File Transfer Protocol (option 2): step-by-step
 
+An other option is to submit your data through File Transfer Protocol. 
 
-### Python cdspyreadme library
+See the Publication support page (http://cds.u-strasbg.fr/vizier/submit.htx#ToC4)
 
-Aim: Build ReadMe and MRT builder for authors
-
-Link to Python package: [cdspydreadme][vizier-cdspyreadme]
-
-<iframe src="https://cds-astro.github.io/jupyterlite/lab/index.html" style="border: 1px solid #464646; width: 98%; height:400px" allowfullscreen="" allow="autoplay" data-external="1"></iframe>
-
-
-
-### FTP deposit
-
-FTP deposit: see the Publication support page (http://cds.u-strasbg.fr/vizier/submit.htx#ToC4)
-
-Since October 2021, FTP uploads now requires a login authentification.
+Since October 2021, FTP uploads requires a login authentification.
 A web application is available for authors to obtain a temporary login/password:
 [https://cds.unistra.fr/ftp/token/][vizier-ftp-login]
 (include the FTP instruction).
@@ -176,7 +269,8 @@ A web application is available for authors to obtain a temporary login/password:
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-A delay is needed for VizieR ingestion for description and validation!
+- Readme files are highly standardised to allow reusability and cross matching between catalogs
+- A delay is needed for VizieR curation and validation!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
