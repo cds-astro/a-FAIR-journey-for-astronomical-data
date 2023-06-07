@@ -1949,7 +1949,7 @@ Standards for Catalogues document</a>.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre><code>[1] "No: too long"
 [2] "No: Uppercase detected"
@@ -2369,114 +2369,262 @@ posting, etc… at:</p>
 <p>67000 STRASBOURG, France</p>
 <p><a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a></p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg" alt="Summary Data journey from a publication to VizieR and then EOSC: step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: step
-submission</figcaption></figure><!--  ----------------------------------------- --><!--    Fill the Readme description file        --><!--  ----------------------------------------- --><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 -->
+submission</figcaption></figure><!--  ----------------------------------------- --><!--   Readme files                             --><!--  ----------------------------------------- -->
 </div>
 </div>
-</section><section id="how-to-fill-the-readme-description-file"><h2 class="section-heading">How to fill the ReadMe description file?<a class="anchor" aria-label="anchor" href="#how-to-fill-the-readme-description-file"></a>
+</section><section id="readme-files"><h2 class="section-heading">Readme Files<a class="anchor" aria-label="anchor" href="#readme-files"></a>
 </h2>
 <hr class="half-width">
-<p>This file is aimed at describing all data files stored in a
-catalogued data set, and at providing the necessary explanations and
-references to the stored material.</p>
-<p>All catalogues available at CDS and in associated astronomical data
-centers have such an associated file, and numerous examples can be found
-on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP
-directories</a> at CDS.</p>
-<p>A full description of the conventions used in this <em>ReadMe</em>
-file can be found in the <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx" class="external-link">Standards
-for Astronomical Catalogues</a>, and a template is readily accessible
-for all journals. A typical illustration could be e.g. <a href="https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe" class="external-link">J/A+A/382/389/ReadMe</a>.
-Short explanations about how to fill the <em>ReadMe</em> file:</p>
+<!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 --><div class="section level3">
+<h3 id="the-why-and-what-of-the-readme-file">The why and what of the Readme file<a class="anchor" aria-label="anchor" href="#the-why-and-what-of-the-readme-file"></a>
+</h3>
+<p>To be reusable, any data needs extra information. In astronomy, the
+convention is to give this information in a separate file called
+<em>Readme</em>. Every catalogue in the Virtual Observatory registry has
+its own <em>Readme</em>. Numerous examples can be found on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP directories</a> at
+CDS.</p>
+<div id="callout1" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+</h3>
+<div class="callout-content">
+<p>In this section, we give a lot of details. It can be overwhelming,
+but next section covers the tools that exist to help generating a
+correct Readme file</p>
+</div>
+</div>
+</div>
+<p>The <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx" class="external-link">Standards
+for Astronomical Catalogues</a>, is a complete description of the
+standard for Readme files. A typical illustration could be e.g. <a href="https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe" class="external-link">J/A+A/382/389/ReadMe</a>.</p>
+<p>Here is a blank template:</p>
+<pre><code>$catalogue                                                      ($author, $date)
+================================================================================
+$title
+    $authors
+    $bibcode
+================================================================================
+Keywords: $keywords
+
+Objects:
+    -----------------------------------------
+       RA   (2000)   DE    Designation(s)
+    -----------------------------------------
+
+Abstract:
+  $abstract
+
+Description:
+  $description
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl   Records    Explanations
+--------------------------------------------------------------------------------
+$tablesIndex
+
+--------------------------------------------------------------------------------
+$bytebybyte
+
+See also:
+$seealso
+
+Acknowledgements:
+
+References:
+================================================================================
+     (prepared by author)</code></pre>
+<p>In this template, you can find:</p>
 <ul>
-<li><p>the <strong>volume</strong> and <strong>page</strong> numbers:
-for papers accepted for publication in A&amp;A, but not yet published,
-these will be added directly at CDS as soon as we get these from the
-publisher. For papers accepted for publication in other journals, it is
-recommended to mail them (to <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>)
-when you get these details from the publisher.</p></li>
-<li><p>the <strong>Keywords</strong>: part lists the following keywords:
-- <em>ADC_Keywords</em> introduces the list of data-related keywords,
-out of a controlled set - <em>Keywords</em>: introduces the list of
-keywords as in the printed publication</p></li>
+<li>
+<em>First line</em>: catalogue designation, an abbreviated title
+followed within parenthesis by the last name of the first author, a +
+sign if there are multiple authors, and the year — this information has
+to be condensed in a single line of 80 characters or less;</li>
 </ul>
-<p>Unlike the <em>Keywords</em>: set which is generally related to the
-scientific goal of a paper, the <em>ADC_Keywords</em> are stricly
-related to the tabular material collected in the paper.</p>
+<div id="callout2" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
+</h3>
+<div class="callout-content">
+<p>In case - for papers accepted for publication in A&amp;A – but not
+yet published – these will be added directly at CDS, - for papers
+accepted in other journals, it is recommended to send them via email (to
+<a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>)
+when you get these details.</p>
+</div>
+</div>
+</div>
 <ul>
-<li><p>the <strong>Description</strong>: section is expected to describe
-the <em>context of the data</em>, like the instrumentation used or the
-observing conditions — it therefore differs from the <em>Abstract</em>
-which tends to describe the <em>scientific results</em> that the author
-derived from the data.</p></li>
-<li><p>the <strong>File Summary</strong>: section describes the files
-making up the set: for each file are specified its <em>filename</em>,
-the <em>length of the longest line</em> (lrecl), the <em>number of
+<li>the <strong>Keywords</strong> lists the following keywords:
+<ul>
+<li>
+<em>ADC_Keywords</em> introduces the list of data-related keywords,
+out of a controlled set <span class="math inline">\(# TODO: find this
+set\)</span>
+</li>
+<li>
+<em>Keywords</em>: introduces the list of keywords as in the
+publication</li>
+</ul>
+</li>
+</ul>
+<div id="callout3" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
+</h3>
+<div class="callout-content">
+<p>Unlike the <em>Keywords</em> that are generally related to the
+scientific content of a paper, the <em>ADC_Keywords</em> are stricly
+related to the tabular material collected in the catalogue.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>the <strong>Description</strong> is expected to give the
+<em>context of the data</em>, such as instrumentation or observing
+conditions. It therefore differs from the <em>Abstract</em> which
+describes the <em>scientific results</em> that the author(s) derived
+from the data.</p></li>
+<li><p>the <strong>File Summary</strong> describes the files composing
+the set. Each file should be described by its <em>filename</em>, the
+<em>length of the longest line</em> (lrecl), the <em>number of
 records</em> (number of lines), and a <em>caption</em> (short title of
 the file). Lengthy notes can be added if necessary.</p></li>
-<li><p>the <strong>Byte-by-byte Description of file</strong>: section
-describes the structure of each of the data files (files with the
-<em>.dat</em> extension). This description is made in a tabular form,
-each row describing one field (column) of the data file. The description
-contains the following columns: - the <em>starting</em> column of the
-data field - the <em>format</em> of the field as a <em>fortran-like</em>
-format: - <strong>A</strong><em>n</em> for a character column made of
-<em>n</em> characters; - <strong>I</strong><em>n</em> for a column
-containing an integer number of <em>n</em> digits; -
-<strong>F</strong><em>n.d</em> for a column containing a number of width
-<em>n</em> digits and up to <em>d</em> digits in the fractional part; -
-<strong>E</strong><em>n.d</em> for a number using the exponential
-notation; - <strong>D</strong><em>n.d</em> - the <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx" class="external-link">units</a>
-used in the field; the usage of <strong>SI</strong> units are strongly
-encouraged, avoid the CGS units (for instance, use
-<strong>mW/m2</strong> instead of <strong>ergs/s/cm2</strong>). - the
-<em>label</em> (heading) of the field, made of a single word (<em>no
-embedded blank</em>); a few <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx" class="external-link">basic
-conventions</a> are used for usual parameters (e.g. positions) and
-related quantities (e.g. mean errors). - the <em>explanations</em> can
-start with the following special characters related to some important
-data characteristics: - <strong>*</strong> (the asterisk) indicating a
-<a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx" class="external-link">lengthy
-note</a> - <strong>[…]</strong> (square brackets) indicating <em>data
-ranges</em> - <strong>?</strong> (question mark) indicating a
-possibility of <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx" class="external-link">blank
-or NULL</a> (unspecified) values</p></li>
-<li><p>the <strong>References</strong>: section contains the necessary
-references; the usage of the bibcode(<strong>WARNING: link not
-found</strong>) is strongly encouraged.</p></li>
+<li><p>the <strong>Byte-by-byte Description</strong>. There is one per
+file. This description is in a tabular form, each row describing one
+field (column) of the data file. Here is an example:</p></li>
 </ul>
-<p>For large sets of references, it is suggested to gather them into a
-dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
-<!--  ----------------------------------------- -->
-<!-- 		Step-by-step: submission form	-->
-<!--  ----------------------------------------- -->
-<!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
-</section><section id="submission-form-option-1-step-by-step"><h2 class="section-heading">Submission form (option 1): step-by-step<a class="anchor" aria-label="anchor" href="#submission-form-option-1-step-by-step"></a>
+<pre><code>Byte-by-byte Description of file: table2.dat
+-----------------------------------------------------------------------------
+   Bytes Format  Units         Label     Explanations
+-----------------------------------------------------------------------------
+   1-  4  I4     ---           Abell     Abell (ACO) cluster number
+   6-  7  I2     ---           Galaxy    Galaxy identification number
+   9- 10  I2     h             RAh       Right Ascension J2000 (hours)
+  12- 13  I2     min           RAm       Right Ascension J2000 (minutes)
+  15- 19  F5.2   s             RAs       Right Ascension J2000 (seconds)
+      21  A1     ---           DE-       Declination J2000 (sign)
+  22- 23  I2     deg           DEd       Declination J2000 (degrees)
+  25- 26  I2     arcmin        DEm       Declination J2000 (minutes)
+  28- 31  F4.1   arcsec        DEs       Declination J2000 (seconds)
+  33- 37  F5.2   mag           Rcmag     Asymptotic Kron-Cousins R_c_ band
+                                          magnitude corrected for Galactic
+                                          extinction (1)
+  39- 43  F5.2   arcsec        reff      Seeing corrected effective radius (2)
+  45- 49  F5.2   mag/arcsec2   mue       Seeing corrected surface
+                                          brightness at reff (1), (2)
+  51- 55  F5.2   mag/arcsec2   &lt;mue&gt;     Seeing corrected mean surface
+                                          brightness within reff (1), (2)
+      57  I1     ---           ExclFlag  [1,3]? Exclusion flag (3)
+--------------------------------------------------------------------------------
+Note (1): Correction for foreground Galactic extinction according to Schlegel
+     et al. (1998ApJ...500..525S) corresponds to the centre of cluster
+Note (2): Correction for seeing effect following Saglia et al.
+     (1993MNRAS.264..961S)
+Note (3): 33 galaxies excluded from the distance determination:
+     1 = fainter than M_R_~-21.5mag
+     2 = disk dominated
+     3 = peculiar or interacting
+--------------------------------------------------------------------------------</code></pre>
+<p>This part contains a lot of information</p>
+<ul>
+<li>the <em>starting</em> column of the data field</li>
+<li>the <em>format</em> of the field as a <em>fortran-like</em> format
+<ul>
+<li>
+<strong>A</strong><em>n</em> for a character column made of
+<em>n</em> characters;</li>
+<li>
+<strong>I</strong><em>n</em> for a column containing an integer
+number of <em>n</em> digits;</li>
+<li>
+<strong>F</strong><em>n.d</em> for a column containing a float
+number of width <em>n</em> digits and up to <em>d</em> digits in the
+fractional part;</li>
+<li>
+<strong>E</strong><em>n.d</em> for a number using the exponential
+notation;</li>
+</ul>
+</li>
+<li>the <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx" class="external-link">units</a>
+used in the field. <strong>SI</strong> units are strongly encouraged,
+avoid the CGS units (for instance, use <strong>mW/m2</strong> instead of
+<strong>ergs/s/cm2</strong>).</li>
+<li>the <em>label</em> (heading) of the field, made of a single word
+(<em>no embedded blank</em>); a few <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx" class="external-link">basic
+conventions</a> are used for usual parameters (e.g. positions) and
+related quantities (e.g. mean errors).</li>
+<li>the <em>explanations</em> can start with the following special
+characters related to some important data characteristics:
+<ul>
+<li>
+<strong>*</strong> (the asterisk) indicating a <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx" class="external-link">lengthy
+note</a>
+</li>
+<li>
+<strong>[…]</strong> (square brackets) indicating <em>data
+ranges</em>
+</li>
+<li>
+<strong>?</strong> (question mark) indicating a possibility of <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx" class="external-link">blank
+or NULL</a> (unspecified) values</li>
+</ul>
+</li>
+<li>the <strong>References</strong>: section contains the citations.
+Bibcodes are strongly encouraged. For large sets of references, you can
+also gather them into a dedicated <em>reference file</em> named
+<strong>refs.dat</strong>.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="how-to-fill-the-readme-file">How to fill the ReadMe file?<a class="anchor" aria-label="anchor" href="#how-to-fill-the-readme-file"></a>
+</h3>
+<p>There are two ways to fill your own Readme file:</p>
+<ul>
+<li>with the [cdspydreadme][pyreadme] python module that generates
+pre-filled readme files for data stored in <code>FITS</code>,
+<code>csv</code>, <code>astropy.Tables</code>, or <code>MRT</code>
+formats,</li>
+<li>manually, by looking at examples and adapting to your own table</li>
+</ul>
+<p>$ # TODO: does the submission form offer an other way to generate a
+readme file? $</p>
+<p>The whole Readme can then be tested with the command line tool <a href="http://cdsarc.unistra.fr/doc/anafile.htx" class="external-link">anafile</a>. But in any
+case, do your best and the CDS team will make sure that your data is
+easily understandable and can be re-used and cited by everyone.</p>
+</div>
+</section><section id="submission"><h2 class="section-heading">Submission<a class="anchor" aria-label="anchor" href="#submission"></a>
 </h2>
 <hr class="half-width">
+<!--  ----------------------------------------- --><!-- 		Step-by-step: submission form	--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --><div class="section level3">
+<h3 id="submission-form-option-1-step-by-step">Submission form (option 1): step-by-step<a class="anchor" aria-label="anchor" href="#submission-form-option-1-step-by-step"></a>
+</h3>
 <p>Link: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a></p>
 <p>Documentation: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">doc</a></p>
 <!--  ----------------------------------------- -->
 <!-- 		Step-by-step: FTP		-->
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
-</section><section id="python-ftp-option-2-step-by-step"><h2 class="section-heading">Python + FTP (option 2): step-by-step<a class="anchor" aria-label="anchor" href="#python-ftp-option-2-step-by-step"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="python-cdspyreadme-library">Python cdspyreadme library<a class="anchor" aria-label="anchor" href="#python-cdspyreadme-library"></a>
-</h3>
-<p>Aim: Build ReadMe and MRT builder for authors</p>
-<p>Link to Python package: <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link">cdspydreadme</a></p>
-<iframe src="https://cds-astro.github.io/jupyterlite/lab/index.html" style="border: 1px solid #464646; width: 98%; height:400px" allowfullscreen allow="autoplay" data-external="1">
-</iframe>
 </div>
 <div class="section level3">
-<h3 id="ftp-deposit">FTP deposit<a class="anchor" aria-label="anchor" href="#ftp-deposit"></a>
+<h3 id="file-transfer-protocol-option-2-step-by-step">File Transfer Protocol (option 2): step-by-step<a class="anchor" aria-label="anchor" href="#file-transfer-protocol-option-2-step-by-step"></a>
 </h3>
-<p>FTP deposit: see the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</p>
-<p>Since October 2021, FTP uploads now requires a login
-authentification. A web application is available for authors to obtain a
-temporary login/password: <a href="https://cds.unistra.fr/ftp/token/" class="external-link">https://cds.unistra.fr/ftp/token/</a>
+<p>An other option is to submit your data through File Transfer
+Protocol.</p>
+<p>See the Publication support page (<a href="http://cds.u-strasbg.fr/vizier/submit.htx#ToC4" class="external-link uri">http://cds.u-strasbg.fr/vizier/submit.htx#ToC4</a>)</p>
+<p>Since October 2021, FTP uploads requires a login authentification. A
+web application is available for authors to obtain a temporary
+login/password: <a href="https://cds.unistra.fr/ftp/token/" class="external-link">https://cds.unistra.fr/ftp/token/</a>
 (include the FTP instruction).</p>
 <!--  ----------------------------------------- -->
 <!--            Summary                         -->
@@ -2493,8 +2641,11 @@ temporary login/password: <a href="https://cds.unistra.fr/ftp/token/" class="ext
 <h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
-<p>A delay is needed for VizieR ingestion for description and
-validation!</p>
+<ul>
+<li>Readme files are highly standardised to allow reusability and cross
+matching between catalogs</li>
+<li>A delay is needed for VizieR curation and validation!</li>
+</ul>
 </div>
 </div>
 </div>
