@@ -29,50 +29,27 @@ exercises: 2
 [VizieR][vizier-home] provides the most complete library of published astronomical catalogues - tables and associated data - with verified and enriched data, accessible via multiple interfaces. Query tools allow the user to select relevant data tables and to extract and format records matching given criteria. Currently, over 23 000 catalogues are available. 
 
 
-----------------------
-
-### Test 1: image
-
-![VizieR homepage](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_homepage_may2023.png){alt="Screenshot: VizieR homepage, from May 2023"}
-
-### Test 2: iframe, and using transform
-
-<!-- VizieR homepage  / with transform-->
+<!-- VizieR homepage as iframe-->
 <iframe src="https://vizier.cds.unistra.fr/index.gml" 
 title="VizieR homepage webpage" 
-width="98%" height="500px"
-style="border: none; width: 130%; height: 1250px; overflow: hidden; 
--webkit-transform: scale(0.75);
--webkit-transform-origin: 0 0;
--o-transform-origin: 0 0;
--o-transform: scale(0.75);
--moz-transform-origin: 0 0;
--moz-transform: scale(0.75);
+style="border: none; width: 98%; height: 1200px; 
+overflow: hidden; 
+display: block; 
 "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 <!--
+width="98%" height="500px"
 transform: introduces white space !!!!!
+style="border: none; width: 120%; height: 1250px; 
+----
+-webkit-transform: scale(0.9);
+-webkit-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+-o-transform: scale(0.9);
+-moz-transform-origin: 0 0;
+-moz-transform: scale(0.9);
 -->
-
-J'ai essayé de faire en sorte que l'iframe rende bien sur la page, mais je pourrais réduire un peu la taille, car justement si on voit les scrollbars, on pourra se dire que c'est une iframe et les gens seront enclin à utiliser direct la page?
-
-
-
-### Test 3: iframe "normal"
-<!-- VizieR homepage  / normal-->
-<iframe src="https://vizier.cds.unistra.fr/index.gml" 
-title="VizieR homepage webpage" 
-width="98%" height="1250px"
-style="border: none; overflow: hidden;"
-allowfullscreen="" allow="autoplay" data-external="1"></iframe>
-
-
-
-----------------------
-
-
-
-### Rest of the text ....
+VizieR homepage. Note that you can type in (it is not an image).
 
 
 VizieR was initially started as a joint effort of [CDS (Centre de Données astronomiques de Strasbourg)][cds-home] and ESA-ESRIN (Information Systems Division), and is now fully managed by CDS. VizieR has been available since 1996, and was described in a [paper published in 2000][vizier-first-publi].
