@@ -814,24 +814,13 @@ In the next chapters, you will learn how to prepare your data before submitting 
 
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
+<!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
 [wilkinson_2016]: https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18
 [Chen_2022]: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268
 [Cook_2019]: http://doi.org/10.1093/mnras/stz331
 [Grieves_2021]: http://doi.org/10.1051/0004-6361/202039586
 [Kundu_2007]: http://doi.org/10.1086/518021
-[uat]: https://astrothesaurus.org/
-[iau-dico-nomenclature]: http://vizier.u-strasbg.fr/cgi-bin/Dic
-<!-- -->
-[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
-[vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
-[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
-[sesame-cds]: https://cds.unistra.fr/cgi-bin/Sesame
-[simbad-home]: http://simbad.cds.unistra.fr/simbad/
-<!-- -->
-<!-- Not used -->
-<!-- -->
-[vizier-make-your-data-visible]: https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf
 
 
 <!--  ----------------------------------------- -->
