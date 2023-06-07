@@ -28,13 +28,61 @@ exercises: 2
 
 [VizieR][vizier-home] provides the most complete library of published astronomical catalogues - tables and associated data - with verified and enriched data, accessible via multiple interfaces. Query tools allow the user to select relevant data tables and to extract and format records matching given criteria. Currently, over 23 000 catalogues are available. 
 
+
+----------------------
+
+### Test 1: image
+
 ![VizieR homepage](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_homepage_may2023.png){alt="Screenshot: VizieR homepage, from May 2023"}
+
+### Test 2: iframe, and using transform
+
+<!-- VizieR homepage  / with transform-->
+<iframe src="https://vizier.cds.unistra.fr/index.gml" 
+title="VizieR homepage webpage" 
+width="98%" height="500px"
+style="border: none; width: 130%; height: 1250px; overflow: hidden; 
+-webkit-transform: scale(0.75);
+-webkit-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+-o-transform: scale(0.75);
+-moz-transform-origin: 0 0;
+-moz-transform: scale(0.75);
+"
+allowfullscreen="" allow="autoplay" data-external="1"></iframe>
+<!--
+transform: introduces white space !!!!!
+-->
+
+J'ai essayé de faire en sorte que l'iframe rende bien sur la page, mais je pourrais réduire un peu la taille, car justement si on voit les scrollbars, on pourra se dire que c'est une iframe et les gens seront enclin à utiliser direct la page?
+
+
+
+### Test 3: iframe "normal"
+<!-- VizieR homepage  / normal-->
+<iframe src="https://vizier.cds.unistra.fr/index.gml" 
+title="VizieR homepage webpage" 
+width="98%" height="1250px"
+style="border: none; overflow: hidden;"
+allowfullscreen="" allow="autoplay" data-external="1"></iframe>
+
+
+
+----------------------
+
+
+
+### Rest of the text ....
+
 
 VizieR was initially started as a joint effort of [CDS (Centre de Données astronomiques de Strasbourg)][cds-home] and ESA-ESRIN (Information Systems Division), and is now fully managed by CDS. VizieR has been available since 1996, and was described in a [paper published in 2000][vizier-first-publi].
 
 Note that VizieR does not contain all available online catalogues: some catalogues are not suitable and some less frequently used catalogues have not yet been incorporated into the VizieR database. The full list of catalogues is available from there: [Catalogue collection page][vizier-catalogue-collection].
 
 ![VizieR Catalogue collection page](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png){alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023"}
+
+
+
 
 
 
