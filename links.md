@@ -78,6 +78,7 @@ any links that you are not going to use.
 [splat]: http://star-www.dur.ac.uk/~pdraper/splat/splat.html
 [topcat]:  http://www.starlink.ac.uk/topcat/
 [uat]: https://astrothesaurus.org/
+[anafile]: http://cdsarc.unistra.fr/doc/anafile.htx
 <!-- -->
 <!-- Not used -->
 <!-- -->
