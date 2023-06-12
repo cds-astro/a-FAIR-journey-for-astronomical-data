@@ -38,23 +38,6 @@ In this course, we will review in this course the best practices for data public
 ![Journey from a publication to EOSC: step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step data published in a refereed paper"}
 
 
-<!--
-For a quick view of the guidelines and recommandations for publishing your data at CDS, please have a look at the ["Make your data visible" brochure][vizier-make-your-data-visible].
-
-See also the Best Practices for Data Publication in the Astronomical Literature (T.Chen, 2022). The article is dedicated for authors, and is a basis of good practices expected in journals and data-centers.
-
-In order to facilitate the usability of the data, and to allow their processing by the data centers, we at CDS require that:
-
-- the data are *described* accurately enough to allow an unambiguous interpretation of the data, as well as a comprehension of the context in which the data were acquired and/or processed; a single ascii file, named *ReadMe*, is designed for this role.
-- the data are in a format which allows their usage by tools currently in usage in our discipline - normally *flat ascii files*; other formats can be accepted, but are converted into flat files.
-
-
-The present course just tries to answer to some frequently asked question about how to prepare the data for their inclusion in the Data Center documents. 
-
-A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
-
--->
-
 
 <!--  ----------------------------------------- -->
 <!-- 		Introduction 			-->
@@ -184,7 +167,7 @@ match the precision of the measurements.
 
 
 #### Examples
-```output
+```
 [a] “... used by the Dark Energy Survey (DES)...”
 [b] The period of a periodic phenomenon should be given as 
 “P = 1.23456±0.00012 days” instead of “P = 1.23456(12) days”. 
@@ -297,7 +280,7 @@ MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
 
 <!--  ----------------- -->
 #### Examples
-```output
+```
 
 ## IAU conventions
 [b] Use “BR J0529-3526” instead of “BR0529-3526”.
@@ -346,7 +329,7 @@ Table 4 provided for the same objects both their X-ray identification number as 
 
 
 #### Examples
-```output
+```
 [a] Complete celestial coordinates are preferred, e.g.,
 12h34m56.78s, +12d34m56.7s (Equatorial J2000).
 [b] Current IAU celestial reference system is ICRS: 
@@ -371,7 +354,7 @@ Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
 
 
 #### Examples
-```output
+```
 [a] Facility ground-based or space-based, instrument configuration 
 information, specific camera on the instrument, specific CCD chips ...
 [b] Point spread function fitting, aperture photometry, 
@@ -398,7 +381,7 @@ one should use, e.g., “CO (J=1-0) ν=115 GHz”.
 
 
 #### Examples
-```output
+```
 [a] Explicitly described in terms of both the frame of reference
 (e.g., JD, BJD, HJD), and the time system used (e.g., UTC, TDB, TAI). 
 For example, use “BJD-TDB” to indicate Barycentric Julian Date 
@@ -428,7 +411,7 @@ radio or optical convention).
 
 
 #### Examples
-```output
+```
 [a] Describe particular method (spectroscopic, photometric, Friends-of-Friends, etc.)
 and base assumptions used in the models (template fitting, machine learning, etc).
 [b] Include a clear indication of the reference frame, e.g., heliocentric,
@@ -450,7 +433,7 @@ whereas the optical velocity increment depends on the observing frequency.
 
 
 #### Examples
-```output
+```
 [a] For basic morphological types, use the well-established schemes 
 (e.g., Sandage 2005: 10.1146/annurev.astro.43.112904.104839). 
 Authors are encouraged to refer to NED’s extensive suite of searchable 
@@ -473,7 +456,7 @@ star).
 
 
 #### Examples
-```output
+```
 [a] Only use “longitude of periapsis” when referring to the sum of 
 the argument of periapsis and the longitude of the ascending node.
 [b] The argument of periapsis for a planet or a secondary star’s orbit 
@@ -499,7 +482,7 @@ the tables and text throughout the article when possible.
 
 
 #### Examples
-```output
+```
 [a] Indicate the units for each column when applicable.
 [b] Make a clear distinction between z the redshift and z the filter.
 [c] A singl column should not present measurements with different units, 
@@ -581,7 +564,7 @@ Redshift quality flag:
 
 
 #### Examples
-```output
+```
 [a] Describe in detail what is presented in the figure, what different 
 colors, symbols, and lines represent. Units of the axis labels should 
 be included when applicable. In practice, figures should be able to stand 
@@ -616,7 +599,7 @@ structure as file metadata necessary to uniquely identify a file.
 
 
 #### Examples
-```output
+```
 [a] Preserve data as supplementary materials with your final journal 
 article, or post the data files with your arXiv preprint.
 [b] If the data are either too large or too complex to be hosted by the
@@ -650,7 +633,7 @@ gator.
 
 
 #### Examples
-```output
+```
 [a]  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012) 
 via NED”, where “Smith et al. 2012” is listed correctly in your bibliography.
 [b] The 2MASS web page requests that you cite the canonical paper by 
@@ -680,7 +663,7 @@ data in your article.
 
 
 #### Examples
-```output
+```
 [a] Always describe the facilities or services used, 
 and make sure the name is unique.
 [b] See AAS keyword tags with AASTeX \facility and \facilities: 
@@ -745,7 +728,7 @@ telescope/instrument names from the literature.
 
 
 #### Examples
-```output
+```
 [a] Use the preferred citation if available, e.g., the paper describing 
 the software. If not, include the name of the author(s),
 title of the program/source code, the code version 
@@ -762,7 +745,7 @@ and a URL link to the code publisher.
 
 
 #### Examples
-```output
+```
 [a] The DOI links should be included in the bibliography to ensure 
 proper citation: eg., 
 Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&AS,
@@ -778,7 +761,7 @@ Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&AS,
 (a) Tag articles with relevant data content keywords from the UAT ([Unified Astronomy Thesaurus][uat]).
 
 #### Examples
-```output
+```example
 [a] Tag your articles with UAT keywords that best describe the types 
 of data contained in the article.
 ```
