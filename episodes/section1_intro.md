@@ -32,7 +32,7 @@ exercises: 2
 <!-- VizieR homepage as iframe-->
 <iframe src="https://vizier.cds.unistra.fr/index.gml" 
 title="VizieR homepage webpage" 
-style="border: none; width: 98%; height: 1200px; 
+style="border: none; width: 98%; height: 1000px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
@@ -111,7 +111,7 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 
 
-![VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo.png){alt="Figure: VizieR and other VO tools overview"}
+![VizieR catalogues accessible through many VO tools](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and other VO tools overview"}
  
 
 <!--  ----------------------------------------- -->
