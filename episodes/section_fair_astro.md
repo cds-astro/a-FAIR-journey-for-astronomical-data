@@ -281,7 +281,7 @@ or SDSS J144157.26+094853.7
 [2] SN 2005J or SN 2015J are different targets
 [3] HESS J0232+202
 [4] BR J0529-3526
-[5] QSO B0008+006 (Redshift z = 2.3)
+[5] QSO B0008+006 (Redshift z = 2.3) and
 IVS B0008+006 (Redshift z = 1.5) are different targets
 [6] DEM L 045, or DEM S 045
 [7] Gaia DR3 2448177130188111232
