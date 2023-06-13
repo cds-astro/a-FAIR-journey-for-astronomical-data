@@ -250,7 +250,7 @@ Hint: Look for these objects in [Simbad][simbad-home].
 
 :::::::::::::::::::::::: hint
 
-## Why it is improper?
+## Why is it improper?
 
 ```
 [1] Insufficient precision in RA and DEC can cause confusion
@@ -539,7 +539,7 @@ Redshift quality flag:
 
 :::::::::::::::::::::::: hint
 
-## Why it is improper?
+## Why is it improper?
 
 The quality of the measurement is indicated using a superscript.
 Providing this information using an extra column will make the 
