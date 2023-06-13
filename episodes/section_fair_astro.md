@@ -1,7 +1,7 @@
 ---
 title: "FAIR principles for astronomical data"
 teaching: 10
-exercises: 2
+exercises: 3
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -154,8 +154,8 @@ Everyone is encouraged to read their paper. For the sake of this course, only th
 
 
 <!--  ----------------------------------------- -->
-----------
-### Tables of contents of the recommendations 
+Items covered in the Checklist:
+
 - [General rules](#general_rules)
 - [Nomenclature](#nomenclature)
 - [Astrometry](#astrometry)
@@ -239,7 +239,7 @@ and explain how to correct them.
 [Q2] SN 5J 
 [Q3] HESS J232+202
 [Q4] BR 0529-3526
-[Q5] 0008+006
+[Q5] B0008+006
 [Q6] DEM45
 [Q7] Gaia 2448177130188111232 
 [Q8] Gaia DR 2 2.7904e18
@@ -262,8 +262,9 @@ of the RA at 23 hours instead of 02 hour.
 [5] Name prefix is needed to distinguish between different objects.
 [6] H II regions in LMC or SMC should be indicated with 
 “L” or “S” to avoid ambiguity.
-[7] Database objectID numbers are used without specifying release number. 
-The same running number may refer to a different source in a different release.
+[7] Database objectID numbers are used without specifying release 
+number. The same running number may refer to a different source 
+in a different release.
 [8] ID is written in scientific notation, making it impossible 
 to retrieve the actual object.
 [9] Ambiguous name can be interpreted into different objects.
@@ -280,8 +281,8 @@ or SDSS J144157.26+094853.7
 [2] SN 2005J or SN 2015J are different targets
 [3] HESS J0232+202
 [4] BR J0529-3526
-[5] ZC 0008+006 (Redshift z = 2.3), or
-IVS B0008+006 (Redshift z = 1.5)
+[5] QSO B0008+006 (Redshift z = 2.3)
+IVS B0008+006 (Redshift z = 1.5) are different targets
 [6] DEM L 045, or DEM S 045
 [7] Gaia DR3 2448177130188111232
 [8] Gaia DR2 2790494815860044544
@@ -292,13 +293,9 @@ MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Warning: TO Check !!!**
-ZC 0008+006 not found in Simbad. To change???
-
 <!--  ----------------- -->
 #### Examples
 ```
-
 ## IAU conventions
 [b] Use “BR J0529-3526” instead of “BR0529-3526”.
 [c] Use “B3 2327+391”, not “B32327+391”.
@@ -328,10 +325,6 @@ that the listed positions are for the same object.
 [j] Provide a running identification number for your objects to be able 
 to link your data in the different tables of your paper. 
 ```
-
-<!-- j:
-as done by Kundu et al. (2007) for example.
-Table 4 provided for the same objects both their X-ray identification number as given in Table 2 and optical identification number as in Table 3 of the article, and therefore linked the position and photometry data for the objects discussed in all three tables.-->
 
 
 
