@@ -32,11 +32,10 @@ exercises: 2
 <!-- VizieR homepage as iframe-->
 <iframe src="https://vizier.cds.unistra.fr/index.gml" 
 title="VizieR homepage webpage" 
-style="border: none; width: 98%; height: 1200px; 
-overflow: hidden; 
-display: block; 
-"
+style="border: none; width: 98%; height: 1000px; 
+overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
+
 <!--
 width="98%" height="500px"
 transform: introduces white space !!!!!
@@ -49,14 +48,14 @@ style="border: none; width: 120%; height: 1250px;
 -moz-transform-origin: 0 0;
 -moz-transform: scale(0.9);
 -->
-VizieR homepage. Note that you can type in (it is not an image).
+VizieR homepage webpage. Note that you can type in (it is not an image).
 
 
 VizieR was initially started as a joint effort of [CDS (Centre de Données astronomiques de Strasbourg)][cds-home] and ESA-ESRIN (Information Systems Division), and is now fully managed by CDS. VizieR has been available since 1996, and was described in a [paper published in 2000][vizier-first-publi].
 
 Note that VizieR does not contain all available online catalogues: some catalogues are not suitable and some less frequently used catalogues have not yet been incorporated into the VizieR database. The full list of catalogues is available from there: [Catalogue collection page][vizier-catalogue-collection].
 
-![VizieR Catalogue collection page](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png){alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023"}
+![VizieR Catalogue collection page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png){alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023"}
 
 
 
@@ -82,7 +81,14 @@ Optionally contains:
 - FITS Spectra, images and plots
 - HiPS files (Hierarchical Progressive Surveys) 
 
-![VizieR: Example catalogue ingested](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_example_may2023.png){alt="Screenshot: Example catalogue VizieR, from May 2023"}
+
+<!-- VizieR catalogue as iframe-->
+<iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355#/article" 
+title="VizieR catalogue ingested: example Gaia DR3 Part 1." 
+style="border: none; width: 98%; height: 1200px; 
+overflow: hidden; display: block; "
+allowfullscreen="" allow="autoplay" data-external="1"></iframe>
+VizieR catalogue ingestion webpage: example Gaia DR3 Part 1.
 
 
 
@@ -105,7 +111,7 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 
 
-![VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo.png){alt="Figure: VizieR and other VO tools overview"}
+![VizieR catalogues accessible through many VO tools](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and other VO tools overview"}
  
 
 <!--  ----------------------------------------- -->

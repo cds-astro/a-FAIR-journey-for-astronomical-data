@@ -1,7 +1,7 @@
 ---
 title: "FAIR principles for astronomical data"
 teaching: 10
-exercises: 2
+exercises: 3
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -37,23 +37,6 @@ In this course, we will review in this course the best practices for data public
 
 ![Journey from a publication to EOSC: step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step data published in a refereed paper"}
 
-
-<!--
-For a quick view of the guidelines and recommandations for publishing your data at CDS, please have a look at the ["Make your data visible" brochure][vizier-make-your-data-visible].
-
-See also the Best Practices for Data Publication in the Astronomical Literature (T.Chen, 2022). The article is dedicated for authors, and is a basis of good practices expected in journals and data-centers.
-
-In order to facilitate the usability of the data, and to allow their processing by the data centers, we at CDS require that:
-
-- the data are *described* accurately enough to allow an unambiguous interpretation of the data, as well as a comprehension of the context in which the data were acquired and/or processed; a single ascii file, named *ReadMe*, is designed for this role.
-- the data are in a format which allows their usage by tools currently in usage in our discipline - normally *flat ascii files*; other formats can be accepted, but are converted into flat files.
-
-
-The present course just tries to answer to some frequently asked question about how to prepare the data for their inclusion in the Data Center documents. 
-
-A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
-
--->
 
 
 <!--  ----------------------------------------- -->
@@ -165,15 +148,36 @@ R1. Meta(data) are richly described with a plurality of accurate and relevant at
 
 In 2022, Chen et al. ([10.3847/1538-4365/ac6268][Chen_2022]) published a set of guidelines summarizing the best practices for publishing data in astronomy and astrophysics journals. 
 
-Everyone is encouraged to read their paper. For the sake of this course, only their *Checklist of Recommendations for Publishing Data in the Literature* (Appendix A of their paper) is included below.
-
 These recommendations are intended for authors, referees, and science editors to consult in order to avoid various pit-falls that often impede the interpretation of data and metadata by readers, and parsing by software, and therefore also complicate and delay integration of the data into astronomical databases.
+
+Everyone is encouraged to read their paper. For the sake of this course, only their *Checklist of Recommendations for Publishing Data in the Literature* (Appendix A of their paper) is included below. 
+
+
+<!--  ----------------------------------------- -->
+Items covered in the Checklist:
+
+- [General rules](#general_rules)
+- [Nomenclature](#nomenclature)
+- [Astrometry](#astrometry)
+- [Photometry](#photometry)
+- [Time](#time)
+- [Redshift/velocity](#redshift)
+- [Classifications](#classifications)
+- [Orbital parameters](#orbital_parameters)
+- [Tables](#tables)
+- [Figures](#figures)
+- [Data archiving and access](#data_archiving)
+- [Literature citations](#literature_citations)
+- [Facility credits](#facility_credits)
+- [Software credits](#software_credits)
+- [Digital object identifiers - DOI](#doi)
+- [Data content keywords](#data_content_keywords)
 
 
 
 <!--  ----------------------------------------- -->
 ----------
-### General rules (§2)
+### General rules (§2) <a name="general_rules"></a>
 
 (a) Define all symbols, acronyms, and abbreviations at first use.
 (b) Provide uncertainty and confidence level when reporting a new measurement.
@@ -184,7 +188,7 @@ match the precision of the measurements.
 
 
 #### Examples
-```output
+```
 [a] “... used by the Dark Energy Survey (DES)...”
 [b] The period of a periodic phenomenon should be given as 
 “P = 1.23456±0.00012 days” instead of “P = 1.23456(12) days”. 
@@ -200,7 +204,7 @@ in your Table: example from Grieves et al. (2021).
  
 <!--  ----------------------------------------- -->
 ----------
-### Nomenclature (§2.1)
+### Nomenclature (§2.1) <a name="nomenclature"></a>
 
 (a) Provide the complete name for each object. (§2.1.1)
 (b) Include the “J” in names based on J2000 coordinates. (§2.1.1)
@@ -232,12 +236,12 @@ and explain how to correct them.
 
 ```
 [Q1] SDSS J1441+0948
-[Q2] SN 05J 
+[Q2] SN 5J 
 [Q3] HESS J232+202
 [Q4] BR 0529-3526
-[Q5] 0008+006
+[Q5] B0008+006
 [Q6] DEM45
-[Q7] SDSS 587729386611212320
+[Q7] Gaia 2448177130188111232 
 [Q8] Gaia DR 2 2.7904e18
 [Q9] mu cep
 ```
@@ -246,7 +250,7 @@ Hint: Look for these objects in [Simbad][simbad-home].
 
 :::::::::::::::::::::::: hint
 
-## Why it is improper?
+## Why is it improper?
 
 ```
 [1] Insufficient precision in RA and DEC can cause confusion
@@ -258,8 +262,9 @@ of the RA at 23 hours instead of 02 hour.
 [5] Name prefix is needed to distinguish between different objects.
 [6] H II regions in LMC or SMC should be indicated with 
 “L” or “S” to avoid ambiguity.
-[7] Database objectID numbers are used without specifying release number. 
-The same running number may refer to a different source in a different release.
+[7] Database objectID numbers are used without specifying release 
+number. The same running number may refer to a different source 
+in a different release.
 [8] ID is written in scientific notation, making it impossible 
 to retrieve the actual object.
 [9] Ambiguous name can be interpreted into different objects.
@@ -273,13 +278,13 @@ to retrieve the actual object.
 ```
 [1] SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
 or SDSS J144157.26+094853.7
-[2] SN 1905J, or SN 2005J 
+[2] SN 2005J or SN 2015J are different targets
 [3] HESS J0232+202
 [4] BR J0529-3526
-[5] ZC 0008+006 (Redshift z = 2.3), or
-IVS B0008+006 (Redshift z = 1.5)
+[5] QSO B0008+006 (Redshift z = 2.3) and
+IVS B0008+006 (Redshift z = 1.5) are different targets
 [6] DEM L 045, or DEM S 045
-[7] SDSS DR6 587729386611212320
+[7] Gaia DR3 2448177130188111232
 [8] Gaia DR2 2790494815860044544
 [9] *mu. Cep (21h43m30.46s, +58d46m48.2s, ICRS J2000), or
 MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
@@ -288,17 +293,9 @@ MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-**Warning (TO CHECK LATER !!!!):** 
-
-- SN 1905J not found in Simbad. To change ????
-- ZC 0008+006 not found in Simbad. To change???
-- SDSS DR6 587729386611212320: not in Simbad. Incorrect id?
-
-
 <!--  ----------------- -->
 #### Examples
-```output
-
+```
 ## IAU conventions
 [b] Use “BR J0529-3526” instead of “BR0529-3526”.
 [c] Use “B3 2327+391”, not “B32327+391”.
@@ -329,15 +326,11 @@ that the listed positions are for the same object.
 to link your data in the different tables of your paper. 
 ```
 
-<!-- j:
-as done by Kundu et al. (2007) for example.
-Table 4 provided for the same objects both their X-ray identification number as given in Table 2 and optical identification number as in Table 3 of the article, and therefore linked the position and photometry data for the objects discussed in all three tables.-->
-
 
 
 <!--  ----------------------------------------- -->
 ----------
-### Astrometry (§2.2)
+### Astrometry (§2.2) <a name="astrometry"></a>
 
 (a) Provide the best available coordinates.
 (b) Specify the celestial reference system and/or frame.
@@ -346,7 +339,7 @@ Table 4 provided for the same objects both their X-ray identification number as 
 
 
 #### Examples
-```output
+```
 [a] Complete celestial coordinates are preferred, e.g.,
 12h34m56.78s, +12d34m56.7s (Equatorial J2000).
 [b] Current IAU celestial reference system is ICRS: 
@@ -361,7 +354,7 @@ Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
 
 <!--  ----------------------------------------- -->
 ----------
-### Photometry (§2.3)
+### Photometry (§2.3) <a name="photometry"></a>
 
 (a) State the facility, telescope and instrument used.
 (b) Describe the method used to estimate photometry.
@@ -371,7 +364,7 @@ Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
 
 
 #### Examples
-```output
+```
 [a] Facility ground-based or space-based, instrument configuration 
 information, specific camera on the instrument, specific CCD chips ...
 [b] Point spread function fitting, aperture photometry, 
@@ -389,7 +382,7 @@ one should use, e.g., “CO (J=1-0) ν=115 GHz”.
 
 <!--  ----------------------------------------- -->
 ----------
-### Time (§2.4)
+### Time (§2.4) <a name="time"></a>
 
 (a) Provide the time of observation and exposure time.
 (b) Favor full Julian Dates over abbreviated or offset Julian Dates.
@@ -398,7 +391,7 @@ one should use, e.g., “CO (J=1-0) ν=115 GHz”.
 
 
 #### Examples
-```output
+```
 [a] Explicitly described in terms of both the frame of reference
 (e.g., JD, BJD, HJD), and the time system used (e.g., UTC, TDB, TAI). 
 For example, use “BJD-TDB” to indicate Barycentric Julian Date 
@@ -416,7 +409,10 @@ the missions obtained the data to help visualize where the simultaneity occurs.
 
 <!--  ----------------------------------------- -->
 ----------
-### Redshift/velocity (§2.5)
+### Redshift/velocity (§2.5) <a name="redshift"></a>
+
+
+
 
 (a) Describe the method of redshift measurements (spectroscopic, photometric, etc.) and give references to the
 model/method.
@@ -428,7 +424,7 @@ radio or optical convention).
 
 
 #### Examples
-```output
+```
 [a] Describe particular method (spectroscopic, photometric, Friends-of-Friends, etc.)
 and base assumptions used in the models (template fitting, machine learning, etc).
 [b] Include a clear indication of the reference frame, e.g., heliocentric,
@@ -443,14 +439,14 @@ whereas the optical velocity increment depends on the observing frequency.
 
 <!--  ----------------------------------------- -->
 ----------
-### Classifications (§2.6)
+### Classifications (§2.6) <a name="classifications"></a>
 
 (a) Utilize established classifications as available.
 (b) Define new classifications clearly.
 
 
 #### Examples
-```output
+```
 [a] For basic morphological types, use the well-established schemes 
 (e.g., Sandage 2005: 10.1146/annurev.astro.43.112904.104839). 
 Authors are encouraged to refer to NED’s extensive suite of searchable 
@@ -464,7 +460,7 @@ standardized to enable unified queries across journal articles and catalogs.
 
 <!--  ----------------------------------------- -->
 ----------
-### Orbital parameters (§2.7)
+### Orbital parameters (§2.7) <a name="orbital_parameters"></a>
 
 (a) Avoid using “longitude of periapsis” in place of “argument of periapsis”.
 (b) Be explicit about which body’s orbit a longitude or argument of periapsis refers to (e.g., planet or host
@@ -473,7 +469,7 @@ star).
 
 
 #### Examples
-```output
+```
 [a] Only use “longitude of periapsis” when referring to the sum of 
 the argument of periapsis and the longitude of the ascending node.
 [b] The argument of periapsis for a planet or a secondary star’s orbit 
@@ -487,7 +483,7 @@ which argument of periapsis is measured, report time of periapsis in preference 
 
 <!--  ----------------------------------------- -->
 ----------
-### Tables (§3.1)
+### Tables (§3.1) <a name="tables"></a>
 
 (a) Provide a clear title and unambiguous labels for columns.
 (b) Explain the content of each column, including symbols and flags.
@@ -499,7 +495,7 @@ the tables and text throughout the article when possible.
 
 
 #### Examples
-```output
+```
 [a] Indicate the units for each column when applicable.
 [b] Make a clear distinction between z the redshift and z the filter.
 [c] A singl column should not present measurements with different units, 
@@ -543,7 +539,7 @@ Redshift quality flag:
 
 :::::::::::::::::::::::: hint
 
-## Why it is improper?
+## Why is it improper?
 
 The quality of the measurement is indicated using a superscript.
 Providing this information using an extra column will make the 
@@ -573,7 +569,7 @@ Redshift quality flag:
 
 <!--  ----------------------------------------- -->
 ----------
-### Figures (§3.2)
+### Figures (§3.2) <a name="figures"></a>
 
 (a) Provide clear caption, legend and axis labels for each figure.
 (b) Design the graphics to be accessible.
@@ -581,7 +577,7 @@ Redshift quality flag:
 
 
 #### Examples
-```output
+```
 [a] Describe in detail what is presented in the figure, what different 
 colors, symbols, and lines represent. Units of the axis labels should 
 be included when applicable. In practice, figures should be able to stand 
@@ -602,7 +598,7 @@ validate, or build upon published results.
 
 <!--  ----------------------------------------- -->
 ----------
-### Data archiving and access (§4)
+### Data archiving and access (§4) <a name="data_archiving"></a>
 
 (a) Append small data sets as part of the publication.
 (b) Deposit large or complex data at a long-term archive most appropriate for your data. Adhere to the specific
@@ -616,7 +612,7 @@ structure as file metadata necessary to uniquely identify a file.
 
 
 #### Examples
-```output
+```
 [a] Preserve data as supplementary materials with your final journal 
 article, or post the data files with your arXiv preprint.
 [b] If the data are either too large or too complex to be hosted by the
@@ -639,7 +635,7 @@ for V and R band, and give the same file name NGC1275.dat under both directories
 
 <!--  ----------------------------------------- -->
 ----------
-### Literature citations (§5.1)
+### Literature citations (§5.1) <a name="literature_citations"></a>
 
 (a) Cite the original references.
 (b) Use preferred citations by the authors.
@@ -650,7 +646,7 @@ gator.
 
 
 #### Examples
-```output
+```
 [a]  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012) 
 via NED”, where “Smith et al. 2012” is listed correctly in your bibliography.
 [b] The 2MASS web page requests that you cite the canonical paper by 
@@ -672,7 +668,7 @@ data in your article.
 
 <!--  ----------------------------------------- -->
 ----------
-### Facility credits (§5.2)
+### Facility credits (§5.2) <a name="facility_credits"></a>
 
 (a) Indicate the facilities involved, such as telescopes, instruments, and databases.
 (b) Use standard keywords when possible.
@@ -680,7 +676,7 @@ data in your article.
 
 
 #### Examples
-```output
+```
 [a] Always describe the facilities or services used, 
 and make sure the name is unique.
 [b] See AAS keyword tags with AASTeX \facility and \facilities: 
@@ -739,13 +735,13 @@ telescope/instrument names from the literature.
 
 <!--  ----------------------------------------- -->
 ----------
-### Software credits (§5.3)
+### Software credits (§5.3) <a name="software_credits"></a>
 
 (a) List the software and version used in the production of the article.
 
 
 #### Examples
-```output
+```
 [a] Use the preferred citation if available, e.g., the paper describing 
 the software. If not, include the name of the author(s),
 title of the program/source code, the code version 
@@ -756,13 +752,13 @@ and a URL link to the code publisher.
 
 <!--  ----------------------------------------- -->
 ----------
-### Digital object identifiers - DOI (§5.4)
+### Digital object identifiers - DOI (§5.4) <a name="doi"></a>
 
 (a) Use DOIs to cite data sets, software and services if available.
 
 
 #### Examples
-```output
+```
 [a] The DOI links should be included in the bibliography to ensure 
 proper citation: eg., 
 Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&AS,
@@ -773,12 +769,12 @@ Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&AS,
 
 <!--  ----------------------------------------- -->
 ----------
-### Data content keywords (§6)
+### Data content keywords (§6) <a name="data_content_keywords"></a>
 
 (a) Tag articles with relevant data content keywords from the UAT ([Unified Astronomy Thesaurus][uat]).
 
 #### Examples
-```output
+```example
 [a] Tag your articles with UAT keywords that best describe the types 
 of data contained in the article.
 ```
