@@ -10,7 +10,7 @@ The new initiatives for Open Science involve many actors: the journals, archives
 We will also focus on the integration and the availability of your data into EOSC.
 
 
-![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step9.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
+![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
 
 
