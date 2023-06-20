@@ -253,8 +253,6 @@ Documentation: [doc][vizier-submit-data-help]
 
 An other option is to submit your data through File Transfer Protocol. 
 
-See the Publication support page (http://cds.u-strasbg.fr/vizier/submit.htx#ToC4)
-
 Since October 2021, FTP uploads requires a login authentification.
 A web application is available for authors to obtain a temporary login/password:
 [https://cds.unistra.fr/ftp/token/][vizier-ftp-login]
@@ -269,7 +267,7 @@ A web application is available for authors to obtain a temporary login/password:
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- Readme files are highly standardised to allow reusability and cross matching between catalogs
+- Readme files are highly standardised to allow reusability and cross matching between catalogs.
 - A delay is needed for VizieR curation and validation!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
