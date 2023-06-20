@@ -13,6 +13,8 @@ any links that you are not going to use.
 [simbad-home]: http://simbad.cds.unistra.fr/simbad/
 [xmatch-home]: http://cdsxmatch.u-strasbg.fr/
 [sesame-cds]: https://cds.unistra.fr/cgi-bin/Sesame
+
+
 <!-- -->
 <!-- VizieR -->
 [vizier-home]: https://vizier.cds.unistra.fr/index.gml
@@ -41,6 +43,8 @@ any links that you are not going to use.
 [vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
 [vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
 [vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
+
+
 <!-- -->
 <!-- Journals -->
 [aa-home]: https://www.aanda.org/
@@ -65,12 +69,13 @@ any links that you are not going to use.
 [viz-misc-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VI/135
 [viz-non-sto-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VII/233
 [viz-radio-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VIII/65
+
+
 <!-- -->
 <!-- Others -->
 [ads]: https://ui.adsabs.harvard.edu/classic-form
 [cassis]: http://cassis.irap.omp.eu/?page=cassis
 [cts]: https://www.coretrustseal.org/
-[eosc-portal]: https://eosc-portal.eu/
 [eudat]: https://www.eudat.eu/
 [fits-nasa]: https://fits.gsfc.nasa.gov/
 [ivoa-link]: https://www.ivoa.net/
@@ -79,6 +84,14 @@ any links that you are not going to use.
 [topcat]:  http://www.starlink.ac.uk/topcat/
 [uat]: https://astrothesaurus.org/
 [anafile]: http://cdsarc.unistra.fr/doc/anafile.htx
+
+<!-- -->
+<!-- EOSC -->
+[eosc]: https://eosc.eu/
+[eosc-future]: https://eoscfuture.eu/
+[eosc-portal]: https://eosc-portal.eu/
+
+
 <!-- -->
 <!-- Not used -->
 <!-- -->
