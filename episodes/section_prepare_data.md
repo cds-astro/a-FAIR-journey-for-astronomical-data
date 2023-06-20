@@ -52,7 +52,7 @@ The following data types are accepted:
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 -->
 ## Tables
 
-![Example VizieR table](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Example of VizieR table ingested"}
+![Example of VizieR table: catalogue Gaia DR3 I/355/gaiadr3 (screenshort)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Example of VizieR table ingested"}
 
 
 <!--  ----------------------------------------- -->
@@ -106,7 +106,7 @@ Following this checklist will help improving the efficiency of the ingestion in 
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section3 -->
 ## Associated data: images, time series, spectra
 
-![Example VizieR associated data (spectra)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Example of VizieR spectra ingested"}
+![Example of VizieR associated data from the Saada page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Example of VizieR spectra ingested"}
 
 ### Accepted format
 
@@ -240,8 +240,14 @@ You can test your FITS spectra/images with the [VizieR FITS validator tool][vizi
 
 This meta-data checking is also completed during the [VizieR submission service][vizier-submit-login].
 
-![VizieR FITS validator tool page](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_fits_validator_may2023.png){alt="Screenshot: VizieR FITS validator tool, from May 2023"}
+<!-- VizieR FITS validator as iframe-->
+<iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" 
+title="VizieR FITS validator tool webpage" 
+style="border: solid 1px; width: 95%; height: 550px; 
+overflow: hidden; display: block; "
+allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
+VizieR FITS validator tool webpage
 
 
 <!--  ----------------------------------------- -->

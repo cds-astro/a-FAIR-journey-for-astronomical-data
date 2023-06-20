@@ -189,13 +189,13 @@ match the precision of the measurements.
 
 #### Examples
 ```
-[a] “... used by the Dark Energy Survey (DES)...”
-[b] The period of a periodic phenomenon should be given as 
+a) “... used by the Dark Energy Survey (DES)...”
+b) The period of a periodic phenomenon should be given as 
 “P = 1.23456±0.00012 days” instead of “P = 1.23456(12) days”. 
-[c] Present a measurement as 0.123±0.002, not 0.12345±0.002 
+c) Present a measurement as 0.123±0.002, not 0.12345±0.002 
 or 0.123±0.00234.
-[d] Present source color “(B-V) = 0.45 mag” instead of “(B-V) = 0.45”
-[e] State your preferred solution in the text and indicated in bold
+d) Present source color “(B-V) = 0.45 mag” instead of “(B-V) = 0.45”
+e) State your preferred solution in the text and indicated in bold
 in your Table: example from Grieves et al. (2021).
 ```
 
@@ -235,15 +235,15 @@ and explain how to correct them.
 
 
 ```
-[Q1] SDSS J1441+0948
-[Q2] SN 5J 
-[Q3] HESS J232+202
-[Q4] BR 0529-3526
-[Q5] B0008+006
-[Q6] DEM45
-[Q7] Gaia 2448177130188111232 
-[Q8] Gaia DR 2 2.7904e18
-[Q9] mu cep
+Q1) SDSS J1441+0948
+Q2) SN 5J 
+Q3) HESS J232+202
+Q4) BR 0529-3526
+Q5) B0008+006
+Q6) DEM45
+Q7) Gaia 2448177130188111232 
+Q8) Gaia DR 2 2.7904e18
+Q9) mu cep
 ```
 
 Hint: Look for these objects in [Simbad][simbad-home].
@@ -253,21 +253,21 @@ Hint: Look for these objects in [Simbad][simbad-home].
 ## Why is it improper?
 
 ```
-[1] Insufficient precision in RA and DEC can cause confusion
+I1) Insufficient precision in RA and DEC can cause confusion
  with nearby sources. 
-[2] Incomplete name can be interpreted into different objects.
-[3] Leading zero in RA is missing and can cause misinterpretation 
+I2) Incomplete name can be interpreted into different objects.
+I3) Leading zero in RA is missing and can cause misinterpretation 
 of the RA at 23 hours instead of 02 hour. 
-[4] Missing letter J to specify J2000 equatorial coordinates.
-[5] Name prefix is needed to distinguish between different objects.
-[6] H II regions in LMC or SMC should be indicated with 
+I4) Missing letter J to specify J2000 equatorial coordinates.
+I5) Name prefix is needed to distinguish between different objects.
+I6) H II regions in LMC or SMC should be indicated with 
 “L” or “S” to avoid ambiguity.
-[7] Database objectID numbers are used without specifying release 
+I7) Database objectID numbers are used without specifying release 
 number. The same running number may refer to a different source 
 in a different release.
-[8] ID is written in scientific notation, making it impossible 
+I8) ID is written in scientific notation, making it impossible 
 to retrieve the actual object.
-[9] Ambiguous name can be interpreted into different objects.
+I9) Ambiguous name can be interpreted into different objects.
 ```
 :::::::::::::::::::::::::::::::::
 
@@ -276,17 +276,17 @@ to retrieve the actual object.
 ## Recommended usage
 
 ```
-[1] SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
+R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
 or SDSS J144157.26+094853.7
-[2] SN 2005J or SN 2015J are different targets
-[3] HESS J0232+202
-[4] BR J0529-3526
-[5] QSO B0008+006 (Redshift z = 2.3) and
+R2) SN 2005J or SN 2015J are different targets
+R3) HESS J0232+202
+R4) BR J0529-3526
+R5) QSO B0008+006 (Redshift z = 2.3) and
 IVS B0008+006 (Redshift z = 1.5) are different targets
-[6] DEM L 045, or DEM S 045
-[7] Gaia DR3 2448177130188111232
-[8] Gaia DR2 2790494815860044544
-[9] *mu. Cep (21h43m30.46s, +58d46m48.2s, ICRS J2000), or
+R6) DEM L 045, or DEM S 045
+R7) Gaia DR3 2448177130188111232
+R8) Gaia DR2 2790494815860044544
+R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, ICRS J2000), or
 MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
 ```
 
@@ -295,36 +295,38 @@ MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
 
 <!--  ----------------- -->
 #### Examples
-```
+
+
+<big><pre>
 ## IAU conventions
-[b] Use “BR J0529-3526” instead of “BR0529-3526”.
-[c] Use “B3 2327+391”, not “B32327+391”.
-[d] Use “3C 295 cluster” instead of “3C 295” when referring to the cluster.
-[e] The tau Ceti system now has four planets: e, f, g, and h. 
+b) Use “BR J0529-3526” instead of “BR0529-3526”.
+c) Use “B3 2327+391”, not “B32327+391”.
+d) Use “3C 295 cluster” instead of “3C 295” when referring to the cluster.
+e) The tau Ceti system now has four planets: e, f, g, and h. 
 Since tau Ceti b, c, and d were refuted, the letter designations b, c, 
 and d were not reused for the newer planets to avoid confusion.
 
 ## New objects
-[f] Confirm any new acronym to the IAU Dictionary of Nomenclature of 
-Celestial Objects: http://vizier.u-strasbg.fr/cgi-bin/Dic
-[g] J092712.64+294344.0 indicates a positional accuracy of 0.15 arcsec 
+f) Confirm any new acronym to the <a href="http://vizier.u-strasbg.fr/cgi-bin/Dic" target="_blank">IAU Dictionary of Nomenclature of 
+Celestial Objects</a>
+g) J092712.64+294344.0 indicates a positional accuracy of 0.15 arcsec 
 while J092712.644+294344.02 indicates an accuracy of 0.015 arcsec.
 
 ## Known objects
-[h] Creating a fanciful name for an object with an existing designation
+h) Creating a fanciful name for an object with an existing designation
  is especially discourage.
-[i] Validate all the identifiers for known objects in their publications 
-through Sesame: https://cds.unistra.fr/cgi-bin/Sesame.
+h) Validate all the identifiers for known objects in their publications 
+through <a href="https://cds.unistra.fr/cgi-bin/Sesame" target="_blank">Sesame</a>
 A service hosted by CDS that queries NED, SIMBAD, and VizieR to help 
 resolve object names.
 
 ## Cross-identifications
-[i] Always verify with established databases that all of the names
+i) Always verify with established databases that all of the names
 given to an object are valid cross-identifications for the object and 
 that the listed positions are for the same object.
-[j] Provide a running identification number for your objects to be able 
+j) Provide a running identification number for your objects to be able 
 to link your data in the different tables of your paper. 
-```
+</pre></big>
 
 
 
@@ -340,11 +342,11 @@ to link your data in the different tables of your paper.
 
 #### Examples
 ```
-[a] Complete celestial coordinates are preferred, e.g.,
+a) Complete celestial coordinates are preferred, e.g.,
 12h34m56.78s, +12d34m56.7s (Equatorial J2000).
-[b] Current IAU celestial reference system is ICRS: 
+b) Current IAU celestial reference system is ICRS: 
 the International Celestial Reference System.
-[c] Standard equinox and epoch currently in use are J2000.0, 
+c) Standard equinox and epoch currently in use are J2000.0, 
 but it is not always the case. For example, the reference epoch 
 for the Gaia Data Release 3 is J2016.0, while it is J2015.5 for 
 Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
@@ -365,14 +367,14 @@ Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
 
 #### Examples
 ```
-[a] Facility ground-based or space-based, instrument configuration 
+a) Facility ground-based or space-based, instrument configuration 
 information, specific camera on the instrument, specific CCD chips ...
-[b] Point spread function fitting, aperture photometry, 
+b) Point spread function fitting, aperture photometry, 
 isophotal measurements, etc
-[c] Indicate “Johnson B” or “Cousins B” instead of just “B”; 
+c) Indicate “Johnson B” or “Cousins B” instead of just “B”; 
 use “2MASS Ks” instead of just “K”. 
-[d] Magnitude on the AB, Vega, ST, or some other magnitude system.
-[e] Carbon monoxide (CO) has several detectable transitions as do ^13^CO 
+d) Magnitude on the AB, Vega, ST, or some other magnitude system.
+e) Carbon monoxide (CO) has several detectable transitions as do ^13^CO 
 and C^17^O. The most commonly observed transition is (J=1-0) and each is 
 between 110 and 115 GHz. To clearly define a spectral transition, 
 one should use, e.g., “CO (J=1-0) ν=115 GHz”. 
@@ -392,16 +394,16 @@ one should use, e.g., “CO (J=1-0) ν=115 GHz”.
 
 #### Examples
 ```
-[a] Explicitly described in terms of both the frame of reference
+a) Explicitly described in terms of both the frame of reference
 (e.g., JD, BJD, HJD), and the time system used (e.g., UTC, TDB, TAI). 
 For example, use “BJD-TDB” to indicate Barycentric Julian Date 
 in the Barycentric Dynamical Time standard (preferred).
-[b] When reporting Julian Dates, the full unmodified date 
+b) When reporting Julian Dates, the full unmodified date 
 (e.g., 2456789.123) is preferred over any offset variation 
 (e.g., 6789.123), to avoid confusion.
-[c] For a transiting exoplanet orbit where the period is known, 
+c) For a transiting exoplanet orbit where the period is known, 
 include a time of transit.
-[d] If possible, include a graphical representation of the times that 
+d) If possible, include a graphical representation of the times that 
 the missions obtained the data to help visualize where the simultaneity occurs.
 ```
 
@@ -410,8 +412,6 @@ the missions obtained the data to help visualize where the simultaneity occurs.
 <!--  ----------------------------------------- -->
 ----------
 ### Redshift/velocity (§2.5) <a name="redshift"></a>
-
-
 
 
 (a) Describe the method of redshift measurements (spectroscopic, photometric, etc.) and give references to the
@@ -425,14 +425,14 @@ radio or optical convention).
 
 #### Examples
 ```
-[a] Describe particular method (spectroscopic, photometric, Friends-of-Friends, etc.)
+a) Describe particular method (spectroscopic, photometric, Friends-of-Friends, etc.)
 and base assumptions used in the models (template fitting, machine learning, etc).
-[b] Include a clear indication of the reference frame, e.g., heliocentric,
+b) Include a clear indication of the reference frame, e.g., heliocentric,
 barycentric, Galactocentric, or LSR (Local Standard of Rest).
-[c] A redshift measured from HI 21 cm emission line may have a significantly 
+c) A redshift measured from HI 21 cm emission line may have a significantly 
 different systematic velocity than a redshift measured from stellar absorption lines 
 in the same galaxy.
-[d] The radio velocity increment depends upon the rest frequency,
+d) The radio velocity increment depends upon the rest frequency,
 whereas the optical velocity increment depends on the observing frequency.
 ```
 
@@ -446,15 +446,13 @@ whereas the optical velocity increment depends on the observing frequency.
 
 
 #### Examples
-```
-[a] For basic morphological types, use the well-established schemes 
-(e.g., Sandage 2005: 10.1146/annurev.astro.43.112904.104839). 
-Authors are encouraged to refer to NED’s extensive suite of searchable 
-galaxy classifications and attributes
- (https://ned.ipac.caltech.edu/uri/NED::Classifications/) or SIMBAD’s Object 
-Classification (http://simbad.unistra.fr/guide/otypes.htx), which have been 
-standardized to enable unified queries across journal articles and catalogs.
-```
+<big><pre>
+a) For basic morphological types, use the well-established schemes 
+(e.g., <a href="https://doi.org/10.1146/annurev.astro.43.112904.104839" target="_blank">Sandage 2005</a>). 
+Authors are encouraged to refer to <a href="http://simbad.unistra.fr/guide/otypes.htx" target="_blank">SIMBAD’s Object Classification</a>
+or <a href="https://ned.ipac.caltech.edu/uri/NED::Classifications/" target="_blank">NED’s galaxy classifications and attributes</a>, which have been standardized 
+to enable unified queries across journal articles and catalogs.
+</pre></big>
 
 
 
@@ -470,11 +468,11 @@ star).
 
 #### Examples
 ```
-[a] Only use “longitude of periapsis” when referring to the sum of 
+a) Only use “longitude of periapsis” when referring to the sum of 
 the argument of periapsis and the longitude of the ascending node.
-[b] The argument of periapsis for a planet or a secondary star’s orbit 
+b) The argument of periapsis for a planet or a secondary star’s orbit 
 differs from that of the host or primary star’s reflex motion by 180 degrees.
-[c] When reporting timing for a non-transiting eccentric orbit for 
+c) When reporting timing for a non-transiting eccentric orbit for 
 which argument of periapsis is measured, report time of periapsis in preference to 
 (or in addition to) time of inferior conjunction. Both are preferred if possible. 
 ```
@@ -496,17 +494,17 @@ the tables and text throughout the article when possible.
 
 #### Examples
 ```
-[a] Indicate the units for each column when applicable.
-[b] Make a clear distinction between z the redshift and z the filter.
-[c] A singl column should not present measurements with different units, 
+a) Indicate the units for each column when applicable.
+b) Make a clear distinction between z the redshift and z the filter.
+c) A singl column should not present measurements with different units, 
 mix errors with limits or comments, or append flags to values.
-[d] Use null values that are supported and documented by widely-used 
+d) Use null values that are supported and documented by widely-used 
 toolkits, e.g., “NaN” (Not a Number) for floating-point data in Astropy. 
 Use the same representation for missing data and have a separate field 
 that explains the reasons for a missing value. 
 Do not use different representations to indicate the different reasons, 
 e.g., blank for “not observed”, and “NaN” for “no detection”.
-[e] Authors should include a human-readable description of the data,
+e) Authors should include a human-readable description of the data,
 with at least the column descriptions, units, and references (on the 
 origin of the measurements or instruments for observations when relevant) 
 in a ReadMe file. More help on the ReadMe is given in the next course.
@@ -577,18 +575,17 @@ Redshift quality flag:
 
 
 #### Examples
-```
-[a] Describe in detail what is presented in the figure, what different 
+<big><pre>
+a) Describe in detail what is presented in the figure, what different 
 colors, symbols, and lines represent. Units of the axis labels should 
-be included when applicable. In practice, figures should be able to stand 
-alone without requiring much reading of the main text.
-[b] Color-blind users would benefit from symbols that vary in shape 
-in addition to colors. See the AAS journals’ graphics guide for more 
-advice on this: https://journals.aas.org/graphics-guide/#preparing_files .
-[c] Make the original data files used to generate the figures publicly 
+be included when applicable. In practice, figures should be able to 
+stand alone without requiring much reading of the main text.
+b) Color-blind users would benefit from symbols that vary in shape 
+in addition to colors. See the <a href="https://journals.aas.org/graphics-guide/#preparing_files" target="_blank">AAS journals’ graphics guide</a> for more advice.
+c) Make the original data files used to generate the figures publicly 
 available, as this will greatly enhance the ability to reproduce, 
 validate, or build upon published results.
-```
+</pre></big>
 
 ![Example of a clearly labeled, accessible plot: revised version from Figure 28 from [Cook et al. (2019)][Cook_2019]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/figure1_chen2022_plot_accessible.png){alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot: revised version from Figure 28 from Cook et al. (2019)"}
 
@@ -612,24 +609,24 @@ structure as file metadata necessary to uniquely identify a file.
 
 
 #### Examples
-```
-[a] Preserve data as supplementary materials with your final journal 
+<big><pre>
+a) Preserve data as supplementary materials with your final journal 
 article, or post the data files with your arXiv preprint.
-[b] If the data are either too large or too complex to be hosted by the
+b) If the data are either too large or too complex to be hosted by the
 journal, authors are encouraged to place their data in a trusted 
 repository that issues Digital Object Identifiers (DOIs).
-[c] Visualize the position and orientation of the apertures on imagery, 
+c) Visualize the position and orientation of the apertures on imagery, 
 key metadata including aperture dimensions, center coordinates, 
 and position angle are required.
-[d] MNRAS: https://academic.oup.com/journals/pages/authors/preparing_your_manuscript/research-data-policy#data2
-[e] We strongly discourage the publication of URLs to personal web servers 
+d) Example from <a href="https://academic.oup.com/journals/pages/authors/preparing_your_manuscript/research-data-policy#data2" target="_blank">MNRAS</a>.
+e) We strongly discourage the publication of URLs to personal web servers 
 hosting data sets for which the author or institution has no means to maintain 
 for many years after the publication of the associated journal article.
-[f] if photometry data are available at different bands (e.g., V and R) 
+f) if photometry data are available at different bands (e.g., V and R) 
 for the same object (e.g., NGC 1275), use names such as NGC1275 V.dat
 and NGC1275 R.dat to identify the files. Do not set up separate directories 
 for V and R band, and give the same file name NGC1275.dat under both directories.
-```
+</pre></big>
 
 
 
@@ -647,19 +644,19 @@ gator.
 
 #### Examples
 ```
-[a]  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012) 
+a)  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012) 
 via NED”, where “Smith et al. 2012” is listed correctly in your bibliography.
-[b] The 2MASS web page requests that you cite the canonical paper by 
+b) The 2MASS web page requests that you cite the canonical paper by 
 Skrutskie et al. (2006), instead of the Explanatory Supplement. 
-[c] If 2MASS data is used via TOPCAT accessing the VizieR table, then 
+c) If 2MASS data is used via TOPCAT accessing the VizieR table, then 
 in addition to any preferred citations of the data itself, cite the 
 software and compilation used, e.g.,“2MASS (Skrutskie et al. 2006) as
 downloaded with TOPCAT (Version 4.8-3, Taylor 2005) via VizieR (II/246, 
 Cutri et al. 2003)”. It is also recommended to include the names of 
 principal investigators who acquired the original data sets.
-[c] Make sure all appropriate references to papers, software and data 
+c) Make sure all appropriate references to papers, software and data 
 products are included in a paper’s bibliography section, not just in footnotes.
-[d] Use phrases such as “This work” to clearly identify original 
+d) Use phrases such as “This work” to clearly identify original 
 data in your article.
 ```
 
@@ -676,15 +673,14 @@ data in your article.
 
 
 #### Examples
-```
-[a] Always describe the facilities or services used, 
+<big><pre>
+a) Always describe the facilities or services used, 
 and make sure the name is unique.
-[b] See AAS keyword tags with AASTeX \facility and \facilities: 
-https://journals.aas.org/authors/aastex/facility.html
-[c] This research has made use of the VizieR catalogue access tool, CDS, 
+b) See <a href="https://journals.aas.org/authors/aastex/facility.html" target="_blank">AAS keyword tags</a> with AASTeX \facility and \facilities. 
+c) This research has made use of the VizieR catalogue access tool, CDS, 
 Strasbourg, France (DOI: 10.26093/cds/vizier). The original description 
 of the VizieR service was published in 2000, A&AS 143, 23.
-```
+</pre></big>
 
 <!--  ----------------- -->
 #### Quiz
@@ -709,7 +705,7 @@ telescope/instrument names from the literature.
 
 :::::::::::::::::::::::: solution
 
-## Solution
+## List of solutions
 
 | Names as published 	| Possible interpretation		|
 | -------------		| --------------------	 		| 
@@ -742,7 +738,7 @@ telescope/instrument names from the literature.
 
 #### Examples
 ```
-[a] Use the preferred citation if available, e.g., the paper describing 
+a) Use the preferred citation if available, e.g., the paper describing 
 the software. If not, include the name of the author(s),
 title of the program/source code, the code version 
 and a URL link to the code publisher.
@@ -759,7 +755,7 @@ and a URL link to the code publisher.
 
 #### Examples
 ```
-[a] The DOI links should be included in the bibliography to ensure 
+a) The DOI links should be included in the bibliography to ensure 
 proper citation: eg., 
 Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&AS,
 143, 9, doi: 10.1051/aas:2000332
