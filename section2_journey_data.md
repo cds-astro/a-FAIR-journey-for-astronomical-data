@@ -31,7 +31,8 @@ Once the data are public, they are accessible as plain files in [FTP directories
 
 
 
-![Data journey from a publication to EOSC: steps curation & verification](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step5.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: last step before ingestion in VizieR -- data curation and verification"}
+![Data journey from a publication to EOSC: steps curation & verification // **NEEDED?**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step5.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: last step before ingestion in VizieR -- data curation and verification"}
+
 
 
 <!--  ----------------------------------------- -->
@@ -39,9 +40,7 @@ Once the data are public, they are accessible as plain files in [FTP directories
 <!--  ----------------------------------------- -->
 ## From Vizier to EOSC
 
-![Harvest map from Vizier to EOSC Explore (inferred, not official)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/harvest_map_from_discussion_with_Gilles.svg){alt="Diagram showing data harvesting from Vizier to EOSC"}
-
-
+![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
 
 <!--  ----------------------------------------- -->
