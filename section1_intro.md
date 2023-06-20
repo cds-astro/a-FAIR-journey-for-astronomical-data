@@ -105,7 +105,7 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - Perform a fast [cross-match identification][xmatch-home] between VizieR tables or Simbad
 - Load your tables in [Aladin][aladin-home]
 - Plot [photometry (SED)][vizier-sed] including all VizieR 
-- Query VizieR [associated data][vizier-assocdata] (images, spectra, timeseries)   
+- Query VizieR [associated data][vizier-assoc-data] (images, spectra, timeseries)   
 - Load your data as a VO Table using [TOPCAT][topcat]
 - Query all VizieR catalogues using [CDS Python package][vizier-api]
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].

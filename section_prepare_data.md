@@ -52,7 +52,9 @@ The following data types are accepted:
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 -->
 ## Tables
 
-![Example of VizieR table: catalogue Gaia DR3 I/355/gaiadr3 (screenshort)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Example of VizieR table ingested"}
+![Example of VizieR table ingested: catalogue Gaia DR3 - ref I/355/gaiadr3 (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Example of VizieR table ingested"}
+
+Link to example: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3
 
 
 <!--  ----------------------------------------- -->
