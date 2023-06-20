@@ -31,7 +31,7 @@ The submission routes for your data vary depending where you submitted your pape
 
 <iframe src="https://manonmarchand.github.io/vizier-stats/" style="border: none; width: 98%; height:500px" allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
-[Catalogue per journal][vizier-cat-per-journal]
+Link: [Catalogues and files available at CDS][vizier-cat-per-journal]
 
 
 
@@ -133,15 +133,15 @@ Authors should consult the CDS website for instructions on preparing and submitt
 Any other journals needs the author to submit the data.
 
 
-Examples of other journals included in VizieR:
+Examples of other journals included in VizieR (and percentage of catalogues ingested in VizieR):
 
-- Acta Astronomica: AcA
-- Astronomische Nachrichten: AN
-- Astronomicheskii Zhurnal: AZh
-- Baltic Astronomy: BaltA
-- Publications of the Astronomical Society of Japan: PASJ
-- Publications of the Astronomical Society of the Pacific: PASP
-- Pis'ma v Astronomicheskii Zhurnal: PAZh
+- Publications of the Astronomical Society of the Pacific: PASP (2.7%)
+- Pis'ma v Astronomicheskii Zhurnal: PAZh (2.2%)
+- Astronomicheskii Zhurnal: AZh (2.1%)
+- Acta Astronomica: AcA (1.6%)
+- Publications of the Astronomical Society of Japan: PASJ (1.3%)
+- Astronomische Nachrichten: AN (0.95%)
+- Baltic Astronomy: BaltA (0.7%)
 
 
 
