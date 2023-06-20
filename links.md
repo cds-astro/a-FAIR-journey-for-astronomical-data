@@ -21,7 +21,7 @@ any links that you are not going to use.
 [vizier-table-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
 [vizier-tap]: http://tapvizier.cds.unistra.fr/adql/
 [vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
-[vizier-assocdata]: https://cdsarc.cds.unistra.fr/assocdata/
+[vizier-assoc-data]: https://cdsarc.cds.unistra.fr/assocdata/
 [vizier-api]: https://github.com/cds-astro/cds.cdsclient/
 [iau-dico-nomenclature]: http://vizier.u-strasbg.fr/cgi-bin/Dic
 <!-- VizieR File submission -->

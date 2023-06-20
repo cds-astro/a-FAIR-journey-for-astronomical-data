@@ -46,11 +46,11 @@ Machine readable tables (MRT) are prioritised, but other tables or FITS spectra/
 
 List of journals included:
 
-- Astrophysical Journal Letters: ApJL
-- Astronomical Journal: AJ 
-- Astrophysical Journal: ApJ
-- Astrophysical Journal Supplement Series: ApJS
-- Planeterary Science: Planet. Sci.
+- The Astrophysical Journal Letters: ApJL
+- The Astronomical Journal: AJ 
+- The Astrophysical Journal: ApJ
+- The Astrophysical Journal Supplement Series: ApJS
+- The Planetary Science Journal: Planet. Sci.
 - Research notes of the AAS: Res. Notes
 
 
@@ -137,11 +137,11 @@ Examples of other journals included in VizieR:
 
 - Acta Astronomica: AcA
 - Astronomische Nachrichten: AN
-- Astronomicheskii Zhurnal (Russian): AZh
+- Astronomicheskii Zhurnal: AZh
 - Baltic Astronomy: BaltA
 - Publications of the Astronomical Society of Japan: PASJ
 - Publications of the Astronomical Society of the Pacific: PASP
-- Pis'ma v Astronomicheskii Zhurnal (Astronomy Letters): PAZh
+- Pis'ma v Astronomicheskii Zhurnal: PAZh
 
 
 
