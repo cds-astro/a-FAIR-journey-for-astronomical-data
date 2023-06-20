@@ -18,7 +18,6 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step9.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
 
 <!--  ----------------------------------------- -->
