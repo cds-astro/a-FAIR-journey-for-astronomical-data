@@ -43,7 +43,8 @@ any links that you are not going to use.
 [vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
 [vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
 [vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
-
+<!-- VizieR example Gaia DR3-->
+[vizier-gaia-dr3]: https://doi.org/10.26093/cds/vizier.1355
 
 <!-- -->
 <!-- Journals -->
@@ -90,6 +91,14 @@ any links that you are not going to use.
 [eosc]: https://eosc.eu/
 [eosc-future]: https://eoscfuture.eu/
 [eosc-portal]: https://eosc-portal.eu/
+[eosc-portal-marketplace]: https://marketplace.eosc-portal.eu/
+[eosc-portal-results]: https://search.marketplace.eosc-portal.eu/search/all?q=*
+[eosc-portal-search-gaiadr3]: https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
+[eosc-portal-advanced-filtering]: https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&fq=keywords:%22Astrophysics%20and%20Astronomy%22&fq=keywords:%22stellar%20astronomy%22&fq=author_names:%22Gaia%20collaboration%22&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
+[eosc-portal-result-gaiadr3]: https://explore.eosc-portal.eu/search/dataset?pid=10.26093/cds/vizier.1355&return_path=search%2Fall&search_params=q%3DGaia%2520DR3
+[eosc-portal-result-gaiadr3-b2find]: https://dc.g-vo.org/rr/q/lp/custom/CDS.VizieR/I/355
+[eosc-portal-result-gaiadr3-stras-datacenter]: https://doi.org/10.26093/cds/vizier.1355
+
 
 
 <!-- -->
