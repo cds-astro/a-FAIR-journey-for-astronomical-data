@@ -107,7 +107,15 @@ In addition to the filters available on the left side of the [EOSC Marketplace r
 
 ### By keywords
 
-A filtering by **keywords** can also be done from the url by adding the field '&fq=keywords:%22my%20keyword%22' to the url of the results. '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. '%20' stands for the space.
+A filtering by **keywords** can be done from the url by adding the field '&fq=keywords:%22my%20astro%20keyword%22' to the url of the results. 
+
+'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
+'%20' stands for the space.
+'my astro keyword' is a placeholder for your desired keyword.
+
+For example to filter the results using the keywords 'Astrophyiscs and Astronomy' and 'stellar astronomy', one can do: 
+&fq=keywords:%22Astrophysics%20and%20Astronomy%22
+&fq=keywords:%22stellar%20astronomy%22
 
 :::::::::::::::::::::::::
 
@@ -115,25 +123,50 @@ A filtering by **keywords** can also be done from the url by adding the field '&
 
 ### By author names
 
-A filtering by **author names** can also be done from the url, e.g.
+A filtering by **author names** can also be done from the url by adding the field 
+'&fq=author_names:%22my%20favourite%20author%22'
+to the url of the results. 
 
-This search will then get all the products associated with 'Gonneau A.', as illustrated in the webpage below. 
+'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
+'%20' stands for the space.
+'my favourite author' is a placeholder for the author names.
+
+For example to filter the results to see only the ones from the 'Gaia collaboration', one can do:
+&fq=author_names:%22Gaia%20collaboration%22
+
 :::::::::::::::::::::::::
 
 :::::::::::::::: solution
 
 ### By DOI
 
-A filtering by **keywords** can also be done from the url by adding the field '&fq=keywords:%22my%20keyword%22' to the url of the results. '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. '%20' stands for the space.
+Filtering by **DOI** can also be done from the url by adding the field 
+'&fq=doi:%22mydoi%5C%2Fnumber%22'
+to the url of the results. 
+
+'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
+'%5C%2F' stands for the slash.
+'mydoi/number' is a placeholder for the DOI.
+
+For example to filter the results to see only the DOI of Gaia DR3, one can add: 
+&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
 
 :::::::::::::::::::::::::
 
 
 ##### Example
 
-The url modified with the extra filtering is for example: 
+An example of [modified url][eosc-portal-advanced-filtering] with the extra filtering is given below: 
 
-[https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&fq=keywords:%22Astrophysics%20and%20Astronomy%22&fq=keywords:%22stellar%20astronomy%22&fq=author_names:%22Gaia%20collaboration%22&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22][eosc-portal-advanced-filtering].
+```
+https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
+&fq=keywords:%22Astrophysics%20and%20Astronomy%22
+&fq=keywords:%22stellar%20astronomy%22
+&fq=author_names:%22Gaia%20collaboration%22
+&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
+```
+
+The resulting webpage is displayed below:
 
 <!-- Explore Portal records filtered by url as iframe-->
 <iframe src="https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&fq=keywords:%22Astrophysics%20and%20Astronomy%22&fq=keywords:%22stellar%20astronomy%22&fq=author_names:%22Gaia%20collaboration%22&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22"
@@ -166,40 +199,42 @@ In this example, you can access to the resource by either clicking on the [DOI l
 <!--  ----------------------------------------- -->
 <!--            Example				-->
 <!--  ----------------------------------------- -->
-## Example: try it yourself
+## Examples: try it yourself
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-Show some good and bad examples of filenames. 
+Browse through EOSC Portal to find some datasets and publications, and answer the following questions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
-## Quiz: Are these filenames correct or not?
+## Can you answer the following questions?
 
 
 ```
-[Q1] 'my_awesome_file.fit'
-[Q2] 'TABLE998.dat'
-[Q3] 'myfile.jpg'
-[Q4] 'table.dat'
-[Q5] 'table&data.dat'
+Q1) What is the publication date for 'Brightest cluster galaxies in Abell clusters'?
+Q2) Which CDS service is listed in the 'Services' type of results?
+Q3) Can you list some 'cds-astro' Softwares available?
+Q4) If you published a paper or a dataset, type your name in the Search bar. What do you get as an output?
 ```
+
+Hint: Browse through [EOSC Portal][eosc-portal] to answer the previous questions.
 
 :::::::::::::::::::::::: solution
 
 ## Show me the solution
 
-```
-[1] "No: too long"
-[2] "No: Uppercase detected"
-[3] "No: Good length, but extension not supported"
-[4] "Yes: correct"
-[5] "No: & character not supported"
-```
+R1) This paper was published on [01 Jan 2017][eosc-question1-abell].
+
+R2) [SIMBAD][eosc-question2-service] is the service accessible through the EOSC website.
+
+R3) Examples of [softwares available][eosc-question3-software]: cds-astro/tutorials: v1.0.0, cds-astro/aladin-lite: Aladin Lite v3.1.1, cds-astro/cds-moc-rust: Release v0.5.2 ...
+ 
+
 :::::::::::::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -210,10 +245,17 @@ Show some good and bad examples of filenames.
 
 ## Summary
 
-<!--
 ::::::::::::::::::::::::::::::::::::: keypoints
+
+- EOSC will give European researchers access to a wide web of FAIR data and related services. 
+- EOSC Portal Catalogue & Marketplace acts as an entry point to a multitude of services and resources for researchers, such as:
+	- Discover Research Outputs (datasets, scientific publications, softwares)
+	- Access Training Materials (lessons, courses, videos)
+- The catalogues ingested in VizieR are findable and accessible in EOSC.
+- Interdisciplinary science is facilitated using EOSC Portal, thanks to the interoperability of the data.
+- EOSC promotes the reuse of the data. 
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
--->
 
 
 
