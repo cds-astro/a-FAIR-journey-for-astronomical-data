@@ -211,7 +211,7 @@
         <ul><li><a href="#overview">Overview</a></li>
 <li><a href="#eosc-portal">EOSC Portal</a></li>
 <li><a href="#case-study-gaia-dr3">Case Study: Gaia DR3</a></li>
-<li><a href="#example-try-it-yourself">Example: try it yourself</a></li>
+<li><a href="#examples-try-it-yourself">Examples: try it yourself</a></li>
 <li><a href="#summary">Summary</a></li>
 <li><a href="#end">End!</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -384,12 +384,18 @@ directly from the url.</p>
   By keywords
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>A filtering by <strong>keywords</strong> can also be done from the
-url by adding the field ‘&amp;fq=keywords:%22my%20keyword%22’ to the url
-of the results. ‘%22’ are needed before and after the keywords as they
-are UTF-8 encoding of the double quotes. ‘%20’ stands for the space.</p>
+<p>A filtering by <strong>keywords</strong> can be done from the url by
+adding the field ‘&amp;fq=keywords:%22my%20astro%20keyword%22’ to the
+url of the results.</p>
+<p>‘%22’ are needed before and after the keywords as they are UTF-8
+encoding of the double quotes. ‘%20’ stands for the space. ‘my astro
+keyword’ is a placeholder for your desired keyword.</p>
+<p>For example to filter the results using the keywords ‘Astrophyiscs
+and Astronomy’ and ‘stellar astronomy’, one can do:
+&amp;fq=keywords:%22Astrophysics%20and%20Astronomy%22
+&amp;fq=keywords:%22stellar%20astronomy%22</p>
 </div>
 </div>
 </div>
@@ -401,12 +407,18 @@ are UTF-8 encoding of the double quotes. ‘%20’ stands for the space.</p>
   By author names
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>A filtering by <strong>author names</strong> can also be done from
-the url, e.g.</p>
-<p>This search will then get all the products associated with ‘Gonneau
-A.’, as illustrated in the webpage below.</p>
+the url by adding the field
+‘&amp;fq=author_names:%22my%20favourite%20author%22’ to the url of the
+results.</p>
+<p>‘%22’ are needed before and after the keywords as they are UTF-8
+encoding of the double quotes. ‘%20’ stands for the space. ‘my favourite
+author’ is a placeholder for the author names.</p>
+<p>For example to filter the results to see only the ones from the ‘Gaia
+collaboration’, one can do:
+&amp;fq=author_names:%22Gaia%20collaboration%22</p>
 </div>
 </div>
 </div>
@@ -418,20 +430,30 @@ A.’, as illustrated in the webpage below.</p>
   By DOI
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
-<p>A filtering by <strong>keywords</strong> can also be done from the
-url by adding the field ‘&amp;fq=keywords:%22my%20keyword%22’ to the url
-of the results. ‘%22’ are needed before and after the keywords as they
-are UTF-8 encoding of the double quotes. ‘%20’ stands for the space.</p>
+<p>Filtering by <strong>DOI</strong> can also be done from the url by
+adding the field ‘&amp;fq=<a href="../doi:%22mydoi%5C%2Fnumber%22" class="uri">doi:%22mydoi%5C%2Fnumber%22</a>’ to the url of the
+results.</p>
+<p>‘%22’ are needed before and after the keywords as they are UTF-8
+encoding of the double quotes. ‘%5C%2F’ stands for the slash.
+‘mydoi/number’ is a placeholder for the DOI.</p>
+<p>For example to filter the results to see only the DOI of Gaia DR3,
+one can add: &amp;fq=<a href="../doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22" class="uri">doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22</a></p>
 </div>
 </div>
 </div>
 </div>
 <div class="section level5">
 <h5 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a></h5>
-<p>The url modified with the extra filtering is for example:</p>
-<p><a href="https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&amp;fq=keywords:%22Astrophysics%20and%20Astronomy%22&amp;fq=keywords:%22stellar%20astronomy%22&amp;fq=author_names:%22Gaia%20collaboration%22&amp;fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22" class="external-link">https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&amp;fq=keywords:%22Astrophysics%20and%20Astronomy%22&amp;fq=keywords:%22stellar%20astronomy%22&amp;fq=author_names:%22Gaia%20collaboration%22&amp;fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22</a>.</p>
+<p>An example of <a href="https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&amp;fq=keywords:%22Astrophysics%20and%20Astronomy%22&amp;fq=keywords:%22stellar%20astronomy%22&amp;fq=author_names:%22Gaia%20collaboration%22&amp;fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22" class="external-link">modified
+url</a> with the extra filtering is given below:</p>
+<pre><code>https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
+&amp;fq=keywords:%22Astrophysics%20and%20Astronomy%22
+&amp;fq=keywords:%22stellar%20astronomy%22
+&amp;fq=author_names:%22Gaia%20collaboration%22
+&amp;fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22</code></pre>
+<p>The resulting webpage is displayed below:</p>
 <!-- Explore Portal records filtered by url as iframe-->
 <iframe src="https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&amp;fq=keywords:%22Astrophysics%20and%20Astronomy%22&amp;fq=keywords:%22stellar%20astronomy%22&amp;fq=author_names:%22Gaia%20collaboration%22&amp;fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22" title="Explore Portal search filtering by keywords, author names and DOI (from the url)" style="border: none; width: 98%; height: 800px; 
 overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
@@ -454,7 +476,7 @@ select one of the two data sources available: <a href="https://dc.g-vo.org/rr/q/
 Astronomical Data Center</a>.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step3_result.png" alt="Screenshot: EOSC Portal search for 'Gaia DR3', from June 2023" class="figure mx-auto d-block"><figcaption>Searching for ‘Gaia DR3’ on EOSC Portal – result
 (screenshot)</figcaption></figure><!--  ----------------------------------------- --><!--            Example				--><!--  ----------------------------------------- --></div>
-</section><section id="example-try-it-yourself"><h2 class="section-heading">Example: try it yourself<a class="anchor" aria-label="anchor" href="#example-try-it-yourself"></a>
+</section><section id="examples-try-it-yourself"><h2 class="section-heading">Examples: try it yourself<a class="anchor" aria-label="anchor" href="#examples-try-it-yourself"></a>
 </h2>
 <hr class="half-width"><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
@@ -464,26 +486,28 @@ Astronomical Data Center</a>.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
-<p>Show some good and bad examples of filenames.</p>
+<p>Browse through EOSC Portal to find some datasets and publications,
+and answer the following questions.</p>
 </div>
 </div>
 </div>
 </div>
-<div id="quiz-are-these-filenames-correct-or-not" class="callout challenge">
+<div id="can-you-answer-the-following-questions" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="quiz-are-these-filenames-correct-or-not" class="callout-inner">
-<h3 class="callout-title">Quiz: Are these filenames correct or not?<a class="anchor" aria-label="anchor" href="#quiz-are-these-filenames-correct-or-not"></a>
+<div id="can-you-answer-the-following-questions" class="callout-inner">
+<h3 class="callout-title">Can you answer the following questions?<a class="anchor" aria-label="anchor" href="#can-you-answer-the-following-questions"></a>
 </h3>
 <div class="callout-content">
-<pre><code>[Q1] 'my_awesome_file.fit'
-[Q2] 'TABLE998.dat'
-[Q3] 'myfile.jpg'
-[Q4] 'table.dat'
-[Q5] 'table&amp;data.dat'</code></pre>
+<pre><code>Q1) What is the publication date for 'Brightest cluster galaxies in Abell clusters'?
+Q2) Which CDS service is listed in the 'Services' type of results?
+Q3) Can you list some 'cds-astro' Softwares available?
+Q4) If you published a paper or a dataset, type your name in the Search bar. What do you get as an output?</code></pre>
+<p>Hint: Browse through <a href="https://eosc-portal.eu/" class="external-link">EOSC
+Portal</a> to answer the previous questions.</p>
 </div>
 </div>
 </div>
@@ -494,13 +518,15 @@ Astronomical Data Center</a>.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
-<pre><code>[1] "No: too long"
-[2] "No: Uppercase detected"
-[3] "No: Good length, but extension not supported"
-[4] "Yes: correct"
-[5] "No: &amp; character not supported"</code></pre>
+<p>R1) This paper was published on <a href="https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&amp;return_path=search%2Fall&amp;search_params=q%3DNGTS%2520clusters%2520survey" class="external-link">01
+Jan 2017</a>.</p>
+<p>R2) <a href="https://marketplace.eosc-portal.eu/services/eosc.cds.simbad_simbad_astronomical_database_provides_basic_data_cross-identifications_bibliography_and_measurements_for_astronomical_objects_outside_the_solar_system?return_path=search%2Fservice&amp;search_params=q%3DCDS" class="external-link">SIMBAD</a>
+is the service accessible through the EOSC website.</p>
+<p>R3) Examples of <a href="https://search.marketplace.eosc-portal.eu/search/software?q=cds-astro&amp;sort_ui=default" class="external-link">softwares
+available</a>: cds-astro/tutorials: v1.0.0, cds-astro/aladin-lite:
+Aladin Lite v3.1.1, cds-astro/cds-moc-rust: Release v0.5.2 …</p>
 </div>
 </div>
 </div>
@@ -510,10 +536,34 @@ Astronomical Data Center</a>.</p>
 <!--  ----------------------------------------- -->
 </section><section id="summary"><h2 class="section-heading">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
 </h2>
-<hr class="half-width"><!--
-::::::::::::::::::::::::::::::::::::: keypoints
-::::::::::::::::::::::::::::::::::::::::::::::::
---><!--  ----------------------------------------- --><!--            End	                        --><!--  ----------------------------------------- --></section><section id="end"><h2 class="section-heading">End!<a class="anchor" aria-label="anchor" href="#end"></a>
+<hr class="half-width"><div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul><li>EOSC will give European researchers access to a wide web of FAIR
+data and related services.</li>
+<li>EOSC Portal Catalogue &amp; Marketplace acts as an entry point to a
+multitude of services and resources for researchers, such as:
+<ul><li>Discover Research Outputs (datasets, scientific publications,
+softwares)</li>
+<li>Access Training Materials (lessons, courses, videos)</li>
+</ul></li>
+<li>The catalogues ingested in VizieR are findable and accessible in
+EOSC.</li>
+<li>Interdisciplinary science is facilitated using EOSC Portal, thanks
+to the interoperability of the data.</li>
+<li>EOSC promotes the reuse of the data.</li>
+</ul></div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+<!--            End	                        -->
+<!--  ----------------------------------------- -->
+</section><section id="end"><h2 class="section-heading">End!<a class="anchor" aria-label="anchor" href="#end"></a>
 </h2>
 <hr class="half-width"><p>This concludes this training on how to make your published
 astronomical data (table, images, spectra, …) FAIR and openly accessible
