@@ -107,7 +107,7 @@ A2. Metadata are accessible, even when the data are no longer available
 
 :::::::::::::::: solution
 
-### To be Interopable
+### To be Interoperable
 
 Those data can then be combined with different datasets, and interoperate with other applications or workflows for analysis, storage, and processing, thanks to rich metadata.
 
