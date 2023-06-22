@@ -260,6 +260,20 @@ A web application is available for authors to obtain a temporary login/password:
 
 
 <!--  ----------------------------------------- -->
+<!--            Data at CDS                     -->
+<!--  ----------------------------------------- -->
+## What happens to your data at the CDS? 
+
+Once the data submitted on the CDS servers, some checking procedures are executed to verify the compatibility between the data files and their description. This can lead to interactions with the authors, but we are trying to minimize the level of interaction. 
+
+Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]).
+
+
+![Data journey from a publication to EOSC: steps curation & verification // **NEEDED?**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step5.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: last step before ingestion in VizieR -- data curation and verification"}
+
+
+
+<!--  ----------------------------------------- -->
 <!--            Summary                         -->
 <!--  ----------------------------------------- -->
 

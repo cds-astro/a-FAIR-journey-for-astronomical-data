@@ -1,11 +1,15 @@
 ---
-title: "Explore EOSC"
+title: "Journey of your data in the VO"
+<!-- title: "Explore EOSC" -->
 teaching: 10
 exercises: 1
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- What happens to your data?
+- How does your published data get into EOSC?
+- What is a DOI?
 - Why publishing in EOSC / VO?
 - How do you find your data in EOSC?
 
@@ -13,10 +17,18 @@ exercises: 1
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
+- Understand the integration of astronomy data services in the VO and EOSC.
 - Be familiar with the EOSC capabilities, in particular the Explore portal.
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+<!--  ----------------------------------------- -->
+<!--            Journey of your data            -->
+<!--  ----------------------------------------- -->
+## From Vizier to EOSC
+
+![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
 
 
