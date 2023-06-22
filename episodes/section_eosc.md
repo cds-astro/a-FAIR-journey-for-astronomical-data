@@ -1,6 +1,5 @@
 ---
 title: "Journey of your data in the VO"
-<!-- title: "Explore EOSC" -->
 teaching: 10
 exercises: 1
 ---
@@ -9,7 +8,6 @@ exercises: 1
 
 - What happens to your data?
 - How does your published data get into EOSC?
-- What is a DOI?
 - Why publishing in EOSC / VO?
 - How do you find your data in EOSC?
 
@@ -23,10 +21,13 @@ exercises: 1
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+<!-- title: "Explore EOSC"  /// Older -->
 <!--  ----------------------------------------- -->
 <!--            Journey of your data            -->
 <!--  ----------------------------------------- -->
 ## From Vizier to EOSC
+
+Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, ultimately reaching the  [European Open Science Cloud (EOSC)][eosc], as illustrated in the figure below.
 
 ![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
@@ -183,10 +184,10 @@ https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
 
 
 
-
+<!-- iframe commented on 22/06/23:  
 The resulting webpage is displayed below:
 
-<!-- Explore Portal records filtered by url as iframe-->
+//  Explore Portal records filtered by url as iframe 
 <iframe src="https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&fq=keywords:%22Astrophysics%20and%20Astronomy%22&fq=keywords:%22stellar%20astronomy%22&fq=author_names:%22Gaia%20collaboration%22&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22"
 title="Explore Portal search filtering by keywords, author names and DOI (from the url)"
 style="border: none; width: 98%; height: 800px; 
@@ -194,7 +195,7 @@ overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 Explore Portal search webpage: filtering by keywords, author names and DOI (from the url).
-
+-->
 
 
 ---
