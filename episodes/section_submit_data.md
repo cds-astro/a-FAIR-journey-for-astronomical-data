@@ -18,13 +18,6 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-***Other source: https://cdsarc.cds.unistra.fr/vizier.submit/help.html***
-
-***Other ressource: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5***
-
-***Other: https://vizier.cds.unistra.fr/vizier/submit.htx***
-
-
 <!--  ----------------------------------------- -->
 <!-- 		Submitting 			-->
 <!--  ----------------------------------------- -->
@@ -238,10 +231,20 @@ But in any case, do your best and the CDS team will make sure that your data is 
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 ### Submission form (option 1): step-by-step
 
+<!-- Submission form Vizier as iframe -->
+<iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/"
+title="VizieR catalogue upload webpage"
+style="border: 1px solid black; width: 98%; height: 600px; 
+overflow: hidden; display: block; "
+allowfullscreen="" allow="autoplay" data-external="1"></iframe>
+
+VizieR catalogue upload webpage. 
+Note that it is not an image, you can submit your files directly from here.
+
+
 Link: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login]
 
 Documentation: [doc][vizier-submit-data-help]
-
 
 
 <!--  ----------------------------------------- -->
@@ -257,6 +260,30 @@ Since October 2021, FTP uploads requires a login authentification.
 A web application is available for authors to obtain a temporary login/password:
 [https://cds.unistra.fr/ftp/token/][vizier-ftp-login]
 (include the FTP instruction).
+
+<!-- VizieR FTP token as iframe -->
+<iframe src="https://cds.unistra.fr/ftp/token/"
+title="VizieR FTP token generation webpage"
+style="border: 1px solid black; width: 98%; height: 680px; 
+overflow: hidden; display: block; "
+allowfullscreen="" allow="autoplay" data-external="1"></iframe>
+
+VizieR FTP token generation webpage.
+Note that it is not an image, you can already generate a temporary login.
+
+
+<!--  ----------------------------------------- -->
+<!--            Data at CDS                     -->
+<!--  ----------------------------------------- -->
+## What happens to your data at the CDS? 
+
+Once the data submitted on the CDS servers, some checking procedures are executed to verify the compatibility between the data files and their description. This can lead to interactions with the authors, but we are trying to minimize the level of interaction. 
+
+Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]).
+
+
+![Data journey from a publication to EOSC: steps curation & verification // **NEEDED?**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step5.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: last step before ingestion in VizieR -- data curation and verification"}
+
 
 
 <!--  ----------------------------------------- -->
@@ -280,6 +307,17 @@ A web application is available for authors to obtain a temporary login/password:
 
 In the next chapters, you will learn what happen to your data after submitting them to VizieR.
  
+
+
+
+
+## Ideas ???
+
+***Other source: https://cdsarc.cds.unistra.fr/vizier.submit/help.html***
+
+***Other ressource: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5***
+
+***Other: https://vizier.cds.unistra.fr/vizier/submit.htx***
 
 
 
