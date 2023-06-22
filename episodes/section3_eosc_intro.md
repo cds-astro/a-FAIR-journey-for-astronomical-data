@@ -217,7 +217,10 @@ Browse through EOSC Portal to find some datasets and publications, and answer th
 Q1) What is the publication date for 'Brightest cluster galaxies in Abell clusters'?
 Q2) Which CDS service is listed in the 'Services' type of results?
 Q3) Can you list some 'cds-astro' Softwares available?
-Q4) If you published a paper or a dataset, type your name in the Search bar. What do you get as an output?
+Q4) Advanced question: can you find the dataset associated with the word 'Astronomy'
+and published by the 'National Radio Astronomy Observatory'? 
+Q5) If you published a paper or a dataset, type your name in the Search bar. 
+What do you get as an output?
 ```
 
 Hint: Browse through [EOSC Portal][eosc-portal] to answer the previous questions.
@@ -230,9 +233,13 @@ R1) This paper was published on [01 Jan 2017][eosc-question1-abell].
 
 R2) [SIMBAD][eosc-question2-service] is the service accessible through the EOSC website.
 
-R3) Examples of [softwares available][eosc-question3-software]: cds-astro/tutorials: v1.0.0, cds-astro/aladin-lite: Aladin Lite v3.1.1, cds-astro/cds-moc-rust: Release v0.5.2 ...
- 
+R3) Examples of [softwares available][eosc-question3-software]: [cds-astro/tutorials: v1.0.0][eosc-question3-tutorials], [cds-astro/aladin-lite: Aladin Lite v3.1.1][eosc-question3-alatin-lite], [cds-astro/cds-moc-rust: Release v0.5.2][eosc-question3-cds-moc-rust] ...
 
+R4) Select first 'Astronomy' in the Search bar, and 'Data' from the scrolling menu.
+Submit this search (press Enter on the keyboard) and then add '&fq=author_names:"National%20Radio%20Astronomy%20Observatory"' to the url.
+
+The search result Data should look like: [search-result][eosc-question4-dataset]
+ 
 :::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
