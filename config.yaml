@@ -64,8 +64,7 @@ episodes:
 - section_prepare_data.md
 - section_submission_per_journals.md
 - section_submit_data.md
-- section2_journey_data.md
-- section3_eosc_intro.md
+- section_eosc.md
 
 # Information for Learners
 learners: 

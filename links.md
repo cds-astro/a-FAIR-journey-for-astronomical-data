@@ -101,6 +101,10 @@ any links that you are not going to use.
 [eosc-question1-abell]: https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&return_path=search%2Fall&search_params=q%3DNGTS%2520clusters%2520survey
 [eosc-question2-service]: https://marketplace.eosc-portal.eu/services/eosc.cds.simbad_simbad_astronomical_database_provides_basic_data_cross-identifications_bibliography_and_measurements_for_astronomical_objects_outside_the_solar_system?return_path=search%2Fservice&search_params=q%3DCDS
 [eosc-question3-software]: https://search.marketplace.eosc-portal.eu/search/software?q=cds-astro&sort_ui=default
+[eosc-question3-cds-moc-rust]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7078879&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
+[eosc-question3-alatin-lite]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7764464&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
+[eosc-question3-tutorials]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7358070&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
+[eosc-question4-dataset]: https://search.marketplace.eosc-portal.eu/search/dataset?q=Astronomy&sort_ui=default&fq=author_names:%22National%20Radio%20Astronomy%20Observatory%22
 
 
 

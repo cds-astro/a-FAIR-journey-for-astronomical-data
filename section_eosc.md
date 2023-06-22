@@ -1,11 +1,13 @@
 ---
-title: "Explore EOSC"
+title: "Journey of your data in the VO"
 teaching: 10
-exercises: 2
+exercises: 1
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- What happens to your data?
+- How does your published data get into EOSC?
 - Why publishing in EOSC / VO?
 - How do you find your data in EOSC?
 
@@ -13,27 +15,40 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
+- Understand the integration of astronomy data services in the VO and EOSC.
 - Be familiar with the EOSC capabilities, in particular the Explore portal.
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+<!-- title: "Explore EOSC"  /// Older -->
+<!--  ----------------------------------------- -->
+<!--            Journey of your data            -->
+<!--  ----------------------------------------- -->
+## From Vizier to EOSC
+
+Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, ultimately reaching the  [European Open Science Cloud (EOSC)][eosc], as illustrated in the figure below.
+
+![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
+
 
 
 <!--  ----------------------------------------- -->
-<!--            Overview                        -->
+<!--            EOSC	                        -->
 <!--  ----------------------------------------- -->
-## Overview
+## The European Open Science Cloud (EOSC)
 
-**Warning: Text from website // TO UPDATE**
+[EOSC Future][eosc-future] is an European Union funded H2020 project that is implementing the [European Open Science Cloud (EOSC)][eosc]. 
 
-[EOSC Future][eosc-future] is an EU-funded H2020 project that is implementing the [European Open Science Cloud (EOSC)][eosc]. EOSC will give European researchers access to a wide web of FAIR data and related services.
+The digital transformation of science is no longer a coming trend but a current reality. Beyond better connectivity, faster  processing,  and  more  reliable  storage,  this  has  enabled  a  wealth  of  value-generating  services  and  an ever-growing  wave  of  data  and  research  products.  As  these  developments  become  a  part  of  our  daily  lives,  the  digital transformation also brings new opportunities  for European research through the digital platforms which enable it: opportunities for significantly more reproducible research and a move to a more data-intensive and Open Science. The European Union’s leadership in Open Science contributes to advancing new scientific discoveries and market innovation, as well as opening science to the public and addressing societal challenges more effectively.
+
+The EOSC will allow for universal access to data and a new level playing field for EU researchers.
 
 
-*Ideas:*
+**Needed??**: 
 
-- Added value with EOSC
-- Integration done?
+- EOSC Future will unlock the potential of European research through a vision of Open Science for Society.
+- EOSC Future will reduce the current research fragmentation of disciplinary and national silos, as well as promote Findable, Accessible, Interoperable, and Reusable (FAIR) data, professionally provided services, and open research products.
 
 
 <!--  ----------------------------------------- -->
@@ -41,9 +56,7 @@ exercises: 2
 <!--  ----------------------------------------- -->
 ## EOSC Portal
 
-**Warning: Text from website // TO UPDATE**
-
-The [EOSC Portal][eosc-portal] is a gateway to information and resources in EOSC, providing updates on its governance and players, the projects contributing to its realisation, funding opportunities for EOSC stakeholders, relevant European and national policies, important documents, and recent developments. The EOSC Portal Catalogue & Marketplace acts as an entry point to the multitude of services and resources for researchers.
+The [EOSC Portal][eosc-portal] provides an interface to EOSC for researchers to utilise the full spectrum of EOSC resources, which include research publications, data, software, and value-added services to support their research.
 
 For prospective users of the services, the Portal provides training materials and tutorials on how to use its features. The Portal also offers information for potential service providers on how to onboard their services to the EOSC Portal Catalogue & Marketplace. 
 
@@ -107,15 +120,15 @@ In addition to the filters available on the left side of the [EOSC Marketplace r
 
 ### By keywords
 
-A filtering by **keywords** can be done from the url by adding the field '&fq=keywords:%22my%20astro%20keyword%22' to the url of the results. 
+A filtering by **keywords** can be done from the url by adding the field *&fq=keywords:"my%20astro%20keyword"* to the url of the results. 
 
-'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
-'%20' stands for the space.
+<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
+'%20' is the UTF-8 encoding for the space.
 'my astro keyword' is a placeholder for your desired keyword.
 
 For example to filter the results using the keywords 'Astrophyiscs and Astronomy' and 'stellar astronomy', one can do: 
-&fq=keywords:%22Astrophysics%20and%20Astronomy%22
-&fq=keywords:%22stellar%20astronomy%22
+&fq=keywords:"Astrophysics%20and%20Astronomy"
+&fq=keywords:"stellar%20astronomy"
 
 :::::::::::::::::::::::::
 
@@ -124,15 +137,15 @@ For example to filter the results using the keywords 'Astrophyiscs and Astronomy
 ### By author names
 
 A filtering by **author names** can also be done from the url by adding the field 
-'&fq=author_names:%22my%20favourite%20author%22'
+*&fq=author_names:"my%20favourite%20author"*
 to the url of the results. 
 
-'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
-'%20' stands for the space.
+<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
+'%20' is the UTF-8 encoding for the space.
 'my favourite author' is a placeholder for the author names.
 
 For example to filter the results to see only the ones from the 'Gaia collaboration', one can do:
-&fq=author_names:%22Gaia%20collaboration%22
+&fq=author_names:"Gaia%20collaboration"
 
 :::::::::::::::::::::::::
 
@@ -141,15 +154,15 @@ For example to filter the results to see only the ones from the 'Gaia collaborat
 ### By DOI
 
 Filtering by **DOI** can also be done from the url by adding the field 
-'&fq=doi:%22mydoi%5C%2Fnumber%22'
+*&fq=doi:"mydoi%5C%2Fnumber"*
 to the url of the results. 
 
-'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
+<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
 '%5C%2F' stands for the slash.
 'mydoi/number' is a placeholder for the DOI.
 
 For example to filter the results to see only the DOI of Gaia DR3, one can add: 
-&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
+&fq=doi:"10.26093%5C%2Fcds%5C%2Fvizier.1355"
 
 :::::::::::::::::::::::::
 
@@ -160,15 +173,21 @@ An example of [modified url][eosc-portal-advanced-filtering] with the extra filt
 
 ```
 https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
-&fq=keywords:%22Astrophysics%20and%20Astronomy%22
-&fq=keywords:%22stellar%20astronomy%22
-&fq=author_names:%22Gaia%20collaboration%22
-&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
+&fq=keywords:"Astrophysics%20and%20Astronomy"
+&fq=keywords:"stellar%20astronomy"
+&fq=author_names:"Gaia%20collaboration"
+&fq=doi:"10.26093%5C%2Fcds%5C%2Fvizier.1355"
 ```
 
+
+![Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_fitering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023"}
+
+
+
+<!-- iframe commented on 22/06/23:  
 The resulting webpage is displayed below:
 
-<!-- Explore Portal records filtered by url as iframe-->
+//  Explore Portal records filtered by url as iframe 
 <iframe src="https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&fq=keywords:%22Astrophysics%20and%20Astronomy%22&fq=keywords:%22stellar%20astronomy%22&fq=author_names:%22Gaia%20collaboration%22&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22"
 title="Explore Portal search filtering by keywords, author names and DOI (from the url)"
 style="border: none; width: 98%; height: 800px; 
@@ -176,7 +195,7 @@ overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 Explore Portal search webpage: filtering by keywords, author names and DOI (from the url).
-
+-->
 
 
 ---
@@ -217,7 +236,10 @@ Browse through EOSC Portal to find some datasets and publications, and answer th
 Q1) What is the publication date for 'Brightest cluster galaxies in Abell clusters'?
 Q2) Which CDS service is listed in the 'Services' type of results?
 Q3) Can you list some 'cds-astro' Softwares available?
-Q4) If you published a paper or a dataset, type your name in the Search bar. What do you get as an output?
+Q4) Advanced question: can you find the dataset associated with the word 'Astronomy'
+and published by the 'National Radio Astronomy Observatory'? 
+Q5) If you published a paper or a dataset, type your name in the Search bar. 
+What do you get as an output?
 ```
 
 Hint: Browse through [EOSC Portal][eosc-portal] to answer the previous questions.
@@ -230,9 +252,13 @@ R1) This paper was published on [01 Jan 2017][eosc-question1-abell].
 
 R2) [SIMBAD][eosc-question2-service] is the service accessible through the EOSC website.
 
-R3) Examples of [softwares available][eosc-question3-software]: cds-astro/tutorials: v1.0.0, cds-astro/aladin-lite: Aladin Lite v3.1.1, cds-astro/cds-moc-rust: Release v0.5.2 ...
- 
+R3) Examples of [softwares available][eosc-question3-software]: [cds-astro/tutorials: v1.0.0][eosc-question3-tutorials], [cds-astro/aladin-lite: Aladin Lite v3.1.1][eosc-question3-alatin-lite], [cds-astro/cds-moc-rust: Release v0.5.2][eosc-question3-cds-moc-rust] ...
 
+R4) Select first 'Astronomy' in the Search bar, and 'Data' from the scrolling menu.
+Submit this search (press Enter on the keyboard) and then add '&fq=author_names:"National%20Radio%20Astronomy%20Observatory"' to the url.
+
+The search result Data should look like: [search-result][eosc-question4-dataset]
+ 
 :::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -265,4 +291,12 @@ R3) Examples of [softwares available][eosc-question3-software]: cds-astro/tutori
 ## End!
 
 This concludes this training on how to make your published astronomical data (table, images, spectra, …) FAIR and openly accessible to the community, and discoverable in Virtual Observatory tools such as EOSC.
+
+
+
+## Other ideas
+
+- Added value with EOSC
+- Integration done?
+
 
