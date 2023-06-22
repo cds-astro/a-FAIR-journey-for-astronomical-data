@@ -1,7 +1,7 @@
 ---
 title: "Explore EOSC"
 teaching: 10
-exercises: 2
+exercises: 1
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -21,19 +21,21 @@ exercises: 2
 
 
 <!--  ----------------------------------------- -->
-<!--            Overview                        -->
+<!--            EOSC	                        -->
 <!--  ----------------------------------------- -->
-## Overview
+## The European Open Science Cloud (EOSC)
 
-**Warning: Text from website // TO UPDATE**
+[EOSC Future][eosc-future] is an European Union funded H2020 project that is implementing the [European Open Science Cloud (EOSC)][eosc]. 
 
-[EOSC Future][eosc-future] is an EU-funded H2020 project that is implementing the [European Open Science Cloud (EOSC)][eosc]. EOSC will give European researchers access to a wide web of FAIR data and related services.
+The digital transformation of science is no longer a coming trend but a current reality. Beyond better connectivity, faster  processing,  and  more  reliable  storage,  this  has  enabled  a  wealth  of  value-generating  services  and  an ever-growing  wave  of  data  and  research  products.  As  these  developments  become  a  part  of  our  daily  lives,  the  digital transformation also brings new opportunities  for European research through the digital platforms which enable it: opportunities for significantly more reproducible research and a move to a more data-intensive and Open Science. The European Union’s leadership in Open Science contributes to advancing new scientific discoveries and market innovation, as well as opening science to the public and addressing societal challenges more effectively.
+
+The EOSC will allow for universal access to data and a new level playing field for EU researchers.
 
 
-*Ideas:*
+**Needed??**: 
 
-- Added value with EOSC
-- Integration done?
+- EOSC Future will unlock the potential of European research through a vision of Open Science for Society.
+- EOSC Future will reduce the current research fragmentation of disciplinary and national silos, as well as promote Findable, Accessible, Interoperable, and Reusable (FAIR) data, professionally provided services, and open research products.
 
 
 <!--  ----------------------------------------- -->
@@ -41,9 +43,7 @@ exercises: 2
 <!--  ----------------------------------------- -->
 ## EOSC Portal
 
-**Warning: Text from website // TO UPDATE**
-
-The [EOSC Portal][eosc-portal] is a gateway to information and resources in EOSC, providing updates on its governance and players, the projects contributing to its realisation, funding opportunities for EOSC stakeholders, relevant European and national policies, important documents, and recent developments. The EOSC Portal Catalogue & Marketplace acts as an entry point to the multitude of services and resources for researchers.
+The [EOSC Portal][eosc-portal] provides an interface to EOSC for researchers to utilise the full spectrum of EOSC resources, which include research publications, data, software, and value-added services to support their research.
 
 For prospective users of the services, the Portal provides training materials and tutorials on how to use its features. The Portal also offers information for potential service providers on how to onboard their services to the EOSC Portal Catalogue & Marketplace. 
 
@@ -107,15 +107,15 @@ In addition to the filters available on the left side of the [EOSC Marketplace r
 
 ### By keywords
 
-A filtering by **keywords** can be done from the url by adding the field '&fq=keywords:%22my%20astro%20keyword%22' to the url of the results. 
+A filtering by **keywords** can be done from the url by adding the field *&fq=keywords:"my%20astro%20keyword"* to the url of the results. 
 
-'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
-'%20' stands for the space.
+<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
+'%20' is the UTF-8 encoding for the space.
 'my astro keyword' is a placeholder for your desired keyword.
 
 For example to filter the results using the keywords 'Astrophyiscs and Astronomy' and 'stellar astronomy', one can do: 
-&fq=keywords:%22Astrophysics%20and%20Astronomy%22
-&fq=keywords:%22stellar%20astronomy%22
+&fq=keywords:"Astrophysics%20and%20Astronomy"
+&fq=keywords:"stellar%20astronomy"
 
 :::::::::::::::::::::::::
 
@@ -124,15 +124,15 @@ For example to filter the results using the keywords 'Astrophyiscs and Astronomy
 ### By author names
 
 A filtering by **author names** can also be done from the url by adding the field 
-'&fq=author_names:%22my%20favourite%20author%22'
+*&fq=author_names:"my%20favourite%20author"*
 to the url of the results. 
 
-'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
-'%20' stands for the space.
+<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
+'%20' is the UTF-8 encoding for the space.
 'my favourite author' is a placeholder for the author names.
 
 For example to filter the results to see only the ones from the 'Gaia collaboration', one can do:
-&fq=author_names:%22Gaia%20collaboration%22
+&fq=author_names:"Gaia%20collaboration"
 
 :::::::::::::::::::::::::
 
@@ -141,15 +141,15 @@ For example to filter the results to see only the ones from the 'Gaia collaborat
 ### By DOI
 
 Filtering by **DOI** can also be done from the url by adding the field 
-'&fq=doi:%22mydoi%5C%2Fnumber%22'
+*&fq=doi:"mydoi%5C%2Fnumber"*
 to the url of the results. 
 
-'%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. 
+<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
 '%5C%2F' stands for the slash.
 'mydoi/number' is a placeholder for the DOI.
 
 For example to filter the results to see only the DOI of Gaia DR3, one can add: 
-&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
+&fq=doi:"10.26093%5C%2Fcds%5C%2Fvizier.1355"
 
 :::::::::::::::::::::::::
 
@@ -160,11 +160,17 @@ An example of [modified url][eosc-portal-advanced-filtering] with the extra filt
 
 ```
 https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
-&fq=keywords:%22Astrophysics%20and%20Astronomy%22
-&fq=keywords:%22stellar%20astronomy%22
-&fq=author_names:%22Gaia%20collaboration%22
-&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
+&fq=keywords:"Astrophysics%20and%20Astronomy"
+&fq=keywords:"stellar%20astronomy"
+&fq=author_names:"Gaia%20collaboration"
+&fq=doi:"10.26093%5C%2Fcds%5C%2Fvizier.1355"
 ```
+
+
+![Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_fitering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023"}
+
+
+
 
 The resulting webpage is displayed below:
 
@@ -272,4 +278,12 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 ## End!
 
 This concludes this training on how to make your published astronomical data (table, images, spectra, …) FAIR and openly accessible to the community, and discoverable in Virtual Observatory tools such as EOSC.
+
+
+
+## Other ideas
+
+- Added value with EOSC
+- Integration done?
+
 
