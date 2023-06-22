@@ -245,7 +245,7 @@ This meta-data checking is also completed during the [VizieR submission service]
 <!-- VizieR FITS validator as iframe-->
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" 
 title="VizieR FITS validator tool webpage" 
-style="border: solid 1px; width: 95%; height: 550px; 
+style="border: 1px solid black; width: 95%; height: 550px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
