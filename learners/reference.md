@@ -23,6 +23,19 @@ FAIR
 
 
 <!-- -->
+MRT
+: Machine-Readable Table
+
+
+
+<!-- -->
+SED
+: Spectral Energy Distribution
+
+Graph of the energy emitted by a star as a function of wavelength. 
+
+
+<!-- -->
 VO
 : Virtual Observatory
 
