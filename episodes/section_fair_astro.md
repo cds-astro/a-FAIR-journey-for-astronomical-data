@@ -1,6 +1,6 @@
 ---
 title: "FAIR principles for astronomical data"
-teaching: 10
+teaching: 13
 exercises: 3
 ---
 
@@ -32,10 +32,10 @@ In order to ensure the scientific quality of the data, we therefore require that
 
 Furthermore, the data should be *described* accurately enough to allow an unambiguous interpretation of the data, and faciliate their usability. 
 
-In this course, we will review in this course the best practices for data publication in the astronomical field.
+In this chapter, we will review the best practices for data publication in the astronomical field.
 
 
-![Journey from a publication to EOSC: step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step data published in a refereed paper"}
+![Journey from a publication to EOSC: step peer reviewed datasets **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step1.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step data published in a refereed paper"}
 
 
 
@@ -49,7 +49,7 @@ Formalized by Wilkinson et al. in 2016 ([10.1038/sdata.2016.18][wilkinson_2016])
 Many great courses can be found online explaining those principles in more details.
 In this course, we will summarize them and focus more on what it means for astronomical data. 
  
-![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/fair_principles.png){alt="Findable Accessible Interoperable Reusable principes"}
+![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/fair_principles.png){alt="Findable Accessible Interoperable Reusable principles cartoon from 'Open Science Training Handbook'"}
 *Credit: Open Science Training Handbook, CC0 1.0 Universal, https://doi.org/10.5281/zenodo.1212496*
 
 
@@ -146,7 +146,7 @@ R1. Meta(data) are richly described with a plurality of accurate and relevant at
 <!--  ----------------------------------------- -->
 ## Best Practices for Data Publication in the Astronomical Literature
 
-In 2022, Chen et al. ([10.3847/1538-4365/ac6268][Chen_2022]) published a set of guidelines summarizing the best practices for publishing data in astronomy and astrophysics journals. 
+In 2022, Chen et al. (DOI: [10.3847/1538-4365/ac6268][Chen_2022]) published a set of guidelines summarizing the best practices for publishing data in astronomy and astrophysics journals. 
 
 These recommendations are intended for authors, referees, and science editors to consult in order to avoid various pit-falls that often impede the interpretation of data and metadata by readers, and parsing by software, and therefore also complicate and delay integration of the data into astronomical databases.
 
@@ -154,7 +154,7 @@ Everyone is encouraged to read their paper. For the sake of this course, only th
 
 
 <!--  ----------------------------------------- -->
-Items covered in the Checklist:
+Items covered in the Checklist (and also below):
 
 - [General rules](#general_rules)
 - [Nomenclature](#nomenclature)

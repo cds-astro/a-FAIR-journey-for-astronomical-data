@@ -51,7 +51,8 @@ style="border: none; width: 120%; height: 1250px;
 VizieR homepage webpage. Note that you can type in (it is not an image).
 
 
-VizieR was initially started as a joint effort of [CDS (Centre de Données astronomiques de Strasbourg)][cds-home] and ESA-ESRIN (Information Systems Division), and is now fully managed by CDS. VizieR has been available since 1996, and was described in a [paper published in 2000][vizier-first-publi].
+VizieR was initially started as a joint effort of [CDS (Centre de Données astronomiques de Strasbourg)][cds-home] and ESA-ESRIN (Information Systems Division), and is now fully managed by CDS. VizieR has been available since 1996, and was described in a paper published in 2000 (DOI: [10.1051/aas:2000169][vizier-first-publi]).
+
 
 Note that VizieR does not contain all available online catalogues: some catalogues are not suitable and some less frequently used catalogues have not yet been incorporated into the VizieR database. The full list of catalogues is available from there: [Catalogue collection page][vizier-catalogue-collection].
 
