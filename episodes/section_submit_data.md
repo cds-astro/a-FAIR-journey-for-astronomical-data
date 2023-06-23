@@ -133,7 +133,8 @@ In this template, you can find:
 - *First line*: catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
 
 ::: callout
-In case 
+The **volume** and **page numbers**: 
+ 
 - for papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
 - for papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
 :::
