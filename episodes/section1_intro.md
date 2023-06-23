@@ -1,7 +1,7 @@
 ---
 title: "Why distribute your data through VizieR?"
-teaching: 10
-exercises: 2
+teaching: 2
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -55,9 +55,7 @@ VizieR was initially started as a joint effort of [CDS (Centre de Données astro
 
 Note that VizieR does not contain all available online catalogues: some catalogues are not suitable and some less frequently used catalogues have not yet been incorporated into the VizieR database. The full list of catalogues is available from there: [Catalogue collection page][vizier-catalogue-collection].
 
-![VizieR Catalogue collection page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png){alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023"}
-
-
+![VizieR Catalogue collection page - example for Gaia DR3 (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png){alt="Screenshot: VizieR Catalogue collection page, example for 'mission: gaia DR3', from May 2023"}
 
 
 
@@ -68,12 +66,12 @@ Note that VizieR does not contain all available online catalogues: some catalogu
 <!-- Source: Presentation Gilles AAS 2021 -->
 ## What is a VizieR catalogue?
 
-Looking at the catalogue level:
+We call a VizieR catalogue:
 
 - A set of documented tables (including a ReadMe file)
-- An indexation by keywords, authors, date ...
-- A global indexation by position
-- Citation capability (bibcode or DOI)
+- With an indexation by keywords, authors, date ...
+- With a global indexation by position
+- And citation capability (bibcode or DOI)
 
 Optionally contains:
 
@@ -105,13 +103,13 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - Perform a fast [cross-match identification][xmatch-home] between VizieR tables or Simbad
 - Load your tables in [Aladin][aladin-home]
 - Plot [photometry (SED)][vizier-sed] including all VizieR 
-- Query VizieR [associated data][vizier-assoc-data] (images, spectra, timeseries)   
+- Query VizieR [associated data][vizier-assoc-data] (images, spectra, time series)   
 - Load your data as a VO Table using [TOPCAT][topcat]
 - Query all VizieR catalogues using [CDS Python package][vizier-api]
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 
 
-![VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and other VO tools overview"}
+![VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and the interoperability with other VO tools. The full list of VO tools is described just above."}
  
 
 <!--  ----------------------------------------- -->
@@ -126,7 +124,7 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 	- VO Registries: CDS Registry, [IVOA Registry of Registries (RofR)][ivoa-registry]
 	- [Eudat][eudat]
 	- [Astrophysics Data System (ADS)][ads]
-	- [European Open Science Cloud (EOSC) Future][eosc-portal]
+	- [European Open Science Cloud (EOSC) Portal][eosc-portal]
 - Step in the VO: interoperability with other tools, eg.
 	- [CASSIS][cassis]
 	- [Splat][splat]
@@ -169,7 +167,7 @@ Distribute your data in a trusted repository in accordance with Open Data princi
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what type of data can be published, how to prepare and publish them, and finally how to search your data using the EOSC tools. 
+In the next chapters, you will learn what type of data can be submitted, how to prepare and submit them to VizieR, and finally how to search your data using the EOSC tools. 
 
 
 
