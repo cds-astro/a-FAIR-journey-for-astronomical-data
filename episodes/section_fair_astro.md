@@ -171,6 +171,8 @@ Items covered in the Checklist (and also below):
 
 :::::::::::::::::::::::::::::::::::::: callout
 
+# Keep calm and carry on
+
 A lot of items will be covered in this section. We are aware that you could be a bit overwhelming.
 Small tips for FAIR tables are given at the bottom of this Chapter. 
 

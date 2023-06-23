@@ -1,13 +1,14 @@
 ---
 title: "Preparing your data"
-teaching: 10
-exercises: 2
+teaching: 3
+exercises: 1
 ---
 
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What kind of data can be submitted (tables, images) ?
+- What kind of data can be submitted to VizieR?
+- Which formats are accepted?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -31,19 +32,18 @@ In order to facilitate the usability of the data, and to allow their processing 
 - the data are in a format which allows their usage by tools currently in usage in our discipline - normally *flat ascii files*; other formats can be accepted, but are converted into flat files.
 
 
-The present course just tries to answer to some frequently asked question about how to prepare the data for their inclusion in the Data Center documents.
-
-A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
-
-
 The following data types are accepted:
 
 - Tables
-- Associated data : images, spectra, sed (**still true???** -- AG), time series, cube
-- Other types: MOC / Hips (**REALLY???** -- AG)
+- Associated data : images, spectra, SED, time series, cube
 
 
-![Journey from a publication to EOSC: step preparation of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step preparation of the data"}
+In this chapter, we will answer to some frequently asked questions about how to prepare the data for their inclusion in VizieR.
+
+
+![Journey from a publication to EOSC: second step of the journey - step preparation of the data **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step2.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
+
+
 
 
 <!--  ----------------------------------------- -->
@@ -52,15 +52,19 @@ The following data types are accepted:
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 -->
 ## Tables
 
-![Example of VizieR table ingested: catalogue Gaia DR3 - ref I/355/gaiadr3 (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Example of VizieR table ingested"}
+Tables are the main data types accepted. An [example of ingested table][vizier-table-gaia-dr3] is shown below. 
 
-Link to example: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3
+![Example of a VizieR table ingested: catalogue Gaia DR3 - ref I/355/gaiadr3 (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Screenshot: Example of a VizieR table ingested. The figure shows the first 20 rows for the table 'I/355/gaiadr3'."}
+
 
 
 <!--  ----------------------------------------- -->
-### Accepted format
 
 The following formats are welcome: 
+
+:::::::::::::::::::::::::::::::::::::: prereq
+
+### Accepted format
 
 - Machine-Readable Tables (MRT / FORTRAN format)
 - TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values) files containing a first line with column description is accepted
@@ -70,13 +74,10 @@ The following formats are welcome:
 
 Note: zip and gzip compression are allowed. Archives should not contain directories.
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 The [new submit web application][vizier-submit-login] allows different formats for tables and helps you to ingest your data.
-
-
-**Is is true?? -- From AG==>
-Some other data formats can be accepted, but are converted into flat files (ascii??): latex, FITS, or TSV / CSV.**
-
-
 
 
 <!--  ----------------------------------------- -->
@@ -89,15 +90,19 @@ Postscript or word/excel files.
 <!--  ----------------------------------------- -->
 ### Checklist when creating a table
 
-- An explanation is given for all the columns (at least a clear label; at best, few words of explanation)
-- Units are given for all the columns (when relevant)
+:::::::::::::::::::::::::::::::::::::: checklist
+
+- An explanation is given for all the columns (at least a clear label; at best, few words of explanation).
+- Units are given for all the columns (when relevant).
 - For tables with sources, give coordinates as accurate as possible:
-	- A bonus would be to have their uncertainty
-	- Another bonus would be to have their wavelength
-- As recommended by the IAU, a non-altered name is given for the sources (in addition to the coordinates)
-- It is really much better to stick to the same object name from a table to another
+	- A bonus would be to have their uncertainty.
+	- Another bonus would be to have their wavelength.
+- As recommended by the IAU, a non-altered name is given for the sources (in addition to the coordinates).
+- It is really much better to stick to the same object name from a table to another.
 - One column is homogeneous, i.e. does not mix different measurements having different units or errors with limit values or flags.
 - If the measurements come from other papers, the references to those papers should be explicitly given using the bibcode.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Following this checklist will help improving the efficiency of the ingestion in VizieR and also the visibility and reusability of your data :).
 
@@ -106,13 +111,18 @@ Following this checklist will help improving the efficiency of the ingestion in 
 <!-- 		Associated date			-->
 <!--  ----------------------------------------- -->
 <!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section3 -->
-## Associated data: images, time series, spectra
+## Associated data: images, spectra, time series, cube
 
-![Example of VizieR associated data from the Saada page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Example of VizieR spectra ingested"}
+In addition to the Tables, other data type are associated. 
 
-### Accepted format
+![Example of VizieR associated data from the Saada page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. "}
+
 
 Reusable file formats for associated:
+
+:::::::::::::::::::::::::::::::::::::: prereq
+
+### Accepted format
 
 | Product type  		| Accepted format      |
 | -------------			| :------------------: | 
@@ -122,10 +132,11 @@ Reusable file formats for associated:
 |cube				| FITS		       |
 
 
-**Note: Only FITS files will be indexed and accessible through the [VizieR associated data service][vizier-assoc-data] and through the Virtual Observatory**
+**Note: Although multiple formats are accepted, only FITS files will be indexed and accessible through the [VizieR associated data service][vizier-assoc-data] and through the Virtual Observatory**. 
+The other formats will still be accessible through the FTP. 
 
-**Question -- From AG**: Are the data all converted to FITS?
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::
 
 <!--  ----------------------------------------- -->
 ### What cannot be used
@@ -146,7 +157,10 @@ As a good practice, any FITS header should provide:
 - WCS projections for positions and spectral data
 - [Standard FITS keywords][fits-nasa] described in the NASA FITS description.
 
-List of important keywords to be included:
+
+:::::::::::::::::::::::::::::::::::::: checklist
+
+# List of important keywords to be included:
 
 - **Positions**
 	- target name
@@ -159,16 +173,7 @@ List of important keywords to be included:
 
 For the sake of clarity and simplicity, we ask the authors, whenever possible, to stick to the "1 item = 1 file" rule, i.e. 1 star spectrum per file, for instance. In this simplest context, fits files should ideally also have only 1 HDU. 
 
-
-
-<!--  ----------------------------------------- -->
-<!-- 		Other types			-->
-<!--  ----------------------------------------- -->
-## Other types??
-
-- MOC
-- Hips
-
+:::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 <!--  ----------------------------------------- -->
@@ -263,7 +268,7 @@ VizieR FITS validator tool webpage
 Data types accepted:
 
 - Tables (including at least a ReadMe file)
-- Associated data : images, spectra, sed (**still true???** -- AG), time series, cube
+- Associated data : images, spectra, SED, time series, cube
 	
 Preferred formats:
 
@@ -281,6 +286,7 @@ Preferred formats:
 
 - [Standard for Documentation of Astronomical Catalogues (from VizieR website)][vizier-standard-convention]
 
+A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
 
 <!--  ----------------------------------------- -->
@@ -288,7 +294,7 @@ Preferred formats:
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn how to submit your data, and finally how to search your data using the EOSC tools. 
+In the next chapters, you will learn how and where to submit your data, and finally how to search your data using the EOSC tools. 
 
 
 
