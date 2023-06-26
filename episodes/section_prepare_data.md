@@ -278,7 +278,7 @@ style="border: 1px solid black; width: 95%; height: 550px;
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
-VizieR FITS validator tool webpage
+VizieR FITS validator tool webpage. Note that you can test your FITS directly (it is not an image).
 
 
 <!--  ----------------------------------------- -->
@@ -307,7 +307,7 @@ Preferred formats:
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn how and where to submit your data, and finally how to search your data using the EOSC tools. 
+In the next chapters, you will learn how to submit your data to VizieR, and finally how to search your data using the EOSC tools. 
 
 
 

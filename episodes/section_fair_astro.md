@@ -810,7 +810,7 @@ of data contained in the article.
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn how to prepare your data before submitting them to VizieR, and ultimately how to search your data using the EOSC tools.
+In the next chapters, you will learn what are the different submission routes (depending on your journal) and then how to prepare and submit your data to VizieR. Ultimately you will see how to search your data using the EOSC tools.
 
 
 
