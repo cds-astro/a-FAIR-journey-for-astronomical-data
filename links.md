@@ -45,6 +45,7 @@ any links that you are not going to use.
 [vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
 <!-- VizieR example Gaia DR3-->
 [vizier-gaia-dr3]: https://doi.org/10.26093/cds/vizier.1355
+[vizier-table-gaia-dr3]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3
 
 <!-- -->
 <!-- Journals -->
