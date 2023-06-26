@@ -1,7 +1,7 @@
 ---
 title: "Submitting astronomical data"
-teaching: 10
-exercises: 2
+teaching: 5
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -27,43 +27,22 @@ exercises: 2
 
 Two routes are possible to submit your data to VizieR:
 
-- Option 1: Use the submission online interface
+- Option 1: Use the submission **online interface**
 	- Some basic checks on the ReadMe and data files are performed. 
 	- It also includes FITS ingestion procedure to improve the discoverability of images and spectra.
-- Option 2: Use the Python cdspyreadme library to create the ReadMe file and then upload all the tables and other data by FTP
+- Option 2: Use the **Python cdspyreadme library** to create the ReadMe file and then upload all the tables and other data by **FTP**
 
 
 <!-- #### Special case: large volumetry -->
 The submission web application is an HTTP service and depends of authors network. The process is dedicated for tables size less than 100Mb but accepts tables until ~200Mb. 
 
-For larger files, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+
+<!-- Contact CDS -->
+For larger files or any other questions, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
 
+![Journey from a publication to EOSC: third step of the journey - step submission of the data **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step3.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data"}
 
-### Other possibilities: to keep?
-
-**Do we keep the following information ???**
-
-
-#### Email
-
-E-mail your files to the e-mail address [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) if these are not too bulky (< a few Megabytes).
-
-
-#### Others
-
-Contact us for other possibilities like download from your site, DVD posting, etc... at: 
-
-Centre de Données astronomiques
-
-11, rue de l'Université
-
-67000 STRASBOURG, France
-
-[cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)
-
-
-![Journey from a publication to EOSC: step submission](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: step submission of the data"}
 
 
 
@@ -80,7 +59,7 @@ Every catalogue in the Virtual Observatory registry has its own *Readme*.
 Numerous examples can be found on the [FTP directories][vizier-ftp-cats] at CDS.
 
 ::: callout
-In this section, we give a lot of details. It can be overwhelming, but next section covers the tools that exist to help generating a correct Readme file
+In this section, we give a lot of details. It can be overwhelming, but next section covers the tools that exist to help generating a correct Readme file.
 :::
 
 The [Standards for Astronomical Catalogues][vizier-readme-std], is a complete description of the standard for Readme files. 
@@ -132,20 +111,25 @@ In this template, you can find:
 
 - *First line*: catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
 
-::: callout
+:::::::::::::::::::::::::::::::::::::: callout
 The **volume** and **page numbers**: 
  
 - for papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
 - for papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
-:::
+::::::::::::::::::::::::::::::::::::::
+
 
 - the **Keywords** lists the following keywords:
     + *ADC\_Keywords* introduces the list of data-related keywords, out of a controlled set $# TODO: find this set$
     + *Keywords*:   introduces the list of keywords as in the publication
 
-::::::::::::::::: callout
+
+:::::::::::::::::::::::::::::::::::::: callout
+
 Unlike the *Keywords* that are generally related to the scientific content of a paper, the *ADC\_Keywords* are stricly related to the tabular material collected in the catalogue.
-:::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::
+
 
 - the **Description** is expected to give the *context of the data*, such as instrumentation or observing conditions. 
 It therefore differs from the *Abstract* which describes the *scientific results* that the author(s) derived from the data.
@@ -232,6 +216,13 @@ But in any case, do your best and the CDS team will make sure that your data is 
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 ### Submission form (option 1): step-by-step
 
+The first option is to use the online interface available at: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login].
+
+No account creation is needed. One just needs to create a name for the session, eg. *my_unique_id_2023*.
+Note that the system 
+
+
+
 <!-- Submission form Vizier as iframe -->
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/"
 title="VizieR catalogue upload webpage"
@@ -243,9 +234,14 @@ VizieR catalogue upload webpage.
 Note that it is not an image, you can submit your files directly from here.
 
 
-Link: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login]
+More detailed information on how to use this service can be found on the [VizieR catalogue upload (HELP) page][vizier-submit-data-help].
 
-Documentation: [doc][vizier-submit-data-help]
+
+![VizieR catalogue upload page - start uploading Tables (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023"}
+
+
+-------
+
 
 
 <!--  ----------------------------------------- -->
@@ -291,12 +287,18 @@ Once the data are public, they are accessible as plain files in [FTP directories
 <!--            Summary                         -->
 <!--  ----------------------------------------- -->
 
-## Summary
+## Summary: Data submission and curation
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
+2 options for data submission:
+
+- Online interface
+- File Transfer Protocol
+
 - Readme files are highly standardised to allow reusability and cross matching between catalogs.
-- A delay is needed for VizieR curation and validation!
+
+- Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
