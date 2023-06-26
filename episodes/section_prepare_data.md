@@ -39,6 +39,7 @@ The following data types are accepted:
 
 
 In this chapter, we will answer to some frequently asked questions about how to prepare the data for their inclusion in VizieR.
+A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
 
 ![Journey from a publication to EOSC: second step of the journey - step preparation of the data **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step2.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
@@ -66,11 +67,16 @@ The following formats are welcome:
 
 ### Accepted format
 
-- Machine-Readable Tables (MRT / FORTRAN format)
 - TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values) files containing a first line with column description is accepted
+	-  Comments (line beginning by #) are not accepted
 - ASCII aligned files
-- FITS files
+	- Original ASCII format used in VizieR
 - VOTable
+	- Standard XML output defined by the IVOA.
+VizieR allows to upload VOTable which contain a single table.
+- FITS table
+	- FITS containing only one HDU
+- Machine-Readable Tables (MRT / FORTRAN format)
 
 Note: zip and gzip compression are allowed. Archives should not contain directories.
 
@@ -182,11 +188,12 @@ For the sake of clarity and simplicity, we ask the authors, whenever possible, t
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 2 -->
 ## File naming conventions
 
-According to ISO 9660 standard, file names are restricted to **8 + 3** characters: 
+According to ISO 9660 standard, filenames are written as *name.extension*, with at most 8 characters for name and 3 characters for extension as detailed below:
 
-- 8 characters in the set [a-z0-9 _ -], 
+- 8 alphanumeric characters, plus the minus sign and the underscore, are allowed ([a-z0-9\_-])
+	- For files corresponding to published material, the names are consistent with the published paper, and we use tablen.extension to refer to the table numbered n in the published paper, fign.extension for the figure numbered n, etc.
 - Followed by a dot 
-- And an extension made of 3 characters with the following conventions: 
+- And an extension made of 3 characters related to the format of the files, following the conventions: 
 	- **.dat** for data files, 
 	- **.fit** for FITS files, 
 	- **.tex** for TeX/LaTeX files, 
@@ -197,9 +204,6 @@ Full details about the files and directories structures can be found in the [Ado
 
 
 <!--  ----------------------------------------- -->
-
-**Idea:Test those names on the VizieR website**
-
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
@@ -214,24 +218,44 @@ Show some good and bad examples of filenames.
 
 
 ```
-[Q1] 'my_awesome_file.fit'
-[Q2] 'TABLE998.dat'
-[Q3] 'myfile.jpg'
-[Q4] 'table.dat'
-[Q5] 'table&data.dat'
+Q1) 'TABLE998.dat'
+Q2) 'table.4.long.version.dat'
+Q3) 'table.dat'
+Q4) 'test+table.dat'
+Q5) 'my_table.data'
+Q6) 'table&data.dat'
+
+Q7) 'my_awesome_file.fit'
+Q8) 'myfile.jpg'
 ```
 
 :::::::::::::::::::::::: solution
 
 ## Show me the solution
 
-```
-[1] "No: too long"
-[2] "No: Uppercase detected"
-[3] "No: Good length, but extension not supported"
-[4] "Yes: correct"
-[5] "No: & character not supported"
-```
+R1) No: filenames should be in lowercase.
+
+R2) No: filename too long. This filename will be shortened afterwards anyway.
+
+R3) Yes: correct.
+
+R4) No: '+' character not supported.
+
+R5) No: data files are represented as '.dat'.
+
+R6) No: '&' character not supported
+
+------
+
+
+R7) "No: too long"
+==> Only FITS containing tables are available here
+// **To test**
+
+R8) "No: Good length, but extension not supported"
+==> file image/jpeg is not accepted
+// **To test**
+
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -276,17 +300,6 @@ Preferred formats:
 - For the associated data, the FITS format is the preferred solution
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-<!--  ----------------------------------------- -->
-<!-- 		Documentation 			-->
-<!--  ----------------------------------------- -->
-## More information 
-
-- [Standard for Documentation of Astronomical Catalogues (from VizieR website)][vizier-standard-convention]
-
-A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
 
 <!--  ----------------------------------------- -->

@@ -707,10 +707,10 @@ Give some examples of ambiguous facility/ telescope/instrument names from the li
 ## Quiz: Can you guess the names of these facilities?
 
 ```
-[Q1] ARO
-[Q2] DDO
-[Q3] EMIR
-[Q4] OSIRIS
+Q1) ARO
+Q2) DDO
+Q3) EMIR
+Q4) OSIRIS
 ```
 
 :::::::::::::::::::::::: solution
