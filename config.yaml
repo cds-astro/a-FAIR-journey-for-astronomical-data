@@ -61,8 +61,8 @@ contact: 'cats@cdsarc.u-strasbg.fr'
 episodes: 
 - section1_intro.md
 - section_fair_astro.md
-- section_prepare_data.md
 - section_submission_per_journals.md
+- section_prepare_data.md
 - section_submit_data.md
 - section_eosc.md
 

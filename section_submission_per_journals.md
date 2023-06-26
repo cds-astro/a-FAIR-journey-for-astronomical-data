@@ -1,7 +1,7 @@
 ---
 title: "Submission routes and journals"
-teaching: 10
-exercises: 2
+teaching: 3
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -152,7 +152,7 @@ Examples of other journals included in VizieR (and percentage of catalogues inge
 
 Bigger catalogues are usually **directly retrieved by VizieR** (from ESA, ESO, NASA, Stsci, …), after selection by CDS astronomers.
 
-Note that the CDS is **not a mirror**, and a selection on the columns is done.
+Note that the CDS is **not a mirror**, and a selection on the columns can be done.
 
 Type of big catalogues included:
 
@@ -207,7 +207,7 @@ To face an increasing volume and according to the CDS mission, VizieR selects th
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn how to submit your data to VizieR step-by-step, and then you will follow the journey of your data in the Virtual Observatory and up to EOSC. 
+In the next chapters, you will learn how to prepare and submit your data to VizieR step-by-step, and then you will follow the journey of your data in the Virtual Observatory and up to EOSC. 
 
 
 
