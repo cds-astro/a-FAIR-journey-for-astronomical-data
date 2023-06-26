@@ -178,7 +178,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="section_prepare_data.html">3. Preparing your data</a>
+        <a href="section_submission_per_journals.html">3. Submission routes and journals</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -187,7 +187,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="section_submission_per_journals.html">4. Submission routes and journals</a>
+        <a href="section_prepare_data.html">4. Preparing your data</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -262,13 +262,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Why distribute your data through VizieR?</h1>
-        <p> Last updated on 2023-06-22 | 
+        <p> Last updated on 2023-06-26 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section1_intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
-        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+        <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 2 minutes </p>
         
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -332,20 +332,20 @@ image).</p>
 <p>VizieR was initially started as a joint effort of <a href="https://cds.unistra.fr/" class="external-link">CDS (Centre de Données astronomiques de
 Strasbourg)</a> and ESA-ESRIN (Information Systems Division), and is now
 fully managed by CDS. VizieR has been available since 1996, and was
-described in a <a href="https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract" class="external-link">paper
-published in 2000</a>.</p>
+described in a paper published in 2000 (DOI: <a href="https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract" class="external-link">10.1051/aas:2000169</a>).</p>
 <p>Note that VizieR does not contain all available online catalogues:
 some catalogues are not suitable and some less frequently used
 catalogues have not yet been incorporated into the VizieR database. The
 full list of catalogues is available from there: <a href="https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on" class="external-link">Catalogue
 collection page</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for Gaia DR3, from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page (screenshot)</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 --></section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for 'mission: gaia DR3', from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page - example for Gaia
+DR3 (screenshot)</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 --></section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
 </h2>
-<hr class="half-width"><p>Looking at the catalogue level:</p>
+<hr class="half-width"><p>We call a VizieR catalogue:</p>
 <ul><li>A set of documented tables (including a ReadMe file)</li>
-<li>An indexation by keywords, authors, date …</li>
-<li>A global indexation by position</li>
-<li>Citation capability (bibcode or DOI)</li>
+<li>With an indexation by keywords, authors, date …</li>
+<li>With a global indexation by position</li>
+<li>And citation capability (bibcode or DOI)</li>
 </ul><p>Optionally contains:</p>
 <ul><li>Photometry assignment to populate the VizieR SED service</li>
 <li>FITS Spectra, images and plots</li>
@@ -375,14 +375,14 @@ identification</a> between VizieR tables or Simbad</li>
 <li>Plot <a href="http://vizier.cds.unistra.fr/vizier/sed/" class="external-link">photometry
 (SED)</a> including all VizieR</li>
 <li>Query VizieR <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">associated data</a>
-(images, spectra, timeseries)<br></li>
+(images, spectra, time series)<br></li>
 <li>Load your data as a VO Table using <a href="http://www.starlink.ac.uk/topcat/" class="external-link">TOPCAT</a>
 </li>
 <li>Query all VizieR catalogues using <a href="https://github.com/cds-astro/cds.cdsclient/" class="external-link">CDS Python
 package</a>
 </li>
 <li>VizieR tables with astronomical objects can be processed in <a href="http://simbad.cds.unistra.fr/simbad/" class="external-link">SIMBAD</a>.</li>
-</ul><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg" alt="Figure: VizieR and other VO tools overview" class="figure mx-auto d-block"><figcaption>VizieR catalogues accessible through many VO
+</ul><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg" alt="Figure: VizieR and the interoperability with other VO tools. The full list of VO tools is described just above." class="figure mx-auto d-block"><figcaption>VizieR catalogues accessible through many VO
 tools</figcaption></figure><!--  ----------------------------------------- --><!--    Why distribute your data through Vizier --><!--  ----------------------------------------- --><!-- Source: Written notes from Gilles --></section><section id="why-distribute-your-data-through-vizier"><h2 class="section-heading">Why distribute your data through VizieR?<a class="anchor" aria-label="anchor" href="#why-distribute-your-data-through-vizier"></a>
 </h2>
 <hr class="half-width"><p>In addition to the interoperability with the VO tools mentioned
@@ -396,7 +396,7 @@ Registry of Registries (RofR)</a>
 <li><a href="https://ui.adsabs.harvard.edu/classic-form" class="external-link">Astrophysics
 Data System (ADS)</a></li>
 <li><a href="https://eosc-portal.eu/" class="external-link">European Open Science Cloud (EOSC)
-Future</a></li>
+Portal</a></li>
 </ul></li>
 <li>Step in the VO: interoperability with other tools, eg.
 <ul><li><a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a></li>
@@ -447,8 +447,8 @@ citation</li>
 </section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
 <hr class="half-width"><p>In the next chapters, you will learn what type of data can be
-published, how to prepare and publish them, and finally how to search
-your data using the EOSC tools.</p>
+submitted, how to prepare and submit them to VizieR, and finally how to
+search your data using the EOSC tools.</p>
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
@@ -533,9 +533,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/section1_intro.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section1_intro.html",
-  "dateCreated": "2023-06-22",
-  "dateModified": "2023-06-22",
-  "datePublished": "2023-06-22"
+  "dateCreated": "2023-06-26",
+  "dateModified": "2023-06-26",
+  "datePublished": "2023-06-26"
 }
 
   </script><script>
