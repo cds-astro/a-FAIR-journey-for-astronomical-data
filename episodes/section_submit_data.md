@@ -297,9 +297,9 @@ Once the data are public, they are accessible as plain files in [FTP directories
 - Online interface
 - File Transfer Protocol
 
-- *ReadMe* files are highly standardised to allow reusability and cross matching between catalogs.
+*ReadMe* files are highly standardised to allow reusability and cross matching between catalogs.
 
-- Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
+Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

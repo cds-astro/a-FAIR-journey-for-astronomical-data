@@ -1,14 +1,14 @@
 ---
-title: "Journey of your data in the VO"
+title: "Journey of your data in the VO and EOSC"
 teaching: 5
 exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What happens to your data?
+- What happens to your data after their ingestion in VizieR??
 - How does your published data get into EOSC?
-- Why publishing in EOSC / VO?
+- Why publish to EOSC / VO?
 - How do you find your data in EOSC?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -37,6 +37,21 @@ Once your data have been successfully ingested into VizieR, they begin their jou
 <!--            EOSC	                        -->
 <!--  ----------------------------------------- -->
 ## The European Open Science Cloud (EOSC)
+
+
+
+EOSC is the European web of FAIR data and related services for research. It aims to make research data easy to find, access, interoperate and reuse (FAIR), making trusted and sustainable research outputs available within and across scientific disciplines. 
+
+The EOSC ambition is to federate existing data, research and e-infrastructures to make them all available to European researchers across borders and across disciplines.
+
+EOSC Future is an European Union funded H2020 project that is implementing the European Open Science Cloud (EOSC). It is a work in progress!
+
+
+
+
+-----
+
+
 
 [EOSC Future][eosc-future] is an European Union funded H2020 project that is implementing the [European Open Science Cloud (EOSC)][eosc]. 
 
