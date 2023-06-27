@@ -237,7 +237,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="section_eosc.html">6. Journey of your data in the VO</a>
+        <a href="section_eosc.html">6. Journey of your data in the VO and EOSC</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -1971,7 +1971,7 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-06-26 | 
+<p> Last updated on 2023-06-27 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 4 minutes </p>
@@ -2025,9 +2025,9 @@ formats can be accepted, but are converted into flat files.</li>
 <li>Associated data : images, spectra, SED, time series, cube</li>
 </ul>
 <p>In this chapter, we will answer to some frequently asked questions
-about how to prepare the data for their inclusion in VizieR. A full
-description of the standard conventions used for the documentation of
-the catalogues is available from <a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">there</a>.</p>
+about how to prepare the data for their inclusion in VizieR.</p>
+<p>A full description of the standard conventions used for the
+documentation of the catalogues is available from <a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">there</a>.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step2.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: second step of
 the journey - step preparation of the data <strong>(WARNING: OLD image
 to UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
@@ -2418,10 +2418,10 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-06-26 | 
+<p> Last updated on 2023-06-27 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 12 minutes </p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 5 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2458,44 +2458,30 @@ standards.</li>
 <hr class="half-width">
 <p>Two routes are possible to submit your data to VizieR:</p>
 <ul>
-<li>Option 1: Use the submission online interface
+<li>Option 1: Use the submission <strong>online interface</strong>
 <ul>
-<li>Some basic checks on the ReadMe and data files are performed.</li>
+<li>The upload will generate a <em>ReadMe</em> file based on your
+tables.</li>
+<li>Some basic checks on the <em>ReadMe</em> and data files are
+performed.</li>
 <li>It also includes FITS ingestion procedure to improve the
 discoverability of images and spectra.</li>
 </ul>
 </li>
-<li>Option 2: Use the Python cdspyreadme library to create the ReadMe
-file and then upload all the tables and other data by FTP</li>
+<li>Option 2: Use the <strong>Python cdspyreadme library</strong> to
+create the <em>ReadMe</em> file and then upload all the tables and other
+data by <strong>FTP</strong>
+</li>
 </ul>
 <!-- #### Special case: large volumetry --><p>The submission web application is an HTTP service and depends of
 authors network. The process is dedicated for tables size less than
 100Mb but accepts tables until ~200Mb.</p>
-<p>For larger files, please contact the VizieR staff: <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
-<div class="section level3">
-<h3 id="other-possibilities-to-keep">Other possibilities: to keep?<a class="anchor" aria-label="anchor" href="#other-possibilities-to-keep"></a>
-</h3>
-<p><strong>Do we keep the following information ???</strong></p>
-<div class="section level4">
-<h4 id="email">Email<a class="anchor" aria-label="anchor" href="#email"></a>
-</h4>
-<p>E-mail your files to the e-mail address <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>
-if these are not too bulky (&lt; a few Megabytes).</p>
-</div>
-<div class="section level4">
-<h4 id="others">Others<a class="anchor" aria-label="anchor" href="#others"></a>
-</h4>
-<p>Contact us for other possibilities like download from your site, DVD
-posting, etc… at:</p>
-<p>Centre de Données astronomiques</p>
-<p>11, rue de l’Université</p>
-<p>67000 STRASBOURG, France</p>
-<p><a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a></p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg" alt="Summary Data journey from a publication to VizieR and then EOSC: step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: step
-submission</figcaption></figure><!--  ----------------------------------------- --><!--   Readme files                             --><!--  ----------------------------------------- -->
-</div>
-</div>
-</section><section id="readme-files"><h2 class="section-heading">Readme Files<a class="anchor" aria-label="anchor" href="#readme-files"></a>
+<!-- Contact CDS -->
+<p>For larger files or any other questions, please contact the VizieR
+staff: <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step3.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: third step of the
+journey - step submission of the data <strong>(WARNING: OLD image to
+UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!--   ReadMe files                             --><!--  ----------------------------------------- --></section><section id="readme-files"><h2 class="section-heading">ReadMe Files<a class="anchor" aria-label="anchor" href="#readme-files"></a>
 </h2>
 <hr class="half-width">
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 --><div class="section level3">
@@ -2503,8 +2489,8 @@ submission</figcaption></figure><!--  ----------------------------------------- 
 </h3>
 <p>To be reusable, any data needs extra information. In astronomy, the
 convention is to give this information in a separate file called
-<em>Readme</em>. Every catalogue in the Virtual Observatory registry has
-its own <em>Readme</em>. Numerous examples can be found on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP directories</a> at
+<em>ReadMe</em>. Every catalogue in the Virtual Observatory registry has
+its own <em>ReadMe</em>. Numerous examples can be found on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP directories</a> at
 CDS.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
@@ -2516,7 +2502,7 @@ CDS.</p>
 <div class="callout-content">
 <p>In this section, we give a lot of details. It can be overwhelming,
 but next section covers the tools that exist to help generating a
-correct Readme file</p>
+correct <em>Readme</em> file.</p>
 </div>
 </div>
 </div>
@@ -2735,18 +2721,21 @@ easily understandable and can be re-used and cited by everyone.</p>
 <!--  ----------------------------------------- --><!-- 		Step-by-step: submission form	--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --><div class="section level3">
 <h3 id="submission-form-option-1-step-by-step">Submission form (option 1): step-by-step<a class="anchor" aria-label="anchor" href="#submission-form-option-1-step-by-step"></a>
 </h3>
+<p>The first option is to use the online interface available at: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a>.</p>
+<p>No account creation is needed. One just needs to create a name for
+the session, eg. <em>my_unique_id_2023</em>. Note that the system</p>
 <!-- Submission form Vizier as iframe -->
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/" title="VizieR catalogue upload webpage" style="border: 1px solid black; width: 98%; height: 600px; 
 overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
 </iframe>
 <p>VizieR catalogue upload webpage. Note that it is not an image, you
 can submit your files directly from here.</p>
-<p>Link: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a></p>
-<p>Documentation: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">doc</a></p>
-<!--  ----------------------------------------- -->
-<!-- 		Step-by-step: FTP		-->
-<!--  ----------------------------------------- -->
-<!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
+<p>More detailed information on how to use this service can be found on
+the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">VizieR
+catalogue upload (HELP) page</a>.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png" alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023" class="figure mx-auto d-block"><figcaption>VizieR catalogue upload page - start uploading Tables
+(screenshot)</figcaption></figure><hr>
+<!--  ----------------------------------------- --><!-- 		Step-by-step: FTP		--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 </div>
 <div class="section level3">
 <h3 id="file-transfer-protocol-option-2-step-by-step">File Transfer Protocol (option 2): step-by-step<a class="anchor" aria-label="anchor" href="#file-transfer-protocol-option-2-step-by-step"></a>
@@ -2779,8 +2768,9 @@ at CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizie
 centers</a> (e.g. at <a href="http://vizier.nao.ac.jp/" class="external-link">CfA/Harvard
 (USA)</a> or <a href="https://vizier.cfa.harvard.edu/" class="external-link">NOAJ/ADAC
 (Japan)</a>).</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step5.svg" alt="Summary Data journey from a publication to VizieR and then EOSC: last step before ingestion in VizieR -- data curation and verification" class="figure mx-auto d-block"><figcaption>Data journey from a publication to EOSC: steps
-curation &amp; verification // <strong>NEEDED?</strong></figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary"><h2 class="section-heading">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step5.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: fourth step of
+the journey - steps curation &amp; verification <strong>(WARNING: OLD
+image to UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
 </h2>
 <hr class="half-width">
 <div id="keypoints1" class="callout keypoints">
@@ -2791,11 +2781,15 @@ curation &amp; verification // <strong>NEEDED?</strong></figcaption></figure><!-
 <h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
+<p>2 options for data submission:</p>
 <ul>
-<li>Readme files are highly standardised to allow reusability and cross
-matching between catalogs.</li>
-<li>A delay is needed for VizieR curation and validation!</li>
+<li>Online interface</li>
+<li>File Transfer Protocol</li>
 </ul>
+<p><em>ReadMe</em> files are highly standardised to allow reusability
+and cross matching between catalogs.</p>
+<p>Once the catalogues are submitted, a delay is needed for VizieR
+curation and validation before full ingestion!</p>
 </div>
 </div>
 </div>
@@ -2805,8 +2799,8 @@ matching between catalogs.</li>
 </section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
 <hr class="half-width">
-<p>In the next chapters, you will learn what happen to your data after
-submitting them to VizieR.</p>
+<p>In the next chapters, you will learn what happen to your data once
+they are fully ingested into VizieR.</p>
 </section><section id="ideas"><h2 class="section-heading">Ideas ???<a class="anchor" aria-label="anchor" href="#ideas"></a>
 </h2>
 <hr class="half-width">
@@ -2845,12 +2839,12 @@ any links that you are not going to use.
 <!-- -->
 <!-- Not used -->
 <!-- -->
-</section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO</a></p>
+</section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO and EOSC</a></p>
 <hr>
-<p> Last updated on 2023-06-22 | 
+<p> Last updated on 2023-06-27 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_eosc.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 11 minutes </p>
+<p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 6 minutes </p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2862,9 +2856,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What happens to your data?</li>
+<li>What happens to your data after their ingestion in VizieR??</li>
 <li>How does your published data get into EOSC?</li>
-<li>Why publishing in EOSC / VO?</li>
+<li>Why publish to EOSC / VO?</li>
 <li>How do you find your data in EOSC?</li>
 </ul>
 </div>
@@ -2892,41 +2886,40 @@ portal.</li>
 begin their journey into the Virtual Observatory, ultimately reaching
 the <a href="https://eosc.eu/" class="external-link">European Open Science Cloud (EOSC)</a>,
 as illustrated in the figure below.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg" alt="Summary Data journey from a publication to VizieR and then EOSC, full path" class="figure mx-auto d-block"><figcaption>Full data journey from a publication to EOSC</figcaption></figure><!--  ----------------------------------------- --><!--            EOSC	                        --><!--  ----------------------------------------- --></section><section id="the-european-open-science-cloud-eosc"><h2 class="section-heading">The European Open Science Cloud (EOSC)<a class="anchor" aria-label="anchor" href="#the-european-open-science-cloud-eosc"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data" class="figure mx-auto d-block"><figcaption>Full data journey from a publication to EOSC: last
+step of the journey - step integration into the IVOA, EUDAT and finally
+EOSC</figcaption></figure><p>The first stop for your data after VizieR is the International
+Virtual Observatory Association (IVOA) registry. It gathers the data
+from ViZieR, and other astronomical data centers.</p>
+<p>Then the datasets reach a broader audience when B2Find and the EOSC
+registries gather information (harvest) about everything emitted by the
+IVOA registry.</p>
+<!--  ----------------------------------------- -->
+<!--            EOSC	                        -->
+<!--  ----------------------------------------- -->
+</section><section id="the-european-open-science-cloud-eosc"><h2 class="section-heading">The European Open Science Cloud (EOSC)<a class="anchor" aria-label="anchor" href="#the-european-open-science-cloud-eosc"></a>
 </h2>
 <hr class="half-width">
-<p><a href="https://eoscfuture.eu/" class="external-link">EOSC Future</a> is an European Union
-funded H2020 project that is implementing the <a href="https://eosc.eu/" class="external-link">European Open Science Cloud (EOSC)</a>.</p>
-<p>The digital transformation of science is no longer a coming trend but
-a current reality. Beyond better connectivity, faster processing, and
-more reliable storage, this has enabled a wealth of value-generating
-services and an ever-growing wave of data and research products. As
-these developments become a part of our daily lives, the digital
-transformation also brings new opportunities for European research
-through the digital platforms which enable it: opportunities for
-significantly more reproducible research and a move to a more
-data-intensive and Open Science. The European Union’s leadership in Open
-Science contributes to advancing new scientific discoveries and market
-innovation, as well as opening science to the public and addressing
-societal challenges more effectively.</p>
-<p>The EOSC will allow for universal access to data and a new level
-playing field for EU researchers.</p>
-<p><strong>Needed??</strong>:</p>
-<ul>
-<li>EOSC Future will unlock the potential of European research through a
-vision of Open Science for Society.</li>
-<li>EOSC Future will reduce the current research fragmentation of
-disciplinary and national silos, as well as promote Findable,
-Accessible, Interoperable, and Reusable (FAIR) data, professionally
-provided services, and open research products.</li>
-</ul>
-<!--  ----------------------------------------- --><!--            EOSC Portal                  --><!--  ----------------------------------------- --></section><section id="eosc-portal"><h2 class="section-heading">EOSC Portal<a class="anchor" aria-label="anchor" href="#eosc-portal"></a>
+<p><a href="https://eosc.eu/" class="external-link">EOSC</a> is the European web of FAIR data
+and related services for research. It stands for European Open Science
+Cloud and it aims to make research data easy to find, access,
+interoperate and reuse (FAIR), making trusted and sustainable research
+outputs available within and across scientific disciplines.</p>
+<p>The EOSC ambition is to federate existing data, research and
+e-infrastructures to make them all available to European researchers
+across borders and across disciplines.</p>
+<!--  ----------------------------------------- -->
+<!--            EOSC Portal                  -->
+<!--  ----------------------------------------- -->
+</section><section id="eosc-portal"><h2 class="section-heading">EOSC Portal<a class="anchor" aria-label="anchor" href="#eosc-portal"></a>
 </h2>
 <hr class="half-width">
-<p>The <a href="https://eosc-portal.eu/" class="external-link">EOSC Portal</a> provides an
-interface to EOSC for researchers to utilise the full spectrum of EOSC
-resources, which include research publications, data, software, and
-value-added services to support their research.</p>
+<p>The <a href="https://eosc-portal.eu/" class="external-link">EOSC Portal</a> is one of the
+results of the <a href="https://eoscfuture.eu/" class="external-link">EOSC Future</a>,
+European Commission funded project (2019-2023). It provides an interface
+to EOSC for researchers to utilise the full spectrum of EOSC resources,
+which include research publications, data, software, and value-added
+services to support their research.</p>
 <p>For prospective users of the services, the Portal provides training
 materials and tutorials on how to use its features. The Portal also
 offers information for potential service providers on how to onboard
@@ -2988,7 +2981,7 @@ directly from the url.</p>
   By keywords
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>A filtering by <strong>keywords</strong> can be done from the url by
 adding the field <em>&amp;fq=keywords:“my%20astro%20keyword”</em> to the
@@ -3011,7 +3004,7 @@ and Astronomy’ and ‘stellar astronomy’, one can do:
   By author names
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>A filtering by <strong>author names</strong> can also be done from
 the url by adding the field
@@ -3034,7 +3027,7 @@ collaboration’, one can do:
   By DOI
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Filtering by <strong>DOI</strong> can also be done from the url by
 adding the field <em>&amp;fq=<a href="../doi:%22mydoi%5C%2Fnumber" class="uri">doi:"mydoi%5C%2Fnumber</a>“</em> to the url of the
@@ -3058,7 +3051,7 @@ url</a> with the extra filtering is given below:</p>
 &amp;fq=keywords:"stellar%20astronomy"
 &amp;fq=author_names:"Gaia%20collaboration"
 &amp;fq=doi:"10.26093%5C%2Fcds%5C%2Fvizier.1355"</code></pre>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_fitering.png" alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023" class="figure mx-auto d-block"><figcaption>Searching for ‘Gaia DR3’ on EOSC Portal – all
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_filtering.png" alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023" class="figure mx-auto d-block"><figcaption>Searching for ‘Gaia DR3’ on EOSC Portal – all
 records, with extra filtering (screenshot)</figcaption></figure><!-- iframe commented on 22/06/23:  
 The resulting webpage is displayed below:
 
@@ -3101,7 +3094,7 @@ Astronomical Data Center</a>.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Browse through EOSC Portal to find some datasets and publications,
 and answer the following questions.</p>
@@ -3136,7 +3129,7 @@ Portal</a> to answer the previous questions.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>R1) This paper was published on <a href="https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&amp;return_path=search%2Fall&amp;search_params=q%3DNGTS%2520clusters%2520survey" class="external-link">01
 Jan 2017</a>.</p>
@@ -3172,21 +3165,29 @@ the url.</p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>EOSC will give European researchers access to a wide web of FAIR
-data and related services.</li>
-<li>EOSC Portal Catalogue &amp; Marketplace acts as an entry point to a
-multitude of services and resources for researchers, such as:
+<li><p>EOSC is not a new digital infrastructure.</p></li>
+<li><p>EOSC will support the cultural change towards Open Science and
+FAIR principles in the EU countries and institutions.</p></li>
+<li><p>Individual researchers will benefits from EOSC through their
+existing channels (e.g. universities, research institutes, research
+infrastructures, associations, science clusters, etc.) that will act as
+intermediaries.</p></li>
+<li><p>EOSC will allow for universal access to data and a new level
+playing field for EU researchers.</p></li>
+<li>
+<p>EOSC Portal Catalogue &amp; Marketplace acts as an entry point to
+a multitude of services and resources for researchers, such as:</p>
 <ul>
 <li>Discover Research Outputs (datasets, scientific publications,
 softwares)</li>
 <li>Access Training Materials (lessons, courses, videos)</li>
 </ul>
 </li>
-<li>The catalogues ingested in VizieR are findable and accessible in
-EOSC.</li>
-<li>Interdisciplinary science is facilitated using EOSC Portal, thanks
-to the interoperability of the data.</li>
-<li>EOSC promotes the reuse of the data.</li>
+<li><p>The catalogues ingested in VizieR are findable and accessible in
+EOSC!</p></li>
+<li><p>Interdisciplinary science is facilitated using EOSC Portal,
+thanks to the interoperability of the data.</p></li>
+<li><p>EOSC promotes the reuse of the data.</p></li>
 </ul>
 </div>
 </div>
@@ -3201,17 +3202,35 @@ to the interoperability of the data.</li>
 astronomical data (table, images, spectra, …) FAIR and openly accessible
 to the community, and discoverable in Virtual Observatory tools such as
 EOSC.</p>
-</section><section id="other-ideas"><h2 class="section-heading">Other ideas<a class="anchor" aria-label="anchor" href="#other-ideas"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li>Added value with EOSC</li>
-<li>Integration done?</li>
-</ul>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Others --><!-- --><!-- EOSC --><!-- --><!-- Not used --><!-- --></section></section>
+ -->
+<!--  ----------------------------------------- -->
+<!--            Link references                 -->
+<!--  ----------------------------------------- -->
+<!-- CDS -->
+<!-- -->
+<!-- VizieR -->
+<!-- VizieR File submission -->
+<!-- VizieR FTP -->
+<!-- VizieR mirrors -->
+<!-- VizieR Readme-->
+<!-- VizieR example Gaia DR3-->
+<!-- -->
+<!-- Journals -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- Others -->
+<!-- -->
+<!-- EOSC -->
+<!-- -->
+<!-- Not used -->
+<!-- -->
+</section></section>
 </div>
     </main>
 </div>

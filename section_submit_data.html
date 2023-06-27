@@ -85,11 +85,11 @@
   The journey of your data through the Virtual Observatory and the European Open Science Cloud
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 52%" class="percentage">
-    52%
+<aside class="col-md-12 lesson-progress"><div style="width: 69%" class="percentage">
+    69%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 52%" aria-valuenow="52" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 69%" aria-valuenow="69" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -191,10 +191,10 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#where-to-deposit-the-data">Where to deposit the data?</a></li>
-<li><a href="#readme-files">Readme Files</a></li>
+<li><a href="#readme-files">ReadMe Files</a></li>
 <li><a href="#submission">Submission</a></li>
 <li><a href="#what-happens-to-your-data-at-the-cds">What happens to your data at the CDS?</a></li>
-<li><a href="#summary">Summary</a></li>
+<li><a href="#summary-data-submission-and-curation">Summary: Data submission and curation</a></li>
 <li><a href="#next-chapters">Next chapters</a></li>
 <li><a href="#ideas">Ideas ???</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -206,7 +206,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="section_eosc.html">6. Journey of your data in the VO</a>
+        <a href="section_eosc.html">6. Journey of your data in the VO and EOSC</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -263,7 +263,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Submitting astronomical data</h1>
-        <p> Last updated on 2023-06-26 | 
+        <p> Last updated on 2023-06-27 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -307,44 +307,34 @@ standards.</li>
 <section id="where-to-deposit-the-data"><h2 class="section-heading">Where to deposit the data?<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data"></a>
 </h2>
 <hr class="half-width"><p>Two routes are possible to submit your data to VizieR:</p>
-<ul><li>Option 1: Use the submission online interface
-<ul><li>Some basic checks on the ReadMe and data files are performed.</li>
+<ul><li>Option 1: Use the submission <strong>online interface</strong>
+<ul><li>The upload will generate a <em>ReadMe</em> file based on your
+tables.</li>
+<li>Some basic checks on the <em>ReadMe</em> and data files are
+performed.</li>
 <li>It also includes FITS ingestion procedure to improve the
 discoverability of images and spectra.</li>
 </ul></li>
-<li>Option 2: Use the Python cdspyreadme library to create the ReadMe
-file and then upload all the tables and other data by FTP</li>
+<li>Option 2: Use the <strong>Python cdspyreadme library</strong> to
+create the <em>ReadMe</em> file and then upload all the tables and other
+data by <strong>FTP</strong>
+</li>
 </ul><!-- #### Special case: large volumetry --><p>The submission web application is an HTTP service and depends of
 authors network. The process is dedicated for tables size less than
 100Mb but accepts tables until ~200Mb.</p>
-<p>For larger files, please contact the VizieR staff: <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
-<div class="section level3">
-<h3 id="other-possibilities-to-keep">Other possibilities: to keep?<a class="anchor" aria-label="anchor" href="#other-possibilities-to-keep"></a></h3>
-<p><strong>Do we keep the following information ???</strong></p>
-<div class="section level4">
-<h4 id="email">Email<a class="anchor" aria-label="anchor" href="#email"></a></h4>
-<p>E-mail your files to the e-mail address <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>
-if these are not too bulky (&lt; a few Megabytes).</p>
-</div>
-<div class="section level4">
-<h4 id="others">Others<a class="anchor" aria-label="anchor" href="#others"></a></h4>
-<p>Contact us for other possibilities like download from your site, DVD
-posting, etc… at:</p>
-<p>Centre de Données astronomiques</p>
-<p>11, rue de l’Université</p>
-<p>67000 STRASBOURG, France</p>
-<p><a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a></p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg" alt="Summary Data journey from a publication to VizieR and then EOSC: step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: step
-submission</figcaption></figure><!--  ----------------------------------------- --><!--   Readme files                             --><!--  ----------------------------------------- --></div>
-</div>
-</section><section id="readme-files"><h2 class="section-heading">Readme Files<a class="anchor" aria-label="anchor" href="#readme-files"></a>
+<!-- Contact CDS -->
+<p>For larger files or any other questions, please contact the VizieR
+staff: <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step3.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: third step of the
+journey - step submission of the data <strong>(WARNING: OLD image to
+UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!--   ReadMe files                             --><!--  ----------------------------------------- --></section><section id="readme-files"><h2 class="section-heading">ReadMe Files<a class="anchor" aria-label="anchor" href="#readme-files"></a>
 </h2>
 <hr class="half-width"><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 --><div class="section level3">
 <h3 id="the-why-and-what-of-the-readme-file">The why and what of the Readme file<a class="anchor" aria-label="anchor" href="#the-why-and-what-of-the-readme-file"></a></h3>
 <p>To be reusable, any data needs extra information. In astronomy, the
 convention is to give this information in a separate file called
-<em>Readme</em>. Every catalogue in the Virtual Observatory registry has
-its own <em>Readme</em>. Numerous examples can be found on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP directories</a> at
+<em>ReadMe</em>. Every catalogue in the Virtual Observatory registry has
+its own <em>ReadMe</em>. Numerous examples can be found on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP directories</a> at
 CDS.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
@@ -356,7 +346,7 @@ CDS.</p>
 <div class="callout-content">
 <p>In this section, we give a lot of details. It can be overwhelming,
 but next section covers the tools that exist to help generating a
-correct Readme file</p>
+correct <em>Readme</em> file.</p>
 </div>
 </div>
 </div>
@@ -554,19 +544,20 @@ easily understandable and can be re-used and cited by everyone.</p>
 </h2>
 <hr class="half-width"><!--  ----------------------------------------- --><!-- 		Step-by-step: submission form	--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --><div class="section level3">
 <h3 id="submission-form-option-1-step-by-step">Submission form (option 1): step-by-step<a class="anchor" aria-label="anchor" href="#submission-form-option-1-step-by-step"></a></h3>
+<p>The first option is to use the online interface available at: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a>.</p>
+<p>No account creation is needed. One just needs to create a name for
+the session, eg. <em>my_unique_id_2023</em>. Note that the system</p>
 <!-- Submission form Vizier as iframe -->
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/" title="VizieR catalogue upload webpage" style="border: 1px solid black; width: 98%; height: 600px; 
 overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
 </iframe>
 <p>VizieR catalogue upload webpage. Note that it is not an image, you
 can submit your files directly from here.</p>
-<p>Link: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a></p>
-<p>Documentation: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">doc</a></p>
-<!--  ----------------------------------------- -->
-<!-- 		Step-by-step: FTP		-->
-<!--  ----------------------------------------- -->
-<!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
-</div>
+<p>More detailed information on how to use this service can be found on
+the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">VizieR
+catalogue upload (HELP) page</a>.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png" alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023" class="figure mx-auto d-block"><figcaption>VizieR catalogue upload page - start uploading Tables
+(screenshot)</figcaption></figure><hr><!--  ----------------------------------------- --><!-- 		Step-by-step: FTP		--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --></div>
 <div class="section level3">
 <h3 id="file-transfer-protocol-option-2-step-by-step">File Transfer Protocol (option 2): step-by-step<a class="anchor" aria-label="anchor" href="#file-transfer-protocol-option-2-step-by-step"></a></h3>
 <p>An other option is to submit your data through File Transfer
@@ -596,8 +587,9 @@ at CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizie
 centers</a> (e.g. at <a href="http://vizier.nao.ac.jp/" class="external-link">CfA/Harvard
 (USA)</a> or <a href="https://vizier.cfa.harvard.edu/" class="external-link">NOAJ/ADAC
 (Japan)</a>).</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step5.svg" alt="Summary Data journey from a publication to VizieR and then EOSC: last step before ingestion in VizieR -- data curation and verification" class="figure mx-auto d-block"><figcaption>Data journey from a publication to EOSC: steps
-curation &amp; verification // <strong>NEEDED?</strong></figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary"><h2 class="section-heading">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step5.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: fourth step of
+the journey - steps curation &amp; verification <strong>(WARNING: OLD
+image to UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
 </h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -607,10 +599,14 @@ curation &amp; verification // <strong>NEEDED?</strong></figcaption></figure><!-
 <h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
-<ul><li>Readme files are highly standardised to allow reusability and cross
-matching between catalogs.</li>
-<li>A delay is needed for VizieR curation and validation!</li>
-</ul></div>
+<p>2 options for data submission:</p>
+<ul><li>Online interface</li>
+<li>File Transfer Protocol</li>
+</ul><p><em>ReadMe</em> files are highly standardised to allow reusability
+and cross matching between catalogs.</p>
+<p>Once the catalogues are submitted, a delay is needed for VizieR
+curation and validation before full ingestion!</p>
+</div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -618,8 +614,8 @@ matching between catalogs.</li>
 <!--  ----------------------------------------- -->
 </section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
-<hr class="half-width"><p>In the next chapters, you will learn what happen to your data after
-submitting them to VizieR.</p>
+<hr class="half-width"><p>In the next chapters, you will learn what happen to your data once
+they are fully ingested into VizieR.</p>
 </section><section id="ideas"><h2 class="section-heading">Ideas ???<a class="anchor" aria-label="anchor" href="#ideas"></a>
 </h2>
 <hr class="half-width"><p><strong><em>Other source: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link uri">https://cdsarc.cds.unistra.fr/vizier.submit/help.html</a></em></strong></p>
@@ -710,7 +706,7 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/section_submit_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_submit_data.html",
   "dateCreated": "2023-06-27",
-  "dateModified": "2023-06-26",
+  "dateModified": "2023-06-27",
   "datePublished": "2023-06-27"
 }
 
