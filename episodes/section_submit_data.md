@@ -28,9 +28,10 @@ exercises: 0
 Two routes are possible to submit your data to VizieR:
 
 - Option 1: Use the submission **online interface**
-	- Some basic checks on the ReadMe and data files are performed. 
+	- The upload will generate a *ReadMe* file based on your tables.
+	- Some basic checks on the *ReadMe* and data files are performed. 
 	- It also includes FITS ingestion procedure to improve the discoverability of images and spectra.
-- Option 2: Use the **Python cdspyreadme library** to create the ReadMe file and then upload all the tables and other data by **FTP**
+- Option 2: Use the **Python cdspyreadme library** to create the *ReadMe* file and then upload all the tables and other data by **FTP**
 
 
 <!-- #### Special case: large volumetry -->
@@ -47,19 +48,19 @@ For larger files or any other questions, please contact the VizieR staff: [cats(
 
 
 <!--  ----------------------------------------- -->
-<!--   Readme files                             -->
+<!--   ReadMe files                             -->
 <!--  ----------------------------------------- -->
-## Readme Files
+## ReadMe Files
 
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 -->
 ### The why and what of the Readme file
 
-To be reusable, any data needs extra information. In astronomy, the convention is to give this information in a separate file called *Readme*. 
-Every catalogue in the Virtual Observatory registry has its own *Readme*.
+To be reusable, any data needs extra information. In astronomy, the convention is to give this information in a separate file called *ReadMe*. 
+Every catalogue in the Virtual Observatory registry has its own *ReadMe*.
 Numerous examples can be found on the [FTP directories][vizier-ftp-cats] at CDS.
 
 ::: callout
-In this section, we give a lot of details. It can be overwhelming, but next section covers the tools that exist to help generating a correct Readme file.
+In this section, we give a lot of details. It can be overwhelming, but next section covers the tools that exist to help generating a correct *Readme* file.
 :::
 
 The [Standards for Astronomical Catalogues][vizier-readme-std], is a complete description of the standard for Readme files. 
@@ -296,7 +297,7 @@ Once the data are public, they are accessible as plain files in [FTP directories
 - Online interface
 - File Transfer Protocol
 
-- Readme files are highly standardised to allow reusability and cross matching between catalogs.
+- *ReadMe* files are highly standardised to allow reusability and cross matching between catalogs.
 
 - Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
 
@@ -308,7 +309,7 @@ Once the data are public, they are accessible as plain files in [FTP directories
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what happen to your data after submitting them to VizieR.
+In the next chapters, you will learn what happen to your data once they are fully ingested into VizieR.
  
 
 

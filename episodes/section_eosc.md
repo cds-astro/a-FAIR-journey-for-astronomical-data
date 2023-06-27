@@ -1,7 +1,7 @@
 ---
 title: "Journey of your data in the VO"
-teaching: 10
-exercises: 1
+teaching: 5
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
