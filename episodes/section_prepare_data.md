@@ -39,6 +39,7 @@ The following data types are accepted:
 
 
 In this chapter, we will answer to some frequently asked questions about how to prepare the data for their inclusion in VizieR.
+
 A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
 
