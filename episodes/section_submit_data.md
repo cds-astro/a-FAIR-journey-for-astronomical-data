@@ -280,7 +280,7 @@ Once the data submitted on the CDS servers, some checking procedures are execute
 Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]).
 
 
-![Data journey from a publication to EOSC: steps curation & verification // **NEEDED?**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step5.svg){alt="Summary Data journey from a publication to VizieR and then EOSC: last step before ingestion in VizieR -- data curation and verification"}
+![Journey from a publication to EOSC: fourth step of the journey - steps curation & verification **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step5.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
 
 
 

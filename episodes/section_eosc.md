@@ -32,6 +32,17 @@ Once your data have been successfully ingested into VizieR, they begin their jou
 ![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
 
+![Journey from a publication to EOSC: third step of the journey - step submission of the data **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step3.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data"}
+
+
+
+
+    {"text": "The IVOA (International Virtual Observatory Association) registry gathers the data from ViZieR, and other astronomical data centers",
+    "step": 6
+    },
+    {"text": "The datasets reach a broader audience when B2Find and the EOSC registries gather information about everything emitted by the IVOA registry.",
+
+
 
 <!--  ----------------------------------------- -->
 <!--            EOSC	                        -->
