@@ -1,7 +1,7 @@
 ---
 title: "Journey of your data in the VO and EOSC"
 teaching: 5
-exercises: 0
+exercises: 1
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -29,18 +29,11 @@ exercises: 0
 
 Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, ultimately reaching the  [European Open Science Cloud (EOSC)][eosc], as illustrated in the figure below.
 
-![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
+![Full data journey from a publication to EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data"}
 
+The first stop for your data after VizieR is the International Virtual Observatory Association (IVOA) registry. It gathers the data from ViZieR, and other astronomical data centers.
 
-![Journey from a publication to EOSC: third step of the journey - step submission of the data **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step3.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data"}
-
-
-
-
-    {"text": "The IVOA (International Virtual Observatory Association) registry gathers the data from ViZieR, and other astronomical data centers",
-    "step": 6
-    },
-    {"text": "The datasets reach a broader audience when B2Find and the EOSC registries gather information about everything emitted by the IVOA registry.",
+Then the datasets reach a broader audience when B2Find and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry.
 
 
 
@@ -49,32 +42,10 @@ Once your data have been successfully ingested into VizieR, they begin their jou
 <!--  ----------------------------------------- -->
 ## The European Open Science Cloud (EOSC)
 
-
-
-EOSC is the European web of FAIR data and related services for research. It aims to make research data easy to find, access, interoperate and reuse (FAIR), making trusted and sustainable research outputs available within and across scientific disciplines. 
+[EOSC][eosc] is the European web of FAIR data and related services for research. 
+It stands for European Open Science Cloud and it aims to make research data easy to find, access, interoperate and reuse (FAIR), making trusted and sustainable research outputs available within and across scientific disciplines. 
 
 The EOSC ambition is to federate existing data, research and e-infrastructures to make them all available to European researchers across borders and across disciplines.
-
-EOSC Future is an European Union funded H2020 project that is implementing the European Open Science Cloud (EOSC). It is a work in progress!
-
-
-
-
------
-
-
-
-[EOSC Future][eosc-future] is an European Union funded H2020 project that is implementing the [European Open Science Cloud (EOSC)][eosc]. 
-
-The digital transformation of science is no longer a coming trend but a current reality. Beyond better connectivity, faster  processing,  and  more  reliable  storage,  this  has  enabled  a  wealth  of  value-generating  services  and  an ever-growing  wave  of  data  and  research  products.  As  these  developments  become  a  part  of  our  daily  lives,  the  digital transformation also brings new opportunities  for European research through the digital platforms which enable it: opportunities for significantly more reproducible research and a move to a more data-intensive and Open Science. The European Union’s leadership in Open Science contributes to advancing new scientific discoveries and market innovation, as well as opening science to the public and addressing societal challenges more effectively.
-
-The EOSC will allow for universal access to data and a new level playing field for EU researchers.
-
-
-**Needed??**: 
-
-- EOSC Future will unlock the potential of European research through a vision of Open Science for Society.
-- EOSC Future will reduce the current research fragmentation of disciplinary and national silos, as well as promote Findable, Accessible, Interoperable, and Reusable (FAIR) data, professionally provided services, and open research products.
 
 
 <!--  ----------------------------------------- -->
@@ -82,7 +53,8 @@ The EOSC will allow for universal access to data and a new level playing field f
 <!--  ----------------------------------------- -->
 ## EOSC Portal
 
-The [EOSC Portal][eosc-portal] provides an interface to EOSC for researchers to utilise the full spectrum of EOSC resources, which include research publications, data, software, and value-added services to support their research.
+The [EOSC Portal][eosc-portal]  is one of the results of the [EOSC Future][eosc-future], European Commission funded project (2019-2023).
+It provides an interface to EOSC for researchers to utilise the full spectrum of EOSC resources, which include research publications, data, software, and value-added services to support their research.
 
 For prospective users of the services, the Portal provides training materials and tutorials on how to use its features. The Portal also offers information for potential service providers on how to onboard their services to the EOSC Portal Catalogue & Marketplace. 
 
@@ -206,7 +178,7 @@ https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
 ```
 
 
-![Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_fitering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023"}
+![Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_filtering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023"}
 
 
 
@@ -299,11 +271,19 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- EOSC will give European researchers access to a wide web of FAIR data and related services. 
+- EOSC is not a new digital infrastructure.
+- EOSC will support the cultural change towards Open Science and FAIR principles in the EU countries and institutions.
+- Individual researchers will benefits from EOSC through their existing channels (e.g. universities, research institutes, research infrastructures, associations, science clusters, etc.) that will act as intermediaries. 
+
+- EOSC will allow for universal access to data and a new level playing field for EU researchers.
+
+
 - EOSC Portal Catalogue & Marketplace acts as an entry point to a multitude of services and resources for researchers, such as:
 	- Discover Research Outputs (datasets, scientific publications, softwares)
 	- Access Training Materials (lessons, courses, videos)
-- The catalogues ingested in VizieR are findable and accessible in EOSC.
+
+- The catalogues ingested in VizieR are findable and accessible in EOSC!
+
 - Interdisciplinary science is facilitated using EOSC Portal, thanks to the interoperability of the data.
 - EOSC promotes the reuse of the data. 
 
@@ -318,11 +298,5 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 
 This concludes this training on how to make your published astronomical data (table, images, spectra, …) FAIR and openly accessible to the community, and discoverable in Virtual Observatory tools such as EOSC.
 
-
-
-## Other ideas
-
-- Added value with EOSC
-- Integration done?
 
 
