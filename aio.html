@@ -539,7 +539,7 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-06-26 | 
+<p> Last updated on 2023-06-28 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_fair_astro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -588,9 +588,8 @@ to allow an unambiguous interpretation of the data, and faciliate their
 usability.</p>
 <p>In this chapter, we will review the best practices for data
 publication in the astronomical field.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: beginning of the
-journey - step peer reviewed datasets <strong>(WARNING: OLD image to
-UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!-- 		Introduction 			--><!--  ----------------------------------------- --></section><section id="what-are-the-fair-principles"><h2 class="section-heading">What are the FAIR principles?<a class="anchor" aria-label="anchor" href="#what-are-the-fair-principles"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: beginning of the
+journey - step peer reviewed datasets</figcaption></figure><!--  ----------------------------------------- --><!-- 		Introduction 			--><!--  ----------------------------------------- --></section><section id="what-are-the-fair-principles"><h2 class="section-heading">What are the FAIR principles?<a class="anchor" aria-label="anchor" href="#what-are-the-fair-principles"></a>
 </h2>
 <hr class="half-width">
 <p>Formalized by Wilkinson et al. in 2016 (<a href="https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18" class="external-link">10.1038/sdata.2016.18</a>),
@@ -625,7 +624,7 @@ stewardship as outlined by M. Wilkinson et al. (2016).</p>
   To be Findable
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The first step before reusing the data is to be able to find them.
 The metadata and data should be easy to find for both humans and
@@ -647,7 +646,7 @@ it describes</p>
   To be Accessible
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Once the data can be found, the user needs to know how to access
 them. That could include authentification and authorisation. The
@@ -674,7 +673,7 @@ available</p>
   To be Interoperable
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Those data can then be combined with different datasets, and
 interoperate with other applications or workflows for analysis, storage,
@@ -694,7 +693,7 @@ applicable language for knowledge representation.</p>
   To be Reusable
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The ultimate goal of FAIR is to optimise the reuse of data. To
 achieve this, metadata and data should be well-described, including a
@@ -897,7 +896,7 @@ them?</p>
   Why is it improper?
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <pre><code>I1) Insufficient precision in RA and DEC can cause confusion
  with nearby sources. 
@@ -925,7 +924,7 @@ I9) Ambiguous name can be interpreted into different objects.</code></pre>
   Recommended usage
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <pre><code>R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
 or SDSS J144157.26+094853.7
@@ -1222,7 +1221,7 @@ uncertain</p>
   Why is it improper?
   </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
 <div class="accordion-body">
 <p>The quality of the measurement is indicated using a superscript.
 Providing this information using an extra column will make the table
@@ -1238,7 +1237,7 @@ more machine readable, and therefore the data more reusable.</p>
   Recommended usage
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <table class="table">
 <thead><tr class="header">
@@ -1452,7 +1451,7 @@ Q4) OSIRIS</code></pre>
   List of solutions
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -1920,7 +1919,7 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-06-27 | 
+<p> Last updated on 2023-06-28 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1976,9 +1975,8 @@ formats can be accepted, but are converted into flat files.</li>
 about how to prepare the data for their inclusion in VizieR.</p>
 <p>A full description of the standard conventions used for the
 documentation of the catalogues is available from <a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">there</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step2.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: second step of
-the journey - step preparation of the data <strong>(WARNING: OLD image
-to UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: second step of
+the journey - step preparation of the data</figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
 </h2>
 <hr class="half-width">
 <p>Tables are the main data types accepted. An <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3" class="external-link">example
@@ -2352,7 +2350,7 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-06-27 | 
+<p> Last updated on 2023-06-28 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2412,9 +2410,8 @@ authors network. The process is dedicated for tables size less than
 <!-- Contact CDS -->
 <p>For larger files or any other questions, please contact the VizieR
 staff: <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step3.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: third step of the
-journey - step submission of the data <strong>(WARNING: OLD image to
-UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!--   ReadMe files                             --><!--  ----------------------------------------- --></section><section id="readme-files"><h2 class="section-heading">ReadMe Files<a class="anchor" aria-label="anchor" href="#readme-files"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: third step of the
+journey - step submission of the data</figcaption></figure><!--  ----------------------------------------- --><!--   ReadMe files                             --><!--  ----------------------------------------- --></section><section id="readme-files"><h2 class="section-heading">ReadMe Files<a class="anchor" aria-label="anchor" href="#readme-files"></a>
 </h2>
 <hr class="half-width">
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 --><div class="section level3">
@@ -2701,9 +2698,8 @@ at CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizie
 centers</a> (e.g. at <a href="http://vizier.nao.ac.jp/" class="external-link">CfA/Harvard
 (USA)</a> or <a href="https://vizier.cfa.harvard.edu/" class="external-link">NOAJ/ADAC
 (Japan)</a>).</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step5.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: fourth step of
-the journey - steps curation &amp; verification <strong>(WARNING: OLD
-image to UPDATE)</strong></figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: fourth step of
+the journey - steps curation &amp; verification</figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
 </h2>
 <hr class="half-width">
 <div id="keypoints1" class="callout keypoints">
@@ -2774,7 +2770,7 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO and EOSC</a></p>
 <hr>
-<p> Last updated on 2023-06-27 | 
+<p> Last updated on 2023-06-28 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_eosc.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2788,7 +2784,7 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What happens to your data after their ingestion in VizieR??</li>
+<li>What happens to your data after their ingestion in VizieR?</li>
 <li>How does your published data get into EOSC?</li>
 <li>Why publish to EOSC / VO?</li>
 <li>How do you find your data in EOSC?</li>
@@ -2913,7 +2909,7 @@ directly from the url.</p>
   By keywords
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A filtering by <strong>keywords</strong> can be done from the url by
 adding the field <em>&amp;fq=keywords:“my%20astro%20keyword”</em> to the
@@ -2936,7 +2932,7 @@ and Astronomy’ and ‘stellar astronomy’, one can do:
   By author names
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>A filtering by <strong>author names</strong> can also be done from
 the url by adding the field
@@ -2959,7 +2955,7 @@ collaboration’, one can do:
   By DOI
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Filtering by <strong>DOI</strong> can also be done from the url by
 adding the field <em>&amp;fq=<a href="doi:%22mydoi%5C%2Fnumber" class="uri">doi:"mydoi%5C%2Fnumber</a>“</em> to the url of the
@@ -3045,7 +3041,7 @@ Portal</a> to answer the previous questions.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>R1) This paper was published on <a href="https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&amp;return_path=search%2Fall&amp;search_params=q%3DNGTS%2520clusters%2520survey" class="external-link">01
 Jan 2017</a>.</p>
@@ -3194,9 +3190,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2023-06-27",
-  "dateModified": "2023-06-27",
-  "datePublished": "2023-06-27"
+  "dateCreated": "2023-06-28",
+  "dateModified": "2023-06-28",
+  "datePublished": "2023-06-28"
 }
 
   </script><script>
