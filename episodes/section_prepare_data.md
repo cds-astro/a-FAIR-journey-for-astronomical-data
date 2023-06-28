@@ -43,7 +43,7 @@ In this chapter, we will answer to some frequently asked questions about how to 
 A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
 
-![Journey from a publication to EOSC: second step of the journey - step preparation of the data **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step2.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
+![Journey from a publication to EOSC: second step of the journey - step preparation of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
 
 
 
