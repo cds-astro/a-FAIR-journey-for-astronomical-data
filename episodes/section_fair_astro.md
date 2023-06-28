@@ -35,7 +35,7 @@ Furthermore, the data should be *described* accurately enough to allow an unambi
 In this chapter, we will review the best practices for data publication in the astronomical field.
 
 
-![Journey from a publication to EOSC: beginning of the journey - step peer reviewed datasets **(WARNING: OLD image to UPDATE)**](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/old__lighthouse_v1/step1.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper"}
+![Journey from a publication to EOSC: beginning of the journey - step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper"}
 
 
 
