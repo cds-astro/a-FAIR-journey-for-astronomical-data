@@ -200,7 +200,7 @@ For large sets of references, you can also gather them into a dedicated *referen
 
 There are two ways to fill your own Readme file: 
 
-- with the [cdspydreadme][pyreadme] python module that generates pre-filled readme files for data stored in `FITS`, `csv`, `astropy.Tables`, or `MRT` formats,
+- with the [cdspydreadme][vizier-cdspyreadme] python module that generates pre-filled readme files for data stored in `FITS`, `csv`, `astropy.Tables`, or `MRT` formats,
 - manually, by looking at examples and adapting to your own table
 
 $ # TODO: does the submission form offer an other way to generate a readme file? $
@@ -220,8 +220,6 @@ But in any case, do your best and the CDS team will make sure that your data is 
 The first option is to use the online interface available at: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login].
 
 No account creation is needed. One just needs to create a name for the session, eg. *my_unique_id_2023*.
-Note that the system 
-
 
 
 <!-- Submission form Vizier as iframe -->

@@ -79,6 +79,7 @@ any links that you are not going to use.
 [cassis]: http://cassis.irap.omp.eu/?page=cassis
 [cts]: https://www.coretrustseal.org/
 [eudat]: https://www.eudat.eu/
+[b2find]: https://b2find.eudat.eu/
 [fits-nasa]: https://fits.gsfc.nasa.gov/
 [ivoa-link]: https://www.ivoa.net/
 [ivoa-registry]: http://rofr.ivoa.net/
