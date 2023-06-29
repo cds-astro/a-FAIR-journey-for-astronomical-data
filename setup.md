@@ -54,7 +54,7 @@ Training version: 1.0
 
 Publication date: 10 July 2023
  
-Last modified: xx
+<!-- Last modified: xx -->
 
 
 ## License

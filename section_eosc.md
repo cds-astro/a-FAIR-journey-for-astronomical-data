@@ -25,15 +25,15 @@ exercises: 1
 <!--  ----------------------------------------- -->
 <!--            Journey of your data            -->
 <!--  ----------------------------------------- -->
-## From Vizier to EOSC
+## From VizieR to EOSC
 
 Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, ultimately reaching the  [European Open Science Cloud (EOSC)][eosc], as illustrated in the figure below.
 
 ![Full data journey from a publication to EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data"}
 
-The first stop for your data after VizieR is the International Virtual Observatory Association (IVOA) registry. It gathers the data from ViZieR, and other astronomical data centers.
+The first stop for your data after VizieR is the [International Virtual Observatory Association (IVOA) registry][ivoa-registry]. It gathers the data from ViZieR, and other astronomical data centers.
 
-Then the datasets reach a broader audience when B2Find and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry.
+Then the datasets reach a broader audience when [B2Find][b2find] and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry.
 
 
 
@@ -70,7 +70,7 @@ For prospective users of the services, the Portal provides training materials an
 <!--  ----------------------------------------- -->
 ## Case Study: Gaia DR3
 
-In the following, we will show how to find your data in EOSC, using Gaia DR3 (Vizier DOI: [10.26093/cds/vizier.1355][vizier-gaia-dr3]) as an example.
+In the following, we will show how to find your data in EOSC, using Gaia DR3 (VizieR DOI: [10.26093/cds/vizier.1355][vizier-gaia-dr3]) as an example.
  
 
 ### Step 1: Search 
