@@ -25,7 +25,7 @@ exercises: 1
 <!--  ----------------------------------------- -->
 <!--            Journey of your data            -->
 <!--  ----------------------------------------- -->
-## From Vizier to EOSC
+## From VizieR to EOSC
 
 Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, ultimately reaching the  [European Open Science Cloud (EOSC)][eosc], as illustrated in the figure below.
 
@@ -70,7 +70,7 @@ For prospective users of the services, the Portal provides training materials an
 <!--  ----------------------------------------- -->
 ## Case Study: Gaia DR3
 
-In the following, we will show how to find your data in EOSC, using Gaia DR3 (Vizier DOI: [10.26093/cds/vizier.1355][vizier-gaia-dr3]) as an example.
+In the following, we will show how to find your data in EOSC, using Gaia DR3 (VizieR DOI: [10.26093/cds/vizier.1355][vizier-gaia-dr3]) as an example.
  
 
 ### Step 1: Search 
