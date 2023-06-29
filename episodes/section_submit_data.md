@@ -220,8 +220,6 @@ But in any case, do your best and the CDS team will make sure that your data is 
 The first option is to use the online interface available at: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login].
 
 No account creation is needed. One just needs to create a name for the session, eg. *my_unique_id_2023*.
-Note that the system 
-
 
 
 <!-- Submission form Vizier as iframe -->
