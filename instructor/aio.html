@@ -2416,7 +2416,7 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-06-28 | 
+<p> Last updated on 2023-06-29 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 5 minutes </p>
@@ -2700,10 +2700,10 @@ also gather them into a dedicated <em>reference file</em> named
 </h3>
 <p>There are two ways to fill your own Readme file:</p>
 <ul>
-<li>with the [cdspydreadme][pyreadme] python module that generates
-pre-filled readme files for data stored in <code>FITS</code>,
-<code>csv</code>, <code>astropy.Tables</code>, or <code>MRT</code>
-formats,</li>
+<li>with the <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link">cdspydreadme</a>
+python module that generates pre-filled readme files for data stored in
+<code>FITS</code>, <code>csv</code>, <code>astropy.Tables</code>, or
+<code>MRT</code> formats,</li>
 <li>manually, by looking at examples and adapting to your own table</li>
 </ul>
 <p>$ # TODO: does the submission form offer an other way to generate a
@@ -2720,7 +2720,7 @@ easily understandable and can be re-used and cited by everyone.</p>
 </h3>
 <p>The first option is to use the online interface available at: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a>.</p>
 <p>No account creation is needed. One just needs to create a name for
-the session, eg. <em>my_unique_id_2023</em>. Note that the system</p>
+the session, eg. <em>my_unique_id_2023</em>.</p>
 <!-- Submission form Vizier as iframe -->
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/" title="VizieR catalogue upload webpage" style="border: 1px solid black; width: 98%; height: 600px; 
 overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
@@ -2837,7 +2837,7 @@ any links that you are not going to use.
 <!-- -->
 </section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO and EOSC</a></p>
 <hr>
-<p> Last updated on 2023-06-28 | 
+<p> Last updated on 2023-06-29 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_eosc.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 6 minutes </p>
@@ -2875,7 +2875,7 @@ portal.</li>
 </div>
 </div>
 </div>
-<section id="from-vizier-to-eosc"><h2 class="section-heading">From Vizier to EOSC<a class="anchor" aria-label="anchor" href="#from-vizier-to-eosc"></a>
+<section id="from-vizier-to-eosc"><h2 class="section-heading">From VizieR to EOSC<a class="anchor" aria-label="anchor" href="#from-vizier-to-eosc"></a>
 </h2>
 <hr class="half-width">
 <p>Once your data have been successfully ingested into VizieR, they
@@ -2884,12 +2884,12 @@ the <a href="https://eosc.eu/" class="external-link">European Open Science Cloud
 as illustrated in the figure below.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data" class="figure mx-auto d-block"><figcaption>Full data journey from a publication to EOSC: last
 step of the journey - step integration into the IVOA, EUDAT and finally
-EOSC</figcaption></figure><p>The first stop for your data after VizieR is the International
-Virtual Observatory Association (IVOA) registry. It gathers the data
-from ViZieR, and other astronomical data centers.</p>
-<p>Then the datasets reach a broader audience when B2Find and the EOSC
-registries gather information (harvest) about everything emitted by the
-IVOA registry.</p>
+EOSC</figcaption></figure><p>The first stop for your data after VizieR is the <a href="http://rofr.ivoa.net/" class="external-link">International Virtual Observatory
+Association (IVOA) registry</a>. It gathers the data from ViZieR, and
+other astronomical data centers.</p>
+<p>Then the datasets reach a broader audience when <a href="https://b2find.eudat.eu/" class="external-link">B2Find</a> and the EOSC registries
+gather information (harvest) about everything emitted by the IVOA
+registry.</p>
 <!--  ----------------------------------------- -->
 <!--            EOSC	                        -->
 <!--  ----------------------------------------- -->
@@ -2924,7 +2924,7 @@ their services to the EOSC Portal Catalogue &amp; Marketplace.</p>
 </h2>
 <hr class="half-width">
 <p>In the following, we will show how to find your data in EOSC, using
-Gaia DR3 (Vizier DOI: <a href="https://doi.org/10.26093/cds/vizier.1355" class="external-link">10.26093/cds/vizier.1355</a>)
+Gaia DR3 (VizieR DOI: <a href="https://doi.org/10.26093/cds/vizier.1355" class="external-link">10.26093/cds/vizier.1355</a>)
 as an example.</p>
 <div class="section level3">
 <h3 id="step-1-search">Step 1: Search<a class="anchor" aria-label="anchor" href="#step-1-search"></a>
@@ -3274,9 +3274,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
-  "dateCreated": "2023-06-28",
-  "dateModified": "2023-06-28",
-  "datePublished": "2023-06-28"
+  "dateCreated": "2023-06-29",
+  "dateModified": "2023-06-29",
+  "datePublished": "2023-06-29"
 }
 
   </script><script>
