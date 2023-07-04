@@ -53,18 +53,32 @@ For larger files or any other questions, please contact the VizieR staff: [cats(
 ## ReadMe Files
 
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 -->
-### The why and what of the Readme file
+### The why and what of the ReadMe file
 
-To be reusable, any data needs extra information. In astronomy, the convention is to give this information in a separate file called *ReadMe*. 
+To be reusable, any data needs extra information. In astronomy, the convention is to give this information (authors, title, references, summary, etc...) in a separate file called *ReadMe*. 
+
 Every catalogue in the Virtual Observatory registry has its own *ReadMe*.
 Numerous examples can be found on the [FTP directories][vizier-ftp-cats] at CDS.
 
-::: callout
-In this section, we give a lot of details. It can be overwhelming, but next section covers the tools that exist to help generating a correct *Readme* file.
-:::
 
-The [Standards for Astronomical Catalogues][vizier-readme-std], is a complete description of the standard for Readme files. 
+:::::::::::::::::::::::::::::::::::::: callout
+
+# Disclaimer
+In this section, we give a lot of details (as we are dissecting the contents of the *ReadMe*). It can be overwhelming, but the next section covers the tools that exist to help generating a correct *ReadMe* file. You don't need to build it from scratch!
+
+
+::::::::::::::::::::::::::::::::::::::
+
+
+----------------------------
+
+<!-- Blank template -->
+
+The [Standards for Astronomical Catalogues][vizier-readme-std] is a complete description of the standard for *ReadMe* files. 
 A typical illustration could be e.g. [J/A+A/382/389/ReadMe][vizier-readme-example]. 
+
+The description file contains severals sections; as a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of Note headers ([section 3.5][vizier-cat-35-lengthy]). No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
+
 
 Here is a blank template: 
 
@@ -108,37 +122,80 @@ References:
 ```
 
 
-In this template, you can find:
+----------------------------
 
-- *First line*: catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
+
+The description file contains the following parts:
+
+<!-- ---------------- -->
+1. *First line*: catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
+
+
+###### Example: 
+```
+I/221               The Magellanic Catalogue of Stars - MACS (Tucholke+ 1996)
+================================================================================
+```
+
 
 :::::::::::::::::::::::::::::::::::::: callout
-The **volume** and **page numbers**: 
+
+# Volume and page numbers 
+(**NEEDED????**) 
  
-- for papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
-- for papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
-::::::::::::::::::::::::::::::::::::::
-
-
-- the **Keywords** lists the following keywords:
-    + *ADC\_Keywords* introduces the list of data-related keywords, out of a controlled set $# TODO: find this set$
-    + *Keywords*:   introduces the list of keywords as in the publication
-
-
-:::::::::::::::::::::::::::::::::::::: callout
-
-Unlike the *Keywords* that are generally related to the scientific content of a paper, the *ADC\_Keywords* are stricly related to the tabular material collected in the catalogue.
+- For papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
+- For papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
 
 ::::::::::::::::::::::::::::::::::::::
 
 
-- the **Description** is expected to give the *context of the data*, such as instrumentation or observing conditions. 
+<!-- ---------------- -->
+2. Full title(s), authors, and reference(s) of the catalogue. Each title is left-adjusted (no indentation); the line(s) containing the authors' names are indented (at least two blanks), and the bibliographic reference is enclosed between angle brackets. The BibCode is introduced by an equal sign, as a word without embedded blank of exactly 20 characters (with the equal sign).
+
+
+###### Example: 
+```
+The Magellanic Catalogue of Stars - MACS
+     Tucholke H.-J., de Boer K.S., Seitter W.C.
+    <Astron. Astrophys. Suppl. Ser., 119, 91-98 (1996)>
+    <The Messenger 81, 20 (1995)>
+    =1996A&AS..119...91T 
+    =1995Msngr..81...20D
+================================================================================
+```
+
+
+<!-- ---------------- -->
+3. Three categories of **keywords** can be added:
+
+    	+ *ADC\_Keywords* introduces the list of data-related keywords, out of a controlled set $# TODO: find this set$
+They are stricly related to the tabular material collected in the paper.
+
+	+ *Keywords*: introduces the list of keywords as in the printed publication
+	+ *Mission\_Name*: for data originated from satellite mission, this header precedes the satellite name.
+
+
+Whatever the category, multiple keywords are separated by a semicolon (;) or a dash (-) embedded in blanks.
+
+
+###### Example: 
+```
+ADC_Keywords: Clusters, galaxy ; Galaxies, photometry ; Photometry, CCD
+Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
+          cosmology: large-scale structure of Universe
+```
+
+
+<!-- ---------------- -->
+4. the **Description** is expected to give the *context of the data*, such as instrumentation or observing conditions. 
 It therefore differs from the *Abstract* which describes the *scientific results* that the author(s) derived from the data.
 
 
+<!-- ---------------- -->
 - the **File Summary** describes the files composing the set. Each file should be described by its *filename*, the *length of the longest line* (lrecl), the *number of records* (number of lines), and a *caption* (short title of the file). Lengthy notes can be added if necessary.
 
 
+<!-- ---------------- -->
 - the **Byte-by-byte Description**. There is one per file. This description is in a tabular form, each row describing one field (column) of the data file.
 Here is an example:
 
@@ -196,16 +253,16 @@ This part contains a lot of information
 - the **References**: section contains the citations. Bibcodes are strongly encouraged.
 For large sets of references, you can also gather them into a dedicated *reference file* named **refs.dat**.
 
-### How to fill the ReadMe file?
+### How to fill the *ReadMe* file?
 
-There are two ways to fill your own Readme file: 
+There are two ways to fill your own ReadMe file: 
 
 - with the [cdspydreadme][vizier-cdspyreadme] python module that generates pre-filled readme files for data stored in `FITS`, `csv`, `astropy.Tables`, or `MRT` formats,
 - manually, by looking at examples and adapting to your own table
 
 $ # TODO: does the submission form offer an other way to generate a readme file? $
 
-The whole Readme can then be tested with the command line tool [anafile][anafile]. 
+The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
 But in any case, do your best and the CDS team will make sure that your data is easily understandable and can be re-used and cited by everyone. 
 
 
