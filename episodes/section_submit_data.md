@@ -27,11 +27,11 @@ exercises: 0
 
 Two routes are possible to submit your data to VizieR:
 
-- Option 1: Use the submission **online interface**
+- Option 1: Use the submission [**online interface**][vizier-submit-login]
 	- The upload will generate a *ReadMe* file based on your tables.
 	- Some basic checks on the *ReadMe* and data files are performed. 
 	- It also includes FITS ingestion procedure to improve the discoverability of images and spectra.
-- Option 2: Use the **Python cdspyreadme library** to create the *ReadMe* file and then upload all the tables and other data by **FTP**
+- Option 2: Use the [**Python cdspyreadme library**][vizier-cdspyreadme] to create the *ReadMe* file and then upload all the tables and other data by [**FTP**][vizier-ftp-login]
 
 
 <!-- #### Special case: large volumetry -->
@@ -77,7 +77,7 @@ In this section, we give a lot of details (as we are dissecting the contents of 
 The [Standards for Astronomical Catalogues][vizier-readme-std] is a complete description of the standard for *ReadMe* files. 
 A typical illustration could be e.g. [J/A+A/382/389/ReadMe][vizier-readme-example]. 
 
-The description file contains severals sections; as a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of Note headers ([section 3.5][vizier-cat-35-lengthy]). No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
+The description file contains severals sections; as a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of [Note headers][vizier-cat-35-lengthy]. No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
 
 
 Here is a blank template: 
@@ -91,44 +91,64 @@ $title
 ================================================================================
 Keywords: $keywords
 
-Objects:
-    -----------------------------------------
-       RA   (2000)   DE    Designation(s)
-    -----------------------------------------
-
 Abstract:
-  $abstract
+    $abstract
 
 Description:
-  $description
+    $description
+
+
+Objects:
+    --------------------------------------------------
+      RA  (equinox)  DE     Name(s)
+    --------------------------------------------------
+    hh mm ss.s +dd mm ss    Name1 = Name1
+    --------------------------------------------------
+
 
 File Summary:
 --------------------------------------------------------------------------------
  FileName    Lrecl   Records    Explanations
 --------------------------------------------------------------------------------
 $tablesIndex
-
 --------------------------------------------------------------------------------
-$bytebybyte
+
 
 See also:
-$seealso
+    $seealso
 
-Acknowledgements:
+
+Nomenclature notes:
+    $nomenclature
+
+
+Byte-by-byte Description of file: $bytebybyte.file
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label    Explanations
+--------------------------------------------------------------------------------
+$bytebybyte
+--------------------------------------------------------------------------------
+Note (n): 
+--------------------------------------------------------------------------------
+
+
+Acknowledgements: $acknowledgments
+
 
 References:
 ================================================================================
-     (prepared by author)
+(End)                            $modification_done_by	      $date_modification
 ```
 
 
 ----------------------------
 
+<!-- Details of the template -->
 
 The description file contains the following parts:
 
 <!-- ---------------- -->
-1. *First line*: catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
+1. *First line:* catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
 
 
 ###### Example: 
@@ -168,11 +188,9 @@ The Magellanic Catalogue of Stars - MACS
 <!-- ---------------- -->
 3. Three categories of **keywords** can be added:
 
-    	+ *ADC\_Keywords* introduces the list of data-related keywords, out of a controlled set $# TODO: find this set$
-They are stricly related to the tabular material collected in the paper.
-
-	+ *Keywords*: introduces the list of keywords as in the printed publication
-	+ *Mission\_Name*: for data originated from satellite mission, this header precedes the satellite name.
+	- *Keywords*: introduces the list of keywords as in the printed publication.
+	- *ADC\_Keywords*: introduces the list of data-related keywords (see [ADC_keywords and their VizieR translation][vizier_adc_keywords] for more details). They are stricly related to the tabular material collected in the paper.
+	- *Mission\_Name*: for data originated from satellite mission, this header precedes the satellite name.
 
 
 Whatever the category, multiple keywords are separated by a semicolon (;) or a dash (-) embedded in blanks.
@@ -187,19 +205,105 @@ Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
 
 
 <!-- ---------------- -->
-4. the **Description** is expected to give the *context of the data*, such as instrumentation or observing conditions. 
-It therefore differs from the *Abstract* which describes the *scientific results* that the author(s) derived from the data.
+4. The **Description** is expected to give the *context of the data*, such as instrumentation or observing conditions. 
+It therefore differs from the **Abstract** which describes the *scientific results* that the author(s) derived from the data.
 
-
-<!-- ---------------- -->
-- the **File Summary** describes the files composing the set. Each file should be described by its *filename*, the *length of the longest line* (lrecl), the *number of records* (number of lines), and a *caption* (short title of the file). Lengthy notes can be added if necessary.
-
-
-<!-- ---------------- -->
-- the **Byte-by-byte Description**. There is one per file. This description is in a tabular form, each row describing one field (column) of the data file.
-Here is an example:
-
+###### Example: 
 ```
+Abstract:
+    We present the results of a study of streaming motion of galaxy
+    clusters around the Giant Void (RA~13h, DE~40{deg}, z~0.11 and a
+    diameter of 150/hMpc) in the distribution of rich Abell clusters. We
+    used the Kormendy relation as a distance indicator taking into account
+    galaxy luminosities. Observations were carried out in Kron-Cousins
+    R_c_ system on the 6m and 1m telescopes of SAO RAS. For 17 clusters in
+    a spherical shell of 25/hMpc in thickness centered on the void no
+    significant diverging motion (expected to be generated by the mass
+    deficit in the void) has been detected. This implies that cosmological
+    models with low {Omega}_m_ are preferred. To explain small mass
+    underdensity inside the Giant Void, a mechanism of void formation with
+    strong biasing is required.
+
+Description:
+    Photometric parameters for 210 early-type galaxies in the central
+    regions for 17 clusters around the Giant Void are presented. Galaxies
+    in the following clusters have been observed:
+    A1298, A1361, A1427, A1468, A1542, A1551, A1609, A1637, A1666,
+    A1691, A1700, A1739, A1793, A1823, A1834, A1885, and A1894.
+    For each galaxy equatorial coordinates, total magnitudes in R_c_
+    (Kron-Cousins) band, effective radius, surface brightness and mean
+    surface brightness are given. The derivation of the effective
+    parameters takes the seeing into account.
+```
+
+
+
+<!-- ---------------- -->
+5. *(optional)* The list of **observed objects** introduced by Objects:  only in the case where no data table contains the list and position of the astronomical objects observed or studied, as for example in the study of a high-resolution spectrum of a single star. Such a list is normally restricted to very few objects – less than 10 or 20 typically.
+
+
+
+<!-- ---------------- -->
+6. The **File Summary** describes the files composing the set. Each file should be described by its *filename*, the *length of the longest line* (Lrecl), the *number of lines* (Records), and a *caption* (short title). Lengthy notes can be added if necessary.
+
+
+###### Example: 
+```
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl    Records    Explanations
+--------------------------------------------------------------------------------
+ReadMe            80          .   This file
+clusters.dat      45         17   Cluster positions and magnitudes (from Simbad)
+table2.dat        57        210   Photometric parameters for 210 galaxies
+                                   in 17 clusters
+--------------------------------------------------------------------------------
+```
+
+
+<!-- ---------------- -->
+7. *(optional)*  The list of related catalogues, data sets or services are introduced by the **See also:**  header. In this section, each catalog or service starts on a new line, and is followed by a colon embedded in blanks.
+
+
+###### Example: 
+```
+See also:
+    J/A+AS/97/729 : O-rich stars in 1-20um range
+    http://machine/description.html : Detailed Description
+```
+
+
+<!-- ---------------- -->
+8. *(optional)*  The **Nomenclature Notes:**  header provides valuable information related to the nomenclature of astronomical objects.
+
+
+
+<!-- ---------------- -->
+9. The **Byte-by-byte Description** section describes individually each submitted file.
+This description is in a tabular form, each row describing one field (column) of the data file.
+
+
+###### Example: 
+```
+Byte-by-byte Description of file: clusters.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label    Explanations
+--------------------------------------------------------------------------------
+   1-  4  I4    ---     Abell    Abell (ACO) cluster number
+   7-  8  I2    h       RAh      Right ascension (J2000.0)
+  10- 11  I2    min     RAm      Right ascension (J2000.0)
+  13- 16  F4.1  s       RAs      Right ascension (J2000.0)
+      18  A1    ---     DE-      Declination sign (J2000.0)
+  19- 20  I2    deg     DEd      Declination (J2000.0)
+  22- 23  I2    arcmin  DEm      Declination (J2000.0)
+  25- 26  I2    arcsec  DEs      Declination (J2000.0)
+  29- 45  A17   ---     Names    Other name (1)
+--------------------------------------------------------------------------------
+Note (1): We identify the cluster ACO 1666 with ZwCl J1303.7+5118 as the
+    Abell cluster coordinates (J1302.8+5153) none rich cluster was found.
+    Coordinates refer to the main concentration of galaxies.
+--------------------------------------------------------------------------------
+
 Byte-by-byte Description of file: table2.dat
 -----------------------------------------------------------------------------
    Bytes Format  Units         Label     Explanations
@@ -234,25 +338,59 @@ Note (3): 33 galaxies excluded from the distance determination:
 --------------------------------------------------------------------------------
 ```
 
-This part contains a lot of information
 
-- the *starting* column of the data field
-- the *format* of the field as a *fortran-like* format
+The description is presented as a five-column table with the following elements:
+
+- the *starting* (from 1) and *ending* byte of column, separated by a dash -; this dash is however not required for a single-byte column.
+- the *format* of the field, written as:
     + **A***n*      for a character column made of *n* characters;
     + **I***n*      for a column containing an integer number of *n* digits;
     + **F***n.d*    for a column containing a float number of width *n* digits and up to *d* digits in the fractional part;
     + **E***n.d*    for a number using the exponential notation;
 - the [units][vizier-cat-32-units] used in the field. **SI** units are strongly encouraged, avoid the CGS units (for instance, use **mW/m2** instead of **ergs/s/cm2**).
 - the *label* (heading) of the field, made of a single word (*no embedded blank*); a few [basic conventions][vizier-cat-33-labels] are used for usual parameters (e.g. positions) and related quantities (e.g. mean errors).
-- the *explanations* can start with the following special characters related to some important data characteristics:
-    + **\***        (the asterisk)  indicating a [lengthy note][vizier-cat-35-lengthy]
-    + **[...]**     (square brackets)       indicating *data ranges*
-    + **?** (question mark) indicating a possibility of [blank or NULL][vizier-cat-34-optional] (unspecified) values
+- a short *explanations* of the contents of the column. 
+This last field may also specify: the available range of the value in the column, the possibility of having unspecified or NULL values, the order of the values within the table (increasing or decreasing order). More details can be found [here][vizier-cat-34-explanations].
 
 
-- the **References**: section contains the citations. Bibcodes are strongly encouraged.
+<!-- ---------------- -->
+10. *(optional)*  Global notes — notes which apply to several tables — are introduced by *Note (Gn):*   n being the number of the global note referenced in the Byte-by-byte Description of file:  sections.
+
+
+<!-- ---------------- -->
+11. *(optional)*  some other sections may exist when required, e.g. **History**;  introduces notes about the modification history, **Acknowledgements:**  etc...
+
+
+###### Example: 
+```
+Acknowledgements: Alexander Kopylov <akop@sao.ru>
+```
+
+
+<!-- ---------------- -->
+12. *(optional)*  The list of references is introduced by the **References:**  header.
+Bibcodes are strongly encouraged, to enable an automatic link to the existing Abstract Services like ADS.
 For large sets of references, you can also gather them into a dedicated *reference file* named **refs.dat**.
 
+###### Example: 
+```
+References:
+  Kopylova & Kopylov, 1998PAZh...24..573K, (1998AstL...24..491K)
+    Structure and dynamic state of the Corona Borealis supercluster
+```
+
+<!-- ---------------- -->
+13. the very last line includes just the left-flushed word (End), the name of the person who took care of the standardisation, and the date of the last modification.
+
+
+###### Example: 
+```
+================================================================================
+(End)                            Alexander Kopylov [SAO, Russia]     06-Feb-2002
+```
+
+
+<!--  ----------------------------------------- -->
 ### How to fill the *ReadMe* file?
 
 There are two ways to fill your own ReadMe file: 
@@ -266,6 +404,9 @@ The whole *ReadMe* can then be tested with the command line tool [anafile][anafi
 But in any case, do your best and the CDS team will make sure that your data is easily understandable and can be re-used and cited by everyone. 
 
 
+
+<!--  ----------------------------------------- -->
+<!--  ----------------------------------------- -->
 ## Submission
 
 <!--  ----------------------------------------- -->
@@ -323,6 +464,7 @@ allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 VizieR FTP token generation webpage.
 Note that it is not an image, you can already generate a temporary login.
+
 
 
 <!--  ----------------------------------------- -->
