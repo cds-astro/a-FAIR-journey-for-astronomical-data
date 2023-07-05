@@ -692,10 +692,10 @@ Once the data are public, they are accessible as plain files in [FTP directories
 
 The CDS provides tools to build *ReadMe* file and aligned ASCII tables (Machine Readable Table in FORTRAN format).
 
-The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...):
+The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...).
 
-- This highly standardised file allows reusability and cross matching between catalogs
-- No need to build it from scratch
+- This highly standardised file allows reusability and cross matching between catalogs.
+- No need to build it from scratch!
 
 A good description of your data is the key to discoverability. 
 
