@@ -225,9 +225,7 @@ Q3) 'table.dat'
 Q4) 'test+table.dat'
 Q5) 'my_table.data'
 Q6) 'table&data.dat'
-
-Q7) 'my_awesome_file.fit'
-Q8) 'myfile.jpg'
+Q7) 'myfile.jpg'
 ```
 
 :::::::::::::::::::::::: solution
@@ -244,18 +242,9 @@ R4) No: '+' character not supported.
 
 R5) No: data files are represented as '.dat'.
 
-R6) No: '&' character not supported
+R6) No: '&' character not supported.
 
-------
-
-
-R7) "No: too long"
-==> Only FITS containing tables are available here
-// **To test**
-
-R8) "No: Good length, but extension not supported"
-==> file image/jpeg is not accepted
-// **To test**
+R7) No: File type not accepted.
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::

@@ -52,7 +52,7 @@ For larger files or any other questions, please contact the VizieR staff: [cats(
 <!--  ----------------------------------------- -->
 <!--   ReadMe files                             -->
 <!--  ----------------------------------------- -->
-## ReadMe Files
+## ReadMe file
 
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 -->
 ### The why and what of the ReadMe file
@@ -130,7 +130,7 @@ References:
 
 
 <!--  ----------------------------------------- -->
-### Full description of the content of the ReadMe File
+### Full description of the content of the ReadMe file
 
 The [Standards for Astronomical Catalogues][vizier-readme-std] gives a complete description of the standard for *ReadMe* files. A general overview and some examples are given below.
 
