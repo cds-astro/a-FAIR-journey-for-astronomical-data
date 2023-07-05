@@ -487,6 +487,7 @@ But in any case, do your best and the CDS team will make sure that your data is 
 **// True ???**
 
 
+
 <!--  ----------------------------------------- -->
 <!-- 		Step-by-step: submission form	-->
 <!--  ----------------------------------------- -->
@@ -543,7 +544,7 @@ The upload will generate:
 **Note:** Check that all the tables are uploaded at this stage. Adding tables later implies to remove all tables and *ReadMe*.
 
 
-![VizieR catalogue upload page - step Tables (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023"} 
+![VizieR catalogue upload page - step Tables (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023"} 
 
 
 
@@ -571,7 +572,7 @@ Then you submit the updated *ReadMe* with the "upload" button:
 **Note - 2:** Check that all the tables are uploaded at this stage. Adding tables later implies to remove all tables and *ReadMe*.
 
 
-![VizieR catalogue upload page - step Readme (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, fill the ReadMe file after initiating a session and uploading your tables, from June 2023"} 
+![VizieR catalogue upload page - step Readme (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step2_readme.png){alt="Screenshot: VizieR Catalogue upload page, fill the ReadMe file after initiating a session and uploading your tables, from June 2023"} 
 
 
 
@@ -598,7 +599,7 @@ The uploaded files can be of the following:
 For each upload, a report is available. **It is recommended to verify the mapping by clicking on the report header.**
 
 
-![VizieR catalogue upload page - step FITS Spectra(screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Spectra and Time Series after initiating a session, uploading your tables and filling the ReadMe file, from June 2023"} 
+![VizieR catalogue upload page - step FITS Spectra(screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step3_fits_spectra.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Spectra and Time Series after initiating a session, uploading your tables and filling the ReadMe file, from June 2023"} 
 
 
 
@@ -611,7 +612,7 @@ FITS images can also be uploaded in a similar way as the FITS Spectra (see above
 More information on the accepted formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
 
 
-![VizieR catalogue upload page - step ITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
+![VizieR catalogue upload page - step ITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
 
 
 
@@ -633,7 +634,7 @@ Providing an email address is required at that stage. The email will be used if 
 
 **Note:** If a modification to a recently uploaded is needed, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
-![VizieR catalogue upload page - step Validate (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, validate your submission after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra / Time Series and FITS images, from June 2023"} 
+![VizieR catalogue upload page - step Validate (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step5_validate.png){alt="Screenshot: VizieR Catalogue upload page, validate your submission after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra / Time Series and FITS images, from June 2023"} 
 
 
 
