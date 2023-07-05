@@ -38,8 +38,11 @@ any links that you are not going to use.
 [vizier-at-cfa]: http://vizier.nao.ac.jp/
 [vizier-at-noaj]: https://vizier.cfa.harvard.edu/
 <!-- VizieR Readme-->
-[vizier-readme-std]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx
 [vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
+[vizier-readme-std]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx
+[vizier_adc_keywords]: https://vizier.cds.unistra.fr/vizier/catstd/ADCkwds.htx
+[vizier-cat-34-explanations]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx
+[vizier-cat-35-lengthy]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx
 [vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
 [vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
 [vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
@@ -123,7 +126,5 @@ any links that you are not going to use.
 [vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
 [vizier-cat-32-units]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx
 [vizier-cat-33-labels]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx
-[vizier-cat-34-optional]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx
-[vizier-cat-35-lengthy]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx
 [vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 
