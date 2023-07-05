@@ -612,7 +612,7 @@ FITS images can also be uploaded in a similar way as the FITS Spectra (see above
 More information on the accepted formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
 
 
-![VizieR catalogue upload page - step ITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
+![VizieR catalogue upload page - step FITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
 
 
 
