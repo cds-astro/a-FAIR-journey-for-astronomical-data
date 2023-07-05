@@ -475,19 +475,24 @@ There are two recommended ways to generate your own *ReadMe* file:
 	- The upload table process generates a *ReadMe* skeleton and the standardized tables, both are required for VizieR.
 	- The *ReadMe* file can then be edited online, or downloaded on your computer and edited.
 	- Uploading your own *ReadMe* is also an option.
+
+
+**// TO COMPLETE!!!!**
+
 - With the [cdspydreadme][vizier-cdspyreadme] Python module that generates pre-filled *ReadMe* files for data stored in `CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats,
 
 ![ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
 
 The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
 But in any case, do your best and the CDS team will make sure that your data is easily understandable and can be re-used and cited by everyone. 
-
+**// True ???**
 
 
 
 <!--  ----------------------------------------- -->
+<!-- 	Submission interface			-->
 <!--  ----------------------------------------- -->
-## Data submission
+## Data submission (option 1): Online interface
 
 <!--  ----------------------------------------- -->
 <!-- 		Step-by-step: submission form	-->
@@ -496,10 +501,10 @@ But in any case, do your best and the CDS team will make sure that your data is 
 ### Submission form (option 1): step-by-step
 
 The first option is to use the online interface available at: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login].
+More detailed information on how to use this service can be found on the [VizieR catalogue upload (HELP) page][vizier-submit-data-help].
 
 No account creation is needed. One just needs to create a name for the session, eg. *my_unique_id_2023*.
 
-More detailed information on how to use this service can be found on the [VizieR catalogue upload (HELP) page][vizier-submit-data-help].
 
 
 <!-- Submission form Vizier as iframe -->
@@ -529,7 +534,7 @@ Note that it is not an image, you can submit your files directly from here.
 <!--  ----------------------------------------- -->
 <!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 
-### File Transfer Protocol (option 2): step-by-step
+## Data submission (option 2): File Transfer Protocol 
 
 An other option is to submit your data through File Transfer Protocol. 
 
