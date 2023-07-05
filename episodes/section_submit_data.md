@@ -77,8 +77,6 @@ In this section, we give a lot of details (as we are dissecting the contents of 
 The [Standards for Astronomical Catalogues][vizier-readme-std] is a complete description of the standard for *ReadMe* files. 
 A typical illustration could be e.g. [J/A+A/382/389/ReadMe][vizier-readme-example]. 
 
-The description file contains severals sections; as a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of [Note headers][vizier-cat-35-lengthy]. No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
-
 
 Here is a blank template: 
 
@@ -139,6 +137,10 @@ References:
 ================================================================================
 (End)                            $modification_done_by	      $date_modification
 ```
+
+
+The description file contains severals sections; as a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of [Note headers][vizier-cat-35-lengthy]. No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
+
 
 
 ----------------------------
