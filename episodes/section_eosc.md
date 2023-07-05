@@ -282,6 +282,7 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 	- Discover Research Outputs (datasets, scientific publications, softwares)
 	- Access Training Materials (lessons, courses, videos)
 
+
 - The catalogues ingested in VizieR are findable and accessible in EOSC!
 
 - Interdisciplinary science is facilitated using EOSC Portal, thanks to the interoperability of the data.

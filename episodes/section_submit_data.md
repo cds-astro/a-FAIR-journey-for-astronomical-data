@@ -1,13 +1,15 @@
 ---
 title: "Submitting astronomical data"
-teaching: 5
+teaching: 9
 exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - How and where to submit your data?
-- Do and don't when submitting data?
+- What is a *ReadMe* file?
+- Do and don't when submitting data
+- What is the data curation?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -59,25 +61,11 @@ To be reusable, any data needs extra information. In astronomy, the convention i
 
 Every catalogue in the Virtual Observatory registry has its own *ReadMe*.
 Numerous examples can be found on the [FTP directories][vizier-ftp-cats] at CDS.
-
-
-:::::::::::::::::::::::::::::::::::::: callout
-
-# Disclaimer
-In this section, we give a lot of details (as we are dissecting the contents of the *ReadMe*). It can be overwhelming, but the next section covers the tools that exist to help generating a correct *ReadMe* file. You don't need to build it from scratch!
-
-
-::::::::::::::::::::::::::::::::::::::
-
-
-----------------------------
-
-<!-- Blank template -->
-
-The [Standards for Astronomical Catalogues][vizier-readme-std] is a complete description of the standard for *ReadMe* files. 
 A typical illustration could be e.g. [J/A+A/382/389/ReadMe][vizier-readme-example]. 
 
 
+
+<!-- Blank template -->
 Here is a blank template: 
 
 ```
@@ -126,7 +114,7 @@ Byte-by-byte Description of file: $bytebybyte.file
 --------------------------------------------------------------------------------
 $bytebybyte
 --------------------------------------------------------------------------------
-Note (n): 
+Note (n): $note 
 --------------------------------------------------------------------------------
 
 
@@ -138,44 +126,72 @@ References:
 (End)                            $modification_done_by	      $date_modification
 ```
 
-
-The description file contains severals sections; as a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of [Note headers][vizier-cat-35-lengthy]. No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
-
-
-
 ----------------------------
 
-<!-- Details of the template -->
 
-The description file contains the following parts:
+<!--  ----------------------------------------- -->
+### Full description of the content of the ReadMe File
 
-<!-- ---------------- -->
-1. *First line:* catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or less; 
+The [Standards for Astronomical Catalogues][vizier-readme-std] gives a complete description of the standard for *ReadMe* files. A general overview and some examples are given below.
 
-
-###### Example: 
-```
-I/221               The Magellanic Catalogue of Stars - MACS (Tucholke+ 1996)
-================================================================================
-```
 
 
 :::::::::::::::::::::::::::::::::::::: callout
 
-# Volume and page numbers 
-(**NEEDED????**) 
- 
-- For papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
-- For papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
+# Disclaimer
+In this section, we give a lot of details (as we are dissecting the contents of the *ReadMe*). It can be overwhelming, but the next section covers the tools that exist to help generating a correct *ReadMe* file. 
+
+You don't necessarily need to build it from scratch!
 
 ::::::::::::::::::::::::::::::::::::::
 
 
+
+<!-- Details of the template -->
+::::::::::::::::::::::::::::::::::::::: discussion
+
+### Details
+The *ReadMe* file contains severals sections.
+
+As a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of [Note headers][vizier-cat-35-lengthy]. 
+
+No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 <!-- ---------------- -->
-2. Full title(s), authors, and reference(s) of the catalogue. Each title is left-adjusted (no indentation); the line(s) containing the authors' names are indented (at least two blanks), and the bibliographic reference is enclosed between angle brackets. The BibCode is introduced by an equal sign, as a word without embedded blank of exactly 20 characters (with the equal sign).
+:::::::::::::::: solution
+### 1. First line
+
+Catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or les. 
+
+For the **volume** and **page numbers**:
+- For papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
+- For papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
+
+:::::::::::::::::::::::::
 
 
-###### Example: 
+:::::::::::::::: solution
+######  >>> Example 1
+```
+I/221               The Magellanic Catalogue of Stars - MACS (Tucholke+ 1996)
+================================================================================
+```
+:::::::::::::::::::::::::
+
+
+
+<!-- ---------------- -->
+:::::::::::::::: solution
+### 2. Full title(s), authors, and reference(s) of the catalogue 
+
+Each title is left-adjusted (no indentation); the line(s) containing the authors' names are indented (at least two blanks), and the bibliographic reference is enclosed between angle brackets. The BibCode is introduced by an equal sign, as a word without embedded blank of exactly 20 characters (with the equal sign).
+:::::::::::::::::::::::::
+
+:::::::::::::::: solution
+######  >>> Example 2
 ```
 The Magellanic Catalogue of Stars - MACS
      Tucholke H.-J., de Boer K.S., Seitter W.C.
@@ -185,32 +201,46 @@ The Magellanic Catalogue of Stars - MACS
     =1995Msngr..81...20D
 ================================================================================
 ```
+:::::::::::::::::::::::::
+
 
 
 <!-- ---------------- -->
-3. Three categories of **keywords** can be added:
+:::::::::::::::: solution
+### 3. 'Keywords' header
 
-	- *Keywords*: introduces the list of keywords as in the printed publication.
-	- *ADC\_Keywords*: introduces the list of data-related keywords (see [ADC_keywords and their VizieR translation][vizier_adc_keywords] for more details). They are stricly related to the tabular material collected in the paper.
-	- *Mission\_Name*: for data originated from satellite mission, this header precedes the satellite name.
+
+Three categories of keywords can be added:
+
+- *Keywords*: introduces the list of keywords as in the printed publication.
+- *ADC\_Keywords*: introduces the list of data-related keywords (see [ADC_keywords and their VizieR translation][vizier_adc_keywords] for more details). They are strictly related to the tabular material collected in the paper.
+- *Mission\_Name*: for data originated from satellite mission, this header precedes the satellite name.
 
 
 Whatever the category, multiple keywords are separated by a semicolon (;) or a dash (-) embedded in blanks.
+:::::::::::::::::::::::::
 
-
-###### Example: 
+:::::::::::::::: solution
+######  >>> Example 3
 ```
 ADC_Keywords: Clusters, galaxy ; Galaxies, photometry ; Photometry, CCD
 Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
           cosmology: large-scale structure of Universe
 ```
+:::::::::::::::::::::::::
+
 
 
 <!-- ---------------- -->
-4. The **Description** is expected to give the *context of the data*, such as instrumentation or observing conditions. 
-It therefore differs from the **Abstract** which describes the *scientific results* that the author(s) derived from the data.
+:::::::::::::::: solution
+#### 4. 'Abstract' and 'Description' headers
 
-###### Example: 
+The **Description** part gives the *context of the data*, such as instrumentation or observing conditions. 
+It therefore differs from the **Abstract** which describes the *scientific results* that the author(s) derived from the data.
+:::::::::::::::::::::::::
+
+:::::::::::::::: solution
+######  >>> Example 4
 ```
 Abstract:
     We present the results of a study of streaming motion of galaxy
@@ -237,19 +267,26 @@ Description:
     surface brightness are given. The derivation of the effective
     parameters takes the seeing into account.
 ```
+:::::::::::::::::::::::::
 
 
 
 <!-- ---------------- -->
-5. *(optional)* The list of **observed objects** introduced by Objects:  only in the case where no data table contains the list and position of the astronomical objects observed or studied, as for example in the study of a high-resolution spectrum of a single star. Such a list is normally restricted to very few objects – less than 10 or 20 typically.
+:::::::::::::::: solution
+#### 5. (optional) 'Objects' header
+The list of **observed objects** can be used when no data table contains the list and position of the astronomical objects observed or studied, as for example in the study of a high-resolution spectrum of a single star. Such a list is normally restricted to very few objects – less than 10 or 20 typically.
 
+:::::::::::::::::::::::::
 
 
 <!-- ---------------- -->
-6. The **File Summary** describes the files composing the set. Each file should be described by its *filename*, the *length of the longest line* (Lrecl), the *number of lines* (Records), and a *caption* (short title). Lengthy notes can be added if necessary.
+:::::::::::::::: solution
+#### 6. 'File Summary' header
+It describes the files composing the set. Each file should be described by its *filename*, the *length of the longest line* (Lrecl), the *number of lines* (Records), and a *caption* (short title). Lengthy notes can be added if necessary.
+:::::::::::::::::::::::::
 
-
-###### Example: 
+:::::::::::::::: solution
+######  >>> Example 6
 ```
 File Summary:
 --------------------------------------------------------------------------------
@@ -261,31 +298,58 @@ table2.dat        57        210   Photometric parameters for 210 galaxies
                                    in 17 clusters
 --------------------------------------------------------------------------------
 ```
+:::::::::::::::::::::::::
 
 
 <!-- ---------------- -->
-7. *(optional)*  The list of related catalogues, data sets or services are introduced by the **See also:**  header. In this section, each catalog or service starts on a new line, and is followed by a colon embedded in blanks.
+:::::::::::::::: solution
+#### 7. 'See also' header
+This section can be used to list related catalogues, data sets or services. Each catalog or service starts on a new line, and is followed by a colon embedded in blanks.
 
+:::::::::::::::::::::::::
 
-###### Example: 
+:::::::::::::::: solution
+######  >>> Example 7
 ```
 See also:
     J/A+AS/97/729 : O-rich stars in 1-20um range
     http://machine/description.html : Detailed Description
 ```
+:::::::::::::::::::::::::
 
 
 <!-- ---------------- -->
-8. *(optional)*  The **Nomenclature Notes:**  header provides valuable information related to the nomenclature of astronomical objects.
+:::::::::::::::: solution
+#### 8. (optional) 'Nomenclature Notes' header
+
+This  header provides valuable information related to the nomenclature of astronomical objects.
+:::::::::::::::::::::::::
 
 
 
 <!-- ---------------- -->
-9. The **Byte-by-byte Description** section describes individually each submitted file.
-This description is in a tabular form, each row describing one field (column) of the data file.
+:::::::::::::::: solution
+#### 9. 'Byte-by-byte Description of file' header
 
+This section describes the structure of each data files (files with the .dat extension).
+This description is made in a tabular form, each row describing one field (column) of the data file.
 
-###### Example: 
+The description is presented as a five-column table with the following elements:
+
+- the *starting* (from 1) and *ending* byte of column, separated by a dash -; this dash is however not required for a single-byte column.
+- the *format* of the field, written as a *fortran-like* format
+    + **A***n*      for a character column made of *n* characters;
+    + **I***n*      for a column containing an integer number of *n* digits;
+    + **F***n.d*    for a column containing a float number of width *n* digits and up to *d* digits in the fractional part;
+    + **E***n.d*    for a number using the exponential notation;
+- the [units][vizier-cat-32-units] used in the field. **SI** units are strongly encouraged, avoid the CGS units (for instance, use **mW/m2** instead of **ergs/s/cm2**).
+- the *label* (heading) of the field, made of a single word (*no embedded blank*); a few [basic conventions][vizier-cat-33-labels] are used for usual parameters (e.g. positions) and related quantities (e.g. mean errors).
+- a short *explanations* of the contents of the column. 
+This last field may also specify: the available range of the value in the column (using **[...]**), the possibility of having unspecified or NULL values (using **?**), the order of the values within the table (increasing or decreasing order). More details can be found [here][vizier-cat-34-explanations].
+:::::::::::::::::::::::::
+
+:::::::::::::::: solution
+######  >>> Example 9
 ```
 Byte-by-byte Description of file: clusters.dat
 --------------------------------------------------------------------------------
@@ -339,77 +403,91 @@ Note (3): 33 galaxies excluded from the distance determination:
      3 = peculiar or interacting
 --------------------------------------------------------------------------------
 ```
-
-
-The description is presented as a five-column table with the following elements:
-
-- the *starting* (from 1) and *ending* byte of column, separated by a dash -; this dash is however not required for a single-byte column.
-- the *format* of the field, written as:
-    + **A***n*      for a character column made of *n* characters;
-    + **I***n*      for a column containing an integer number of *n* digits;
-    + **F***n.d*    for a column containing a float number of width *n* digits and up to *d* digits in the fractional part;
-    + **E***n.d*    for a number using the exponential notation;
-- the [units][vizier-cat-32-units] used in the field. **SI** units are strongly encouraged, avoid the CGS units (for instance, use **mW/m2** instead of **ergs/s/cm2**).
-- the *label* (heading) of the field, made of a single word (*no embedded blank*); a few [basic conventions][vizier-cat-33-labels] are used for usual parameters (e.g. positions) and related quantities (e.g. mean errors).
-- a short *explanations* of the contents of the column. 
-This last field may also specify: the available range of the value in the column, the possibility of having unspecified or NULL values, the order of the values within the table (increasing or decreasing order). More details can be found [here][vizier-cat-34-explanations].
+:::::::::::::::::::::::::
 
 
 <!-- ---------------- -->
-10. *(optional)*  Global notes — notes which apply to several tables — are introduced by *Note (Gn):*   n being the number of the global note referenced in the Byte-by-byte Description of file:  sections.
+:::::::::::::::: solution
+#### 10. (optional)  Global notes header
+
+Notes which apply to several tables are introduced by *Note (Gn):*  n being the number of the global note referenced in the Byte-by-byte Description of file:  sections.
+:::::::::::::::::::::::::
 
 
 <!-- ---------------- -->
-11. *(optional)*  some other sections may exist when required, e.g. **History**;  introduces notes about the modification history, **Acknowledgements:**  etc...
+:::::::::::::::: solution
+#### 11. (optional)  'History', 'Acknowledgements' headers
 
+Some other sections may exist when required, e.g. **History**;  introduces notes about the modification history, **Acknowledgements:**  etc...
+:::::::::::::::::::::::::
 
-###### Example: 
+:::::::::::::::: solution
+######  >>> Example 11
 ```
 Acknowledgements: Alexander Kopylov <akop@sao.ru>
 ```
+:::::::::::::::::::::::::
 
 
 <!-- ---------------- -->
-12. *(optional)*  The list of references is introduced by the **References:**  header.
-Bibcodes are strongly encouraged, to enable an automatic link to the existing Abstract Services like ADS.
-For large sets of references, you can also gather them into a dedicated *reference file* named **refs.dat**.
+:::::::::::::::: solution
+#### 12. (optional) 'References' header
 
-###### Example: 
+This section contains the necessary references. Bibcodes are strongly encouraged, to enable an automatic link to the existing Abstract Services like ADS.
+
+For large sets of references, you can also gather them into a dedicated *reference file* named **refs.dat**.
+:::::::::::::::::::::::::
+
+:::::::::::::::: solution
+######  >>> Example 12
 ```
 References:
   Kopylova & Kopylov, 1998PAZh...24..573K, (1998AstL...24..491K)
     Structure and dynamic state of the Corona Borealis supercluster
 ```
+:::::::::::::::::::::::::
+
 
 <!-- ---------------- -->
-13. the very last line includes just the left-flushed word (End), the name of the person who took care of the standardisation, and the date of the last modification.
+:::::::::::::::: solution
+#### 13. Last line
 
+The very last line includes just the left-flushed word **(End)**, the name of the person who took care of the standardisation, and the date of the last modification.
+:::::::::::::::::::::::::
 
-###### Example: 
+:::::::::::::::: solution
+######  >>> Example 13
 ```
 ================================================================================
 (End)                            Alexander Kopylov [SAO, Russia]     06-Feb-2002
 ```
+:::::::::::::::::::::::::
 
+
+----------------------------
 
 <!--  ----------------------------------------- -->
-### How to fill the *ReadMe* file?
+### How to generate the ReadMe file?
 
-There are two ways to fill your own ReadMe file: 
+There are two recommended ways to generate your own *ReadMe* file: 
 
-- with the [cdspydreadme][vizier-cdspyreadme] python module that generates pre-filled readme files for data stored in `FITS`, `csv`, `astropy.Tables`, or `MRT` formats,
-- manually, by looking at examples and adapting to your own table
+- With the submission [**online interface**][vizier-submit-login]:
+	- The upload table process generates a *ReadMe* skeleton and the standardized tables, both are required for VizieR.
+	- The *ReadMe* file can then be edited online, or downloaded on your computer and edited.
+	- Uploading your own *ReadMe* is also an option.
+- With the [cdspydreadme][vizier-cdspyreadme] Python module that generates pre-filled *ReadMe* files for data stored in `CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats,
 
-$ # TODO: does the submission form offer an other way to generate a readme file? $
+![ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
 
 The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
 But in any case, do your best and the CDS team will make sure that your data is easily understandable and can be re-used and cited by everyone. 
 
 
 
+
 <!--  ----------------------------------------- -->
 <!--  ----------------------------------------- -->
-## Submission
+## Data submission
 
 <!--  ----------------------------------------- -->
 <!-- 		Step-by-step: submission form	-->
@@ -421,11 +499,13 @@ The first option is to use the online interface available at: [https://cdsarc.cd
 
 No account creation is needed. One just needs to create a name for the session, eg. *my_unique_id_2023*.
 
+More detailed information on how to use this service can be found on the [VizieR catalogue upload (HELP) page][vizier-submit-data-help].
+
 
 <!-- Submission form Vizier as iframe -->
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/"
 title="VizieR catalogue upload webpage"
-style="border: 1px solid black; width: 98%; height: 600px; 
+style="border: 1px solid black; width: 95%; height: 600px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
@@ -433,11 +513,12 @@ VizieR catalogue upload webpage.
 Note that it is not an image, you can submit your files directly from here.
 
 
-More detailed information on how to use this service can be found on the [VizieR catalogue upload (HELP) page][vizier-submit-data-help].
 
 
 ![VizieR catalogue upload page - start uploading Tables (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_data_interface__step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023"}
 
+
+-------
 
 -------
 
@@ -460,7 +541,7 @@ A web application is available for authors to obtain a temporary login/password:
 <!-- VizieR FTP token as iframe -->
 <iframe src="https://cds.unistra.fr/ftp/token/"
 title="VizieR FTP token generation webpage"
-style="border: 1px solid black; width: 98%; height: 680px; 
+style="border: 1px solid black; width: 95%; height: 680px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
@@ -495,7 +576,10 @@ Once the data are public, they are accessible as plain files in [FTP directories
 - Online interface
 - File Transfer Protocol
 
-*ReadMe* files are highly standardised to allow reusability and cross matching between catalogs.
+The *ReadMe* file describe your tables:
+
+- This highly standardised file allows reusability and cross matching between catalogs
+- No need to build it from scratch
 
 Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
 
@@ -509,18 +593,6 @@ Once the catalogues are submitted, a delay is needed for VizieR curation and val
 
 In the next chapters, you will learn what happen to your data once they are fully ingested into VizieR.
  
-
-
-
-
-## Ideas ???
-
-***Other source: https://cdsarc.cds.unistra.fr/vizier.submit/help.html***
-
-***Other ressource: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section5***
-
-***Other: https://vizier.cds.unistra.fr/vizier/submit.htx***
-
 
 
 <!--  ----------------------------------------- -->
