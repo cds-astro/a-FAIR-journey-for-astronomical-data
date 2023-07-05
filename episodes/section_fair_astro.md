@@ -781,7 +781,7 @@ Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&AS,
 
 #### Examples
 ```example
-[a] Tag your articles with UAT keywords that best describe the types 
+a) Tag your articles with UAT keywords that best describe the types 
 of data contained in the article.
 ```
 

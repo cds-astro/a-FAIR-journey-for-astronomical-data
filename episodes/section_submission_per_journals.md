@@ -190,7 +190,7 @@ ORDER BY popu DESC;
 - Initiated by authors
 - Initiated by the CDS
 
-To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed. (**TRUE -- AG??**)
+To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed.
 
 - Main journals origin : AAS (AJ, ApJ, ApJS), A&A, MNRAS
 - Authors asking for VizieR publication

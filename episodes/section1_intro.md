@@ -32,7 +32,7 @@ exercises: 0
 <!-- VizieR homepage as iframe-->
 <iframe src="https://vizier.cds.unistra.fr/index.gml" 
 title="VizieR homepage webpage" 
-style="border: 1px solid black; width: 98%; height: 1000px; 
+style="border: 1px solid black; width: 95%; height: 1000px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
@@ -84,7 +84,7 @@ Optionally contains:
 <!-- VizieR catalogue as iframe-->
 <iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355#/article" 
 title="VizieR catalogue ingested: example Gaia DR3 Part 1." 
-style="border: 1px solid black; width: 98%; height: 1200px; 
+style="border: 1px solid black; width: 95%; height: 1200px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 VizieR catalogue ingestion webpage: example Gaia DR3 Part 1.
