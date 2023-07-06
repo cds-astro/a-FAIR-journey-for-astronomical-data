@@ -474,17 +474,13 @@ There are two recommended ways to generate your own *ReadMe* file:
 - With the submission [**online interface**][vizier-submit-login]:
 	- The upload table process generates a *ReadMe* skeleton and the standardized tables, both are required for VizieR.
 	- This *ReadMe* file can then be edited or you can upload your own file.
-
-
-**// TO COMPLETE!!!!**
-
-- With the [cdspydreadme][vizier-cdspyreadme] Python module that generates pre-filled *ReadMe* files for data stored in `CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats,
+- With the [cdspydreadme][vizier-cdspyreadme] Python library:
+	- This package builds *ReadMe*, standardized tables (in ASCII aligned format) or MRT tables from tables which can be in different formats (`CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats)
+	- The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
 
 ![ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
 
-The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
-But in any case, do your best and the CDS team will make sure that your data is easily understandable and can be re-used and cited by everyone. 
-**// True ???**
+![ReadMe Generator Python library Github page (screenshot)](file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
 
 
 
@@ -646,11 +642,12 @@ Providing an email address is required at that stage. The email will be used if 
 ## Data submission (option 2): File Transfer Protocol 
 
 An other option is to submit your data through File Transfer Protocol. 
+This option is particularly recommended if the *ReadMe* file was created using the [**Python cdspyreadme library**][vizier-cdspyreadme].
 
 Since October 2021, FTP uploads requires a login authentification.
 A web application is available for authors to obtain a temporary login/password:
-[https://cds.unistra.fr/ftp/token/][vizier-ftp-login]
-(include the FTP instruction).
+[https://cds.unistra.fr/ftp/token/][vizier-ftp-login]. 
+
 
 <!-- VizieR FTP token as iframe -->
 <iframe src="https://cds.unistra.fr/ftp/token/"
@@ -661,6 +658,12 @@ allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 VizieR FTP token generation webpage.
 Note that it is not an image, you can already generate a temporary login.
+
+
+----
+
+It includes the FTP instructions.
+
 
 
 
