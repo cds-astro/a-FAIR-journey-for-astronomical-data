@@ -37,7 +37,7 @@ Once your data have been successfully ingested into VizieR, they begin their jou
 
 Work within the [ESCAPE project][escape] and the [EOSC Future project][eosc-future] has been aimed at connecting the existing astronomy data publishing systems to the  [European Open Science Cloud (EOSC)][eosc].
 
-The first stop for your data after VizieR is the [International Virtual Observatory Association (IVOA) registry][ivoa-registry]. It gathers the data from ViZieR, and other astronomical data centers.
+The first stop for your data after VizieR is the [International Virtual Observatory Alliance (IVOA) registry][ivoa-registry]. It gathers the data from ViZieR, and other astronomical data centers.
 
 Then the datasets reach a broader audience when [B2Find][b2find] and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry. In this way the familiar processes of publishing data become part of the wider EOSC system. 
 
