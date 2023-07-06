@@ -27,13 +27,19 @@ exercises: 1
 <!--  ----------------------------------------- -->
 ## From VizieR to EOSC
 
-Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, ultimately reaching the  [European Open Science Cloud (EOSC)][eosc], as illustrated in the figure below.
+In the last chapters, we concentrated on the publication of data via the CDS VizieR service. We will now show how the process leads to the data being made visible in the EOSC Portal. We invite astronomy researchers to follow the journey of their data to EOSC!
+
+Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, as illustrated in the figure below.
+
 
 ![Full data journey from a publication to EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data"}
 
+
+Work within the [ESCAPE project][escape] and the [EOSC Future project][eosc-future] has been aimed at connecting the existing astronomy data publishing systems to the  [European Open Science Cloud (EOSC)][eosc].
+
 The first stop for your data after VizieR is the [International Virtual Observatory Association (IVOA) registry][ivoa-registry]. It gathers the data from ViZieR, and other astronomical data centers.
 
-Then the datasets reach a broader audience when [B2Find][b2find] and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry.
+Then the datasets reach a broader audience when [B2Find][b2find] and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry. In this way the familiar processes of publishing data become part of the wider EOSC system. 
 
 
 

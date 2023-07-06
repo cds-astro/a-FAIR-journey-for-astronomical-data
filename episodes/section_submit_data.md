@@ -612,7 +612,7 @@ FITS images can also be uploaded in a similar way as the FITS Spectra (see above
 More information on the accepted formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
 
 
-![VizieR catalogue upload page - step ITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
+![VizieR catalogue upload page - step FITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
 
 
 
@@ -692,10 +692,10 @@ Once the data are public, they are accessible as plain files in [FTP directories
 
 The CDS provides tools to build *ReadMe* file and aligned ASCII tables (Machine Readable Table in FORTRAN format).
 
-The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...):
+The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...).
 
-- This highly standardised file allows reusability and cross matching between catalogs
-- No need to build it from scratch
+- This highly standardised file allows reusability and cross matching between catalogs.
+- No need to build it from scratch!
 
 A good description of your data is the key to discoverability. 
 
