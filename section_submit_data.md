@@ -706,14 +706,14 @@ Using binary mode to transfer files.
 ftp> 
 ```
 
-##### How to upload a table?
+#### How to upload a table?
 
 ```ftp
 ftp> put table.dat
 ```
 
 
-##### Switching to binary mode
+#### Switching to binary mode
  
 In case of Binary data, make sure that your session in in binary mode.
 This option, is not set by all FTP client -
@@ -728,7 +728,7 @@ ftp> bin
 
 -------
 
-#### Notify the VizieR team
+### Notify the VizieR team
 
 Once you are done uploading your data (*ReadMe*, tables and any other associated data), you need to **SEND AN E-MAIL** to the VizieR team telling them where you have placed files: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
