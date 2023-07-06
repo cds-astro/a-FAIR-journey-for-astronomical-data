@@ -708,8 +708,12 @@ ftp>
 
 #### How to upload a table?
 
-```ftp
+To upload a table (e.g. *table.dat*), use the command: `put table.dat`.
+
+```output
 ftp> put table.dat
+local: table.dat remote: table.dat
+200 PORT command successful. Consider using PASV.
 ```
 
 
@@ -717,12 +721,26 @@ ftp> put table.dat
  
 In case of Binary data, make sure that your session in in binary mode.
 This option, is not set by all FTP client -
-To force binary mode, use the command "bin" FTP protocol as follow.
+To force binary mode, use the command `bin` FTP protocol as follow.
 
 
 ``` output
 ftp> bin
 200 Switching to Binary mode.
+```
+
+
+#### Passive mode
+By accessing the FTP server in *passive mode* -- `ftp -p ftp.cds.unistra.fr` --, one can get the directory listing using `ls`.
+
+```output
+ftp> ls
+227 Entering Passive Mode (130,79,128,14,36,87).
+150 Here comes the directory listing.
+-rw-r--r--    1 115      120          1570 Jul 06 14:08 ReadMe.txt
+-rw-r--r--    1 115      120        259200 Jul 06 14:09 spectra_test.fit
+-rw-r--r--    1 115      120             0 Jul 06 14:02 table.dat
+226 Directory send OK.
 ```
 
 
