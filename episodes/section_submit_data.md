@@ -642,7 +642,7 @@ Providing an email address is required at that stage. The email will be used if 
 ## Data submission (option 2): File Transfer Protocol 
 
 An other option is to submit your data through File Transfer Protocol. 
-This option is particularly recommended if the *ReadMe* file was created using the [**Python cdspyreadme library**][vizier-cdspyreadme].
+This option is particularly recommended if the *ReadMe* file was created using the [**Python cdspyreadme library**][vizier-cdspyreadme] and for large files.
 
 Since October 2021, FTP uploads requires a login authentification.
 A web application is available for authors to obtain a temporary login/password:
