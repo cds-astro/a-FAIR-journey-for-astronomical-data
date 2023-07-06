@@ -618,15 +618,19 @@ More information on the accepted formats can be found in the Chapter [Preparing 
 
 Please, verify that everything is correct before ending your session. Note that you can go back to the current work using the same login until you have submitted this page with the "Yes" button at the end of the page.
 
+**IMPORTANT POINT:** A summary of the files uploaded is available via a temporary link, but **DO NOT USE** this url as it will disappear after publication.
+
 In the last step you can:
 
 - Upload additional files (keeping in mind the accepted formats)
 - Add a message to the VizieR staff
 
-
 Providing an email address is required at that stage. The email will be used if additional information is needed.
 
 **Note:** If a modification to a recently uploaded is needed, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+
+
+
 
 ![VizieR catalogue upload page - step Validate (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step5_validate.png){alt="Screenshot: VizieR Catalogue upload page, validate your submission after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra / Time Series and FITS images, from June 2023"} 
 
