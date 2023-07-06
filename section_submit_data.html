@@ -1168,18 +1168,43 @@ ftp&gt; </code></pre>
 </div>
 <div class="section level4">
 <h4 id="how-to-upload-a-table">How to upload a table?<a class="anchor" aria-label="anchor" href="#how-to-upload-a-table"></a></h4>
-<pre class="ftp"><code>ftp&gt; put table.dat</code></pre>
+<p>To upload a table (e.g. <em>table.dat</em>), use the command:
+<code>put table.dat</code>.</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>ftp&gt; put table.dat
+local: table.dat remote: table.dat
+200 PORT command successful. Consider using PASV.</code></pre>
+</div>
 </div>
 <div class="section level4">
 <h4 id="switching-to-binary-mode">Switching to binary mode<a class="anchor" aria-label="anchor" href="#switching-to-binary-mode"></a></h4>
 <p>In case of Binary data, make sure that your session in in binary
 mode. This option, is not set by all FTP client - To force binary mode,
-use the command “bin” FTP protocol as follow.</p>
+use the command <code>bin</code> FTP protocol as follow.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>ftp&gt; bin
 200 Switching to Binary mode.</code></pre>
+</div>
+</div>
+<div class="section level4">
+<h4 id="passive-mode">Passive mode<a class="anchor" aria-label="anchor" href="#passive-mode"></a></h4>
+<p>By accessing the FTP server in <em>passive mode</em> –
+<code>ftp -p ftp.cds.unistra.fr</code> –, one can get the directory
+listing using <code>ls</code>.</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>ftp&gt; ls
+227 Entering Passive Mode (130,79,128,14,36,87).
+150 Here comes the directory listing.
+-rw-r--r--    1 115      120          1570 Jul 06 14:08 ReadMe.txt
+-rw-r--r--    1 115      120        259200 Jul 06 14:09 spectra_test.fit
+-rw-r--r--    1 115      120             0 Jul 06 14:02 table.dat
+226 Directory send OK.</code></pre>
 </div>
 <hr></div>
 </div>
