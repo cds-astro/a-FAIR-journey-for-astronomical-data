@@ -1,7 +1,7 @@
 ---
 title: "Submitting astronomical data"
-teaching: 9
-exercises: 0
+teaching: 8
+exercises: 6
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -424,7 +424,7 @@ Some other sections may exist when required, e.g. **History**;  introduces notes
 :::::::::::::::: solution
 ######  >>> Example 11
 ```
-Acknowledgements: Alexander Kopylov <akop@sao.ru>
+Acknowledgements: Alexander Kopylov <akop(at)sao.ru>
 ```
 :::::::::::::::::::::::::
 
@@ -474,17 +474,11 @@ There are two recommended ways to generate your own *ReadMe* file:
 - With the submission [**online interface**][vizier-submit-login]:
 	- The upload table process generates a *ReadMe* skeleton and the standardized tables, both are required for VizieR.
 	- This *ReadMe* file can then be edited or you can upload your own file.
-
-
-**// TO COMPLETE!!!!**
-
-- With the [cdspydreadme][vizier-cdspyreadme] Python module that generates pre-filled *ReadMe* files for data stored in `CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats,
+- With the [cdspydreadme][vizier-cdspyreadme] Python library:
+	- This package builds *ReadMe*, standardized tables (in ASCII aligned format) or MRT tables from tables which can be in different formats (`CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats)
+	- The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
 
 ![ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
-
-The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
-But in any case, do your best and the CDS team will make sure that your data is easily understandable and can be re-used and cited by everyone. 
-**// True ???**
 
 
 
@@ -646,11 +640,12 @@ Providing an email address is required at that stage. The email will be used if 
 ## Data submission (option 2): File Transfer Protocol 
 
 An other option is to submit your data through File Transfer Protocol. 
+This option is particularly recommended if the *ReadMe* file was created using the [**Python cdspyreadme library**][vizier-cdspyreadme] and for large files.
 
 Since October 2021, FTP uploads requires a login authentification.
 A web application is available for authors to obtain a temporary login/password:
-[https://cds.unistra.fr/ftp/token/][vizier-ftp-login]
-(include the FTP instruction).
+[https://cds.unistra.fr/ftp/token/][vizier-ftp-login]. It includes some FTP instructions.
+
 
 <!-- VizieR FTP token as iframe -->
 <iframe src="https://cds.unistra.fr/ftp/token/"
@@ -661,6 +656,81 @@ allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 VizieR FTP token generation webpage.
 Note that it is not an image, you can already generate a temporary login.
+
+
+-------
+
+### Generate a temporary FTP login
+
+The first step is to register to get a temporary login: available for **3 days**.
+
+To do so, the authors need to provide their email address (e.g. *jane.doe(at)astro.fr*) and choose a login (e.g. *paper\_carbon\_jdoe_jul23*).
+This unique FTP login (6 characters at least) will be dedicated for the upload of a single catalogue.
+
+On success, a mail is sent to your email address with the FTP login and some instructions.
+
+-------
+
+### Upload to the CDS repository
+
+Your freshly created account is ready and available for **3** days.
+You can put your files directly under the repository  (the root ftp directory being dedicated per login).
+
+More information on the accepted data and formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
+
+Type the following command in a terminal to access the FTP server: `ftp ftp.cds.unistra.fr`.
+
+
+
+``` output
+Connected to ftp.cds.unistra.fr.
+220 Welcome to the CDS FTP service.
+Name: paper_carbon_jdoe_jul23
+331 Please specify the password.
+Password:
+230-------------------------------------------------------
+230-CDS FTP repository for authors
+230-
+230- => temporary directoy for user paper_carbon_jdoe_jul23
+230-
+230-Note for binary upload: 
+230-tape "bin" in prompt command to switch in binary mode
+230-
+230-ftp> bin
+230-
+230-(create Thu Jul  6 12:09:25 2023)
+230-------------------------------------------------------
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> 
+```
+
+##### How to upload a table?
+
+```ftp
+ftp> put table.dat
+```
+
+
+##### Switching to binary mode
+ 
+In case of Binary data, make sure that your session in in binary mode.
+This option, is not set by all FTP client -
+To force binary mode, use the command "bin" FTP protocol as follow.
+
+
+``` output
+ftp> bin
+200 Switching to Binary mode.
+```
+
+
+-------
+
+#### Notify the VizieR team
+
+Once you are done uploading your data (*ReadMe*, tables and any other associated data), you need to **SEND AN E-MAIL** to the VizieR team telling them where you have placed files: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
 
 
@@ -675,6 +745,7 @@ Once the data are public, they are accessible as plain files in [FTP directories
 
 
 ![Journey from a publication to EOSC: fourth step of the journey - steps curation & verification](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
+
 
 
 <!--  ----------------------------------------- -->
@@ -692,12 +763,12 @@ Once the data are public, they are accessible as plain files in [FTP directories
 
 The CDS provides tools to build *ReadMe* file and aligned ASCII tables (Machine Readable Table in FORTRAN format).
 
+- No need to build it from scratch!
+
 The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...).
 
 - This highly standardised file allows reusability and cross matching between catalogs.
-- No need to build it from scratch!
-
-A good description of your data is the key to discoverability. 
+- A good description of your data is the key to discoverability. 
 
 Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
 
