@@ -10,9 +10,6 @@ Work within the [ESCAPE](https://projectescape.eu/) project and the [EOSC Future
 In this training we concentrate on the publication of data via the CDS VizieR service and show how the process leads to the data being made visible in the EOSC Portal. We invite astronomy researchers to follow the journey of their data to EOSC!
 
 
-![Logo Centre de Données astronomiques de Strasbourg - CDS](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/CDS_LOGO-vect.svg){alt="Logo Centre de Données astronomiques de Strasbourg - CDS"}
-
-
 ## Target audience
 
 Researchers in astronomy who want to make their published data (table, images, spectra, …) FAIR and openly accessible to the community.
@@ -42,6 +39,11 @@ All materials are developed online openly under CC-BY 4.0 License using The Carp
 ## Contact
 
 If you have got any questions, feel free to contact directly the VizieR team at: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) .
+
+
+![Logo Centre de Données astronomiques de Strasbourg - CDS](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/cds-logo.png)
+
+![Logo European Open Science Cloud Future- EOSC Future](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/eosc_future_logo.png)
 
 
 
