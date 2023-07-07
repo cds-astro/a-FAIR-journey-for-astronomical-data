@@ -41,6 +41,8 @@ All materials are developed online openly under CC-BY 4.0 License using The Carp
 If you have got any questions, feel free to contact directly the VizieR team at: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) .
 
 
+## Supporting organisations
+
 ![Logo Centre de Données astronomiques de Strasbourg - CDS](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/cds-logo.png)
 
 ![Logo European Open Science Cloud Future- EOSC Future](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/eosc_future_logo.png)
