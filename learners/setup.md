@@ -24,7 +24,7 @@ Researchers in astronomy who want to make their published data (table, images, s
 
 This training is also directed at researchers interested in ensuring long-lasting access to their data. 
 
-This training is also designed to inform astronomy researchers about the new developments in Open Science that are being enabled by the EOSC.
+This training is designed to inform astronomy researchers about the new developments in Open Science that are being enabled by the EOSC.
 
 
 
