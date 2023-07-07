@@ -11,6 +11,6 @@
 "episodes/section_submit_data.md" "68e4dfffd82a8f205d6589ced12dcb71" "site/built/section_submit_data.md" "2023-07-07"
 "episodes/section_eosc.md" "58f1484e7e9646ba4772c2756a36a40c" "site/built/section_eosc.md" "2023-07-06"
 "instructors/instructor-notes.md" "60b93493cf1da06dfd63255d73854461" "site/built/instructor-notes.md" "2022-04-22"
-"learners/setup.md" "8f6a9d691f3d2e08fc10e9e9734ae08d" "site/built/setup.md" "2023-07-06"
+"learners/setup.md" "f573997723eace8b81344b0e069c11f9" "site/built/setup.md" "2023-07-07"
 "learners/reference.md" "ba4360cfdc763d6e280ec2bfbf49e745" "site/built/reference.md" "2023-07-06"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-04-22"
