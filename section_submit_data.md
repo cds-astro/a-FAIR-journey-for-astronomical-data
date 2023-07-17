@@ -236,7 +236,9 @@ Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
 #### 4. 'Abstract' and 'Description' headers
 
 The **Description** part gives the *context of the data*, such as instrumentation or observing conditions. 
-It therefore differs from the **Abstract** which describes the *scientific results* that the author(s) derived from the data.
+It therefore differs from the **Abstract** which describes the *scientific results* that the author(s) derived from the data. The **Abstract** is simply the one from your refereed paper. 
+
+
 :::::::::::::::::::::::::
 
 :::::::::::::::: solution
