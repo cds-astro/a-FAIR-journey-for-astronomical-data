@@ -36,8 +36,8 @@ any links that you are not going to use.
 [vizier-ftp-cats]: http://cdsarc.cds.unistra.fr/ftp/cats/
 <!-- VizieR mirrors -->
 [vizier-mirors]: https://vizier.cfa.harvard.edu/vizier/mirrors.gml
-[vizier-at-cfa]: http://vizier.nao.ac.jp/
-[vizier-at-noaj]: https://vizier.cfa.harvard.edu/
+[vizier-at-cfa]: https://vizier.cfa.harvard.edu/
+[vizier-at-noaj]: http://vizier.nao.ac.jp/
 <!-- VizieR Readme-->
 [vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
 [vizier-readme-std]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx
