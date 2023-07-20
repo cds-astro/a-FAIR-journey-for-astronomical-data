@@ -29,10 +29,11 @@ exercises: 6
 
 Two routes are possible to submit your data to VizieR:
 
-- Option 1: Use the submission [**online interface**][vizier-submit-login]
-	- The upload will generate a *ReadMe* file based on your tables.
-	- Some basic checks on the *ReadMe* and data files are performed. 
-	- It also includes FITS ingestion procedure to improve the discoverability of images and spectra.
+- Option 1: If not too bulky, use the submission [**online interface**][vizier-submit-login]
+	- The upload will generate a *ReadMe* skeleton file based on your tables and perform a few basic checks.
+	- You will need to check and complete this *ReadMe* file. 
+	- Alternatively, if you already have created a *ReadMe* file, you can upload it directly along with your tables.
+	- In addition to your table, FITS files (spectra or images) for associated data can be uploaded to improve their discoverability via our [dedicated interface Saada/VizieR][vizier-assoc-data].
 - Option 2: Use the [**Python cdspyreadme library**][vizier-cdspyreadme] to create the *ReadMe* file and then upload all the tables and other data by [**FTP**][vizier-ftp-login]
 
 
@@ -763,9 +764,9 @@ Once you are done uploading your data (*ReadMe*, tables and any other associated
 <!--  ----------------------------------------- -->
 ## What happens to your data at the CDS? 
 
-Once the data submitted on the CDS servers, some checking procedures are executed to verify the compatibility between the data files and their description. This can lead to interactions with the authors, but we are trying to minimize the level of interaction. 
+Once the data have been submitted on the CDS servers, the VizieR team will check that the data is compatible with our standards. Once the data have been accepted, the CDS team will also add some valuable and relevant information such as metadata and links to other catalogs. This can lead to interactions with the authors, but we are trying to minimize the level of interaction.
 
-Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]).
+Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]), as well as all VO compatible services.
 
 
 ![Journey from a publication to EOSC: fourth step of the journey - steps curation & verification](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
