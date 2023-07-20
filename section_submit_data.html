@@ -310,14 +310,17 @@ standards.</li>
 <section id="where-to-deposit-the-data"><h2 class="section-heading">Where to deposit the data?<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data"></a>
 </h2>
 <hr class="half-width"><p>Two routes are possible to submit your data to VizieR:</p>
-<ul><li>Option 1: Use the submission <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link"><strong>online
+<ul><li>Option 1: If not too bulky, use the submission <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link"><strong>online
 interface</strong></a>
-<ul><li>The upload will generate a <em>ReadMe</em> file based on your
-tables.</li>
-<li>Some basic checks on the <em>ReadMe</em> and data files are
-performed.</li>
-<li>It also includes FITS ingestion procedure to improve the
-discoverability of images and spectra.</li>
+<ul><li>The upload will generate a <em>ReadMe</em> skeleton file based on
+your tables and perform a few basic checks.</li>
+<li>You will need to check and complete this <em>ReadMe</em> file.</li>
+<li>Alternatively, if you already have created a <em>ReadMe</em> file,
+you can upload it directly along with your tables.</li>
+<li>In addition to your table, FITS files (spectra or images) for
+associated data can be uploaded to improve their discoverability via our
+<a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">dedicated interface
+Saada/VizieR</a>.</li>
 </ul></li>
 <li>Option 2: Use the <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link"><strong>Python
 cdspyreadme library</strong></a> to create the <em>ReadMe</em> file and
@@ -1223,13 +1226,16 @@ to the VizieR team telling them where you have placed files: <a href="mailto:cat
 </div>
 </section><section id="what-happens-to-your-data-at-the-cds"><h2 class="section-heading">What happens to your data at the CDS?<a class="anchor" aria-label="anchor" href="#what-happens-to-your-data-at-the-cds"></a>
 </h2>
-<hr class="half-width"><p>Once the data submitted on the CDS servers, some checking procedures
-are executed to verify the compatibility between the data files and
-their description. This can lead to interactions with the authors, but
-we are trying to minimize the level of interaction.</p>
+<hr class="half-width"><p>Once the data have been submitted on the CDS servers, the VizieR team
+will check that the data is compatible with our standards. Once the data
+have been accepted, the CDS team will also add some valuable and
+relevant information such as metadata and links to other catalogs. This
+can lead to interactions with the authors, but we are trying to minimize
+the level of interaction.</p>
 <p>Once the data are public, they are accessible as plain files in <a href="https://cdsarc.cds.unistra.fr/viz-bin/ftp-index" class="external-link">FTP directories
 at CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizier/mirrors.gml" class="external-link">data
-centers</a> (e.g. at <a href="https://vizier.cfa.harvard.edu/" class="external-link">CfA/Harvard (USA)</a> or <a href="http://vizier.nao.ac.jp/" class="external-link">NOAJ/ADAC (Japan)</a>).</p>
+centers</a> (e.g. at <a href="https://vizier.cfa.harvard.edu/" class="external-link">CfA/Harvard (USA)</a> or <a href="http://vizier.nao.ac.jp/" class="external-link">NOAJ/ADAC (Japan)</a>), as well as all
+VO compatible services.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: fourth step of
 the journey - steps curation &amp; verification</figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
 </h2>

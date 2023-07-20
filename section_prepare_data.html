@@ -264,7 +264,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Preparing your data</h1>
-        <p> Last updated on 2023-07-05 | 
+        <p> Last updated on 2023-07-20 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -311,8 +311,7 @@ unambiguous interpretation of the data, as well as a comprehension of
 the context in which the data were acquired and/or processed; a single
 ascii file, named <em>ReadMe</em>, is designed for this role.</li>
 <li>the data are in a format which allows their usage by tools currently
-in usage in our discipline - normally <em>flat ascii files</em>; other
-formats can be accepted, but are converted into flat files.</li>
+in usage in our discipline.</li>
 </ul><p>The following data types are accepted:</p>
 <ul><li>Tables</li>
 <li>Associated data : images, spectra, SED, time series, cube</li>
@@ -335,21 +334,23 @@ DR3 - ref I/355/gaiadr3 (screenshot)</figcaption></figure><!--  ----------------
 <h3 class="callout-title">Accepted format<a class="anchor" aria-label="anchor" href="#accepted-format"></a>
 </h3>
 <div class="callout-content">
-<ul><li>TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values)
+<p>In order of preference:</p>
+<ul><li>Machine-Readable Tables (<a href="https://journals.aas.org/data-guide/#machine_readable_tables" class="external-link">MRT</a>
+/ FORTRAN format)</li>
+<li>TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values)
 files containing a first line with column description is accepted
 <ul><li>Comments (line beginning by #) are not accepted</li>
 </ul></li>
 <li>ASCII aligned files
 <ul><li>Original ASCII format used in VizieR</li>
 </ul></li>
+<li>FITS table
+<ul><li>FITS containing only one HDU</li>
+</ul></li>
 <li>VOTable
 <ul><li>Standard XML output defined by the IVOA. VizieR allows to upload
 VOTable which contain a single table.</li>
 </ul></li>
-<li>FITS table
-<ul><li>FITS containing only one HDU</li>
-</ul></li>
-<li>Machine-Readable Tables (MRT / FORTRAN format)</li>
 </ul><p>Note: zip and gzip compression are allowed. Archives should not
 contain directories.</p>
 </div>
@@ -684,7 +685,7 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/section_prepare_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_prepare_data.html",
   "dateCreated": "2023-07-20",
-  "dateModified": "2023-07-05",
+  "dateModified": "2023-07-20",
   "datePublished": "2023-07-20"
 }
 
