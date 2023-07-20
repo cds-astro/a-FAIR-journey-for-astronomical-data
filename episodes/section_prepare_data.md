@@ -29,7 +29,7 @@ exercises: 1
 In order to facilitate the usability of the data, and to allow their processing by the data centers, we at CDS require that:
 
 - the data are *described* accurately enough to allow an unambiguous interpretation of the data, as well as a comprehension of the context in which the data were acquired and/or processed; a single ascii file, named *ReadMe*, is designed for this role.
-- the data are in a format which allows their usage by tools currently in usage in our discipline - normally *flat ascii files*; other formats can be accepted, but are converted into flat files.
+- the data are in a format which allows their usage by tools currently in usage in our discipline
 
 
 The following data types are accepted:
