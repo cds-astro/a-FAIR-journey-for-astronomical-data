@@ -68,16 +68,18 @@ The following formats are welcome:
 
 ### Accepted format
 
+In order of preference:
+
+- Machine-Readable Tables ([MRT][aas-mrt] / FORTRAN format)
 - TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values) files containing a first line with column description is accepted
 	-  Comments (line beginning by #) are not accepted
 - ASCII aligned files
 	- Original ASCII format used in VizieR
+- FITS table
+	- FITS containing only one HDU
 - VOTable
 	- Standard XML output defined by the IVOA.
 VizieR allows to upload VOTable which contain a single table.
-- FITS table
-	- FITS containing only one HDU
-- Machine-Readable Tables (MRT / FORTRAN format)
 
 Note: zip and gzip compression are allowed. Archives should not contain directories.
 

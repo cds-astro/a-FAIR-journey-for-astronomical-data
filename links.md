@@ -4,6 +4,8 @@ any links that you are not going to use.
  -->
 
 
+
+
 <!--  ----------------------------------------- -->
 <!--            Link references                 -->
 <!--  ----------------------------------------- -->
@@ -59,6 +61,7 @@ any links that you are not going to use.
 <!-- -->
 [aas-home]: https://journals.aas.org/
 [aas-data-guide]: https://journals.aas.org/data-guide/
+[aas-mrt]: https://journals.aas.org/data-guide/#machine_readable_tables
 <!-- -->
 [mnras-vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 [mnras-home]: https://academic.oup.com/mnras

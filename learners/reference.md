@@ -24,7 +24,7 @@ FAIR
 
 <!-- -->
 MRT
-: Machine-Readable Table
+: Machine-Readable Table. More explanations can be found on the [AAS webpage][aas-mrt].
 
 
 
