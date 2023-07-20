@@ -13,6 +13,7 @@ any links that you are not going to use.
 [simbad-home]: http://simbad.cds.unistra.fr/simbad/
 [xmatch-home]: http://cdsxmatch.u-strasbg.fr/
 [sesame-cds]: https://cds.unistra.fr/cgi-bin/Sesame
+[bibcode]: http://simbad.cds.unistra.fr/guide/refcode/refcode-paper.html
 
 
 <!-- -->

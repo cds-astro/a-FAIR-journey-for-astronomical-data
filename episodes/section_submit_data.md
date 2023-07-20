@@ -435,7 +435,7 @@ Acknowledgements: Alexander Kopylov <akop(at)sao.ru>
 :::::::::::::::: solution
 #### 12. (optional) 'References' header
 
-This section contains the necessary references. Bibcodes are strongly encouraged, to enable an automatic link to the existing Abstract Services like ADS.
+This section contains the necessary references. [Bibcodes][bibcode] are strongly encouraged, to enable an automatic link to the existing Abstract Services like ADS.
 
 For large sets of references, you can also gather them into a dedicated *reference file* named **refs.dat**.
 :::::::::::::::::::::::::
