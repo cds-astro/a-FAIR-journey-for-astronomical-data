@@ -780,56 +780,101 @@ In the following, we present some examples based on real datasets.
 
 One key point is to the check the units.
 
-In the example below ....
+
+:::::::::::::::: testimonial
+#### Wrong units
+
+In the example below the original unit for a cylindrical volume of a region (column *size*) was wrongly set to *cm^-3^*.
+
+![Units as written in original paper (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_before.png
+){alt="Screenshot -- Table with wrong units as displayed in paper"}
+
+
+
+Our team picked it up and wrote to the author and made the description and unit correction.
+
+![Units corrected in VizieR table (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_after.png
+){alt="Screenshot -- VizieR table with units corrected"}
+
+<!-- https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units.png -->
+
+:::::::::::::::::::::::::
+
 
  
 <!--  ----------------------------------------- -->
 #### Verifications: Example 2 - Coordinates
 
 After the units, the coordinates are the most important data the VizieR team try to gather and curate. It is the most common way to search for data.
-
 When there are none, positions can be added from other catalogs or from SIMBAD if available. 
 Alternatively, we ask for them (sometimes we have an answer). 
 
-Here is an example of coordinates with discrepancies when the declination is at 0 degree, picked up by our team. 
+
+:::::::::::::::: testimonial
+#### Wrong coordinates
+
+Here is an example of coordinates with discrepancies when the declination is at 0 degree.
+
+![Coordinates as written in original paper (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_before.png
+){alt="Screenshot -- Table with wrong coordinates as made available in paper"}
+
+
+Once the error detected by our team, the positions were then updated, two years after the data ingestion in VizieR.
+
+
+![Coordinates corrected in VizieR table (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_after.png
+){alt="Screenshot -- VizieR table with coordinates corrected"}
+
+:::::::::::::::::::::::::
 
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 3 - Coordinates & IDs
+#### Verifications: Example 3 - Identifiers
 
-In the example described below, the initial catalogue contains ~ 1400 galaxies without coordinates.
-
-The first step for our team implies to convert galaxy names into correct SIMBAD names.
-But doing so it is not always a straightforward process.
+The third important thing for our team are the identifiers. 
 
 
- --you can see that the translations are not always easy. Adding links toward SIMBAD is a time saver for the team after us and, if a reference is never elected as a priority for SIMBAD (so probably will never be processed for SIMBAD), at least we have the links in VizieR.
+:::::::::::::::: testimonial
+#### Truncated names
+
+To retrieve coordinates and easy the cross identification between Simbad and VizieR, a proper identification is needed.
+
+Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we have here. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected. 
+For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
+
+Here the coordinates are missing. So, in a first step, I tried to convert galaxy names in correct SIMBAD names --you can see that the translations are not always easy. Adding links toward SIMBAD is a time saver for the team after us and, if a reference is never elected as a priority for SIMBAD (so probably will never be processed for SIMBAD), at least we have the links in VizieR.
      I retrieve coordinates for all galaxies but  5.
 So, had may catalog with approximative coordinates for almost all objects and I wrote to the author in case I have an answer to have the coordinates for the nests. The author send me back a file with all the PGC numbers, the non-truncated names and the coordinates but said that a I misidentified the object CGCG362-45. So, Z362-45 had the SIMBAD position at that time and I checked with NED, LEDA and the Zwicky catalog => No problem.
 I said to the author that I made the updates but I did not understand the discrepancy problem for that object. In fact, the coordinates sent by the author were not calculated with the right Epoch... So I updated the catalogue a second time.
 
 
+![Coordinates corrected in VizieR table (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_3_names.png
+){alt="Screenshot -- VizieR table with coordinates corrected"}
+
+
+
+
+:::::::::::::::::::::::::
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 4 - Identifiers
+#### Verifications: Example 4 - Odd values
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 5 - Odd values
+#### Verifications: Example 5 - Missing data
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 6 - Missing data
+#### Verifications: Example 6 - Missing common key 
 
 
-<!--  ----------------------------------------- -->
-#### Verifications: Example 7 - Missing common key 
-
-
-
--------
 
 
 <!--  ----------------------------------------- -->
