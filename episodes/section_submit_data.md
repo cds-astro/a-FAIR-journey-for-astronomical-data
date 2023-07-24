@@ -766,6 +766,45 @@ Once you are done uploading your data (*ReadMe*, tables and any other associated
 
 Once the data have been submitted on the CDS servers, the VizieR team will check that the data is compatible with our standards. Once the data have been accepted, the CDS team will also add some valuable and relevant information such as metadata and links to other catalogs. This can lead to interactions with the authors, but we are trying to minimize the level of interaction.
 
+
+### Behind the scenes: verifications
+
+In addition to the semi-automated verifications already done by the programs during the different steps of the ingestion, more in-depth verifications are done by the CDS team focusing on the reliability and the quality of the catalogs.
+
+In the following, we present some examples based on real datasets.
+
+
+#### Verifications: Example 1 - Units
+
+One key point is to the check the units.
+
+
+
+ 
+#### Verifications: Example 2 - Coordinates
+
+
+#### Verifications: Example 3 - Coordinates & IDs
+
+
+#### Verifications: Example 4 - Identifiers
+
+
+#### Verifications: Example 5 - Odd values
+
+
+#### Verifications: Example 6 - Missing data
+
+
+#### Verifications: Example 7 - Missing common key 
+
+
+
+-------
+
+
+### Data available to all
+
 Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]), as well as all VO compatible services.
 
 
