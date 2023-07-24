@@ -22,7 +22,7 @@ any links that you are not going to use.
 <!-- VizieR -->
 [vizier-home]: https://vizier.cds.unistra.fr/index.gml
 [vizier-first-publi]: https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract
-[vizier-catalogue-collection]: https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on
+[vizier-catalogue-collection]: https://cdsarc.cds.unistra.fr/viz-bin/cat?
 [vizier-table-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
 [vizier-tap]: http://tapvizier.cds.unistra.fr/adql/
 [vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
@@ -34,7 +34,6 @@ any links that you are not going to use.
 [vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
 <!-- VizieR FTP -->
 [vizier-ftp]: https://cdsarc.cds.unistra.fr/ftp/
-[ftp-cats]: https://cdsarc.cds.unistra.fr/viz-bin/ftp-index
 [vizier-ftp-cats]: http://cdsarc.cds.unistra.fr/ftp/cats/
 <!-- VizieR mirrors -->
 [vizier-mirors]: https://vizier.cfa.harvard.edu/vizier/mirrors.gml
