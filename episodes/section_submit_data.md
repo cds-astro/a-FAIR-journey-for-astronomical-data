@@ -760,7 +760,7 @@ Once you are done uploading your data (*ReadMe*, tables and any other associated
 
 
 <!--  ----------------------------------------- -->
-<!--            Data at CDS                     -->
+<!--            Data curation at CDS            -->
 <!--  ----------------------------------------- -->
 ## What happens to your data at the CDS? 
 
@@ -774,28 +774,57 @@ In addition to the semi-automated verifications already done by the programs dur
 In the following, we present some examples based on real datasets.
 
 
+
+<!--  ----------------------------------------- -->
 #### Verifications: Example 1 - Units
 
 One key point is to the check the units.
 
-
+In the example below ....
 
  
+<!--  ----------------------------------------- -->
 #### Verifications: Example 2 - Coordinates
 
+After the units, the coordinates are the most important data the VizieR team try to gather and curate. It is the most common way to search for data.
 
+When there are none, positions can be added from other catalogs or from SIMBAD if available. 
+Alternatively, we ask for them (sometimes we have an answer). 
+
+Here is an example of coordinates with discrepancies when the declination is at 0 degree, picked up by our team. 
+
+
+
+<!--  ----------------------------------------- -->
 #### Verifications: Example 3 - Coordinates & IDs
 
+In the example described below, the initial catalogue contains ~ 1400 galaxies without coordinates.
 
+The first step for our team implies to convert galaxy names into correct SIMBAD names.
+But doing so it is not always a straightforward process.
+
+
+ --you can see that the translations are not always easy. Adding links toward SIMBAD is a time saver for the team after us and, if a reference is never elected as a priority for SIMBAD (so probably will never be processed for SIMBAD), at least we have the links in VizieR.
+     I retrieve coordinates for all galaxies but  5.
+So, had may catalog with approximative coordinates for almost all objects and I wrote to the author in case I have an answer to have the coordinates for the nests. The author send me back a file with all the PGC numbers, the non-truncated names and the coordinates but said that a I misidentified the object CGCG362-45. So, Z362-45 had the SIMBAD position at that time and I checked with NED, LEDA and the Zwicky catalog => No problem.
+I said to the author that I made the updates but I did not understand the discrepancy problem for that object. In fact, the coordinates sent by the author were not calculated with the right Epoch... So I updated the catalogue a second time.
+
+
+
+
+<!--  ----------------------------------------- -->
 #### Verifications: Example 4 - Identifiers
 
 
+<!--  ----------------------------------------- -->
 #### Verifications: Example 5 - Odd values
 
 
+<!--  ----------------------------------------- -->
 #### Verifications: Example 6 - Missing data
 
 
+<!--  ----------------------------------------- -->
 #### Verifications: Example 7 - Missing common key 
 
 
@@ -803,9 +832,12 @@ One key point is to the check the units.
 -------
 
 
-### Data available to all
+<!--  ----------------------------------------- -->
+<!--            Data curation at CDS            -->
+<!--  ----------------------------------------- -->
+## Data available to all
 
-Once the data are public, they are accessible as plain files in [FTP directories at CDS][ftp-cats] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]), as well as all VO compatible services.
+Once the data are public, they are accessible as plain files in [FTP directories at CDS][vizier-catalogue-collection] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]), as well as all VO compatible services.
 
 
 ![Journey from a publication to EOSC: fourth step of the journey - steps curation & verification](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
