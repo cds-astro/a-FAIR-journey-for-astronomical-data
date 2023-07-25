@@ -1,6 +1,6 @@
 ---
 title: "Submitting astronomical data"
-teaching: 8
+teaching: 11
 exercises: 6
 ---
 
@@ -972,6 +972,10 @@ The *ReadMe* file describe your tables by providing all necessary information to
 
 Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
 
+- Verifications leading to corrections: ~ 30% of the references
+- Main corrections: identifiers, coordinates, units ...
+
+You cannot Find, Access and Re-use data if the coordinates/identifiers are not right!
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
