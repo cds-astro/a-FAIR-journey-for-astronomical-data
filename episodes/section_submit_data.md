@@ -782,19 +782,19 @@ One key point is to the check the units.
 
 
 :::::::::::::::: testimonial
-#### Wrong units
+#### Units corrected
 
-In the example below the original unit for a cylindrical volume of a region (column *size*) was wrongly set to *cm^-3^*.
+In the example below the original unit for a cylindrical volume of a region (column *Size* from the figure below) was wrongly set to *cm^-3^*.
 
-![Units as written in original paper (screenshot)](
+![Before: Units as written in original paper (screenshot)](
 file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_before.png
 ){alt="Screenshot -- Table with wrong units as displayed in paper"}
 
 
 
-Our team picked it up and wrote to the author and made the description and unit correction.
+Our team picked it up and wrote to the author and made the description and unit correction (field *V* from the figure below).
 
-![Units corrected in VizieR table (screenshot)](
+![After: Units corrected in VizieR table (screenshot)](
 file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_after.png
 ){alt="Screenshot -- VizieR table with units corrected"}
 
@@ -813,11 +813,11 @@ Alternatively, we ask for them (sometimes we have an answer).
 
 
 :::::::::::::::: testimonial
-#### Wrong coordinates
+#### Coordinates corrected
 
 Here is an example of coordinates with discrepancies when the declination is at 0 degree.
 
-![Coordinates as written in original paper (screenshot)](
+![Before: Coordinates as written in original paper (screenshot)](
 file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_before.png
 ){alt="Screenshot -- Table with wrong coordinates as made available in paper"}
 
@@ -825,7 +825,7 @@ file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episo
 Once the error detected by our team, the positions were then updated, two years after the data ingestion in VizieR.
 
 
-![Coordinates corrected in VizieR table (screenshot)](
+![After: Coordinates corrected in VizieR table (screenshot)](
 file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_after.png
 ){alt="Screenshot -- VizieR table with coordinates corrected"}
 
@@ -840,25 +840,16 @@ The third important thing for our team are the identifiers.
 
 
 :::::::::::::::: testimonial
-#### Truncated names
+#### SIMBAD names added
 
-To retrieve coordinates and easy the cross identification between Simbad and VizieR, a proper identification is needed.
+To retrieve coordinates and easy the cross identification between SIMBAD and VizieR, a proper identification is needed.
 
 Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we have here. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected. 
 For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
 
-Here the coordinates are missing. So, in a first step, I tried to convert galaxy names in correct SIMBAD names --you can see that the translations are not always easy. Adding links toward SIMBAD is a time saver for the team after us and, if a reference is never elected as a priority for SIMBAD (so probably will never be processed for SIMBAD), at least we have the links in VizieR.
-     I retrieve coordinates for all galaxies but  5.
-So, had may catalog with approximative coordinates for almost all objects and I wrote to the author in case I have an answer to have the coordinates for the nests. The author send me back a file with all the PGC numbers, the non-truncated names and the coordinates but said that a I misidentified the object CGCG362-45. So, Z362-45 had the SIMBAD position at that time and I checked with NED, LEDA and the Zwicky catalog => No problem.
-I said to the author that I made the updates but I did not understand the discrepancy problem for that object. In fact, the coordinates sent by the author were not calculated with the right Epoch... So I updated the catalogue a second time.
-
-
-![Coordinates corrected in VizieR table (screenshot)](
+![Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](
 file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_3_names.png
-){alt="Screenshot -- VizieR table with coordinates corrected"}
-
-
-
+){alt="Screenshot -- VizieR table with SIMBAD-names added"}
 
 :::::::::::::::::::::::::
 
@@ -866,13 +857,81 @@ file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episo
 <!--  ----------------------------------------- -->
 #### Verifications: Example 4 - Odd values
 
+We add mimimum and maximum values of numerical columns. It allows us to detect some oddities and it is helpful also for the astronomer who will validate the catalogue afterwards.
+
+:::::::::::::::: testimonial
+#### Min-max values added
+
+![Example of minimum and maximum values added to a ReadMe file (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_4_minmax.png
+){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
+
+:::::::::::::::::::::::::
+
 
 <!--  ----------------------------------------- -->
 #### Verifications: Example 5 - Missing data
 
+We also add links between tables in VizieR. For instance, if an author said that magnitudes come from this survey, we actually point to that survey so we can verify the values. If a table contains galaxy clusters, we can add the number of galaxies per cluster.
+
+Adding those links helps us to detect errors and missing data.
+
+
+:::::::::::::::: testimonial
+#### Missing data retrieved
+
+In the example below, the link between the two tables is the number of S43GHz flux measurements (column *Nc* from the figure below). 
+
+When the data were first ingested, and it is still the case in the MRT table available with the paper, there was no measurement (*Nc = 0*).
+
+We contacted the author to get the corresponding data and thus we can now plot the light curve of this object in VizieR.
+
+
+![Example of missing data retrieved, adding more visibility to the original set (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_5_missing_data.png
+){alt="Screenshot -- Missing data retrieved by the CDS team enabling a better reusability of the original data"}
+
+:::::::::::::::::::::::::
+
 
 <!--  ----------------------------------------- -->
 #### Verifications: Example 6 - Missing common key 
+
+Last but not least, to add links between tables we need a common key (e.g identifier, coordinates ...).
+
+<!-- 
+Here not only there are no identifiers in common, but you have no coordinates, so unless you go in the 23 references cited to see if you can retrieve the coordinates for the object one by one, you cannot see that in fact the stars in Table 3 are the same one as in Table 5.
+Finally, when the author sent me the names and positions for table 5, thanks to the link between tables, I noticed that Stet-M68-S213 was not included in Table 3 and he sent me the corresponding data (see note).
+-->
+
+
+:::::::::::::::: testimonial
+#### Cross-identification between tables
+
+**Example to add**
+
+
+:::::::::::::::::::::::::
+
+
+
+<!--  ----------------------------------------- -->
+#### Errata
+
+As said before, the VizieR database is evolving every day: with new catalogues being added or old ones being updated. 
+
+
+:::::::::::::::: testimonial
+#### Tables updated
+
+In the example below, one table from the original catalog was updated, to reflect the changes published in an erratum.
+
+![Example of a table updated following erratum publication (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_7_errata.png
+){alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication"}
+
+:::::::::::::::::::::::::
+
 
 
 
