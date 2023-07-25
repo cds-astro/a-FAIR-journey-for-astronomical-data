@@ -916,7 +916,7 @@ Finally, when the author sent me the names and positions for table 5, thanks to 
 
 
 <!--  ----------------------------------------- -->
-#### Errata
+### Errata
 
 As said before, the VizieR database is evolving every day: with new catalogues being added or old ones being updated. 
 
