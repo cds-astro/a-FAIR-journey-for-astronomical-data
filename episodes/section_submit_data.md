@@ -1,6 +1,6 @@
 ---
 title: "Submitting astronomical data"
-teaching: 11
+teaching: 12
 exercises: 6
 ---
 
@@ -899,16 +899,34 @@ file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episo
 
 Last but not least, to add links between tables we need a common key (e.g identifier, coordinates ...).
 
-<!-- 
-Here not only there are no identifiers in common, but you have no coordinates, so unless you go in the 23 references cited to see if you can retrieve the coordinates for the object one by one, you cannot see that in fact the stars in Table 3 are the same one as in Table 5.
-Finally, when the author sent me the names and positions for table 5, thanks to the link between tables, I noticed that Stet-M68-S213 was not included in Table 3 and he sent me the corresponding data (see note).
--->
-
 
 :::::::::::::::: testimonial
+
 #### Cross-identification between tables
 
-**Example to add**
+In the two figures below, we can see an example taken from a paper with two tables (*Tables A and B*) with two similar first columns in both:
+
+- Name of the stellar system to which the star belongs
+- Name of the star
+
+However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi 10018) mentionned in *Table A* corresponds to COS 347 in *Table B*.
+
+![Extract of Table A from paper (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table1.png
+){alt="Screenshot -- Table A as displayed in paper"}
+
+
+![Before: extract of Table B from paper (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png
+){alt="Screenshot -- Table B as displayed in paper"}
+
+
+As there are no common identifier or coordinates repeated in the second table, the only alternative would have been to go through the list of references cited (3rd column of *Table B*) to get the coordinates and identify the object one by one.
+Therefore, the CDS team contacted the author to get the names and positions for *Table B* and create a better link between the two tables as displayed below.
+
+![After: extract of Table B as available in VizieR (screenshot)](
+file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png
+){alt="Screenshot -- Table B updated as available on VizieR"}
 
 
 :::::::::::::::::::::::::
