@@ -370,8 +370,8 @@ described in a paper published in 2000 (DOI: <a href="https://ui.adsabs.harvard.
 <p>Note that VizieR does not contain all available online catalogues:
 some catalogues are not suitable and some less frequently used
 catalogues have not yet been incorporated into the VizieR database. The
-full list of catalogues is available from there: <a href="https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on" class="external-link">Catalogue
-collection page</a>.</p>
+full list of catalogues is available from there: <a href="https://cdsarc.cds.unistra.fr/viz-bin/cat?" class="external-link">Catalogue collection
+page</a>.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for 'mission: gaia DR3', from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page - example for Gaia
 DR3 (screenshot)</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 --></section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
 </h2>
@@ -536,9 +536,6 @@ any links that you are not going to use.
 <!-- Others -->
 <!-- -->
 <!-- EOSC -->
-<!-- -->
-<!-- Not used -->
-<!-- -->
 </section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
 <hr>
 <p> Last updated on 2023-07-05 | 
@@ -1662,9 +1659,6 @@ any links that you are not going to use.
 <!-- Others -->
 <!-- -->
 <!-- EOSC -->
-<!-- -->
-<!-- Not used -->
-<!-- -->
 </section></section><section id="aio-section_submission_per_journals"><p>Content from <a href="section_submission_per_journals.html">Submission routes and journals</a></p>
 <hr>
 <p> Last updated on 2023-07-05 | 
@@ -1916,9 +1910,6 @@ any links that you are not going to use.
 <!-- Others -->
 <!-- -->
 <!-- EOSC -->
-<!-- -->
-<!-- Not used -->
-<!-- -->
 </section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
 <p> Last updated on 2023-07-20 | 
@@ -2342,12 +2333,9 @@ any links that you are not going to use.
 <!-- Others -->
 <!-- -->
 <!-- EOSC -->
-<!-- -->
-<!-- Not used -->
-<!-- -->
 </section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-07-20 | 
+<p> Last updated on 2023-07-27 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3100,8 +3088,8 @@ not be readily available in VizieR. Additional work by the VizieR team
 is needed, including checks and homogenization to our standards, before
 the catalogue is fully ingested.</strong></p>
 <p>In the following, we show how to upload your data step-by-step.
-Additional information on how to use this service can be found on the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">VizieR
-catalogue upload (HELP) page</a>.</p>
+Additional information on how to use this service can be found on the
+[VizieR catalogue upload (HELP) page][vizier-submit-data-help].</p>
 <hr>
 <div class="section level3">
 <h3 id="start-a-session">Start a session<a class="anchor" aria-label="anchor" href="#start-a-session"></a>
@@ -3361,7 +3349,7 @@ listing using <code>ls</code>.</p>
 any other associated data), you need to <strong>SEND AN E-MAIL</strong>
 to the VizieR team telling them where you have placed files: <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
 <!--  ----------------------------------------- -->
-<!--            Data at CDS                     -->
+<!--            Data curation at CDS            -->
 <!--  ----------------------------------------- -->
 </div>
 </section><section id="what-happens-to-your-data-at-the-cds"><h2 class="section-heading">What happens to your data at the CDS?<a class="anchor" aria-label="anchor" href="#what-happens-to-your-data-at-the-cds"></a>
@@ -3373,8 +3361,215 @@ have been accepted, the CDS team will also add some valuable and
 relevant information such as metadata and links to other catalogs. This
 can lead to interactions with the authors, but we are trying to minimize
 the level of interaction.</p>
-<p>Once the data are public, they are accessible as plain files in <a href="https://cdsarc.cds.unistra.fr/viz-bin/ftp-index" class="external-link">FTP directories
-at CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizier/mirrors.gml" class="external-link">data
+<div class="section level3">
+<h3 id="behind-the-scenes-verifications">Behind the scenes: verifications<a class="anchor" aria-label="anchor" href="#behind-the-scenes-verifications"></a>
+</h3>
+<p>In addition to the semi-automated verifications already done by the
+programs during the different steps of the ingestion, more in-depth
+verifications are done by the CDS team focusing on the reliability and
+the quality of the catalogs.</p>
+<p>In the following, we present some examples based on real
+datasets.</p>
+<!--  ----------------------------------------- -->
+<div class="section level4">
+<h4 id="verifications-example-1---units">Verifications: Example 1 - Units<a class="anchor" aria-label="anchor" href="#verifications-example-1---units"></a>
+</h4>
+<p>One key point is to the check the units.</p>
+<div id="units-corrected" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="units-corrected" class="callout-inner">
+<h3 class="callout-title">Units corrected<a class="anchor" aria-label="anchor" href="#units-corrected"></a>
+</h3>
+<div class="callout-content">
+<p>In the example below the original unit for a cylindrical volume of a
+region (column <em>Size</em> from the figure below) was wrongly set to
+<em>cm<sup>-3</sup></em>.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_before.png" alt="Screenshot -- Table with wrong units as displayed in paper" class="figure mx-auto d-block"><figcaption>Before: Units as written in original paper
+(screenshot)</figcaption></figure><p>Our team picked it up and wrote to the author and made the
+description and unit correction (field <em>V</em> from the figure
+below).</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_after.png" alt="Screenshot -- VizieR table with units corrected" class="figure mx-auto d-block"><figcaption>After: Units corrected in VizieR table
+(screenshot)</figcaption></figure><!-- https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units.png -->
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+</div>
+<div class="section level4">
+<h4 id="verifications-example-2---coordinates">Verifications: Example 2 - Coordinates<a class="anchor" aria-label="anchor" href="#verifications-example-2---coordinates"></a>
+</h4>
+<p>After the units, the coordinates are the most important data the
+VizieR team try to gather and curate. It is the most common way to
+search for data. When there are none, positions can be added from other
+catalogs or from SIMBAD if available. Alternatively, we ask for them
+(sometimes we have an answer).</p>
+<div id="coordinates-corrected" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="coordinates-corrected" class="callout-inner">
+<h3 class="callout-title">Coordinates corrected<a class="anchor" aria-label="anchor" href="#coordinates-corrected"></a>
+</h3>
+<div class="callout-content">
+<p>Here is an example of coordinates with discrepancies when the
+declination is at 0 degree.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_before.png" alt="Screenshot -- Table with wrong coordinates as made available in paper" class="figure mx-auto d-block"><figcaption>Before: Coordinates as written in original paper
+(screenshot)</figcaption></figure><p>Once the error detected by our team, the positions were then updated,
+two years after the data ingestion in VizieR.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_after.png" alt="Screenshot -- VizieR table with coordinates corrected" class="figure mx-auto d-block"><figcaption>After: Coordinates corrected in VizieR table
+(screenshot)</figcaption></figure>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+</div>
+<div class="section level4">
+<h4 id="verifications-example-3---identifiers">Verifications: Example 3 - Identifiers<a class="anchor" aria-label="anchor" href="#verifications-example-3---identifiers"></a>
+</h4>
+<p>The third important thing for our team are the identifiers.</p>
+<div id="simbad-names-added" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="simbad-names-added" class="callout-inner">
+<h3 class="callout-title">SIMBAD names added<a class="anchor" aria-label="anchor" href="#simbad-names-added"></a>
+</h3>
+<div class="callout-content">
+<p>To retrieve coordinates and easy the cross identification between
+SIMBAD and VizieR, a proper identification is needed.</p>
+<p>Here is an example of truncated SDSS names… Impossible to retrieve
+except by coordinates that we have here. So the SimbadName has been
+added after the process for SIMBAD where misprints on coordinates have
+been detected. For this object with coordinates pointing to nothing, the
+right ones have been found thanks to the bibcode given in the table.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_3_names.png" alt="Screenshot -- VizieR table with SIMBAD-names added" class="figure mx-auto d-block"><figcaption>Example of names recognized by SIMBAD added to the
+original table submitted to VizieR (screenshot)</figcaption></figure>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+</div>
+<div class="section level4">
+<h4 id="verifications-example-4---odd-values">Verifications: Example 4 - Odd values<a class="anchor" aria-label="anchor" href="#verifications-example-4---odd-values"></a>
+</h4>
+<p>We add mimimum and maximum values of numerical columns. It allows us
+to detect some oddities and it is helpful also for the astronomer who
+will validate the catalogue afterwards.</p>
+<div id="min-max-values-added" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="min-max-values-added" class="callout-inner">
+<h3 class="callout-title">Min-max values added<a class="anchor" aria-label="anchor" href="#min-max-values-added"></a>
+</h3>
+<div class="callout-content">
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_4_minmax.png" alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields" class="figure mx-auto d-block"><figcaption>Example of minimum and maximum values added to a
+ReadMe file (screenshot)</figcaption></figure>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+</div>
+<div class="section level4">
+<h4 id="verifications-example-5---missing-data">Verifications: Example 5 - Missing data<a class="anchor" aria-label="anchor" href="#verifications-example-5---missing-data"></a>
+</h4>
+<p>We also add links between tables in VizieR. For instance, if an
+author said that magnitudes come from this survey, we actually point to
+that survey so we can verify the values. If a table contains galaxy
+clusters, we can add the number of galaxies per cluster.</p>
+<p>Adding those links helps us to detect errors and missing data.</p>
+<div id="missing-data-retrieved" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="missing-data-retrieved" class="callout-inner">
+<h3 class="callout-title">Missing data retrieved<a class="anchor" aria-label="anchor" href="#missing-data-retrieved"></a>
+</h3>
+<div class="callout-content">
+<p>In the example below, the link between the two tables is the number
+of S43GHz flux measurements (column <em>Nc</em> from the figure
+below).</p>
+<p>When the data were first ingested, and it is still the case in the
+MRT table available with the paper, there was no measurement (<em>Nc =
+0</em>).</p>
+<p>We contacted the author to get the corresponding data and thus we can
+now plot the light curve of this object in VizieR.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_5_missing_data.png" alt="Screenshot -- Missing data retrieved by the CDS team enabling a better reusability of the original data" class="figure mx-auto d-block"><figcaption>Example of missing data retrieved, adding more
+visibility to the original set (screenshot)</figcaption></figure>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+</div>
+<div class="section level4">
+<h4 id="verifications-example-6---missing-common-key">Verifications: Example 6 - Missing common key<a class="anchor" aria-label="anchor" href="#verifications-example-6---missing-common-key"></a>
+</h4>
+<p>Last but not least, to add links between tables we need a common key
+(e.g identifier, coordinates …).</p>
+<div id="cross-identification-between-tables" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="cross-identification-between-tables" class="callout-inner">
+<h3 class="callout-title">Cross-identification between tables<a class="anchor" aria-label="anchor" href="#cross-identification-between-tables"></a>
+</h3>
+<div class="callout-content">
+<p>In the two figures below, we can see an example taken from a paper
+with two tables (<em>Tables A and B</em>) with two similar first columns
+in both:</p>
+<ul>
+<li>Name of the stellar system to which the star belongs</li>
+<li>Name of the star</li>
+</ul>
+<p>However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi
+10018) mentionned in <em>Table A</em> corresponds to COS 347 in
+<em>Table B</em>.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table1.png" alt="Screenshot -- Table A as displayed in paper" class="figure mx-auto d-block"><figcaption>Extract of Table A from paper (screenshot)</figcaption></figure><figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png" alt="Screenshot -- Table B as displayed in paper" class="figure mx-auto d-block"><figcaption>Before: extract of Table B from paper
+(screenshot)</figcaption></figure><p>As there are no common identifier or coordinates repeated in the
+second table, the only alternative would have been to go through the
+list of references cited (3rd column of <em>Table B</em>) to get the
+coordinates and identify the object one by one. Therefore, the CDS team
+contacted the author to get the names and positions for <em>Table B</em>
+and create a better link between the two tables as displayed below.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png" alt="Screenshot -- Table B updated as available on VizieR" class="figure mx-auto d-block"><figcaption>After: extract of Table B as available in VizieR
+(screenshot)</figcaption></figure>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+</div>
+</div>
+<div class="section level3">
+<h3 id="errata">Errata<a class="anchor" aria-label="anchor" href="#errata"></a>
+</h3>
+<p>As said before, the VizieR database is evolving every day: with new
+catalogues being added or old ones being updated.</p>
+<div id="tables-updated" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="tables-updated" class="callout-inner">
+<h3 class="callout-title">Tables updated<a class="anchor" aria-label="anchor" href="#tables-updated"></a>
+</h3>
+<div class="callout-content">
+<p>In the example below, one table from the original catalog was
+updated, to reflect the changes published in an erratum.</p>
+<figure><img src="file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_7_errata.png" alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication" class="figure mx-auto d-block"><figcaption>Example of a table updated following erratum
+publication (screenshot)</figcaption></figure>
+</div>
+</div>
+</div>
+<!--  ----------------------------------------- -->
+<!--            Data curation at CDS            -->
+<!--  ----------------------------------------- -->
+</div>
+</section><section id="data-available-to-all"><h2 class="section-heading">Data available to all<a class="anchor" aria-label="anchor" href="#data-available-to-all"></a>
+</h2>
+<hr class="half-width">
+<p>Once the data are public, they are accessible as plain files in <a href="https://cdsarc.cds.unistra.fr/viz-bin/cat?" class="external-link">FTP directories at
+CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizier/mirrors.gml" class="external-link">data
 centers</a> (e.g. at <a href="https://vizier.cfa.harvard.edu/" class="external-link">CfA/Harvard (USA)</a> or <a href="http://vizier.nao.ac.jp/" class="external-link">NOAJ/ADAC (Japan)</a>), as well as all
 VO compatible services.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: fourth step of
@@ -3409,6 +3604,12 @@ between catalogs.</li>
 </ul>
 <p>Once the catalogues are submitted, a delay is needed for VizieR
 curation and validation before full ingestion!</p>
+<ul>
+<li>Verifications leading to corrections: ~ 30% of the references</li>
+<li>Main corrections: identifiers, coordinates, units …</li>
+</ul>
+<p>You cannot Find, Access and Re-use data if the
+coordinates/identifiers are not right!</p>
 </div>
 </div>
 </div>
@@ -3449,9 +3650,6 @@ any links that you are not going to use.
 <!-- Others -->
 <!-- -->
 <!-- EOSC -->
-<!-- -->
-<!-- Not used -->
-<!-- -->
 </section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO and EOSC</a></p>
 <hr>
 <p> Last updated on 2023-07-06 | 
@@ -3832,9 +4030,6 @@ any links that you are not going to use.
 <!-- Others -->
 <!-- -->
 <!-- EOSC -->
-<!-- -->
-<!-- Not used -->
-<!-- -->
 </section></section>
 </div>
     </main>
@@ -3883,9 +4078,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2023-07-20",
-  "dateModified": "2023-07-25",
-  "datePublished": "2023-07-25"
+  "dateCreated": "2023-07-27",
+  "dateModified": "2023-07-27",
+  "datePublished": "2023-07-27"
 }
 
   </script><script>
