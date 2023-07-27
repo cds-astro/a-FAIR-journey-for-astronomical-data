@@ -764,12 +764,12 @@ Once you are done uploading your data (*ReadMe*, tables and any other associated
 <!--  ----------------------------------------- -->
 ## What happens to your data at the CDS? 
 
-Once the data have been submitted on the CDS servers, the VizieR team will check that the data is compatible with our standards. Once the data have been accepted, the CDS team will also add some valuable and relevant information such as metadata and links to other catalogs. This can lead to interactions with the authors, but we are trying to minimize the level of interaction.
+Once the data have been submitted on the CDS servers, the VizieR team will check that the data is compatible with our standards. Once the data have been accepted, the CDS team will also add some valuable and relevant information such as metadata and links to other catalogues. This can lead to interactions with the authors, but we are trying to minimize the level of interaction.
 
 
 ### Behind the scenes: verifications
 
-In addition to the semi-automated verifications already done by the programs during the different steps of the ingestion, more in-depth verifications are done by the CDS team focusing on the reliability and the quality of the catalogs.
+In addition to the semi-automated verifications already done by the programs during the different steps of the ingestion, more in-depth verifications are done by the CDS team focusing on the reliability and the quality of the catalogues.
 
 In the following, we present some examples based on real datasets.
 
@@ -804,7 +804,7 @@ Our team picked it up and wrote to the author and made the description and unit 
 #### Verifications: Example 2 - Coordinates
 
 After the units, the coordinates are the most important data the VizieR team try to gather and curate. It is the most common way to search for data.
-When there are none, positions can be added from other catalogs or from SIMBAD if available. 
+When there are none, positions can be added from other catalogues or from SIMBAD if available. 
 Alternatively, we ask for them (sometimes we have an answer). 
 
 
@@ -924,7 +924,7 @@ As said before, the VizieR database is evolving every day: with new catalogues b
 :::::::::::::::: testimonial
 #### Tables updated
 
-In the example below, one table from the original catalog was updated, to reflect the changes published in an erratum.
+In the example below, one table from the original catalogue was updated, to reflect the changes published in an erratum.
 
 ![Example of a table updated following erratum publication (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png){alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication"}
 
@@ -965,7 +965,7 @@ The CDS provides tools to build *ReadMe* file and aligned ASCII tables (Machine 
 
 The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...).
 
-- This highly standardised file allows reusability and cross matching between catalogs.
+- This highly standardised file allows reusability and cross matching between catalogues.
 - A good description of your data is the key to discoverability. 
 
 Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
