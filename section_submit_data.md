@@ -786,17 +786,13 @@ One key point is to the check the units.
 
 In the example below the original unit for a cylindrical volume of a region (column *Size* from the figure below) was wrongly set to *cm^-3^*.
 
-![Before: Units as written in original paper (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_before.png
-){alt="Screenshot -- Table with wrong units as displayed in paper"}
+![Before: Units as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_before.png){alt="Screenshot -- Table with wrong units as displayed in paper"}
 
 
 
 Our team picked it up and wrote to the author and made the description and unit correction (field *V* from the figure below).
 
-![After: Units corrected in VizieR table (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_1_units_after.png
-){alt="Screenshot -- VizieR table with units corrected"}
+![After: Units corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png){alt="Screenshot -- VizieR table with units corrected"}
 
 <!-- https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units.png -->
 
@@ -817,16 +813,13 @@ Alternatively, we ask for them (sometimes we have an answer).
 
 Here is an example of coordinates with discrepancies when the declination is at 0 degree.
 
-![Before: Coordinates as written in original paper (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_before.png
-){alt="Screenshot -- Table with wrong coordinates as made available in paper"}
+![Before: Coordinates as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png){alt="Screenshot -- Table with wrong coordinates as made available in paper"}
 
 
 Once the error detected by our team, the positions were then updated, two years after the data ingestion in VizieR.
 
 
-![After: Coordinates corrected in VizieR table (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_2_coordinates_after.png
+![After: Coordinates corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png
 ){alt="Screenshot -- VizieR table with coordinates corrected"}
 
 :::::::::::::::::::::::::
@@ -847,9 +840,7 @@ To retrieve coordinates and easy the cross identification between SIMBAD and Viz
 Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we have here. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected. 
 For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
 
-![Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_3_names.png
-){alt="Screenshot -- VizieR table with SIMBAD-names added"}
+![Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png){alt="Screenshot -- VizieR table with SIMBAD-names added"}
 
 :::::::::::::::::::::::::
 
@@ -862,9 +853,7 @@ We add mimimum and maximum values of numerical columns. It allows us to detect s
 :::::::::::::::: testimonial
 #### Min-max values added
 
-![Example of minimum and maximum values added to a ReadMe file (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_4_minmax.png
-){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
+![Example of minimum and maximum values added to a ReadMe file (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
 
 :::::::::::::::::::::::::
 
@@ -887,8 +876,7 @@ When the data were first ingested, and it is still the case in the MRT table ava
 We contacted the author to get the corresponding data and thus we can now plot the light curve of this object in VizieR.
 
 
-![Example of missing data retrieved, adding more visibility to the original set (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_5_missing_data.png
+![Example of missing data retrieved, adding more visibility to the original set (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_missing_data.png
 ){alt="Screenshot -- Missing data retrieved by the CDS team enabling a better reusability of the original data"}
 
 :::::::::::::::::::::::::
@@ -911,22 +899,16 @@ In the two figures below, we can see an example taken from a paper with two tabl
 
 However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi 10018) mentionned in *Table A* corresponds to COS 347 in *Table B*.
 
-![Extract of Table A from paper (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table1.png
-){alt="Screenshot -- Table A as displayed in paper"}
+![Extract of Table A from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png){alt="Screenshot -- Table A as displayed in paper"}
 
 
-![Before: extract of Table B from paper (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png
-){alt="Screenshot -- Table B as displayed in paper"}
+![Before: extract of Table B from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png){alt="Screenshot -- Table B as displayed in paper"}
 
 
 As there are no common identifier or coordinates repeated in the second table, the only alternative would have been to go through the list of references cited (3rd column of *Table B*) to get the coordinates and identify the object one by one.
 Therefore, the CDS team contacted the author to get the names and positions for *Table B* and create a better link between the two tables as displayed below.
 
-![After: extract of Table B as available in VizieR (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png
-){alt="Screenshot -- Table B updated as available on VizieR"}
+![After: extract of Table B as available in VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png){alt="Screenshot -- Table B updated as available on VizieR"}
 
 
 :::::::::::::::::::::::::
@@ -944,9 +926,7 @@ As said before, the VizieR database is evolving every day: with new catalogues b
 
 In the example below, one table from the original catalog was updated, to reflect the changes published in an erratum.
 
-![Example of a table updated following erratum publication (screenshot)](
-file:///home/agonneau/Programs/Github/a-FAIR-journey-for-astronomical-data/episodes/images/data_curation_examples/example_7_errata.png
-){alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication"}
+![Example of a table updated following erratum publication (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png){alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication"}
 
 :::::::::::::::::::::::::
 
