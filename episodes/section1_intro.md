@@ -26,7 +26,7 @@ exercises: 0
 <!-- Source: https://vizier.cds.unistra.fr/index.gml -->
 ## What is VizieR?
 
-[VizieR][vizier-home] provides the most complete library of published astronomical catalogues - tables and associated data - with verified and enriched data, accessible via multiple interfaces. Query tools allow the user to select relevant data tables and to extract and format records matching given criteria. Currently, over 23 000 catalogues are available. 
+[VizieR][vizier-home] provides the most complete library of published astronomical catalogues - tables and associated data - with verified and enriched data, accessible via multiple interfaces. Query tools allow the user to select relevant data tables and to extract and format records matching given criteria. Currently, ~ 24 000 catalogues are available (as in August 2023). 
 
 
 <!-- VizieR homepage as iframe-->
