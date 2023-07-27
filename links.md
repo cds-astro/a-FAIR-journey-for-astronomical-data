@@ -22,7 +22,7 @@ any links that you are not going to use.
 <!-- VizieR -->
 [vizier-home]: https://vizier.cds.unistra.fr/index.gml
 [vizier-first-publi]: https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract
-[vizier-catalogue-collection]: https://cdsarc.cds.unistra.fr/viz-bin/Cat?menu=on
+[vizier-catalogue-collection]: https://cdsarc.cds.unistra.fr/viz-bin/cat?
 [vizier-table-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
 [vizier-tap]: http://tapvizier.cds.unistra.fr/adql/
 [vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
@@ -33,8 +33,8 @@ any links that you are not going to use.
 [vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
 [vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
 <!-- VizieR FTP -->
+[vizier-ftp-login]: https://cds.unistra.fr/ftp/token/
 [vizier-ftp]: https://cdsarc.cds.unistra.fr/ftp/
-[ftp-cats]: https://cdsarc.cds.unistra.fr/viz-bin/ftp-index
 [vizier-ftp-cats]: http://cdsarc.cds.unistra.fr/ftp/cats/
 <!-- VizieR mirrors -->
 [vizier-mirors]: https://vizier.cfa.harvard.edu/vizier/mirrors.gml
@@ -44,9 +44,12 @@ any links that you are not going to use.
 [vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
 [vizier-readme-std]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx
 [vizier_adc_keywords]: https://vizier.cds.unistra.fr/vizier/catstd/ADCkwds.htx
+[vizier-cat-32-units]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx
+[vizier-cat-33-labels]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx
 [vizier-cat-34-explanations]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx
 [vizier-cat-35-lengthy]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx
 [vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
+[vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 [vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
 [vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
 <!-- VizieR example Gaia DR3-->
@@ -115,21 +118,4 @@ any links that you are not going to use.
 [eosc-question3-alatin-lite]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7764464&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
 [eosc-question3-tutorials]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7358070&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
 [eosc-question4-dataset]: https://search.marketplace.eosc-portal.eu/search/dataset?q=Astronomy&sort_ui=default&fq=author_names:%22National%20Radio%20Astronomy%20Observatory%22
-
-
-
-
-<!-- -->
-<!-- Not used -->
-<!-- -->
-[vizier-make-your-data-visible]: https://vizier.cds.unistra.fr/vizier/submit/Make_your_data_visible.pdf
-[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
-[vizier-publi-notes-help]: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html
-[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
-[vizier-ftp-login]: https://cds.unistra.fr/ftp/token/
-[vizier-submit-old]: http://cdsarc.u-strasbg.fr/viz-bin/Submit
-[vizier-cat-2-description]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-2.htx
-[vizier-cat-32-units]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.2.htx
-[vizier-cat-33-labels]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.3.htx
-[vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 
