@@ -85,10 +85,8 @@ A catalogue can optionally contains other data, also associated with publication
 - Solar system assignment to create the catalogue [B/planets][vizier-bplanets] and populate the [VESPA][vespa] site
 
 
-An example of ingested catalogue (Gaia DR3 Part 1, VizieR name: [I/355][vizier-table-gaia-dr3]) is shown in the webpage below.
-
 <!-- VizieR catalogue as iframe-->
-Interactive window: VizieR catalogue landing page: example Gaia DR3 Part 1.
+Interactive window: VizieR catalogue landing page, example for Gaia DR3 Part 1 (VizieR name: [I/355][vizier-table-gaia-dr3]).
 <iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355#/article" 
 title="VizieR catalogue ingested: example Gaia DR3 Part 1." 
 style="border: 1px solid black; width: 95%; height: 1200px; 
@@ -117,7 +115,7 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 
 
-![Figure: VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and the interoperability with other VO tools. The full list of VO tools is described just above."}
+![Figure: VizieR catalogues accessible through CDS services and other VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and the interoperability with the CDS services and other VO tools. The full list of VO tools is described just above."}
  
 
 <!--  ----------------------------------------- -->
@@ -133,8 +131,7 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 	- [Eudat][eudat]
 	- [Astrophysics Data System (ADS)][ads]
 	- [European Open Science Cloud (EOSC) Portal][eosc-portal]
-- Step in the VO: interoperability with other tools, eg.
-	- [CASSIS][cassis]
+- Step in the VO: interoperability with other tools, e.g.
 	- [Splat][splat]
 	- astroquery
 - Added metadata:
@@ -159,7 +156,7 @@ Distribute your data in a trusted repository in accordance with Open Data princi
 
 - **Data preservation**: The CDS has been awarded the [Core Trust Seal][cts].
 - **Discovery**: Take advantage of the VizieR services allowing for the discovery, and a good data visibility
-	- Dedicated **indexation**
+	- Dedicated **indexations**
 	- Quality and a good data **description**
 	- Generate **persistent identifier** (bibcode, DOI) for citation
 	- Data are available through the [Virtual Observatory (VO)][ivoa-link]
