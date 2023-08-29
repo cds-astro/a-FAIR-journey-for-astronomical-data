@@ -30,25 +30,12 @@ exercises: 0
 
 
 <!-- VizieR homepage as iframe-->
+Interactive window: VizieR homepage webpage. Note that you can type in (it is not an image).
 <iframe src="https://vizier.cds.unistra.fr/index.gml" 
 title="VizieR homepage webpage" 
 style="border: 1px solid black; width: 95%; height: 1000px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
-
-<!--
-width="98%" height="500px"
-transform: introduces white space !!!!!
-style="border: none; width: 120%; height: 1250px; 
-----
--webkit-transform: scale(0.9);
--webkit-transform-origin: 0 0;
--o-transform-origin: 0 0;
--o-transform: scale(0.9);
--moz-transform-origin: 0 0;
--moz-transform: scale(0.9);
--->
-VizieR homepage webpage. Note that you can type in (it is not an image).
 
 
 VizieR was initially started as a joint effort of [CDS (Centre de Données astronomiques de Strasbourg)][cds-home] and ESA-ESRIN (Information Systems Division), and is now fully managed by CDS. VizieR has been available since 1996, and was described in a paper published in 2000 (DOI: [10.1051/aas:2000169][vizier-first-publi]).
@@ -56,7 +43,7 @@ VizieR was initially started as a joint effort of [CDS (Centre de Données astro
 
 Note that VizieR does not contain all available online catalogues: some catalogues are not suitable and some less frequently used catalogues have not yet been incorporated into the VizieR database. The full list of catalogues is available from there: [Catalogue collection page][vizier-catalogue-collection].
 
-![VizieR Catalogue collection page - example when selecting Gaia mission catalogues (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_july2023.png){alt="Screenshot: VizieR Catalogue collection page, example for 'mission:gaia', from July 2023"}
+![Figure: VizieR Catalogue collection page - example when selecting Gaia mission catalogues (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_july2023.png){alt="Screenshot: VizieR Catalogue collection page, example for 'mission:gaia', from July 2023"}
 
 
 VizieR and more generally speaking the CDS are quite involved in the data preservation aspect,
@@ -65,6 +52,7 @@ More details on the topic can be found at the page below.
 
 
 <!-- CDS certification CTS -->
+Interactive window: CDS webpage related to the CoreTrustSeal certification.
 <iframe src="https://cds.unistra.fr/CTS-CDS"
 title="CDS is certified by the CoreTrustSeal"
 style="border: 1px solid black; width: 95%; height: 900px; 
@@ -100,12 +88,12 @@ A catalogue can optionally contains other data, also associated with publication
 An example of ingested catalogue (Gaia DR3 Part 1, VizieR name: [I/355][vizier-table-gaia-dr3]) is shown in the webpage below.
 
 <!-- VizieR catalogue as iframe-->
+Interactive window: VizieR catalogue landing page: example Gaia DR3 Part 1.
 <iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355#/article" 
 title="VizieR catalogue ingested: example Gaia DR3 Part 1." 
 style="border: 1px solid black; width: 95%; height: 1200px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
-VizieR catalogue landing page: example Gaia DR3 Part 1.
 
 
 
@@ -129,7 +117,7 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 
 
-![VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and the interoperability with other VO tools. The full list of VO tools is described just above."}
+![Figure: VizieR catalogues accessible through many VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and the interoperability with other VO tools. The full list of VO tools is described just above."}
  
 
 <!--  ----------------------------------------- -->
