@@ -26,7 +26,7 @@ exercises: 0
 <!-- Source: https://vizier.cds.unistra.fr/index.gml -->
 ## What is VizieR?
 
-[VizieR][vizier-home] provides the most complete library of published astronomical catalogues - tables and associated data - with verified and enriched data, accessible via multiple interfaces. Query tools allow the user to select relevant data tables and to extract and format records matching given criteria. Currently, over 23 000 catalogues are available. 
+[VizieR][vizier-home] provides the most complete library of published astronomical catalogues - tables and associated data - with verified and enriched data, accessible via multiple interfaces. Query tools allow the user to select relevant data tables and to extract and format records matching given criteria. Currently, ~ 24 000 catalogues are available (as in August 2023). 
 
 
 <!-- VizieR homepage as iframe-->
@@ -56,8 +56,20 @@ VizieR was initially started as a joint effort of [CDS (Centre de Données astro
 
 Note that VizieR does not contain all available online catalogues: some catalogues are not suitable and some less frequently used catalogues have not yet been incorporated into the VizieR database. The full list of catalogues is available from there: [Catalogue collection page][vizier-catalogue-collection].
 
-![VizieR Catalogue collection page - example for Gaia DR3 (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png){alt="Screenshot: VizieR Catalogue collection page, example for 'mission: gaia DR3', from May 2023"}
+![VizieR Catalogue collection page - example when selecting Gaia mission catalogues (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_july2023.png){alt="Screenshot: VizieR Catalogue collection page, example for 'mission:gaia', from July 2023"}
 
+
+VizieR and more generally speaking the CDS are quite involved in the data preservation aspect,
+as evidenced by the [DSA][dsa] and [CTS][cts] certifications awarded over the last years. 
+More details on the topic can be found at the page below.
+
+
+<!-- CDS certification CTS -->
+<iframe src="https://cds.unistra.fr/CTS-CDS"
+title="CDS is certified by the CoreTrustSeal"
+style="border: 1px solid black; width: 95%; height: 900px; 
+overflow: hidden; display: block; "
+allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 
 
@@ -69,17 +81,23 @@ Note that VizieR does not contain all available online catalogues: some catalogu
 
 We call a VizieR catalogue:
 
-- A set of documented tables (including a ReadMe file)
-- With an indexation by keywords, authors, date ...
-- With a global indexation by position
+- A set of documented tables (including a ReadMe file), linked to a published paper
+- With an indexation by keywords, authors, date, UCDs ...
+- With a global indexation by position whenever possible
 - And citation capability (bibcode or DOI)
 
-Optionally contains:
+A catalogue can optionally contains other data, also associated with publications:
 
-- Photometry assignment to populate the VizieR SED service
-- FITS Spectra, images and plots
-- HiPS files (Hierarchical Progressive Surveys) 
+- Photometry assignment to populate the [VizieR SED service][vizier-sed]
+- FITS Spectra, images and cubes to populate the [associated Saada/VizieR database][vizier-assoc-data]
+<!-- - HiPS files (Hierarchical Progressive Surveys)  -->
+- Time series and spectra that will be displayed as interactive plot (see [example of interactive time serie plot][vizier-timeserie-example])
+- Table of references (see [example of refs.dat file][vizier-refsdat-example])
+- Time assignment to create MOCtime in Aladin
+- Solar system assignment to create the catalogue [B/planets][vizier-bplanets] and populate the [VESPA][vespa] site
 
+
+An example of ingested catalogue (Gaia DR3 Part 1, VizieR name: [I/355][vizier-table-gaia-dr3]) is shown in the webpage below.
 
 <!-- VizieR catalogue as iframe-->
 <iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355#/article" 
@@ -87,7 +105,7 @@ title="VizieR catalogue ingested: example Gaia DR3 Part 1."
 style="border: 1px solid black; width: 95%; height: 1200px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
-VizieR catalogue ingestion webpage: example Gaia DR3 Part 1.
+VizieR catalogue landing page: example Gaia DR3 Part 1.
 
 
 
@@ -103,9 +121,10 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - Query VizieR table(s) using [TAP/SQL][vizier-tap]
 - Perform a fast [cross-match identification][xmatch-home] between VizieR tables or Simbad
 - Load your tables in [Aladin][aladin-home]
-- Plot [photometry (SED)][vizier-sed] including all VizieR 
-- Query VizieR [associated data][vizier-assoc-data] (images, spectra, time series)   
-- Load your data as a VO Table using [TOPCAT][topcat]
+- Plot [photometry ("SED")][vizier-sed] including all VizieR 
+- Query VizieR [associated data][vizier-assoc-data] (images, spectra)   
+- Load your data as a VO Table using [TOPCAT][topcat] or other VO tools
+- Visualize a spectrum using [CASSIS][cassis]
 - Query all VizieR catalogues using [CDS Python package][vizier-api]
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 

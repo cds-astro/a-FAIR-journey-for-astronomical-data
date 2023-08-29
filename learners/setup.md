@@ -20,7 +20,7 @@ In this training we concentrate on the publication of data via the CDS VizieR se
 
 <!-- Astronomers who want to publish their data (table, images, spectra, …), and make them available to the community, following the FAIR principles. -->
 
-Researchers in astronomy who want to make their published data (table, images, spectra, …) FAIR and openly accessible to the community. 
+Researchers in astronomy who want to make their published data (tables, images, spectra, …) <a href="section_fair_astro.html">FAIR</a> and openly accessible to the community. 
 
 This training is also directed at researchers interested in ensuring long-lasting access to their data. 
 
@@ -54,11 +54,11 @@ No prior knowledge is required.
 
 ## Version
 
-Training version: 1.0
+Training version: 1.1
 
 Publication date: 10 July 2023
  
-<!-- Last modified: xx -->
+Last modified: 27 July 2023
 
 
 ## License

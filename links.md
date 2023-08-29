@@ -52,9 +52,12 @@ any links that you are not going to use.
 [vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 [vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
 [vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
-<!-- VizieR example Gaia DR3-->
+<!-- VizieR example Gaia DR3 and other examples-->
 [vizier-gaia-dr3]: https://doi.org/10.26093/cds/vizier.1355
 [vizier-table-gaia-dr3]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3
+[vizier-timeserie-example]: https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/917/80/table4&-out.max=50&-out.form=HTML%20Table&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-oc.form=sexa
+[vizier-refsdat-example]: https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/262/18/refs&-out.max=50&-out.form=HTML%20Table&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-oc.form=sexa
+[vizier-bplanets]: https://cdsarc.cds.unistra.fr/viz-bin/cat/B/planets
 
 <!-- -->
 <!-- Journals -->
@@ -87,6 +90,7 @@ any links that you are not going to use.
 <!-- Others -->
 [ads]: https://ui.adsabs.harvard.edu/classic-form
 [cassis]: http://cassis.irap.omp.eu/?page=cassis
+[dsa]: https://www.coretrustseal.org/about/history/data-seal-of-approval-synopsis-2008-2018/
 [cts]: https://www.coretrustseal.org/
 [eudat]: https://www.eudat.eu/
 [b2find]: https://b2find.eudat.eu/
@@ -96,6 +100,7 @@ any links that you are not going to use.
 [splat]: http://star-www.dur.ac.uk/~pdraper/splat/splat.html
 [topcat]:  http://www.starlink.ac.uk/topcat/
 [uat]: https://astrothesaurus.org/
+[vespa]: http://www.europlanet-vespa.eu/
 [anafile]: http://cdsarc.unistra.fr/doc/anafile.htx
 
 <!-- -->

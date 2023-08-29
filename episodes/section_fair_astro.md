@@ -214,7 +214,7 @@ in your Table: example from Grieves et al. (2021).
 
 (a) Provide the complete name for each object. (§2.1.1)
 (b) Include the “J” in names based on J2000 coordinates. (§2.1.1)
-(c) Insert spacers between a catalog name and the identifiers within the catalog. (§2.1.1)
+(c) Insert spacers between a catalogue name and the identifiers within the catalogue. (§2.1.1)
 (d) Distinguish between part of an object and the object itself. (§2.1.1)
 (e) Do not use the same name for different objects. (§2.1.1)
 (f) Always assign a name and verify the name is unique. (§2.1.2)
@@ -460,7 +460,7 @@ a) For basic morphological types, use the well-established schemes
 (e.g., <a href="https://doi.org/10.1146/annurev.astro.43.112904.104839" target="_blank">Sandage 2005</a>). 
 Authors are encouraged to refer to <a href="http://simbad.unistra.fr/guide/otypes.htx" target="_blank">SIMBAD’s Object Classification</a>
 or <a href="https://ned.ipac.caltech.edu/uri/NED::Classifications/" target="_blank">NED’s galaxy classifications and attributes</a>, which have been standardized 
-to enable unified queries across journal articles and catalogs.
+to enable unified queries across journal articles and catalogues.
 </pre></big>
 
 
