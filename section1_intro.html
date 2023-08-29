@@ -263,7 +263,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Why distribute your data through VizieR?</h1>
-        <p> Last updated on 2023-07-05 | 
+        <p> Last updated on 2023-08-29 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section1_intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -309,7 +309,7 @@ the most complete library of published astronomical catalogues - tables
 and associated data - with verified and enriched data, accessible via
 multiple interfaces. Query tools allow the user to select relevant data
 tables and to extract and format records matching given criteria.
-Currently, over 23 000 catalogues are available.</p>
+Currently, ~ 24 000 catalogues are available (as in August 2023).</p>
 <!-- VizieR homepage as iframe-->
 <iframe src="https://vizier.cds.unistra.fr/index.gml" title="VizieR homepage webpage" style="border: 1px solid black; width: 95%; height: 1000px; 
 overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
@@ -337,22 +337,53 @@ some catalogues are not suitable and some less frequently used
 catalogues have not yet been incorporated into the VizieR database. The
 full list of catalogues is available from there: <a href="https://cdsarc.cds.unistra.fr/viz-bin/cat?" class="external-link">Catalogue collection
 page</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_may2023.png" alt="Screenshot: VizieR Catalogue collection page, example for 'mission: gaia DR3', from May 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page - example for Gaia
-DR3 (screenshot)</figcaption></figure><!--  ----------------------------------------- --><!--            VizieR catalogue                --><!--  ----------------------------------------- --><!-- Source: Presentation Gilles AAS 2021 --></section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
-</h2>
-<hr class="half-width"><p>We call a VizieR catalogue:</p>
-<ul><li>A set of documented tables (including a ReadMe file)</li>
-<li>With an indexation by keywords, authors, date …</li>
-<li>With a global indexation by position</li>
-<li>And citation capability (bibcode or DOI)</li>
-</ul><p>Optionally contains:</p>
-<ul><li>Photometry assignment to populate the VizieR SED service</li>
-<li>FITS Spectra, images and plots</li>
-<li>HiPS files (Hierarchical Progressive Surveys)</li>
-</ul><!-- VizieR catalogue as iframe--><iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355#/article" title="VizieR catalogue ingested: example Gaia DR3 Part 1." style="border: 1px solid black; width: 95%; height: 1200px; 
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_catalogue_collection_july2023.png" alt="Screenshot: VizieR Catalogue collection page, example for 'mission:gaia', from July 2023" class="figure mx-auto d-block"><figcaption>VizieR Catalogue collection page - example when
+selecting Gaia mission catalogues (screenshot)</figcaption></figure><p>VizieR and more generally speaking the CDS are quite involved in the
+data preservation aspect, as evidenced by the <a href="https://www.coretrustseal.org/about/history/data-seal-of-approval-synopsis-2008-2018/" class="external-link">DSA</a>
+and <a href="https://www.coretrustseal.org/" class="external-link">CTS</a> certifications
+awarded over the last years. More details on the topic can be found at
+the page below.</p>
+<!-- CDS certification CTS -->
+<iframe src="https://cds.unistra.fr/CTS-CDS" title="CDS is certified by the CoreTrustSeal" style="border: 1px solid black; width: 95%; height: 900px; 
 overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
 </iframe>
-<p>VizieR catalogue ingestion webpage: example Gaia DR3 Part 1.</p>
+<!--  ----------------------------------------- -->
+<!--            VizieR catalogue                -->
+<!--  ----------------------------------------- -->
+<!-- Source: Presentation Gilles AAS 2021 -->
+</section><section id="what-is-a-vizier-catalogue"><h2 class="section-heading">What is a VizieR catalogue?<a class="anchor" aria-label="anchor" href="#what-is-a-vizier-catalogue"></a>
+</h2>
+<hr class="half-width"><p>We call a VizieR catalogue:</p>
+<ul><li>A set of documented tables (including a ReadMe file), linked to a
+published paper</li>
+<li>With an indexation by keywords, authors, date, UCDs …</li>
+<li>With a global indexation by position whenever possible</li>
+<li>And citation capability (bibcode or DOI)</li>
+</ul><p>A catalogue can optionally contains other data, also associated with
+publications:</p>
+<ul><li>Photometry assignment to populate the <a href="http://vizier.cds.unistra.fr/vizier/sed/" class="external-link">VizieR SED
+service</a>
+</li>
+<li>FITS Spectra, images and cubes to populate the <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">associated Saada/VizieR
+database</a>
+<!-- - HiPS files (Hierarchical Progressive Surveys)  -->
+</li>
+<li>Time series and spectra that will be displayed as interactive plot
+(see <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/917/80/table4&amp;-out.max=50&amp;-out.form=HTML%20Table&amp;-out.add=_r&amp;-out.add=_RAJ,_DEJ&amp;-sort=_r&amp;-oc.form=sexa" class="external-link">example
+of interactive time serie plot</a>)</li>
+<li>Table of references (see <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/262/18/refs&amp;-out.max=50&amp;-out.form=HTML%20Table&amp;-out.add=_r&amp;-out.add=_RAJ,_DEJ&amp;-sort=_r&amp;-oc.form=sexa" class="external-link">example
+of refs.dat file</a>)</li>
+<li>Time assignment to create MOCtime in Aladin</li>
+<li>Solar system assignment to create the catalogue <a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/B/planets" class="external-link">B/planets</a>
+and populate the <a href="http://www.europlanet-vespa.eu/" class="external-link">VESPA</a>
+site</li>
+</ul><p>An example of ingested catalogue (Gaia DR3 Part 1, VizieR name: <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3" class="external-link">I/355</a>)
+is shown in the webpage below.</p>
+<!-- VizieR catalogue as iframe-->
+<iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355#/article" title="VizieR catalogue ingested: example Gaia DR3 Part 1." style="border: 1px solid black; width: 95%; height: 1200px; 
+overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
+</iframe>
+<p>VizieR catalogue landing page: example Gaia DR3 Part 1.</p>
 <!--  ----------------------------------------- -->
 <!--            VizieR and VO tools             -->
 <!--  ----------------------------------------- -->
@@ -372,10 +403,12 @@ identification</a> between VizieR tables or Simbad</li>
 <li>Load your tables in <a href="http://aladin.cds.unistra.fr/aladin.gml" class="external-link">Aladin</a>
 </li>
 <li>Plot <a href="http://vizier.cds.unistra.fr/vizier/sed/" class="external-link">photometry
-(SED)</a> including all VizieR</li>
+(“SED”)</a> including all VizieR</li>
 <li>Query VizieR <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">associated data</a>
-(images, spectra, time series)<br></li>
-<li>Load your data as a VO Table using <a href="http://www.starlink.ac.uk/topcat/" class="external-link">TOPCAT</a>
+(images, spectra)<br></li>
+<li>Load your data as a VO Table using <a href="http://www.starlink.ac.uk/topcat/" class="external-link">TOPCAT</a> or other VO
+tools</li>
+<li>Visualize a spectrum using <a href="http://cassis.irap.omp.eu/?page=cassis" class="external-link">CASSIS</a>
 </li>
 <li>Query all VizieR catalogues using <a href="https://github.com/cds-astro/cds.cdsclient/" class="external-link">CDS Python
 package</a>
@@ -466,7 +499,7 @@ any links that you are not going to use.
 <!-- VizieR FTP -->
 <!-- VizieR mirrors -->
 <!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3-->
+<!-- VizieR example Gaia DR3 and other examples-->
 <!-- -->
 <!-- Journals -->
 <!-- -->
@@ -529,8 +562,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/section1_intro.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section1_intro.html",
-  "dateCreated": "2023-07-27",
-  "dateModified": "2023-07-05",
+  "dateCreated": "2023-08-29",
+  "dateModified": "2023-08-29",
   "datePublished": "2023-08-29"
 }
 
