@@ -133,7 +133,7 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 	- [European Open Science Cloud (EOSC) Portal][eosc-portal]
 - Step in the VO: interoperability with other tools, e.g.
 	- [Splat][splat]
-	- astroquery
+	- [astroquery][astroquery]
 - Added metadata:
 	- UCD (VO)
 	- Keywords (UAT)
@@ -159,7 +159,8 @@ Distribute your data in a trusted repository in accordance with Open Data princi
 	- Dedicated **indexations**
 	- Quality and a good data **description**
 	- Generate **persistent identifier** (bibcode, DOI) for citation
-	- Data are available through the [Virtual Observatory (VO)][ivoa-link]
+	- Data are available through the [Virtual Observatory (VO)][ivoa-link] services
+	- Data can be queried by various means (simple search, TAP, Python ...) and retrieved in different format (ASCII, Fits, VOTable ...)
 	<!-- - **Large publication**: data published in the Virtual Observatory -->
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
