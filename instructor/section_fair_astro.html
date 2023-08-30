@@ -301,7 +301,7 @@ Literature</a></li>
 <h3 class="card-title">Questions</h3>
 <ul><li>What are the FAIR principles?</li>
 <li>What does it mean for astronomical data?</li>
-<li>Do and don’t when publishing data?</li>
+<li>Do and don’t when publishing daa</li>
 </ul></div>
 </div>
 </div>
@@ -330,14 +330,14 @@ require that the data are related to a publication in a refereed
 journal, either as tables or catalogues actually published, or as a
 paper describing the data and their context.</p>
 <p>Furthermore, the data should be <em>described</em> accurately enough
-to allow an unambiguous interpretation of the data, and faciliate their
-usability.</p>
+to allow an unambiguous interpretation (of the data), and facilitate
+their usability.</p>
 <p>In this chapter, we will review the best practices for data
 publication in the astronomical field.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC: beginning
-of the journey - step peer reviewed datasets</figcaption></figure><!--  ----------------------------------------- --><!-- 		Introduction 			--><!--  ----------------------------------------- --></section><section id="what-are-the-fair-principles"><h2 class="section-heading">What are the FAIR principles?<a class="anchor" aria-label="anchor" href="#what-are-the-fair-principles"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, beginning
+of the journey - step 1 “peer reviewed datasets”</figcaption></figure><!--  ----------------------------------------- --><!-- 		Introduction 			--><!--  ----------------------------------------- --></section><section id="what-are-the-fair-principles"><h2 class="section-heading">What are the FAIR principles?<a class="anchor" aria-label="anchor" href="#what-are-the-fair-principles"></a>
 </h2>
-<hr class="half-width"><p>Formalized by Wilkinson et al. in 2016 (<a href="https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18" class="external-link">10.1038/sdata.2016.18</a>),
+<hr class="half-width"><p>Formalized by Wilkinson et al. in 2016 (DOI: <a href="https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18" class="external-link">10.1038/sdata.2016.18</a>),
 the FAIR Guiding Principles have emerged over the last few years. The
 underlying idea is to provide a set of guidelines (neither a standard
 not a specification) for making research data in a broad sense (not only
@@ -349,12 +349,12 @@ ensuring standardised machine actionability.</p>
 more details. In this course, we will summarize them and focus more on
 what it means for astronomical data.</p>
 <p><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/fair_principles.png" alt="Findable Accessible Interoperable Reusable principles cartoon from 'Open Science Training Handbook'" class="figure"><em>Credit: Open Science Training Handbook, CC0 1.0 Universal, <a href="https://doi.org/10.5281/zenodo.1212496" class="external-link uri">https://doi.org/10.5281/zenodo.1212496</a></em></p>
-<div id="details" class="callout discussion">
+<div id="the-fair-guiding-principles-in-more-depth" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="details" class="callout-inner">
-<h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#details"></a>
+<div id="the-fair-guiding-principles-in-more-depth" class="callout-inner">
+<h3 class="callout-title">The FAIR Guiding Principles in more depth<a class="anchor" aria-label="anchor" href="#the-fair-guiding-principles-in-more-depth"></a>
 </h3>
 <div class="callout-content">
 <p>The FAIR Guiding Principles for scientiﬁc data management and
@@ -369,11 +369,11 @@ stewardship as outlined by M. Wilkinson et al. (2016).</p>
   To be Findable
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The first step before reusing the data is to be able to find them.
-The metadata and data should be easy to find for both humans and
-computers.</p>
+The metadata and data should be easy to find for <strong>both humans and
+computers</strong>.</p>
 <p>F1. (Meta)data are assigned a globally unique and persistent
 identiﬁer</p>
 <p>F2. Data are described with rich metadata (deﬁned by R1 below)</p>
@@ -391,7 +391,7 @@ it describes</p>
   To be Accessible
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Once the data can be found, the user needs to know how to access
 them. That could include authentification and authorisation. The
@@ -416,7 +416,7 @@ available</p>
   To be Interoperable
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Those data can then be combined with different datasets, and
 interoperate with other applications or workflows for analysis, storage,
@@ -436,7 +436,7 @@ applicable language for knowledge representation.</p>
   To be Reusable
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The ultimate goal of FAIR is to optimise the reuse of data. To
 achieve this, metadata and data should be well-described, including a
@@ -460,7 +460,10 @@ Literature<a class="anchor" aria-label="anchor" href="#best-practices-for-data-p
 </h2>
 <hr class="half-width"><p>In 2022, Chen et al. (DOI: <a href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268" class="external-link">10.3847/1538-4365/ac6268</a>)
 published a set of guidelines summarizing the best practices for
-publishing data in astronomy and astrophysics journals.</p>
+publishing data in astronomy and astrophysics journals. This article is
+the result of a joint effort from several data centres (<a href="https://ned.ipac.caltech.edu/" class="external-link">NED</a>, <a href="https://www.cfa.harvard.edu/" class="external-link">CfA</a>, <a href="https://www.astro.caltech.edu/" class="external-link">Caltech</a>, <a href="https://cds.unistra.fr/" class="external-link">CDS</a>, <a href="https://journals.aas.org/" class="external-link">AAS</a>, <a href="https://ui.adsabs.harvard.edu/classic-form" class="external-link">ADS</a>, among
+others), as these recommendations are applicable to all those who do
+data processing.</p>
 <p>These recommendations are intended for authors, referees, and science
 editors to consult in order to avoid various pit-falls that often impede
 the interpretation of data and metadata by readers, and parsing by
@@ -497,9 +500,10 @@ below.</p>
 </h3>
 <div class="callout-content">
 <p>A lot of items will be covered in this section. We are aware that you
-could be a bit overwhelming. Small tips for FAIR tables are given at the
-bottom of this Chapter.</p>
-<p>Do you best and do not hesitate to contact us if needed: <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
+could be a bit overwhelming.</p>
+<p>The most important points are highlighted in bold, and some tips when
+creating tables are given at the end.</p>
+<p>Do your best and do not hesitate to contact us if needed: <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
 </div>
 </div>
 </div>
@@ -507,29 +511,35 @@ bottom of this Chapter.</p>
 <!--  ----------------------------------------- --><a class="anchor" aria-label="anchor" href="#section"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
-<h3 id="general-rules-2">General rules (§2) <a name="general_rules"></a>
-<a class="anchor" aria-label="anchor" href="#general-rules-2"></a></h3>
+<h3 id="general-rulessection-2-from-article">General
+rules<a name="general_rules" href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268#apjsac6268s2" target="_blank" class="external-link">(Section
+§2 from article)</a>
+<a class="anchor" aria-label="anchor" href="#general-rulessection-2-from-article"></a></h3>
 <ol style="list-style-type: lower-alpha"><li>Define all symbols, acronyms, and abbreviations at first use.</li>
 <li>Provide uncertainty and confidence level when reporting a new
 measurement.</li>
 <li>Present the appropriate number of significant figures for numerical
 measurements and uncertainties that match the precision of the
 measurements.</li>
-<li>Report the units for measurements if present, and adopt
-commonly-used ones.</li>
+<li><strong>Report the units for measurements if present, and adopt
+commonly-used ones.</strong></li>
 <li>Indicate preferred values if applicable.</li>
 </ol><div class="section level4">
 <h4 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a></h4>
-<pre><code>a) “... used by the Dark Energy Survey (DES)...”
+<big>
+<pre>
+a) “... used by the Dark Energy Survey (DES)...”
 b) The period of a periodic phenomenon should be given as 
 “P = 1.23456±0.00012 days” instead of “P = 1.23456(12) days”. 
 c) Present a measurement as 0.123±0.002, 
 not 0.12345±0.002 or 0.123±0.00234.
 d) Present source color “(B-V) = 0.45 mag” instead of “(B-V) = 0.45”
-e) State your preferred solution in the text and indicated in bold
-in your Table: example from Grieves et al. (2021).</code></pre>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/grieves_2012_table4_short.png" alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold in one column to indicate their preferred solution when providing multiple options for stellar parameters" class="figure mx-auto d-block"><figcaption>Figure: Extract from Table 4 from <a href="http://doi.org/10.1051/0004-6361/202039586" class="external-link">Grieves et
-al. (2021)</a></figcaption></figure></div>
+e) State your preferred solution in the text and have a dedicated column for the adopted solution in your Table, 
+as shown in <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/261/19/table8" target="_blank" class="external-link">Table 8 from VizieR catalogue J/ApJS/261/19</a>
+</pre>
+</big><p></p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/vizier_adopted_value_example.png" alt="Small extract of Table 8 from VizieR catalogue J/ApJS/261/19, displaying 4 columns for the effective temperature: TeffR, TeffS, TeffP and Teff, the latter one corresponding to their adopted temperature" class="figure mx-auto d-block"><figcaption>Figure: Extract of Table 8 from VizieR catalogue
+J/ApJS/261/19</figcaption></figure></div>
 </div>
 </section><section id="section-1"><h2 class="section-heading">
 <!--  ----------------------------------------- --><a class="anchor" aria-label="anchor" href="#section-1"></a>
@@ -537,28 +547,34 @@ al. (2021)</a></figcaption></figure></div>
 <hr class="half-width"><div class="section level3">
 <h3 id="nomenclature-2-1">Nomenclature (§2.1) <a name="nomenclature"></a>
 <a class="anchor" aria-label="anchor" href="#nomenclature-2-1"></a></h3>
-<ol style="list-style-type: lower-alpha"><li>Provide the complete name for each object. (§2.1.1)</li>
+<ol style="list-style-type: lower-alpha"><li>
+<strong>Provide the complete name for each object.</strong>
+(§2.1.1)</li>
 <li>Include the “J” in names based on J2000 coordinates. (§2.1.1)</li>
 <li>Insert spacers between a catalogue name and the identifiers within
 the catalogue. (§2.1.1)</li>
 <li>Distinguish between part of an object and the object itself.
 (§2.1.1)</li>
-<li>Do not use the same name for different objects. (§2.1.1)</li>
+<li>
+<strong>Do not use the same name for different objects.</strong>
+(§2.1.1)</li>
 <li>Always assign a name and verify the name is unique. (§2.1.2)</li>
 <li>Keep the appropriate number of significant figures in
 coordinate-based names. (§2.1.2)</li>
 <li>Use established names for known objects and check for the correct
 formatting. (§2.1.3)</li>
-<li>Confirm the names and positions for cross-identifications.
-(§2.1.4)</li>
-<li>Cross-match the same objects in different tables within the same
-article. (§2.1.4)</li>
+<li>
+<strong>Confirm the names and positions for
+cross-identifications.</strong> (§2.1.4)</li>
+<li>
+<strong>Cross-match the same objects in different tables within the
+same article.</strong> (§2.1.4)</li>
 </ol><!--  ----------------- --><div class="section level4">
 <h4 id="examples-1">Examples<a class="anchor" aria-label="anchor" href="#examples-1"></a></h4>
 <big>
 <pre>
 ## IAU conventions
-b) Use “BR J0529-3526” instead of “BR0529-3526”.
+b) Use “BR J0529-3526” instead of “BR0529-3526” (which is B1950 by default).
 c) Use “B3 2327+391”, not “B32327+391”.
 d) Use “3C 295 cluster” instead of “3C 295” when referring to the cluster.
 e) The tau Ceti system now has four planets: e, f, g, and h. 
@@ -566,7 +582,7 @@ Since tau Ceti b, c, and d were refuted, the letter designations b, c,
 and d were not reused for the newer planets to avoid confusion.
 
 ## New objects
-f) Confirm any new acronym to the <a href="http://vizier.u-strasbg.fr/cgi-bin/Dic" target="_blank" class="external-link">IAU Dictionary of Nomenclature of 
+f) Confirm any new acronym to the <a href="http://vizier.u-strasbg.fr/cgi-bin/Dic" target="_blank" class="external-link">Dictionary of Nomenclature of 
 Celestial Objects</a>.
 g) J092712.64+294344.0 indicates a positional accuracy of 0.15 arcsec 
 while J092712.644+294344.02 indicates an accuracy of 0.015 arcsec.
@@ -583,8 +599,8 @@ resolve object names.
 i) Always verify with established databases that all of the names
 given to an object are valid cross-identifications for the object and 
 that the listed positions are for the same object.
-j) Provide a running identification number for your objects to be able 
-to link your data in the different tables of your paper. 
+<!-- j) Provide a running identification number for your objects to be able 
+to link your data in the different tables of your paper. -->
 </pre>
 </big><p></p>
 <!--  ----------------- -->
@@ -599,7 +615,7 @@ to link your data in the different tables of your paper.
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Modified version of Table 1 from Chen et al. 2022:</p>
 <p>Show some examples of improper astronomical designations in
@@ -638,10 +654,10 @@ them?</p>
   Why is it improper?
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
-<pre><code>I1) Insufficient precision in RA and DEC can cause confusion
- with nearby sources. 
+<pre><code>I1) Insufficient precision in RA and DEC causes confusion.
+In this case, it could correspond to many objects in the different SDSS releases.
 I2) Incomplete name can be interpreted into different objects.
 I3) Leading zero in RA is missing and can cause misinterpretation 
 of the RA at 23 hours instead of 02 hour. 
@@ -649,11 +665,11 @@ I4) Missing letter J to specify J2000 equatorial coordinates.
 I5) Name prefix is needed to distinguish between different objects.
 I6) H II regions in LMC or SMC should be indicated with 
 “L” or “S” to avoid ambiguity.
-I7) Database objectID numbers are used without specifying release 
+I7) Database objectID number is used without specifying release 
 number. The same running number may refer to a different source 
 in a different release.
 I8) ID is written in scientific notation, making it impossible 
-to retrieve the actual object.
+to retrieve the actual object (which is a 19-integer number).
 I9) Ambiguous name can be interpreted into different objects.</code></pre>
 </div>
 </div>
@@ -666,7 +682,7 @@ I9) Ambiguous name can be interpreted into different objects.</code></pre>
   Recommended usage
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <pre><code>R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
 or SDSS J144157.26+094853.7
@@ -678,8 +694,8 @@ IVS B0008+006 (Redshift z = 1.5) are different targets
 R6) DEM L 045, or DEM S 045
 R7) Gaia DR3 2448177130188111232
 R8) Gaia DR2 2790494815860044544
-R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, ICRS J2000), or
-MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)</code></pre>
+R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or
+V* MU Cep (22h23m38.63s, +57d40m50.8s, J2000)</code></pre>
 </div>
 </div>
 </div>
@@ -694,8 +710,10 @@ MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)</code></pre>
 <a class="anchor" aria-label="anchor" href="#astrometry-2-2"></a></h3>
 <ol style="list-style-type: lower-alpha"><li>Provide the best available coordinates.</li>
 <li>Specify the celestial reference system and/or frame.</li>
-<li>Indicate the equinox and epoch of observation when necessary.</li>
-<li>State the wavelength range from which astrometry is obtained.</li>
+<li><strong>Indicate the equinox and epoch of observation when
+necessary.</strong></li>
+<li><strong>State the wavelength range from which astrometry is
+obtained.</strong></li>
 </ol><div class="section level4">
 <h4 id="examples-2">Examples<a class="anchor" aria-label="anchor" href="#examples-2"></a></h4>
 <pre><code>a) Complete celestial coordinates are preferred, e.g.,
@@ -704,8 +722,9 @@ b) Current IAU celestial reference system is ICRS:
 the International Celestial Reference System.
 c) Standard equinox and epoch currently in use are J2000.0, 
 but it is not always the case. For example, the reference epoch 
-for the Gaia Data Release 3 is J2016.0, while it is J2015.5 for 
-Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.</code></pre>
+for the Gaia Data Release 3 is ICRS at epoch = 2016.0, 
+while it is epoch = 2015.5 for Gaia Data Release 2 
+and epoch = 2015.0 for Gaia Data Release 1.</code></pre>
 </div>
 </div>
 </section><section id="section-3"><h2 class="section-heading">
@@ -714,17 +733,16 @@ Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.</code></pre>
 <hr class="half-width"><div class="section level3">
 <h3 id="photometry-2-3">Photometry (§2.3) <a name="photometry"></a>
 <a class="anchor" aria-label="anchor" href="#photometry-2-3"></a></h3>
-<ol style="list-style-type: lower-alpha"><li>State the facility, telescope and instrument used.</li>
+<ol style="list-style-type: lower-alpha"><li><strong>State the facility, telescope and instrument
+used.</strong></li>
 <li>Describe the method used to estimate photometry.</li>
 <li>Use standard passband/filter identifiers.</li>
-<li>Clarify the magnitude system.</li>
+<li><strong>Clarify the magnitude system.</strong></li>
 <li>Specify spectral transitions completely.</li>
 </ol><div class="section level4">
 <h4 id="examples-3">Examples<a class="anchor" aria-label="anchor" href="#examples-3"></a></h4>
-<pre><code>a) Facility ground-based or space-based, instrument configuration 
-information, specific camera on the instrument, specific CCD chips ...
-b) Point spread function fitting, aperture photometry, 
-isophotal measurements, etc
+<pre><code>a) Facility ground-based or space-based, specific instrument configuration information.
+b) Point spread function fitting, aperture photometry, etc. 
 c) Indicate “Johnson B” or “Cousins B” instead of just “B”; 
 use “2MASS Ks” instead of just “K”. 
 d) Magnitude on the AB, Vega, ST, or some other magnitude system.
@@ -740,7 +758,8 @@ one should use, e.g., “CO (J=1-0) ν=115 GHz”. </code></pre>
 <hr class="half-width"><div class="section level3">
 <h3 id="time-2-4">Time (§2.4) <a name="time"></a>
 <a class="anchor" aria-label="anchor" href="#time-2-4"></a></h3>
-<ol style="list-style-type: lower-alpha"><li>Provide the time of observation and exposure time.</li>
+<ol style="list-style-type: lower-alpha"><li><strong>Provide the time of observation and exposure
+time.</strong></li>
 <li>Favor full Julian Dates over abbreviated or offset Julian
 Dates.</li>
 <li>Include phase timing measures along with reported periods when
@@ -753,9 +772,9 @@ simultaneously.</li>
 (e.g., JD, BJD, HJD), and the time system used (e.g., UTC, TDB, TAI). 
 For example, use “BJD-TDB” to indicate Barycentric Julian Date 
 in the Barycentric Dynamical Time standard (preferred).
-b) When reporting Julian Dates, the full unmodified date 
-(e.g., 2456789.123) is preferred over any offset variation 
-(e.g., 6789.123), to avoid confusion.
+b) When reporting Julian Dates, the full unmodified date (e.g., 2456789.123) 
+is preferred over any offset variation (e.g., 6789.123), to avoid confusion.
+Note that MJD (Modified Julian Date) is = Julian Date - 2400000.5, by IAU definition.
 c) For a transiting exoplanet orbit where the period is known, 
 include a time of transit.
 d) If possible, include a graphical representation of the times that 
@@ -768,15 +787,17 @@ the missions obtained the data to help visualize where the simultaneity occurs.<
 <hr class="half-width"><div class="section level3">
 <h3 id="redshiftvelocity-2-5">Redshift/velocity (§2.5) <a name="redshift"></a>
 <a class="anchor" aria-label="anchor" href="#redshiftvelocity-2-5"></a></h3>
-<ol style="list-style-type: lower-alpha"><li>Describe the method of redshift measurements (spectroscopic,
-photometric, etc.) and give references to the model/method.</li>
+<ol style="list-style-type: lower-alpha"><li><strong>Describe the method of redshift measurements (spectroscopic,
+photometric, etc.) and give references to the
+model/method.</strong></li>
 <li>Specify the reference frame of the redshift measurements
 (barycentric, heliocentric, galactocentric, etc.).</li>
-<li>Provide the frequency/wavelength from which the measurement is
-obtained.</li>
+<li><strong>Provide the frequency/wavelength from which the measurement
+is obtained.</strong></li>
 <li>State whether a published recessional velocity is based on observed
 frequency or wavelength shifts (i.e., radio or optical convention).</li>
-<li>Indicate the quality of the measurement when possible.</li>
+<li><strong>Indicate the quality of the measurement when
+possible.</strong></li>
 </ol><div class="section level4">
 <h4 id="examples-5">Examples<a class="anchor" aria-label="anchor" href="#examples-5"></a></h4>
 <pre><code>a) Describe particular method (spectroscopic, photometric, Friends-of-Friends, etc.)
@@ -787,7 +808,9 @@ c) A redshift measured from HI 21 cm emission line may have a significantly
 different systematic velocity than a redshift measured from stellar absorption lines 
 in the same galaxy.
 d) The radio velocity increment depends upon the rest frequency,
-whereas the optical velocity increment depends on the observing frequency.</code></pre>
+whereas the optical velocity increment depends on the observing frequency.
+e) Add a flag indicating low quality as poor seing or 
+redshift based on a single spectral line.</code></pre>
 </div>
 </div>
 </section><section id="section-6"><h2 class="section-heading">
@@ -797,16 +820,17 @@ whereas the optical velocity increment depends on the observing frequency.</code
 <h3 id="classifications-2-6">Classifications (§2.6) <a name="classifications"></a>
 <a class="anchor" aria-label="anchor" href="#classifications-2-6"></a></h3>
 <ol style="list-style-type: lower-alpha"><li>Utilize established classifications as available.</li>
-<li>Define new classifications clearly.</li>
+<li><strong>Define (new) classifications clearly.</strong></li>
 </ol><div class="section level4">
 <h4 id="examples-6">Examples<a class="anchor" aria-label="anchor" href="#examples-6"></a></h4>
 <big>
 <pre>
-a) For basic morphological types, use the well-established schemes 
+a) For basic morphological types, use well-established schemes 
 (e.g., <a href="https://doi.org/10.1146/annurev.astro.43.112904.104839" target="_blank" class="external-link">Sandage 2005</a>). 
 Authors are encouraged to refer to <a href="http://simbad.unistra.fr/guide/otypes.htx" target="_blank" class="external-link">SIMBAD’s Object Classification</a>
 or <a href="https://ned.ipac.caltech.edu/uri/NED::Classifications/" target="_blank" class="external-link">NED’s galaxy classifications and attributes</a>, which have been standardized 
 to enable unified queries across journal articles and catalogues.
+b) Explain any abbreviations and/or give a definition of the classification.
 </pre>
 </big><p></p>
 </div>
@@ -837,24 +861,25 @@ which argument of periapsis is measured, report time of periapsis in preference 
 <!--  ----------------------------------------- --><a class="anchor" aria-label="anchor" href="#section-8"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
-<h3 id="tables-3-1">Tables (§3.1) <a name="tables"></a>
-<a class="anchor" aria-label="anchor" href="#tables-3-1"></a></h3>
+<h3 id="tablessection-3-1-from-article">Tables<a name="tables" href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268#apjsac6268s3" target="_blank" class="external-link">(Section
+§3.1 from article)</a>
+<a class="anchor" aria-label="anchor" href="#tablessection-3-1-from-article"></a></h3>
 <ol style="list-style-type: lower-alpha"><li>Provide a clear title and unambiguous labels for columns.</li>
-<li>Explain the content of each column, including symbols and
-flags.</li>
-<li>Keep each column homogeneous.</li>
-<li>Use the same explicitly defined non-numeric representations for
-missing (null) values throughout.</li>
+<li><strong>Explain the content of each column, including symbols and
+flags.</strong></li>
+<li><strong>Keep each column homogeneous.</strong></li>
+<li><strong>Use the same explicitly defined non-numeric representations
+for missing (null) values throughout.</strong></li>
 <li>Prepare ReadMe files for machine-readable tables.</li>
-<li>Give the complete names of the objects (§2.1) in each table, and
-keep the same names in all the tables and text throughout the article
-when possible.</li>
+<li><strong>Give the complete names of the objects (§2.1) in each table,
+and keep the same names in all the tables and text throughout the
+article when possible.</strong></li>
 </ol><div class="section level4">
 <h4 id="examples-8">Examples<a class="anchor" aria-label="anchor" href="#examples-8"></a></h4>
 <big>
 <pre>
 a) Indicate the units for each column when applicable.
-b) Make a clear distinction between z the redshift and z the filter.
+b) Make a clear distinction between z the redshift, z the filter or z the metallicity.
 c) A single column should not present measurements with different units, 
 mix errors with limits or comments, or append flags to values.
 d) Use null values that are supported and documented by widely-used 
@@ -862,7 +887,8 @@ toolkits, e.g., “NaN” (Not a Number) for floating-point data in Astropy.
 Use the same representation for missing data and have a separate field 
 that explains the reasons for a missing value. 
 Do not use different representations to indicate the different reasons, 
-e.g., blank for “not observed”, and “NaN” for “no detection”.
+e.g., blank/0.00 for “not observed”, and NaN/-99.99 for “no detection”.
+Stick to one value!
 e) Authors should include a human-readable description of the data,
 with at least the column descriptions, units, and references (on the 
 origin of the measurements or instruments for observations when relevant) 
@@ -881,7 +907,7 @@ in a ReadMe file. More help on the ReadMe is given in a <a href="section_submit_
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Modified version from Table 2 from Chen et al. 2022:</p>
 <p>Show that using LaTeX markups or footnotes in tables affect their
@@ -922,7 +948,7 @@ uncertain</p>
   Why is it improper?
   </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
 <div class="accordion-body">
 <p>The quality of the measurement is indicated using a superscript.
 Providing this information using an extra column will make the table
@@ -938,7 +964,7 @@ more machine readable, and therefore the data more reusable.</p>
   Recommended usage
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <table class="table"><thead><tr class="header"><th>Object</th>
 <th align="center">Redshift</th>
@@ -973,7 +999,8 @@ more machine readable, and therefore the data more reusable.</p>
 <a class="anchor" aria-label="anchor" href="#figures-3-2"></a></h3>
 <ol style="list-style-type: lower-alpha"><li>Provide clear caption, legend and axis labels for each figure.</li>
 <li>Design the graphics to be accessible.</li>
-<li>Make “data behind the plots” publicly available.</li>
+<li><strong>Make “data behind the plots” publicly
+available.</strong></li>
 </ol><div class="section level4">
 <h4 id="examples-9">Examples<a class="anchor" aria-label="anchor" href="#examples-9"></a></h4>
 <big>
@@ -987,28 +1014,36 @@ in addition to colors. See the <a href="https://journals.aas.org/graphics-guide/
 c) Make the original data files used to generate the figures publicly 
 available, as this will greatly enhance the ability to reproduce, 
 validate, or build upon published results.
+Those files will also be harvested by CDS (as shown in the example below).
 </pre>
 </big><p></p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/figure1_chen2022_plot_accessible.png" alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot, with each line clearly labelled: revised version from Figure 28 from Cook et al. (2019)" class="figure mx-auto d-block"><figcaption>Figure: Example of a clearly labeled, accessible
-plot: revised version from Figure 28 from <a href="http://doi.org/10.1093/mnras/stz331" class="external-link">Cook et al. (2019)</a></figcaption></figure></div>
+<!-- VizieR interactive plot as iframe-->
+<p>Interactive window: Example of spectra generated by VizieR based on
+original data files (“data behind figure”).
+<iframe src="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/923/48" title="Example of data behind figure with VizieR" style="border: 1px solid black; width: 95%; height: 1200px; 
+overflow: hidden; display: block; " allowfullscreen="" allow="autoplay" data-external="1"></iframe></p>
+</div>
 </div>
 </section><section id="section-10"><h2 class="section-heading">
 <!--  ----------------------------------------- --><a class="anchor" aria-label="anchor" href="#section-10"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
-<h3 id="data-archiving-and-access-4">Data archiving and access (§4) <a name="data_archiving"></a>
-<a class="anchor" aria-label="anchor" href="#data-archiving-and-access-4"></a></h3>
+<h3 id="data-archiving-and-access-section-4-from-article">Data archiving and access
+<a name="data_archiving" href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268#apjsac6268s4" target="_blank" class="external-link">(Section
+§4 from article)</a>
+<a class="anchor" aria-label="anchor" href="#data-archiving-and-access-section-4-from-article"></a></h3>
 <ol style="list-style-type: lower-alpha"><li>Append small data sets as part of the publication.</li>
-<li>Deposit large or complex data at a long-term archive most
+<li><strong>Deposit large or complex data at a long-term archive most
 appropriate for your data. Adhere to the specific format requirements
-from the archives.</li>
+from the archives.</strong></li>
 <li>Provide a complete list of metadata.</li>
 <li>Include a Data Availability Statement if required by the
 journal.</li>
-<li>Do not publish data sets at URLs lacking long-term support.</li>
-<li>Use unique and informative names for the files instead of
+<li><strong>Do not publish data sets at URLs lacking long-term
+support.</strong></li>
+<li><strong>Use unique and informative names for the files instead of
 duplicating file names and using location in a directory structure as
-file metadata necessary to uniquely identify a file.</li>
+file metadata necessary to uniquely identify a file.</strong></li>
 </ol><div class="section level4">
 <h4 id="examples-10">Examples<a class="anchor" aria-label="anchor" href="#examples-10"></a></h4>
 <big>
@@ -1026,8 +1061,8 @@ e) We strongly discourage the publication of URLs to personal web servers
 hosting data sets for which the author or institution has no means to maintain 
 for many years after the publication of the associated journal article.
 f) if photometry data are available at different bands (e.g., V and R) 
-for the same object (e.g., NGC 1275), use names such as NGC1275 V.dat
-and NGC1275 R.dat to identify the files. Do not set up separate directories 
+for the same object (e.g., NGC 1275), use names such as NGC1275_V.dat
+and NGC1275_R.dat to identify the files. Do not set up separate directories 
 for V and R band, and give the same file name NGC1275.dat under both directories.
 </pre>
 </big><p></p>
@@ -1037,15 +1072,17 @@ for V and R band, and give the same file name NGC1275.dat under both directories
 <!--  ----------------------------------------- --><a class="anchor" aria-label="anchor" href="#section-11"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
-<h3 id="literature-citations-5-1">Literature citations (§5.1) <a name="literature_citations"></a>
-<a class="anchor" aria-label="anchor" href="#literature-citations-5-1"></a></h3>
-<ol style="list-style-type: lower-alpha"><li>Cite the original references.</li>
+<h3 id="literature-citations-section-5-1-from-article">Literature citations
+<a name="literature_citations" href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268#apjsac6268s5" target="_blank" class="external-link">(Section
+§5.1 from article)</a>
+<a class="anchor" aria-label="anchor" href="#literature-citations-section-5-1-from-article"></a></h3>
+<ol style="list-style-type: lower-alpha"><li><strong>Cite the original references.</strong></li>
 <li>Use preferred citations by the authors.</li>
 <li>Provide full provenance of the data. Credit the originator of
 archival data, including the Principal Investigator.</li>
 <li>Include all references in the bibliography section.</li>
-<li>Distinguish original data in your article and data taken from other
-work.</li>
+<li><strong>Distinguish original data in your article and data taken
+from other work.</strong></li>
 </ol><div class="section level4">
 <h4 id="examples-11">Examples<a class="anchor" aria-label="anchor" href="#examples-11"></a></h4>
 <pre><code>a)  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012) 
@@ -1058,9 +1095,9 @@ software and compilation used, e.g.,“2MASS (Skrutskie et al. 2006) as
 downloaded with TOPCAT (Version 4.8-3, Taylor 2005) via VizieR (II/246, 
 Cutri et al. 2003)”. It is also recommended to include the names of 
 principal investigators who acquired the original data sets.
-c) Make sure all appropriate references to papers, software and data 
+d) Make sure all appropriate references to papers, software and data 
 products are included in a paper’s bibliography section, not just in footnotes.
-d) Use phrases such as “This work” to clearly identify original 
+e) Use phrases such as “This work” to clearly identify original 
 data in your article.</code></pre>
 </div>
 </div>
@@ -1070,9 +1107,9 @@ data in your article.</code></pre>
 <hr class="half-width"><div class="section level3">
 <h3 id="facility-credits-5-2">Facility credits (§5.2) <a name="facility_credits"></a>
 <a class="anchor" aria-label="anchor" href="#facility-credits-5-2"></a></h3>
-<ol style="list-style-type: lower-alpha"><li>Indicate the facilities involved, such as telescopes, instruments,
-and databases.</li>
-<li>Use standard keywords when possible.</li>
+<ol style="list-style-type: lower-alpha"><li><strong>Indicate the facilities involved, such as telescopes,
+instruments, and databases.</strong></li>
+<li><strong>Use standard keywords when possible.</strong></li>
 <li>Include facility’s own statement if available.</li>
 </ol><div class="section level4">
 <h4 id="examples-12">Examples<a class="anchor" aria-label="anchor" href="#examples-12"></a></h4>
@@ -1082,7 +1119,7 @@ a) Always describe the facilities or services used,
 and make sure the name is unique.
 b) See <a href="https://journals.aas.org/authors/aastex/facility.html" target="_blank" class="external-link">AAS keyword tags</a> with AASTeX \facility and \facilities. 
 c) This research has made use of the VizieR catalogue access tool, CDS, 
-Strasbourg, France (DOI: 10.26093/cds/vizier). The original description 
+Strasbourg, France (DOI: <a href="http://doi.org/10.26093/cds/vizier" target="_blank" class="external-link">10.26093/cds/vizier</a>). The original description 
 of the VizieR service was published in 2000, A&amp;AS 143, 23.
 </pre>
 </big><p></p>
@@ -1098,7 +1135,7 @@ of the VizieR service was published in 2000, A&amp;AS 143, 23.
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <p>Table 3 from Chen et al. 2022:</p>
 <p>Give some examples of ambiguous facility/ telescope/instrument names
@@ -1130,7 +1167,7 @@ Q4) OSIRIS</code></pre>
   List of solutions
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <table class="table"><colgroup><col width="39%"><col width="60%"></colgroup><thead><tr class="header"><th>Names as published</th>
 <th>Possible interpretation</th>
@@ -1204,8 +1241,10 @@ Wenger, M., Ochsenbein, F., Egret, D., et al. 2000, A&amp;AS,
 <!--  ----------------------------------------- --><a class="anchor" aria-label="anchor" href="#section-15"></a>
 </h2>
 <hr class="half-width"><div class="section level3">
-<h3 id="data-content-keywords-6">Data content keywords (§6) <a name="data_content_keywords"></a>
-<a class="anchor" aria-label="anchor" href="#data-content-keywords-6"></a></h3>
+<h3 id="data-content-keywords-section-6-from-article">Data content keywords
+<a name="data_content_keywords" href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268#apjsac6268s6" target="_blank" class="external-link">(Section
+§6 from article)</a>
+<a class="anchor" aria-label="anchor" href="#data-content-keywords-section-6-from-article"></a></h3>
 <ol style="list-style-type: lower-alpha"><li>Tag articles with relevant data content keywords from the UAT (<a href="https://astrothesaurus.org/" class="external-link">Unified Astronomy
 Thesaurus</a>).</li>
 </ol><div class="section level4">
@@ -1253,10 +1292,6 @@ identified with the <strong>same name between tables</strong>.</li>
 submission routes (depending on your journal) and then how to prepare
 and submit your data to VizieR. Ultimately you will see how to search
 your data using the EOSC tools.</p>
-<!--  ----------------------------------------- -->
-<!-- 		Link references			-->
-<!--	==> See links.md file			-->
-<!--  ----------------------------------------- -->
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
@@ -1279,7 +1314,11 @@ any links that you are not going to use.
 <!-- -->
 <!-- -->
 <!-- -->
+<!-- Data centres -->
+<!-- -->
 <!-- Others -->
+<!-- -->
+<!-- Papers -->
 <!-- -->
 <!-- EOSC -->
 </section></div> <!-- / div.lesson-content -->
