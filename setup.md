@@ -12,7 +12,7 @@ Work within the [ESCAPE][escape] project and the [EOSC Future][eosc-future] proj
 In this training we concentrate on the publication of data via the CDS VizieR service and show how the process leads to the data being made visible in the EOSC Portal. We invite astronomy researchers to follow the journey of their data to EOSC!
 
 
-![Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
+![Figure: Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
 
 
@@ -54,11 +54,11 @@ No prior knowledge is required.
 
 ## Version
 
-Training version: 1.1
+Training version: 0.2
 
 Publication date: 10 July 2023
  
-Last modified: 27 July 2023
+Last modified: 30 August 2023
 
 
 ## License
