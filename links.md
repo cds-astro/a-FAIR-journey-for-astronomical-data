@@ -89,6 +89,7 @@ any links that you are not going to use.
 <!-- -->
 <!-- Others -->
 [ads]: https://ui.adsabs.harvard.edu/classic-form
+[astroquery]: https://astroquery.readthedocs.io
 [cassis]: http://cassis.irap.omp.eu/?page=cassis
 [dsa]: https://www.coretrustseal.org/about/history/data-seal-of-approval-synopsis-2008-2018/
 [cts]: https://www.coretrustseal.org/
