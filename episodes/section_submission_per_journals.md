@@ -29,6 +29,7 @@ The submission routes for your data vary depending where you submitted your pape
 - Initiated by authors
 - Initiated by the CDS
 
+Interactive window: VizieR catalogues provenance per journal.
 <iframe src="https://manonmarchand.github.io/vizier-stats/" style="border: none; width: 98%; height:500px" allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 Link: [Catalogues and files available at CDS][vizier-cat-per-journal]

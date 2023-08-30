@@ -35,7 +35,7 @@ Furthermore, the data should be *described* accurately enough to allow an unambi
 In this chapter, we will review the best practices for data publication in the astronomical field.
 
 
-![Journey from a publication to EOSC: beginning of the journey - step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper"}
+![Figure: Journey from a publication to EOSC: beginning of the journey - step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper"}
 
 
 
@@ -49,7 +49,7 @@ Formalized by Wilkinson et al. in 2016 ([10.1038/sdata.2016.18][wilkinson_2016])
 Many great courses can be found online explaining those principles in more details.
 In this course, we will summarize them and focus more on what it means for astronomical data. 
  
-![FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/fair_principles.png){alt="Findable Accessible Interoperable Reusable principles cartoon from 'Open Science Training Handbook'"}
+![Figure: FAIR guiding principles for data resources](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/fair_principles.png){alt="Findable Accessible Interoperable Reusable principles cartoon from 'Open Science Training Handbook'"}
 *Credit: Open Science Training Handbook, CC0 1.0 Universal, https://doi.org/10.5281/zenodo.1212496*
 
 
@@ -205,7 +205,7 @@ e) State your preferred solution in the text and indicated in bold
 in your Table: example from Grieves et al. (2021).
 ```
 
-![Extract from Table 4 from [Grieves et al. (2021)][Grieves_2021]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/grieves_2012_table4_short.png){alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold in one column to indicate their preferred solution when providing multiple options for stellar parameters"}
+![Figure: Extract from Table 4 from [Grieves et al. (2021)][Grieves_2021]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/grieves_2012_table4_short.png){alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold in one column to indicate their preferred solution when providing multiple options for stellar parameters"}
 
  
 <!--  ----------------------------------------- -->
@@ -597,7 +597,7 @@ available, as this will greatly enhance the ability to reproduce,
 validate, or build upon published results.
 </pre></big>
 
-![Example of a clearly labeled, accessible plot: revised version from Figure 28 from [Cook et al. (2019)][Cook_2019]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/figure1_chen2022_plot_accessible.png){alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot, with each line clearly labelled: revised version from Figure 28 from Cook et al. (2019)"}
+![Figure: Example of a clearly labeled, accessible plot: revised version from Figure 28 from [Cook et al. (2019)][Cook_2019]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/figure1_chen2022_plot_accessible.png){alt="Figure 1 from Chen et al. (2022), showing a clearly labeled and accessible plot, with each line clearly labelled: revised version from Figure 28 from Cook et al. (2019)"}
 
 
 

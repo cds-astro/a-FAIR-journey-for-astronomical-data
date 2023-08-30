@@ -43,7 +43,7 @@ In this chapter, we will answer to some frequently asked questions about how to 
 A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
 
-![Journey from a publication to EOSC: second step of the journey - step preparation of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
+![Figure: Journey from a publication to EOSC: second step of the journey - step preparation of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
 
 
 
@@ -56,7 +56,7 @@ A full description of the standard conventions used for the documentation of the
 
 Tables are the main data types accepted. An [example of ingested table][vizier-table-gaia-dr3] is shown below. 
 
-![Example of a VizieR table ingested: catalogue Gaia DR3 - ref I/355/gaiadr3 (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Screenshot: Example of a VizieR table ingested. The figure shows the first 20 rows for the table 'I/355/gaiadr3'."}
+![Figure: Example of a VizieR table ingested: catalogue Gaia DR3 - ref I/355/gaiadr3 (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png){alt="Screenshot: Example of a VizieR table ingested. The figure shows the first 20 rows for the table 'I/355/gaiadr3'."}
 
 
 
@@ -124,7 +124,7 @@ Following this checklist will help improving the efficiency of the ingestion in 
 
 In addition to the Tables, other data type are associated. 
 
-![Example of VizieR associated data from the Saada page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. "}
+![Figure: Example of VizieR associated data from the Saada page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. "}
 
 
 Reusable file formats for associated:
@@ -264,13 +264,13 @@ You can test your FITS spectra/images with the [VizieR FITS validator tool][vizi
 This meta-data checking is also completed during the [VizieR submission service][vizier-submit-login].
 
 <!-- VizieR FITS validator as iframe-->
+Interactive window: VizieR FITS validator tool webpage. Note that you can test your FITS directly (it is not an image).
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" 
 title="VizieR FITS validator tool webpage" 
 style="border: 1px solid black; width: 95%; height: 550px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
-VizieR FITS validator tool webpage. Note that you can test your FITS directly (it is not an image).
 
 
 <!--  ----------------------------------------- -->

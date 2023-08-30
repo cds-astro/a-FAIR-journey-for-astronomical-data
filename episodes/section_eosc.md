@@ -32,7 +32,7 @@ In the last chapters, we concentrated on the publication of data via the CDS Viz
 Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, as illustrated in the figure below.
 
 
-![Full data journey from a publication to EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data"}
+![Figure: Full data journey from a publication to EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data"}
 
 
 Work within the [ESCAPE project][escape] and the [EOSC Future project][eosc-future] has been aimed at connecting the existing astronomy data publishing systems to the  [European Open Science Cloud (EOSC)][eosc].
@@ -67,7 +67,7 @@ For prospective users of the services, the Portal provides training materials an
 
 
 
-![EOSC Portal homepage (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/eosc_portal__main_page.png){alt="Screenshot: EOSC Portal homepage, from June 2023"}
+![Figure: EOSC Portal homepage (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/eosc_portal__main_page.png){alt="Screenshot: EOSC Portal homepage, from June 2023"}
 
 
 
@@ -83,13 +83,13 @@ In the following, we will show how to find your data in EOSC, using Gaia DR3 (Vi
 
 The first step is to type the name of your catalogue, dataset, paper, DOI in the Search bar on [EOSC portal][eosc-portal], as illustrated in the figure below.
 
-![Searching for 'Gaia DR3' on EOSC Portal -- search from homepage (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using homepage, from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- search from homepage (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using homepage, from June 2023"}
 
 
 You can also [browse directly the Marketplace][eosc-portal-marketplace], from the same website. You will get the same results in the end.
 
 
-![Searching for 'Gaia DR3' on EOSC Portal -- Browse Marketplace tab (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search_browse_marketplace.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using 'Browse Marketplace' page, from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- Browse Marketplace tab (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search_browse_marketplace.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using 'Browse Marketplace' page, from June 2023"}
 
 
 ---
@@ -103,7 +103,7 @@ You can filter the results using the 'Filters' options on the left, or also by t
 
 In our example (Gaia DR3), we can see that the search is done on multiple fields: Title, Author names, abstract.
 
-![Searching for 'Gaia DR3' on EOSC Portal -- all records (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records, from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- all records (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records, from June 2023"}
 
 
 ---
@@ -184,7 +184,7 @@ https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
 ```
 
 
-![Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_filtering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_filtering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023"}
 
 
 
@@ -213,7 +213,7 @@ Once you found the relevant entry, you can click on it ([link to selected result
 In this example, you can access to the resource by either clicking on the [DOI link][vizier-gaia-dr3], or on the 'Download from' on the right side of the EOSC page, and then select one of the two data sources available: [B2FIND][eosc-portal-result-gaiadr3-b2find] or [Strasbourg Astronomical Data Center][eosc-portal-result-gaiadr3-stras-datacenter].
 
 
-![Searching for 'Gaia DR3' on EOSC Portal -- result (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step3_result.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3', from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- result (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step3_result.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3', from June 2023"}
 
 
 
