@@ -54,11 +54,11 @@ No prior knowledge is required.
 
 ## Version
 
-Training version: 1.1
+Training version: 0.2
 
 Publication date: 10 July 2023
  
-Last modified: 27 July 2023
+Last modified: 30 August 2023
 
 
 ## License

@@ -58,6 +58,7 @@ any links that you are not going to use.
 [vizier-timeserie-example]: https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/917/80/table4&-out.max=50&-out.form=HTML%20Table&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-oc.form=sexa
 [vizier-refsdat-example]: https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/262/18/refs&-out.max=50&-out.form=HTML%20Table&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-oc.form=sexa
 [vizier-bplanets]: https://cdsarc.cds.unistra.fr/viz-bin/cat/B/planets
+[vizier-2mass-s206]: https://cdsarc.cds.unistra.fr/viz-bin/cat/VII/233
 
 <!-- -->
 <!-- Journals -->
@@ -87,8 +88,17 @@ any links that you are not going to use.
 
 
 <!-- -->
-<!-- Others -->
+<!-- Data centres -->
 [ads]: https://ui.adsabs.harvard.edu/classic-form
+[caltech]: https://www.astro.caltech.edu/
+[cfa]: https://www.cfa.harvard.edu/
+[ned]: https://ned.ipac.caltech.edu/
+
+
+
+<!-- -->
+<!-- Others -->
+[anafile]: http://cdsarc.unistra.fr/doc/anafile.htx
 [astroquery]: https://astroquery.readthedocs.io
 [cassis]: http://cassis.irap.omp.eu/?page=cassis
 [dsa]: https://www.coretrustseal.org/about/history/data-seal-of-approval-synopsis-2008-2018/
@@ -102,7 +112,16 @@ any links that you are not going to use.
 [topcat]:  http://www.starlink.ac.uk/topcat/
 [uat]: https://astrothesaurus.org/
 [vespa]: http://www.europlanet-vespa.eu/
-[anafile]: http://cdsarc.unistra.fr/doc/anafile.htx
+
+
+<!-- -->
+<!-- Papers -->
+[wilkinson_2016]: https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18
+[Chen_2022]: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268
+[Cook_2019]: http://doi.org/10.1093/mnras/stz331
+[Grieves_2021]: http://doi.org/10.1051/0004-6361/202039586
+[Kundu_2007]: http://doi.org/10.1086/518021
+
 
 <!-- -->
 <!-- EOSC -->
@@ -124,4 +143,5 @@ any links that you are not going to use.
 [eosc-question3-alatin-lite]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7764464&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
 [eosc-question3-tutorials]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7358070&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
 [eosc-question4-dataset]: https://search.marketplace.eosc-portal.eu/search/dataset?q=Astronomy&sort_ui=default&fq=author_names:%22National%20Radio%20Astronomy%20Observatory%22
+
 
