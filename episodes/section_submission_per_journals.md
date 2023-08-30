@@ -50,11 +50,19 @@ List of journals included:
 - The Astrophysical Journal: ApJ
 - The Astronomical Journal: AJ 
 - The Astrophysical Journal Supplement Series: ApJS
+- The Astrophysical Journal Letters: ApJL
 
 
-<!--- The Astrophysical Journal Letters: ApJL
+<!--- 
 - The Planetary Science Journal: Planet. Sci.
 - Research notes of the AAS: Res. Notes -->
+
+<!-- To select ApJ and not ApJL .... => 
+SELECT count(bibcode) FROM METAcat
+WHERE catid>1
+AND bibcode LIKE '%ApJ.%'
+AND bibcode NOT LIKE '%ApJ.%L.%';
+-->
 
 
 ------------------
