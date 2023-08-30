@@ -45,7 +45,7 @@ The submission web application is an HTTP service and depends of authors network
 For larger files or any other questions, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
 
-![Journey from a publication to EOSC: third step of the journey - step submission of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data"}
+![Figure: Journey from a publication to EOSC: third step of the journey - step submission of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data"}
 
 
 
@@ -481,7 +481,7 @@ There are two recommended ways to generate your own *ReadMe* file:
 	- This package builds *ReadMe*, standardized tables (in ASCII aligned format) or MRT tables from tables which can be in different formats (`CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats)
 	- The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
 
-![ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
+![Figure: ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
 
 
 
@@ -513,14 +513,14 @@ The login can be reused until the completion of the process but not after submis
 **Note - 2:** Please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) if a modification to a recently submitted upload is needed.
 
 <!-- Submission form Vizier as iframe -->
+Interactive window: VizieR catalogue upload webpage. 
+Note that it is not an image, you can submit your files directly from here.
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/"
 title="VizieR catalogue upload webpage"
 style="border: 1px solid black; width: 95%; height: 600px; 
 overflow: hidden; display: block; "
 allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
-VizieR catalogue upload webpage. 
-Note that it is not an image, you can submit your files directly from here.
 
 
 -------
@@ -541,7 +541,7 @@ The upload will generate:
 **Note:** Check that all the tables are uploaded at this stage. Adding tables later implies to remove all tables and *ReadMe*.
 
 
-![VizieR catalogue upload page - step Tables (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023"} 
+![Figure: VizieR catalogue upload page - step Tables (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step1_tables.png){alt="Screenshot: VizieR Catalogue upload page, start uploading Tables after initiating a session, from June 2023"} 
 
 
 
@@ -569,7 +569,7 @@ Then you submit the updated *ReadMe* with the "upload" button:
 **Note - 2:** Check that all the tables are uploaded at this stage. Adding tables later implies to remove all tables and *ReadMe*.
 
 
-![VizieR catalogue upload page - step Readme (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step2_readme.png){alt="Screenshot: VizieR Catalogue upload page, fill the ReadMe file after initiating a session and uploading your tables, from June 2023"} 
+![Figure: VizieR catalogue upload page - step Readme (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step2_readme.png){alt="Screenshot: VizieR Catalogue upload page, fill the ReadMe file after initiating a session and uploading your tables, from June 2023"} 
 
 
 
@@ -596,7 +596,7 @@ The uploaded files can be of the following:
 For each upload, a report is available. **It is recommended to verify the mapping by clicking on the report header.**
 
 
-![VizieR catalogue upload page - step FITS Spectra(screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step3_fits_spectra.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Spectra and Time Series after initiating a session, uploading your tables and filling the ReadMe file, from June 2023"} 
+![Figure: VizieR catalogue upload page - step FITS Spectra(screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step3_fits_spectra.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Spectra and Time Series after initiating a session, uploading your tables and filling the ReadMe file, from June 2023"} 
 
 
 
@@ -609,7 +609,7 @@ FITS images can also be uploaded in a similar way as the FITS Spectra (see above
 More information on the accepted formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
 
 
-![VizieR catalogue upload page - step FITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
+![Figure: VizieR catalogue upload page - step FITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
 
 
 
@@ -635,7 +635,7 @@ Providing an email address is required at that stage. The email will be used if 
 
 
 
-![VizieR catalogue upload page - step Validate (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step5_validate.png){alt="Screenshot: VizieR Catalogue upload page, validate your submission after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra / Time Series and FITS images, from June 2023"} 
+![Figure: VizieR catalogue upload page - step Validate (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step5_validate.png){alt="Screenshot: VizieR Catalogue upload page, validate your submission after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra / Time Series and FITS images, from June 2023"} 
 
 
 
@@ -786,13 +786,13 @@ One key point is to the check the units.
 
 In the example below the original unit for a cylindrical volume of a region (column *Size* from the figure below) was wrongly set to *cm^-3^*.
 
-![Before: Units as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_before.png){alt="Screenshot -- Table with wrong units as displayed in paper"}
+![Figure: Before -- Units as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_before.png){alt="Screenshot -- Table with wrong units as displayed in paper"}
 
 
 
 Our team picked it up and wrote to the author and made the description and unit correction (field *V* from the figure below).
 
-![After: Units corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png){alt="Screenshot -- VizieR table with units corrected"}
+![Figure: After -- Units corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png){alt="Screenshot -- VizieR table with units corrected"}
 
 <!-- https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units.png -->
 
@@ -813,13 +813,13 @@ Alternatively, we ask for them (sometimes we have an answer).
 
 Here is an example of coordinates with discrepancies when the declination is at 0 degree.
 
-![Before: Coordinates as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png){alt="Screenshot -- Table with wrong coordinates as made available in paper"}
+![Figure: Before -- Coordinates as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png){alt="Screenshot -- Table with wrong coordinates as made available in paper"}
 
 
 Once the error detected by our team, the positions were then updated, two years after the data ingestion in VizieR.
 
 
-![After: Coordinates corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png
+![Figure: After -- Coordinates corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png
 ){alt="Screenshot -- VizieR table with coordinates corrected"}
 
 :::::::::::::::::::::::::
@@ -840,7 +840,7 @@ To retrieve coordinates and easy the cross identification between SIMBAD and Viz
 Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we have here. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected. 
 For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
 
-![Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png){alt="Screenshot -- VizieR table with SIMBAD-names added"}
+![Figure: Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png){alt="Screenshot -- VizieR table with SIMBAD-names added"}
 
 :::::::::::::::::::::::::
 
@@ -853,7 +853,7 @@ We add mimimum and maximum values of numerical columns. It allows us to detect s
 :::::::::::::::: testimonial
 #### Min-max values added
 
-![Example of minimum and maximum values added to a ReadMe file (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
+![Figure: Example of minimum and maximum values added to a ReadMe file (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
 
 :::::::::::::::::::::::::
 
@@ -876,7 +876,7 @@ When the data were first ingested, and it is still the case in the MRT table ava
 We contacted the author to get the corresponding data and thus we can now plot the light curve of this object in VizieR.
 
 
-![Example of missing data retrieved, adding more visibility to the original set (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_missing_data.png
+![Figure: Example of missing data retrieved, adding more visibility to the original set (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_missing_data.png
 ){alt="Screenshot -- Missing data retrieved by the CDS team enabling a better reusability of the original data"}
 
 :::::::::::::::::::::::::
@@ -899,16 +899,16 @@ In the two figures below, we can see an example taken from a paper with two tabl
 
 However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi 10018) mentionned in *Table A* corresponds to COS 347 in *Table B*.
 
-![Extract of Table A from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png){alt="Screenshot -- Table A as displayed in paper"}
+![Figure: Extract of Table A from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png){alt="Screenshot -- Table A as displayed in paper"}
 
 
-![Before: extract of Table B from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png){alt="Screenshot -- Table B as displayed in paper"}
+![Figure: Before -- extract of Table B from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png){alt="Screenshot -- Table B as displayed in paper"}
 
 
 As there are no common identifier or coordinates repeated in the second table, the only alternative would have been to go through the list of references cited (3rd column of *Table B*) to get the coordinates and identify the object one by one.
 Therefore, the CDS team contacted the author to get the names and positions for *Table B* and create a better link between the two tables as displayed below.
 
-![After: extract of Table B as available in VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png){alt="Screenshot -- Table B updated as available on VizieR"}
+![Figure: After -- extract of Table B as available in VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png){alt="Screenshot -- Table B updated as available on VizieR"}
 
 
 :::::::::::::::::::::::::
@@ -926,7 +926,7 @@ As said before, the VizieR database is evolving every day: with new catalogues b
 
 In the example below, one table from the original catalogue was updated, to reflect the changes published in an erratum.
 
-![Example of a table updated following erratum publication (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png){alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication"}
+![Figure: Example of a table updated following erratum publication (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png){alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication"}
 
 :::::::::::::::::::::::::
 
@@ -942,7 +942,7 @@ In the example below, one table from the original catalogue was updated, to refl
 Once the data are public, they are accessible as plain files in [FTP directories at CDS][vizier-catalogue-collection] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]), as well as all VO compatible services.
 
 
-![Journey from a publication to EOSC: fourth step of the journey - steps curation & verification](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
+![Figure: Journey from a publication to EOSC: fourth step of the journey - steps curation & verification](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
 
 
 
