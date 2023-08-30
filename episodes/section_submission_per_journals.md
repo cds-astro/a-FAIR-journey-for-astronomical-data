@@ -41,18 +41,20 @@ Link: [Catalogues and files available at CDS][vizier-cat-per-journal]
 <!--  ----------------------------------------- -->
 ## American Astronomical Society Journals (AAS)
 
-The CDS selects tables which will be ingested in VizieR.
+The CDS selects tables from publishes papers which will be ingested in VizieR.
 <!-- tables coming from AAS are not systematically ingested in VizieR. -->
 Machine readable tables (MRT) are prioritised, but other tables or FITS spectra/images can also be added.
 
 List of journals included:
 
-- The Astrophysical Journal Letters: ApJL
-- The Astronomical Journal: AJ 
 - The Astrophysical Journal: ApJ
+- The Astronomical Journal: AJ 
 - The Astrophysical Journal Supplement Series: ApJS
+
+
+<!--- The Astrophysical Journal Letters: ApJL
 - The Planetary Science Journal: Planet. Sci.
-- Research notes of the AAS: Res. Notes
+- Research notes of the AAS: Res. Notes -->
 
 
 ------------------
@@ -76,8 +78,11 @@ Then, **VizieR harvests AAS Journal MRTs** and makes these data discoverable and
 <!--  ----------------------------------------- -->
 ## Astronomy & Astrophysics Journal (A&A)
 
-The editor decides the data to ingest in VizieR. 
+The A&A editors and CDS decide which data to ingest in VizieR. 
+Before publication, .....
 The authors have to submit their data in CDS.
+
+** sTOP**
 
 
 List of journals included:
