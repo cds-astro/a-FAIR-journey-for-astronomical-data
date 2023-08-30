@@ -8,7 +8,7 @@ exercises: 3
 
 - What are the FAIR principles?
 - What does it mean for astronomical data?
-- Do and don't when publishing data?
+- Do and don't when publishing daa
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -30,12 +30,12 @@ The CDS and other astronomical data centers are storing and distributing the ast
 
 In order to ensure the scientific quality of the data, we therefore require that the data are related to a publication in a refereed journal, either as tables or catalogues actually published, or as a paper describing the data and their context. 
 
-Furthermore, the data should be *described* accurately enough to allow an unambiguous interpretation of the data, and faciliate their usability. 
+Furthermore, the data should be *described* accurately enough to allow an unambiguous interpretation (of the data), and facilitate their usability. 
 
 In this chapter, we will review the best practices for data publication in the astronomical field.
 
 
-![Figure: Journey from a publication to EOSC: beginning of the journey - step peer reviewed datasets](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper"}
+![Figure: Journey from a publication to EOSC, beginning of the journey - step 1 "peer reviewed datasets"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step0.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: beginning of the journey - step data published in a refereed paper"}
 
 
 
@@ -44,7 +44,7 @@ In this chapter, we will review the best practices for data publication in the a
 <!--  ----------------------------------------- -->
 ## What are the FAIR principles?
 
-Formalized by Wilkinson et al. in 2016 ([10.1038/sdata.2016.18][wilkinson_2016]), the FAIR Guiding Principles have emerged over the last few years. The underlying idea is to provide a set of guidelines (neither a standard not a specification) for making research data in a broad sense (not only data, but also algorithms, tools, and workﬂows that led to that data) **F**indable, **A**ccessible, **I**nteroperable and **R**eusable, ultimately ensuring standardised machine actionability. 
+Formalized by Wilkinson et al. in 2016 (DOI: [10.1038/sdata.2016.18][wilkinson_2016]), the FAIR Guiding Principles have emerged over the last few years. The underlying idea is to provide a set of guidelines (neither a standard not a specification) for making research data in a broad sense (not only data, but also algorithms, tools, and workﬂows that led to that data) **F**indable, **A**ccessible, **I**nteroperable and **R**eusable, ultimately ensuring standardised machine actionability. 
 
 Many great courses can be found online explaining those principles in more details.
 In this course, we will summarize them and focus more on what it means for astronomical data. 
@@ -56,7 +56,7 @@ In this course, we will summarize them and focus more on what it means for astro
 
 ::::::::::::::::::::::::::::::::::::::: discussion
 
-### Details
+### The FAIR Guiding Principles in more depth
 
 The FAIR Guiding Principles for scientiﬁc data management and stewardship as outlined by M. Wilkinson et al. (2016). 
 
@@ -67,7 +67,7 @@ The FAIR Guiding Principles for scientiﬁc data management and stewardship as o
 ### To be Findable
 
 The first step before reusing the data is to be able to find them. 
-The metadata and data should be easy to find for both humans and computers. 
+The metadata and data should be easy to find for **both humans and computers**. 
 
 F1. (Meta)data are assigned a globally unique and persistent identiﬁer
 
@@ -141,6 +141,7 @@ R1. Meta(data) are richly described with a plurality of accurate and relevant at
 ## Best Practices for Data Publication in the Astronomical Literature
 
 In 2022, Chen et al. (DOI: [10.3847/1538-4365/ac6268][Chen_2022]) published a set of guidelines summarizing the best practices for publishing data in astronomy and astrophysics journals. 
+This article is the result of a joint effort from several data centres ([NED][ned], [CfA][cfa], [Caltech][caltech], [CDS][cds-home], [AAS][aas-home], [ADS][ads], among others), as these recommendations are applicable to all those who do data processing.
 
 These recommendations are intended for authors, referees, and science editors to consult in order to avoid various pit-falls that often impede the interpretation of data and metadata by readers, and parsing by software, and therefore also complicate and delay integration of the data into astronomical databases.
 
@@ -174,54 +175,55 @@ Items covered in the Checklist (and also below):
 # Keep calm and carry on
 
 A lot of items will be covered in this section. We are aware that you could be a bit overwhelming.
-Small tips for FAIR tables are given at the bottom of this Chapter. 
 
-Do you best and do not hesitate to contact us if needed: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+The most important points are highlighted in bold, and some tip are given at the end.
+
+Do your best and do not hesitate to contact us if needed: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
 ::::::::::::::::::::::::::::::::::::::
 
 
 <!--  ----------------------------------------- -->
 ----------
-### General rules (§2) <a name="general_rules"></a>
+### General rules<a name="general_rules" href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268#apjsac6268s2" target="_blank">(Section §2 from article)</a>
 
 (a) Define all symbols, acronyms, and abbreviations at first use.
 (b) Provide uncertainty and confidence level when reporting a new measurement.
 (c) Present the appropriate number of significant figures for numerical measurements and uncertainties that
 match the precision of the measurements.
-(d) Report the units for measurements if present, and adopt commonly-used ones.
+(d) **Report the units for measurements if present, and adopt commonly-used ones.**
 (e) Indicate preferred values if applicable.
 
 
 #### Examples
-```
+<big><pre>
 a) “... used by the Dark Energy Survey (DES)...”
 b) The period of a periodic phenomenon should be given as 
 “P = 1.23456±0.00012 days” instead of “P = 1.23456(12) days”. 
 c) Present a measurement as 0.123±0.002, 
 not 0.12345±0.002 or 0.123±0.00234.
 d) Present source color “(B-V) = 0.45 mag” instead of “(B-V) = 0.45”
-e) State your preferred solution in the text and indicated in bold
-in your Table: example from Grieves et al. (2021).
-```
+e) State your preferred solution in the text and have a dedicated column for the adopted solution in your Table, 
+as shown in <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/261/19/table8" target="_blank">Table 8 from VizieR catalogue J/ApJS/261/19</a>
+</pre></big>
 
-![Figure: Extract from Table 4 from [Grieves et al. (2021)][Grieves_2021]](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/grieves_2012_table4_short.png){alt="Small extract of Table 4 from Grieves et al. 2021, showing the usage of bold in one column to indicate their preferred solution when providing multiple options for stellar parameters"}
+![Figure: Extract of Table 8 from VizieR catalogue J/ApJS/261/19](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/vizier_adopted_value_example.png){alt="Small extract of Table 8 from VizieR catalogue J/ApJS/261/19, displaying 4 columns for the effective temperature: TeffR, TeffS, TeffP and Teff, the latter one corresponding to their adopted temperature"}
 
  
 <!--  ----------------------------------------- -->
 ----------
 ### Nomenclature (§2.1) <a name="nomenclature"></a>
 
-(a) Provide the complete name for each object. (§2.1.1)
+(a) **Provide the complete name for each object.** (§2.1.1)
 (b) Include the “J” in names based on J2000 coordinates. (§2.1.1)
 (c) Insert spacers between a catalogue name and the identifiers within the catalogue. (§2.1.1)
 (d) Distinguish between part of an object and the object itself. (§2.1.1)
-(e) Do not use the same name for different objects. (§2.1.1)
+(e) **Do not use the same name for different objects.** (§2.1.1)
 (f) Always assign a name and verify the name is unique. (§2.1.2)
 (g) Keep the appropriate number of significant figures in coordinate-based names. (§2.1.2)
 (h) Use established names for known objects and check for the correct formatting. (§2.1.3)
-(i) Confirm the names and positions for cross-identifications. (§2.1.4)
-(j) Cross-match the same objects in different tables within the same article. (§2.1.4)
+(i) **Confirm the names and positions for cross-identifications.** (§2.1.4)
+(j) **Cross-match the same objects in different tables within the same article.** (§2.1.4)
 
 
 <!--  ----------------- -->
@@ -230,7 +232,7 @@ in your Table: example from Grieves et al. (2021).
 
 <big><pre>
 ## IAU conventions
-b) Use “BR J0529-3526” instead of “BR0529-3526”.
+b) Use “BR J0529-3526” instead of “BR0529-3526” (which is B1950 by default).
 c) Use “B3 2327+391”, not “B32327+391”.
 d) Use “3C 295 cluster” instead of “3C 295” when referring to the cluster.
 e) The tau Ceti system now has four planets: e, f, g, and h. 
@@ -238,7 +240,7 @@ Since tau Ceti b, c, and d were refuted, the letter designations b, c,
 and d were not reused for the newer planets to avoid confusion.
 
 ## New objects
-f) Confirm any new acronym to the <a href="http://vizier.u-strasbg.fr/cgi-bin/Dic" target="_blank">IAU Dictionary of Nomenclature of 
+f) Confirm any new acronym to the <a href="http://vizier.u-strasbg.fr/cgi-bin/Dic" target="_blank">Dictionary of Nomenclature of 
 Celestial Objects</a>.
 g) J092712.64+294344.0 indicates a positional accuracy of 0.15 arcsec 
 while J092712.644+294344.02 indicates an accuracy of 0.015 arcsec.
@@ -255,8 +257,8 @@ resolve object names.
 i) Always verify with established databases that all of the names
 given to an object are valid cross-identifications for the object and 
 that the listed positions are for the same object.
-j) Provide a running identification number for your objects to be able 
-to link your data in the different tables of your paper. 
+<!-- j) Provide a running identification number for your objects to be able 
+to link your data in the different tables of your paper. -->
 </pre></big>
 
 
@@ -298,8 +300,8 @@ Can you find them?
 ## Why is it improper?
 
 ```
-I1) Insufficient precision in RA and DEC can cause confusion
- with nearby sources. 
+I1) Insufficient precision in RA and DEC causes confusion.
+In this case, it could correspond to many objects in the different SDSS releases.
 I2) Incomplete name can be interpreted into different objects.
 I3) Leading zero in RA is missing and can cause misinterpretation 
 of the RA at 23 hours instead of 02 hour. 
@@ -307,11 +309,11 @@ I4) Missing letter J to specify J2000 equatorial coordinates.
 I5) Name prefix is needed to distinguish between different objects.
 I6) H II regions in LMC or SMC should be indicated with 
 “L” or “S” to avoid ambiguity.
-I7) Database objectID numbers are used without specifying release 
+I7) Database objectID number is used without specifying release 
 number. The same running number may refer to a different source 
 in a different release.
 I8) ID is written in scientific notation, making it impossible 
-to retrieve the actual object.
+to retrieve the actual object (which is a 19-integer number).
 I9) Ambiguous name can be interpreted into different objects.
 ```
 :::::::::::::::::::::::::::::::::
@@ -331,8 +333,8 @@ IVS B0008+006 (Redshift z = 1.5) are different targets
 R6) DEM L 045, or DEM S 045
 R7) Gaia DR3 2448177130188111232
 R8) Gaia DR2 2790494815860044544
-R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, ICRS J2000), or
-MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
+R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or
+V* MU Cep (22h23m38.63s, +57d40m50.8s, J2000)
 ```
 
 :::::::::::::::::::::::::::::::::
@@ -345,8 +347,8 @@ MU Cep (22h23m38.63s, +57d40m50.8s, ICRS J2000)
 
 (a) Provide the best available coordinates.
 (b) Specify the celestial reference system and/or frame.
-(c) Indicate the equinox and epoch of observation when necessary.
-(d) State the wavelength range from which astrometry is obtained.
+(c) **Indicate the equinox and epoch of observation when necessary.**
+(d) **State the wavelength range from which astrometry is obtained.**
 
 
 #### Examples
@@ -357,8 +359,9 @@ b) Current IAU celestial reference system is ICRS:
 the International Celestial Reference System.
 c) Standard equinox and epoch currently in use are J2000.0, 
 but it is not always the case. For example, the reference epoch 
-for the Gaia Data Release 3 is J2016.0, while it is J2015.5 for 
-Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
+for the Gaia Data Release 3 is ICRS at epoch = 2016.0, 
+while it is epoch = 2015.5 for Gaia Data Release 2 
+and epoch = 2015.0 for Gaia Data Release 1.
 ```
 
 
@@ -367,19 +370,17 @@ Gaia Data Release 2 and J2015.0 for Gaia Data Release 1.
 ----------
 ### Photometry (§2.3) <a name="photometry"></a>
 
-(a) State the facility, telescope and instrument used.
+(a) **State the facility, telescope and instrument used.**
 (b) Describe the method used to estimate photometry.
 (c) Use standard passband/filter identifiers.
-(d) Clarify the magnitude system.
+(d) **Clarify the magnitude system.**
 (e) Specify spectral transitions completely.
 
 
 #### Examples
 ```
-a) Facility ground-based or space-based, instrument configuration 
-information, specific camera on the instrument, specific CCD chips ...
-b) Point spread function fitting, aperture photometry, 
-isophotal measurements, etc
+a) Facility ground-based or space-based, specific instrument configuration information.
+b) Point spread function fitting, aperture photometry, etc. 
 c) Indicate “Johnson B” or “Cousins B” instead of just “B”; 
 use “2MASS Ks” instead of just “K”. 
 d) Magnitude on the AB, Vega, ST, or some other magnitude system.
@@ -395,7 +396,7 @@ one should use, e.g., “CO (J=1-0) ν=115 GHz”.
 ----------
 ### Time (§2.4) <a name="time"></a>
 
-(a) Provide the time of observation and exposure time.
+(a) **Provide the time of observation and exposure time.**
 (b) Favor full Julian Dates over abbreviated or offset Julian Dates.
 (c) Include phase timing measures along with reported periods when relevant.
 (d) State when observations from multiple missions are executed simultaneously.
@@ -407,9 +408,9 @@ a) Explicitly described in terms of both the frame of reference
 (e.g., JD, BJD, HJD), and the time system used (e.g., UTC, TDB, TAI). 
 For example, use “BJD-TDB” to indicate Barycentric Julian Date 
 in the Barycentric Dynamical Time standard (preferred).
-b) When reporting Julian Dates, the full unmodified date 
-(e.g., 2456789.123) is preferred over any offset variation 
-(e.g., 6789.123), to avoid confusion.
+b) When reporting Julian Dates, the full unmodified date (e.g., 2456789.123) 
+is preferred over any offset variation (e.g., 6789.123), to avoid confusion.
+Note that MJD (Modified Julian Date) is = Julian Date - 2400000.5, by IAU definition.
 c) For a transiting exoplanet orbit where the period is known, 
 include a time of transit.
 d) If possible, include a graphical representation of the times that 
@@ -423,13 +424,13 @@ the missions obtained the data to help visualize where the simultaneity occurs.
 ### Redshift/velocity (§2.5) <a name="redshift"></a>
 
 
-(a) Describe the method of redshift measurements (spectroscopic, photometric, etc.) and give references to the
-model/method.
+(a) **Describe the method of redshift measurements (spectroscopic, photometric, etc.) and give references to the
+model/method.**
 (b) Specify the reference frame of the redshift measurements (barycentric, heliocentric, galactocentric, etc.).
-(c) Provide the frequency/wavelength from which the measurement is obtained.
+(c) **Provide the frequency/wavelength from which the measurement is obtained.**
 (d) State whether a published recessional velocity is based on observed frequency or wavelength shifts (i.e.,
 radio or optical convention).
-(e) Indicate the quality of the measurement when possible.
+(e) **Indicate the quality of the measurement when possible.**
 
 
 #### Examples
@@ -443,6 +444,8 @@ different systematic velocity than a redshift measured from stellar absorption l
 in the same galaxy.
 d) The radio velocity increment depends upon the rest frequency,
 whereas the optical velocity increment depends on the observing frequency.
+e) Add a flag indicating low quality as poor seing or 
+redshift based on a single spectral line.
 ```
 
 
@@ -451,16 +454,17 @@ whereas the optical velocity increment depends on the observing frequency.
 ### Classifications (§2.6) <a name="classifications"></a>
 
 (a) Utilize established classifications as available.
-(b) Define new classifications clearly.
+(b) **Define (new) classifications clearly.**
 
 
 #### Examples
 <big><pre>
-a) For basic morphological types, use the well-established schemes 
+a) For basic morphological types, use well-established schemes 
 (e.g., <a href="https://doi.org/10.1146/annurev.astro.43.112904.104839" target="_blank">Sandage 2005</a>). 
 Authors are encouraged to refer to <a href="http://simbad.unistra.fr/guide/otypes.htx" target="_blank">SIMBAD’s Object Classification</a>
 or <a href="https://ned.ipac.caltech.edu/uri/NED::Classifications/" target="_blank">NED’s galaxy classifications and attributes</a>, which have been standardized 
 to enable unified queries across journal articles and catalogues.
+b) Explain any abbreviations and/or give a definition of the classification.
 </pre></big>
 
 
@@ -490,7 +494,7 @@ which argument of periapsis is measured, report time of periapsis in preference 
 
 <!--  ----------------------------------------- -->
 ----------
-### Tables (§3.1) <a name="tables"></a>
+### Tables<a name="tables" href="https://iopscience.iop.org/article/10.3847/1538-4365/ac6268#apjsac6268s3" target="_blank">(Section §3.1 from article)</a>
 
 (a) Provide a clear title and unambiguous labels for columns.
 (b) Explain the content of each column, including symbols and flags.
@@ -812,15 +816,4 @@ of data contained in the article.
 
 In the next chapters, you will learn what are the different submission routes (depending on your journal) and then how to prepare and submit your data to VizieR. Ultimately you will see how to search your data using the EOSC tools.
 
-
-
-<!--  ----------------------------------------- -->
-<!-- 		Link references			-->
-<!--	==> See links.md file			-->
-<!--  ----------------------------------------- -->
-[wilkinson_2016]: https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18
-[Chen_2022]: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268
-[Cook_2019]: http://doi.org/10.1093/mnras/stz331
-[Grieves_2021]: http://doi.org/10.1051/0004-6361/202039586
-[Kundu_2007]: http://doi.org/10.1086/518021
 
