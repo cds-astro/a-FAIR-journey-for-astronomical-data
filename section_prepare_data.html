@@ -264,7 +264,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Preparing your data</h1>
-        <p> Last updated on 2023-07-20 | 
+        <p> Last updated on 2023-08-30 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -319,13 +319,13 @@ in usage in our discipline.</li>
 about how to prepare the data for their inclusion in VizieR.</p>
 <p>A full description of the standard conventions used for the
 documentation of the catalogues is available from <a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">there</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Journey from a publication to EOSC: second step of
-the journey - step preparation of the data</figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC: second
+step of the journey - step preparation of the data</figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
 </h2>
 <hr class="half-width"><p>Tables are the main data types accepted. An <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3" class="external-link">example
 of ingested table</a> is shown below.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png" alt="Screenshot: Example of a VizieR table ingested. The figure shows the first 20 rows for the table 'I/355/gaiadr3'." class="figure mx-auto d-block"><figcaption>Example of a VizieR table ingested: catalogue Gaia
-DR3 - ref I/355/gaiadr3 (screenshot)</figcaption></figure><!--  ----------------------------------------- --><p>The following formats are welcome:</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_table_example.png" alt="Screenshot: Example of a VizieR table ingested. The figure shows the first 20 rows for the table 'I/355/gaiadr3'." class="figure mx-auto d-block"><figcaption>Figure: Example of a VizieR table ingested: catalogue
+Gaia DR3 - ref I/355/gaiadr3 (screenshot)</figcaption></figure><!--  ----------------------------------------- --><p>The following formats are welcome:</p>
 <div id="accepted-format" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -404,8 +404,8 @@ ingestion in VizieR and also the visibility and reusability of your data
 </section><section id="associated-data-images-spectra-time-series-cube"><h2 class="section-heading">Associated data: images, spectra, time series, cube<a class="anchor" aria-label="anchor" href="#associated-data-images-spectra-time-series-cube"></a>
 </h2>
 <hr class="half-width"><p>In addition to the Tables, other data type are associated.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png" alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. " class="figure mx-auto d-block"><figcaption>Example of VizieR associated data from the Saada
-page: spectra (screenshot)</figcaption></figure><p>Reusable file formats for associated:</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png" alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. " class="figure mx-auto d-block"><figcaption>Figure: Example of VizieR associated data from the
+Saada page: spectra (screenshot)</figcaption></figure><p>Reusable file formats for associated:</p>
 <div id="accepted-format-1" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -539,7 +539,7 @@ Q7) 'myfile.jpg'</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>R1) No: filenames should be in lowercase.</p>
 <p>R2) No: filename too long. This filename will be shortened afterwards
@@ -564,11 +564,10 @@ FITS and the asked meta-data.</p>
 <p>This meta-data checking is also completed during the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
 submission service</a>.</p>
 <!-- VizieR FITS validator as iframe-->
+<p>Interactive window: VizieR FITS validator tool webpage. Note that you
+can test your FITS directly (it is not an image).
 <iframe src="https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html" title="VizieR FITS validator tool webpage" style="border: 1px solid black; width: 95%; height: 550px; 
-overflow: hidden; display: block; " allowfullscreen allow="autoplay" data-external="1">
-</iframe>
-<p>VizieR FITS validator tool webpage. Note that you can test your FITS
-directly (it is not an image).</p>
+overflow: hidden; display: block; " allowfullscreen="" allow="autoplay" data-external="1"></iframe></p>
 <!--  ----------------------------------------- -->
 <!--            Summary	                        -->
 <!--  ----------------------------------------- -->
@@ -681,9 +680,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/section_prepare_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_prepare_data.html",
-  "dateCreated": "2023-08-29",
-  "dateModified": "2023-07-20",
-  "datePublished": "2023-08-29"
+  "dateCreated": "2023-08-30",
+  "dateModified": "2023-08-30",
+  "datePublished": "2023-08-30"
 }
 
   </script><script>
