@@ -41,18 +41,24 @@ Link: [Catalogues and files available at CDS][vizier-cat-per-journal]
 <!--  ----------------------------------------- -->
 ## American Astronomical Society Journals (AAS)
 
-The CDS selects tables which will be ingested in VizieR.
+The CDS selects tables from publishes papers which will be ingested in VizieR.
 <!-- tables coming from AAS are not systematically ingested in VizieR. -->
 Machine readable tables (MRT) are prioritised, but other tables or FITS spectra/images can also be added.
 
 List of journals included:
 
-- The Astrophysical Journal Letters: ApJL
-- The Astronomical Journal: AJ 
 - The Astrophysical Journal: ApJ
+- The Astronomical Journal: AJ 
 - The Astrophysical Journal Supplement Series: ApJS
-- The Planetary Science Journal: Planet. Sci.
-- Research notes of the AAS: Res. Notes
+- The Astrophysical Journal Letters: ApJL
+
+
+<!-- To select ApJ and not ApJL .... => 
+SELECT count(bibcode) FROM METAcat
+WHERE catid>1
+AND bibcode LIKE '%ApJ.%'
+AND bibcode NOT LIKE '%ApJ.%L.%';
+-->
 
 
 ------------------
@@ -76,8 +82,9 @@ Then, **VizieR harvests AAS Journal MRTs** and makes these data discoverable and
 <!--  ----------------------------------------- -->
 ## Astronomy & Astrophysics Journal (A&A)
 
-The editor decides the data to ingest in VizieR. 
-The authors have to submit their data in CDS.
+Before publication, A&A editors and CDS decide which data to ingest in VizieR. 
+The authors then need to submit the requested data to CDS.
+Other tables already published can also be selected by the CDS.
 
 
 List of journals included:
@@ -109,7 +116,7 @@ Once their papers accepted, the **authors submit their MRT files directly** to t
 <!--  ----------------------------------------- -->
 ## Monthly Notices of the Royal Astronomical Society (MNRAS)
 
-CDS selection or authors submission for CDS acceptation.
+CDS selection or direct authors submission depending on CDS acceptation.
 
 ------------------
 
@@ -134,16 +141,44 @@ Authors should consult the CDS website for instructions on preparing and submitt
 Any other journals needs the author to submit the data.
 
 
-Examples of other journals included in VizieR (and percentage of catalogues ingested in VizieR):
+Examples of other journals included in VizieR, ordered by their percentage of catalogues ingested in VizieR:
 
-- Publications of the Astronomical Society of the Pacific: PASP (2.7%)
-- Pis'ma v Astronomicheskii Zhurnal: PAZh (2.2%)
-- Astronomicheskii Zhurnal: AZh (2.1%)
-- Acta Astronomica: AcA (1.6%)
-- Publications of the Astronomical Society of Japan: PASJ (1.3%)
-- Astronomische Nachrichten: AN (0.95%)
-- Baltic Astronomy: BaltA (0.7%)
+- Publications of the Astronomical Society of the Pacific: PASP (0.85%)
+- Pis'ma v Astronomicheskii Zhurnal: PAZh / AstL (0.73%)
+- Astronomicheskii Zhurnal: AZh (0.66%)
+- Acta Astronomica: AcA (0.58%)
+- Publications of the Astronomical Society of Japan: PASJ (0.41%)
+- Astronomische Nachrichten: AN (0.30%)
+- Baltic Astronomy: BaltA (0.23%)
+- Nature: Natur (0.10%) <!-- 25-->
+- The Planetary Science Journal: Sci (0.08%)
+- Research notes of the AAS: RNAAS (0.008%) <!-- 2 catalogues -->
 
+<!-- 
+SELECT name, bibcode FROM METAcat
+WHERE catid>1
+AND bibcode NOT LIKE '%ApJ.%'
+AND bibcode NOT LIKE '%ApJ.%L.%'
+AND bibcode NOT LIKE '%AJ.%'
+AND bibcode NOT LIKE '%ApJS.%'
+AND bibcode NOT LIKE '%A&A.%'
+AND bibcode NOT LIKE '%A&AS.%' 
+AND bibcode NOT LIKE '%MNRAS.%'
+AND bibcode NOT LIKE '%PASP.%'
+AND bibcode NOT LIKE '%PAZh.%' 
+AND bibcode NOT LIKE '%AstL.%'
+AND bibcode NOT LIKE '%AZh.%'
+AND bibcode NOT LIKE '%AcA.%'
+AND bibcode NOT LIKE '%PASJ.%'  
+AND bibcode NOT LIKE '%AN.%'
+AND bibcode NOT LIKE '%BaltA.%'
+AND bibcode NOT LIKE '%Natur.%'
+AND bibcode NOT LIKE '%Sci.%'  
+AND bibcode NOT LIKE '%RNAAS.%';
+
+==> http://tapvizier.cds.unistra.fr/adql/
+
+-->
 
 
 <!--  ----------------------------------------- -->
@@ -151,22 +186,24 @@ Examples of other journals included in VizieR (and percentage of catalogues inge
 <!--  ----------------------------------------- -->
 ## Large datasets / surveys 
 
-Bigger catalogues are usually **directly retrieved by VizieR** (from ESA, ESO, NASA, Stsci, …), after selection by CDS astronomers.
+Very large catalogues are usually **directly retrieved by VizieR** (from ESA, ESO, NASA, Stsci, …), after selection by CDS astronomers.
 
 Note that the CDS is **not a mirror**, and a selection on the columns can be done.
 
-Type of big catalogues included:
+Type of big catalogues included (as listed on the [VizieR hierarchical organisation webpage][vizier-cat-per-journal]):
 
-- Astrometric Data: eg. [Gaia DR1 (Gaia Collaboration, 2016)][viz-astro-data]
-- Photometric Data: eg. [AllWISE Data Release (Cutri+ 2013)][viz-phot-data]
-- Spectroscopic Data: eg. [Henry Draper Catalogue and Extension (Cannon+ 1918-1924; ADC 1989)][viz-spectro-data]
-- Cross-Identifications: eg. [HD identifications for Tycho-2 stars (Fabricius+, 2002)][viz-cross-data] 
-- High-Energy data: eg. [ROSAT All-Sky Bright Source Catalogue (1RXS) (Voges+ 1999)][viz-high-data]
-- Combined data: eg. [The SDSS Photometric Catalog, Release 9 (Adelman-McCarthy+, 2012)][viz-comb-data]
-- Miscellaneous: eg. [All-sky spectrally matched Tycho2 stars (Pickles+, 2010)][viz-misc-data]
-- Non-stellar Objects: eg. [The 2MASS Extended sources (IPAC/UMass, 2003-2006)][viz-non-sto-data]
-- Radio and Far-IR data: eg. [1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+ 1998)][viz-radio-data]
-  
+| Category | Type of data  | Example of VizieR catalogue| Description 							|
+| - | --- 	   | ---- 			| ------ 							|
+| I 	| Astrometric Data | [I/355][viz-astro-data] 	| Gaia DR3 Part 1. Main source (Gaia collaboration, 2022)	|
+| II 	| Photometric Data | [II/328][viz-phot-data] 	| AllWISE Data Release (Cutri+, 2013)	|
+| III 	| Spectroscopic Data | [III/283][viz-spectro-data] 	| RAVE 6th data release (Steinmetz+, 2020)	|
+| IV 	| Cross-Identifications | [IV/39][viz-cross-data] 	| TESS Input Catalog version 8.2 (TIC v8.2) (Paegert+, 2021)		|
+| V 	| Combined Data | [V/154][viz-comb-data] 	| Sloan Digital Sky Surveys (SDSS), Release 16 (DR16) (Ahumada+, 2020)		|
+| VI 	| Miscellaneous | [VI/135][viz-misc-data] 	| All-sky spectrally matched Tycho2 stars (Pickles+, 2010) 	|
+| VII 	| Non-stellar Objects | [VII/233][viz-non-sto-data] 	| The 2MASS Extended sources (IPAC/UMass, 2003-2006) 	|
+| VIII 	| Radio and Far-IR data | [VIII/65][viz-radio-data] 	| 1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+, 1998)	|
+| IX 	| High-Energy Data | [IX/68][viz-high-data] 	| XMM-Newton Serendipitous Source Catalogue 4XMM-DR12 (Webb+, 2023) 	|
+
 
 <!--
 
@@ -188,16 +225,16 @@ ORDER BY popu DESC;
 
 2 types of VizieR workflows:
 
-- Initiated by authors
+- Initiated by authors / editors
 - Initiated by the CDS
 
 To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed.
 
-- Main journals origin : AAS (AJ, ApJ, ApJS), A&A, MNRAS
+- Main journals origin : AAS (ApJ, AJ, ApJS, ApJL), A&A, MNRAS
 - Authors asking for VizieR publication
 - Scientific criteria such as the origin of the measurements
 (e.g. observations have a higher priority than models)
-- Effort required to make the data reusable (e.g. MRT) is taken into account in the selection of AAS journals
+- Effort required to make the data reusable (preferably MRT) is taken into account in the selection
 - Special case : A&A editors request authors to submit their data in CDS
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
