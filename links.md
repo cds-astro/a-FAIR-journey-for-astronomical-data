@@ -76,15 +76,15 @@ any links that you are not going to use.
 <!-- -->
 [vizier-cat-per-journal]: https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation
 <!-- -->
-[viz-astro-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=I/337
-[viz-phot-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=II/328
-[viz-spectro-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=III/135A
-[viz-cross-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IV/25
-[viz-high-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IX/10A
-[viz-comb-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=V/139
-[viz-misc-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VI/135
-[viz-non-sto-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VII/233
-[viz-radio-data]: https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VIII/65
+[viz-astro-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355
+[viz-phot-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/328
+[viz-spectro-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/283
+[viz-cross-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IV/39
+[viz-comb-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/154
+[viz-misc-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VI/135
+[viz-non-sto-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/233
+[viz-radio-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/65
+[viz-high-data]: https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/68
 
 
 <!-- -->
