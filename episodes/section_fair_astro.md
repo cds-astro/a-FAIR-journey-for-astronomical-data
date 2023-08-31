@@ -8,7 +8,7 @@ exercises: 3
 
 - What are the FAIR principles?
 - What does it mean for astronomical data?
-- Do and don't when publishing daa
+- Do and don't when publishing data
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
