@@ -264,7 +264,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Submission routes and journals</h1>
-        <p> Last updated on 2023-08-30 | 
+        <p> Last updated on 2023-08-31 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submission_per_journals.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -318,18 +318,22 @@ and files available at CDS</a></p>
 <!--  ----------------------------------------- -->
 </section><section id="american-astronomical-society-journals-aas"><h2 class="section-heading">American Astronomical Society Journals (AAS)<a class="anchor" aria-label="anchor" href="#american-astronomical-society-journals-aas"></a>
 </h2>
-<hr class="half-width"><p>The CDS selects tables which will be ingested in VizieR.
+<hr class="half-width"><p>The CDS selects tables from publishes papers which will be ingested
+in VizieR.
 <!-- tables coming from AAS are not systematically ingested in VizieR. -->
 Machine readable tables (MRT) are prioritised, but other tables or FITS
 spectra/images can also be added.</p>
 <p>List of journals included:</p>
-<ul><li>The Astrophysical Journal Letters: ApJL</li>
+<ul><li>The Astrophysical Journal: ApJ</li>
 <li>The Astronomical Journal: AJ</li>
-<li>The Astrophysical Journal: ApJ</li>
 <li>The Astrophysical Journal Supplement Series: ApJS</li>
-<li>The Planetary Science Journal: Planet. Sci.</li>
-<li>Research notes of the AAS: Res. Notes</li>
-</ul><hr><p><em>Recommendations</em> (from the AAS webpage):</p>
+<li>The Astrophysical Journal Letters: ApJL</li>
+</ul><!-- To select ApJ and not ApJL .... => 
+SELECT count(bibcode) FROM METAcat
+WHERE catid>1
+AND bibcode LIKE '%ApJ.%'
+AND bibcode NOT LIKE '%ApJ.%L.%';
+--><hr><p><em>Recommendations</em> (from the AAS webpage):</p>
 <p>The authors should try to prepare their lenghty tables as machine
 readable table (MRT) format. Then, <strong>VizieR harvests AAS Journal
 MRTs</strong> and makes these data discoverable and searchable via
@@ -340,8 +344,9 @@ data format.</p>
 <li><a href="https://journals.aas.org/data-guide/" class="external-link">Data Guide</a></li>
 </ul><!--  ----------------------------------------- --><!-- 		A&A				--><!--  ----------------------------------------- --></section><section id="astronomy-astrophysics-journal-aa"><h2 class="section-heading">Astronomy &amp; Astrophysics Journal (A&amp;A)<a class="anchor" aria-label="anchor" href="#astronomy-astrophysics-journal-aa"></a>
 </h2>
-<hr class="half-width"><p>The editor decides the data to ingest in VizieR. The authors have to
-submit their data in CDS.</p>
+<hr class="half-width"><p>Before publication, A&amp;A editors and CDS decide which data to
+ingest in VizieR. The authors then need to submit the requested data to
+CDS. Other tables already published can also be selected by the CDS.</p>
 <p>List of journals included:</p>
 <ul><li>Astronomy &amp; Astrophysics: A&amp;A</li>
 <li>Astronomy &amp; Astrophysics Supplement Series: A&amp;AS</li>
@@ -359,7 +364,8 @@ tables data to the CDS</a></li>
 objects: linking to databases</a></li>
 </ul><!--  ----------------------------------------- --><!-- 		MNRAS				--><!--  ----------------------------------------- --></section><section id="monthly-notices-of-the-royal-astronomical-society-mnras"><h2 class="section-heading">Monthly Notices of the Royal Astronomical Society (MNRAS)<a class="anchor" aria-label="anchor" href="#monthly-notices-of-the-royal-astronomical-society-mnras"></a>
 </h2>
-<hr class="half-width"><p>CDS selection or authors submission for CDS acceptation.</p>
+<hr class="half-width"><p>CDS selection or direct authors submission depending on CDS
+acceptation.</p>
 <hr><p><em>Recommendations</em> (from the MNRAS webpage):</p>
 <p>Authors are encouraged to <strong>upload machine-readable versions of
 their tables on the VizieR database</strong>. Authors should consult the
@@ -374,52 +380,97 @@ and online material</a></li>
 </ul><!--  ----------------------------------------- --><!-- 		Other journals			--><!--  ----------------------------------------- --></section><section id="other-journals"><h2 class="section-heading">Other journals<a class="anchor" aria-label="anchor" href="#other-journals"></a>
 </h2>
 <hr class="half-width"><p>Any other journals needs the author to submit the data.</p>
-<p>Examples of other journals included in VizieR (and percentage of
-catalogues ingested in VizieR):</p>
+<p>Examples of other journals included in VizieR, ordered by their
+percentage of catalogues ingested in VizieR:</p>
 <ul><li>Publications of the Astronomical Society of the Pacific: PASP
-(2.7%)</li>
-<li>Pis’ma v Astronomicheskii Zhurnal: PAZh (2.2%)</li>
-<li>Astronomicheskii Zhurnal: AZh (2.1%)</li>
-<li>Acta Astronomica: AcA (1.6%)</li>
-<li>Publications of the Astronomical Society of Japan: PASJ (1.3%)</li>
-<li>Astronomische Nachrichten: AN (0.95%)</li>
-<li>Baltic Astronomy: BaltA (0.7%)</li>
-</ul><!--  ----------------------------------------- --><!-- 		Big surveys			--><!--  ----------------------------------------- --></section><section id="large-datasets-surveys"><h2 class="section-heading">Large datasets / surveys<a class="anchor" aria-label="anchor" href="#large-datasets-surveys"></a>
+(0.85%)</li>
+<li>Pis’ma v Astronomicheskii Zhurnal: PAZh / AstL (0.73%)</li>
+<li>Astronomicheskii Zhurnal: AZh (0.66%)</li>
+<li>Acta Astronomica: AcA (0.58%)</li>
+<li>Publications of the Astronomical Society of Japan: PASJ (0.41%)</li>
+<li>Astronomische Nachrichten: AN (0.30%)</li>
+<li>Baltic Astronomy: BaltA (0.23%)</li>
+<li>Nature: Natur (0.10%) <!-- 25-->
+</li>
+<li>The Planetary Science Journal: Sci (0.08%)</li>
+<li>Research notes of the AAS: RNAAS (0.008%) <!-- 2 catalogues -->
+</li>
+</ul><!-- 
+SELECT name, bibcode FROM METAcat
+WHERE catid>1
+AND bibcode NOT LIKE '%ApJ.%'
+AND bibcode NOT LIKE '%ApJ.%L.%'
+AND bibcode NOT LIKE '%AJ.%'
+AND bibcode NOT LIKE '%ApJS.%'
+AND bibcode NOT LIKE '%A&A.%'
+AND bibcode NOT LIKE '%A&AS.%' 
+AND bibcode NOT LIKE '%MNRAS.%'
+AND bibcode NOT LIKE '%PASP.%'
+AND bibcode NOT LIKE '%PAZh.%' 
+AND bibcode NOT LIKE '%AstL.%'
+AND bibcode NOT LIKE '%AZh.%'
+AND bibcode NOT LIKE '%AcA.%'
+AND bibcode NOT LIKE '%PASJ.%'  
+AND bibcode NOT LIKE '%AN.%'
+AND bibcode NOT LIKE '%BaltA.%'
+AND bibcode NOT LIKE '%Natur.%'
+AND bibcode NOT LIKE '%Sci.%'  
+AND bibcode NOT LIKE '%RNAAS.%';
+
+==> http://tapvizier.cds.unistra.fr/adql/
+
+--><!--  ----------------------------------------- --><!-- 		Big surveys			--><!--  ----------------------------------------- --></section><section id="large-datasets-surveys"><h2 class="section-heading">Large datasets / surveys<a class="anchor" aria-label="anchor" href="#large-datasets-surveys"></a>
 </h2>
-<hr class="half-width"><p>Bigger catalogues are usually <strong>directly retrieved by
+<hr class="half-width"><p>Very large catalogues are usually <strong>directly retrieved by
 VizieR</strong> (from ESA, ESO, NASA, Stsci, …), after selection by CDS
 astronomers.</p>
 <p>Note that the CDS is <strong>not a mirror</strong>, and a selection
 on the columns can be done.</p>
-<p>Type of big catalogues included:</p>
-<ul><li>Astrometric Data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=I/337" class="external-link">Gaia
-DR1 (Gaia Collaboration, 2016)</a>
-</li>
-<li>Photometric Data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=II/328" class="external-link">AllWISE
-Data Release (Cutri+ 2013)</a>
-</li>
-<li>Spectroscopic Data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=III/135A" class="external-link">Henry
-Draper Catalogue and Extension (Cannon+ 1918-1924; ADC 1989)</a>
-</li>
-<li>Cross-Identifications: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IV/25" class="external-link">HD
-identifications for Tycho-2 stars (Fabricius+, 2002)</a>
-</li>
-<li>High-Energy data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=IX/10A" class="external-link">ROSAT
-All-Sky Bright Source Catalogue (1RXS) (Voges+ 1999)</a>
-</li>
-<li>Combined data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=V/139" class="external-link">The
-SDSS Photometric Catalog, Release 9 (Adelman-McCarthy+, 2012)</a>
-</li>
-<li>Miscellaneous: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VI/135" class="external-link">All-sky
-spectrally matched Tycho2 stars (Pickles+, 2010)</a>
-</li>
-<li>Non-stellar Objects: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VII/233" class="external-link">The
-2MASS Extended sources (IPAC/UMass, 2003-2006)</a>
-</li>
-<li>Radio and Far-IR data: eg. <a href="https://vizier.cfa.harvard.edu/viz-bin/VizieR?-source=VIII/65" class="external-link">1.4GHz
-NRAO VLA Sky Survey (NVSS) (Condon+ 1998)</a>
-</li>
-</ul><!--
+<p>Type of big catalogues included (as listed on the <a href="https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation" class="external-link">VizieR
+hierarchical organisation webpage</a>):</p>
+<table class="table"><colgroup><col width="7%"><col width="21%"><col width="28%"><col width="42%"></colgroup><thead><tr class="header"><th>Category</th>
+<th>Type of data</th>
+<th>Example of VizieR catalogue</th>
+<th>Description</th>
+</tr></thead><tbody><tr class="odd"><td>I</td>
+<td>Astrometric Data</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355" class="external-link">I/355</a></td>
+<td>Gaia DR3 Part 1. Main source (Gaia collaboration, 2022)</td>
+</tr><tr class="even"><td>II</td>
+<td>Photometric Data</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/328" class="external-link">II/328</a></td>
+<td>AllWISE Data Release (Cutri+, 2013)</td>
+</tr><tr class="odd"><td>III</td>
+<td>Spectroscopic Data</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/283" class="external-link">III/283</a></td>
+<td>RAVE 6th data release (Steinmetz+, 2020)</td>
+</tr><tr class="even"><td>IV</td>
+<td>Cross-Identifications</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IV/39" class="external-link">IV/39</a></td>
+<td>TESS Input Catalog version 8.2 (TIC v8.2) (Paegert+, 2021)</td>
+</tr><tr class="odd"><td>V</td>
+<td>Combined Data</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/154" class="external-link">V/154</a></td>
+<td>Sloan Digital Sky Surveys (SDSS), Release 16 (DR16) (Ahumada+,
+2020)</td>
+</tr><tr class="even"><td>VI</td>
+<td>Miscellaneous</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VI/135" class="external-link">VI/135</a></td>
+<td>All-sky spectrally matched Tycho2 stars (Pickles+, 2010)</td>
+</tr><tr class="odd"><td>VII</td>
+<td>Non-stellar Objects</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/233" class="external-link">VII/233</a></td>
+<td>The 2MASS Extended sources (IPAC/UMass, 2003-2006)</td>
+</tr><tr class="even"><td>VIII</td>
+<td>Radio and Far-IR data</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/65" class="external-link">VIII/65</a></td>
+<td>1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+, 1998)</td>
+</tr><tr class="odd"><td>IX</td>
+<td>High-Energy Data</td>
+<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/68" class="external-link">IX/68</a></td>
+<td>XMM-Newton Serendipitous Source Catalogue 4XMM-DR12 (Webb+,
+2023)</td>
+</tr></tbody></table><!--
 
 SELECT TOP 5 name, popu FROM METAcat
 WHERE name LIKE 'V/%'
@@ -437,16 +488,17 @@ ORDER BY popu DESC;
 </h3>
 <div class="callout-content">
 <p>2 types of VizieR workflows:</p>
-<ul><li>Initiated by authors</li>
+<ul><li>Initiated by authors / editors</li>
 <li>Initiated by the CDS</li>
 </ul><p>To face an increasing volume and according to the CDS mission, VizieR
 selects the articles to be processed.</p>
-<ul><li>Main journals origin : AAS (AJ, ApJ, ApJS), A&amp;A, MNRAS</li>
+<ul><li>Main journals origin : AAS (ApJ, AJ, ApJS, ApJL), A&amp;A,
+MNRAS</li>
 <li>Authors asking for VizieR publication</li>
 <li>Scientific criteria such as the origin of the measurements
 (e.g. observations have a higher priority than models)</li>
-<li>Effort required to make the data reusable (e.g. MRT) is taken into
-account in the selection of AAS journals</li>
+<li>Effort required to make the data reusable (preferably MRT) is taken
+into account in the selection</li>
 <li>Special case : A&amp;A editors request authors to submit their data
 in CDS</li>
 </ul></div>
@@ -523,9 +575,9 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.12.5)</a>,
-        <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.6.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.18" class="external-link">varnish (0.2.18)</a>.</p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.13.0)</a>,
+        <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.6.1)</a>,
+      and <a href="https://github.com/carpentries/varnish" class="external-link">varnish (0.3.0)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -545,9 +597,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/section_submission_per_journals.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section_submission_per_journals.html",
-  "dateCreated": "2023-08-30",
-  "dateModified": "2023-08-30",
-  "datePublished": "2023-08-30"
+  "dateCreated": "2023-08-31",
+  "dateModified": "2023-08-31",
+  "datePublished": "2023-08-31"
 }
 
   </script><script>
