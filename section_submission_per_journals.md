@@ -29,7 +29,8 @@ The submission routes for your data vary depending where you submitted your pape
 - Initiated by authors
 - Initiated by the CDS
 
-Interactive plot: VizieR catalogues provenance per journal (updated weekly).
+Interactive plot below: Scroll over to see the number of VizieR catalogues per journal (updated weekly).
+
 <iframe src="https://manonmarchand.github.io/vizier-stats/" style="border: none; width: 98%; height:500px" allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 Link: [Catalogues and files available at CDS][vizier-cat-per-journal]
