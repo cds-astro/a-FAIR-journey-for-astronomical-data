@@ -1,5 +1,5 @@
 ---
-title: Setup
+title: Introduction
 ---
 
 
@@ -19,12 +19,11 @@ In this training we concentrate on the publication of data via the CDS VizieR se
 ## Target audience
 
 <!-- Astronomers who want to publish their data (table, images, spectra, …), and make them available to the community, following the FAIR principles. -->
+This training is aimed at researchers in astronomy who want to:
 
-Researchers in astronomy who want to make their published data (tables, images, spectra, …) <a href="section_fair_astro.html">FAIR</a> and openly accessible to the community. 
-
-This training is also directed at researchers interested in ensuring long-lasting access to their data. 
-
-This training is designed to inform astronomy researchers about the new developments in Open Science that are being enabled by the EOSC.
+- Make their published data (tables, images, spectra, …) <a href="section_fair_astro.html">Findable, Accessible, Interopable and Reusable (FAIR)</a> and openly accessible to the community. 
+- Ensure long-lasting access to their data. 
+- Learn about the new developments in Open Science that are being enabled by the EOSC.
 
 
 
@@ -41,14 +40,14 @@ By the end of this training, you will:
 - Be aware of how to submit your data in the existing and new Open Science systems, keeping in mind the Virtual Observatory (VO) standards. **(Chapter 5)**
 - Be aware of all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO **(Chapter 6)** 
 - Understand the integration of astronomy data services in the VO and EOSC. **(Chapter 7)**
-- Be familiar with the EOSC capabilities, in particular the Explore portal. **(Chapter 7)**
+- Be familiar with the EOSC capabilities, in particular the EOSC portal. **(Chapter 7)**
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## Type of course
 
-This is an online course (self-learning).
+This is an online self-learning course.
 
 No prior knowledge is required.
 
