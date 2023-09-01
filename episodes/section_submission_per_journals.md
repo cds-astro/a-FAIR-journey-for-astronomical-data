@@ -41,7 +41,7 @@ Link: [Catalogues and files available at CDS][vizier-cat-per-journal]
 <!--  ----------------------------------------- -->
 ## American Astronomical Society Journals (AAS)
 
-The CDS selects tables from publishes papers which will be ingested in VizieR.
+The CDS selects tables from published papers which will be ingested in VizieR.
 <!-- tables coming from AAS are not systematically ingested in VizieR. -->
 Machine readable tables (MRT) are prioritised, but other tables or FITS spectra/images can also be added.
 
