@@ -69,6 +69,7 @@ The following formats are welcome:
 In order of preference:
 
 - Machine-Readable Tables ([MRT][aas-mrt] / FORTRAN format)
+	- Not available through the [VizieR submit interface][vizier-submit-login]
 - TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values) files containing a first line with column description is accepted
 	-  Comments (line beginning by #) are not accepted
 - ASCII aligned files
@@ -92,6 +93,8 @@ The [new submit web application][vizier-submit-login] allows different formats f
 
 Postscript or word/excel files.
 
+Files containing different numbers of columns per rows.
+
 
 
 <!--  ----------------------------------------- -->
@@ -99,7 +102,8 @@ Postscript or word/excel files.
 
 :::::::::::::::::::::::::::::::::::::: checklist
 
-- An explanation is given for all the columns (at least a clear label; at best, few words of explanation).
+- Present the appropriate number of significant figures for numerical measurements and uncertainties (cf 2c).
+- An explanation is given for all the columns (at least a clear label; at best, few words of explanation) (cd 3.1).
 - Units are given for all the columns (when relevant).
 - For tables with sources, give coordinates as accurate as possible:
 	- A bonus would be to have their uncertainty.
