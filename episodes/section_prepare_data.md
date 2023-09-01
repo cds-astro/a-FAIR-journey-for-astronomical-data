@@ -117,6 +117,8 @@ Files containing different numbers of columns per rows.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
+More details on how to create FAIR tables can be found in the previous Chapter <a href="section_fair_astro.html#general_rules" target="_blank">FAIR principles for astronomical data</a>.
+
 Following this checklist will help improving the efficiency of the ingestion in VizieR and also the visibility and reusability of your data :).
 
 
@@ -128,10 +130,10 @@ Following this checklist will help improving the efficiency of the ingestion in 
 
 In addition to the Tables, other data type are associated. 
 
-![Figure: Example of VizieR associated data from the Saada page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. "}
+![Figure: Example of VizieR associated data from the Saada/VizieR page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. "}
 
 
-Reusable file formats for associated:
+Reusable file formats for associated data:
 
 :::::::::::::::::::::::::::::::::::::: prereq
 
@@ -242,7 +244,7 @@ R1) No: filenames should be in lowercase.
 
 R2) No: filename too long. This filename will be shortened afterwards anyway.
 
-R3) Yes: correct.
+R3) Yes: correct. Although not very self-explanatory.
 
 R4) No: '+' character not supported.
 
@@ -292,8 +294,10 @@ Data types accepted:
 	
 Preferred formats:
 
-- Tables should be preferably written as machine-readable tables (MRT)
-- For the associated data, the FITS format is the preferred solution
+- Tables should be preferably written as machine-readable tables (MRT).
+- For the associated data, the FITS format is the preferred solution.
+
+Do not forget to test your FITS data before submission with the VizieR FITS validator tool.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
