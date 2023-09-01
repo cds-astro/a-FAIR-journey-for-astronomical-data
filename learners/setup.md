@@ -39,8 +39,9 @@ By the end of this training, you will:
 - Know the different submission routes. **(Chapter 3)**
 - Know what type of data you can submit and how to prepare your data and its metadata. **(Chapter 4)**
 - Be aware of how to submit your data in the existing and new Open Science systems, keeping in mind the Virtual Observatory (VO) standards. **(Chapter 5)**
-- Understand the integration of astronomy data services in the VO and EOSC. **(Chapter 6)**
-- Be familiar with the EOSC capabilities, in particular the Explore portal. **(Chapter 6)**
+- Be aware of all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO **(Chapter 6)** 
+- Understand the integration of astronomy data services in the VO and EOSC. **(Chapter 7)**
+- Be familiar with the EOSC capabilities, in particular the Explore portal. **(Chapter 7)**
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
