@@ -70,6 +70,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/section3_eosc_intro.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/section_data_curation.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/section_eosc.html</loc>
   </url>
   <url>
@@ -116,6 +119,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/section3_eosc_intro.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/section_data_curation.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/section_eosc.html</loc>

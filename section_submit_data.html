@@ -86,11 +86,11 @@
   The journey of your data through the Virtual Observatory and the European Open Science Cloud
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 51%" class="percentage">
-    51%
+<aside class="col-md-12 lesson-progress"><div style="width: 54%" class="percentage">
+    54%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 51%" aria-valuenow="51" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 54%" aria-valuenow="54" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -191,13 +191,13 @@
         
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#where-to-deposit-the-data">Where to deposit the data?</a></li>
+        <ul><li><a href="#overview">Overview</a></li>
+<li><a href="#who-need-to-submit-their-data">Who need to submit their data?</a></li>
+<li><a href="#where-to-deposit-the-data">Where to deposit the data?</a></li>
 <li><a href="#readme-file">ReadMe file</a></li>
 <li><a href="#data-submission-option-1-online-interface">Data submission (option 1): Online interface</a></li>
 <li><a href="#data-submission-option-2-file-transfer-protocol">Data submission (option 2): File Transfer Protocol</a></li>
-<li><a href="#what-happens-to-your-data-at-the-cds">What happens to your data at the CDS?</a></li>
-<li><a href="#data-available-to-all">Data available to all</a></li>
-<li><a href="#summary-data-submission-and-curation">Summary: Data submission and curation</a></li>
+<li><a href="#summary-data-submission">Summary: Data submission</a></li>
 <li><a href="#next-chapters">Next chapters</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -208,7 +208,16 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="section_eosc.html">6. Journey of your data in the VO and EOSC</a>
+        <a href="section_data_curation.html">6. Data curation at CDS</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="section_eosc.html">7. Journey of your data in the VO and EOSC</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -256,12 +265,12 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="section_prepare_data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="section_eosc.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_data_curation.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="section_prepare_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Preparing your data</a>
-        <a class="chapter-link float-end" href="section_eosc.html" rel="next">Next: Journey of your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_data_curation.html" rel="next">Next: Data curation at CDS... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Submitting astronomical data</h1>
@@ -284,10 +293,10 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How and where to submit your data?</li>
+<ul><li>Who need to submit their data?</li>
+<li>How and where to submit your data?</li>
 <li>What is a <em>ReadMe</em> file?</li>
 <li>Do and don’t when submitting data</li>
-<li>What is the data curation?</li>
 </ul></div>
 </div>
 </div>
@@ -304,37 +313,54 @@ standards.</li>
 </div>
 </div>
 <!--  ----------------------------------------- -->
-<!-- 		Submitting 			-->
+<!-- 	Intro 					-->
 <!--  ----------------------------------------- -->
-<!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section4 -->
-<!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx // Section 4 -->
-<section id="where-to-deposit-the-data"><h2 class="section-heading">Where to deposit the data?<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data"></a>
+<section id="overview"><h2 class="section-heading">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+</h2>
+<hr class="half-width"><p>In the following Chapter, we detail the data submission part which
+happens after the acceptance / publication phase.</p>
+<p>Not everybody needs to send their data to CDS! We invite you to read
+carefully the next sections to understand your next steps.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 3
+“submission of the data”</figcaption></figure><!--  ----------------------------------------- --><!-- 		Who need to submit? 		--><!--  ----------------------------------------- --></section><section id="who-need-to-submit-their-data"><h2 class="section-heading">Who need to submit their data?<a class="anchor" aria-label="anchor" href="#who-need-to-submit-their-data"></a>
+</h2>
+<hr class="half-width"><!--  ----------------------------------------- --><!-- 		Submitting 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section4 --><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx // Section 4 --></section><section id="where-to-deposit-the-data"><h2 class="section-heading">Where to deposit the data?<a class="anchor" aria-label="anchor" href="#where-to-deposit-the-data"></a>
 </h2>
 <hr class="half-width"><p>Two routes are possible to submit your data to VizieR:</p>
 <ul><li>Option 1: If not too bulky, use the submission <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link"><strong>online
 interface</strong></a>
 <ul><li>The upload will generate a <em>ReadMe</em> skeleton file based on
-your tables and perform a few basic checks.</li>
-<li>You will need to check and complete this <em>ReadMe</em> file.</li>
+your tables and perform a few basic checks.
+<ul><li>You will need to check and complete this <em>ReadMe</em> file.</li>
 <li>Alternatively, if you already have created a <em>ReadMe</em> file,
 you can upload it directly along with your tables.</li>
+</ul></li>
 <li>In addition to your table, FITS files (spectra or images) for
-associated data can be uploaded to improve their discoverability via our
-<a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">dedicated interface
+associated data can be uploaded
+<ul><li>They will be then available via our <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">dedicated interface
 Saada/VizieR</a>.</li>
 </ul></li>
-<li>Option 2: Use the <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link"><strong>Python
-cdspyreadme library</strong></a> to create the <em>ReadMe</em> file and
-then upload all the tables and other data by <a href="https://cds.unistra.fr/ftp/token/" class="external-link"><strong>FTP</strong></a>
-</li>
+</ul></li>
+<li>Option 2: Use the <a href="https://cds.unistra.fr/ftp/token/" class="external-link"><strong>File Transfer Protocol
+(FTP)</strong></a>
+<ul><li>You can use the <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link"><strong>Python
+cdspyreadme library</strong></a> to create the required <em>ReadMe</em>
+file.</li>
+<li>Tables and other data (not necessarily FITS) can be uploaded. More
+information on the data types accepted are available in the previous
+Chapter <a href="section_prepare_data.html" target="_blank">Preparing
+your data</a>.</li>
+</ul></li>
 </ul><!-- #### Special case: large volumetry --><p>The submission web application is an HTTP service and depends of
 authors network. The process is dedicated for tables size less than
 100Mb but accepts tables until ~200Mb.</p>
 <!-- Contact CDS -->
 <p>For larger files or any other questions, please contact the VizieR
 staff: <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 3
-“submission of the data”</figcaption></figure><!--  ----------------------------------------- --><!--   ReadMe files                             --><!--  ----------------------------------------- --></section><section id="readme-file"><h2 class="section-heading">ReadMe file<a class="anchor" aria-label="anchor" href="#readme-file"></a>
+<!--  ----------------------------------------- -->
+<!--   ReadMe files                             -->
+<!--  ----------------------------------------- -->
+</section><section id="readme-file"><h2 class="section-heading">ReadMe file<a class="anchor" aria-label="anchor" href="#readme-file"></a>
 </h2>
 <hr class="half-width"><!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 --><div class="section level3">
 <h3 id="the-why-and-what-of-the-readme-file">The why and what of the ReadMe file<a class="anchor" aria-label="anchor" href="#the-why-and-what-of-the-readme-file"></a></h3>
@@ -345,102 +371,98 @@ summary, etc…) in a separate file called <em>ReadMe</em>.</p>
 <em>ReadMe</em>. Numerous examples can be found on the <a href="http://cdsarc.cds.unistra.fr/ftp/cats/" class="external-link">FTP directories</a> at
 CDS. A typical illustration could be e.g. <a href="https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe" class="external-link">J/A+A/382/389/ReadMe</a>.</p>
 <!-- Blank template -->
-<p>Here is a blank template:</p>
-<pre><code>$catalogue                                                      ($author, $date)
+<p>Here is an example of a <em>ReadMe</em> skeleton:</p>
+<pre><code>Reference             Short Title                                (Author+, Year)
 ================================================================================
-$title
-    $authors
-    $bibcode
+Title of the paper
+    Authors
+   &lt;Reference (200Y)&gt;
+   =20YYjjjjjvvvvLppppA
 ================================================================================
-Keywords: $keywords
+ADC_Keywords:
+Keywords:
 
 Abstract:
-    $abstract
-
 Description:
-    $description
-
 
 Objects:
-    --------------------------------------------------
-      RA  (equinox)  DE     Name(s)
-    --------------------------------------------------
-    hh mm ss.s +dd mm ss    Name1 = Name1
-    --------------------------------------------------
-
+    -----------------------------------------
+       RA   (2000)   DE    Designation(s)
+    -----------------------------------------
 
 File Summary:
 --------------------------------------------------------------------------------
- FileName    Lrecl   Records    Explanations
+ FileName                               Lrecl  Records  Explanations
 --------------------------------------------------------------------------------
-$tablesIndex
---------------------------------------------------------------------------------
+ReadMe                                     80        .  This file
+table.dat     28      120
 
+
+
+Description of file:    [if needed]
 
 See also:
-    $seealso
 
-
-Nomenclature notes:
-    $nomenclature
-
-
-Byte-by-byte Description of file: $bytebybyte.file
+Byte-by-byte Description of file: table.dat
 --------------------------------------------------------------------------------
-   Bytes Format Units   Label    Explanations
+   Bytes Format Units   Label     Explanations
 --------------------------------------------------------------------------------
-$bytebybyte
---------------------------------------------------------------------------------
-Note (n): $note 
---------------------------------------------------------------------------------
+   1-  8   A8    --- col_0 ? [ 0123456CGMN]
+  10- 14   F5.2  --- col_1 ?
+  16- 21   F6.2  --- col_2 ?
+  23- 27   F5.2  --- col_3 ?
 
 
-Acknowledgements: $acknowledgments
-
+Acknowledgements:
 
 References:
-================================================================================
-(End)                            $modification_done_by	      $date_modification</code></pre>
+
+================================================================================</code></pre>
 <hr><!--  ----------------------------------------- --></div>
 <div class="section level3">
-<h3 id="full-description-of-the-content-of-the-readme-file">Full description of the content of the ReadMe file<a class="anchor" aria-label="anchor" href="#full-description-of-the-content-of-the-readme-file"></a></h3>
+<h3 id="how-to-generate-the-readme-file">How to generate the ReadMe file?<a class="anchor" aria-label="anchor" href="#how-to-generate-the-readme-file"></a></h3>
+<p>There are two recommended ways to generate your own <em>ReadMe</em>
+file:</p>
+<ul><li>With the submission <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link"><strong>online
+interface</strong></a>:
+<ul><li>The upload table process generates a <em>ReadMe</em> skeleton and
+the standardized tables; both are required for VizieR.</li>
+<li>This <em>ReadMe</em> file can then be edited or you can upload your
+own file.</li>
+</ul></li>
+<li>With the <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link">cdspydreadme</a>
+Python library:
+<ul><li>This package builds <em>ReadMe</em>, standardized tables (in ASCII
+aligned format) or MRT tables from tables which can be in different
+formats (<code>CSV</code>, <code>votable</code>, <code>FITS</code>,
+<code>astropy.Tables</code>, or <code>MRT</code> formats).</li>
+<li>The whole <em>ReadMe</em> can then be tested with the command line
+tool <a href="http://cdsarc.unistra.fr/doc/anafile.htx" class="external-link">anafile</a>.</li>
+</ul></li>
+</ul><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png" alt="Screenshot: ReadMe Generator Python library Github page, from July 2023" class="figure mx-auto d-block"><figcaption>Figure: ReadMe Generator Python library Github page
+(screenshot)</figcaption></figure><hr><!--  ----------------------------------------- --></div>
+<div class="section level3">
+<h3 id="how-to-fill-the-readme-file">How to fill the ReadMe file<a class="anchor" aria-label="anchor" href="#how-to-fill-the-readme-file"></a></h3>
 <p>The <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx" class="external-link">Standards
 for Astronomical Catalogues</a> gives a complete description of the
-standard for <em>ReadMe</em> files. A general overview and some examples
-are given below.</p>
-<div id="disclaimer" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="disclaimer" class="callout-inner">
-<h3 class="callout-title">Disclaimer<a class="anchor" aria-label="anchor" href="#disclaimer"></a>
-</h3>
-<div class="callout-content">
-<p>In this section, we give a lot of details (as we are dissecting the
-contents of the <em>ReadMe</em>). It can be overwhelming, but the next
-section covers the tools that exist to help generating a correct
-<em>ReadMe</em> file.</p>
-<p>You don’t necessarily need to build it from scratch!</p>
-</div>
-</div>
-</div>
+standard for <em>ReadMe</em> files.</p>
+<p>In the following we give some tips on how to fill three different
+sections of the <em>ReadMe</em> file properly. The rest of the
+<em>ReadMe</em> will be filled by CDS, and thus does not appear
+below.</p>
 <!-- Details of the template -->
-<div id="details" class="callout discussion">
+<div id="the-readme-file-in-more-depth" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="details" class="callout-inner">
-<h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#details"></a>
+<div id="the-readme-file-in-more-depth" class="callout-inner">
+<h3 class="callout-title">The ReadMe file in more depth<a class="anchor" aria-label="anchor" href="#the-readme-file-in-more-depth"></a>
 </h3>
 <div class="callout-content">
-<p>The <em>ReadMe</em> file contains severals sections.</p>
-<p>As a general rule, only <strong>section headers are left flushed,
-while the text is indented</strong> — with the noticeable exceptions of
-the title, the file names in the File Summary section, and of <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx" class="external-link">Note
-headers</a>.</p>
-<p>No line in this description file can exceed 80 characters; it is
-moreover suggested to limit the textual parts to 70 characters, such
-that a conversion to FITS could keep the text as COMMENT cards.</p>
+<p>General comment: no line in this description file can exceed 80
+characters!</p>
+<p>It is moreover suggested to limit the textual parts to 70 characters,
+such that a conversion to FITS could keep the text as COMMENT cards.</p>
 </div>
 </div>
 </div>
@@ -449,188 +471,35 @@ that a conversion to FITS could keep the text as COMMENT cards.</p>
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">
-  1. First line
+  A. ‘Abstract’ and ‘Description’ headers
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Catalogue designation, an abbreviated title followed within
-parenthesis by the last name of the first author, a + sign if there are
-multiple authors, and the year — this information has to be condensed in
-a single line of 80 characters or les.</p>
-<p>For the <strong>volume</strong> and <strong>page numbers</strong>: -
-For papers accepted for publication in A&amp;A – but not yet published –
-these will be added directly at CDS, - For papers accepted in other
-journals, it is recommended to send them via email (to <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>)
-when you get these details.</p>
+<ul><li>
+<strong>Abstract</strong>: Describes the <em>scientific results</em>
+that the author(s) derived from the data.
+<ul><li>It is simply the one from your refereed paper.</li>
+</ul></li>
+<li>
+<strong>Description</strong>: Gives the <em>context of the
+data</em>, such as instrumentation or observing conditions.
+<ul><li>It should answer the following questions: <em>what</em>,
+<em>where</em>, <em>when</em>, <em>how</em>.</li>
+</ul></li>
+</ul></div>
 </div>
 </div>
 </div>
-</div>
+<!-- ---------------- -->
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">
-  &gt;&gt;&gt; Example 1
+  B. ‘Objects’ header (optional)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<pre><code>I/221               The Magellanic Catalogue of Stars - MACS (Tucholke+ 1996)
-================================================================================</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  2. Full title(s), authors, and reference(s) of the catalogue
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
-<div class="accordion-body">
-<p>Each title is left-adjusted (no indentation); the line(s) containing
-the authors’ names are indented (at least two blanks), and the
-bibliographic reference is enclosed between angle brackets. The BibCode
-is introduced by an equal sign, as a word without embedded blank of
-exactly 20 characters (with the equal sign).</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
-  &gt;&gt;&gt; Example 2
-  </h4>
-</button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
-<div class="accordion-body">
-<pre><code>The Magellanic Catalogue of Stars - MACS
-     Tucholke H.-J., de Boer K.S., Seitter W.C.
-    &lt;Astron. Astrophys. Suppl. Ser., 119, 91-98 (1996)&gt;
-    &lt;The Messenger 81, 20 (1995)&gt;
-    =1996A&amp;AS..119...91T 
-    =1995Msngr..81...20D
-================================================================================</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
-  3. ‘Keywords’ header
-  </h4>
-</button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
-<div class="accordion-body">
-<p>Three categories of keywords can be added:</p>
-<ul><li>
-<em>Keywords</em>: introduces the list of keywords as in the printed
-publication.</li>
-<li>
-<em>ADC_Keywords</em>: introduces the list of data-related keywords
-(see <a href="https://vizier.cds.unistra.fr/vizier/catstd/ADCkwds.htx" class="external-link">ADC_keywords
-and their VizieR translation</a> for more details). They are strictly
-related to the tabular material collected in the paper.</li>
-<li>
-<em>Mission_Name</em>: for data originated from satellite mission,
-this header precedes the satellite name.</li>
-</ul><p>Whatever the category, multiple keywords are separated by a semicolon
-(;) or a dash (-) embedded in blanks.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6">
-  &gt;&gt;&gt; Example 3
-  </h4>
-</button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
-<div class="accordion-body">
-<pre><code>ADC_Keywords: Clusters, galaxy ; Galaxies, photometry ; Photometry, CCD
-Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
-          cosmology: large-scale structure of Universe</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
-  <h4 class="accordion-header" id="headingSolution7">
-  4. ‘Abstract’ and ‘Description’ headers
-  </h4>
-</button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
-<div class="accordion-body">
-<p>The <strong>Description</strong> part gives the <em>context of the
-data</em>, such as instrumentation or observing conditions. It therefore
-differs from the <strong>Abstract</strong> which describes the
-<em>scientific results</em> that the author(s) derived from the data.
-The <strong>Abstract</strong> is simply the one from your refereed
-paper.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
-  <h4 class="accordion-header" id="headingSolution8">
-  &gt;&gt;&gt; Example 4
-  </h4>
-</button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
-<div class="accordion-body">
-<pre><code>Abstract:
-    We present the results of a study of streaming motion of galaxy
-    clusters around the Giant Void (RA~13h, DE~40{deg}, z~0.11 and a
-    diameter of 150/hMpc) in the distribution of rich Abell clusters. We
-    used the Kormendy relation as a distance indicator taking into account
-    galaxy luminosities. Observations were carried out in Kron-Cousins
-    R_c_ system on the 6m and 1m telescopes of SAO RAS. For 17 clusters in
-    a spherical shell of 25/hMpc in thickness centered on the void no
-    significant diverging motion (expected to be generated by the mass
-    deficit in the void) has been detected. This implies that cosmological
-    models with low {Omega}_m_ are preferred. To explain small mass
-    underdensity inside the Giant Void, a mechanism of void formation with
-    strong biasing is required.
-
-Description:
-    Photometric parameters for 210 early-type galaxies in the central
-    regions for 17 clusters around the Giant Void are presented. Galaxies
-    in the following clusters have been observed:
-    A1298, A1361, A1427, A1468, A1542, A1551, A1609, A1637, A1666,
-    A1691, A1700, A1739, A1793, A1823, A1834, A1885, and A1894.
-    For each galaxy equatorial coordinates, total magnitudes in R_c_
-    (Kron-Cousins) band, effective radius, surface brightness and mean
-    surface brightness are given. The derivation of the effective
-    parameters takes the seeing into account.</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
-  <h4 class="accordion-header" id="headingSolution9">
-  5. (optional) ‘Objects’ header
-  </h4>
-</button>
-<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The list of <strong>observed objects</strong> can be used when no
 data table contains the list and position of the astronomical objects
@@ -642,104 +511,14 @@ few objects – less than 10 or 20 typically.</p>
 </div>
 </div>
 <!-- ---------------- -->
-<div id="accordionSolution10" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution10" aria-expanded="false" aria-controls="collapseSolution10">
-  <h4 class="accordion-header" id="headingSolution10">
-  6. ‘File Summary’ header
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  C. ‘Byte-by-byte Description of file’ header
   </h4>
 </button>
-<div id="collapseSolution10" class="accordion-collapse collapse" data-bs-parent="#accordionSolution10" aria-labelledby="headingSolution10">
-<div class="accordion-body">
-<p>It describes the files composing the set. Each file should be
-described by its <em>filename</em>, the <em>length of the longest
-line</em> (Lrecl), the <em>number of lines</em> (Records), and a
-<em>caption</em> (short title). Lengthy notes can be added if
-necessary.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution11" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution11" aria-expanded="false" aria-controls="collapseSolution11">
-  <h4 class="accordion-header" id="headingSolution11">
-  &gt;&gt;&gt; Example 6
-  </h4>
-</button>
-<div id="collapseSolution11" class="accordion-collapse collapse" data-bs-parent="#accordionSolution11" aria-labelledby="headingSolution11">
-<div class="accordion-body">
-<pre><code>File Summary:
---------------------------------------------------------------------------------
- FileName      Lrecl    Records    Explanations
---------------------------------------------------------------------------------
-ReadMe            80          .   This file
-clusters.dat      45         17   Cluster positions and magnitudes (from Simbad)
-table2.dat        57        210   Photometric parameters for 210 galaxies
-                                   in 17 clusters
---------------------------------------------------------------------------------</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution12" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution12" aria-expanded="false" aria-controls="collapseSolution12">
-  <h4 class="accordion-header" id="headingSolution12">
-  7. ‘See also’ header
-  </h4>
-</button>
-<div id="collapseSolution12" class="accordion-collapse collapse" data-bs-parent="#accordionSolution12" aria-labelledby="headingSolution12">
-<div class="accordion-body">
-<p>This section can be used to list related catalogues, data sets or
-services. Each catalog or service starts on a new line, and is followed
-by a colon embedded in blanks.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution13" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution13" aria-expanded="false" aria-controls="collapseSolution13">
-  <h4 class="accordion-header" id="headingSolution13">
-  &gt;&gt;&gt; Example 7
-  </h4>
-</button>
-<div id="collapseSolution13" class="accordion-collapse collapse" data-bs-parent="#accordionSolution13" aria-labelledby="headingSolution13">
-<div class="accordion-body">
-<pre><code>See also:
-    J/A+AS/97/729 : O-rich stars in 1-20um range
-    http://machine/description.html : Detailed Description</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution14" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution14" aria-expanded="false" aria-controls="collapseSolution14">
-  <h4 class="accordion-header" id="headingSolution14">
-  8. (optional) ‘Nomenclature Notes’ header
-  </h4>
-</button>
-<div id="collapseSolution14" class="accordion-collapse collapse" data-bs-parent="#accordionSolution14" aria-labelledby="headingSolution14">
-<div class="accordion-body">
-<p>This header provides valuable information related to the nomenclature
-of astronomical objects.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution15" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution15" aria-expanded="false" aria-controls="collapseSolution15">
-  <h4 class="accordion-header" id="headingSolution15">
-  9. ‘Byte-by-byte Description of file’ header
-  </h4>
-</button>
-<div id="collapseSolution15" class="accordion-collapse collapse" data-bs-parent="#accordionSolution15" aria-labelledby="headingSolution15">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>This section describes the structure of each data files (files with
 the .dat extension). This description is made in a tabular form, each
@@ -779,218 +558,23 @@ column (using <strong>[…]</strong>), the possibility of having
 unspecified or NULL values (using <strong>?</strong>), the order of the
 values within the table (increasing or decreasing order). More details
 can be found <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx" class="external-link">here</a>.</li>
-</ul></div>
-</div>
-</div>
-</div>
-<div id="accordionSolution16" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution16" aria-expanded="false" aria-controls="collapseSolution16">
-  <h4 class="accordion-header" id="headingSolution16">
-  &gt;&gt;&gt; Example 9
-  </h4>
-</button>
-<div id="collapseSolution16" class="accordion-collapse collapse" data-bs-parent="#accordionSolution16" aria-labelledby="headingSolution16">
-<div class="accordion-body">
-<pre><code>Byte-by-byte Description of file: clusters.dat
---------------------------------------------------------------------------------
-   Bytes Format Units   Label    Explanations
---------------------------------------------------------------------------------
-   1-  4  I4    ---     Abell    Abell (ACO) cluster number
-   7-  8  I2    h       RAh      Right ascension (J2000.0)
-  10- 11  I2    min     RAm      Right ascension (J2000.0)
-  13- 16  F4.1  s       RAs      Right ascension (J2000.0)
-      18  A1    ---     DE-      Declination sign (J2000.0)
-  19- 20  I2    deg     DEd      Declination (J2000.0)
-  22- 23  I2    arcmin  DEm      Declination (J2000.0)
-  25- 26  I2    arcsec  DEs      Declination (J2000.0)
-  29- 45  A17   ---     Names    Other name (1)
---------------------------------------------------------------------------------
-Note (1): We identify the cluster ACO 1666 with ZwCl J1303.7+5118 as the
-    Abell cluster coordinates (J1302.8+5153) none rich cluster was found.
-    Coordinates refer to the main concentration of galaxies.
---------------------------------------------------------------------------------
-
-Byte-by-byte Description of file: table2.dat
------------------------------------------------------------------------------
-   Bytes Format  Units         Label     Explanations
------------------------------------------------------------------------------
-   1-  4  I4     ---           Abell     Abell (ACO) cluster number
-   6-  7  I2     ---           Galaxy    Galaxy identification number
-   9- 10  I2     h             RAh       Right Ascension J2000 (hours)
-  12- 13  I2     min           RAm       Right Ascension J2000 (minutes)
-  15- 19  F5.2   s             RAs       Right Ascension J2000 (seconds)
-      21  A1     ---           DE-       Declination J2000 (sign)
-  22- 23  I2     deg           DEd       Declination J2000 (degrees)
-  25- 26  I2     arcmin        DEm       Declination J2000 (minutes)
-  28- 31  F4.1   arcsec        DEs       Declination J2000 (seconds)
-  33- 37  F5.2   mag           Rcmag     Asymptotic Kron-Cousins R_c_ band
-                                          magnitude corrected for Galactic
-                                          extinction (1)
-  39- 43  F5.2   arcsec        reff      Seeing corrected effective radius (2)
-  45- 49  F5.2   mag/arcsec2   mue       Seeing corrected surface
-                                          brightness at reff (1), (2)
-  51- 55  F5.2   mag/arcsec2   &lt;mue&gt;     Seeing corrected mean surface
-                                          brightness within reff (1), (2)
-      57  I1     ---           ExclFlag  [1,3]? Exclusion flag (3)
---------------------------------------------------------------------------------
-Note (1): Correction for foreground Galactic extinction according to Schlegel
-     et al. (1998ApJ...500..525S) corresponds to the centre of cluster
-Note (2): Correction for seeing effect following Saglia et al.
-     (1993MNRAS.264..961S)
-Note (3): 33 galaxies excluded from the distance determination:
-     1 = fainter than M_R_~-21.5mag
-     2 = disk dominated
-     3 = peculiar or interacting
---------------------------------------------------------------------------------</code></pre>
+</ul><p>The CDS can help you to fill that part of the headers, but you will
+be responsible for the <em>explanations</em> and the <em>units</em>.</p>
 </div>
 </div>
 </div>
 </div>
-<!-- ---------------- -->
-<div id="accordionSolution17" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution17" aria-expanded="false" aria-controls="collapseSolution17">
-  <h4 class="accordion-header" id="headingSolution17">
-  10. (optional) Global notes header
-  </h4>
-</button>
-<div id="collapseSolution17" class="accordion-collapse collapse" data-bs-parent="#accordionSolution17" aria-labelledby="headingSolution17">
-<div class="accordion-body">
-<p>Notes which apply to several tables are introduced by <em>Note
-(Gn):</em> n being the number of the global note referenced in the
-Byte-by-byte Description of file: sections.</p>
+<!--  ----------------------------------------- -->
+<!-- 		Step-by-step: submission form	-->
+<!--  ----------------------------------------- -->
+<!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html -->
 </div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution18" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution18" aria-expanded="false" aria-controls="collapseSolution18">
-  <h4 class="accordion-header" id="headingSolution18">
-  11. (optional) ‘History’, ‘Acknowledgements’ headers
-  </h4>
-</button>
-<div id="collapseSolution18" class="accordion-collapse collapse" data-bs-parent="#accordionSolution18" aria-labelledby="headingSolution18">
-<div class="accordion-body">
-<p>Some other sections may exist when required,
-e.g. <strong>History</strong>; introduces notes about the modification
-history, <strong>Acknowledgements:</strong> etc…</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution19" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution19" aria-expanded="false" aria-controls="collapseSolution19">
-  <h4 class="accordion-header" id="headingSolution19">
-  &gt;&gt;&gt; Example 11
-  </h4>
-</button>
-<div id="collapseSolution19" class="accordion-collapse collapse" data-bs-parent="#accordionSolution19" aria-labelledby="headingSolution19">
-<div class="accordion-body">
-<pre><code>Acknowledgements: Alexander Kopylov &lt;akop(at)sao.ru&gt;</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution20" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution20" aria-expanded="false" aria-controls="collapseSolution20">
-  <h4 class="accordion-header" id="headingSolution20">
-  12. (optional) ‘References’ header
-  </h4>
-</button>
-<div id="collapseSolution20" class="accordion-collapse collapse" data-bs-parent="#accordionSolution20" aria-labelledby="headingSolution20">
-<div class="accordion-body">
-<p>This section contains the necessary references. <a href="http://simbad.cds.unistra.fr/guide/refcode/refcode-paper.html" class="external-link">Bibcodes</a>
-are strongly encouraged, to enable an automatic link to the existing
-Abstract Services like ADS.</p>
-<p>For large sets of references, you can also gather them into a
-dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution21" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution21" aria-expanded="false" aria-controls="collapseSolution21">
-  <h4 class="accordion-header" id="headingSolution21">
-  &gt;&gt;&gt; Example 12
-  </h4>
-</button>
-<div id="collapseSolution21" class="accordion-collapse collapse" data-bs-parent="#accordionSolution21" aria-labelledby="headingSolution21">
-<div class="accordion-body">
-<pre><code>References:
-  Kopylova &amp; Kopylov, 1998PAZh...24..573K, (1998AstL...24..491K)
-    Structure and dynamic state of the Corona Borealis supercluster</code></pre>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
-<div id="accordionSolution22" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution22" aria-expanded="false" aria-controls="collapseSolution22">
-  <h4 class="accordion-header" id="headingSolution22">
-  13. Last line
-  </h4>
-</button>
-<div id="collapseSolution22" class="accordion-collapse collapse" data-bs-parent="#accordionSolution22" aria-labelledby="headingSolution22">
-<div class="accordion-body">
-<p>The very last line includes just the left-flushed word
-<strong>(End)</strong>, the name of the person who took care of the
-standardisation, and the date of the last modification.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution23" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution23" aria-expanded="false" aria-controls="collapseSolution23">
-  <h4 class="accordion-header" id="headingSolution23">
-  &gt;&gt;&gt; Example 13
-  </h4>
-</button>
-<div id="collapseSolution23" class="accordion-collapse collapse" data-bs-parent="#accordionSolution23" aria-labelledby="headingSolution23">
-<div class="accordion-body">
-<pre><code>================================================================================
-(End)                            Alexander Kopylov [SAO, Russia]     06-Feb-2002</code></pre>
-</div>
-</div>
-</div>
-</div>
-<hr><!--  ----------------------------------------- --></div>
-<div class="section level3">
-<h3 id="how-to-generate-the-readme-file">How to generate the ReadMe file?<a class="anchor" aria-label="anchor" href="#how-to-generate-the-readme-file"></a></h3>
-<p>There are two recommended ways to generate your own <em>ReadMe</em>
-file:</p>
-<ul><li>With the submission <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link"><strong>online
-interface</strong></a>:
-<ul><li>The upload table process generates a <em>ReadMe</em> skeleton and
-the standardized tables, both are required for VizieR.</li>
-<li>This <em>ReadMe</em> file can then be edited or you can upload your
-own file.</li>
-</ul></li>
-<li>With the <a href="https://github.com/cds-astro/cds.pyreadme/" class="external-link">cdspydreadme</a>
-Python library:
-<ul><li>This package builds <em>ReadMe</em>, standardized tables (in ASCII
-aligned format) or MRT tables from tables which can be in different
-formats (<code>CSV</code>, <code>votable</code>, <code>FITS</code>,
-<code>astropy.Tables</code>, or <code>MRT</code> formats)</li>
-<li>The whole <em>ReadMe</em> can then be tested with the command line
-tool <a href="http://cdsarc.unistra.fr/doc/anafile.htx" class="external-link">anafile</a>.</li>
-</ul></li>
-</ul><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png" alt="Screenshot: ReadMe Generator Python library Github page, from July 2023" class="figure mx-auto d-block"><figcaption>Figure: ReadMe Generator Python library Github page
-(screenshot)</figcaption></figure><!--  ----------------------------------------- --><!-- 		Step-by-step: submission form	--><!--  ----------------------------------------- --><!-- https://cdsarc.cds.unistra.fr/vizier.submit/help.html --></div>
 </section><section id="data-submission-option-1-online-interface"><h2 class="section-heading">Data submission (option 1): Online interface<a class="anchor" aria-label="anchor" href="#data-submission-option-1-online-interface"></a>
 </h2>
 <hr class="half-width"><p>The first option is to use the online interface available at: <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">https://cdsarc.cds.unistra.fr/vizier.submit/</a>.</p>
 <p>This web application enables the upload of the data and invites you
 to fill a <em>ReadMe</em> file generated by the application. The VizieR
-upload application will create a <strong>temporary</strong> repository
+upload application will create a <strong>TEMPORARY</strong> repository
 containing your tables, associated files (spectra, images, cubes) if
 any, and the <em>ReadMe</em> file.</p>
 <p><strong>However, even after completing all steps, your catalogue will
@@ -998,8 +582,8 @@ not be readily available in VizieR. Additional work by the VizieR team
 is needed, including checks and homogenization to our standards, before
 the catalogue is fully ingested.</strong></p>
 <p>In the following, we show how to upload your data step-by-step.
-Additional information on how to use this service can be found on the
-[VizieR catalogue upload (HELP) page][vizier-submit-data-help].</p>
+Additional information on how to use this service can be found on the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/help.html" class="external-link">VizieR
+catalogue upload (HELP) page</a>.</p>
 <hr><div class="section level3">
 <h3 id="start-a-session">Start a session<a class="anchor" aria-label="anchor" href="#start-a-session"></a></h3>
 <p>No account creation is needed. One just needs to choose a login for
@@ -1221,213 +805,10 @@ listing using <code>ls</code>.</p>
 any other associated data), you need to <strong>SEND AN E-MAIL</strong>
 to the VizieR team telling them where you have placed files: <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
 <!--  ----------------------------------------- -->
-<!--            Data curation at CDS            -->
+<!--            Summary	                        -->
 <!--  ----------------------------------------- -->
 </div>
-</section><section id="what-happens-to-your-data-at-the-cds"><h2 class="section-heading">What happens to your data at the CDS?<a class="anchor" aria-label="anchor" href="#what-happens-to-your-data-at-the-cds"></a>
-</h2>
-<hr class="half-width"><p>Once the data have been submitted on the CDS servers, the VizieR team
-will check that the data is compatible with our standards. Once the data
-have been accepted, the CDS team will also add some valuable and
-relevant information such as metadata and links to other catalogues.
-This can lead to interactions with the authors, but we are trying to
-minimize the level of interaction.</p>
-<div class="section level3">
-<h3 id="behind-the-scenes-verifications">Behind the scenes: verifications<a class="anchor" aria-label="anchor" href="#behind-the-scenes-verifications"></a></h3>
-<p>In addition to the semi-automated verifications already done by the
-programs during the different steps of the ingestion, more in-depth
-verifications are done by the CDS team focusing on the reliability and
-the quality of the catalogues.</p>
-<p>In the following, we present some examples based on real
-datasets.</p>
-<!--  ----------------------------------------- -->
-<div class="section level4">
-<h4 id="verifications-example-1---units">Verifications: Example 1 - Units<a class="anchor" aria-label="anchor" href="#verifications-example-1---units"></a></h4>
-<p>One key point is to the check the units.</p>
-<div id="units-corrected" class="callout testimonial">
-<div class="callout-square">
-<i class="callout-icon" data-feather="heart"></i>
-</div>
-<div id="units-corrected" class="callout-inner">
-<h3 class="callout-title">Units corrected<a class="anchor" aria-label="anchor" href="#units-corrected"></a>
-</h3>
-<div class="callout-content">
-<p>In the example below the original unit for a cylindrical volume of a
-region (column <em>Size</em> from the figure below) was wrongly set to
-<em>cm<sup>-3</sup></em>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_before.png" alt="Screenshot -- Table with wrong units as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Units as written in original paper
-(screenshot)</figcaption></figure><p>Our team picked it up and wrote to the author and made the
-description and unit correction (field <em>V</em> from the figure
-below).</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png" alt="Screenshot -- VizieR table with units corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Units corrected in VizieR table
-(screenshot)</figcaption></figure><!-- https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units.png --></div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-</div>
-<div class="section level4">
-<h4 id="verifications-example-2---coordinates">Verifications: Example 2 - Coordinates<a class="anchor" aria-label="anchor" href="#verifications-example-2---coordinates"></a></h4>
-<p>After the units, the coordinates are the most important data the
-VizieR team try to gather and curate. It is the most common way to
-search for data. When there are none, positions can be added from other
-catalogues or from SIMBAD if available. Alternatively, we ask for them
-(sometimes we have an answer).</p>
-<div id="coordinates-corrected" class="callout testimonial">
-<div class="callout-square">
-<i class="callout-icon" data-feather="heart"></i>
-</div>
-<div id="coordinates-corrected" class="callout-inner">
-<h3 class="callout-title">Coordinates corrected<a class="anchor" aria-label="anchor" href="#coordinates-corrected"></a>
-</h3>
-<div class="callout-content">
-<p>Here is an example of coordinates with discrepancies when the
-declination is at 0 degree.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png" alt="Screenshot -- Table with wrong coordinates as made available in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Coordinates as written in original
-paper (screenshot)</figcaption></figure><p>Once the error detected by our team, the positions were then updated,
-two years after the data ingestion in VizieR.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png" alt="Screenshot -- VizieR table with coordinates corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Coordinates corrected in VizieR table
-(screenshot)</figcaption></figure></div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-</div>
-<div class="section level4">
-<h4 id="verifications-example-3---identifiers">Verifications: Example 3 - Identifiers<a class="anchor" aria-label="anchor" href="#verifications-example-3---identifiers"></a></h4>
-<p>The third important thing for our team are the identifiers.</p>
-<div id="simbad-names-added" class="callout testimonial">
-<div class="callout-square">
-<i class="callout-icon" data-feather="heart"></i>
-</div>
-<div id="simbad-names-added" class="callout-inner">
-<h3 class="callout-title">SIMBAD names added<a class="anchor" aria-label="anchor" href="#simbad-names-added"></a>
-</h3>
-<div class="callout-content">
-<p>To retrieve coordinates and easy the cross identification between
-SIMBAD and VizieR, a proper identification is needed.</p>
-<p>Here is an example of truncated SDSS names… Impossible to retrieve
-except by coordinates that we have here. So the SimbadName has been
-added after the process for SIMBAD where misprints on coordinates have
-been detected. For this object with coordinates pointing to nothing, the
-right ones have been found thanks to the bibcode given in the table.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png" alt="Screenshot -- VizieR table with SIMBAD-names added" class="figure mx-auto d-block"><figcaption>Figure: Example of names recognized by SIMBAD added
-to the original table submitted to VizieR (screenshot)</figcaption></figure></div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-</div>
-<div class="section level4">
-<h4 id="verifications-example-4---odd-values">Verifications: Example 4 - Odd values<a class="anchor" aria-label="anchor" href="#verifications-example-4---odd-values"></a></h4>
-<p>We add mimimum and maximum values of numerical columns. It allows us
-to detect some oddities and it is helpful also for the astronomer who
-will validate the catalogue afterwards.</p>
-<div id="min-max-values-added" class="callout testimonial">
-<div class="callout-square">
-<i class="callout-icon" data-feather="heart"></i>
-</div>
-<div id="min-max-values-added" class="callout-inner">
-<h3 class="callout-title">Min-max values added<a class="anchor" aria-label="anchor" href="#min-max-values-added"></a>
-</h3>
-<div class="callout-content">
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png" alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields" class="figure mx-auto d-block"><figcaption>Figure: Example of minimum and maximum values added
-to a ReadMe file (screenshot)</figcaption></figure></div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-</div>
-<div class="section level4">
-<h4 id="verifications-example-5---missing-data">Verifications: Example 5 - Missing data<a class="anchor" aria-label="anchor" href="#verifications-example-5---missing-data"></a></h4>
-<p>We also add links between tables in VizieR. For instance, if an
-author said that magnitudes come from this survey, we actually point to
-that survey so we can verify the values. If a table contains galaxy
-clusters, we can add the number of galaxies per cluster.</p>
-<p>Adding those links helps us to detect errors and missing data.</p>
-<div id="missing-data-retrieved" class="callout testimonial">
-<div class="callout-square">
-<i class="callout-icon" data-feather="heart"></i>
-</div>
-<div id="missing-data-retrieved" class="callout-inner">
-<h3 class="callout-title">Missing data retrieved<a class="anchor" aria-label="anchor" href="#missing-data-retrieved"></a>
-</h3>
-<div class="callout-content">
-<p>In the example below, the link between the two tables is the number
-of S43GHz flux measurements (column <em>Nc</em> from the figure
-below).</p>
-<p>When the data were first ingested, and it is still the case in the
-MRT table available with the paper, there was no measurement (<em>Nc =
-0</em>).</p>
-<p>We contacted the author to get the corresponding data and thus we can
-now plot the light curve of this object in VizieR.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_missing_data.png" alt="Screenshot -- Missing data retrieved by the CDS team enabling a better reusability of the original data" class="figure mx-auto d-block"><figcaption>Figure: Example of missing data retrieved, adding
-more visibility to the original set (screenshot)</figcaption></figure></div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-</div>
-<div class="section level4">
-<h4 id="verifications-example-6---missing-common-key">Verifications: Example 6 - Missing common key<a class="anchor" aria-label="anchor" href="#verifications-example-6---missing-common-key"></a></h4>
-<p>Last but not least, to add links between tables we need a common key
-(e.g identifier, coordinates …).</p>
-<div id="cross-identification-between-tables" class="callout testimonial">
-<div class="callout-square">
-<i class="callout-icon" data-feather="heart"></i>
-</div>
-<div id="cross-identification-between-tables" class="callout-inner">
-<h3 class="callout-title">Cross-identification between tables<a class="anchor" aria-label="anchor" href="#cross-identification-between-tables"></a>
-</h3>
-<div class="callout-content">
-<p>In the two figures below, we can see an example taken from a paper
-with two tables (<em>Tables A and B</em>) with two similar first columns
-in both:</p>
-<ul><li>Name of the stellar system to which the star belongs</li>
-<li>Name of the star</li>
-</ul><p>However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi
-10018) mentionned in <em>Table A</em> corresponds to COS 347 in
-<em>Table B</em>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png" alt="Screenshot -- Table A as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Extract of Table A from paper
-(screenshot)</figcaption></figure><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png" alt="Screenshot -- Table B as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – extract of Table B from paper
-(screenshot)</figcaption></figure><p>As there are no common identifier or coordinates repeated in the
-second table, the only alternative would have been to go through the
-list of references cited (3rd column of <em>Table B</em>) to get the
-coordinates and identify the object one by one. Therefore, the CDS team
-contacted the author to get the names and positions for <em>Table B</em>
-and create a better link between the two tables as displayed below.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png" alt="Screenshot -- Table B updated as available on VizieR" class="figure mx-auto d-block"><figcaption>Figure: After – extract of Table B as available in
-VizieR (screenshot)</figcaption></figure></div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-</div>
-</div>
-<div class="section level3">
-<h3 id="errata">Errata<a class="anchor" aria-label="anchor" href="#errata"></a></h3>
-<p>As said before, the VizieR database is evolving every day: with new
-catalogues being added or old ones being updated.</p>
-<div id="tables-updated" class="callout testimonial">
-<div class="callout-square">
-<i class="callout-icon" data-feather="heart"></i>
-</div>
-<div id="tables-updated" class="callout-inner">
-<h3 class="callout-title">Tables updated<a class="anchor" aria-label="anchor" href="#tables-updated"></a>
-</h3>
-<div class="callout-content">
-<p>In the example below, one table from the original catalogue was
-updated, to reflect the changes published in an erratum.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png" alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication" class="figure mx-auto d-block"><figcaption>Figure: Example of a table updated following erratum
-publication (screenshot)</figcaption></figure></div>
-</div>
-</div>
-<!--  ----------------------------------------- -->
-<!--            Data curation at CDS            -->
-<!--  ----------------------------------------- -->
-</div>
-</section><section id="data-available-to-all"><h2 class="section-heading">Data available to all<a class="anchor" aria-label="anchor" href="#data-available-to-all"></a>
-</h2>
-<hr class="half-width"><p>Once the data are public, they are accessible as plain files in <a href="https://cdsarc.cds.unistra.fr/viz-bin/cat?" class="external-link">FTP directories at
-CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizier/mirrors.gml" class="external-link">data
-centers</a> (e.g. at <a href="https://vizier.cfa.harvard.edu/" class="external-link">CfA/Harvard (USA)</a> or <a href="http://vizier.nao.ac.jp/" class="external-link">NOAJ/ADAC (Japan)</a>), as well as all
-VO compatible services.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 4
-“curation &amp; verification”</figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
+</section><section id="summary-data-submission"><h2 class="section-heading">Summary: Data submission<a class="anchor" aria-label="anchor" href="#summary-data-submission"></a>
 </h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -1449,13 +830,7 @@ keywords, acknowledgments, …).</p>
 <ul><li>This highly standardised file allows reusability and cross matching
 between catalogues.</li>
 <li>A good description of your data is the key to discoverability.</li>
-</ul><p>Once the catalogues are submitted, a delay is needed for VizieR
-curation and validation before full ingestion!</p>
-<ul><li>Verifications leading to corrections: ~ 30% of the references</li>
-<li>Main corrections: identifiers, coordinates, units …</li>
-</ul><p>You cannot Find, Access and Re-use data if the
-coordinates/identifiers are not right!</p>
-</div>
+</ul></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -1463,8 +838,8 @@ coordinates/identifiers are not right!</p>
 <!--  ----------------------------------------- -->
 </section><section id="next-chapters"><h2 class="section-heading">Next chapters<a class="anchor" aria-label="anchor" href="#next-chapters"></a>
 </h2>
-<hr class="half-width"><p>In the next chapters, you will learn what happen to your data once
-they are fully ingested into VizieR.</p>
+<hr class="half-width"><p>In the next chapters, you will learn what happen to your data before
+their full ingestion into VizieR.</p>
 <!--  ----------------------------------------- -->
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
@@ -1501,12 +876,12 @@ any links that you are not going to use.
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="section_prepare_data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="section_eosc.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_data_curation.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="section_prepare_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Preparing your data</a>
-        <a class="chapter-link float-end" href="section_eosc.html" rel="next">Next: Journey of your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="section_data_curation.html" rel="next">Next: Data curation at CDS... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
     </nav></div> <!-- / div.primary-content.col-xs-12 -->
 <!-- END:   inst/pkgdown/templates/content-instructor.html-->
