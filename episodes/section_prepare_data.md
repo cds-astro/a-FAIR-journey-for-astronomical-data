@@ -43,9 +43,7 @@ In this chapter, we will answer to some frequently asked questions about how to 
 A full description of the standard conventions used for the documentation of the catalogues is available from [there][vizier-standard-convention].
 
 
-![Figure: Journey from a publication to EOSC: second step of the journey - step preparation of the data](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
-
-
+![Figure: Journey from a publication to EOSC, step 2 "preparation of the data"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper"}
 
 
 <!--  ----------------------------------------- -->
@@ -71,6 +69,7 @@ The following formats are welcome:
 In order of preference:
 
 - Machine-Readable Tables ([MRT][aas-mrt] / FORTRAN format)
+	- Not available through the [VizieR submit interface][vizier-submit-login]
 - TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values) files containing a first line with column description is accepted
 	-  Comments (line beginning by #) are not accepted
 - ASCII aligned files
@@ -94,6 +93,8 @@ The [new submit web application][vizier-submit-login] allows different formats f
 
 Postscript or word/excel files.
 
+Files containing different numbers of columns per rows.
+
 
 
 <!--  ----------------------------------------- -->
@@ -101,17 +102,22 @@ Postscript or word/excel files.
 
 :::::::::::::::::::::::::::::::::::::: checklist
 
-- An explanation is given for all the columns (at least a clear label; at best, few words of explanation).
+- Present the appropriate number of significant figures for numerical measurements and uncertainties (cf. <a href="section_fair_astro.html#general_rules" target="_blank">§2c</a> ).
+- An explanation is given for all the columns (at least a clear label; at best, few words of explanation) (cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1</a>).
 - Units are given for all the columns (when relevant).
-- For tables with sources, give coordinates as accurate as possible:
-	- A bonus would be to have their uncertainty.
-	- Another bonus would be to have their wavelength.
-- As recommended by the IAU, a non-altered name is given for the sources (in addition to the coordinates).
-- It is really much better to stick to the same object name from a table to another.
 - One column is homogeneous, i.e. does not mix different measurements having different units or errors with limit values or flags.
+- For tables with sources, give:
+	- **Coordinates** as accurate as possible and their epoch (cf. <a href="section_fair_astro.html#astrometry" target="_blank">§2.2</a>).
+		- A bonus would be to have their uncertainty.
+		- Another bonus would be to have their wavelength, and/or the instrument origin.
+	- A **non-altered name** (cf. <a href="section_fair_astro.html#nomenclature" target="_blank">§2.1</a>)
+- It is really much better to stick to the same identifier from a table to another.
 - If the measurements come from other papers, the references to those papers should be explicitly given using the bibcode.
+- Use the same representation of missing data and have a separate field that explains the different reasons (cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1d</a>) for missing values if needed.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
+
+More details on how to create FAIR tables can be found in the previous Chapter <a href="section_fair_astro.html#general_rules" target="_blank">FAIR principles for astronomical data</a>.
 
 Following this checklist will help improving the efficiency of the ingestion in VizieR and also the visibility and reusability of your data :).
 
@@ -124,10 +130,10 @@ Following this checklist will help improving the efficiency of the ingestion in 
 
 In addition to the Tables, other data type are associated. 
 
-![Figure: Example of VizieR associated data from the Saada page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. "}
+![Figure: Example of VizieR associated data from the Saada/VizieR page: spectra (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png){alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. "}
 
 
-Reusable file formats for associated:
+Reusable file formats for associated data:
 
 :::::::::::::::::::::::::::::::::::::: prereq
 
@@ -238,7 +244,7 @@ R1) No: filenames should be in lowercase.
 
 R2) No: filename too long. This filename will be shortened afterwards anyway.
 
-R3) Yes: correct.
+R3) Yes: correct. Although not very self-explanatory.
 
 R4) No: '+' character not supported.
 
@@ -288,8 +294,10 @@ Data types accepted:
 	
 Preferred formats:
 
-- Tables should be preferably written as machine-readable tables (MRT)
-- For the associated data, the FITS format is the preferred solution
+- Tables should be preferably written as machine-readable tables (MRT).
+- For the associated data, the FITS format is the preferred solution.
+
+Do not forget to test your FITS data before submission with the VizieR FITS validator tool.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
