@@ -32,6 +32,7 @@ any links that you are not going to use.
 <!-- VizieR File submission -->
 [vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
 [vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
+[vizier-submit-data-help]: https://cdsarc.cds.unistra.fr/vizier.submit/help.html
 <!-- VizieR FTP -->
 [vizier-ftp-login]: https://cds.unistra.fr/ftp/token/
 [vizier-ftp]: https://cdsarc.cds.unistra.fr/ftp/

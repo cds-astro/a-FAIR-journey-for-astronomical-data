@@ -43,9 +43,8 @@ If you have got any questions, feel free to contact directly the VizieR team at:
 
 ## Supporting organisations
 
-![Logo Centre de Données astronomiques de Strasbourg - CDS](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/cds-logo.png)
-
-![Logo European Open Science Cloud Future- EOSC Future](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/eosc_future_logo.png)
+|![Logo Centre de Données astronomiques de Strasbourg - CDS](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/cds-logo.png) | ![Logo European Open Science Cloud Future- EOSC Future](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/eosc_future_logo.png) |
+| --- | --- |
 
 
 

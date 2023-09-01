@@ -85,7 +85,7 @@ F4. (Meta)data are registered or indexed in a searchable resource
 ### To be Accessible
 
 Once the data can be found, the user needs to know how to access them. That could include authentification and authorisation.
-The accessibility of the data does not mean that they are open!
+The accessibility of the data does not imply that they are fully open to everyone.
 
 The data should be 'as open as possible, as closed as necessary', following the H2020 Program Guidelines on FAIR Data.
 
@@ -174,7 +174,7 @@ Items covered in the Checklist (and also below):
 
 # Keep calm and carry on
 
-A lot of items will be covered in this section. We are aware that you could be a bit overwhelming.
+A lot of items will be covered in this section. We are aware that you could be a bit overwhelmed.
 
 The most important points are highlighted in bold, and some tips when creating tables are given at the end.
 

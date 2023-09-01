@@ -1,15 +1,15 @@
 ---
 title: "Submitting astronomical data"
-teaching: 12
-exercises: 6
+teaching: 10
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- Who need to submit their data?
 - How and where to submit your data?
 - What is a *ReadMe* file?
 - Do and don't when submitting data
-- What is the data curation?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -18,6 +18,27 @@ exercises: 6
 - Be aware of how to submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+<!--  ----------------------------------------- -->
+<!-- 	Intro 					-->
+<!--  ----------------------------------------- -->
+## Overview
+
+In the following Chapter, we detail the data submission part which happens after the acceptance / publication phase. 
+
+Not everybody needs to send their data to CDS! We invite you to read carefully the next sections to understand your next steps.
+
+![Figure: Journey from a publication to EOSC, step 3 "submission of the data"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data"}
+
+
+
+
+<!--  ----------------------------------------- -->
+<!-- 		Who need to submit? 		-->
+<!--  ----------------------------------------- -->
+## Who need to submit their data?
+
 
 
 <!--  ----------------------------------------- -->
@@ -31,10 +52,13 @@ Two routes are possible to submit your data to VizieR:
 
 - Option 1: If not too bulky, use the submission [**online interface**][vizier-submit-login]
 	- The upload will generate a *ReadMe* skeleton file based on your tables and perform a few basic checks.
-	- You will need to check and complete this *ReadMe* file. 
-	- Alternatively, if you already have created a *ReadMe* file, you can upload it directly along with your tables.
-	- In addition to your table, FITS files (spectra or images) for associated data can be uploaded to improve their discoverability via our [dedicated interface Saada/VizieR][vizier-assoc-data].
-- Option 2: Use the [**Python cdspyreadme library**][vizier-cdspyreadme] to create the *ReadMe* file and then upload all the tables and other data by [**FTP**][vizier-ftp-login]
+		- You will need to check and complete this *ReadMe* file. 
+		- Alternatively, if you already have created a *ReadMe* file, you can upload it directly along with your tables.
+	- In addition to your table, FITS files (spectra or images) for associated data can be uploaded
+		- They will be then available via our [dedicated interface Saada/VizieR][vizier-assoc-data].
+- Option 2: Use the [**File Transfer Protocol (FTP)**][vizier-ftp-login]
+	- You can use the [**Python cdspyreadme library**][vizier-cdspyreadme] to create the required *ReadMe* file.
+	- Tables and other data (not necessarily FITS) can be uploaded. More information on the data types accepted are available in the previous Chapter <a href="section_prepare_data.html" target="_blank">Preparing your data</a>.
 
 
 <!-- #### Special case: large volumetry -->
@@ -45,7 +69,6 @@ The submission web application is an HTTP service and depends of authors network
 For larger files or any other questions, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
 
-![Figure: Journey from a publication to EOSC, step 3 "submission of the data"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data"}
 
 
 
@@ -67,216 +90,114 @@ A typical illustration could be e.g. [J/A+A/382/389/ReadMe][vizier-readme-exampl
 
 
 <!-- Blank template -->
-Here is a blank template: 
-
+Here is an example of a *ReadMe* skeleton:
 ```
-$catalogue                                                      ($author, $date)
+Reference             Short Title                                (Author+, Year)
 ================================================================================
-$title
-    $authors
-    $bibcode
+Title of the paper
+    Authors
+   <Reference (200Y)>
+   =20YYjjjjjvvvvLppppA
 ================================================================================
-Keywords: $keywords
+ADC_Keywords:
+Keywords:
 
 Abstract:
-    $abstract
-
 Description:
-    $description
-
 
 Objects:
-    --------------------------------------------------
-      RA  (equinox)  DE     Name(s)
-    --------------------------------------------------
-    hh mm ss.s +dd mm ss    Name1 = Name1
-    --------------------------------------------------
-
+    -----------------------------------------
+       RA   (2000)   DE    Designation(s)
+    -----------------------------------------
 
 File Summary:
 --------------------------------------------------------------------------------
- FileName    Lrecl   Records    Explanations
+ FileName                               Lrecl  Records  Explanations
 --------------------------------------------------------------------------------
-$tablesIndex
---------------------------------------------------------------------------------
+ReadMe                                     80        .  This file
+table.dat     28      120
 
+
+
+Description of file:    [if needed]
 
 See also:
-    $seealso
 
-
-Nomenclature notes:
-    $nomenclature
-
-
-Byte-by-byte Description of file: $bytebybyte.file
+Byte-by-byte Description of file: table.dat
 --------------------------------------------------------------------------------
-   Bytes Format Units   Label    Explanations
+   Bytes Format Units   Label     Explanations
 --------------------------------------------------------------------------------
-$bytebybyte
---------------------------------------------------------------------------------
-Note (n): $note 
---------------------------------------------------------------------------------
+   1-  8   A8    --- col_0 ? [ 0123456CGMN]
+  10- 14   F5.2  --- col_1 ?
+  16- 21   F6.2  --- col_2 ?
+  23- 27   F5.2  --- col_3 ?
 
 
-Acknowledgements: $acknowledgments
-
+Acknowledgements:
 
 References:
+
 ================================================================================
-(End)                            $modification_done_by	      $date_modification
 ```
+
 
 ----------------------------
 
+<!--  ----------------------------------------- -->
+### How to generate the ReadMe file?
+
+There are two recommended ways to generate your own *ReadMe* file: 
+
+- With the submission [**online interface**][vizier-submit-login]:
+	- The upload table process generates a *ReadMe* skeleton and the standardized tables; both are required for VizieR.
+	- This *ReadMe* file can then be edited or you can upload your own file.
+- With the [cdspydreadme][vizier-cdspyreadme] Python library:
+	- This package builds *ReadMe*, standardized tables (in ASCII aligned format) or MRT tables from tables which can be in different formats (`CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats).
+	- The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
+
+![Figure: ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
+
+
+
+----------------------------
 
 <!--  ----------------------------------------- -->
-### Full description of the content of the ReadMe file
+### How to fill the ReadMe file
 
-The [Standards for Astronomical Catalogues][vizier-readme-std] gives a complete description of the standard for *ReadMe* files. A general overview and some examples are given below.
+The [Standards for Astronomical Catalogues][vizier-readme-std] gives a complete description of the standard for *ReadMe* files. 
 
-
-
-:::::::::::::::::::::::::::::::::::::: callout
-
-# Disclaimer
-In this section, we give a lot of details (as we are dissecting the contents of the *ReadMe*). It can be overwhelming, but the next section covers the tools that exist to help generating a correct *ReadMe* file. 
-
-You don't necessarily need to build it from scratch!
-
-::::::::::::::::::::::::::::::::::::::
+In the following we give some tips on how to fill three different sections of the *ReadMe* file properly.
+The rest of the *ReadMe* will be filled by CDS, and thus does not appear below. 
 
 
 
 <!-- Details of the template -->
 ::::::::::::::::::::::::::::::::::::::: discussion
 
-### Details
-The *ReadMe* file contains severals sections.
+### The ReadMe file in more depth
 
-As a general rule, only **section headers are left flushed, while the text is indented** — with the noticeable exceptions of the title, the file names in the File Summary section, and of [Note headers][vizier-cat-35-lengthy]. 
+General comment: no line in this description file can exceed 80 characters!
 
-No line in this description file can exceed 80 characters; it is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
+It is moreover suggested to limit the textual parts to 70 characters, such that a conversion to FITS could keep the text as COMMENT cards.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 <!-- ---------------- -->
 :::::::::::::::: solution
-### 1. First line
+#### A. 'Abstract' and 'Description' headers
 
-Catalogue designation, an abbreviated title followed within parenthesis by the last name of the first author, a + sign if there are multiple authors, and the year — this information has to be condensed in a single line of 80 characters or les. 
-
-For the **volume** and **page numbers**:
-- For papers accepted for publication in A&A -- but not yet published -- these will be added directly at CDS,
-- For papers accepted in other journals, it is recommended to send them via email (to [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr)) when you get these details.
+- **Abstract**: Describes the *scientific results* that the author(s) derived from the data. 
+	- It is simply the one from your refereed paper. 
+- **Description**: Gives the *context of the data*, such as instrumentation or observing conditions. 
+	- It should answer the following questions: *what*, *where*, *when*, *how*.
 
 :::::::::::::::::::::::::
-
-
-:::::::::::::::: solution
-######  >>> Example 1
-```
-I/221               The Magellanic Catalogue of Stars - MACS (Tucholke+ 1996)
-================================================================================
-```
-:::::::::::::::::::::::::
-
 
 
 <!-- ---------------- -->
 :::::::::::::::: solution
-### 2. Full title(s), authors, and reference(s) of the catalogue 
-
-Each title is left-adjusted (no indentation); the line(s) containing the authors' names are indented (at least two blanks), and the bibliographic reference is enclosed between angle brackets. The BibCode is introduced by an equal sign, as a word without embedded blank of exactly 20 characters (with the equal sign).
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 2
-```
-The Magellanic Catalogue of Stars - MACS
-     Tucholke H.-J., de Boer K.S., Seitter W.C.
-    <Astron. Astrophys. Suppl. Ser., 119, 91-98 (1996)>
-    <The Messenger 81, 20 (1995)>
-    =1996A&AS..119...91T 
-    =1995Msngr..81...20D
-================================================================================
-```
-:::::::::::::::::::::::::
-
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-### 3. 'Keywords' header
-
-
-Three categories of keywords can be added:
-
-- *Keywords*: introduces the list of keywords as in the printed publication.
-- *ADC\_Keywords*: introduces the list of data-related keywords (see [ADC_keywords and their VizieR translation][vizier_adc_keywords] for more details). They are strictly related to the tabular material collected in the paper.
-- *Mission\_Name*: for data originated from satellite mission, this header precedes the satellite name.
-
-
-Whatever the category, multiple keywords are separated by a semicolon (;) or a dash (-) embedded in blanks.
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 3
-```
-ADC_Keywords: Clusters, galaxy ; Galaxies, photometry ; Photometry, CCD
-Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
-          cosmology: large-scale structure of Universe
-```
-:::::::::::::::::::::::::
-
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 4. 'Abstract' and 'Description' headers
-
-The **Description** part gives the *context of the data*, such as instrumentation or observing conditions. 
-It therefore differs from the **Abstract** which describes the *scientific results* that the author(s) derived from the data. The **Abstract** is simply the one from your refereed paper. 
-
-
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 4
-```
-Abstract:
-    We present the results of a study of streaming motion of galaxy
-    clusters around the Giant Void (RA~13h, DE~40{deg}, z~0.11 and a
-    diameter of 150/hMpc) in the distribution of rich Abell clusters. We
-    used the Kormendy relation as a distance indicator taking into account
-    galaxy luminosities. Observations were carried out in Kron-Cousins
-    R_c_ system on the 6m and 1m telescopes of SAO RAS. For 17 clusters in
-    a spherical shell of 25/hMpc in thickness centered on the void no
-    significant diverging motion (expected to be generated by the mass
-    deficit in the void) has been detected. This implies that cosmological
-    models with low {Omega}_m_ are preferred. To explain small mass
-    underdensity inside the Giant Void, a mechanism of void formation with
-    strong biasing is required.
-
-Description:
-    Photometric parameters for 210 early-type galaxies in the central
-    regions for 17 clusters around the Giant Void are presented. Galaxies
-    in the following clusters have been observed:
-    A1298, A1361, A1427, A1468, A1542, A1551, A1609, A1637, A1666,
-    A1691, A1700, A1739, A1793, A1823, A1834, A1885, and A1894.
-    For each galaxy equatorial coordinates, total magnitudes in R_c_
-    (Kron-Cousins) band, effective radius, surface brightness and mean
-    surface brightness are given. The derivation of the effective
-    parameters takes the seeing into account.
-```
-:::::::::::::::::::::::::
-
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 5. (optional) 'Objects' header
+#### B. 'Objects' header (optional)
 The list of **observed objects** can be used when no data table contains the list and position of the astronomical objects observed or studied, as for example in the study of a high-resolution spectrum of a single star. Such a list is normally restricted to very few objects – less than 10 or 20 typically.
 
 :::::::::::::::::::::::::
@@ -284,55 +205,7 @@ The list of **observed objects** can be used when no data table contains the lis
 
 <!-- ---------------- -->
 :::::::::::::::: solution
-#### 6. 'File Summary' header
-It describes the files composing the set. Each file should be described by its *filename*, the *length of the longest line* (Lrecl), the *number of lines* (Records), and a *caption* (short title). Lengthy notes can be added if necessary.
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 6
-```
-File Summary:
---------------------------------------------------------------------------------
- FileName      Lrecl    Records    Explanations
---------------------------------------------------------------------------------
-ReadMe            80          .   This file
-clusters.dat      45         17   Cluster positions and magnitudes (from Simbad)
-table2.dat        57        210   Photometric parameters for 210 galaxies
-                                   in 17 clusters
---------------------------------------------------------------------------------
-```
-:::::::::::::::::::::::::
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 7. 'See also' header
-This section can be used to list related catalogues, data sets or services. Each catalog or service starts on a new line, and is followed by a colon embedded in blanks.
-
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 7
-```
-See also:
-    J/A+AS/97/729 : O-rich stars in 1-20um range
-    http://machine/description.html : Detailed Description
-```
-:::::::::::::::::::::::::
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 8. (optional) 'Nomenclature Notes' header
-
-This  header provides valuable information related to the nomenclature of astronomical objects.
-:::::::::::::::::::::::::
-
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 9. 'Byte-by-byte Description of file' header
+#### C. 'Byte-by-byte Description of file' header
 
 This section describes the structure of each data files (files with the .dat extension).
 This description is made in a tabular form, each row describing one field (column) of the data file.
@@ -349,139 +222,11 @@ The description is presented as a five-column table with the following elements:
 - the *label* (heading) of the field, made of a single word (*no embedded blank*); a few [basic conventions][vizier-cat-33-labels] are used for usual parameters (e.g. positions) and related quantities (e.g. mean errors).
 - a short *explanations* of the contents of the column. 
 This last field may also specify: the available range of the value in the column (using **[...]**), the possibility of having unspecified or NULL values (using **?**), the order of the values within the table (increasing or decreasing order). More details can be found [here][vizier-cat-34-explanations].
+
+The CDS can help you to fill that part of the headers, but you will be responsible for the *explanations* and the *units*.
+
 :::::::::::::::::::::::::
 
-:::::::::::::::: solution
-######  >>> Example 9
-```
-Byte-by-byte Description of file: clusters.dat
---------------------------------------------------------------------------------
-   Bytes Format Units   Label    Explanations
---------------------------------------------------------------------------------
-   1-  4  I4    ---     Abell    Abell (ACO) cluster number
-   7-  8  I2    h       RAh      Right ascension (J2000.0)
-  10- 11  I2    min     RAm      Right ascension (J2000.0)
-  13- 16  F4.1  s       RAs      Right ascension (J2000.0)
-      18  A1    ---     DE-      Declination sign (J2000.0)
-  19- 20  I2    deg     DEd      Declination (J2000.0)
-  22- 23  I2    arcmin  DEm      Declination (J2000.0)
-  25- 26  I2    arcsec  DEs      Declination (J2000.0)
-  29- 45  A17   ---     Names    Other name (1)
---------------------------------------------------------------------------------
-Note (1): We identify the cluster ACO 1666 with ZwCl J1303.7+5118 as the
-    Abell cluster coordinates (J1302.8+5153) none rich cluster was found.
-    Coordinates refer to the main concentration of galaxies.
---------------------------------------------------------------------------------
-
-Byte-by-byte Description of file: table2.dat
------------------------------------------------------------------------------
-   Bytes Format  Units         Label     Explanations
------------------------------------------------------------------------------
-   1-  4  I4     ---           Abell     Abell (ACO) cluster number
-   6-  7  I2     ---           Galaxy    Galaxy identification number
-   9- 10  I2     h             RAh       Right Ascension J2000 (hours)
-  12- 13  I2     min           RAm       Right Ascension J2000 (minutes)
-  15- 19  F5.2   s             RAs       Right Ascension J2000 (seconds)
-      21  A1     ---           DE-       Declination J2000 (sign)
-  22- 23  I2     deg           DEd       Declination J2000 (degrees)
-  25- 26  I2     arcmin        DEm       Declination J2000 (minutes)
-  28- 31  F4.1   arcsec        DEs       Declination J2000 (seconds)
-  33- 37  F5.2   mag           Rcmag     Asymptotic Kron-Cousins R_c_ band
-                                          magnitude corrected for Galactic
-                                          extinction (1)
-  39- 43  F5.2   arcsec        reff      Seeing corrected effective radius (2)
-  45- 49  F5.2   mag/arcsec2   mue       Seeing corrected surface
-                                          brightness at reff (1), (2)
-  51- 55  F5.2   mag/arcsec2   <mue>     Seeing corrected mean surface
-                                          brightness within reff (1), (2)
-      57  I1     ---           ExclFlag  [1,3]? Exclusion flag (3)
---------------------------------------------------------------------------------
-Note (1): Correction for foreground Galactic extinction according to Schlegel
-     et al. (1998ApJ...500..525S) corresponds to the centre of cluster
-Note (2): Correction for seeing effect following Saglia et al.
-     (1993MNRAS.264..961S)
-Note (3): 33 galaxies excluded from the distance determination:
-     1 = fainter than M_R_~-21.5mag
-     2 = disk dominated
-     3 = peculiar or interacting
---------------------------------------------------------------------------------
-```
-:::::::::::::::::::::::::
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 10. (optional)  Global notes header
-
-Notes which apply to several tables are introduced by *Note (Gn):*  n being the number of the global note referenced in the Byte-by-byte Description of file:  sections.
-:::::::::::::::::::::::::
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 11. (optional)  'History', 'Acknowledgements' headers
-
-Some other sections may exist when required, e.g. **History**;  introduces notes about the modification history, **Acknowledgements:**  etc...
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 11
-```
-Acknowledgements: Alexander Kopylov <akop(at)sao.ru>
-```
-:::::::::::::::::::::::::
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 12. (optional) 'References' header
-
-This section contains the necessary references. [Bibcodes][bibcode] are strongly encouraged, to enable an automatic link to the existing Abstract Services like ADS.
-
-For large sets of references, you can also gather them into a dedicated *reference file* named **refs.dat**.
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 12
-```
-References:
-  Kopylova & Kopylov, 1998PAZh...24..573K, (1998AstL...24..491K)
-    Structure and dynamic state of the Corona Borealis supercluster
-```
-:::::::::::::::::::::::::
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### 13. Last line
-
-The very last line includes just the left-flushed word **(End)**, the name of the person who took care of the standardisation, and the date of the last modification.
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-######  >>> Example 13
-```
-================================================================================
-(End)                            Alexander Kopylov [SAO, Russia]     06-Feb-2002
-```
-:::::::::::::::::::::::::
-
-
-----------------------------
-
-<!--  ----------------------------------------- -->
-### How to generate the ReadMe file?
-
-There are two recommended ways to generate your own *ReadMe* file: 
-
-- With the submission [**online interface**][vizier-submit-login]:
-	- The upload table process generates a *ReadMe* skeleton and the standardized tables, both are required for VizieR.
-	- This *ReadMe* file can then be edited or you can upload your own file.
-- With the [cdspydreadme][vizier-cdspyreadme] Python library:
-	- This package builds *ReadMe*, standardized tables (in ASCII aligned format) or MRT tables from tables which can be in different formats (`CSV`, `votable`, `FITS`, `astropy.Tables`, or `MRT` formats)
-	- The whole *ReadMe* can then be tested with the command line tool [anafile][anafile]. 
-
-![Figure: ReadMe Generator Python library Github page (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_cdspyreadme.png){alt="Screenshot: ReadMe Generator Python library Github page, from July 2023"}
 
 
 
@@ -494,7 +239,7 @@ There are two recommended ways to generate your own *ReadMe* file:
 The first option is to use the online interface available at: [https://cdsarc.cds.unistra.fr/vizier.submit/][vizier-submit-login].
 
 This web application enables the upload of the data and invites you to fill a *ReadMe* file generated by the application.
-The VizieR upload application will create a **temporary** repository containing your tables, associated files (spectra, images, cubes) if any, and the *ReadMe* file.
+The VizieR upload application will create a **TEMPORARY** repository containing your tables, associated files (spectra, images, cubes) if any, and the *ReadMe* file.
 
 **However, even after completing all steps, your catalogue will not be readily available in VizieR. Additional work by the VizieR team is needed, including checks and homogenization to our standards, before the catalogue is fully ingested.**
 
@@ -760,197 +505,10 @@ Once you are done uploading your data (*ReadMe*, tables and any other associated
 
 
 <!--  ----------------------------------------- -->
-<!--            Data curation at CDS            -->
-<!--  ----------------------------------------- -->
-## What happens to your data at the CDS? 
-
-Once the data have been submitted on the CDS servers, the VizieR team will check that the data is compatible with our standards. Once the data have been accepted, the CDS team will also add some valuable and relevant information such as metadata and links to other catalogues. This can lead to interactions with the authors, but we are trying to minimize the level of interaction.
-
-
-### Behind the scenes: verifications
-
-In addition to the semi-automated verifications already done by the programs during the different steps of the ingestion, more in-depth verifications are done by the CDS team focusing on the reliability and the quality of the catalogues.
-
-In the following, we present some examples based on real datasets.
-
-
-
-<!--  ----------------------------------------- -->
-#### Verifications: Example 1 - Units
-
-One key point is to the check the units.
-
-
-:::::::::::::::: testimonial
-#### Units corrected
-
-In the example below the original unit for a cylindrical volume of a region (column *Size* from the figure below) was wrongly set to *cm^-3^*.
-
-![Figure: Before -- Units as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_before.png){alt="Screenshot -- Table with wrong units as displayed in paper"}
-
-
-
-Our team picked it up and wrote to the author and made the description and unit correction (field *V* from the figure below).
-
-![Figure: After -- Units corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png){alt="Screenshot -- VizieR table with units corrected"}
-
-<!-- https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units.png -->
-
-:::::::::::::::::::::::::
-
-
- 
-<!--  ----------------------------------------- -->
-#### Verifications: Example 2 - Coordinates
-
-After the units, the coordinates are the most important data the VizieR team try to gather and curate. It is the most common way to search for data.
-When there are none, positions can be added from other catalogues or from SIMBAD if available. 
-Alternatively, we ask for them (sometimes we have an answer). 
-
-
-:::::::::::::::: testimonial
-#### Coordinates corrected
-
-Here is an example of coordinates with discrepancies when the declination is at 0 degree.
-
-![Figure: Before -- Coordinates as written in original paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png){alt="Screenshot -- Table with wrong coordinates as made available in paper"}
-
-
-Once the error detected by our team, the positions were then updated, two years after the data ingestion in VizieR.
-
-
-![Figure: After -- Coordinates corrected in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png
-){alt="Screenshot -- VizieR table with coordinates corrected"}
-
-:::::::::::::::::::::::::
-
-
-
-<!--  ----------------------------------------- -->
-#### Verifications: Example 3 - Identifiers
-
-The third important thing for our team are the identifiers. 
-
-
-:::::::::::::::: testimonial
-#### SIMBAD names added
-
-To retrieve coordinates and easy the cross identification between SIMBAD and VizieR, a proper identification is needed.
-
-Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we have here. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected. 
-For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
-
-![Figure: Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png){alt="Screenshot -- VizieR table with SIMBAD-names added"}
-
-:::::::::::::::::::::::::
-
-
-<!--  ----------------------------------------- -->
-#### Verifications: Example 4 - Odd values
-
-We add mimimum and maximum values of numerical columns. It allows us to detect some oddities and it is helpful also for the astronomer who will validate the catalogue afterwards.
-
-:::::::::::::::: testimonial
-#### Min-max values added
-
-![Figure: Example of minimum and maximum values added to a ReadMe file (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
-
-:::::::::::::::::::::::::
-
-
-<!--  ----------------------------------------- -->
-#### Verifications: Example 5 - Missing data
-
-We also add links between tables in VizieR. For instance, if an author said that magnitudes come from this survey, we actually point to that survey so we can verify the values. If a table contains galaxy clusters, we can add the number of galaxies per cluster.
-
-Adding those links helps us to detect errors and missing data.
-
-
-:::::::::::::::: testimonial
-#### Missing data retrieved
-
-In the example below, the link between the two tables is the number of S43GHz flux measurements (column *Nc* from the figure below). 
-
-When the data were first ingested, and it is still the case in the MRT table available with the paper, there was no measurement (*Nc = 0*).
-
-We contacted the author to get the corresponding data and thus we can now plot the light curve of this object in VizieR.
-
-
-![Figure: Example of missing data retrieved, adding more visibility to the original set (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_missing_data.png
-){alt="Screenshot -- Missing data retrieved by the CDS team enabling a better reusability of the original data"}
-
-:::::::::::::::::::::::::
-
-
-<!--  ----------------------------------------- -->
-#### Verifications: Example 6 - Missing common key 
-
-Last but not least, to add links between tables we need a common key (e.g identifier, coordinates ...).
-
-
-:::::::::::::::: testimonial
-
-#### Cross-identification between tables
-
-In the two figures below, we can see an example taken from a paper with two tables (*Tables A and B*) with two similar first columns in both:
-
-- Name of the stellar system to which the star belongs
-- Name of the star
-
-However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi 10018) mentionned in *Table A* corresponds to COS 347 in *Table B*.
-
-![Figure: Extract of Table A from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png){alt="Screenshot -- Table A as displayed in paper"}
-
-
-![Figure: Before -- extract of Table B from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png){alt="Screenshot -- Table B as displayed in paper"}
-
-
-As there are no common identifier or coordinates repeated in the second table, the only alternative would have been to go through the list of references cited (3rd column of *Table B*) to get the coordinates and identify the object one by one.
-Therefore, the CDS team contacted the author to get the names and positions for *Table B* and create a better link between the two tables as displayed below.
-
-![Figure: After -- extract of Table B as available in VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png){alt="Screenshot -- Table B updated as available on VizieR"}
-
-
-:::::::::::::::::::::::::
-
-
-
-<!--  ----------------------------------------- -->
-### Errata
-
-As said before, the VizieR database is evolving every day: with new catalogues being added or old ones being updated. 
-
-
-:::::::::::::::: testimonial
-#### Tables updated
-
-In the example below, one table from the original catalogue was updated, to reflect the changes published in an erratum.
-
-![Figure: Example of a table updated following erratum publication (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png){alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication"}
-
-:::::::::::::::::::::::::
-
-
-
-
-
-<!--  ----------------------------------------- -->
-<!--            Data curation at CDS            -->
-<!--  ----------------------------------------- -->
-## Data available to all
-
-Once the data are public, they are accessible as plain files in [FTP directories at CDS][vizier-catalogue-collection] and other participating [data centers][vizier-mirors] (e.g. at [CfA/Harvard (USA)][vizier-at-cfa] or [NOAJ/ADAC (Japan)][vizier-at-noaj]), as well as all VO compatible services.
-
-
-![Figure: Journey from a publication to EOSC, step 4 "curation & verification"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
-
-
-
-<!--  ----------------------------------------- -->
-<!--            Summary                         -->
+<!--            Summary	                        -->
 <!--  ----------------------------------------- -->
 
-## Summary: Data submission and curation
+## Summary: Data submission
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
@@ -968,15 +526,8 @@ The *ReadMe* file describe your tables by providing all necessary information to
 - This highly standardised file allows reusability and cross matching between catalogues.
 - A good description of your data is the key to discoverability. 
 
-Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
-
-- Verifications leading to corrections: ~ 30% of the references
-- Main corrections: identifiers, coordinates, units ...
-
-You cannot Find, Access and Re-use data if the coordinates/identifiers are not right!
-
-
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
 <!--  ----------------------------------------- -->
@@ -984,7 +535,7 @@ You cannot Find, Access and Re-use data if the coordinates/identifiers are not r
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what happen to your data once they are fully ingested into VizieR.
+In the next chapters, you will learn what happen to your data before their full ingestion into VizieR.
  
 
 

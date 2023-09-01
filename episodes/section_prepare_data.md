@@ -9,6 +9,7 @@ exercises: 1
 
 - What kind of data can be submitted to VizieR?
 - Which formats are accepted?
+- How can I test my FITS?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
