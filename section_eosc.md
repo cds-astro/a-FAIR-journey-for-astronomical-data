@@ -32,7 +32,7 @@ In the last chapters, we concentrated on the publication of data via the CDS Viz
 Once your data have been successfully ingested into VizieR, they begin their journey into the Virtual Observatory, as illustrated in the figure below.
 
 
-![Figure: Full data journey from a publication to EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data"}
+![Figure: Full data journey from a publication to EOSC, step 5 "integration into the IVOA, EUDAT and finally EOSC"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data"}
 
 
 Work within the [ESCAPE project][escape] and the [EOSC Future project][eosc-future] has been aimed at connecting the existing astronomy data publishing systems to the  [European Open Science Cloud (EOSC)][eosc].
