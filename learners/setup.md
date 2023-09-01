@@ -54,7 +54,7 @@ No prior knowledge is required.
 
 ## Version
 
-Training version: 0.2
+Training version: 0.3.0
 
 Publication date: 10 July 2023
  
