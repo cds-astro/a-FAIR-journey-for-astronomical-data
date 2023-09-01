@@ -1,12 +1,12 @@
 ---
 title: "Data curation at CDS"
-teaching: 12
-exercises: 6
+teaching: 5
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What happens to my data after submission?
+- What happens to your data after submission to VizieR?
 - What is the data curation?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -19,16 +19,19 @@ exercises: 6
 
 
 
-
 <!--  ----------------------------------------- -->
-<!--            Data curation at CDS            -->
+<!-- 	Intro 					-->
 <!--  ----------------------------------------- -->
-## What happens to your data at the CDS? 
+## Overview
 
-Once the data have been submitted on the CDS servers, the VizieR team will check that the data is compatible with our standards. Once the data have been accepted, the CDS team will also add some valuable and relevant information such as metadata and links to other catalogues. This can lead to interactions with the authors, but we are trying to minimize the level of interaction.
+Once the data have been submitted on the CDS servers, the VizieR team will check that the data are compatible with standards. Once the data have been accepted, the CDS team will also add some valuable and relevant information such as metadata and links to other catalogues. This can lead to interactions with the authors, but we are trying to minimize the level of interaction.
 
 
-### Behind the scenes: verifications
+![Figure: Journey from a publication to EOSC, step 4 "curation & verification"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
+
+
+
+## Behind the scenes: verifications
 
 In addition to the semi-automated verifications already done by the programs during the different steps of the ingestion, more in-depth verifications are done by the CDS team focusing on the reliability and the quality of the catalogues.
 
@@ -37,7 +40,7 @@ In the following, we present some examples based on real datasets.
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 1 - Units
+### Verifications: Example 1 - Units
 
 One key point is to the check the units.
 
@@ -62,11 +65,9 @@ Our team picked it up and wrote to the author and made the description and unit 
 
  
 <!--  ----------------------------------------- -->
-#### Verifications: Example 2 - Coordinates
+### Verifications: Example 2 - Coordinates
 
-After the units, the coordinates are the most important data the VizieR team try to gather and curate. It is the most common way to search for data.
-When there are none, positions can be added from other catalogues or from SIMBAD if available. 
-Alternatively, we ask for them (sometimes we have an answer). 
+After the units, the coordinates are the most important data the VizieR team try to gather and curate. It is indeed the most common way to search for data in VizieR.
 
 
 :::::::::::::::: testimonial
@@ -86,19 +87,23 @@ Once the error detected by our team, the positions were then updated, two years 
 :::::::::::::::::::::::::
 
 
+When there are none, positions can be added from other catalogues or from SIMBAD if available. 
+Alternatively, we ask for them (sometimes we have an answer). 
+
+
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 3 - Identifiers
+### Verifications: Example 3 - Identifiers
 
 The third important thing for our team are the identifiers. 
 
 
 :::::::::::::::: testimonial
-#### SIMBAD names added
+#### SIMBAD names added + Misprint on names corrected
 
 To retrieve coordinates and easy the cross identification between SIMBAD and VizieR, a proper identification is needed.
 
-Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we have here. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected. 
+Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we luckily have in this case. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected. 
 For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
 
 ![Figure: Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png){alt="Screenshot -- VizieR table with SIMBAD-names added"}
@@ -107,22 +112,22 @@ For this object with coordinates pointing to nothing, the right ones have been f
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 4 - Odd values
+### Verifications: Example 4 - Odd values
 
 We add mimimum and maximum values of numerical columns. It allows us to detect some oddities and it is helpful also for the astronomer who will validate the catalogue afterwards.
 
 :::::::::::::::: testimonial
 #### Min-max values added
 
-![Figure: Example of minimum and maximum values added to a ReadMe file (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
+![Figure: Example of minimum and maximum values (in brackets) added to a ReadMe file (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png){alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields"}
 
 :::::::::::::::::::::::::
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 5 - Missing data
+### Verifications: Example 5 - Missing data
 
-We also add links between tables in VizieR. For instance, if an author said that magnitudes come from this survey, we actually point to that survey so we can verify the values. If a table contains galaxy clusters, we can add the number of galaxies per cluster.
+We also add links between tables in VizieR. For instance, if an author said that magnitudes come from a certain survey, we actually point to that survey so we can verify the values. If a table contains galaxy clusters and another the membership, we can add the number of galaxy members per cluster, assuming the cluster names are the same in both tables.
 
 Adding those links helps us to detect errors and missing data.
 
@@ -144,7 +149,7 @@ We contacted the author to get the corresponding data and thus we can now plot t
 
 
 <!--  ----------------------------------------- -->
-#### Verifications: Example 6 - Missing common key 
+### Verifications: Example 6 - Missing common key 
 
 Last but not least, to add links between tables we need a common key (e.g identifier, coordinates ...).
 
@@ -160,7 +165,7 @@ In the two figures below, we can see an example taken from a paper with two tabl
 
 However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi 10018) mentionned in *Table A* corresponds to COS 347 in *Table B*.
 
-![Figure: Extract of Table A from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png){alt="Screenshot -- Table A as displayed in paper"}
+![Figure: Before -- Extract of Table A from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png){alt="Screenshot -- Table A as displayed in paper"}
 
 
 ![Figure: Before -- extract of Table B from paper (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png){alt="Screenshot -- Table B as displayed in paper"}
@@ -177,7 +182,7 @@ Therefore, the CDS team contacted the author to get the names and positions for 
 
 
 <!--  ----------------------------------------- -->
-### Errata
+## Errata
 
 As said before, the VizieR database is evolving every day: with new catalogues being added or old ones being updated. 
 
@@ -211,25 +216,13 @@ Once the data are public, they are accessible as plain files in [FTP directories
 <!--            Summary                         -->
 <!--  ----------------------------------------- -->
 
-## Summary: Data submission and curation
+## Summary: What happens to your data at CDS?
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-2 options for data submission:
-
-- Online interface
-- File Transfer Protocol
-
-The CDS provides tools to build *ReadMe* file and aligned ASCII tables (Machine Readable Table in FORTRAN format).
-
-- No need to build it from scratch!
-
-The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...).
-
-- This highly standardised file allows reusability and cross matching between catalogues.
-- A good description of your data is the key to discoverability. 
-
 Once the catalogues are submitted, a delay is needed for VizieR curation and validation before full ingestion!
+
+The validation process involves some:
 
 - Verifications leading to corrections: ~ 30% of the references
 - Main corrections: identifiers, coordinates, units ...

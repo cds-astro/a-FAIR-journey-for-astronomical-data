@@ -6,6 +6,7 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- Who need to submit their data?
 - How and where to submit your data?
 - What is a *ReadMe* file?
 - Do and don't when submitting data
@@ -500,6 +501,33 @@ ftp> ls
 ### Notify the VizieR team
 
 Once you are done uploading your data (*ReadMe*, tables and any other associated data), you need to **SEND AN E-MAIL** to the VizieR team telling them where you have placed files: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+
+
+
+<!--  ----------------------------------------- -->
+<!--            Summary	                        -->
+<!--  ----------------------------------------- -->
+
+## Summary: Data submission
+
+::::::::::::::::::::::::::::::::::::: keypoints
+
+2 options for data submission:
+
+- Online interface
+- File Transfer Protocol
+
+The CDS provides tools to build *ReadMe* file and aligned ASCII tables (Machine Readable Table in FORTRAN format).
+
+- No need to build it from scratch!
+
+The *ReadMe* file describe your tables by providing all necessary information to locate the catalogue (authors, title, abstract, keywords, acknowledgments, ...).
+
+- This highly standardised file allows reusability and cross matching between catalogues.
+- A good description of your data is the key to discoverability. 
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
 <!--  ----------------------------------------- -->
