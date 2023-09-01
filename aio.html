@@ -1721,7 +1721,7 @@ any links that you are not going to use.
 <!-- EOSC -->
 </section></section><section id="aio-section_submission_per_journals"><p>Content from <a href="section_submission_per_journals.html">Submission routes and journals</a></p>
 <hr>
-<p> Last updated on 2023-08-31 | 
+<p> Last updated on 2023-09-01 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submission_per_journals.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1762,7 +1762,8 @@ submitted your paper.</p>
 <li>Initiated by authors</li>
 <li>Initiated by the CDS</li>
 </ul>
-<p>Interactive window: VizieR catalogues provenance per journal.
+<p>Interactive plot: VizieR catalogues provenance per journal (updated
+weekly).
 <iframe src="https://manonmarchand.github.io/vizier-stats/" style="border: none; width: 98%; height:500px" allowfullscreen="" allow="autoplay" data-external="1"></iframe></p>
 <p>Link: <a href="https://vizier.cds.unistra.fr/vizier/welcome/vizierbrowse.gml?designation" class="external-link">Catalogues
 and files available at CDS</a></p>
@@ -1772,7 +1773,7 @@ and files available at CDS</a></p>
 </section><section id="american-astronomical-society-journals-aas"><h2 class="section-heading">American Astronomical Society Journals (AAS)<a class="anchor" aria-label="anchor" href="#american-astronomical-society-journals-aas"></a>
 </h2>
 <hr class="half-width">
-<p>The CDS selects tables from publishes papers which will be ingested
+<p>The CDS selects tables from published papers which will be ingested
 in VizieR.
 <!-- tables coming from AAS are not systematically ingested in VizieR. -->
 Machine readable tables (MRT) are prioritised, but other tables or FITS
@@ -2056,7 +2057,7 @@ any links that you are not going to use.
 <!-- EOSC -->
 </section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-08-30 | 
+<p> Last updated on 2023-09-01 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2111,8 +2112,8 @@ in usage in our discipline.</li>
 about how to prepare the data for their inclusion in VizieR.</p>
 <p>A full description of the standard conventions used for the
 documentation of the catalogues is available from <a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">there</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC: second
-step of the journey - step preparation of the data</figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 2
+“preparation of the data”</figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
 </h2>
 <hr class="half-width">
 <p>Tables are the main data types accepted. An <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3" class="external-link">example
@@ -2130,7 +2131,13 @@ Gaia DR3 - ref I/355/gaiadr3 (screenshot)</figcaption></figure><!--  -----------
 <p>In order of preference:</p>
 <ul>
 <li>Machine-Readable Tables (<a href="https://journals.aas.org/data-guide/#machine_readable_tables" class="external-link">MRT</a>
-/ FORTRAN format)</li>
+/ FORTRAN format)
+<ul>
+<li>Not available through the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
+submit interface</a>
+</li>
+</ul>
+</li>
 <li>TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values)
 files containing a first line with column description is accepted
 <ul>
@@ -2167,6 +2174,7 @@ ingest your data.</p>
 <h3 id="what-cannot-be-used">What cannot be used<a class="anchor" aria-label="anchor" href="#what-cannot-be-used"></a>
 </h3>
 <p>Postscript or word/excel files.</p>
+<p>Files containing different numbers of columns per rows.</p>
 <!--  ----------------------------------------- -->
 </div>
 <div class="section level3">
@@ -2181,27 +2189,47 @@ ingest your data.</p>
 </h3>
 <div class="callout-content">
 <ul>
+<li>Present the appropriate number of significant figures for numerical
+measurements and uncertainties
+(cf. <a href="section_fair_astro.html#general_rules" target="_blank">§2c</a>
+).</li>
 <li>An explanation is given for all the columns (at least a clear label;
-at best, few words of explanation).</li>
+at best, few words of explanation)
+(cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1</a>).</li>
 <li>Units are given for all the columns (when relevant).</li>
-<li>For tables with sources, give coordinates as accurate as possible:
-<ul>
-<li>A bonus would be to have their uncertainty.</li>
-<li>Another bonus would be to have their wavelength.</li>
-</ul>
-</li>
-<li>As recommended by the IAU, a non-altered name is given for the
-sources (in addition to the coordinates).</li>
-<li>It is really much better to stick to the same object name from a
-table to another.</li>
 <li>One column is homogeneous, i.e. does not mix different measurements
 having different units or errors with limit values or flags.</li>
+<li>For tables with sources, give:
+<ul>
+<li>
+<strong>Coordinates</strong> as accurate as possible and their epoch
+(cf. <a href="section_fair_astro.html#astrometry" target="_blank">§2.2</a>).
+<ul>
+<li>A bonus would be to have their uncertainty.</li>
+<li>Another bonus would be to have their wavelength, and/or the
+instrument origin.</li>
+</ul>
+</li>
+<li>A <strong>non-altered name</strong>
+(cf. <a href="section_fair_astro.html#nomenclature" target="_blank">§2.1</a>)</li>
+</ul>
+</li>
+<li>It is really much better to stick to the same identifier from a
+table to another.</li>
 <li>If the measurements come from other papers, the references to those
 papers should be explicitly given using the bibcode.</li>
+<li>Use the same representation of missing data and have a separate
+field that explains the different reasons
+(cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1d</a>)
+for missing values if needed.</li>
 </ul>
 </div>
 </div>
 </div>
+<p>More details on how to create FAIR tables can be found in the
+previous Chapter
+<a href="section_fair_astro.html#general_rules" target="_blank">FAIR
+principles for astronomical data</a>.</p>
 <p>Following this checklist will help improving the efficiency of the
 ingestion in VizieR and also the visibility and reusability of your data
 :).</p>
@@ -2215,7 +2243,7 @@ ingestion in VizieR and also the visibility and reusability of your data
 <hr class="half-width">
 <p>In addition to the Tables, other data type are associated.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png" alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. " class="figure mx-auto d-block"><figcaption>Figure: Example of VizieR associated data from the
-Saada page: spectra (screenshot)</figcaption></figure><p>Reusable file formats for associated:</p>
+Saada/VizieR page: spectra (screenshot)</figcaption></figure><p>Reusable file formats for associated data:</p>
 <div id="accepted-format-1" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -2385,7 +2413,7 @@ Q7) 'myfile.jpg'</code></pre>
 <p>R1) No: filenames should be in lowercase.</p>
 <p>R2) No: filename too long. This filename will be shortened afterwards
 anyway.</p>
-<p>R3) Yes: correct.</p>
+<p>R3) Yes: correct. Although not very self-explanatory.</p>
 <p>R4) No: ‘+’ character not supported.</p>
 <p>R5) No: data files are represented as ‘.dat’.</p>
 <p>R6) No: ‘&amp;’ character not supported.</p>
@@ -2432,10 +2460,12 @@ overflow: hidden; display: block; " allowfullscreen="" allow="autoplay" data-ext
 <p>Preferred formats:</p>
 <ul>
 <li>Tables should be preferably written as machine-readable tables
-(MRT)</li>
+(MRT).</li>
 <li>For the associated data, the FITS format is the preferred
-solution</li>
+solution.</li>
 </ul>
+<p>Do not forget to test your FITS data before submission with the
+VizieR FITS validator tool.</p>
 </div>
 </div>
 </div>
@@ -2482,7 +2512,7 @@ any links that you are not going to use.
 <!-- EOSC -->
 </section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-08-30 | 
+<p> Last updated on 2023-09-01 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2548,8 +2578,8 @@ authors network. The process is dedicated for tables size less than
 <!-- Contact CDS -->
 <p>For larger files or any other questions, please contact the VizieR
 staff: <a href="mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC: third
-step of the journey - step submission of the data</figcaption></figure><!--  ----------------------------------------- --><!--   ReadMe files                             --><!--  ----------------------------------------- --></section><section id="readme-file"><h2 class="section-heading">ReadMe file<a class="anchor" aria-label="anchor" href="#readme-file"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step2.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: third step of the journey - step submission of the data, right after - step data published in a refereed paper, step preparation of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 3
+“submission of the data”</figcaption></figure><!--  ----------------------------------------- --><!--   ReadMe files                             --><!--  ----------------------------------------- --></section><section id="readme-file"><h2 class="section-heading">ReadMe file<a class="anchor" aria-label="anchor" href="#readme-file"></a>
 </h2>
 <hr class="half-width">
 <!-- Source: https://vizier.cds.unistra.fr/vizier/submit.htx  // Section 3 --><div class="section level3">
@@ -2672,7 +2702,7 @@ that a conversion to FITS could keep the text as COMMENT cards.</p>
   1. First line
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Catalogue designation, an abbreviated title followed within
 parenthesis by the last name of the first author, a + sign if there are
@@ -2694,7 +2724,7 @@ when you get these details.</p>
   &gt;&gt;&gt; Example 1
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <pre><code>I/221               The Magellanic Catalogue of Stars - MACS (Tucholke+ 1996)
 ================================================================================</code></pre>
@@ -2710,7 +2740,7 @@ when you get these details.</p>
   2. Full title(s), authors, and reference(s) of the catalogue
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Each title is left-adjusted (no indentation); the line(s) containing
 the authors’ names are indented (at least two blanks), and the
@@ -2728,7 +2758,7 @@ exactly 20 characters (with the equal sign).</p>
   &gt;&gt;&gt; Example 2
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <pre><code>The Magellanic Catalogue of Stars - MACS
      Tucholke H.-J., de Boer K.S., Seitter W.C.
@@ -2749,7 +2779,7 @@ exactly 20 characters (with the equal sign).</p>
   3. ‘Keywords’ header
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>Three categories of keywords can be added:</p>
 <ul>
@@ -2778,7 +2808,7 @@ this header precedes the satellite name.</li>
   &gt;&gt;&gt; Example 3
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <pre><code>ADC_Keywords: Clusters, galaxy ; Galaxies, photometry ; Photometry, CCD
 Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
@@ -2795,7 +2825,7 @@ Keywords: galaxies: clusters - galaxies: elliptical and lenticular, cD -
   4. ‘Abstract’ and ‘Description’ headers
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>The <strong>Description</strong> part gives the <em>context of the
 data</em>, such as instrumentation or observing conditions. It therefore
@@ -2814,7 +2844,7 @@ paper.</p>
   &gt;&gt;&gt; Example 4
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <pre><code>Abstract:
     We present the results of a study of streaming motion of galaxy
@@ -2852,7 +2882,7 @@ Description:
   5. (optional) ‘Objects’ header
   </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <p>The list of <strong>observed objects</strong> can be used when no
 data table contains the list and position of the astronomical objects
@@ -2871,7 +2901,7 @@ few objects – less than 10 or 20 typically.</p>
   6. ‘File Summary’ header
   </h4>
 </button>
-<div id="collapseSolution10" class="accordion-collapse collapse" aria-labelledby="headingSolution10" data-bs-parent="#accordionSolution10">
+<div id="collapseSolution10" class="accordion-collapse collapse" data-bs-parent="#accordionSolution10" aria-labelledby="headingSolution10">
 <div class="accordion-body">
 <p>It describes the files composing the set. Each file should be
 described by its <em>filename</em>, the <em>length of the longest
@@ -2889,7 +2919,7 @@ necessary.</p>
   &gt;&gt;&gt; Example 6
   </h4>
 </button>
-<div id="collapseSolution11" class="accordion-collapse collapse" aria-labelledby="headingSolution11" data-bs-parent="#accordionSolution11">
+<div id="collapseSolution11" class="accordion-collapse collapse" data-bs-parent="#accordionSolution11" aria-labelledby="headingSolution11">
 <div class="accordion-body">
 <pre><code>File Summary:
 --------------------------------------------------------------------------------
@@ -2912,7 +2942,7 @@ table2.dat        57        210   Photometric parameters for 210 galaxies
   7. ‘See also’ header
   </h4>
 </button>
-<div id="collapseSolution12" class="accordion-collapse collapse" aria-labelledby="headingSolution12" data-bs-parent="#accordionSolution12">
+<div id="collapseSolution12" class="accordion-collapse collapse" data-bs-parent="#accordionSolution12" aria-labelledby="headingSolution12">
 <div class="accordion-body">
 <p>This section can be used to list related catalogues, data sets or
 services. Each catalog or service starts on a new line, and is followed
@@ -2928,7 +2958,7 @@ by a colon embedded in blanks.</p>
   &gt;&gt;&gt; Example 7
   </h4>
 </button>
-<div id="collapseSolution13" class="accordion-collapse collapse" aria-labelledby="headingSolution13" data-bs-parent="#accordionSolution13">
+<div id="collapseSolution13" class="accordion-collapse collapse" data-bs-parent="#accordionSolution13" aria-labelledby="headingSolution13">
 <div class="accordion-body">
 <pre><code>See also:
     J/A+AS/97/729 : O-rich stars in 1-20um range
@@ -2945,7 +2975,7 @@ by a colon embedded in blanks.</p>
   8. (optional) ‘Nomenclature Notes’ header
   </h4>
 </button>
-<div id="collapseSolution14" class="accordion-collapse collapse" aria-labelledby="headingSolution14" data-bs-parent="#accordionSolution14">
+<div id="collapseSolution14" class="accordion-collapse collapse" data-bs-parent="#accordionSolution14" aria-labelledby="headingSolution14">
 <div class="accordion-body">
 <p>This header provides valuable information related to the nomenclature
 of astronomical objects.</p>
@@ -2961,7 +2991,7 @@ of astronomical objects.</p>
   9. ‘Byte-by-byte Description of file’ header
   </h4>
 </button>
-<div id="collapseSolution15" class="accordion-collapse collapse" aria-labelledby="headingSolution15" data-bs-parent="#accordionSolution15">
+<div id="collapseSolution15" class="accordion-collapse collapse" data-bs-parent="#accordionSolution15" aria-labelledby="headingSolution15">
 <div class="accordion-body">
 <p>This section describes the structure of each data files (files with
 the .dat extension). This description is made in a tabular form, each
@@ -3016,7 +3046,7 @@ can be found <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx
   &gt;&gt;&gt; Example 9
   </h4>
 </button>
-<div id="collapseSolution16" class="accordion-collapse collapse" aria-labelledby="headingSolution16" data-bs-parent="#accordionSolution16">
+<div id="collapseSolution16" class="accordion-collapse collapse" data-bs-parent="#accordionSolution16" aria-labelledby="headingSolution16">
 <div class="accordion-body">
 <pre><code>Byte-by-byte Description of file: clusters.dat
 --------------------------------------------------------------------------------
@@ -3081,7 +3111,7 @@ Note (3): 33 galaxies excluded from the distance determination:
   10. (optional) Global notes header
   </h4>
 </button>
-<div id="collapseSolution17" class="accordion-collapse collapse" aria-labelledby="headingSolution17" data-bs-parent="#accordionSolution17">
+<div id="collapseSolution17" class="accordion-collapse collapse" data-bs-parent="#accordionSolution17" aria-labelledby="headingSolution17">
 <div class="accordion-body">
 <p>Notes which apply to several tables are introduced by <em>Note
 (Gn):</em> n being the number of the global note referenced in the
@@ -3098,7 +3128,7 @@ Byte-by-byte Description of file: sections.</p>
   11. (optional) ‘History’, ‘Acknowledgements’ headers
   </h4>
 </button>
-<div id="collapseSolution18" class="accordion-collapse collapse" aria-labelledby="headingSolution18" data-bs-parent="#accordionSolution18">
+<div id="collapseSolution18" class="accordion-collapse collapse" data-bs-parent="#accordionSolution18" aria-labelledby="headingSolution18">
 <div class="accordion-body">
 <p>Some other sections may exist when required,
 e.g. <strong>History</strong>; introduces notes about the modification
@@ -3114,7 +3144,7 @@ history, <strong>Acknowledgements:</strong> etc…</p>
   &gt;&gt;&gt; Example 11
   </h4>
 </button>
-<div id="collapseSolution19" class="accordion-collapse collapse" aria-labelledby="headingSolution19" data-bs-parent="#accordionSolution19">
+<div id="collapseSolution19" class="accordion-collapse collapse" data-bs-parent="#accordionSolution19" aria-labelledby="headingSolution19">
 <div class="accordion-body">
 <pre><code>Acknowledgements: Alexander Kopylov &lt;akop(at)sao.ru&gt;</code></pre>
 </div>
@@ -3129,7 +3159,7 @@ history, <strong>Acknowledgements:</strong> etc…</p>
   12. (optional) ‘References’ header
   </h4>
 </button>
-<div id="collapseSolution20" class="accordion-collapse collapse" aria-labelledby="headingSolution20" data-bs-parent="#accordionSolution20">
+<div id="collapseSolution20" class="accordion-collapse collapse" data-bs-parent="#accordionSolution20" aria-labelledby="headingSolution20">
 <div class="accordion-body">
 <p>This section contains the necessary references. <a href="http://simbad.cds.unistra.fr/guide/refcode/refcode-paper.html" class="external-link">Bibcodes</a>
 are strongly encouraged, to enable an automatic link to the existing
@@ -3147,7 +3177,7 @@ dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
   &gt;&gt;&gt; Example 12
   </h4>
 </button>
-<div id="collapseSolution21" class="accordion-collapse collapse" aria-labelledby="headingSolution21" data-bs-parent="#accordionSolution21">
+<div id="collapseSolution21" class="accordion-collapse collapse" data-bs-parent="#accordionSolution21" aria-labelledby="headingSolution21">
 <div class="accordion-body">
 <pre><code>References:
   Kopylova &amp; Kopylov, 1998PAZh...24..573K, (1998AstL...24..491K)
@@ -3164,7 +3194,7 @@ dedicated <em>reference file</em> named <strong>refs.dat</strong>.</p>
   13. Last line
   </h4>
 </button>
-<div id="collapseSolution22" class="accordion-collapse collapse" aria-labelledby="headingSolution22" data-bs-parent="#accordionSolution22">
+<div id="collapseSolution22" class="accordion-collapse collapse" data-bs-parent="#accordionSolution22" aria-labelledby="headingSolution22">
 <div class="accordion-body">
 <p>The very last line includes just the left-flushed word
 <strong>(End)</strong>, the name of the person who took care of the
@@ -3180,7 +3210,7 @@ standardisation, and the date of the last modification.</p>
   &gt;&gt;&gt; Example 13
   </h4>
 </button>
-<div id="collapseSolution23" class="accordion-collapse collapse" aria-labelledby="headingSolution23" data-bs-parent="#accordionSolution23">
+<div id="collapseSolution23" class="accordion-collapse collapse" data-bs-parent="#accordionSolution23" aria-labelledby="headingSolution23">
 <div class="accordion-body">
 <pre><code>================================================================================
 (End)                            Alexander Kopylov [SAO, Russia]     06-Feb-2002</code></pre>
@@ -3719,8 +3749,8 @@ publication (screenshot)</figcaption></figure>
 CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizier/mirrors.gml" class="external-link">data
 centers</a> (e.g. at <a href="https://vizier.cfa.harvard.edu/" class="external-link">CfA/Harvard (USA)</a> or <a href="http://vizier.nao.ac.jp/" class="external-link">NOAJ/ADAC (Japan)</a>), as well as all
 VO compatible services.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC: fourth
-step of the journey - steps curation &amp; verification</figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 4
+“curation &amp; verification”</figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-data-submission-and-curation"><h2 class="section-heading">Summary: Data submission and curation<a class="anchor" aria-label="anchor" href="#summary-data-submission-and-curation"></a>
 </h2>
 <hr class="half-width">
 <div id="keypoints1" class="callout keypoints">
@@ -3803,7 +3833,7 @@ any links that you are not going to use.
 <!-- EOSC -->
 </section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO and EOSC</a></p>
 <hr>
-<p> Last updated on 2023-08-30 | 
+<p> Last updated on 2023-09-01 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_eosc.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3850,9 +3880,8 @@ researchers to follow the journey of their data to EOSC!</p>
 <p>Once your data have been successfully ingested into VizieR, they
 begin their journey into the Virtual Observatory, as illustrated in the
 figure below.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data" class="figure mx-auto d-block"><figcaption>Figure: Full data journey from a publication to EOSC:
-last step of the journey - step integration into the IVOA, EUDAT and
-finally EOSC</figcaption></figure><p>Work within the <a href="https://projectescape.eu/" class="external-link">ESCAPE
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: last step of the journey - step integration into the IVOA, EUDAT and finally EOSC, right after - step data published in a refereed paper, step preparation of the data, step submission of the data, steps curation and verification of the data" class="figure mx-auto d-block"><figcaption>Figure: Full data journey from a publication to EOSC,
+step 5 “integration into the IVOA, EUDAT and finally EOSC”</figcaption></figure><p>Work within the <a href="https://projectescape.eu/" class="external-link">ESCAPE
 project</a> and the <a href="https://eoscfuture.eu/" class="external-link">EOSC Future
 project</a> has been aimed at connecting the existing astronomy data
 publishing systems to the <a href="https://eosc.eu/" class="external-link">European Open
@@ -3951,7 +3980,7 @@ directly from the url.</p>
   By keywords
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A filtering by <strong>keywords</strong> can be done from the url by
 adding the field <em>&amp;fq=keywords:“my%20astro%20keyword”</em> to the
@@ -3974,7 +4003,7 @@ and Astronomy’ and ‘stellar astronomy’, one can do:
   By author names
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>A filtering by <strong>author names</strong> can also be done from
 the url by adding the field
@@ -3997,7 +4026,7 @@ collaboration’, one can do:
   By DOI
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Filtering by <strong>DOI</strong> can also be done from the url by
 adding the field <em>&amp;fq=<a href="doi:%22mydoi%5C%2Fnumber" class="uri">doi:"mydoi%5C%2Fnumber</a>“</em> to the url of the
@@ -4083,7 +4112,7 @@ Portal</a> to answer the previous questions.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>R1) This paper was published on <a href="https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&amp;return_path=search%2Fall&amp;search_params=q%3DNGTS%2520clusters%2520survey" class="external-link">01
 Jan 2017</a>.</p>
@@ -4233,9 +4262,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2023-08-31",
-  "dateModified": "2023-08-31",
-  "datePublished": "2023-08-31"
+  "dateCreated": "2023-09-01",
+  "dateModified": "2023-09-01",
+  "datePublished": "2023-09-01"
 }
 
   </script><script>

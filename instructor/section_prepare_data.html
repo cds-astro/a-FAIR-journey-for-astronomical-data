@@ -263,7 +263,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Preparing your data</h1>
-        <p> Last updated on 2023-08-30 | 
+        <p> Last updated on 2023-09-01 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -320,8 +320,8 @@ in usage in our discipline.</li>
 about how to prepare the data for their inclusion in VizieR.</p>
 <p>A full description of the standard conventions used for the
 documentation of the catalogues is available from <a href="https://vizier.cds.unistra.fr/vizier/doc/catstd.htx" class="external-link">there</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC: second
-step of the journey - step preparation of the data</figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step1.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: second step of the journey - step preparation of the data, right after - step data published in a refereed paper" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 2
+“preparation of the data”</figcaption></figure><!--  ----------------------------------------- --><!-- 		Tables	 			--><!--  ----------------------------------------- --><!-- Source: https://cdsarc.cds.unistra.fr/vizier.submit/publication-notes.html#section2 --></section><section id="tables"><h2 class="section-heading">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
 </h2>
 <hr class="half-width"><p>Tables are the main data types accepted. An <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/355/gaiadr3" class="external-link">example
 of ingested table</a> is shown below.</p>
@@ -337,7 +337,11 @@ Gaia DR3 - ref I/355/gaiadr3 (screenshot)</figcaption></figure><!--  -----------
 <div class="callout-content">
 <p>In order of preference:</p>
 <ul><li>Machine-Readable Tables (<a href="https://journals.aas.org/data-guide/#machine_readable_tables" class="external-link">MRT</a>
-/ FORTRAN format)</li>
+/ FORTRAN format)
+<ul><li>Not available through the <a href="https://cdsarc.cds.unistra.fr/vizier.submit/index.html" class="external-link">VizieR
+submit interface</a>
+</li>
+</ul></li>
 <li>TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values)
 files containing a first line with column description is accepted
 <ul><li>Comments (line beginning by #) are not accepted</li>
@@ -364,6 +368,7 @@ ingest your data.</p>
 <div class="section level3">
 <h3 id="what-cannot-be-used">What cannot be used<a class="anchor" aria-label="anchor" href="#what-cannot-be-used"></a></h3>
 <p>Postscript or word/excel files.</p>
+<p>Files containing different numbers of columns per rows.</p>
 <!--  ----------------------------------------- -->
 </div>
 <div class="section level3">
@@ -376,24 +381,42 @@ ingest your data.</p>
 <h3 class="callout-title">Checklist<a class="anchor" aria-label="anchor" href="#checklist1"></a>
 </h3>
 <div class="callout-content">
-<ul><li>An explanation is given for all the columns (at least a clear label;
-at best, few words of explanation).</li>
+<ul><li>Present the appropriate number of significant figures for numerical
+measurements and uncertainties
+(cf. <a href="section_fair_astro.html#general_rules" target="_blank">§2c</a>
+).</li>
+<li>An explanation is given for all the columns (at least a clear label;
+at best, few words of explanation)
+(cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1</a>).</li>
 <li>Units are given for all the columns (when relevant).</li>
-<li>For tables with sources, give coordinates as accurate as possible:
-<ul><li>A bonus would be to have their uncertainty.</li>
-<li>Another bonus would be to have their wavelength.</li>
-</ul></li>
-<li>As recommended by the IAU, a non-altered name is given for the
-sources (in addition to the coordinates).</li>
-<li>It is really much better to stick to the same object name from a
-table to another.</li>
 <li>One column is homogeneous, i.e. does not mix different measurements
 having different units or errors with limit values or flags.</li>
+<li>For tables with sources, give:
+<ul><li>
+<strong>Coordinates</strong> as accurate as possible and their epoch
+(cf. <a href="section_fair_astro.html#astrometry" target="_blank">§2.2</a>).
+<ul><li>A bonus would be to have their uncertainty.</li>
+<li>Another bonus would be to have their wavelength, and/or the
+instrument origin.</li>
+</ul></li>
+<li>A <strong>non-altered name</strong>
+(cf. <a href="section_fair_astro.html#nomenclature" target="_blank">§2.1</a>)</li>
+</ul></li>
+<li>It is really much better to stick to the same identifier from a
+table to another.</li>
 <li>If the measurements come from other papers, the references to those
 papers should be explicitly given using the bibcode.</li>
+<li>Use the same representation of missing data and have a separate
+field that explains the different reasons
+(cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1d</a>)
+for missing values if needed.</li>
 </ul></div>
 </div>
 </div>
+<p>More details on how to create FAIR tables can be found in the
+previous Chapter
+<a href="section_fair_astro.html#general_rules" target="_blank">FAIR
+principles for astronomical data</a>.</p>
 <p>Following this checklist will help improving the efficiency of the
 ingestion in VizieR and also the visibility and reusability of your data
 :).</p>
@@ -406,7 +429,7 @@ ingestion in VizieR and also the visibility and reusability of your data
 </h2>
 <hr class="half-width"><p>In addition to the Tables, other data type are associated.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_saada_example_spectra.png" alt="Screenshot: Example of spectra ingested and available through the Saada VizieR page, associated with the catalogue 'J/A+A/589/A36'. " class="figure mx-auto d-block"><figcaption>Figure: Example of VizieR associated data from the
-Saada page: spectra (screenshot)</figcaption></figure><p>Reusable file formats for associated:</p>
+Saada/VizieR page: spectra (screenshot)</figcaption></figure><p>Reusable file formats for associated data:</p>
 <div id="accepted-format-1" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -559,7 +582,7 @@ Q7) 'myfile.jpg'</code></pre>
 <p>R1) No: filenames should be in lowercase.</p>
 <p>R2) No: filename too long. This filename will be shortened afterwards
 anyway.</p>
-<p>R3) Yes: correct.</p>
+<p>R3) Yes: correct. Although not very self-explanatory.</p>
 <p>R4) No: ‘+’ character not supported.</p>
 <p>R5) No: data files are represented as ‘.dat’.</p>
 <p>R6) No: ‘&amp;’ character not supported.</p>
@@ -601,10 +624,12 @@ overflow: hidden; display: block; " allowfullscreen="" allow="autoplay" data-ext
 <li>Associated data : images, spectra, SED, time series, cube</li>
 </ul><p>Preferred formats:</p>
 <ul><li>Tables should be preferably written as machine-readable tables
-(MRT)</li>
+(MRT).</li>
 <li>For the associated data, the FITS format is the preferred
-solution</li>
-</ul></div>
+solution.</li>
+</ul><p>Do not forget to test your FITS data before submission with the
+VizieR FITS validator tool.</p>
+</div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -699,9 +724,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/section_prepare_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section_prepare_data.html",
-  "dateCreated": "2023-08-31",
-  "dateModified": "2023-08-30",
-  "datePublished": "2023-08-31"
+  "dateCreated": "2023-09-01",
+  "dateModified": "2023-09-01",
+  "datePublished": "2023-09-01"
 }
 
   </script><script>
