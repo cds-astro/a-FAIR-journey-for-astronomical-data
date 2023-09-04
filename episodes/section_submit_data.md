@@ -16,7 +16,7 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Fill a *ReadMe* file
-- Submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
+- Submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

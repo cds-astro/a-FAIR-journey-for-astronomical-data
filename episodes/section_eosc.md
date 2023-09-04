@@ -14,8 +14,8 @@ exercises: 1
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Describe the integration of astronomy data services in the VO and EOSC.
-- Naviguate through the EOSC portal. 
+- Describe the integration of astronomy data services in the VO and EOSC
+- Naviguate through the EOSC portal
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
