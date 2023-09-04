@@ -7,9 +7,9 @@ title: Introduction
 
 The new initiatives for Open Science involve many actors: the journals, archives, the data sharing frameworks, and also the community of authors who publish their data. In this training we highlight the role of the authors, to show how efforts for describing astronomical data in standard ways has an important impact on achieving the goals of Open Science.  
 
-Work within the [ESCAPE][escape] project and the [EOSC Future][eosc-future] project has been aimed at connecting the existing astronomy data publishing systems to the [EOSC][eosc]. In this way the familiar processes of publishing data become part of the wider EOSC system. 
+Work within the [ESCAPE][escape] project and the [EOSC Future][eosc-future] project has been aimed at connecting the existing astronomy data publishing systems to the [EOSC][eosc-portal-about]. In this way the familiar processes of publishing data become part of the wider EOSC system. 
 
-In this training we concentrate on the publication of data via the CDS VizieR service and show how the process leads to the data being made visible in the EOSC Portal. We invite astronomy researchers to follow the journey of their data to EOSC!
+In this training we concentrate on the publication of data via the CDS VizieR service and show how the process leads to the data being made visible in the [EOSC Portal][eosc-portal]. We invite astronomy researchers to follow the journey of their data to EOSC!
 
 
 ![Figure: Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
@@ -66,7 +66,7 @@ Last modified: 30 August 2023
 This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website).
 
 
-All materials are developed online openly under CC-BY 4.0 License using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
+All materials are developed online openly under <a href="license.html">CC-BY 4.0 License</a> using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
 
 
 ## Contact
