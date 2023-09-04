@@ -9,10 +9,14 @@ The new initiatives for Open Science involve many actors: the journals, archives
 
 Work within the [ESCAPE][escape] project and the [EOSC Future][eosc-future] project has been aimed at connecting the existing astronomy data publishing systems to the [EOSC][eosc-portal-about]. In this way the familiar processes of publishing data become part of the wider EOSC system. 
 
-In this training we concentrate on the publication of data via the CDS VizieR service and show how the process leads to the data being made visible in the [EOSC Portal][eosc-portal]. We invite astronomy researchers to follow the journey of their data to EOSC!
+In this training we concentrate on the publication of data via the [CDS VizieR service][vizier-home] and show how the process leads to the data being made visible in the [EOSC Portal][eosc-portal], as illustrated in the Figure below. This figure will be built step by step throughout this course.
+
+The journey of your astronomical data (tables and other) starts from a refereed paper (bottom on the left lighthouse). The next step involves making sure your data are FAIR (Findable, Accessible, Interopable and Reusable), and preparing the associated metadata, before sending your data to VizieR.
+[VizieR][vizier-home] is a [CDS][cds-home] service that provides the most complete library of published astronomical catalogues. All the tables and associated data available on VizieR are verified and enriched data, accessible via multiple interfaces, as illustrated by the step 'curation & verification' on the same figure.
+Once the data fully available on VizieR, they reach a broader audience with the [International Virtual Observatory Alliance (IVOA) registry][ivoa-link] and [B2Find][b2find] (interdisciplinary discovery research data portal from [EUDAT][b2find-about]). The data then propagate to be finally available through [EOSC Portal][eosc-portal], which is an online interface for the EOSC project where people can access research outputs (publications, data, software) but also submit their own data.
 
 
-![Figure: Full data journey from a publication to EOSC](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
+![Figure: Full data journey from a publication to EOSC. In this course, we will focus on the publication of data via the CDS VizieR service (left lightouse). But the process is similar for other data centers (smaller lighthouses on the right).](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/full.svg){alt="Summary Data journey from a publication to VizieR and then EOSC, full path"}
 
 
 
