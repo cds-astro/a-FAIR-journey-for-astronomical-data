@@ -204,8 +204,8 @@ b) The period of a periodic phenomenon should be given as
 c) Present a measurement as 0.123±0.002, 
 not 0.12345±0.002 or 0.123±0.00234.
 d) Present source color “(B-V) = 0.45 mag” instead of “(B-V) = 0.45”
-e) State your preferred solution in the text and have a dedicated column for the adopted solution in your Table, 
-as shown in <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/261/19/table8" target="_blank">Table 8 from VizieR catalogue J/ApJS/261/19</a>
+e) State your preferred solution in the text and have a dedicated column 
+for the adopted solution in your Table, as shown in <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/261/19/table8" target="_blank">Table 8 from VizieR catalogue J/ApJS/261/19</a>
 </pre></big>
 
 ![Figure: Extract of Table 8 from VizieR catalogue J/ApJS/261/19](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/vizier_adopted_value_example.png){alt="Small extract of Table 8 from VizieR catalogue J/ApJS/261/19, displaying 4 columns for the effective temperature: TeffR, TeffS, TeffP and Teff, the latter one corresponding to their adopted temperature"}
@@ -282,13 +282,21 @@ and explain how to correct them.
 
 
 Q1) SDSS J1441+0948
+
 Q2) SN 5J 
+
 Q3) HESS J232+202
+
 Q4) BR 0529-3526
+
 Q5) B0008+006
+
 Q6) DEM45
+
 Q7) Gaia 2448177130188111232 
+
 Q8) Gaia DR 2 2.7904e18
+
 Q9) mu cep
 
 *Hint:* Look for these objects in [Simbad][simbad-home].
@@ -300,19 +308,28 @@ Can you find them?
 
 I1) Insufficient precision in RA and DEC causes confusion.
 In this case, it could correspond to many objects in the different SDSS releases.
+
 I2) Incomplete name can be interpreted into different objects.
+
 I3) Leading zero in RA is missing and can cause misinterpretation 
 of the RA at 23 hours instead of 02 hour. 
+
 I4) Missing letter J to specify J2000 equatorial coordinates.
+
 I5) Name prefix is needed to distinguish between different objects.
+
 I6) H II regions in LMC or SMC should be indicated with 
 “L” or “S” to avoid ambiguity.
+
 I7) Database objectID number is used without specifying release 
 number. The same running number may refer to a different source 
 in a different release.
+
 I8) ID is written in scientific notation, making it impossible 
 to retrieve the actual object (which is a 19-integer number).
+
 I9) Ambiguous name can be interpreted into different objects.
+
 :::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::: solution
@@ -321,16 +338,24 @@ I9) Ambiguous name can be interpreted into different objects.
 
 R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
 or SDSS J144157.26+094853.7
+
 R2) SN 2005J or SN 2015J are different targets
+
 R3) HESS J0232+202
+
 R4) BR J0529-3526
+
 R5) QSO B0008+006 (Redshift z = 2.3) and
 IVS B0008+006 (Redshift z = 1.5) are different targets
+
 R6) DEM L 045, or DEM S 045
+
 R7) Gaia DR3 2448177130188111232
+
 R8) Gaia DR2 2790494815860044544
-R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or
-V* MU Cep (22h23m38.63s, +57d40m50.8s, J2000)
+
+R9) \*mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or
+V\* MU Cep (22h23m38.63s, +57d40m50.8s, J2000)
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -714,8 +739,11 @@ Give some examples of ambiguous facility/ telescope/instrument names from the li
 ## Quiz: Can you guess the names of these facilities?
 
 Q1) ARO
+
 Q2) DDO
+
 Q3) EMIR
+
 Q4) OSIRIS
 
 :::::::::::::::::::::::: solution
