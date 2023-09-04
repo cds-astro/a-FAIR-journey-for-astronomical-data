@@ -277,10 +277,10 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 ::::::::::::::::::::::::::::::::::::: keypoints
 
 - EOSC is not a new digital infrastructure.
-- EOSC will support the cultural change towards Open Science and FAIR principles in the EU countries and institutions.
+- EOSC will support the cultural change towards Open Science and FAIR principles in the European countries and institutions.
 - Individual researchers will benefits from EOSC through their existing channels (e.g. universities, research institutes, research infrastructures, associations, science clusters, etc.) that will act as intermediaries. 
 
-- EOSC will allow for universal access to data and a new level playing field for EU researchers.
+- EOSC will allow for universal access to data and a new level playing field for European researchers.
 
 
 - EOSC Portal Catalogue & Marketplace acts as an entry point to a multitude of services and resources for researchers, such as:
