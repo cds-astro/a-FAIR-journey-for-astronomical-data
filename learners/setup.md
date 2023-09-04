@@ -33,18 +33,18 @@ This training is aimed at researchers in astronomy who want to:
 
 ## Learning outcomes
 
-By the end of this training, you will:
+By the end of this training, you should be able to:
 
 :::::::::::::::::::::::::::::::::::::: checklist
 
-- Be aware of the benefits of using VizieR. **(Chapter 1)**
-- Be aware of the Findable, Accessible, Interoperable and Reusable (FAIR) principles **(Chapter 2)**
-- Know the different submission routes. **(Chapter 3)**
-- Know what type of data you can submit and how to prepare your data and its metadata. **(Chapter 4)**
-- Be aware of how to submit your data in the existing and new Open Science systems, keeping in mind the Virtual Observatory (VO) standards. **(Chapter 5)**
-- Be aware of all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO **(Chapter 6)** 
-- Understand the integration of astronomy data services in the VO and EOSC. **(Chapter 7)**
-- Be familiar with the EOSC capabilities, in particular the EOSC portal. **(Chapter 7)**
+- Outline the benefits of using VizieR. **(Chapter 1)**
+- Cite the Findable, Accessible, Interoperable and Reusable (FAIR) principles **(Chapter 2)**
+- Describe the different submission routes. **(Chapter 3)**
+<!-- - Define the type of data accepted in VizieR  -->
+- Prepare your data, integrating the FAIR principles **(Chapter 4)**  
+- Submit your data in the existing and new Open Science systems, keeping in mind the Virtual Observatory (VO) standards. **(Chapter 5)**
+- Summarize all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO **(Chapter 6)** 
+- Naviguate through the EOSC portal. **(Chapter 7)**
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 

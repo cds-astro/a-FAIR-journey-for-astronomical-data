@@ -14,7 +14,9 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of the benefits of submitting your data to VizieR
+- Describe the contents of a VizieR catalogue
+- List some VO tools interoperable with VizieR catalogues
+- Outline the benefits of submitting your data to VizieR
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

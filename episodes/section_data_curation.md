@@ -13,7 +13,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO
+- Create FAIR tables, integrating "key" columns
+- Summarize all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
