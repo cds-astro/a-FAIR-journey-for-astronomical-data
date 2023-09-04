@@ -49,6 +49,16 @@ By the end of this training, you should be able to:
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+<!-- -------- -->
+## Key Points and Glossary
+ 
+At the end of each chapter, important points are summarized. They are all listed <a href="key-points.html">here (Key Points)</a>.
+
+Additionally, some definitions can be found in the <a href="reference.html#glossary">Glossary</a>.
+ 
+
+
+<!-- -------- -->
 ## Type of course
 
 This is an online self-learning course.
@@ -56,15 +66,19 @@ This is an online self-learning course.
 No prior knowledge is required.
 
 
+
+<!-- -------- -->
 ## Version
 
 Training version: 0.3.0
 
 Publication date: 10 July 2023
  
-Last modified: 30 August 2023
+Last modified: 4 September 2023
 
 
+
+<!-- -------- -->
 ## License
 
 This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website).
