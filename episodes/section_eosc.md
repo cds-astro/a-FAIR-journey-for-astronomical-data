@@ -7,7 +7,6 @@ exercises: 1
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What happens to your data after their ingestion in VizieR?
-<!-- - How does your published data get into EOSC? -->
 - Why publish to EOSC / VO?
 - How do you find your data in EOSC?
 
