@@ -6,13 +6,14 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
+- Where are the catalogues coming from?
 - What to do with my data knowing my journal?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of the different submission routes
+- Describe the different submission routes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

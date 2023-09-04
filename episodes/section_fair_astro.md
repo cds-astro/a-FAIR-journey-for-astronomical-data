@@ -14,7 +14,8 @@ exercises: 3
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of the Findable, Accessible, Interoperable and Reusable (FAIR) principles, when preparing your data and its metadata.
+- Cite the Findable, Accessible, Interoperable and Reusable (FAIR) principles
+- Create FAIR tables
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 

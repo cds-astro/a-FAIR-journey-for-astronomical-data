@@ -7,7 +7,6 @@ exercises: 1
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What happens to your data after their ingestion in VizieR?
-- How does your published data get into EOSC?
 - Why publish to EOSC / VO?
 - How do you find your data in EOSC?
 
@@ -15,8 +14,8 @@ exercises: 1
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand the integration of astronomy data services in the VO and EOSC.
-- Be familiar with the EOSC capabilities, in particular the EOSC portal.
+- Describe the integration of astronomy data services in the VO and EOSC.
+- Naviguate through the EOSC portal. 
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -278,10 +277,10 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 ::::::::::::::::::::::::::::::::::::: keypoints
 
 - EOSC is not a new digital infrastructure.
-- EOSC will support the cultural change towards Open Science and FAIR principles in the EU countries and institutions.
+- EOSC will support the cultural change towards Open Science and FAIR principles in the European countries and institutions.
 - Individual researchers will benefits from EOSC through their existing channels (e.g. universities, research institutes, research infrastructures, associations, science clusters, etc.) that will act as intermediaries. 
 
-- EOSC will allow for universal access to data and a new level playing field for EU researchers.
+- EOSC will allow for universal access to data and a new level playing field for European researchers.
 
 
 - EOSC Portal Catalogue & Marketplace acts as an entry point to a multitude of services and resources for researchers, such as:

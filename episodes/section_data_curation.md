@@ -13,7 +13,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO
+- Create FAIR tables, integrating "key" columns
+- Summarize all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -238,7 +239,7 @@ You cannot Find, Access and Re-use data if the coordinates/identifiers are not r
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what happen to your data once they are fully ingested into VizieR.
+In the next chapters, you will learn what happen to your fully ingested data when they continue their journey into the Virtual Observatory and up to EOSC. 
  
 
 
