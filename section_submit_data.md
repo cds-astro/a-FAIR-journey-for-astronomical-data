@@ -15,7 +15,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Be aware of how to submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
+- Fill a *ReadMe* file
+- Submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -535,8 +536,7 @@ The *ReadMe* file describe your tables by providing all necessary information to
 <!--  ----------------------------------------- -->
 ## Next chapters
 
-In the next chapters, you will learn what happen to your data before their full ingestion into VizieR.
- 
+In the next chapters, you will learn what happen to your submitted data before their full ingestion into VizieR and the rest of their journey into the Virtual Observatory and up to EOSC. 
 
 
 <!--  ----------------------------------------- -->

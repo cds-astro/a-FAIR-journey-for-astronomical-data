@@ -106,6 +106,7 @@ any links that you are not going to use.
 [cts]: https://www.coretrustseal.org/
 [eudat]: https://www.eudat.eu/
 [b2find]: https://b2find.eudat.eu/
+[b2find-about]: https://sp.eudat.eu/catalog/resources/33bc21d5-f53d-4eed-9a15-56f98f5c7f69
 [fits-nasa]: https://fits.gsfc.nasa.gov/
 [ivoa-link]: https://www.ivoa.net/
 [ivoa-registry]: http://rofr.ivoa.net/
@@ -129,6 +130,7 @@ any links that you are not going to use.
 [escape]: https://projectescape.eu/
 [eosc]: https://eosc.eu/
 [eosc-future]: https://eoscfuture.eu/
+[eosc-portal-about]: https://eosc-portal.eu/about
 [eosc-portal]: https://eosc-portal.eu/
 [eosc-portal-marketplace]: https://marketplace.eosc-portal.eu/
 [eosc-portal-results]: https://search.marketplace.eosc-portal.eu/search/all?q=*
