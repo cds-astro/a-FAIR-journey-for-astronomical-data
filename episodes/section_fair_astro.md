@@ -281,7 +281,6 @@ and explain how to correct them.
 ## Quiz: Why are these astronomical designations improper?
 
 
-```
 Q1) SDSS J1441+0948
 Q2) SN 5J 
 Q3) HESS J232+202
@@ -291,16 +290,14 @@ Q6) DEM45
 Q7) Gaia 2448177130188111232 
 Q8) Gaia DR 2 2.7904e18
 Q9) mu cep
-```
 
-Hint: Look for these objects in [Simbad][simbad-home].
+*Hint:* Look for these objects in [Simbad][simbad-home].
 Can you find them?
 
 :::::::::::::::::::::::: hint
 
 ## Why is it improper?
 
-```
 I1) Insufficient precision in RA and DEC causes confusion.
 In this case, it could correspond to many objects in the different SDSS releases.
 I2) Incomplete name can be interpreted into different objects.
@@ -316,14 +313,12 @@ in a different release.
 I8) ID is written in scientific notation, making it impossible 
 to retrieve the actual object (which is a 19-integer number).
 I9) Ambiguous name can be interpreted into different objects.
-```
 :::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::: solution
 
 ## Recommended usage
 
-```
 R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
 or SDSS J144157.26+094853.7
 R2) SN 2005J or SN 2015J are different targets
@@ -336,7 +331,6 @@ R7) Gaia DR3 2448177130188111232
 R8) Gaia DR2 2790494815860044544
 R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or
 V* MU Cep (22h23m38.63s, +57d40m50.8s, J2000)
-```
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -719,12 +713,10 @@ Give some examples of ambiguous facility/ telescope/instrument names from the li
 
 ## Quiz: Can you guess the names of these facilities?
 
-```
 Q1) ARO
 Q2) DDO
 Q3) EMIR
 Q4) OSIRIS
-```
 
 :::::::::::::::::::::::: solution
 

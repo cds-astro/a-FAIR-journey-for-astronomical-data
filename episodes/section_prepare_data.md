@@ -226,8 +226,6 @@ Show some good and bad examples of filenames.
 
 ## Quiz: Are these filenames correct or not?
 
-
-```
 Q1) 'TABLE998.dat'
 Q2) 'table.4.long.version.dat'
 Q3) 'table.dat'
@@ -235,7 +233,6 @@ Q4) 'test+table.dat'
 Q5) 'my_table.data'
 Q6) 'table&data.dat'
 Q7) 'myfile.jpg'
-```
 
 :::::::::::::::::::::::: solution
 
