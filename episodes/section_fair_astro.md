@@ -846,3 +846,10 @@ of data contained in the article.
 In the next chapters, you will learn what are the different submission routes (depending on your journal) and then how to prepare and submit your data to VizieR. Ultimately you will see how to search your data using the EOSC tools.
 
 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>

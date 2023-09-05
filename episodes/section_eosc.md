@@ -312,4 +312,11 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 This concludes this training on how to make your published astronomical data (table, images, spectra, …) FAIR and openly accessible to the community, and discoverable in Virtual Observatory tools such as EOSC.
 
 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>
 

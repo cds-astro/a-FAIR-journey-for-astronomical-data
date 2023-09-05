@@ -184,3 +184,13 @@ In the next chapters, you will learn what type of data can be submitted, how to 
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
+
+
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>
+
