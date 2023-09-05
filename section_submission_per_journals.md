@@ -255,3 +255,13 @@ In the next chapters, you will learn how to prepare and submit your data to Vizi
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
+
+
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>
+

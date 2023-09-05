@@ -118,7 +118,7 @@ Files containing different numbers of columns per rows.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
-More details on how to create FAIR tables can be found in the previous Chapter <a href="section_fair_astro.html#general_rules" target="_blank">FAIR principles for astronomical data</a>.
+More details on how to create FAIR tables can be found in the previous Chapter <a href="section_fair_astro.html#general_rules" target="_blank">"FAIR principles for astronomical data"</a>.
 
 Following this checklist will help improving the efficiency of the ingestion in VizieR and also the visibility and reusability of your data :).
 
@@ -226,16 +226,19 @@ Show some good and bad examples of filenames.
 
 ## Quiz: Are these filenames correct or not?
 
-
-```
 Q1) 'TABLE998.dat'
+
 Q2) 'table.4.long.version.dat'
+
 Q3) 'table.dat'
+
 Q4) 'test+table.dat'
+
 Q5) 'my_table.data'
+
 Q6) 'table&data.dat'
+
 Q7) 'myfile.jpg'
-```
 
 :::::::::::::::::::::::: solution
 
@@ -317,3 +320,11 @@ In the next chapters, you will learn how to submit your data to VizieR, and fina
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
 
+
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>
