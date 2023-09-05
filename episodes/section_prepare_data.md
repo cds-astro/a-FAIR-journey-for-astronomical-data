@@ -118,7 +118,7 @@ Files containing different numbers of columns per rows.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
-More details on how to create FAIR tables can be found in the previous Chapter <a href="section_fair_astro.html#general_rules" target="_blank">FAIR principles for astronomical data</a>.
+More details on how to create FAIR tables can be found in the previous Chapter <a href="section_fair_astro.html#general_rules" target="_blank">"FAIR principles for astronomical data"</a>.
 
 Following this checklist will help improving the efficiency of the ingestion in VizieR and also the visibility and reusability of your data :).
 

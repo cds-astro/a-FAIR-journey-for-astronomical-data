@@ -280,7 +280,6 @@ and explain how to correct them.
 
 ## Quiz: Why are these astronomical designations improper?
 
-
 Q1) SDSS J1441+0948
 
 Q2) SN 5J 
@@ -299,10 +298,18 @@ Q8) Gaia DR 2 2.7904e18
 
 Q9) mu cep
 
-*Hint:* Look for these objects in [Simbad][simbad-home].
+:::::::::::::::::::::::: hint
+
+## Hint
+
+Look for these objects in [Simbad][simbad-home].
+
 Can you find them?
 
-:::::::::::::::::::::::: hint
+:::::::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::: solution
 
 ## Why is it improper?
 
@@ -541,7 +548,7 @@ Stick to one value!
 e) Authors should include a human-readable description of the data,
 with at least the column descriptions, units, and references (on the 
 origin of the measurements or instruments for observations when relevant) 
-in a ReadMe file. More help on the ReadMe is given in a <a href="section_submit_data.html">forthcoming Chapter</a>.
+in a ReadMe file. More help on the ReadMe is given in the <a href="section_submit_data.html" target="_blank">Chapter "Submitting astronomical data"</a>.
 </pre></big>
 
 <!--  ----------------- -->

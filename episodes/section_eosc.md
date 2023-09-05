@@ -41,7 +41,6 @@ The first stop for your data after VizieR is the [International Virtual Observat
 Then the datasets reach a broader audience when [EUDAT/B2Find][b2find] and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry. In this way the familiar processes of publishing data become part of the wider EOSC system. 
 
 
-
 <!--  ----------------------------------------- -->
 <!--            EOSC	                        -->
 <!--  ----------------------------------------- -->
