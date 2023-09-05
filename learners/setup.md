@@ -94,8 +94,16 @@ If you have got any questions, feel free to contact directly the VizieR team at:
 
 
 <!--  ----------------------------------------- -->
-<!--            Link references                 -->
+<!--            Link references  ==> links.md   -->
 <!--  ----------------------------------------- -->
-[vizier-publi-data-home]: https://vizier.cds.unistra.fr/vizier/submit.htx
+
+
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>
 
 

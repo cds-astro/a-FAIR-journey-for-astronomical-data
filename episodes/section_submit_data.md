@@ -16,7 +16,7 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Fill a *ReadMe* file
-- Submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards.
+- Submit your data in the existing and new Open Science systems,  keeping in mind the Virtual Observatory (VO) standards
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -59,7 +59,7 @@ Two routes are possible to submit your data to VizieR:
 		- They will be then available via our [dedicated interface Saada/VizieR][vizier-assoc-data].
 - Option 2: Use the [**File Transfer Protocol (FTP)**][vizier-ftp-login]
 	- You can use the [**Python cdspyreadme library**][vizier-cdspyreadme] to create the required *ReadMe* file.
-	- Tables and other data (not necessarily FITS) can be uploaded. More information on the data types accepted are available in the previous Chapter <a href="section_prepare_data.html" target="_blank">Preparing your data</a>.
+	- Tables and other data (not necessarily FITS) can be uploaded. More information on the data types accepted are available in the previous Chapter <a href="section_prepare_data.html" target="_blank">"Preparing your data"</a>.
 
 
 <!-- #### Special case: large volumetry -->
@@ -275,7 +275,7 @@ allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 
 The VizieR submit service detects automatically the input format.
 Please, upload here only the regular tabular data (tables).
-More information on the accepted formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
+More information on the accepted formats can be found in the Chapter <a href="section_prepare_data.html" target="_blank">"Preparing your data"</a>.
 
 
 The upload will generate:
@@ -324,7 +324,7 @@ Then you submit the updated *ReadMe* with the "upload" button:
 ### Upload FITS Spectra / Time series
 
 Once the tables and the *ReadMe* are uploaded, you can upload your associated data: spectra and time series.
-More information on the accepted formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
+More information on the accepted formats can be found in the Chapter <a href="section_prepare_data.html" target="_blank">"Preparing your data"</a>.
 
 The FITS upload generates a mapping between the spectra FITS header and ObsCore keywords. We strongly encourage you to modify the mapping to better describe your data.
 
@@ -352,7 +352,7 @@ For each upload, a report is available. **It is recommended to verify the mappin
 
 FITS images can also be uploaded in a similar way as the FITS Spectra (see above).
  
-More information on the accepted formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
+More information on the accepted formats can be found in the Chapter <a href="section_prepare_data.html" target="_blank">"Preparing your data"</a>.
 
 
 ![Figure: VizieR catalogue upload page - step FITS images (Screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png){alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023"} 
@@ -429,7 +429,7 @@ On success, a mail is sent to your email address with the FTP login and some ins
 Your freshly created account is ready and available for **3** days.
 You can put your files directly under the repository  (the root ftp directory being dedicated per login).
 
-More information on the accepted data and formats can be found in the Chapter [Preparing your data](../section_prepare_data.md).
+More information on the accepted data and formats can be found in the Chapter <a href="section_prepare_data.html" target="_blank">"Preparing your data"</a>.
 
 Type the following command in a terminal to access the FTP server: `ftp ftp.cds.unistra.fr`.
 
@@ -543,4 +543,14 @@ In the next chapters, you will learn what happen to your submitted data before t
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
+
+
+
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>
 

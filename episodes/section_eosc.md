@@ -14,8 +14,8 @@ exercises: 1
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Describe the integration of astronomy data services in the VO and EOSC.
-- Naviguate through the EOSC portal. 
+- Describe the integration of astronomy data services in the VO and EOSC
+- Naviguate through the EOSC portal
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -39,7 +39,6 @@ Work within the [ESCAPE project][escape] and the [EOSC Future project][eosc-futu
 The first stop for your data after VizieR is the [International Virtual Observatory Alliance (IVOA) registry][ivoa-registry]. It gathers the data from ViZieR, and other astronomical data centers.
 
 Then the datasets reach a broader audience when [EUDAT/B2Find][b2find] and the EOSC registries gather information (harvest) about everything emitted by the IVOA registry. In this way the familiar processes of publishing data become part of the wider EOSC system. 
-
 
 
 <!--  ----------------------------------------- -->
@@ -235,17 +234,24 @@ Browse through EOSC Portal to find some datasets and publications, and answer th
 ## Can you answer the following questions?
 
 
-```
 Q1) What is the publication date for 'Brightest cluster galaxies in Abell clusters'?
+
 Q2) Which CDS service is listed in the 'Services' type of results?
+
 Q3) Can you list some 'cds-astro' Softwares available?
+
 Q4) Advanced question: can you find the dataset associated with the word 'Astronomy'
 and published by the 'National Radio Astronomy Observatory'? 
+
 Q5) If you published a paper or a dataset, type your name in the Search bar. 
 What do you get as an output?
-```
 
-Hint: Browse through [EOSC Portal][eosc-portal] to answer the previous questions.
+:::::::::::::::::::::::: hint
+
+Browse through [EOSC Portal][eosc-portal] to answer the previous questions.
+
+:::::::::::::::::::::::::::::::::
+
 
 :::::::::::::::::::::::: solution
 
@@ -305,4 +311,11 @@ The search result Data should look like: [search-result][eosc-question4-dataset]
 This concludes this training on how to make your published astronomical data (table, images, spectra, …) FAIR and openly accessible to the community, and discoverable in Virtual Observatory tools such as EOSC.
 
 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script>
 
