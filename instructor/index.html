@@ -496,38 +496,18 @@ training format and The Carpentries Incubator lesson infrastructure.</p>
 VizieR team at: <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>
 .</p>
 <!--  ----------------------------------------- -->
-<!--            Link references                 -->
+<!--            Link references  ==> links.md   -->
 <!--  ----------------------------------------- -->
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="../instructor/section1_intro.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
@@ -576,7 +556,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/index.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/index.html",
-  "dateCreated": "2023-09-04",
+  "dateCreated": "2023-09-05",
   "dateModified": "2023-09-05",
   "datePublished": "2023-09-05"
 }

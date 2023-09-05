@@ -315,7 +315,7 @@
         
 <section id="aio-section1_intro"><p>Content from <a href="section1_intro.html">Why distribute your data through VizieR?</a></p>
 <hr>
-<p> Last updated on 2023-09-04 | 
+<p> Last updated on 2023-09-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section1_intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -543,38 +543,18 @@ search your data using the EOSC tools.</p>
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section><section id="aio-section_fair_astro"><p>Content from <a href="section_fair_astro.html">FAIR principles for astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-09-04 | 
+<p> Last updated on 2023-09-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_fair_astro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -838,8 +818,8 @@ b) The period of a periodic phenomenon should be given as
 c) Present a measurement as 0.123±0.002, 
 not 0.12345±0.002 or 0.123±0.00234.
 d) Present source color “(B-V) = 0.45 mag” instead of “(B-V) = 0.45”
-e) State your preferred solution in the text and have a dedicated column for the adopted solution in your Table, 
-as shown in <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/261/19/table8" target="_blank" class="external-link">Table 8 from VizieR catalogue J/ApJS/261/19</a>
+e) State your preferred solution in the text and have a dedicated column 
+for the adopted solution in your Table, as shown in <a href="https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/261/19/table8" target="_blank" class="external-link">Table 8 from VizieR catalogue J/ApJS/261/19</a>
 </pre>
 </big><p></p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main//episodes/images/vizier_adopted_value_example.png" alt="Small extract of Table 8 from VizieR catalogue J/ApJS/261/19, displaying 4 columns for the effective temperature: TeffR, TeffS, TeffP and Teff, the latter one corresponding to their adopted temperature" class="figure mx-auto d-block"><figcaption>Figure: Extract of Table 8 from VizieR catalogue
@@ -928,17 +908,15 @@ to link your data in the different tables of your paper. -->
 improper?<a class="anchor" aria-label="anchor" href="#quiz-why-are-these-astronomical-designations-improper"></a>
 </h3>
 <div class="callout-content">
-<pre><code>Q1) SDSS J1441+0948
-Q2) SN 5J 
-Q3) HESS J232+202
-Q4) BR 0529-3526
-Q5) B0008+006
-Q6) DEM45
-Q7) Gaia 2448177130188111232 
-Q8) Gaia DR 2 2.7904e18
-Q9) mu cep</code></pre>
-<p>Hint: Look for these objects in <a href="http://simbad.cds.unistra.fr/simbad/" class="external-link">Simbad</a>. Can you find
-them?</p>
+<p>Q1) SDSS J1441+0948</p>
+<p>Q2) SN 5J</p>
+<p>Q3) HESS J232+202</p>
+<p>Q4) BR 0529-3526</p>
+<p>Q5) B0008+006</p>
+<p>Q6) DEM45</p>
+<p>Q7) Gaia 2448177130188111232</p>
+<p>Q8) Gaia DR 2 2.7904e18</p>
+<p>Q9) mu cep</p>
 </div>
 </div>
 </div>
@@ -946,26 +924,13 @@ them?</p>
 <div class="accordion-item">
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1">
-  Why is it improper?
+  Give me a hint
   </h4>
 </button>
 <div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
-<pre><code>I1) Insufficient precision in RA and DEC causes confusion.
-In this case, it could correspond to many objects in the different SDSS releases.
-I2) Incomplete name can be interpreted into different objects.
-I3) Leading zero in RA is missing and can cause misinterpretation 
-of the RA at 23 hours instead of 02 hour. 
-I4) Missing letter J to specify J2000 equatorial coordinates.
-I5) Name prefix is needed to distinguish between different objects.
-I6) H II regions in LMC or SMC should be indicated with 
-“L” or “S” to avoid ambiguity.
-I7) Database objectID number is used without specifying release 
-number. The same running number may refer to a different source 
-in a different release.
-I8) ID is written in scientific notation, making it impossible 
-to retrieve the actual object (which is a 19-integer number).
-I9) Ambiguous name can be interpreted into different objects.</code></pre>
+<p>Look for these objects in <a href="http://simbad.cds.unistra.fr/simbad/" class="external-link">Simbad</a>.</p>
+<p>Can you find them?</p>
 </div>
 </div>
 </div>
@@ -974,23 +939,53 @@ I9) Ambiguous name can be interpreted into different objects.</code></pre>
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5">
-  Recommended usage
+  Why is it improper?
   </h4>
 </button>
 <div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
-<pre><code>R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
-or SDSS J144157.26+094853.7
-R2) SN 2005J or SN 2015J are different targets
-R3) HESS J0232+202
-R4) BR J0529-3526
-R5) QSO B0008+006 (Redshift z = 2.3) and
-IVS B0008+006 (Redshift z = 1.5) are different targets
-R6) DEM L 045, or DEM S 045
-R7) Gaia DR3 2448177130188111232
-R8) Gaia DR2 2790494815860044544
-R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or
-V* MU Cep (22h23m38.63s, +57d40m50.8s, J2000)</code></pre>
+<p>I1) Insufficient precision in RA and DEC causes confusion. In this
+case, it could correspond to many objects in the different SDSS
+releases.</p>
+<p>I2) Incomplete name can be interpreted into different objects.</p>
+<p>I3) Leading zero in RA is missing and can cause misinterpretation of
+the RA at 23 hours instead of 02 hour.</p>
+<p>I4) Missing letter J to specify J2000 equatorial coordinates.</p>
+<p>I5) Name prefix is needed to distinguish between different
+objects.</p>
+<p>I6) H II regions in LMC or SMC should be indicated with “L” or “S” to
+avoid ambiguity.</p>
+<p>I7) Database objectID number is used without specifying release
+number. The same running number may refer to a different source in a
+different release.</p>
+<p>I8) ID is written in scientific notation, making it impossible to
+retrieve the actual object (which is a 19-integer number).</p>
+<p>I9) Ambiguous name can be interpreted into different objects.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6">
+  Recommended usage
+  </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
+<p>R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, or SDSS
+J144157.26+094853.7</p>
+<p>R2) SN 2005J or SN 2015J are different targets</p>
+<p>R3) HESS J0232+202</p>
+<p>R4) BR J0529-3526</p>
+<p>R5) QSO B0008+006 (Redshift z = 2.3) and IVS B0008+006 (Redshift z =
+1.5) are different targets</p>
+<p>R6) DEM L 045, or DEM S 045</p>
+<p>R7) Gaia DR3 2448177130188111232</p>
+<p>R8) Gaia DR2 2790494815860044544</p>
+<p>R9) *mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or V* MU Cep
+(22h23m38.63s, +57d40m50.8s, J2000)</p>
 </div>
 </div>
 </div>
@@ -1222,7 +1217,7 @@ Stick to one value!
 e) Authors should include a human-readable description of the data,
 with at least the column descriptions, units, and references (on the 
 origin of the measurements or instruments for observations when relevant) 
-in a ReadMe file. More help on the ReadMe is given in a <a href="section_submit_data.html">forthcoming Chapter</a>.
+in a ReadMe file. More help on the ReadMe is given in the <a href="section_submit_data.html" target="_blank">Chapter "Submitting astronomical data"</a>.
 </pre>
 </big><p></p>
 <!--  ----------------- -->
@@ -1293,14 +1288,14 @@ more machine readable, and therefore the data more reusable.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7">
   Recommended usage
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <table class="table">
 <thead><tr class="header">
@@ -1510,21 +1505,21 @@ of the VizieR service was published in 2000, A&amp;AS 143, 23.
 facilities?<a class="anchor" aria-label="anchor" href="#quiz-can-you-guess-the-names-of-these-facilities"></a>
 </h3>
 <div class="callout-content">
-<pre><code>Q1) ARO
-Q2) DDO
-Q3) EMIR
-Q4) OSIRIS</code></pre>
+<p>Q1) ARO</p>
+<p>Q2) DDO</p>
+<p>Q3) EMIR</p>
+<p>Q4) OSIRIS</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
-  <h4 class="accordion-header" id="headingSolution7">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
+  <h4 class="accordion-header" id="headingSolution8">
   List of solutions
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -1706,38 +1701,18 @@ identified with the <strong>same name between tables</strong>.</li>
 submission routes (depending on your journal) and then how to prepare
 and submit your data to VizieR. Ultimately you will see how to search
 your data using the EOSC tools.</p>
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section><section id="aio-section_submission_per_journals"><p>Content from <a href="section_submission_per_journals.html">Submission routes and journals</a></p>
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section><section id="aio-section_submission_per_journals"><p>Content from <a href="section_submission_per_journals.html">Submission routes and journals</a></p>
 <hr>
-<p> Last updated on 2023-09-04 | 
+<p> Last updated on 2023-09-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submission_per_journals.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2044,38 +2019,18 @@ your data in the Virtual Observatory and up to EOSC.</p>
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-09-04 | 
+<p> Last updated on 2023-09-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2247,8 +2202,8 @@ for missing values if needed.</li>
 </div>
 <p>More details on how to create FAIR tables can be found in the
 previous Chapter
-<a href="section_fair_astro.html#general_rules" target="_blank">FAIR
-principles for astronomical data</a>.</p>
+<a href="section_fair_astro.html#general_rules" target="_blank">“FAIR
+principles for astronomical data”</a>.</p>
 <p>Following this checklist will help improving the efficiency of the
 ingestion in VizieR and also the visibility and reusability of your data
 :).</p>
@@ -2410,13 +2365,13 @@ Standards for Catalogues document</a>.</p>
 <h3 class="callout-title">Quiz: Are these filenames correct or not?<a class="anchor" aria-label="anchor" href="#quiz-are-these-filenames-correct-or-not"></a>
 </h3>
 <div class="callout-content">
-<pre><code>Q1) 'TABLE998.dat'
-Q2) 'table.4.long.version.dat'
-Q3) 'table.dat'
-Q4) 'test+table.dat'
-Q5) 'my_table.data'
-Q6) 'table&amp;data.dat'
-Q7) 'myfile.jpg'</code></pre>
+<p>Q1) ‘TABLE998.dat’</p>
+<p>Q2) ‘table.4.long.version.dat’</p>
+<p>Q3) ‘table.dat’</p>
+<p>Q4) ‘test+table.dat’</p>
+<p>Q5) ‘my_table.data’</p>
+<p>Q6) ‘table&amp;data.dat’</p>
+<p>Q7) ‘myfile.jpg’</p>
 </div>
 </div>
 </div>
@@ -2427,7 +2382,7 @@ Q7) 'myfile.jpg'</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>R1) No: filenames should be in lowercase.</p>
 <p>R2) No: filename too long. This filename will be shortened afterwards
@@ -2500,38 +2455,18 @@ VizieR, and finally how to search your data using the EOSC tools.</p>
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section><section id="aio-section_submit_data"><p>Content from <a href="section_submit_data.html">Submitting astronomical data</a></p>
 <hr>
-<p> Last updated on 2023-09-04 | 
+<p> Last updated on 2023-09-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2560,7 +2495,7 @@ any links that you are not going to use.
 <ul>
 <li>Fill a <em>ReadMe</em> file</li>
 <li>Submit your data in the existing and new Open Science systems,
-keeping in mind the Virtual Observatory (VO) standards.</li>
+keeping in mind the Virtual Observatory (VO) standards</li>
 </ul>
 </div>
 </div>
@@ -2611,8 +2546,8 @@ cdspyreadme library</strong></a> to create the required <em>ReadMe</em>
 file.</li>
 <li>Tables and other data (not necessarily FITS) can be uploaded. More
 information on the data types accepted are available in the previous
-Chapter <a href="section_prepare_data.html" target="_blank">Preparing
-your data</a>.</li>
+Chapter <a href="section_prepare_data.html" target="_blank">“Preparing
+your data”</a>.</li>
 </ul>
 </li>
 </ul>
@@ -2753,7 +2688,7 @@ such that a conversion to FITS could keep the text as COMMENT cards.</p>
   A. ‘Abstract’ and ‘Description’ headers
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>
@@ -2784,7 +2719,7 @@ data</em>, such as instrumentation or observing conditions.
   B. ‘Objects’ header (optional)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>The list of <strong>observed objects</strong> can be used when no
 data table contains the list and position of the astronomical objects
@@ -2803,7 +2738,7 @@ few objects – less than 10 or 20 typically.</p>
   C. ‘Byte-by-byte Description of file’ header
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>This section describes the structure of each data files (files with
 the .dat extension). This description is made in a tabular form, each
@@ -2897,7 +2832,9 @@ overflow: hidden; display: block; " allowfullscreen="" allow="autoplay" data-ext
 </h3>
 <p>The VizieR submit service detects automatically the input format.
 Please, upload here only the regular tabular data (tables). More
-information on the accepted formats can be found in the Chapter <a href="section_prepare_data.html">Preparing your data</a>.</p>
+information on the accepted formats can be found in the Chapter
+<a href="section_prepare_data.html" target="_blank">“Preparing your
+data”</a>.</p>
 <p>The upload will generate:</p>
 <ul>
 <li>a <em>ReadMe</em> skeleton including the byte-by-byte based on your
@@ -2947,7 +2884,9 @@ this stage. Adding tables later implies to remove all tables and
 </h3>
 <p>Once the tables and the <em>ReadMe</em> are uploaded, you can upload
 your associated data: spectra and time series. More information on the
-accepted formats can be found in the Chapter <a href="section_prepare_data.html">Preparing your data</a>.</p>
+accepted formats can be found in the Chapter
+<a href="section_prepare_data.html" target="_blank">“Preparing your
+data”</a>.</p>
 <p>The FITS upload generates a mapping between the spectra FITS header
 and ObsCore keywords. We strongly encourage you to modify the mapping to
 better describe your data.</p>
@@ -2984,7 +2923,8 @@ Spectra(screenshot)</figcaption></figure><hr>
 <p>FITS images can also be uploaded in a similar way as the FITS Spectra
 (see above).</p>
 <p>More information on the accepted formats can be found in the Chapter
-<a href="section_prepare_data.html">Preparing your data</a>.</p>
+<a href="section_prepare_data.html" target="_blank">“Preparing your
+data”</a>.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_submit_online_interface_july23/step4_fits_images.png" alt="Screenshot: VizieR Catalogue upload page, upload associated data: FITS Images after initiating a session, uploading your tables, filling the ReadMe file and uploading FITS Spectra and Time Series, from June 2023" class="figure mx-auto d-block"><figcaption>Figure: VizieR catalogue upload page - step FITS
 images (Screenshot)</figcaption></figure><hr>
 </div>
@@ -3051,7 +2991,8 @@ and some instructions.</p>
 <strong>3</strong> days. You can put your files directly under the
 repository (the root ftp directory being dedicated per login).</p>
 <p>More information on the accepted data and formats can be found in the
-Chapter <a href="section_prepare_data.html">Preparing your data</a>.</p>
+Chapter <a href="section_prepare_data.html" target="_blank">“Preparing
+your data”</a>.</p>
 <p>Type the following command in a terminal to access the FTP server:
 <code>ftp ftp.cds.unistra.fr</code>.</p>
 <div class="codewrapper">
@@ -3180,38 +3121,18 @@ journey into the Virtual Observatory and up to EOSC.</p>
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section><section id="aio-section_data_curation"><p>Content from <a href="section_data_curation.html">Data curation at CDS</a></p>
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section><section id="aio-section_data_curation"><p>Content from <a href="section_data_curation.html">Data curation at CDS</a></p>
 <hr>
-<p> Last updated on 2023-09-04 | 
+<p> Last updated on 2023-09-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_data_curation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3507,38 +3428,18 @@ Observatory and up to EOSC.</p>
 <!-- 		Link references			-->
 <!--	==> See links.md file			-->
 <!--  ----------------------------------------- -->
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO and EOSC</a></p>
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section><section id="aio-section_eosc"><p>Content from <a href="section_eosc.html">Journey of your data in the VO and EOSC</a></p>
 <hr>
-<p> Last updated on 2023-09-04 | 
+<p> Last updated on 2023-09-05 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_eosc.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3565,8 +3466,8 @@ any links that you are not going to use.
 <h3 class="card-title">Objectives</h3>
 <ul>
 <li>Describe the integration of astronomy data services in the VO and
-EOSC.</li>
-<li>Naviguate through the EOSC portal.</li>
+EOSC</li>
+<li>Naviguate through the EOSC portal</li>
 </ul>
 </div>
 </div>
@@ -3796,15 +3697,31 @@ result (screenshot)</figcaption></figure><!--  ---------------------------------
 <h3 class="callout-title">Can you answer the following questions?<a class="anchor" aria-label="anchor" href="#can-you-answer-the-following-questions"></a>
 </h3>
 <div class="callout-content">
-<pre><code>Q1) What is the publication date for 'Brightest cluster galaxies in Abell clusters'?
-Q2) Which CDS service is listed in the 'Services' type of results?
-Q3) Can you list some 'cds-astro' Softwares available?
-Q4) Advanced question: can you find the dataset associated with the word 'Astronomy'
-and published by the 'National Radio Astronomy Observatory'? 
-Q5) If you published a paper or a dataset, type your name in the Search bar. 
-What do you get as an output?</code></pre>
-<p>Hint: Browse through <a href="https://eosc-portal.eu/" class="external-link">EOSC
-Portal</a> to answer the previous questions.</p>
+<p>Q1) What is the publication date for ‘Brightest cluster galaxies in
+Abell clusters’?</p>
+<p>Q2) Which CDS service is listed in the ‘Services’ type of
+results?</p>
+<p>Q3) Can you list some ‘cds-astro’ Softwares available?</p>
+<p>Q4) Advanced question: can you find the dataset associated with the
+word ‘Astronomy’ and published by the ‘National Radio Astronomy
+Observatory’?</p>
+<p>Q5) If you published a paper or a dataset, type your name in the
+Search bar. What do you get as an output?</p>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1">
+  Give me a hint
+  </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>Browse through <a href="https://eosc-portal.eu/" class="external-link">EOSC Portal</a> to
+answer the previous questions.</p>
+</div>
 </div>
 </div>
 </div>
@@ -3888,36 +3805,16 @@ thanks to the interoperability of the data.</p></li>
 astronomical data (table, images, spectra, …) FAIR and openly accessible
 to the community, and discoverable in Virtual Observatory tools such as
 EOSC.</p>
-<!-- 
+<!--  ----------------------------------------- -->
+<!-- Transform link a/href with target="_blank" -->
+<!-- Open them in a new window			-->
+<!--  ----------------------------------------- -->
+<script>
+document.querySelectorAll('#main-content a:not([target])').forEach(link => link.setAttribute('target', '_blank'))
+</script><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
- -->
-<!--  ----------------------------------------- -->
-<!--            Link references                 -->
-<!--  ----------------------------------------- -->
-<!-- CDS -->
-<!-- -->
-<!-- VizieR -->
-<!-- VizieR File submission -->
-<!-- VizieR FTP -->
-<!-- VizieR mirrors -->
-<!-- VizieR Readme-->
-<!-- VizieR example Gaia DR3 and other examples-->
-<!-- -->
-<!-- Journals -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- Data centres -->
-<!-- -->
-<!-- Others -->
-<!-- -->
-<!-- Papers -->
-<!-- -->
-<!-- EOSC -->
-</section></section>
+ --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section>
 </div>
     </main>
 </div>
@@ -3965,7 +3862,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2023-09-04",
+  "dateCreated": "2023-09-05",
   "dateModified": "2023-09-05",
   "datePublished": "2023-09-05"
 }
