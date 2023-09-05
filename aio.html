@@ -2688,7 +2688,7 @@ such that a conversion to FITS could keep the text as COMMENT cards.</p>
   A. ‘Abstract’ and ‘Description’ headers
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>
@@ -2719,7 +2719,7 @@ data</em>, such as instrumentation or observing conditions.
   B. ‘Objects’ header (optional)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The list of <strong>observed objects</strong> can be used when no
 data table contains the list and position of the astronomical objects
@@ -2738,7 +2738,7 @@ few objects – less than 10 or 20 typically.</p>
   C. ‘Byte-by-byte Description of file’ header
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>This section describes the structure of each data files (files with
 the .dat extension). This description is made in a tabular form, each
@@ -3198,6 +3198,7 @@ datasets.</p>
 <h3 class="callout-title">Units corrected<a class="anchor" aria-label="anchor" href="#units-corrected"></a>
 </h3>
 <div class="callout-content">
+<!-- Link to journal: Biny 2017 // https://iopscience.iop.org/article/10.3847/1538-3881/aa88d0#ajaa88d0t2 -->
 <p>In the example below the original unit for a cylindrical volume of a
 region (column <em>Size</em> from the figure below) was wrongly set to
 <em>cm<sup>-3</sup></em>.</p>
@@ -3206,7 +3207,7 @@ region (column <em>Size</em> from the figure below) was wrongly set to
 description and unit correction (field <em>V</em> from the figure
 below).</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png" alt="Screenshot -- VizieR table with units corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Units corrected in VizieR table
-(screenshot)</figcaption></figure><!-- https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units.png -->
+(screenshot)</figcaption></figure>
 </div>
 </div>
 </div>
@@ -3226,11 +3227,16 @@ to search for data in VizieR.</p>
 <h3 class="callout-title">Coordinates corrected<a class="anchor" aria-label="anchor" href="#coordinates-corrected"></a>
 </h3>
 <div class="callout-content">
+<!-- Link to paper: https://iopscience.iop.org/article/10.3847/0004-637X/822/2/59#apj522819t1 // Table 1-->
 <p>Here is an example of coordinates with discrepancies when the
 declination is at 0 degree.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png" alt="Screenshot -- Table with wrong coordinates as made available in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Coordinates as written in original
-paper (screenshot)</figcaption></figure><p>Once the error detected by our team, the positions were then updated,
-two years after the data ingestion in VizieR.</p>
+paper (screenshot). The following columns are displayed: Seq (catalog
+index number); BGPS source identifier; Hour, Minute and Second of Right
+Ascension (J2000); Sign, Degree, Arcminute, Arcsecond of the Declination
+(J2000).</figcaption></figure><!-- Link to Readme: J/ApJ/822/59 // https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/J/ApJ/822/59?format=html&tex=true // clumps--><p>Once the error detected by our team (missing minus sign for some
+Declinations), the positions were then updated, two years after the data
+ingestion in VizieR.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png" alt="Screenshot -- VizieR table with coordinates corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Coordinates corrected in VizieR table
 (screenshot)</figcaption></figure>
 </div>
@@ -3239,6 +3245,25 @@ two years after the data ingestion in VizieR.</p>
 <p>When there are none, positions can be added from other catalogues or
 from SIMBAD if available. Alternatively, we ask for them (sometimes we
 have an answer).</p>
+<div id="coordinates-added" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="coordinates-added" class="callout-inner">
+<h3 class="callout-title">Coordinates added<a class="anchor" aria-label="anchor" href="#coordinates-added"></a>
+</h3>
+<div class="callout-content">
+<!-- Link to paper: https://iopscience.iop.org/article/10.3847/1538-4357/ac0fda#apjac0fdat3 // Table 3-->
+<p>In the following example, we can see that no coordinate was provided
+in the original table.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_before.png" alt="Screenshot -- Table without coordinates as available in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Columns as written in original table
+(screenshot)</figcaption></figure><!-- Link to Readme: J/ApJ/919/121  // https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/919/121/table3&-out.max=50&-out.form=HTML%20Table&-oc.form=sexa // table 3 --><p>Using SIMBAD and the HASH PN databases, we were able to complement
+this table with positions.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_after.png" alt="Screenshot -- Table with SimbadName and coordinates informations added to the original columns" class="figure mx-auto d-block"><figcaption>Figure: After – Coordinates added in VizieR table
+(screenshot)</figcaption></figure>
+</div>
+</div>
+</div>
 <!--  ----------------------------------------- -->
 </div>
 <div class="section level3">
@@ -3250,19 +3275,21 @@ have an answer).</p>
 <i class="callout-icon" data-feather="heart"></i>
 </div>
 <div id="simbad-names-added-misprint-on-names-corrected" class="callout-inner">
-<h3 class="callout-title">SIMBAD names added + Misprint on names
+<h3 class="callout-title">SIMBAD names added + misprint on names
 corrected<a class="anchor" aria-label="anchor" href="#simbad-names-added-misprint-on-names-corrected"></a>
 </h3>
 <div class="callout-content">
+<!-- Link to VizieR: J/ApJ/833/20  // https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/833/20 // table 1 -->
 <p>To retrieve coordinates and easy the cross identification between
 SIMBAD and VizieR, a proper identification is needed.</p>
 <p>Here is an example of truncated SDSS names… Impossible to retrieve
 except by coordinates that we luckily have in this case. So the
 SimbadName has been added after the process for SIMBAD where misprints
-on coordinates have been detected. For this object with coordinates
-pointing to nothing, the right ones have been found thanks to the
-bibcode given in the table.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png" alt="Screenshot -- VizieR table with SIMBAD-names added" class="figure mx-auto d-block"><figcaption>Figure: Example of names recognized by SIMBAD added
+on coordinates have been detected (identified by the column
+<em>f_Name</em> set to <em>o</em> below). For this object with
+coordinates pointing to nothing, the right ones have been found thanks
+to the bibcode given in the table.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png" alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected" class="figure mx-auto d-block"><figcaption>Figure: Example of names recognized by SIMBAD added
 to the original table submitted to VizieR (screenshot)</figcaption></figure>
 </div>
 </div>
@@ -3274,7 +3301,7 @@ to the original table submitted to VizieR (screenshot)</figcaption></figure>
 </h3>
 <p>We add mimimum and maximum values of numerical columns. It allows us
 to detect some oddities and it is helpful also for the astronomer who
-will validate the catalogue afterwards.</p>
+will validate the VizieR catalogue afterwards.</p>
 <div id="min-max-values-added" class="callout testimonial">
 <div class="callout-square">
 <i class="callout-icon" data-feather="heart"></i>
@@ -3283,6 +3310,7 @@ will validate the catalogue afterwards.</p>
 <h3 class="callout-title">Min-max values added<a class="anchor" aria-label="anchor" href="#min-max-values-added"></a>
 </h3>
 <div class="callout-content">
+<!-- Link to VizieR: J/A+A/569/A17 // https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/J/A+A/569/A17?format=html&tex=true -->
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png" alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields" class="figure mx-auto d-block"><figcaption>Figure: Example of minimum and maximum values (in
 brackets) added to a ReadMe file (screenshot)</figcaption></figure>
 </div>
@@ -3291,7 +3319,7 @@ brackets) added to a ReadMe file (screenshot)</figcaption></figure>
 <!--  ----------------------------------------- -->
 </div>
 <div class="section level3">
-<h3 id="verifications-example-5---missing-data">Verifications: Example 5 - Missing data<a class="anchor" aria-label="anchor" href="#verifications-example-5---missing-data"></a>
+<h3 id="verifications-example-5---link-between-tables">Verifications: Example 5 - Link between tables<a class="anchor" aria-label="anchor" href="#verifications-example-5---link-between-tables"></a>
 </h3>
 <p>We also add links between tables in VizieR. For instance, if an
 author said that magnitudes come from a certain survey, we actually
@@ -3300,24 +3328,25 @@ galaxy clusters and another the membership, we can add the number of
 galaxy members per cluster, assuming the cluster names are the same in
 both tables.</p>
 <p>Adding those links helps us to detect errors and missing data.</p>
-<div id="missing-data-retrieved" class="callout testimonial">
+<div id="link-between-tables-added" class="callout testimonial">
 <div class="callout-square">
 <i class="callout-icon" data-feather="heart"></i>
 </div>
-<div id="missing-data-retrieved" class="callout-inner">
-<h3 class="callout-title">Missing data retrieved<a class="anchor" aria-label="anchor" href="#missing-data-retrieved"></a>
+<div id="link-between-tables-added" class="callout-inner">
+<h3 class="callout-title">Link between tables added<a class="anchor" aria-label="anchor" href="#link-between-tables-added"></a>
 </h3>
 <div class="callout-content">
-<p>In the example below, the link between the two tables is the number
-of S43GHz flux measurements (column <em>Nc</em> from the figure
-below).</p>
-<p>When the data were first ingested, and it is still the case in the
-MRT table available with the paper, there was no measurement (<em>Nc =
-0</em>).</p>
-<p>We contacted the author to get the corresponding data and thus we can
-now plot the light curve of this object in VizieR.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_missing_data.png" alt="Screenshot -- Missing data retrieved by the CDS team enabling a better reusability of the original data" class="figure mx-auto d-block"><figcaption>Figure: Example of missing data retrieved, adding
-more visibility to the original set (screenshot)</figcaption></figure>
+<!-- Link to Vizier: J/ApJ/910/135 // https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/910/135 -->
+<p>In the example below, the column <em>Nz</em> (Number of high-z
+galaxies in a given cluster) has been added to the original Table 1 to
+create a link with the relics-z table.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_link_table_1.png" alt="Screenshot -- Link between columns added by the CDS team enabling a better reusability of the original data" class="figure mx-auto d-block"><figcaption>Figure: Example of column added to the original set –
+Table 1 – , adding more visibility to the data (screenshot)</figcaption></figure><p>By clicking on the value “14” from the column <em>Nz</em> for the
+cluster “plckg004-19”, one will get automatically the corresponding rows
+from the relics-z table, without any extra filtering, as illustrated
+below.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_link_table_2.png" alt="Screenshot -- Link between columns added by the CDS team enabling a better reusability of the original data, and a quicker access to the corresponding results" class="figure mx-auto d-block"><figcaption>Figure: Example of column added to the original set –
+relics-z table – , adding more visibility to the data (screenshot)</figcaption></figure>
 </div>
 </div>
 </div>
@@ -3336,6 +3365,7 @@ more visibility to the original set (screenshot)</figcaption></figure>
 <h3 class="callout-title">Cross-identification between tables<a class="anchor" aria-label="anchor" href="#cross-identification-between-tables"></a>
 </h3>
 <div class="callout-content">
+<!-- Link to paper: Kirby 2018 // https://iopscience.iop.org/article/10.3847/1538-4365/aac952#apjsaac952t1 // table 3 (A) and table 5 (B) -->
 <p>In the two figures below, we can see an example taken from a paper
 with two tables (<em>Tables A and B</em>) with two similar first columns
 in both:</p>
@@ -3347,8 +3377,12 @@ in both:</p>
 10018) mentionned in <em>Table A</em> corresponds to COS 347 in
 <em>Table B</em>.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png" alt="Screenshot -- Table A as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Extract of Table A from paper
-(screenshot)</figcaption></figure><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png" alt="Screenshot -- Table B as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – extract of Table B from paper
-(screenshot)</figcaption></figure><p>As there are no common identifier or coordinates repeated in the
+(screenshot). The following columns are displayed: Name of stellar
+system, Star name, RA (J2000), DEC (J2000), Bmag, Vmag, Rmag, CoFe,
+e_CoFe, NiFe, e_NiFe.</figcaption></figure><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png" alt="Screenshot -- Table B as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – extract of Table B from paper
+(screenshot). The following columns are displayed: Name of the stellar
+system, Star name, Reference for HRS abundances, Cr-HRS, e_Cr-HRS,
+Co-HRS.</figcaption></figure><!-- Link to Vizier: J/ApJS/237/18 // https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJS/237/18 --><p>As there are no common identifier or coordinates repeated in the
 second table, the only alternative would have been to go through the
 list of references cited (3rd column of <em>Table B</em>) to get the
 coordinates and identify the object one by one. Therefore, the CDS team
@@ -3584,7 +3618,7 @@ directly from the url.</p>
   By keywords
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A filtering by <strong>keywords</strong> can be done from the url by
 adding the field <em>&amp;fq=keywords:“my%20astro%20keyword”</em> to the
@@ -3607,7 +3641,7 @@ and Astronomy’ and ‘stellar astronomy’, one can do:
   By author names
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>A filtering by <strong>author names</strong> can also be done from
 the url by adding the field
@@ -3630,7 +3664,7 @@ collaboration’, one can do:
   By DOI
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Filtering by <strong>DOI</strong> can also be done from the url by
 adding the field <em>&amp;fq=<a href="doi:%22mydoi%5C%2Fnumber" class="uri">doi:"mydoi%5C%2Fnumber</a>“</em> to the url of the
@@ -3717,7 +3751,7 @@ Search bar. What do you get as an output?</p>
   Give me a hint
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Browse through <a href="https://eosc-portal.eu/" class="external-link">EOSC Portal</a> to
 answer the previous questions.</p>
@@ -3732,7 +3766,7 @@ answer the previous questions.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>R1) This paper was published on <a href="https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&amp;return_path=search%2Fall&amp;search_params=q%3DNGTS%2520clusters%2520survey" class="external-link">01
 Jan 2017</a>.</p>
