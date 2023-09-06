@@ -273,7 +273,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Submitting astronomical data</h1>
-        <p> Last updated on 2023-09-05 | 
+        <p> Last updated on 2023-09-06 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_submit_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -337,10 +337,7 @@ your tables and perform a few basic checks.
 you can upload it directly along with your tables.</li>
 </ul></li>
 <li>In addition to your table, FITS files (spectra or images) for
-associated data can be uploaded
-<ul><li>They will be then available via our <a href="https://cdsarc.cds.unistra.fr/assocdata/" class="external-link">dedicated interface
-Saada/VizieR</a>.</li>
-</ul></li>
+associated data can be uploaded.</li>
 </ul></li>
 <li>Option 2: Use the <a href="https://cds.unistra.fr/ftp/token/" class="external-link"><strong>File Transfer Protocol
 (FTP)</strong></a>
@@ -352,11 +349,7 @@ information on the data types accepted are available in the previous
 Chapter <a href="section_prepare_data.html" target="_blank">“Preparing
 your data”</a>.</li>
 </ul></li>
-</ul><!-- #### Special case: large volumetry --><p>The submission web application is an HTTP service and depends of
-authors network. The process is dedicated for tables size less than
-100Mb but accepts tables until ~200Mb.</p>
-<!-- Contact CDS -->
-<p>For larger files or any other questions, please contact the VizieR
+</ul><!-- Contact CDS --><p>For larger files or any other questions, please contact the VizieR
 staff: <a href="../mailto:cats@cdsarc.u-strasbg.fr">cats(at)cdsarc.u-strasbg.fr</a>.</p>
 <!--  ----------------------------------------- -->
 <!--   ReadMe files                             -->
@@ -393,10 +386,10 @@ Objects:
 
 File Summary:
 --------------------------------------------------------------------------------
- FileName                               Lrecl  Records  Explanations
+ FileName Lrecl  Records  Explanations
 --------------------------------------------------------------------------------
-ReadMe                                     80        .  This file
-table.dat     28      120
+ReadMe       80        .  This file
+table.dat    28      120
 
 
 
@@ -447,10 +440,10 @@ tool <a href="http://cdsarc.unistra.fr/doc/anafile.htx" class="external-link">an
 <p>The <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.1.htx" class="external-link">Standards
 for Astronomical Catalogues</a> gives a complete description of the
 standard for <em>ReadMe</em> files.</p>
-<p>In the following we give some tips on how to fill three different
-sections of the <em>ReadMe</em> file properly. The rest of the
+<p><strong>In the following we give some tips on how to fill three
+different sections of the <em>ReadMe</em> file properly. The rest of the
 <em>ReadMe</em> will be filled by CDS, and thus does not appear
-below.</p>
+below.</strong></p>
 <!-- Details of the template -->
 <div id="the-readme-file-in-more-depth" class="callout discussion">
 <div class="callout-square">
@@ -472,10 +465,31 @@ such that a conversion to FITS could keep the text as COMMENT cards.</p>
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">
-  A. ‘Abstract’ and ‘Description’ headers
+  A. ‘Title of the paper’, ‘Authors’, ‘Reference’
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ul><li>
+<strong>Title of the paper</strong>: Title as written in paper</li>
+<li>
+<strong>Authors</strong>: List of authors or collaboration</li>
+<li>
+<strong>Reference</strong>: If available (bibcode), otherwise the
+article number</li>
+</ul></div>
+</div>
+</div>
+</div>
+<!-- ---------------- -->
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  B. ‘Abstract’ and ‘Description’
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>
 <strong>Abstract</strong>: Describes the <em>scientific results</em>
@@ -493,33 +507,14 @@ data</em>, such as instrumentation or observing conditions.
 </div>
 </div>
 <!-- ---------------- -->
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  B. ‘Objects’ header (optional)
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<p>The list of <strong>observed objects</strong> can be used when no
-data table contains the list and position of the astronomical objects
-observed or studied, as for example in the study of a high-resolution
-spectrum of a single star. Such a list is normally restricted to very
-few objects – less than 10 or 20 typically.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- ---------------- -->
 <div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">
-  C. ‘Byte-by-byte Description of file’ header
+  C. ‘Byte-by-byte Description of file’
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>This section describes the structure of each data files (files with
 the .dat extension). This description is made in a tabular form, each
@@ -559,8 +554,10 @@ column (using <strong>[…]</strong>), the possibility of having
 unspecified or NULL values (using <strong>?</strong>), the order of the
 values within the table (increasing or decreasing order). More details
 can be found <a href="https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx" class="external-link">here</a>.</li>
-</ul><p>The CDS can help you to fill that part of the headers, but you will
-be responsible for the <em>explanations</em> and the <em>units</em>.</p>
+</ul><p><strong>The CDS can help you to fill a part of the byte-by-byte
+description (<em>bytes</em>, <em>format</em>, <em>label</em>), but it is
+crucial that you fill the <em>units</em> and <em>explanations</em>
+columns.</strong></p>
 </div>
 </div>
 </div>
@@ -913,9 +910,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/section_submit_data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section_submit_data.html",
-  "dateCreated": "2023-09-05",
-  "dateModified": "2023-09-05",
-  "datePublished": "2023-09-05"
+  "dateCreated": "2023-09-06",
+  "dateModified": "2023-09-06",
+  "datePublished": "2023-09-06"
 }
 
   </script><script>
