@@ -13,7 +13,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Describe the different submission routes
+- Describe the different submission routes per journal
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
