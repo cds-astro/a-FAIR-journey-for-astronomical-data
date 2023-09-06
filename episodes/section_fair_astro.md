@@ -545,8 +545,8 @@ Use the same representation for missing data and have a separate field
 that explains the reasons for a missing value. 
 Do not use different representations to indicate the different reasons.
 
-<em>Wrong example:</em> Using 0.00 for “not observed”, and -99.99 for “no detection”.
-Stick to one value only!
+<em>Wrong example:</em> Using 0.00 for “not observed”, and -99.99 for “no detection” in the same column.
+Stick to only one NULL value per column!
 
 e) Authors should include a human-readable description of the data,
 with at least the column descriptions, units, and references (on the 
