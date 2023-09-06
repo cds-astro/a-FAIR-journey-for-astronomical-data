@@ -84,7 +84,7 @@ Last modified: 4 September 2023
 This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website).
 
 
-All materials are developed online openly under <a href="license.html">CC-BY 4.0 License</a> using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
+All materials are developed online openly under <a href="LICENSE.html">CC-BY 4.0 License</a> using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
 
 
 ## Contact
