@@ -25,7 +25,7 @@ Once the data fully available on VizieR, they reach a broader audience with the 
 <!-- Astronomers who want to publish their data (table, images, spectra, …), and make them available to the community, following the FAIR principles. -->
 This training is aimed at researchers in astronomy who want to:
 
-- Make their published data (tables, images, spectra, …) <a href="section_fair_astro.html">Findable, Accessible, Interopable and Reusable (FAIR)</a> and openly accessible to the community. 
+- Make their published data (tables, images, spectra, …) <a href="section_fair_astro.html" target="_blank">Findable, Accessible, Interopable and Reusable (FAIR)</a> and openly accessible to the community. 
 - Ensure long-lasting access to their data. 
 - Learn about the new developments in Open Science that are being enabled by the EOSC.
 
@@ -52,9 +52,9 @@ By the end of this training, you should be able to:
 <!-- -------- -->
 ## Key Points and Glossary
  
-At the end of each chapter, important points are summarized. They are all listed <a href="key-points.html">here (Key Points)</a>.
+At the end of each chapter, important points are summarized. They are all listed <a href="key-points.html" target="_blank">here (Key Points)</a>.
 
-Additionally, some definitions can be found in the <a href="reference.html#glossary">Glossary</a>.
+Additionally, some definitions can be found in the <a href="reference.html#glossary" target="_blank">Glossary</a>.
  
 
 
@@ -84,7 +84,7 @@ Last modified: 4 September 2023
 This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-data-home] (VizieR website).
 
 
-All materials are developed online openly under <a href="LICENSE.html">CC-BY 4.0 License</a> using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
+All materials are developed online openly under <a href="LICENSE.html" target="_blank">CC-BY 4.0 License</a> using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
 
 
 ## Contact
