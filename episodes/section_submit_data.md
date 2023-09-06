@@ -55,15 +55,10 @@ Two routes are possible to submit your data to VizieR:
 	- The upload will generate a *ReadMe* skeleton file based on your tables and perform a few basic checks.
 		- You will need to check and complete this *ReadMe* file. 
 		- Alternatively, if you already have created a *ReadMe* file, you can upload it directly along with your tables.
-	- In addition to your table, FITS files (spectra or images) for associated data can be uploaded
-		- They will be then available via our [dedicated interface Saada/VizieR][vizier-assoc-data].
+	- In addition to your table, FITS files (spectra or images) for associated data can be uploaded.
 - Option 2: Use the [**File Transfer Protocol (FTP)**][vizier-ftp-login]
 	- You can use the [**Python cdspyreadme library**][vizier-cdspyreadme] to create the required *ReadMe* file.
 	- Tables and other data (not necessarily FITS) can be uploaded. More information on the data types accepted are available in the previous Chapter <a href="section_prepare_data.html" target="_blank">"Preparing your data"</a>.
-
-
-<!-- #### Special case: large volumetry -->
-The submission web application is an HTTP service and depends of authors network. The process is dedicated for tables size less than 100Mb but accepts tables until ~200Mb. 
 
 
 <!-- Contact CDS -->
@@ -113,10 +108,10 @@ Objects:
 
 File Summary:
 --------------------------------------------------------------------------------
- FileName                               Lrecl  Records  Explanations
+ FileName Lrecl  Records  Explanations
 --------------------------------------------------------------------------------
-ReadMe                                     80        .  This file
-table.dat     28      120
+ReadMe       80        .  This file
+table.dat    28      120
 
 
 
@@ -167,8 +162,8 @@ There are two recommended ways to generate your own *ReadMe* file:
 
 The [Standards for Astronomical Catalogues][vizier-readme-std] gives a complete description of the standard for *ReadMe* files. 
 
-In the following we give some tips on how to fill three different sections of the *ReadMe* file properly.
-The rest of the *ReadMe* will be filled by CDS, and thus does not appear below. 
+**In the following we give some tips on how to fill three different sections of the *ReadMe* file properly.
+The rest of the *ReadMe* will be filled by CDS, and thus does not appear below.**
 
 
 
@@ -183,10 +178,21 @@ It is moreover suggested to limit the textual parts to 70 characters, such that 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
+<!-- ---------------- -->
+:::::::::::::::: solution
+#### A. 'Title of the paper', 'Authors', 'Reference'
+
+- **Title of the paper**: Title as written in paper
+- **Authors**: List of authors or collaboration
+- **Reference**: If available (bibcode), otherwise the article number
+
+:::::::::::::::::::::::::
+
+
 
 <!-- ---------------- -->
 :::::::::::::::: solution
-#### A. 'Abstract' and 'Description' headers
+#### B. 'Abstract' and 'Description'
 
 - **Abstract**: Describes the *scientific results* that the author(s) derived from the data. 
 	- It is simply the one from your refereed paper. 
@@ -198,18 +204,11 @@ It is moreover suggested to limit the textual parts to 70 characters, such that 
 
 <!-- ---------------- -->
 :::::::::::::::: solution
-#### B. 'Objects' header (optional)
-The list of **observed objects** can be used when no data table contains the list and position of the astronomical objects observed or studied, as for example in the study of a high-resolution spectrum of a single star. Such a list is normally restricted to very few objects – less than 10 or 20 typically.
-
-:::::::::::::::::::::::::
-
-
-<!-- ---------------- -->
-:::::::::::::::: solution
-#### C. 'Byte-by-byte Description of file' header
+#### C. 'Byte-by-byte Description of file'
 
 This section describes the structure of each data files (files with the .dat extension).
 This description is made in a tabular form, each row describing one field (column) of the data file.
+
 
 The description is presented as a five-column table with the following elements:
 
@@ -224,7 +223,8 @@ The description is presented as a five-column table with the following elements:
 - a short *explanations* of the contents of the column. 
 This last field may also specify: the available range of the value in the column (using **[...]**), the possibility of having unspecified or NULL values (using **?**), the order of the values within the table (increasing or decreasing order). More details can be found [here][vizier-cat-34-explanations].
 
-The CDS can help you to fill that part of the headers, but you will be responsible for the *explanations* and the *units*.
+
+**The CDS can help you to fill a part of the byte-by-byte description (*bytes*, *format*, *label*), but it is crucial that you fill the *units* and *explanations* columns.**
 
 :::::::::::::::::::::::::
 

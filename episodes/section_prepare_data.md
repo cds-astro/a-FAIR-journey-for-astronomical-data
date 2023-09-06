@@ -70,7 +70,7 @@ The following formats are welcome:
 In order of preference:
 
 - Machine-Readable Tables ([MRT][aas-mrt] / FORTRAN format)
-	- Not available through the [VizieR submit interface][vizier-submit-login]
+	- Not available yet through the [VizieR submit interface][vizier-submit-login]
 - TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values) files containing a first line with column description is accepted
 	-  Comments (line beginning by #) are not accepted
 - ASCII aligned files
@@ -86,7 +86,7 @@ Note: zip and gzip compression are allowed. Archives should not contain director
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-The [new submit web application][vizier-submit-login] allows different formats for tables and helps you to ingest your data.
+The [submit web application][vizier-submit-login] allows different formats for tables and helps you to ingest your data.
 
 
 <!--  ----------------------------------------- -->
