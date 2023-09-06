@@ -538,13 +538,16 @@ a) Indicate the units for each column when applicable.
 b) Make a clear distinction between z the redshift, z the filter or z the metallicity.
 c) A single column should not present measurements with different units, 
 mix errors with limits or comments, or append flags to values.
+
 d) Use null values that are supported and documented by widely-used 
 toolkits, e.g., “NaN” (Not a Number) for floating-point data in Astropy. 
 Use the same representation for missing data and have a separate field 
 that explains the reasons for a missing value. 
-Do not use different representations to indicate the different reasons, 
-e.g., blank/0.00 for “not observed”, and NaN/-99.99 for “no detection”.
-Stick to one value!
+Do not use different representations to indicate the different reasons.
+
+<em>Wrong example:</em> Using 0.00 for “not observed”, and -99.99 for “no detection” in the same column.
+Stick to only one NULL value per column!
+
 e) Authors should include a human-readable description of the data,
 with at least the column descriptions, units, and references (on the 
 origin of the measurements or instruments for observations when relevant) 
@@ -696,12 +699,6 @@ a)  “We adopted a heliocentric redshift of 1.234 (Smith et al. 2012)
 via NED”, where “Smith et al. 2012” is listed correctly in your bibliography.
 b) The 2MASS web page requests that you cite the canonical paper by 
 Skrutskie et al. (2006), instead of the Explanatory Supplement. 
-c) If 2MASS data is used via TOPCAT accessing the VizieR table, then 
-in addition to any preferred citations of the data itself, cite the 
-software and compilation used, e.g.,“2MASS (Skrutskie et al. 2006) as
-downloaded with TOPCAT (Version 4.8-3, Taylor 2005) via VizieR (II/246, 
-Cutri et al. 2003)”. It is also recommended to include the names of 
-principal investigators who acquired the original data sets.
 d) Make sure all appropriate references to papers, software and data 
 products are included in a paper’s bibliography section, not just in footnotes.
 e) Use phrases such as “This work” to clearly identify original 

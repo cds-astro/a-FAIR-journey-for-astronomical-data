@@ -100,7 +100,7 @@ allowfullscreen="" allow="autoplay" data-external="1"></iframe>
 <!--  ----------------------------------------- -->
 <!--            VizieR and VO tools             -->
 <!--  ----------------------------------------- -->
-## VizieR and Virtual Observatory (VO) tools
+## VizieR catalogue and CDS tools
 
 Once a catalogue is ingested in VizieR, one can access a range of tools:
 
@@ -111,13 +111,11 @@ Once a catalogue is ingested in VizieR, one can access a range of tools:
 - Load your tables in [Aladin][aladin-home]
 - Plot [photometry ("SED")][vizier-sed] including all VizieR 
 - Query VizieR [associated data][vizier-assoc-data] (images, spectra)   
-- Load your data as a VO Table using [TOPCAT][topcat] or other VO tools
-- Visualize a spectrum using [CASSIS][cassis]
 - Query all VizieR catalogues using [CDS Python package][vizier-api]
 - VizieR tables with astronomical objects can be processed in [SIMBAD][simbad-home].
 
 
-![Figure: VizieR catalogues accessible through CDS services and other VO tools](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and the interoperability with the CDS services and other VO tools. The full list of VO tools is described just above."}
+![Figure: VizieR catalogues accessible through CDS services](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/vizier_tools_and_vo__logos.svg){alt="Figure: VizieR and the interoperability with the CDS services. The full list of services is described just above."}
  
 
 <!--  ----------------------------------------- -->
@@ -134,8 +132,10 @@ In addition to the interoperability with the VO tools mentioned above, distribut
 	- [Astrophysics Data System (ADS)][ads]
 	- [European Open Science Cloud (EOSC) Portal][eosc-portal]
 - Step in the VO: interoperability with other tools, e.g.
-	- [Splat][splat]
-	- [astroquery][astroquery]
+	- Load your data as a VO Table using [TOPCAT][topcat]
+	- Visualize a spectrum using [CASSIS][cassis]
+	- Analyze a spectrum using [Splat][splat]
+	- Analyze your data using [astroquery][astroquery]
 - Added metadata:
 	- UCD (VO)
 	- Keywords (UAT)
