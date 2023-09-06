@@ -105,7 +105,7 @@ In the following example, we can see that no coordinate was provided in the orig
 <!-- Link to Readme: J/ApJ/919/121  // https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/919/121/table3&-out.max=50&-out.form=HTML%20Table&-oc.form=sexa // table 3 -->
 Using SIMBAD and the HASH PN databases, we were able to complement this table with positions.
 
-![Figure: After -- Coordinates added in VizieR table (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_after.png){alt="Screenshot -- Table with SimbadName and coordinates informations added to the original columns"}
+![Figure: After -- Coordinates added in VizieR table (screenshot). The 4 columns in color are computed by VizieR, and not part of the original data.](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_after.png){alt="Screenshot -- Table with SimbadName and coordinates informations added to the original columns"}
 
 
 :::::::::::::::::::::::::
