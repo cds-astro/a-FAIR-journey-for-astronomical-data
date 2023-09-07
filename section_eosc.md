@@ -65,7 +65,7 @@ For prospective users of the services, the Portal provides training materials an
 
 
 
-![Figure: EOSC Portal homepage (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/eosc_portal__main_page.png){alt="Screenshot: EOSC Portal homepage, from June 2023"}
+![Figure: EOSC Portal homepage (screenshot from September 2023)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/eosc_portal__main_page.png){alt="Screenshot: EOSC Portal homepage, from September 2023"}
 
 
 
@@ -81,13 +81,13 @@ In the following, we will show how to find your data in EOSC, using Gaia DR3 (Vi
 
 The first step is to type the name of your catalogue, dataset, paper, DOI in the Search bar on [EOSC portal][eosc-portal], as illustrated in the figure below.
 
-![Figure: Searching for 'Gaia DR3' on EOSC Portal -- search from homepage (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using homepage, from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- search from homepage (screenshot from September 2023)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using homepage, from September 2023"}
 
 
 You can also [browse directly the Marketplace][eosc-portal-marketplace], from the same website. You will get the same results in the end.
 
 
-![Figure: Searching for 'Gaia DR3' on EOSC Portal -- Browse Marketplace tab (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search_browse_marketplace.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using 'Browse Marketplace' page, from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- Browse Marketplace tab (screenshot from September 2023)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step1_search_browse_marketplace.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' using 'Browse Marketplace' page, from September 2023"}
 
 
 ---
@@ -101,103 +101,20 @@ You can filter the results using the 'Filters' options on the left, or also by t
 
 In our example (Gaia DR3), we can see that the search is done on multiple fields: Title, Author names, abstract.
 
-![Figure: Searching for 'Gaia DR3' on EOSC Portal -- all records (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records, from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- all records (screenshot from September 2023)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records, from September 2023"}
 
 
 ---
 
 <!-- --------------------- -->
-### Advanced usage: filtering from the url
+### Advanced search 
 
+In addition to the filters available on the left side of the [EOSC Marketplace results page][eosc-portal-results], more advanced filtering can be done using the 'Show Advanced Search' button below the main Search bar. 
 
-::::::::::::::::::::::::::::::::::::::: discussion
+The search can be narrowed by 'author', 'exact phrase', 'in title', 'none of', as illustrated in the Figure below.
 
-### Details
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot from September 2023)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_filtering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the 'advanced search' option, from September 2023"}
 
-In addition to the filters available on the left side of the [EOSC Marketplace results page][eosc-portal-results], more advanced filetring can be done directly from the url.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: solution
-
-### By keywords
-
-A filtering by **keywords** can be done from the url by adding the field *&fq=keywords:"my%20astro%20keyword"* to the url of the results. 
-
-<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
-'%20' is the UTF-8 encoding for the space.
-'my astro keyword' is a placeholder for your desired keyword.
-
-For example to filter the results using the keywords 'Astrophyiscs and Astronomy' and 'stellar astronomy', one can do: 
-&fq=keywords:"Astrophysics%20and%20Astronomy"
-&fq=keywords:"stellar%20astronomy"
-
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-
-### By author names
-
-A filtering by **author names** can also be done from the url by adding the field 
-*&fq=author_names:"my%20favourite%20author"*
-to the url of the results. 
-
-<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
-'%20' is the UTF-8 encoding for the space.
-'my favourite author' is a placeholder for the author names.
-
-For example to filter the results to see only the ones from the 'Gaia collaboration', one can do:
-&fq=author_names:"Gaia%20collaboration"
-
-:::::::::::::::::::::::::
-
-:::::::::::::::: solution
-
-### By DOI
-
-Filtering by **DOI** can also be done from the url by adding the field 
-*&fq=doi:"mydoi%5C%2Fnumber"*
-to the url of the results. 
-
-<!-- '%22' are needed before and after the keywords as they are UTF-8 encoding of the double quotes. -->
-'%5C%2F' stands for the slash.
-'mydoi/number' is a placeholder for the DOI.
-
-For example to filter the results to see only the DOI of Gaia DR3, one can add: 
-&fq=doi:"10.26093%5C%2Fcds%5C%2Fvizier.1355"
-
-:::::::::::::::::::::::::
-
-
-##### Example
-
-An example of [modified url][eosc-portal-advanced-filtering] with the extra filtering is given below: 
-
-```
-https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
-&fq=keywords:"Astrophysics%20and%20Astronomy"
-&fq=keywords:"stellar%20astronomy"
-&fq=author_names:"Gaia%20collaboration"
-&fq=doi:"10.26093%5C%2Fcds%5C%2Fvizier.1355"
-```
-
-
-![Figure: Searching for 'Gaia DR3' on EOSC Portal -- all records, with extra filtering (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step2_all_records_advanced_filtering.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3' -- scanning through all the records and filtering using the url, from June 2023"}
-
-
-
-<!-- iframe commented on 22/06/23:  
-The resulting webpage is displayed below:
-
-//  Explore Portal records filtered by url as iframe 
-<iframe src="https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&fq=keywords:%22Astrophysics%20and%20Astronomy%22&fq=keywords:%22stellar%20astronomy%22&fq=author_names:%22Gaia%20collaboration%22&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22"
-title="Explore Portal search filtering by keywords, author names and DOI (from the url)"
-style="border: none; width: 98%; height: 800px; 
-overflow: hidden; display: block; "
-allowfullscreen="" allow="autoplay" data-external="1"></iframe>
-
-Explore Portal search webpage: filtering by keywords, author names and DOI (from the url).
--->
 
 
 ---
@@ -211,7 +128,7 @@ Once you found the relevant entry, you can click on it ([link to selected result
 In this example, you can access to the resource by either clicking on the [DOI link][vizier-gaia-dr3], or on the 'Download from' on the right side of the EOSC page, and then select one of the two data sources available: [B2FIND][eosc-portal-result-gaiadr3-b2find] or [Strasbourg Astronomical Data Center][eosc-portal-result-gaiadr3-stras-datacenter].
 
 
-![Figure: Searching for 'Gaia DR3' on EOSC Portal -- result (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step3_result.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3', from June 2023"}
+![Figure: Searching for 'Gaia DR3' on EOSC Portal -- result (screenshot from September 2023)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/eosc_portal_june23/case_study__gaia_dr3__step3_result.png){alt="Screenshot: EOSC Portal search for 'Gaia DR3', from September 2023"}
 
 
 
@@ -240,8 +157,7 @@ Q2) Which CDS service is listed in the 'Services' type of results?
 
 Q3) Can you list some 'cds-astro' Softwares available?
 
-Q4) Advanced question: can you find the dataset associated with the word 'Astronomy'
-and published by the 'National Radio Astronomy Observatory'? 
+Q4) Advanced question: can you find the dataset associated with the 'National Radio Astronomy Observatory'? 
 
 Q5) If you published a paper or a dataset, type your name in the Search bar. 
 What do you get as an output?
@@ -259,14 +175,14 @@ Browse through [EOSC Portal][eosc-portal] to answer the previous questions.
 
 R1) This paper was published on [01 Jan 2017][eosc-question1-abell].
 
-R2) [SIMBAD][eosc-question2-service] is the service accessible through the EOSC website.
+R2) [SIMBAD][eosc-question2-service] is the service accessible through EOSC portal.
 
-R3) Examples of [softwares available][eosc-question3-software]: [cds-astro/tutorials: v1.0.0][eosc-question3-tutorials], [cds-astro/aladin-lite: Aladin Lite v3.1.1][eosc-question3-alatin-lite], [cds-astro/cds-moc-rust: Release v0.5.2][eosc-question3-cds-moc-rust] ...
+R3) Examples of [softwares available][eosc-question3-software]: [cds-astro/tutorials: v1.0.0][eosc-question3-tutorials], [cds-astro/aladin-lite: Aladin Lite v3.1.1][eosc-question3-alatin-lite], [cds-astro/cds-moc-rust: Release v0.5.2][eosc-question3-cds-moc-rust], [cds-astro/mocpy: Release v0.12.3][eosc-question3-cds-mocpy] ...
 
-R4) Select first 'Astronomy' in the Search bar, and 'Data' from the scrolling menu.
-Submit this search (press Enter on the keyboard) and then add '&fq=author_names:"National%20Radio%20Astronomy%20Observatory"' to the url.
+R4) Leave the Search bar empty, and type 'National Radio Astronomy Observatory' as the author in Advanced Search.
+Launch the search by clicking on the 'Add' button.
 
-The search result Data should look like: [search-result][eosc-question4-dataset]
+The search result Data should look like: [search-result][eosc-question4-dataset].
  
 :::::::::::::::::::::::::::::::::
 
