@@ -127,7 +127,7 @@ To retrieve coordinates and easy the cross identification between SIMBAD and Viz
 Here is an example of truncated SDSS names... Impossible to retrieve except by coordinates that we luckily have in this case. So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected (identified by the column *f_Name* set to *o* below). 
 For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
 
-![Figure: Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png){alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected"}
+![Figure: After -- Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_after.png){alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected"}
 
 :::::::::::::::::::::::::
 
