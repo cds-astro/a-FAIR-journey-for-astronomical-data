@@ -28,7 +28,7 @@
         
       </div>
     </div>
-    <div class="selector-container ">
+    <div class="selector-container">
       
       
       <div class="dropdown">
@@ -96,9 +96,11 @@
 </aside><div class="container">
       <div class="row">
         <!-- START: inst/pkgdown/templates/navbar.html -->
-  <div id="sidebar-col" class="col-lg-4">
-    <div id="sidebar" class="sidebar">
-      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle"><i class="search-icon" data-feather="x" role="img"></i></button>
+<div id="sidebar-col" class="col-lg-4">
+  <div id="sidebar" class="sidebar">
+      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle">
+          <i class="search-icon" data-feather="x" role="img"></i>
+        </button>
         <div class="sidebar-inner">
           <div class="row mobile-row">
             <div class="col">
@@ -249,6 +251,7 @@
               </div>
             </div>
             <hr class="half-width resources"><a href="aio.html">See all in one page</a>
+            
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -267,12 +270,18 @@
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="section_submit_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Submitting</a>
-        <a class="chapter-link float-end" href="section_eosc.html" rel="next">Next: Journey of your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link" href="section_submit_data.html" rel="prev">
+          <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
+          Previous: Submitting
+        </a>
+        <a class="chapter-link float-end" href="section_eosc.html" rel="next">
+          Next: Journey of your data... 
+          <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
+        </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Data curation at CDS</h1>
-        <p> Last updated on 2023-09-06 | 
+        <p> Last updated on 2023-09-07 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_data_curation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -396,8 +405,9 @@ have an answer).</p>
 <p>In the following example, we can see that no coordinate was provided
 in the original table.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_before.png" alt="Screenshot -- Table without coordinates as available in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Columns as written in original table
-(screenshot)</figcaption></figure><!-- Link to Readme: J/ApJ/919/121  // https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/919/121/table3&-out.max=50&-out.form=HTML%20Table&-oc.form=sexa // table 3 --><p>Using SIMBAD and the HASH PN databases, we were able to complement
-this table with positions.</p>
+(screenshot)</figcaption></figure><!-- Link to Readme: J/ApJ/919/121  // https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/919/121/table3&-out.max=50&-out.form=HTML%20Table&-oc.form=sexa // table 3 --><p>Using SIMBAD or otherwise the HASH PN databases (when no SIMBAD
+corresponding match has been found – SimbadName empty), we were able to
+complement this table with positions.</p>
 <figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_after.png" alt="Screenshot -- Table with SimbadName and coordinates informations added to the original columns" class="figure mx-auto d-block"><figcaption>Figure: After – Coordinates added in VizieR table
 (screenshot). The 4 columns in color are computed by VizieR, and not
 part of the original data.</figcaption></figure></div>
@@ -600,8 +610,14 @@ any links that you are not going to use.
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="section_submit_data.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Submitting</a>
-        <a class="chapter-link float-end" href="section_eosc.html" rel="next">Next: Journey of your data... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link" href="section_submit_data.html" rel="prev">
+          <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
+          Previous: Submitting
+        </a>
+        <a class="chapter-link float-end" href="section_eosc.html" rel="next">
+          Next: Journey of your data... 
+          <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
+        </a>
       </div>
     </nav></div> <!-- / div.primary-content.col-xs-12 -->
 <!-- END:   inst/pkgdown/templates/content-instructor.html-->
@@ -623,9 +639,9 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.4" class="external-link">sandpaper (0.12.4)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.6.0" class="external-link">pegboard (0.6.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.18" class="external-link">varnish (0.2.18)</a>.</p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.13.0" class="external-link">sandpaper (0.13.0)</a>,
+        <a href="https://github.com/carpentries/pegboard/tree/0.6.1" class="external-link">pegboard (0.6.1)</a>,
+      and <a href="https://github.com/carpentries/varnish/tree/0.3.0" class="external-link">varnish (0.3.0)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -645,9 +661,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/section_data_curation.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_data_curation.html",
-  "dateCreated": "2023-09-06",
-  "dateModified": "2023-09-06",
-  "datePublished": "2023-09-06"
+  "dateCreated": "2023-09-07",
+  "dateModified": "2023-09-07",
+  "datePublished": "2023-09-07"
 }
 
   </script><script>
