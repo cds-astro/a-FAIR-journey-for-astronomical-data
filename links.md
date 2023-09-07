@@ -138,14 +138,15 @@ any links that you are not going to use.
 [eosc-portal-search-gaiadr3]: https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3
 [eosc-portal-advanced-filtering]: https://search.marketplace.eosc-portal.eu/search/all?q=Gaia%20DR3&fq=keywords:%22Astrophysics%20and%20Astronomy%22&fq=keywords:%22stellar%20astronomy%22&fq=author_names:%22Gaia%20collaboration%22&fq=doi:%2210.26093%5C%2Fcds%5C%2Fvizier.1355%22
 [eosc-portal-result-gaiadr3]: https://explore.eosc-portal.eu/search/dataset?pid=10.26093/cds/vizier.1355&return_path=search%2Fall&search_params=q%3DGaia%2520DR3
-[eosc-portal-result-gaiadr3-b2find]: https://dc.g-vo.org/rr/q/lp/custom/CDS.VizieR/I/355
+[eosc-portal-result-gaiadr3-b2find]: https://doi.org/http://doi.org/10.26093/cds/vizier.1355
 [eosc-portal-result-gaiadr3-stras-datacenter]: https://doi.org/10.26093/cds/vizier.1355
 [eosc-question1-abell]: https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&return_path=search%2Fall&search_params=q%3DNGTS%2520clusters%2520survey
 [eosc-question2-service]: https://marketplace.eosc-portal.eu/services/eosc.cds.simbad_simbad_astronomical_database_provides_basic_data_cross-identifications_bibliography_and_measurements_for_astronomical_objects_outside_the_solar_system?return_path=search%2Fservice&search_params=q%3DCDS
 [eosc-question3-software]: https://search.marketplace.eosc-portal.eu/search/software?q=cds-astro&sort_ui=default
 [eosc-question3-cds-moc-rust]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7078879&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
 [eosc-question3-alatin-lite]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7764464&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
+[eosc-question3-cds-mocpy]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7637180&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26standard%3Dfalse%26tags%3Din%2520title%3A%2520cds-astro
 [eosc-question3-tutorials]: https://explore.eosc-portal.eu/search/software?pid=10.5281/zenodo.7358070&return_path=search%2Fsoftware&search_params=q%3Dcds-astro%26sort_ui%3Ddefault
-[eosc-question4-dataset]: https://search.marketplace.eosc-portal.eu/search/dataset?q=Astronomy&sort_ui=default&fq=author_names:%22National%20Radio%20Astronomy%20Observatory%22
+[eosc-question4-dataset]: https://search.marketplace.eosc-portal.eu/search/all?q=National%20Radio%20Astronomy%20Observatory&tags=author:%20National%20Radio%20Astronomy%20Observatory&standard=false
 
 
