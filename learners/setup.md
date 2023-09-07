@@ -37,14 +37,14 @@ By the end of this training, you should be able to:
 
 :::::::::::::::::::::::::::::::::::::: checklist
 
-- Outline the benefits of using VizieR. **(Chapter 1)**
+- Outline the benefits of using VizieR **(Chapter 1)**
 - Cite the Findable, Accessible, Interoperable and Reusable (FAIR) principles **(Chapter 2)**
-- Describe the different submission routes per journal. **(Chapter 3)**
+- Describe the different submission routes per journal **(Chapter 3)**
 <!-- - Define the type of data accepted in VizieR  -->
 - Prepare your data, integrating the FAIR principles **(Chapter 4)**  
-- Submit your data in the existing and new Open Science systems, keeping in mind the Virtual Observatory (VO) standards. **(Chapter 5)**
+- Submit your data in the existing and new Open Science systems, keeping in mind the Virtual Observatory (VO) standards **(Chapter 5)**
 - Summarize all the steps happening behind the curtains once your data are submitted, and before their full integration into the VO **(Chapter 6)** 
-- Naviguate through the EOSC portal. **(Chapter 7)**
+- Naviguate through the EOSC portal **(Chapter 7)**
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -70,7 +70,7 @@ No prior knowledge is required.
 <!-- -------- -->
 ## Version
 
-Training version: 0.3.0
+Training version: 0.4.0
 
 Publication date: 10 July 2023
  
