@@ -42,17 +42,33 @@ Not everybody needs to send their data to CDS! We invite you to read carefully t
 
 If your article does not contain any tables, you can skip the following!
 
+Otherwise, the following table summarizes what the author needs to do.
 
-<!--
 
-| Journal		| Submitting to VizieR | When | Table format | Associated data |
-| ----			| :--: | -- | -- | --- | 
-| ApJ, ApJS, ApJL, AJ	|  No (harvested by VizieR) 	| | | |
-| A&A, A&AS		|  Yes	| | | |
-| MNRAS 		|  Yes	| | | |
-| Other journal 	|  Yes	| | | |
+| Journal		| MRT\* in paper  	| Submitting to VizieR 	| When 	| Associated data 	|
+| ---			| -- 			| -- 			| --- 	| --	| 
+| ApJ, ApJS, ApJL, AJ	|  Yes | No  		| Harvested by VizieR after publication |  |
+| A&A			| Not necessarily 	| Yes			| Once accepted by A&A | |
+| Other journal\*\* 	| Yes  			| No			| Harvested by CDS after publication | |
+| Other journal\*\*	| No  			| Yes			| After publication | |
 
--->
+\*MRT: Machine Readable Table
+
+\*\* Other journal: According to CDS priority
+
+
+:::::::::::::::::::::::::::::::::::::: callout
+
+## Check your data availability after publication 
+
+In any cases, the authors are encouraged to check the availability of their tables/data with CDS, once their paper is published.
+
+Do not hesitate to contact us if needed: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+
+::::::::::::::::::::::::::::::::::::::
+
+
+
 
 
 <!--  ----------------------------------------- -->
