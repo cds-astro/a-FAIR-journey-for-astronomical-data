@@ -44,12 +44,14 @@ If your article does not contain any tables, you can skip the following!
 
 
 <!--
+
 | Journal		| Submitting to VizieR | When | Table format | Associated data |
 | ----			| :--: | -- | -- | --- | 
 | ApJ, ApJS, ApJL, AJ	|  No (harvested by VizieR) 	| | | |
 | A&A, A&AS		|  Yes	| | | |
 | MNRAS 		|  Yes	| | | |
 | Other journal 	|  Yes	| | | |
+
 -->
 
 
