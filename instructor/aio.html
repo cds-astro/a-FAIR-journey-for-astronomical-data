@@ -1846,24 +1846,21 @@ data format.</p>
 <li><a href="https://journals.aas.org/" class="external-link">AAS homepage</a></li>
 <li><a href="https://journals.aas.org/data-guide/" class="external-link">Data Guide</a></li>
 </ul>
-<!--  ----------------------------------------- --><!-- 		A&A				--><!--  ----------------------------------------- --></section><section id="astronomy-astrophysics-journals-aa"><h2 class="section-heading">Astronomy &amp; Astrophysics Journals (A&amp;A)<a class="anchor" aria-label="anchor" href="#astronomy-astrophysics-journals-aa"></a>
+<!--  ----------------------------------------- --><!-- 		A&A				--><!--  ----------------------------------------- --></section><section id="astronomy-astrophysics-aa"><h2 class="section-heading">Astronomy &amp; Astrophysics (A&amp;A)<a class="anchor" aria-label="anchor" href="#astronomy-astrophysics-aa"></a>
 </h2>
 <hr class="half-width">
-<p>Before publication, A&amp;A editors and CDS decide which data to
-ingest in VizieR. The authors then need to submit the requested data to
-CDS. Other tables already published can also be selected by the CDS.</p>
-<p>List of journals included:</p>
-<ul>
-<li>Astronomy &amp; Astrophysics: A&amp;A</li>
-<li>Astronomy &amp; Astrophysics Supplement Series: A&amp;AS</li>
-</ul>
+<p>Before publication, <strong>A&amp;A editors decide which data will be
+only available at CDS (in VizieR).</strong> The authors then need to
+submit the requested data to CDS <strong>and the data will be available
+at CDS just after publcation of the paper.</strong> Other tables already
+published can also be selected by the CDS.</p>
 <hr>
 <p><em>Recommendations</em> (from the A&amp;A webpage):</p>
 <p>By contract with the Journal, the CDS archives the primary data that
 are published in A&amp;A and puts them at the disposal of the global
 community.</p>
-<p>Once their papers accepted, the <strong>authors submit their MRT
-files directly</strong> to the CDS.</p>
+<p>Once their papers accepted, the authors submit their MRT files
+<strong>(if possible)</strong> directly to the CDS.</p>
 <p><em>References</em> (from the A&amp;A webpage):</p>
 <ul>
 <li><a href="https://www.aanda.org/" class="external-link">A&amp;A homepage</a></li>
@@ -1908,7 +1905,7 @@ percentage of catalogues ingested in VizieR:</p>
 <li>Baltic Astronomy: BaltA (0.23%)</li>
 <li>Nature: Natur (0.10%) <!-- 25-->
 </li>
-<li>Planetary Science Journal: Sci (0.08%)</li>
+<li>Science: Sci (0.08%)</li>
 <li>Research notes of the AAS: RNAAS (0.008%) <!-- 2 catalogues -->
 </li>
 </ul>
@@ -2081,7 +2078,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  --><!--  ----------------------------------------- --><!--            Link references                 --><!--  ----------------------------------------- --><!-- CDS --><!-- --><!-- VizieR --><!-- VizieR File submission --><!-- VizieR FTP --><!-- VizieR mirrors --><!-- VizieR Readme--><!-- VizieR example Gaia DR3 and other examples--><!-- --><!-- Journals --><!-- --><!-- --><!-- --><!-- --><!-- --><!-- Data centres --><!-- --><!-- Others --><!-- --><!-- Papers --><!-- --><!-- EOSC --></section></section><section id="aio-section_prepare_data"><p>Content from <a href="section_prepare_data.html">Preparing your data</a></p>
 <hr>
-<p> Last updated on 2023-09-06 | 
+<p> Last updated on 2023-09-11 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_prepare_data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 4 minutes </p>
@@ -2167,7 +2164,9 @@ submit interface</a>
 <li>TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values)
 files containing a first line with column description is accepted
 <ul>
-<li>Comments (line beginning by #) are not accepted</li>
+<li>Comments (line beginning by #) <strong>are accepted but not
+transformed into MRT at the submission step</strong>
+</li>
 </ul>
 </li>
 <li>ASCII aligned files
@@ -2219,8 +2218,9 @@ ingest your data.</p>
 measurements and uncertainties
 (cf. <a href="section_fair_astro.html#general_rules" target="_blank">§2c</a>
 ).</li>
-<li>An explanation is given for all the columns (at least a clear label;
-at best, few words of explanation)
+<li>An explanation is given for all the columns <strong>(at least a
+clear label and a short explanation; at best, complete
+explanation)</strong>
 (cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1</a>).</li>
 <li>Units are given for all the columns (when relevant).</li>
 <li>One column is homogeneous, i.e. does not mix different measurements
@@ -2761,7 +2761,7 @@ such that a conversion to FITS could keep the text as COMMENT cards.</p>
   A. ‘Title of the paper’, ‘Authors’, ‘Reference’
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>
@@ -2784,7 +2784,7 @@ article number</li>
   B. ‘Abstract’ and ‘Description’
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li>
@@ -2815,7 +2815,7 @@ data</em>, such as instrumentation or observing conditions.
   C. ‘Byte-by-byte Description of file’
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>This section describes the structure of each data files (files with
 the .dat extension). This description is made in a tabular form, each
@@ -3724,7 +3724,7 @@ result (screenshot from September 2023)</figcaption></figure><!--  -------------
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Browse through EOSC Portal to find some datasets and publications,
 and answer the following questions.</p>
@@ -3759,7 +3759,7 @@ Search bar. What do you get as an output?</p>
   Give me a hint
   </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Browse through <a href="https://eosc-portal.eu/" class="external-link">EOSC Portal</a> to
 answer the previous questions.</p>
@@ -3774,7 +3774,7 @@ answer the previous questions.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>R1) This paper was published on <a href="https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&amp;return_path=search%2Fall&amp;search_params=q%3DNGTS%2520clusters%2520survey" class="external-link">01
 Jan 2017</a>.</p>
