@@ -70,11 +70,11 @@ No prior knowledge is required.
 <!-- -------- -->
 ## Version
 
-Training version: 0.4.0
+Training version: 0.5.0
 
 Publication date: 10 July 2023
  
-Last modified: 6 September 2023
+Last modified: 11 September 2023
 
 
 
