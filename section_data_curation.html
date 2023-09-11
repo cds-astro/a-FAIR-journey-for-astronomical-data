@@ -281,7 +281,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Data curation at CDS</h1>
-        <p> Last updated on 2023-09-07 | 
+        <p> Last updated on 2023-09-11 | 
         
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/section_data_curation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -427,18 +427,25 @@ part of the original data.</figcaption></figure></div>
 corrected<a class="anchor" aria-label="anchor" href="#simbad-names-added-misprint-on-names-corrected"></a>
 </h3>
 <div class="callout-content">
-<!-- Link to VizieR: J/ApJ/833/20  // https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/833/20 // table 1 -->
 <p>To retrieve coordinates and easy the cross identification between
 SIMBAD and VizieR, a proper identification is needed.</p>
+<!-- Link to paper: https://iopscience.iop.org/article/10.3847/0004-637X/833/1/20#apjaa431et1  -->
 <p>Here is an example of truncated SDSS names… Impossible to retrieve
-except by coordinates that we luckily have in this case. So the
-SimbadName has been added after the process for SIMBAD where misprints
-on coordinates have been detected (identified by the column
-<em>f_Name</em> set to <em>o</em> below). For this object with
-coordinates pointing to nothing, the right ones have been found thanks
-to the bibcode given in the table.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names.png" alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected" class="figure mx-auto d-block"><figcaption>Figure: Example of names recognized by SIMBAD added
-to the original table submitted to VizieR (screenshot)</figcaption></figure></div>
+except by coordinates that we luckily have in this case.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_before.png" alt="Screenshot -- Table with truncated names as identifiers in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Table as written in the original
+paper. The following columns are displayed: Type, Name, f_Name; Hour,
+Minute and Second of Right Ascension (J2000); Sign, Degree, Arcminute,
+Arcsecond of the Declination (J2000); Teff, log(g), l_[Fe/H], [Fe/H],
+l_[C/Fe], [C/Fe], l_[C/Fe]c, [C/Fe]c, l_A(C), A(C), l_[Ba/Fe], [Ba/Fe],
+f_[Ba/Fe], l_[Eu/Fe], [Eu/Fe], f_[Eu/Fe]; Class, Bin, f_Bin, Out,
+Ref.</figcaption></figure><!-- Link to VizieR: J/ApJ/833/20  // https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/833/20 // table 1 --><p>So the SimbadName has been added after the process for SIMBAD where
+misprints on coordinates have been detected (identified by the column
+<em>f_Name</em> set to <em>o</em> below, for example for <em>Name = SDSS
+J1137+2553</em>). For this object with coordinates pointing to nothing,
+the right ones have been found thanks to the bibcode given in the
+table.</p>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_after.png" alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Example of names recognized by SIMBAD
+added to the original table submitted to VizieR (screenshot)</figcaption></figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -661,9 +668,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/section_data_curation.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/section_data_curation.html",
-  "dateCreated": "2023-09-07",
-  "dateModified": "2023-09-07",
-  "datePublished": "2023-09-07"
+  "dateCreated": "2023-09-11",
+  "dateModified": "2023-09-11",
+  "datePublished": "2023-09-11"
 }
 
   </script><script>
