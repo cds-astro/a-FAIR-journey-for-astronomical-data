@@ -72,7 +72,7 @@ In order of preference:
 - Machine-Readable Tables ([MRT][aas-mrt] / FORTRAN format)
 	- Not available yet through the [VizieR submit interface][vizier-submit-login]
 - TSV, CSV: TSV (tab-separated values) or CSV (comma-separated values) files containing a first line with column description is accepted
-	-  Comments (line beginning by #) are not accepted
+	- Comments (line beginning by #) **are accepted but not transformed into MRT at the submission step**
 - ASCII aligned files
 	- Original ASCII format used in VizieR
 - FITS table
@@ -104,7 +104,7 @@ Files containing different numbers of columns per rows.
 :::::::::::::::::::::::::::::::::::::: checklist
 
 - Present the appropriate number of significant figures for numerical measurements and uncertainties (cf. <a href="section_fair_astro.html#general_rules" target="_blank">§2c</a> ).
-- An explanation is given for all the columns (at least a clear label; at best, few words of explanation) (cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1</a>).
+- An explanation is given for all the columns **(at least a clear label and a short explanation; at best, complete explanation)** (cf. <a href="section_fair_astro.html#tables" target="_blank">§3.1</a>).
 - Units are given for all the columns (when relevant).
 - One column is homogeneous, i.e. does not mix different measurements having different units or errors with limit values or flags.
 - For tables with sources, give:

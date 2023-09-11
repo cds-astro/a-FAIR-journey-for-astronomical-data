@@ -82,17 +82,11 @@ Then, **VizieR harvests AAS Journal MRTs** and makes these data discoverable and
 <!--  ----------------------------------------- -->
 <!-- 		A&A				-->
 <!--  ----------------------------------------- -->
-## Astronomy & Astrophysics Journals (A&A)
+## Astronomy & Astrophysics (A&A)
 
-Before publication, A&A editors and CDS decide which data to ingest in VizieR. 
-The authors then need to submit the requested data to CDS.
+Before publication, **A&A editors decide which data will be only available at CDS (in VizieR).**
+The authors then need to submit the requested data to CDS **and the data will be available at CDS just after publcation of the paper.**
 Other tables already published can also be selected by the CDS.
-
-
-List of journals included:
-
-- Astronomy & Astrophysics: A&A
-- Astronomy & Astrophysics Supplement Series: A&AS
 
 
 ------------------
@@ -101,7 +95,7 @@ List of journals included:
 
 By contract with the Journal, the CDS archives the primary data that are published in A&A and puts them at the disposal of the global community.
 
-Once their papers accepted, the **authors submit their MRT files directly** to the CDS.
+Once their papers accepted, the authors submit their MRT files **(if possible)** directly to the CDS.
 
 
 *References* (from the A&A webpage):
@@ -153,7 +147,7 @@ Examples of other journals included in VizieR, ordered by their percentage of ca
 - Astronomische Nachrichten: AN (0.30%)
 - Baltic Astronomy: BaltA (0.23%)
 - Nature: Natur (0.10%) <!-- 25-->
-- Planetary Science Journal: Sci (0.08%)
+- Science: Sci (0.08%)
 - Research notes of the AAS: RNAAS (0.008%) <!-- 2 catalogues -->
 
 <!-- 
