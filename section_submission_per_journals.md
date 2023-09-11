@@ -50,9 +50,9 @@ Machine readable tables (MRT) are prioritised, but other tables or FITS spectra/
 List of journals included:
 
 - The Astrophysical Journal: ApJ
-- The Astronomical Journal: AJ 
 - The Astrophysical Journal Supplement Series: ApJS
 - The Astrophysical Journal Letters: ApJL
+- The Astronomical Journal: AJ 
 
 
 <!-- To select ApJ and not ApJL .... => 
@@ -82,7 +82,7 @@ Then, **VizieR harvests AAS Journal MRTs** and makes these data discoverable and
 <!--  ----------------------------------------- -->
 <!-- 		A&A				-->
 <!--  ----------------------------------------- -->
-## Astronomy & Astrophysics Journal (A&A)
+## Astronomy & Astrophysics Journals (A&A)
 
 Before publication, A&A editors and CDS decide which data to ingest in VizieR. 
 The authors then need to submit the requested data to CDS.
@@ -153,7 +153,7 @@ Examples of other journals included in VizieR, ordered by their percentage of ca
 - Astronomische Nachrichten: AN (0.30%)
 - Baltic Astronomy: BaltA (0.23%)
 - Nature: Natur (0.10%) <!-- 25-->
-- The Planetary Science Journal: Sci (0.08%)
+- Planetary Science Journal: Sci (0.08%)
 - Research notes of the AAS: RNAAS (0.008%) <!-- 2 catalogues -->
 
 <!-- 
@@ -232,7 +232,7 @@ ORDER BY popu DESC;
 
 To face an increasing volume and according to the CDS mission, VizieR selects the articles to be processed.
 
-- Main journals origin : AAS (ApJ, AJ, ApJS, ApJL), A&A, MNRAS
+- Main journals origin : AAS (ApJ, ApJS, ApJL, AJ), A&A, MNRAS
 - Authors asking for VizieR publication
 - Scientific criteria such as the origin of the measurements
 (e.g. observations have a higher priority than models)
