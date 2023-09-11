@@ -133,7 +133,7 @@ Here is an example of truncated SDSS names... Impossible to retrieve except by c
 
 <!-- Link to VizieR: J/ApJ/833/20  // https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/833/20 // table 1 -->
 
-So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected (identified by the column *f_Name* set to *o* below, for example for *Name = SDSS J1137+2553*). 
+So the SimbadName has been added after the process for SIMBAD where misprints on coordinates have been detected (identified by the column *f_Name* set to *o* below for *Name = SDSS J1137+2553*, and highlighted in both figures Before/After). 
 For this object with coordinates pointing to nothing, the right ones have been found thanks to the bibcode given in the table.
 
 ![Figure: After -- Example of names recognized by SIMBAD added to the original table submitted to VizieR (screenshot)](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_after.png){alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected"}
