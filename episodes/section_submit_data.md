@@ -45,23 +45,25 @@ If your article does not contain any tables, you can skip the following!
 Otherwise, the following table summarizes what the author needs to do.
 
 
-| Journal		| MRT\* in paper  	| Submitting to VizieR 	| When 	| Associated data 	|
-| ---			| -- 			| -- 			| --- 	| --	| 
-| ApJ, ApJS, ApJL, AJ	|  Yes | No  		| Harvested by VizieR after publication |  |
-| A&A			| Not necessarily 	| Yes			| Once accepted by A&A | |
-| Other journal\*\* 	| Yes  			| No			| Harvested by CDS after publication | |
-| Other journal\*\*	| No  			| Yes			| After publication | |
+| Journal		| MRT\* in paper  	| Submitting to VizieR 	| When 	| Associated FITS data\*\*\* 	|
+| ---			| -- 			| -- 			| --- 	| ---	| 
+| ApJ, ApJS, ApJL, AJ	|  Yes | No  		| Harvested by VizieR after publication |  Harvested if available in an external repository |
+| A&A			| Not necessarily 	| Yes			| Once accepted by A&A | Send to CDS |
+| Other journal\*\* 	| Yes  			| No			| Harvested by CDS after publication | Send to CDS |
+| Other journal\*\*	| No  			| Yes			| After publication |  Send to CDS|
 
 \*MRT: Machine Readable Table
 
 \*\* Other journal: According to CDS priority
 
+\*\*\* Any other associated data (other than FITS) will need to be send directly to CDS.
+
 
 :::::::::::::::::::::::::::::::::::::: callout
 
-## Check your data availability after publication 
+## Check your data availability 
 
-In any cases, the authors are encouraged to check the availability of their tables/data with CDS, once their paper is published.
+In any cases, the authors are encouraged to check the availability of their MRT tables (along with their publication) or make sure they send their tables to CDS.
 
 Do not hesitate to contact us if needed: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
 
