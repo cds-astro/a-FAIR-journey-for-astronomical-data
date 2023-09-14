@@ -50,7 +50,7 @@ Otherwise, the following table summarizes what the author needs to do.
 | ApJ, ApJS, ApJL, AJ	|  Yes | No  		| Harvested by VizieR after publication |  Harvested if available in an external repository |
 | A&A			| Not necessarily 	| Yes			| Once accepted by A&A | Send to CDS |
 | Other journal\*\* 	| Yes  			| No			| Harvested by CDS after publication | Send to CDS |
-| Other journal\*\*	| No  			| Yes			| After publication |  Send to CDS|
+| | No  			| Yes			| After publication |  Send to CDS|
 
 \*MRT: Machine Readable Table
 
@@ -61,7 +61,7 @@ Otherwise, the following table summarizes what the author needs to do.
 
 :::::::::::::::::::::::::::::::::::::: callout
 
-## Check your data availability 
+## Check the availability of your data 
 
 In any cases, the authors are encouraged to check the availability of their MRT tables (along with their publication) or make sure they send their tables to CDS.
 

@@ -76,15 +76,16 @@ We call a VizieR catalogue:
 - With a global indexation by position whenever possible
 - And citation capability (bibcode or DOI)
 
-A catalogue can optionally contains other data, also associated with publications:
+A catalogue can optionally contains other data types, also associated with publications.
+Here is a non exhaustive list:
 
-- Photometry assignment to populate the [VizieR SED service][vizier-sed]
-- FITS Spectra, images and cubes to populate the [associated Saada/VizieR database][vizier-assoc-data]
+- Photometric information: this will populate the [VizieR SED service][vizier-sed]
+- FITS Spectra, images and cubes: this will populate the [associated Saada/VizieR database][vizier-assoc-data]
 <!-- - HiPS files (Hierarchical Progressive Surveys)  -->
-- Time series and spectra that will be displayed as interactive plot (see [example of interactive time serie plot][vizier-timeserie-example])
+- Time series and spectra: they will be displayed as interactive plot (see [example of interactive time serie plot][vizier-timeserie-example])
 - Table of references (see [example of refs.dat file][vizier-refsdat-example])
-- Time assignment to create MOCtime in Aladin
-- Solar system assignment to create the catalogue [B/planets][vizier-bplanets] and populate the [VESPA][vespa] site
+- Time measurements: this allows for time comparisons, for example with [Time MOCs][aladin-time-moc] in Aladin
+- Solar system information: it will be added to the VizieR [B/planets][vizier-bplanets] catalogue and populate the [VESPA][vespa] site
 
 
 <!-- VizieR catalogue as iframe-->
