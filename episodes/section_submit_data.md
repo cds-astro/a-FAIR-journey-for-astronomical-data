@@ -42,35 +42,44 @@ Not everybody needs to send their data to CDS! We invite you to read carefully t
 
 If your article does not contain any tables, you can skip the following!
 
-Otherwise, the following table summarizes what the author needs to do.
+<!--
+
+Otherwise, the following checklist summarizes what to do.
 
 
-| Journal		| MRT\* in paper  	| Submitting to VizieR 	| When 	| Associated FITS data\*\*\* 	|
-| ---			| -- 			| -- 			| --- 	| ---	| 
-| ApJ, ApJS, ApJL, AJ	|  Yes | No  		| Harvested by VizieR after publication |  Harvested if available in an external repository |
-| A&A			| Not necessarily 	| Yes			| Once accepted by A&A | Send to CDS |
-| Other journal\*\* 	| Yes  			| No			| Harvested by CDS after publication | Send to CDS |
-| | No  			| Yes			| After publication |  Send to CDS|
+:::::::::::::::::::::::::::::::::::::: checklist
 
-\*MRT: Machine Readable Table
+# What the authors need to do?
 
-\*\* Other journal: According to CDS priority
-
-\*\*\* Any other associated data (other than FITS) will need to be send directly to CDS.
+- Who need to submit their tables to VizieR and when?
+	- A&A authors, once your paper is accepted and **if the A&A editors say so**.
 
 
-:::::::::::::::::::::::::::::::::::::: callout
-
-## Check the availability of your data 
-
-In any cases, the authors are encouraged to check the availability of their MRT tables (along with their publication) or make sure they send their tables to CDS.
-
-Do not hesitate to contact us if needed: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
-
-::::::::::::::::::::::::::::::::::::::
+- Which journal will be automatically harvested by VizieR after publication?
+	- AAS journals (AJ, ApJ, ApJS), with tables prepared beforehand by the authors as MRT
+	- MNRAS, Nature, PASJ, PASP and Science
 
 
+- My journal is not listed above, but I would like my tables to be available at CDS, what can I do?
+	- You can still submit your data to VizieR
 
+-->
+<!-- 
+- Who need to send their associated data (more information in the Chapter <a href="section_prepare_data.html#associated-data-images-spectra-time-series-cube" target="_blank">"Prepare your data"</a>) to VizieR?
+	- Everyone 
+-->
+
+
+<!-- 
+In any case, the authors are encouraged to check the integrity of their tables after publication in the corresponding papers. Besides, if an editor asks that some data should be sent to CDS: make sure to send them!
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+-->
+
+
+More information on the submission routes per journal are available in the Chapter <a href="section_submission_per_journal.html" target="_blank">"Submission routes and journals"</a>.
 
 
 <!--  ----------------------------------------- -->
