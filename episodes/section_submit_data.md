@@ -42,17 +42,44 @@ Not everybody needs to send their data to CDS! We invite you to read carefully t
 
 If your article does not contain any tables, you can skip the following!
 
-
 <!--
 
-| Journal		| Submitting to VizieR | When | Table format | Associated data |
-| ----			| :--: | -- | -- | --- | 
-| ApJ, ApJS, ApJL, AJ	|  No (harvested by VizieR) 	| | | |
-| A&A, A&AS		|  Yes	| | | |
-| MNRAS 		|  Yes	| | | |
-| Other journal 	|  Yes	| | | |
+Otherwise, the following checklist summarizes what to do.
+
+
+:::::::::::::::::::::::::::::::::::::: checklist
+
+# What the authors need to do?
+
+- Who need to submit their tables to VizieR and when?
+	- A&A authors, once your paper is accepted and **if the A&A editors say so**.
+
+
+- Which journal will be automatically harvested by VizieR after publication?
+	- AAS journals (AJ, ApJ, ApJS), with tables prepared beforehand by the authors as MRT
+	- MNRAS, Nature, PASJ, PASP and Science
+
+
+- My journal is not listed above, but I would like my tables to be available at CDS, what can I do?
+	- You can still submit your data to VizieR
 
 -->
+<!-- 
+- Who need to send their associated data (more information in the Chapter <a href="section_prepare_data.html#associated-data-images-spectra-time-series-cube" target="_blank">"Prepare your data"</a>) to VizieR?
+	- Everyone 
+-->
+
+
+<!-- 
+In any case, the authors are encouraged to check the integrity of their tables after publication in the corresponding papers. Besides, if an editor asks that some data should be sent to CDS: make sure to send them!
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+-->
+
+
+More information on the submission routes per journal are available in the Chapter <a href="section_submission_per_journal.html" target="_blank">"Submission routes and journals"</a>.
 
 
 <!--  ----------------------------------------- -->

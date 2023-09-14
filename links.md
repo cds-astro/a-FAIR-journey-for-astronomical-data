@@ -29,6 +29,7 @@ any links that you are not going to use.
 [vizier-assoc-data]: https://cdsarc.cds.unistra.fr/assocdata/
 [vizier-api]: https://github.com/cds-astro/cds.cdsclient/
 [iau-dico-nomenclature]: http://vizier.u-strasbg.fr/cgi-bin/Dic
+[aladin-time-moc]: https://ivoa.net/documents/MOC/20220727/REC-moc-2.0-20220727.pdf
 <!-- VizieR File submission -->
 [vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
 [vizier-submit-login]: https://cdsarc.cds.unistra.fr/vizier.submit/index.html
