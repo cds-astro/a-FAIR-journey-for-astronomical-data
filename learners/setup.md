@@ -70,11 +70,11 @@ No prior knowledge is required.
 <!-- -------- -->
 ## Version
 
-Training version: 0.5.0
+Training version: 0.6.0
 
 Publication date: 10 July 2023
  
-Last modified: 11 September 2023
+Last modified: 15 September 2023
 
 
 
@@ -87,6 +87,13 @@ This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-d
 All materials are developed online openly under <a href="LICENSE.html" target="_blank">CC-BY 4.0 License</a> using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
 
 
+<!-- -------- -->
+## Supporting organisation
+
+This work has been supported by the EOSC (European Open Science Cloud) Future project.
+
+
+<!-- -------- -->
 ## Contact
 
 If you have got any questions, feel free to contact directly the VizieR team at: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) .
