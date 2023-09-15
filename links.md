@@ -18,6 +18,9 @@ any links that you are not going to use.
 [bibcode]: http://simbad.cds.unistra.fr/guide/refcode/refcode-paper.html
 
 
+[simbad-info-mucep_21-43-30]: https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20mu.%20Cep
+[simbad-info-mucep_22-23-38]: https://simbad.u-strasbg.fr/simbad/sim-id?Ident=MU+Cep&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id
+
 <!-- -->
 <!-- VizieR -->
 [vizier-home]: https://vizier.cds.unistra.fr/index.gml

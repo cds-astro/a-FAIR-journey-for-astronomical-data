@@ -233,8 +233,9 @@ for the adopted solution in your Table, as shown in <a href="https://vizier.cds.
 
 <big><pre>
 ## IAU conventions
+a) Use “2MASS J15334944+3759282”, and not “2M 1533+3759”.
 b) Use “BR J0529-3526” instead of “BR0529-3526” (which is B1950 by default).
-c) Use “B3 2327+391”, not “B32327+391”.
+c) Use “B3 2327+391”, and not “B32327+391”.
 d) Use “3C 295 cluster” instead of “3C 295” when referring to the cluster.
 e) The tau Ceti system now has four planets: e, f, g, and h. 
 Since tau Ceti b, c, and d were refuted, the letter designations b, c, 
@@ -280,9 +281,9 @@ and explain how to correct them.
 
 ## Quiz: Why are these astronomical designations improper?
 
-Q1) SDSS J1441+0948
+Q1) J2217+2104
 
-Q2) SN 5J 
+Q2) SN 95B 
 
 Q3) HESS J232+202
 
@@ -314,7 +315,7 @@ Can you find them?
 ## Why is it improper?
 
 I1) Insufficient precision in RA and DEC causes confusion.
-In this case, it could correspond to many objects in the different SDSS releases.
+In this case, it could correspond to many objects and different surveys.
 
 I2) Incomplete name can be interpreted into different objects.
 
@@ -343,10 +344,9 @@ I9) Ambiguous name can be interpreted into different objects.
 
 ## Recommended usage
 
-R1) SDSS J144157.24+094859.1, or SDSS J144156.97+094856.5, 
-or SDSS J144157.26+094853.7
+R1) LAMOST J221750.59+210437.1 and SDSS J221746.82+210424.1 are potential matches for this incomplete name
 
-R2) SN 2005J or SN 2015J are different targets
+R2) SN 1895B and SN 1995B are different targets
 
 R3) HESS J0232+202
 
@@ -361,8 +361,9 @@ R7) Gaia DR3 2448177130188111232
 
 R8) Gaia DR2 2790494815860044544
 
-R9) \*mu. Cep (21h43m30.46s, +58d46m48.2s, J2000), or
-V\* MU Cep (22h23m38.63s, +57d40m50.8s, J2000)
+R9) µ Cep (Simbad Identifier: [\* mu. Cep][simbad-info-mucep_21-43-30], 21h43m30.46s, +58d46m48.2s, J2000) and
+MU Cep (Simbad Identifier: [V\* MU Cep][simbad-info-mucep_22-23-38], 22h23m38.63s, +57d40m50.8s, J2000)
+are different targets
 
 :::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
