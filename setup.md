@@ -90,7 +90,7 @@ All materials are developed online openly under <a href="LICENSE.html" target="_
 <!-- -------- -->
 ## Supporting organisation
 
-This work has been supported by the EOSC (European Open Science Cloud) Future project.
+This work has been supported by the EOSC (European Open Science Cloud) Future project, funded by the European Union Horizon Program call INFRAEOSC-03-2020 - grant Agreement Number 101017536.
 
 
 <!-- -------- -->
