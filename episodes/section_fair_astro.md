@@ -179,7 +179,9 @@ A lot of items will be covered in this section. We are aware that you could be a
 
 The most important points are highlighted in bold, and some tips when creating tables are given at the end.
 
-Do your best and do not hesitate to contact us if needed: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+Do your best and do not hesitate to contact us if needed: [cds-cats(at)unistra.fr](mailto:cds-cats@unistra.fr).
+
+
 
 ::::::::::::::::::::::::::::::::::::::
 
