@@ -91,10 +91,7 @@ Two routes are possible to submit your data to VizieR:
 
 
 <!-- Contact CDS -->
-For larger files or any other questions, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
-
-
-
+For larger files or any other questions, please contact the VizieR staff: [cds-cats(at)unistra.fr](mailto:cds-cats@unistra.fr) .
 
 
 
@@ -285,7 +282,8 @@ The login can be reused until the completion of the process but not after submis
 
 **Note - 1:** Your login is tight to a given IP address.
 
-**Note - 2:** Please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) if a modification to a recently submitted upload is needed.
+**Note - 2:** Please contact the VizieR staff: [cds-cats(at)unistra.fr](mailto:cds-cats@unistra.fr) if a modification to a recently submitted upload is needed.
+
 
 <!-- Submission form Vizier as iframe -->
 Interactive window: VizieR catalogue upload webpage. 
@@ -405,7 +403,7 @@ In the last step you can:
 
 Providing an email address is required at that stage. The email will be used if additional information is needed.
 
-**Note:** If a modification to a recently uploaded is needed, please contact the VizieR staff: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+**Note:** If a modification to a recently uploaded is needed, please contact the VizieR staff: [cds-cats(at)unistra.fr](mailto:cds-cats@unistra.fr).
 
 
 
@@ -530,7 +528,7 @@ ftp> ls
 
 ### Notify the VizieR team
 
-Once you are done uploading your data (*ReadMe*, tables and any other associated data), you need to **SEND AN E-MAIL** to the VizieR team telling them where you have placed files: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr).
+Once you are done uploading your data (*ReadMe*, tables and any other associated data), you need to **SEND AN E-MAIL** to the VizieR team telling them where you have placed files: [cds-cats(at)unistra.fr](mailto:cds-cats@unistra.fr).
 
 
 

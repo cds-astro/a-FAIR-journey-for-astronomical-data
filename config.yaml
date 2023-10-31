@@ -33,7 +33,7 @@ source: 'https://github.com/carpentries/workbench-template-md'
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'cats@cdsarc.u-strasbg.fr'
+contact: 'cds-cats@unistra.fr'
 
 # Navigation ------------------------------------------------
 #
