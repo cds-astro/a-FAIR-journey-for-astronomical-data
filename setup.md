@@ -70,7 +70,7 @@ No prior knowledge is required.
 <!-- -------- -->
 ## Version
 
-Training version: 0.6.0
+Training version: 1.0.0
 
 Publication date: 10 July 2023
  
@@ -87,16 +87,26 @@ This course is based on [*Preparing and Submitting Tabular Data*][vizier-publi-d
 All materials are developed online openly under <a href="LICENSE.html" target="_blank">CC-BY 4.0 License</a> using The Carpentries training format and The Carpentries Incubator lesson infrastructure.
 
 
-<!-- -------- -->
-## Supporting organisation
-
-This work has been supported by the EOSC (European Open Science Cloud) Future project, funded by the European Union Horizon Program call INFRAEOSC-03-2020 - grant Agreement Number 101017536.
-
 
 <!-- -------- -->
 ## Contact
 
 If you have got any questions, feel free to contact directly the VizieR team at: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) .
+
+
+
+
+<!-- -------- -->
+## Supporting organisations
+
+This work has been supported by the EOSC (European Open Science Cloud) Future project, funded by the European Union Horizon Program call INFRAEOSC-03-2020 - grant Agreement Number 101017536.
+
+
+<p float="left">
+	<img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/eosc_future_logo.png" alt="Logo European Open Science Cloud Future- EOSC Future" width="250px" />
+	<img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/cds-logo.png" alt="Logo Centre de Données astronomiques de Strasbourg - CDS" width="250px" />
+</p>
+
 
 
 
