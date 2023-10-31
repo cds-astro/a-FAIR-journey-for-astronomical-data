@@ -91,7 +91,7 @@ All materials are developed online openly under <a href="LICENSE.html" target="_
 <!-- -------- -->
 ## Contact
 
-If you have got any questions, feel free to contact directly the VizieR team at: [cats(at)cdsarc.u-strasbg.fr](mailto:cats@cdsarc.u-strasbg.fr) .
+If you have got any questions, feel free to contact directly the VizieR team at: [cds-cats(at)unistra.fr](mailto:cds-cats@unistra.fr) .
 
 
 
