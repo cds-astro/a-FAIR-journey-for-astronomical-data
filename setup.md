@@ -103,8 +103,8 @@ This work has been supported by the EOSC (European Open Science Cloud) Future pr
 
 
 <p float="left">
-	<img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/eosc_future_logo.png" alt="Logo European Open Science Cloud Future- EOSC Future" width="250px" />
 	<img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/cds-logo.png" alt="Logo Centre de Données astronomiques de Strasbourg - CDS" width="250px" />
+	<img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/tmp_logos/eosc_future_logo.png" alt="Logo European Open Science Cloud Future- EOSC Future" width="250px" />
 </p>
 
 
