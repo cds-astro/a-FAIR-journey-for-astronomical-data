@@ -11,15 +11,15 @@ any links that you are not going to use.
 <!--  ----------------------------------------- -->
 <!-- CDS -->
 [cds-home]: https://cds.unistra.fr/
-[aladin-home]: http://aladin.cds.unistra.fr/aladin.gml
-[simbad-home]: http://simbad.cds.unistra.fr/simbad/
-[xmatch-home]: http://cdsxmatch.u-strasbg.fr/
+[aladin-home]: https://aladin.cds.unistra.fr/aladin.gml
+[simbad-home]: https://simbad.cds.unistra.fr/simbad/
+[xmatch-home]: https://cdsxmatch.cds.unistra.fr/
 [sesame-cds]: https://cds.unistra.fr/cgi-bin/Sesame
-[bibcode]: http://simbad.cds.unistra.fr/guide/refcode/refcode-paper.html
+[bibcode]: https://simbad.cds.unistra.fr/guide/refcode/refcode-paper.html
 
 
 [simbad-info-mucep_21-43-30]: https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20mu.%20Cep
-[simbad-info-mucep_22-23-38]: https://simbad.u-strasbg.fr/simbad/sim-id?Ident=MU+Cep&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id
+[simbad-info-mucep_22-23-38]: https://simbad.cds.unistra.fr/simbad/sim-id?Ident=MU+Cep&NbIdent=1&Radius=2&Radius.unit=arcmin&submit=submit+id
 
 <!-- -->
 <!-- VizieR -->
@@ -27,11 +27,11 @@ any links that you are not going to use.
 [vizier-first-publi]: https://ui.adsabs.harvard.edu/abs/2000A%26AS..143...23O/abstract
 [vizier-catalogue-collection]: https://cdsarc.cds.unistra.fr/viz-bin/cat?
 [vizier-table-search]: https://vizier.cds.unistra.fr/viz-bin/VizieR
-[vizier-tap]: http://tapvizier.cds.unistra.fr/adql/
-[vizier-sed]: http://vizier.cds.unistra.fr/vizier/sed/
+[vizier-tap]: https://tapvizier.cds.unistra.fr/adql/
+[vizier-sed]: https://vizier.cds.unistra.fr/vizier/sed/
 [vizier-assoc-data]: https://cdsarc.cds.unistra.fr/assocdata/
 [vizier-api]: https://github.com/cds-astro/cds.cdsclient/
-[iau-dico-nomenclature]: http://vizier.u-strasbg.fr/cgi-bin/Dic
+[iau-dico-nomenclature]: https://vizier.cds.unistra.fr/cgi-bin/Dic
 [aladin-time-moc]: https://ivoa.net/documents/MOC/20220727/REC-moc-2.0-20220727.pdf
 <!-- VizieR File submission -->
 [vizier-fits-validator]: https://cdsarc.cds.unistra.fr/vizier.submit/fitsvalidator.html
@@ -41,7 +41,7 @@ any links that you are not going to use.
 <!-- VizieR FTP -->
 [vizier-ftp-login]: https://cds.unistra.fr/ftp/token/
 [vizier-ftp]: https://cdsarc.cds.unistra.fr/ftp/
-[vizier-ftp-cats]: http://cdsarc.cds.unistra.fr/ftp/cats/
+[vizier-ftp-cats]: https://cdsarc.cds.unistra.fr/ftp/cats/
 <!-- VizieR mirrors -->
 [vizier-mirors]: https://vizier.cfa.harvard.edu/vizier/mirrors.gml
 [vizier-at-cfa]: https://vizier.cfa.harvard.edu/
@@ -55,7 +55,7 @@ any links that you are not going to use.
 [vizier-cat-34-explanations]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.4.htx
 [vizier-cat-35-lengthy]: https://vizier.cds.unistra.fr/vizier/catstd/catstd-3.5.htx
 [vizier-readme-example]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/382/389/ReadMe
-[vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
+[vizier-readme-example-aa]: https://cdsarc.cds.unistra.fr/ftp/cats/J/A+A/ReadMe.txt
 [vizier-cdspyreadme]: https://github.com/cds-astro/cds.pyreadme/
 [vizier-standard-convention]: https://vizier.cds.unistra.fr/vizier/doc/catstd.htx
 <!-- VizieR example Gaia DR3 and other examples-->
@@ -76,7 +76,6 @@ any links that you are not going to use.
 [aas-data-guide]: https://journals.aas.org/data-guide/
 [aas-mrt]: https://journals.aas.org/data-guide/#machine_readable_tables
 <!-- -->
-[mnras-vizier-readme-example-aa]: http://cdsarc.u-strasbg.fr/ftp/cats/J/A+A/ReadMe.txt
 [mnras-home]: https://academic.oup.com/mnras
 [mnras-publi-data-cds]: https://academic.oup.com/mnras/pages/General_Instructions#2.7%20Catalogues%20and%20online-only%20material
 <!-- -->
@@ -104,9 +103,9 @@ any links that you are not going to use.
 
 <!-- -->
 <!-- Others -->
-[anafile]: http://cdsarc.unistra.fr/doc/anafile.htx
+[anafile]: https://cdsarc.cds.unistra.fr/doc/anafile.htx
 [astroquery]: https://astroquery.readthedocs.io
-[cassis]: http://cassis.irap.omp.eu/?page=cassis
+[cassis]: https://cassis.irap.omp.eu/?page=cassis
 [dsa]: https://www.coretrustseal.org/about/history/data-seal-of-approval-synopsis-2008-2018/
 [cts]: https://www.coretrustseal.org/
 [eudat]: https://www.eudat.eu/
@@ -125,9 +124,9 @@ any links that you are not going to use.
 <!-- Papers -->
 [wilkinson_2016]: https://ui.adsabs.harvard.edu/link_gateway/2016NatSD...360018W/doi:10.1038/sdata.2016.18
 [Chen_2022]: https://iopscience.iop.org/article/10.3847/1538-4365/ac6268
-[Cook_2019]: http://doi.org/10.1093/mnras/stz331
-[Grieves_2021]: http://doi.org/10.1051/0004-6361/202039586
-[Kundu_2007]: http://doi.org/10.1086/518021
+[Cook_2019]: https://doi.org/10.1093/mnras/stz331
+[Grieves_2021]: https://doi.org/10.1051/0004-6361/202039586
+[Kundu_2007]: https://doi.org/10.1086/518021
 
 
 <!-- -->
