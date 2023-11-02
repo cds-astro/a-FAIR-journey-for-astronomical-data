@@ -119,7 +119,7 @@ CDS selection or direct authors submission depending on CDS acceptation.
 *Recommendations* (from the MNRAS webpage):
 
 Authors are encouraged to **upload machine-readable versions of their tables on the VizieR database**.
-Authors should consult the CDS website for instructions on preparing and submitting tabular data, which include a [template][mnras-vizier-readme-example-aa] that can be adapted for MNRAS tables. A hyperlink can be included to CDS from the electronic text of the MNRAS article.
+Authors should consult the CDS website for instructions on preparing and submitting tabular data, which include a [template][vizier-readme-example-aa] that can be adapted for MNRAS tables. A hyperlink can be included to CDS from the electronic text of the MNRAS article.
 
 
 *References* (from the MNRAS webpage):
