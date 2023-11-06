@@ -181,8 +181,6 @@ The most important points are highlighted in bold, and some tips when creating t
 
 Do your best and do not hesitate to contact us if needed: [cds-cats(at)unistra.fr](mailto:cds-cats@unistra.fr).
 
-
-
 ::::::::::::::::::::::::::::::::::::::
 
 
