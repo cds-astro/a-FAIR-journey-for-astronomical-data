@@ -45,7 +45,7 @@ In addition to the semi-automated verifications already done by the programs dur
 
 In the following, we present some corrections applied to real datasets.
 
-Here are the **5 important points** that could save us some time:
+Here are the **5 important points** that would save us some time:
 
 - Units
 - Parameters description
