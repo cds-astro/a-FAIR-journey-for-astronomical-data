@@ -31,12 +31,29 @@ Once the data have been submitted on the CDS servers, the VizieR team will check
 ![Figure: Journey from a publication to EOSC, step 4 "curation & verification"](https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg){alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data"}
 
 
-
+<!--  ----------------------------------------- -->
+<!-- 		Verifications 			-->
+<!--  ----------------------------------------- -->
 ## Behind the scenes: verifications
 
 In addition to the semi-automated verifications already done by the programs during the different steps of the ingestion, more in-depth verifications are done by the CDS team focusing on the reliability and the quality of the catalogues.
 
-In the following, we present some examples based on real datasets.
+
+:::::::::::::::::::::::::::::::::::::: callout
+
+# Important points to check
+
+In the following, we present some corrections applied to real datasets.
+
+Here are the **5 important points** that would save us some time:
+
+- Units
+- Parameters description
+- Coordinates
+- Identifiers
+- Common key between tables
+
+::::::::::::::::::::::::::::::::::::::
 
 
 
