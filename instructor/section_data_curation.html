@@ -322,20 +322,20 @@ have been accepted, the CDS team will also add some valuable and
 relevant information such as metadata and links to other catalogues.
 This can lead to interactions with the authors, but we are trying to
 minimize the level of interaction.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 4
-“curation &amp; verification”</figcaption></figure><!--  ----------------------------------------- --><!-- 		Verifications 			--><!--  ----------------------------------------- --></section><section id="behind-the-scenes-verifications"><h2 class="section-heading">Behind the scenes: verifications<a class="anchor" aria-label="anchor" href="#behind-the-scenes-verifications"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step3.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><div class="figcaption">Figure: Journey from a publication to EOSC, step
+4 “curation &amp; verification”</div>
+</figure><!--  ----------------------------------------- --><!-- 		Verifications 			--><!--  ----------------------------------------- --></section><section id="behind-the-scenes-verifications"><h2 class="section-heading">Behind the scenes: verifications<a class="anchor" aria-label="anchor" href="#behind-the-scenes-verifications"></a>
 </h2>
 <hr class="half-width"><p>In addition to the semi-automated verifications already done by the
 programs during the different steps of the ingestion, more in-depth
 verifications are done by the CDS team focusing on the reliability and
 the quality of the catalogues.</p>
-<div id="important-points-to-check" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="important-points-to-check" class="callout-inner">
-<h3 class="callout-title">Important points to check<a class="anchor" aria-label="anchor" href="#important-points-to-check"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="important-points-to-check">Important points to check<a class="anchor" aria-label="anchor" href="#important-points-to-check"></a></h3>
 <div class="callout-content">
 <p>In the following, we present some corrections applied to real
 datasets.</p>
@@ -365,12 +365,14 @@ some time:</p>
 <p>In the example below the original unit for a cylindrical volume of a
 region (column <em>Size</em> from the figure below) was wrongly set to
 <em>cm<sup>-3</sup></em>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_before.png" alt="Screenshot -- Table with wrong units as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Units as written in original paper
-(screenshot)</figcaption></figure><p>Our team picked it up and wrote to the author and made the
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_before.png" alt="Screenshot -- Table with wrong units as displayed in paper" class="figure mx-auto d-block"><div class="figcaption">Figure: Before – Units as written in original
+paper (screenshot)</div>
+</figure><p>Our team picked it up and wrote to the author and made the
 description and unit correction (field <em>V</em> from the figure
 below).</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png" alt="Screenshot -- VizieR table with units corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Units corrected in VizieR table
-(screenshot)</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_1_units_after.png" alt="Screenshot -- VizieR table with units corrected" class="figure mx-auto d-block"><div class="figcaption">Figure: After – Units corrected in VizieR table
+(screenshot)</div>
+</figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -391,15 +393,17 @@ to search for data in VizieR.</p>
 <!-- Link to paper: https://iopscience.iop.org/article/10.3847/0004-637X/822/2/59#apj522819t1 // Table 1-->
 <p>Here is an example of coordinates with discrepancies when the
 declination is at 0 degree.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png" alt="Screenshot -- Table with wrong coordinates as made available in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Coordinates as written in original
-paper (screenshot). The following columns are displayed: Seq (catalog
-index number); BGPS source identifier; Hour, Minute and Second of Right
-Ascension (J2000); Sign, Degree, Arcminute, Arcsecond of the Declination
-(J2000).</figcaption></figure><!-- Link to Readme: J/ApJ/822/59 // https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/J/ApJ/822/59?format=html&tex=true // clumps--><p>Once the error detected by our team (missing minus sign for some
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_before.png" alt="Screenshot -- Table with wrong coordinates as made available in paper" class="figure mx-auto d-block"><div class="figcaption">Figure: Before – Coordinates as written in
+original paper (screenshot). The following columns are displayed: Seq
+(catalog index number); BGPS source identifier; Hour, Minute and Second
+of Right Ascension (J2000); Sign, Degree, Arcminute, Arcsecond of the
+Declination (J2000).</div>
+</figure><!-- Link to Readme: J/ApJ/822/59 // https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/J/ApJ/822/59?format=html&tex=true // clumps--><p>Once the error detected by our team (missing minus sign for some
 Declinations), the positions were then updated, two years after the data
 ingestion in VizieR.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png" alt="Screenshot -- VizieR table with coordinates corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Coordinates corrected in VizieR table
-(screenshot)</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_after.png" alt="Screenshot -- VizieR table with coordinates corrected" class="figure mx-auto d-block"><div class="figcaption">Figure: After – Coordinates corrected in VizieR
+table (screenshot)</div>
+</figure></div>
 </div>
 </div>
 <p>When there are none, positions can be added from other catalogues or
@@ -416,13 +420,15 @@ have an answer).</p>
 <!-- Link to paper: https://iopscience.iop.org/article/10.3847/1538-4357/ac0fda#apjac0fdat3 // Table 3-->
 <p>In the following example, we can see that no coordinate was provided
 in the original table.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_before.png" alt="Screenshot -- Table without coordinates as available in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Columns as written in original table
-(screenshot)</figcaption></figure><!-- Link to Readme: J/ApJ/919/121  // https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/919/121/table3&-out.max=50&-out.form=HTML%20Table&-oc.form=sexa // table 3 --><p>Using SIMBAD or otherwise the HASH PN databases (when no SIMBAD
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_before.png" alt="Screenshot -- Table without coordinates as available in paper" class="figure mx-auto d-block"><div class="figcaption">Figure: Before – Columns as written in original
+table (screenshot)</div>
+</figure><!-- Link to Readme: J/ApJ/919/121  // https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJ/919/121/table3&-out.max=50&-out.form=HTML%20Table&-oc.form=sexa // table 3 --><p>Using SIMBAD or otherwise the HASH PN databases (when no SIMBAD
 corresponding match has been found – SimbadName empty), we were able to
 complement this table with positions.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_after.png" alt="Screenshot -- Table with SimbadName and coordinates informations added to the original columns" class="figure mx-auto d-block"><figcaption>Figure: After – Coordinates added in VizieR table
-(screenshot). The 4 columns in color are computed by VizieR, and not
-part of the original data.</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_2_coordinates_added_after.png" alt="Screenshot -- Table with SimbadName and coordinates informations added to the original columns" class="figure mx-auto d-block"><div class="figcaption">Figure: After – Coordinates added in VizieR
+table (screenshot). The 4 columns in color are computed by VizieR, and
+not part of the original data.</div>
+</figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -444,20 +450,23 @@ SIMBAD and VizieR, a proper identification is needed.</p>
 <!-- Link to paper: https://iopscience.iop.org/article/10.3847/0004-637X/833/1/20#apjaa431et1  -->
 <p>Here is an example of truncated SDSS names… Impossible to retrieve
 except by coordinates that we luckily have in this case.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_before.png" alt="Screenshot -- Table with truncated names as identifiers in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Table as written in the original
-paper. The following columns are displayed: Type, Name, f_Name; Hour,
-Minute and Second of Right Ascension (J2000); Sign, Degree, Arcminute,
-Arcsecond of the Declination (J2000); Teff, log(g), l_[Fe/H], [Fe/H],
-l_[C/Fe], [C/Fe], l_[C/Fe]c, [C/Fe]c, l_A(C), A(C), l_[Ba/Fe], [Ba/Fe],
-f_[Ba/Fe], l_[Eu/Fe], [Eu/Fe], f_[Eu/Fe]; Class, Bin, f_Bin, Out,
-Ref.</figcaption></figure><!-- Link to VizieR: J/ApJ/833/20  // https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/833/20 // table 1 --><p>So the SimbadName has been added after the process for SIMBAD where
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_before.png" alt="Screenshot -- Table with truncated names as identifiers in paper" class="figure mx-auto d-block"><div class="figcaption">Figure: Before – Table as written in the
+original paper. The following columns are displayed: Type, Name, f_Name;
+Hour, Minute and Second of Right Ascension (J2000); Sign, Degree,
+Arcminute, Arcsecond of the Declination (J2000); Teff, log(g), l_[Fe/H],
+[Fe/H], l_[C/Fe], [C/Fe], l_[C/Fe]c, [C/Fe]c, l_A(C), A(C), l_[Ba/Fe],
+[Ba/Fe], f_[Ba/Fe], l_[Eu/Fe], [Eu/Fe], f_[Eu/Fe]; Class, Bin, f_Bin,
+Out, Ref.</div>
+</figure><!-- Link to VizieR: J/ApJ/833/20  // https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/833/20 // table 1 --><p>So the SimbadName has been added after the process for SIMBAD where
 misprints on coordinates have been detected (identified by the column
 <em>f_Name</em> set to <em>o</em> below for <em>Name = SDSS
 J1137+2553</em>, and highlighted in both figures Before/After). For this
 object with coordinates pointing to nothing, the right ones have been
 found thanks to the bibcode given in the table.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_after.png" alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected" class="figure mx-auto d-block"><figcaption>Figure: After – Example of names recognized by SIMBAD
-added to the original table submitted to VizieR (screenshot)</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_3_names_after.png" alt="Screenshot -- VizieR table with SIMBAD-names added and misprint on names (in the declinaison) corrected" class="figure mx-auto d-block"><div class="figcaption">Figure: After – Example of names recognized by
+SIMBAD added to the original table submitted to VizieR
+(screenshot)</div>
+</figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -476,8 +485,9 @@ will validate the VizieR catalogue afterwards.</p>
 </h3>
 <div class="callout-content">
 <!-- Link to VizieR: J/A+A/569/A17 // https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/J/A+A/569/A17?format=html&tex=true -->
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png" alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields" class="figure mx-auto d-block"><figcaption>Figure: Example of minimum and maximum values (in
-brackets) added to a ReadMe file (screenshot)</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_4_minmax.png" alt="Screenshot -- VizieR ReadMe file with minimum and maximum values added to the numerical fields" class="figure mx-auto d-block"><div class="figcaption">Figure: Example of minimum and maximum values
+(in brackets) added to a ReadMe file (screenshot)</div>
+</figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -503,13 +513,16 @@ both tables.</p>
 <p>In the example below, the column <em>Nz</em> (Number of high-z
 galaxies in a given cluster) has been added to the original Table 1 to
 create a link with the relics-z table.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_link_table_1.png" alt="Screenshot -- Link between columns added by the CDS team enabling a better reusability of the original data" class="figure mx-auto d-block"><figcaption>Figure: Example of column added to the original set –
-Table 1 – , adding more visibility to the data (screenshot)</figcaption></figure><p>By clicking on the value “14” from the column <em>Nz</em> for the
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_link_table_1.png" alt="Screenshot -- Link between columns added by the CDS team enabling a better reusability of the original data" class="figure mx-auto d-block"><div class="figcaption">Figure: Example of column added to the original
+set – Table 1 – , adding more visibility to the data (screenshot)</div>
+</figure><p>By clicking on the value “14” from the column <em>Nz</em> for the
 cluster “plckg004-19”, one will get automatically the corresponding rows
 from the relics-z table, without any extra filtering, as illustrated
 below.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_link_table_2.png" alt="Screenshot -- Link between columns added by the CDS team enabling a better reusability of the original data, and a quicker access to the corresponding results" class="figure mx-auto d-block"><figcaption>Figure: Example of column added to the original set –
-relics-z table – , adding more visibility to the data (screenshot)</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_5_link_table_2.png" alt="Screenshot -- Link between columns added by the CDS team enabling a better reusability of the original data, and a quicker access to the corresponding results" class="figure mx-auto d-block"><div class="figcaption">Figure: Example of column added to the original
+set – relics-z table – , adding more visibility to the data
+(screenshot)</div>
+</figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -535,20 +548,23 @@ in both:</p>
 </ul><p>However, it is not obvious that Bel10018 (SimbadName: [BFO2002] UMi
 10018) mentionned in <em>Table A</em> corresponds to COS 347 in
 <em>Table B</em>.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png" alt="Screenshot -- Table A as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – Extract of Table A from paper
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table1.png" alt="Screenshot -- Table A as displayed in paper" class="figure mx-auto d-block"><div class="figcaption">Figure: Before – Extract of Table A from paper
 (screenshot). The following columns are displayed: Name of stellar
 system, Star name, RA (J2000), DEC (J2000), Bmag, Vmag, Rmag, CoFe,
-e_CoFe, NiFe, e_NiFe.</figcaption></figure><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png" alt="Screenshot -- Table B as displayed in paper" class="figure mx-auto d-block"><figcaption>Figure: Before – extract of Table B from paper
+e_CoFe, NiFe, e_NiFe.</div>
+</figure><figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_before.png" alt="Screenshot -- Table B as displayed in paper" class="figure mx-auto d-block"><div class="figcaption">Figure: Before – extract of Table B from paper
 (screenshot). The following columns are displayed: Name of the stellar
 system, Star name, Reference for HRS abundances, Cr-HRS, e_Cr-HRS,
-Co-HRS.</figcaption></figure><!-- Link to Vizier: J/ApJS/237/18 // https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJS/237/18 --><p>As there are no common identifier or coordinates repeated in the
+Co-HRS.</div>
+</figure><!-- Link to Vizier: J/ApJS/237/18 // https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJS/237/18 --><p>As there are no common identifier or coordinates repeated in the
 second table, the only alternative would have been to go through the
 list of references cited (3rd column of <em>Table B</em>) to get the
 coordinates and identify the object one by one. Therefore, the CDS team
 contacted the author to get the names and positions for <em>Table B</em>
 and create a better link between the two tables as displayed below.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png" alt="Screenshot -- Table B updated as available on VizieR" class="figure mx-auto d-block"><figcaption>Figure: After – extract of Table B as available in
-VizieR (screenshot)</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_6_missing_key_table2_after.png" alt="Screenshot -- Table B updated as available on VizieR" class="figure mx-auto d-block"><div class="figcaption">Figure: After – extract of Table B as available
+in VizieR (screenshot)</div>
+</figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -567,8 +583,9 @@ catalogues being added or old ones being updated.</p>
 <div class="callout-content">
 <p>In the example below, one table from the original catalogue was
 updated, to reflect the changes published in an erratum.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png" alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication" class="figure mx-auto d-block"><figcaption>Figure: Example of a table updated following erratum
-publication (screenshot)</figcaption></figure></div>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/data_curation_examples/example_7_errata.png" alt="Screenshot -- Table from catalogue updated to be consistent with erratum publication" class="figure mx-auto d-block"><div class="figcaption">Figure: Example of a table updated following
+erratum publication (screenshot)</div>
+</figure></div>
 </div>
 </div>
 <!--  ----------------------------------------- -->
@@ -580,8 +597,9 @@ publication (screenshot)</figcaption></figure></div>
 CDS</a> and other participating <a href="https://vizier.cfa.harvard.edu/vizier/mirrors.gml" class="external-link">data
 centers</a> (e.g. at <a href="https://vizier.cfa.harvard.edu/" class="external-link">CfA/Harvard (USA)</a> or <a href="http://vizier.nao.ac.jp/" class="external-link">NOAJ/ADAC (Japan)</a>), as well as all
 VO compatible services.</p>
-<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><figcaption>Figure: Journey from a publication to EOSC, step 4
-“curation &amp; verification”</figcaption></figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-what-happens-to-your-data-at-cds"><h2 class="section-heading">Summary: What happens to your data at CDS?<a class="anchor" aria-label="anchor" href="#summary-what-happens-to-your-data-at-cds"></a>
+<figure><img src="https://raw.githubusercontent.com/cds-astro/a-FAIR-journey-for-astronomical-data/main/episodes/images/lighthouse/step4.svg" alt="Figure -- Summary data journey from a publication to VizieR and then EOSC: fourth step of the journey - step curation and verification of the data, right after - step data published in a refereed paper, step preparation of the data, step submission of the data" class="figure mx-auto d-block"><div class="figcaption">Figure: Journey from a publication to EOSC, step
+4 “curation &amp; verification”</div>
+</figure><!--  ----------------------------------------- --><!--            Summary                         --><!--  ----------------------------------------- --></section><section id="summary-what-happens-to-your-data-at-cds"><h2 class="section-heading">Summary: What happens to your data at CDS?<a class="anchor" aria-label="anchor" href="#summary-what-happens-to-your-data-at-cds"></a>
 </h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -681,7 +699,7 @@ any links that you are not going to use.
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/section_data_curation.html",
   "dateCreated": "2023-11-06",
   "dateModified": "2023-11-06",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
