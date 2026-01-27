@@ -700,7 +700,7 @@ stewardship as outlined by M. Wilkinson et al. (2016).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> To be Findable </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The first step before reusing the data is to be able to find them.
 The metadata and data should be easy to find for <strong>both humans and
@@ -720,7 +720,7 @@ it describes</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> To be Accessible </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Once the data can be found, the user needs to know how to access
 them. That could include authentification and authorisation. The
@@ -746,7 +746,7 @@ available</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> To be Interoperable </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Those data can then be combined with different datasets, and
 interoperate with other applications or workflows for analysis, storage,
@@ -764,7 +764,7 @@ applicable language for knowledge representation.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> To be Reusable </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The ultimate goal of FAIR is to optimise the reuse of data. To
 achieve this, metadata and data should be well-described, including a
@@ -981,7 +981,7 @@ improper?</h3>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Look for these objects in <a href="https://simbad.cds.unistra.fr/simbad/" class="external-link">Simbad</a>.</p>
 <p>Can you find them?</p>
@@ -994,7 +994,7 @@ improper?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Why is it improper? </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>I1) Insufficient precision in RA and DEC causes confusion. In this
 case, it could correspond to many objects and different surveys.</p>
@@ -1021,7 +1021,7 @@ retrieve the actual object (which is a 19-integer number).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Recommended usage </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>R1) LAMOST J221750.59+210437.1 and SDSS J221746.82+210424.1 are
 potential matches for this incomplete name</p>
@@ -1289,32 +1289,32 @@ in a ReadMe file. More help on the ReadMe is given in the <a href="section_submi
 <h3 class="callout-title">Quiz: How to make this table FAIR?</h3>
 <div class="callout-content">
 <table class="table">
-<thead><tr>
+<thead><tr class="header">
 <th>Object</th>
 <th align="center">Redshift</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Source 1</td>
 <td align="center">0.1<sup>1</sup>
 </td>
 </tr>
-<tr>
+<tr class="even">
 <td>Source 2</td>
 <td align="center">0.2<sup>2</sup>
 </td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Source 3</td>
 <td align="center">0.3<sup>1</sup>
 </td>
 </tr>
-<tr>
+<tr class="even">
 <td>Source 4</td>
 <td align="center">0.4<sup>1</sup>
 </td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Source 5</td>
 <td align="center">0.5<sup>2</sup>
 </td>
@@ -1331,7 +1331,7 @@ uncertain</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint2" aria-expanded="false" aria-controls="collapseHint2">
   <h4 class="accordion-header" id="headingHint2"> Why is it improper? </h4>
 </button>
-<div id="collapseHint2" class="accordion-collapse collapse" data-bs-parent="#accordionHint2" aria-labelledby="headingHint2">
+<div id="collapseHint2" class="accordion-collapse collapse" aria-labelledby="headingHint2" data-bs-parent="#accordionHint2">
 <div class="accordion-body">
 <p>The quality of the measurement is indicated using a superscript.
 Providing this information using an extra column will make the table
@@ -1345,36 +1345,36 @@ more machine readable, and therefore the data more reusable.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Recommended usage </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <table class="table">
-<thead><tr>
+<thead><tr class="header">
 <th>Object</th>
 <th align="center">Redshift</th>
 <th align="center">Quality</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Source 1</td>
 <td align="center">0.1</td>
 <td align="center">1</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Source 2</td>
 <td align="center">0.2</td>
 <td align="center">2</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Source 3</td>
 <td align="center">0.3</td>
 <td align="center">1</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Source 4</td>
 <td align="center">0.4</td>
 <td align="center">1</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Source 5</td>
 <td align="center">0.5</td>
 <td align="center">2</td>
@@ -1561,69 +1561,69 @@ facilities?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
   <h4 class="accordion-header" id="headingSolution8"> List of solutions </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
 <col width="39%">
 <col width="60%">
 </colgroup>
-<thead><tr>
+<thead><tr class="header">
 <th>Names as published</th>
 <th>Possible interpretation</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>ARO</td>
 <td>Astronomical Research Observatory</td>
 </tr>
-<tr>
+<tr class="even">
 <td></td>
 <td>Arizona Radio Observatory</td>
 </tr>
-<tr>
+<tr class="odd">
 <td></td>
 <td>Abbey Ridge Observatory</td>
 </tr>
-<tr>
+<tr class="even">
 <td></td>
 <td>Algonquin Radio Observatory</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>DDO</td>
 <td>David Dunlap Observatory:0.15m</td>
 </tr>
-<tr>
+<tr class="even">
 <td></td>
 <td>David Dunlap Observatory:0.5m</td>
 </tr>
-<tr>
+<tr class="odd">
 <td></td>
 <td>David Dunlap Observatory:0.6m</td>
 </tr>
-<tr>
+<tr class="even">
 <td></td>
 <td>David Dunlap Observatory:1.88m</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>EMIR</td>
 <td>Eight MIxer Receiver (on the IRAM 30m radio telescope)</td>
 </tr>
-<tr>
+<tr class="even">
 <td></td>
 <td>Espectrógrafo Multiobjeto Infra-Rojo (on the Gran Telescopio
 Canarias)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>OSIRIS</td>
 <td>OH-Suppressing Infra-Red Imaging Spectrograph (on the Keck I
 telescope)</td>
 </tr>
-<tr>
+<tr class="even">
 <td></td>
 <td>Ohio State Infrared Imager/Spectrograph (on the SOAR telescope)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td></td>
 <td>Optical System for Imaging and low-Intermediate-Resolution
 Integrated Spectroscopy (on the Gran Telescopio Canarias)</td>
@@ -1940,63 +1940,63 @@ hierarchical organisation webpage</a>):</p>
 <col width="28%">
 <col width="42%">
 </colgroup>
-<thead><tr>
+<thead><tr class="header">
 <th>Category</th>
 <th>Type of data</th>
 <th>Example of VizieR catalogue</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>I</td>
 <td>Astrometric Data</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/I/355" class="external-link">I/355</a></td>
 <td>Gaia DR3 Part 1. Main source (Gaia collaboration, 2022)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>II</td>
 <td>Photometric Data</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/II/328" class="external-link">II/328</a></td>
 <td>AllWISE Data Release (Cutri+, 2013)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>III</td>
 <td>Spectroscopic Data</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/III/283" class="external-link">III/283</a></td>
 <td>RAVE 6th data release (Steinmetz+, 2020)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>IV</td>
 <td>Cross-Identifications</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/IV/39" class="external-link">IV/39</a></td>
 <td>TESS Input Catalog version 8.2 (TIC v8.2) (Paegert+, 2021)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>V</td>
 <td>Combined Data</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/V/154" class="external-link">V/154</a></td>
 <td>Sloan Digital Sky Surveys (SDSS), Release 16 (DR16) (Ahumada+,
 2020)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>VI</td>
 <td>Miscellaneous</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/VI/135" class="external-link">VI/135</a></td>
 <td>All-sky spectrally matched Tycho2 stars (Pickles+, 2010)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>VII</td>
 <td>Non-stellar Objects</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/VII/233" class="external-link">VII/233</a></td>
 <td>The 2MASS Extended sources (IPAC/UMass, 2003-2006)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>VIII</td>
 <td>Radio and Far-IR data</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/VIII/65" class="external-link">VIII/65</a></td>
 <td>1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+, 1998)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>IX</td>
 <td>High-Energy Data</td>
 <td><a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/IX/68" class="external-link">IX/68</a></td>
@@ -2269,24 +2269,24 @@ the Saada/VizieR page: spectra (screenshot)</div>
 <h3 class="callout-title">Accepted format</h3>
 <div class="callout-content">
 <table class="table">
-<thead><tr>
+<thead><tr class="header">
 <th>Product type</th>
 <th align="center">Accepted format</th>
 </tr></thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>images (2-D data)</td>
 <td align="center">FITS</td>
 </tr>
-<tr>
+<tr class="even">
 <td>spectra, sed (1-D data)</td>
 <td align="center">FITS, VOTable, ASCII</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>time series</td>
 <td align="center">ASCII, FITS</td>
 </tr>
-<tr>
+<tr class="even">
 <td>cube</td>
 <td align="center">FITS</td>
 </tr>
@@ -3797,7 +3797,7 @@ Search bar. What do you get as an output?</p>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Browse through <a href="https://eosc-portal.eu/" class="external-link">EOSC Portal</a> to
 answer the previous questions.</p>
@@ -3810,7 +3810,7 @@ answer the previous questions.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>R1) This paper was published on <a href="https://explore.eosc-portal.eu/search/dataset?pid=10.26093%2Fcds%2Fvizier.17970082&amp;return_path=search%2Fall&amp;search_params=q%3DNGTS%2520clusters%2520survey" class="external-link">01
 Jan 2017</a>.</p>
@@ -3917,7 +3917,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.18.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.0.9)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.18.4" class="external-link">sandpaper (0.18.4)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.9" class="external-link">varnish (1.0.9)</a></p>
 		</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -3940,8 +3940,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
   "dateCreated": "2026-01-20",
-  "dateModified": "2026-01-20",
-  "datePublished": "2026-01-20"
+  "dateModified": "2026-01-27",
+  "datePublished": "2026-01-27"
 }
 
   </script><script>
